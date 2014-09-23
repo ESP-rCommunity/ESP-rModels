@@ -13,6 +13,14 @@ network and with bi-directional flow openings
 between the general office and reception and
 the conference room and reception.
 
+office_vent_netinfg.cfg - ditto but with a graphic
+flow network description rather than a text-based
+network description. nets/office_vent_netinfg.afn is
+the graphic flow network used and office_vent_netinfg.legacy 
+is the exported text-based equivalent. The icons
+database used in found in the models deb folder.
+
+
 office_vent_netvent.cfg - as the network
 infiltration model with additional facade
 vents added. The facade vents are assumed

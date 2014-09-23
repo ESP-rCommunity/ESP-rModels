@@ -1,4 +1,4 @@
-    8    6    7    1.000    (nodes, components, connections, wind reduction)
+    8    6   10    1.000    (nodes, components, connections, wind reduction)
  Node         Fld. Type   Height    Temperature    Data_1       Data_2
  manager         1    0   1.5000       20.000           0.       40.501    
  manager_t_b     1    0   1.5000       20.000           0.       40.501    
@@ -22,10 +22,13 @@
  win_crack     120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
      1.00000    5.00000E-03    2.00000
  +Node         dHght   -Node         dHght   Comp     Snod1  Snod2
- gl_ext        0.000   manager       0.225   win_1.68                                
- low_glz_ext   0.000   manager_t_b  -0.175   win_low.84                              
- hi_glz_ext    0.000   manager_t_b   0.625   hi_win.84                               
- bi_glz        0.000   manager_bi    0.225   bi_win                                  
- adjacent      0.000   manager      -0.725   door_crack                              
- adjacent      0.000   manager_t_b  -0.725   door_crack                              
- adjacent      0.000   manager_bi   -0.725   door_crack                              
+ gl_ext        0.000   manager       0.450   win_1.68                                
+ low_glz_ext   0.000   manager_t_b  -0.350   win_low.84                              
+ hi_glz_ext    0.000   manager_t_b   1.250   hi_win.84                               
+ bi_glz       -0.500   manager_bi   -0.500   bi_win                                  
+ adjacent      0.000   manager      -1.450   door_crack                              
+ adjacent      0.000   manager_t_b  -1.450   door_crack                              
+ adjacent      0.000   manager_bi   -1.450   door_crack                              
+ gl_ext        0.000   manager       0.450   win_crack                                  
+ low_gl_ext    0.000   manager_t_b  -0.350   win_crack                                  
+ bi_glz        0.000   manager_bi    0.000   win_crack                                 

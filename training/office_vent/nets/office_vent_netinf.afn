@@ -40,10 +40,10 @@
  manager       0.000   general       0.000   door_man                                
  general       0.000   reception     0.000   door_g-r                                
  conference    0.000   reception     0.000   door_r-c                                
- south_man     0.400   manager      -0.400   crack_1                                 
- south_gen     0.400   general      -0.400   crack_3                                 
- east_gener    0.400   general      -0.400   crack_2                                 
- east_recep    0.400   reception    -0.400   crack_2                                 
- east          0.400   conference   -0.400   crack_2                                 
- north         0.400   conference   -0.400   fac_vent_3                              
+ south_man     0.000   manager      -0.800   crack_1                                 
+ south_gen     0.000   general      -0.800   crack_3                                 
+ east_gener    0.000   general      -0.800   crack_2                                 
+ east_recep    0.000   reception    -0.800   crack_2                                 
+ east          0.000   conference   -0.800   crack_2                                 
+ north         0.000   conference   -0.800   fac_vent_3                              
  west_mix      0.000   mixing_box    0.000   mix_crack                               

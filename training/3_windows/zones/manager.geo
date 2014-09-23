@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,manager # tag version, format, zone name
-*date Thu Aug 23 17:51:31 2007  # latest file modification 
+*date Thu Jul  3 13:42:51 2014  # latest file modification 
 manager describes cellular office
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,0.00000,0.00000,0.00000  #   1
@@ -38,7 +38,7 @@ manager describes cellular office
 *edges,4,19,20,21,22  # 10
 # 
 # surf attributes:
-#  surf name, surf position VERT/CIIL/FLOR/SLOP/UNKN
+#  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
@@ -50,8 +50,8 @@ manager describes cellular office
 *surf,floor,FLOR,-,-,-,susp_flr_re,OPAQUE,SIMILAR,00,00  #   6 ||< identical environment
 *surf,spandral,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   7 ||< external
 *surf,frame,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   8 ||< external
-*surf,glazing,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #   9 ||< external
-*surf,part_glaz,VERT,-,-,-,dbl_glz,DCF7671_06nb,SIMILAR,00,00  #  10 ||< identical environment
+*surf,glazing,VERT,frame,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #   9 ||< external
+*surf,part_glaz,VERT,part_frame,-,-,dbl_glz,DCF7671_06nb,SIMILAR,00,00  #  10 ||< identical environment
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 
@@ -60,4 +60,4 @@ manager describes cellular office
 # 
 *insol_calc,none  # no insolation requested
 # 
-*base_list,1,6,    13.50 0  # zone base list
+*base_list,1,6,    12.38 0  # zone base list

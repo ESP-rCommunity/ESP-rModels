@@ -1,4 +1,4 @@
-*DFS V2.1 # Zone air movement description.
+*DFS V2.2 # Zone air movement description.
 *conflation 0  # conflation type (not applicable to cfd-only)
 *title Blockages and concentration source in the room                          
 # user supplied notes for this domain
@@ -54,9 +54,10 @@ Wall14       Heat      0.00
 Inflow1      Velocity  0.020 Temp 20.000 Hum  0.000 Area  0.000 Ang  0.000  0.000
 Outflow1     Velocity -0.020 Temp 20.000 Hum  0.000 Area  0.000 Ang  0.000  0.000
 # Internal sources.
-*sources(   1 contaminants, humdity is contaminant number   0 )
-*volume name,heat source,cas gain index and fraction CO2                                                 
-Source18         0.0   0 0.00       0.00                                                                                                                                      
+*contaminants(   1 contaminants, humdity is contaminant number   0 )
+CO2           0    0.9400
+*volume name,heat source,cas gain index and fraction, CO2                                                 
+Source18         0.0   0 0.00  0.0000150000 none                                                                                                                                      
 # Blockages.
 *blockages
 Block15      Heat       0.000

@@ -130,6 +130,10 @@
 *cfg	/usr/esru/esp-r/training/cellular_flh/cfg/cellular_flh.cfg
 *root	/usr/esru/esp-r/training/cellular_flh
 *item
+*name	... with SDHW via water filled zones and flow network
+*cfg	/usr/esru/esp-r/training/cellular_expl_sdhw/cfg/cellular_expl_sdhw.cfg
+*root	/usr/esru/esp-r/training/cellular_expl_sdhw
+*item
 *name	... with constant volume HVAC controller
 *cfg	/usr/esru/esp-r/training/cellular_cvvt/cfg/cellular_cvvt.cfg
 *root	/usr/esru/esp-r/training/cellular_cvvt
@@ -226,6 +230,26 @@
 *name	Office for a doctor with graphic flow network
 *cfg	/usr/esru/esp-r/training/office_doctor/cfg/office_for_doctor_gflow.cfg
 *root	/usr/esru/esp-r/training/office_doctor
+*item
+*name	A simple room to add a graphic flow network
+*cfg	/usr/esru/esp-r/training/box_network/cfg/box_nonetwork.cfg
+*root	/usr/esru/esp-r/training/box_network
+*item
+*name	A simple room with a graphic flow network
+*cfg	/usr/esru/esp-r/training/box_network/cfg/box_network.cfg
+*root	/usr/esru/esp-r/training/box_network
+*item
+*name	Small space to test CFD gridding and volumes 
+*cfg	/usr/esru/esp-r/training/cfd/cfd_benchmark/cfg/cfd_benchmark.cfg
+*root	/usr/esru/esp-r/training/cfd/cfd_benchmark
+*item
+*name	Small space with CFD gridding and volumes (stand-alone)
+*cfg	/usr/esru/esp-r/training/cfd/cfd_benchmark/cfg/cfd_benchmark_gr.cfg
+*root	/usr/esru/esp-r/training/cfd/cfd_benchmark
+*item
+*name	Small space with CFD gridding and volumes (coupled)
+*cfg	/usr/esru/esp-r/training/cfd/cfd_benchmark/cfg/cfd_benchmark_cpld.cfg
+*root	/usr/esru/esp-r/training/cfd/cfd_benchmark
 *item
 *group	network ventilation
 *help	These models demonstrate the nodal network approach to flow modelling.
@@ -452,6 +476,10 @@
 *name   ... non-isothermal test case
 *cfg    /usr/esru/esp-r/training/cfd/IEA_A20/nonisotherm/cfg/dfs_niso.cfg
 *root	/usr/esru/esp-r/training/cfd/IEA_A20/nonisotherm
+*item
+*name   Multi-zone CFD with building + flow network coupling
+*cfg    /usr/esru/esp-r/training/cellular_cfd/cfg/cellular_cfd.cfg
+*root   /usr/esru/esp-r/training/cellular_cfd
 *item
 *group	combined heat and power
 *help	These models demonstrate combined thermal and electrical modelling

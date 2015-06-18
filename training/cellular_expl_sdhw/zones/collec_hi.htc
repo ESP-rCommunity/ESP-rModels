@@ -1,0 +1,10 @@
+*HC_CTL for zone collec_hi
+*Date,Tue Mar 24 09:24:24 2015
+  1 # number control intervals
+  6 # number of surfaces
+# (plate_t t_plate_t edg_2plate_t edg_3plate_t edg_4plate_t edg_5plate_t)
+  0.00    24.00 # start and end time of interval
+  1 # fixed coefficients calculation control type
+*Doc,User supplied hc values
+ 50.000,50.000,-1.0000,-1.0000,-1.0000,-1.0000
+ -1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000

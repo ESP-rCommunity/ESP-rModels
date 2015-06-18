@@ -1,4 +1,4 @@
-*DFS V2 # Zone air movement description.
+*DFS V2.2 # Zone air movement description.
 *conflation 1  # conflation type (not applicable to cfd-only)
 *title heater at vent surface, ceiling fresh air inlet and extract             
 # user supplied notes for this domain
@@ -80,12 +80,12 @@ ceil_c       Temp  15.00 | Confl   2 ceiling
 inletn       Velocity  0.015 Temp 22.000 Hum  0.000 Area  0.000 Ang  0.000  0.000
 extractn     Velocity -0.015 Temp 22.000 Hum  0.000 Area  0.000 Ang  0.000  0.000
 # Internal sources.
-*sources
+*contaminants(   0 contaminants, humdity is contaminant number   0 )
 # Blockages.
 *blockages
 *solution_methods
 Turbulence 3 # MIT
-Buoyancy 1 # full calculation
+Buoyancy 1 0.5 # full calculation
 # Equations to be solved:
 *solution_equations
 #  Type  Initial value  Relaxation type and factor

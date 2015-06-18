@@ -1,6 +1,6 @@
-*DFS V2 # Zone air movement description.
-*conflation 0  # conflation type (not applicable to cfd-only)
-*title ...                                                                     
+*DFS V2.2 # Zone air movement description.
+*conflation 0  # for use with stand-alone cfd solver only
+*title A room with a CFD domain with contaminant sources, not coupled                                                                 
 # user supplied notes for this domain
 *thermal_geom
 *vrts    1   2   4   5
@@ -37,7 +37,7 @@ Ceiling2     High    11  11   1   4  10  10
 Ceiling3     High    11  11   6   9  10  10
 Ceiling4     High    12  12   1   9  10  10
 CO2          Source   3   3   5   5   4   4
-Source16     Source   8   8   5   5   4   4
+Source016    Source   1  12   1   9   1  10
 # Solid boundary conditions.
 *solids 
 West_low     Temp  20.00
@@ -57,14 +57,17 @@ Ceiling4     Temp  20.00
 Inlet        Velocity  0.010 Temp 18.000 Hum  0.000 Area  0.000 Ang  0.000  0.000
 Outlet       Velocity -0.010 Temp 20.000 Hum  0.000 Area  0.000 Ang  0.000  0.000
 # Internal sources.
-*sources
-CO2          Hum   0.0 CO2 0.0000153737 Heat       0.000
-Humid        Hum   1.0 CO2 0.0000000000 Heat       0.000
+*contaminants(   2 contaminants, humdity is contaminant number   2 )
+CO_2           0    1.0000
+H2O            0    0.5900
+*volume name,heat source,cas gain index and fraction, CO_2 H2O                                                                                                                                                                                                                                                        
+CO2              0.0   0 0.00  0.0099999998 none        0.00 none                                                                                                                                                                                                                             
+Source016        0.0   0 0.00  0.00 none        0.0099999998 none                                                                                                                                                                                                                             
 # Blockages.
 *blockages
 *solution_methods
 Turbulence 3 # MIT
-Buoyancy 1 # full calculation
+Buoyancy 1 0.5000 # full calc, density lin relax fac
 # Equations to be solved:
 *solution_equations
 #  Type  Initial value  Relaxation type and factor
@@ -75,9 +78,9 @@ Vel W  0.100E-02 Linear  0.100
 Temp   20.000 Linear  0.500
 Ted  0.500E-02 Linear  0.700    
 Epd  0.500E-02 Linear  0.700    
-Conc    0.500000E-02 Linear    0.700000    
-Hum    0.500000E-02 Linear    0.700000    
-Lmage  0.05  Linear 0.6
+CO_2  n/a Linear    1.00    
+H2O  n/a Linear    1.00    
+Lmage  n/a Linear  n/a # currently 0.9 is always assumed
 # Iteration control.
 *iteration 
    500  0.1000E-01 No

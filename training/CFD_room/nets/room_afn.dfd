@@ -1,6 +1,6 @@
-*DFS V2 # Zone air movement description.
+*DFS V2.2 # Zone air movement description.
 *conflation 1  # conflation type (not applicable to cfd-only)
-*title ...                                                                     
+*title A room with a CFD domain, coupled with the building simulation and a mass flow network                                                                    
 # user supplied notes for this domain
 *thermal_geom
 *vrts    1   2   4   5
@@ -55,12 +55,12 @@ Ceiling4     Temp  20.00 | Confl   2 ceiling
 Inlet     Velocity  0.010 Temp 18.0 Hum 0.0 Area 0.0 Ang 0.0 0.0 room west open
 Outlet    Velocity -0.010 Temp 20.0 Hum 0.0 Area 0.0 Ang 0.0 0.0 room roof open
 # Internal sources.
-*sources
+*contaminants(   0 contaminants, humdity is contaminant number   0 )
 # Blockages.
 *blockages
 *solution_methods
 Turbulence 3 # MIT
-Buoyancy 1 # full calculation
+Buoyancy 1 0.5 # full calculation
 # Equations to be solved:
 *solution_equations
 #  Type  Initial value  Relaxation type and factor

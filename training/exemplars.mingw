@@ -357,6 +357,10 @@
 *cfg    C:\Esru\esp-r\training\cfd\IEA_A20\nonisotherm\cfg\dfs_niso.cfg
 *root	C:\Esru\esp-r\training\cfd\IEA_A20\nonisotherm
 *item
+*name   Multi-zone CFD with building + flow network coupling
+*cfg    C:\Esru\esp-r\training\cellular_cfd\cfg\cellular_cfd.cfg
+*root   C:\Esru\esp-r\training\cellular_cfd
+*item
 *group	combined thermal and electrical
 *help	A set of models demonstrating CHP modelling
 *item

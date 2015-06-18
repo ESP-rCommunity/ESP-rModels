@@ -1,0 +1,101 @@
+*** CFD VARIANT OF CELLULAR OFFICE MODEL ***
+
+This model is intended to showcase the multi-zone CFD functionality of ESP-r.  It includes the following 
+elements:
+- Building model of two adjacent offices with a corridor behind them.
+- Mass flow network that models inter-zonal air flow, taking account of air flow through open windows,
+  air flow through cracks under the doors (assumed to be closed), and a mechanical extract in the corridor 
+  with a constant flow rate of 2 AC/h.
+- Control schemes that attempt to maintain all three zones at a reasonable temperature, and also seek to 
+  model human behaviour in the opening of the windows in the office rooms.
+- CFD domains in all three zones that model intra-zonal air flow.  This is conflated to the mass flow
+  network, such that flow rates between the rooms are calculated by the mass flow network and imposed on 
+  the CFD domains, which then evaluate air flow patterns within the rooms.
+
+The two office zones have differently gridded CFD domains, demonstrating the trade-off between accuracy
+and run time that is implicit in any CFD problem.  Furthermore, the comparison highlights issues that
+arise when conflating CFD with building modeling in ESP-r, which leads to a number of conclusions that you 
+may find useful when planning your own building models with CFD in mind.
+
+Expert ESP-r users might notice that this model is missing a number of elements that are provided in
+most of the cellular office exemplars, namely simulation and IPV assessment presets.  This is because
+these elements have not yet been made fully compatible with the CFD in ESP-r; this will possibly be
+addressed in a future release.  Try running a simulation, and then run the same simulation with the
+model variant without CFD.  Notice the enormous difference in run time between the two.  This is one
+of the main pitfalls of CFD; putting a CFD domain into a building zone tends to increase the time 
+needed to simulate by a great deal.  This is more acute the more complex your domain.
+
+GRIDDING
+
+The first office, termed "manager_a" in the model, has a high resolution grid of 30x30x30 cells.  This
+is the default maximum CFD grid size in ESP-r, and whilst this can be manually increased, grids larger
+than this will be VERY slow to simulate on all but the most powerful computers.
+
+The second office, termed "manager_b" in the model, has a grid resolution that is half that of the first;
+15x15x15 cells.  This means that there are an eighth as many cells in this grid.  You will see this difference
+clearly when you run the model; the CFD for this zone is much quicker to run than the CFD for the first zone.
+However, this comes at a price in model fidelity.  
+
+For example, in the building model the window frames are modelled explicitly as distinct surfaces.  This is
+not a problem in the first office room, as the detailed grid has the fine resolution to account for this
+and assign boundary cells to these thin areas directly.  However, in the second office zone the more coarse
+gridding means that the cells are too large to be directly assigned to the window frames; in effect this 
+particular detail of the building model is lost to the CFD domain.
+
+There are numerous examples of this throughout the room.  Have a good look through the room geometry, 
+compare it with the CFD boudary conditions and you will see a number of instances where detail that is
+encapsulated in the fine CFD grid is lost in the coarse CFD grid.
+
+PLANNING FOR CFD
+
+Above we have covered grid resolution and its implications for the trade-off between accuracy and run time.
+However, there are other elements that must be considered when planning a building model for CFD.
+
+Firstly, in order to conflate CFD with a mass flow network the exact positions of the inter-zone air flow 
+openings must be defined within the CFD domain in terms of cells.  For example, in the corridor there is a
+mechanical extract.  This is explicitly modelled, with its own distinct surface in the building model that
+just happens to correspond exactly with a few cells in the CFD grid; how very convenient.  This is a classic
+example of planning for CFD.  Even if that is not the exact location of the extract, it is preferable to move
+it slightly in the building model and have it line up nicely with the CFD grid, as this allows the opening 
+area in the mass flow network and the area of the corresponding opening in the CFD domain to match up.
+
+However, what about the window openings and the door cracks?  These are not explicitly defined in the building
+model, so how do we represent them in the CFD domain?  Well, we need to make some assumptions.  In this 
+model it is assumed that air flow through the door cracks occurs at the bottom of the door, as this is often
+where the largest gap around a door is in practice.  For the windows, it is assumed that the high window
+opening is at the very top of the window, and the low window opening is at the very bottom.  This seems like a
+reasonable assumption, but how do we know this is true?  Essentially we don't, and this leads us to our next
+conclusion; model as explicitly as you can and you reduce the need for assumptions.  If the model were to 
+give us more detail on the window, for example a sash window for the lower and a smaller tilting window for the
+upper, this would give us a far better idea of where exactly the openings would be and how big they would be.
+This would give us much greater confidence to assign them to specific cells in the CFD domain.
+
+Finally, there is edge matching on opposite faces.  The CFD gridding in ESP-r is constrained to be orthogonal 
+in both horizontal dimensions; so you can only have 90-degree angled quadrilateral cells from a plan view.  
+This means that for the CFD gird to match up with the building model most effectively, the edges of the room 
+surfaces on all four walls should match the grid cell boundaries as closely as possible.  For example, the 
+offices have 0.4m of wall space on the partition with the corridor, followed by a 0.8m wide door.  Even with 
+the coarse CFD grid, which has a grid dimension of 0.2m in this dimension, this matches up nicely; 2 cells 
+width for the wall and 4 cells width for the door.  However what if the door was moved over by 0.1m, so there 
+was 0.3m of wall space then the 0.8m wide door then another 0.1m of wall space?  This would move the surface 
+edges off the CFD grid boundaries. Now an obvious solution to this would be to adjust the cell sizes to 
+compensate, but what if there was a surface edge on the opposite wall in the 0.4m position?  By adjusting the 
+cell sizes we would then throw off the edge matching for this surface.  This leads us to our third conclusion; 
+when planning for CFD try to consider how the surface edges on opposite faces will match up.  If they will be 
+slightly off, it may be better to just move the boundary slightly to match; even if this means moving a wall 
+slightly or moving a door over a little, a small change in model geometry is not likely to have a huge effect 
+on the predictions of the model.
+
+SUMMARY
+
+When creating a building model that you intend to include CFD in, you will find that you can avoid many 
+headaches by planning the model thoroughly, with CFD in mind, before you build it.  The main points to consider
+are:
+1. What will your grid resolution be?  Do you want a fine grid to analyse the air flow in the room to a high 
+   degree of detail, but which will take a long time to simulate?  Or do you want a coarse a grid that will not
+   model the room in detail, but which will simulate much quicker?  Often the best answer is somewhere in 
+   between these two extremes.
+2. Where and what size will your air flow openings be?  It is often convenient to represent these explicitly in
+   the model, so you can then match the edges up to cell boundaries as in step 3.
+3. Will your surface edges match up to CFD grid cell boundaries, especially on opposite faces of the room?  If
+   not, consider moving some of the edges slightly to make them match.

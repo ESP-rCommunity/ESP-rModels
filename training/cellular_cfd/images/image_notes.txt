@@ -1,0 +1,8 @@
+These images were created using the program ParaView. ParaView is free and
+open-source software, and ESP-r has functionality to output CFD results
+in a format compatible with ParaView (just enter the CFD portion of the
+res module, load in the CFD results library and toggle to ParaView file 
+format). As well as the directional glyphs and streamlines demonstrated 
+here ParaView can create contour plots, cut planes, and many other 
+visualisations. Different visualisations can also be layered on top of 
+one another, and animations through time can be created.

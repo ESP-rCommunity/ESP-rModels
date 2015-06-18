@@ -1,4 +1,4 @@
-*DFS V2 # Zone air movement description.
+*DFS V2.2 # Zone air movement description.
 *conflation 0  # conflation type (not applicable to cfd-only)
 *title  Using the Boussinesque approximation for buoyant flows                                                                       
 # user supplied notes for this domain
@@ -50,7 +50,7 @@ Wall14       Heat   0.00
 Inflow1      Velocity  0.020 Temp 15.000 Hum  0.000 Area  0.000 Ang  0.000  0.000
 Outflow1     Velocity -0.020 Temp 20.000 Hum  0.000 Area  0.000 Ang  0.000  0.000
 # Internal sources.
-*sources
+*contaminants(   0 contaminants, humidity is contaminant number   0 )
 # Blockages.
 *blockages
 *solution_methods

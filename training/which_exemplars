@@ -118,3 +118,4 @@ flow/cfg/bld_flw_ctl.cfg
 flow/cfg/bld_mech_ven_th.cfg
 flow/cfg/bld_mech_ven.cfg
 office_doctor/cfg/office_for_doctor.cfg
+cellular_cfd/cfg/cellular_cfd.cfg

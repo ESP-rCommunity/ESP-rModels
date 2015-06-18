@@ -7,7 +7,7 @@
 DFS=$1
 model=$2
 #
-rm -f CFD_mon TECend.DAT
+rm -f CFD.mon_01 TECend.DAT
 # 
 time $DFS -mode text -file $model".dfd" 1> $model"_bi-cg.out" 2> $model"_bi-cg.time" << XYZ 
 c
@@ -25,6 +25,6 @@ n
 y
 y
 XYZ
-mv CFD_mon $model"_bi-cg.mon"
+mv CFD.mon_01 $model"_bi-cg.mon"
 mv TECend.DAT $model"_bi-cg.TEC"
 rm -f tmp_DFS_1 CFD_new_phi

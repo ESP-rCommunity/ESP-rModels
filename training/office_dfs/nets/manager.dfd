@@ -1,4 +1,4 @@
-*DFS V2 # Zone air movement description.
+*DFS V2.2 # Zone air movement description.
 *conflation 0  # conflation type (not applicable to cfd-only)
 *title heater at vent surface, ceiling fresh air inlet and extract             
 # this is a course grid version
@@ -43,8 +43,8 @@ bk_glassn   North   7 14 15 15  2 14
 left_walln  West    1  1  1 15  1 15
 right_walln East   15 15  1 15  1 15
 floor       Low     1 15  1 15  1  1
-front_ceil  High    1 15  1  7 15 15
-bk_ceiling  High    1 15  9 15 15 15
+front_ceil  High    1 15  1  9 15 15
+bk_ceiling  High    1 15 11 15 15 15
 ceil_an     High    1  5 10 10 15 15
 ceil_b      High    7 10 10 10 15 15
 ceil_c      High   12 15 10 10 15 15
@@ -80,12 +80,12 @@ ceil_c       Temp  15.00
 inletn       Velocity  0.015 Temp 22.000 Hum  0.000 Area  0.000 Ang  0.000  0.000
 extractn     Velocity -0.015 Temp 22.000 Hum  0.000 Area  0.000 Ang  0.000  0.000
 # Internal sources.
-*sources
+*contaminants(   0 contaminants, humdity is contaminant number   0 )
 # Blockages.
 *blockages
 *solution_methods
 Turbulence 1 # k-e model
-Buoyancy 1 # solved
+Buoyancy 1 0.5 # solved
 # Equations to be solved:
 *solution_equations
 #  Type  Initial value  Relaxation type and factor

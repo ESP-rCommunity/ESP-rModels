@@ -1,4 +1,4 @@
-*DFS V2 # Zone air movement description.
+*DFS V2.2 # Zone air movement description.
 *conflation 0  # conflation type (not applicable to cfd-only)
 *title A test with blockages and a humidity source in the room                                                                         
 # user supplied notes for this domain
@@ -15,7 +15,7 @@
 *zwregion
   10   2.000   0.900 # no cells, length, power law coeff
 # Define the volumes for the CFD domain.
-*volumes   17
+*volumes   18
 # name  type  Ii If Ji Jf Ki Kf
 Inflow1      West    1  1  4  5  7  8
 Outflow1     High   10 11  4  5 10 10
@@ -34,6 +34,7 @@ Wall14       High   10 11  6  8 10 10
 Block15      Block   3  4  3  4  1  2
 Block16      Block  11 12  7  8  9 10
 Block17      Block   7  8  1  2  1  2
+Source18     Source  1  12 1  8  1 10
 # Solid boundary conditions.
 *solids 
 Wall3        Heat   0.00
@@ -53,7 +54,10 @@ Wall14       Heat   0.00
 Inflow1      Velocity  0.020 Temp 20.000 Hum  0.000 Area  0.000 Ang  0.000  0.000
 Outflow1     Velocity -0.020 Temp 20.000 Hum  0.000 Area  0.000 Ang  0.000  0.000
 # Internal sources.
-*sources
+*contaminants(   1 contaminants, humdity is contaminant number   1 )
+H2O           0    0.5900
+*volume name,heat source,cas gain index and fraction, H2O                                                 
+Source18         0.0   0 0.00  0.0000150000 none                  
 # Blockages.
 *blockages
 Block15      Heat   0.000
@@ -71,14 +75,10 @@ Vel V  0.100E-02 Linear  0.500
 Vel W  0.100E-02 Linear  0.500
 Ted  0.500E-02 Linear  0.700    
 Epd  0.500E-02 Linear  0.700    
-Hum    0.500000E-02 Linear    0.700000    
+H2O    0.500000E-02 Linear    0.700000    
 # Iteration control.
 *iteration 
    500  0.1000E-03 No
 *monitor    6   4   8  CFD.mon
 *reint  NO
 *svf  1  # frequency of results writing
-
-
-
-

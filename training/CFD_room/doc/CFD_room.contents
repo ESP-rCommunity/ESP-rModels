@@ -1,7 +1,7 @@
 Synopsis
  
 Synopsis of the model A basic room with basic CFD domain defined (buoyancy not
-solved) defined in CFD_room.cfg generated on Sun Dec  8 15:25:07 2013. Notes
+solved) defined in CFD_room.cfg generated on Mon May 18 09:41:10 2015. Notes
 associated with the model are in ../doc/CFD_room.log
  
 The model is located at latitude   55.00 with a longitude difference of   0.00
@@ -32,8 +32,8 @@ An Integrated Performance View is incomplete or missing.
  
 Databases associated with the model:
  standard pressure distr: pressc.db1
- standard materials     : material.db4.a
- constructions          : ../dbs/multicon.db1
+ standard materials     : constr_db3.materialdb
+ standard constructions : multicon.db1
  standard plant comp    : plantc.db1
  standard event profiles: profiles.db1.a
  standard optical prop  : optics.db1
@@ -69,10 +69,105 @@ ID Zone         Volume|          Surface
   7  0.060   270.   0. inlet        OPAQUE   VERT -     dummy_pnls   ||< identical environment
   8  0.060     0.  90. outlet       OPAQUE   CEIL -     dummy_pnls   ||< identical environment
  
+ Vertices ( index X Y Z) in the zone...
+*vertex   1     0.00000     0.00000     0.00000
+*vertex   2     4.20000     0.00000     0.00000
+*vertex   3     4.20000     3.60000     0.00000
+*vertex   4     0.00000     3.60000     0.00000
+*vertex   5     0.00000     0.00000     3.00000
+*vertex   6     4.20000     0.00000     3.00000
+*vertex   7     4.20000     3.60000     3.00000
+*vertex   8     0.00000     3.60000     3.00000
+*vertex   9     0.00000     1.95000     2.05000
+*vertex  10     0.00000     1.65000     2.05000
+*vertex  11     0.00000     1.65000     2.25000
+*vertex  12     0.00000     1.95000     2.25000
+*vertex  13     3.75000     1.65000     3.00000
+*vertex  14     3.95000     1.65000     3.00000
+*vertex  15     3.95000     1.95000     3.00000
+*vertex  16     3.75000     1.95000     3.00000
+ Number of vertices followed by list, name & perimeter length
+*edges,4,1,2,6,5   south  14.400m perimeter
+*edges,4,2,3,7,6   east  13.200m perimeter
+*edges,4,3,4,8,7   north  14.400m perimeter
+*edges,10,4,1,5,8,4,9,12,11,10,9   west  19.463m perimeter
+*edges,10,5,6,7,8,5,13,16,15,14,13   ceiling  24.794m perimeter
+*edges,4,1,4,3,2   floor  15.600m perimeter
+*edges,4,9,10,11,12   inlet   1.000m perimeter
+*edges,4,13,14,15,16   outlet   1.000m perimeter
  
  All surfaces will receive diffuse insolation (if shading not calculated).
  No shading analysis requested.
  No insolation analysis requested.
+ A CFD domain has been defined for this zone.
+ 
+A CFD domain has been described for: room
+Description is: A room with a CFD domain, basic template
+Building-CFD conflation type 0: CFD only (no conflation)
+  WARNING: A domain with this conflation type will not run alongside a building model.
+           Please use the domain flow solver module (DFS) to simulate this domain.
+ 
+The current domain is orthogonal with:
+   3 X regions
+   3 Y regions
+   3 Z regions
+X Region   1, cells:  10, size:  3.75, power law coef: 1.100
+X Region   2, cells:   1, size:  0.20, power law coef: 1.000
+X Region   3, cells:   1, size:  0.25, power law coef: 1.000
+  Totals            12        4.20
+Y Region   1, cells:   4, size:  1.65, power law coef: 1.100
+Y Region   2, cells:   1, size:  0.30, power law coef: 1.000
+Y Region   3, cells:   4, size:  1.65, power law coef: 1.100
+  Totals             9        3.60
+Z Region  1, cells:   6, size:  2.05, power law coef: 1.100
+Z Region  2, cells:   1, size:  0.20, power law coef: 1.000
+Z Region  3, cells:   3, size:  0.75, power law coef: 1.000
+  Totals            10        3.00
+ 
+Volume Inlet is on the West face, cells:   1   1   5   5   7   7
+Volume Outlet is on the High face, cells:  11  11   5   5  10  10
+Volume West_low is on the West face, cells:   1   1   1   9   1   6
+Volume West_mid1 is on the West face, cells:   1   1   1   4   7   7
+Volume West_mid2 is on the West face, cells:   1   1   6   9   7   7
+Volume West_top is on the West face, cells:   1   1   1   9   8  10
+Volume South is on the South face, cells:   1  12   1   1   1  10
+Volume North is on the North face, cells:   1  12   9   9   1  10
+Volume East is on the East face, cells:  12  12   1   9   1  10
+Volume Floor is on the Low face, cells:   1  12   1   9   1   1
+Volume Ceiling1 is on the High face, cells:   1  10   1   9  10  10
+Volume Ceiling2 is on the High face, cells:  11  11   1   4  10  10
+Volume Ceiling3 is on the High face, cells:  11  11   6   9  10  10
+Volume Ceiling4 is on the High face, cells:  12  12   1   9  10  10
+NOTE: Face orientations (North, South, East and West) are in terms of the CFD domain only.
+      This does not necessarily match building geometry.
+ 
+Solid boundary condition West_low is of type Temp, with constant temperature   20.00 degrees C
+Solid boundary condition West_mid1 is of type Temp, with constant temperature   20.00 degrees C
+Solid boundary condition West_mid2 is of type Temp, with constant temperature   20.00 degrees C
+Solid boundary condition West_top is of type Temp, with constant temperature   20.00 degrees C
+Solid boundary condition South is of type Temp, with constant temperature   20.00 degrees C
+Solid boundary condition North is of type Temp, with constant temperature   20.00 degrees C
+Solid boundary condition East is of type Temp, with constant temperature   20.00 degrees C
+Solid boundary condition Floor is of type Temp, with constant temperature   20.00 degrees C
+Solid boundary condition Ceiling1 is of type Temp, with constant temperature   20.00 degrees C
+Solid boundary condition Ceiling2 is of type Temp, with constant temperature   20.00 degrees C
+Solid boundary condition Ceiling3 is of type Temp, with constant temperature   20.00 degrees C
+Solid boundary condition Ceiling4 is of type Temp, with constant temperature   20.00 degrees C
+ 
+Opening Inlet is of type Velocity, velocity   0.0100, temperature  20.00, humdity   0.00
+Opening Outlet is of type Velocity, velocity  -0.0100, temperature  20.00, humdity   0.00
+ 
+ 
+ 
+MIT zero-equation turbulence model active
+Solving pressure (P), initial value   0.0000, relaxation factor 1.00
+Solving velocity in X direction (Vu), initial value   0.0010, relaxation factor 0.50
+Solving velocity in Y direction (Vv), initial value   0.0010, relaxation factor 0.50
+Solving velocity in Z direction (Vw), initial value   0.0010, relaxation factor 0.50
+Solving turbulence energy (k), initial value   0.0050, relaxation factor 0.70
+Solving turbulence energy dissipation rate (e), initial value   0.0050, relaxation factor 0.70
+Convergence criterion is maximum sum of residuals  0.100E-01 within   500 iterations.
+Monitoring cell is  7  5  6
  
  
  Air schedule notes:
@@ -110,10 +205,10 @@ Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Con
  
  Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
       |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   100.0     0.960  2000.   650. 0.90 0.93    25.  0.10 outer leaf brick : Outer leaf brick (inorganic-porous)
-    2   75.0     0.040   250.   840. 0.90 0.30     4.  1.88 glasswool : Glasswool (generic) (non-hygroscopic)
+ Ext   100.0     0.960  2000.   650. 0.90 0.93    25.  0.10 Outer leaf brick : Outer leaf brick
+    2   75.0     0.040   250.   840. 0.90 0.30     4.  1.88 Glasswool : Glasswool
     3   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int   100.0     0.440  1500.   650. 0.90 0.65    15.  0.23 breeze block : Breeze block (inorganic-porous)
+ Int   100.0     0.440  1500.   650. 0.90 0.65    15.  0.23 Breeze block : Breeze block
  ISO 6946 U values (horiz/upward/downward heat flow)=  0.393  0.397  0.387 (partition)  0.379
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.39
@@ -125,10 +220,10 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.39
  
  Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
       |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   100.0     1.280  1460.   879. 0.90 0.85     5.  0.08 earth std : Common_earth
-    2  100.0     2.900  2650.   900. 0.90 0.55    77.  0.03 red granite : Red granite (inorganic-porous)
-    3   50.0     1.400  2100.   653. 0.90 0.65    19.  0.04 heavy mix concrete : Heavy mix concrete
- Int    50.0     1.400  2100.   650. 0.91 0.65    19.  0.04 cement screed : Cement screed (inorganic-porous)
+ Ext   100.0     1.280  1460.   879. 0.90 0.85     5.  0.08 Common_earth : Common_earth
+    2  100.0     2.900  2650.   900. 0.90 0.55    77.  0.03 Red granite : Red granite
+    3   50.0     1.400  2100.   653. 0.90 0.65    19.  0.04 Heavy mix concrete : Heavy mix concrete
+ Int    50.0     1.400  2100.   650. 0.91 0.65    19.  0.04 Cement screed : Cement screed
  ISO 6946 U values (horiz/upward/downward heat flow)=  2.825  3.086  2.538 (partition)  2.252
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.75
@@ -140,11 +235,11 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.75
  
  Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
       |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext    13.0     0.420  1200.   837. 0.91 0.50    11.  0.03 gypsum plaster : Gypsum based plaster (inorganic-porous)
+ Ext    13.0     0.420  1200.   837. 0.91 0.50    11.  0.03 Gypsum plaster : Gypsum plaster
     2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
-    3  100.0     0.510  1400.  1000. 0.90 0.65    10.  0.20 block inner : Block inner (3% mc)
+    3  100.0     0.510  1400.  1000. 0.90 0.65    10.  0.20 Block inner (3% mc) : Block inner (3% mc)
     4   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int    13.0     0.420  1200.   837. 0.91 0.50    11.  0.03 gypsum plaster : Gypsum based plaster (inorganic-porous)
+ Int    13.0     0.420  1200.   837. 0.91 0.50    11.  0.03 Gypsum plaster : Gypsum plaster
  ISO 6946 U values (horiz/upward/downward heat flow)=  1.302  1.355  1.238 (partition)  1.166
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.29
@@ -156,9 +251,9 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.29
  
  Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
       |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext     3.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 aluminium : Aluminium
-    2   80.0     0.040    12.   840. 0.90 0.65    30.  2.00 glass fibre quilt : Glass Fibre Quilt (non-hygroscopic)
- Int     3.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 aluminium : Aluminium
+ Ext     3.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 Aluminium : Aluminium
+    2   80.0     0.040    12.   840. 0.90 0.65    30.  2.00 Glass Fibre Quilt : Glass Fibre Quilt
+ Int     3.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 Aluminium : Aluminium
  ISO 6946 U values (horiz/upward/downward heat flow)=  0.461  0.467  0.452 (partition)  0.442
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.46
@@ -170,8 +265,8 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.46
  
  Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
       |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   100.0     0.040   250.   840. 0.90 0.30     4.  2.50 glasswool : Glasswool (generic) (non-hygroscopic)
- Int    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33 ceiling mineral : Ceiling acoustic tile (mineral fibre based)
+ Ext   100.0     0.040   250.   840. 0.90 0.30     4.  2.50 Glasswool : Glasswool
+ Int    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33 Ceiling (mineral) : Ceiling (mineral)
  ISO 6946 U values (horiz/upward/downward heat flow)=  0.333  0.336  0.329 (partition)  0.323
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.33

@@ -71,7 +71,7 @@ end
 if ( $A == 1 || $A == 3 ) then
   foreach i (basic block block2 block3 blockc blockh \
              blocklma basiclma co2_so hum_so lma sso \
-             tm1 porous tm2_so tst33vol)
+             tm1 porous tst33vol)
     @ test ++
     echo "Test "$test": "$i".dfd with the default solver."
     cd Models; ./dfs_basic.sh $DFS $i; cd ..
@@ -101,34 +101,24 @@ endif
 # Fast not converging tests
 #
 if ( $A == 1 || $A == 3 ) then
-  foreach i (displ displ_si tm1_so)
+  foreach i (displ displ_si tm1_so tm2_so tm1a tm1b)
     @ test ++
     echo "Test "$test": "$i".dfd with the default solver."
     cd Models; ./dfs_not_conv.sh $DFS $i; cd ..
   end
 endif
 #
-# OS dependent tests
-#
-if ( $A == 1 || $A == 3 ) then
-  foreach i (tm1a tm1b)
-    @ test ++
-    echo "Test "$test": "$i".dfd with the default solver."
-    cd Models; ./dfs_basic.sh $DFS $i; cd ..
-  end
-endif
-#
-# Slow converging tests
+# Slow not converging tests
 #
 if ( $A == 2 || $A == 3 ) then
   foreach i (blockt)
     @ test ++
     echo "Test "$test": "$i".dfd with the default solver."
-    cd Models; ./dfs_basic.sh $DFS $i; cd ..
+    cd Models; ./dfs_not_conv.sh $DFS $i; cd ..
   end
 endif
 #
-# Slow not converging tests
+# Slow converging tests
 #
 if ( $A == 2 || $A == 3 ) then
   foreach i (bi-cg)

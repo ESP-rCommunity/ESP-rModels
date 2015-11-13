@@ -1,0 +1,995 @@
+Synopsis
+ 
+Synopsis of the model matrix of rooms for testing casual gain controls defined
+in casual_gain_control.cfg generated on Thu Sep 10 09:38:19 2015. Associated
+notes are in ../doc/casual_gain_control.log
+ 
+The model is located at latitude   55.90 with a longitude difference of  -4.10
+from the local time meridian. The year used in simulations is 2007 and
+weekends occur on Saturday and Sunday.
+The site exposure is typical city centre and the ground reflectance is 0.20.
+ 
+ 
+Simulationist name: not yet defined
+Simulationist telephone: not yet defined
+Simulationist address: not yet defined
+Simulationist city: not yet defined
+Simulationist postcode: not yet defined
+ 
+The climate is: ESP test climate and is held in: clm67 with hour centred solar
+data.
+ standard annual weather: clm67
+Calculated ground temp at 0.5m depth
+3.0888 4.3008 6.6610 8.8949 13.123 15.349 15.963 14.834 12.227 8.9770 5.7777 3.6649
+Calculated ground temp at 1.0m depth
+3.6630 4.5020 6.4738 8.4398 12.343 14.560 15.374 14.612 12.434 9.5459 6.5633 4.4524
+Calculated ground temp at 2.0m depth
+4.7588 5.0557 6.4004 7.8990 11.149 13.226 14.259 14.027 12.542 10.298 7.7730 5.7855
+Calculated ground temp at 4.0m depth
+6.4880 6.2779 6.8663 7.7174 9.8661 11.475 12.517 12.771 12.121 10.800 9.0880 7.5409
+ 
+An Integrated Performance View is incomplete or missing.
+ 
+Databases associated with the model:
+ standard pressure distr: pressc.db1
+ standard materials     : material.db4.a
+ standard constructions : multicon.db4
+ standard plant comp    : plantc.db1
+ standard event profiles: profiles.db2.a
+ standard optical prop  : optics.db2
+ standard UK NCM data   : SBEM.db1
+ standard mould isopleth: mould.db1
+ 
+ ____________________________________________________________
+ 
+ID Zone         Volume|          Surface
+   Name         m^3   | No. Opaque  Transp  ~Floor
+ 1 basecase       37.5   8    67.1     2.9    15.0  basecase describes a 3mx5mx2.5m office with facade
+ 2 cgc_a          37.5   8    67.1     2.9    15.0  cgc_a is as base case but with cgc control via analytic df
+ 3 cgc_b          37.5   8    67.1     2.9    15.0  cgc_b similar to cgc_a but with user specified df
+ 4 cgc_c          37.5   8    67.1     2.9    15.0  cgc_c similar to cgc_a but with external surface sensor
+ 5 cgc_d          37.5   8    67.1     2.9    15.0  cgc_d as cgc_b but with Hunt probability switching
+ 6 cgc_e          37.5   8    67.1     2.9    15.0  cgc_e with radiance coupling every timestep
+   all           225.   48    403.     17.     90.
+ 
+ 
+ Zone basecase ( 1) is composed of 8 surfaces and 16 vertices.
+ It encloses a volume of 37.5m^3 of space, with a total surface
+ area of 70.0m^2 & approx floor area of 15.0m^2
+ basecase describes a 3mx5mx2.5m office with facade
+ There is 7.5000m2 of exposed surface area, 7.5000m2 of which is vertical.
+ Outside walls are 30.800 % of floor area & average U of 0.270 & UA of 1.2482
+ Glazing is 19.200 % of floor & 38.400 % facade with average U of 2.811 & UA of 8.0947
+ 
+ A summary of the surfaces in basecase( 1) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  3.86    180.   0. facade       OPAQUE   VERT -        -        TimberU0.23  ||< external
+  2  12.5     90.   0. right        OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  3  7.50      0.   0. back         OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  4  12.5    270.   0. left         OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  5  15.0      0.  90. ceiling      OPAQUE   CEIL -        -        cpt_cel2flr  ||< identical environment
+  6  15.0      0. -90. floor        OPAQUE   FLOR -        -        cpt_flr2cel  ||< identical environment
+  7  0.760   180.   0. frame        OPAQUE   VERT F-FRAME  CLOSED   insul_frame  ||< external
+  8  2.88    180.   0. glazing      DCF7671_ VERT C-WINDOW CLOSED   dbl_glz      ||< external
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1     0.00000     0.00000     0.00000
+*vertex   2     3.00000     0.00000     0.00000
+*vertex   3     3.00000     5.00000     0.00000
+*vertex   4     0.00000     5.00000     0.00000
+*vertex   5     0.00000     0.00000     2.50000
+*vertex   6     3.00000     0.00000     2.50000
+*vertex   7     3.00000     5.00000     2.50000
+*vertex   8     0.00000     5.00000     2.50000
+*vertex   9     0.20000     0.00000     0.80000
+*vertex  10     2.80000     0.00000     0.80000
+*vertex  11     2.80000     0.00000     2.20000
+*vertex  12     0.20000     0.00000     2.20000
+*vertex  13     0.30000     0.00000     0.90000
+*vertex  14     2.70000     0.00000     0.90000
+*vertex  15     2.70000     0.00000     2.10000
+*vertex  16     0.30000     0.00000     2.10000
+ Number of vertices followed by list, name & perimeter length
+*edges,10,1,2,6,5,1,9,12,11,10,9   facade  20.649m perimeter
+*edges,4,2,3,7,6   right  15.000m perimeter
+*edges,4,3,4,8,7   back  11.000m perimeter
+*edges,4,4,1,5,8   left  15.000m perimeter
+*edges,4,5,6,7,8   ceiling  16.000m perimeter
+*edges,4,1,4,3,2   floor  16.000m perimeter
+*edges,10,9,10,11,12,9,13,16,15,14,13   frame  15.483m perimeter
+*edges,4,13,14,15,16   glazing   7.200m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ 
+ 
+ Air schedule notes:
+half air change of infiltration
+ Control: no control of air flow
+ 
+Scheduled air infiltration and ventilation:
+Daytype    Period     Infiltration     Ventilation     From Source
+           id Hours   Rate ac/h m3/s   Rate ac/h m3/s  Zone DegC
+weekdays   1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+saturday   1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+sunday     1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+holiday    1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+ 
+Notes:
+general office hours weekdays mornings on saturday 2 people but less
+at lunch  small IT load outwith office hours  lights partly switched
+at lunch hour
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekdays    1 people     people    W    0- 8      0.0      0.0       0.60       0.40
+weekdays    2 people     people    W    8-12    200.0    100.0       0.60       0.40
+weekdays    3 people     people    W   12-13    100.0     50.0       0.60       0.40
+weekdays    4 people     people    W   13-18    180.0     90.0       0.60       0.40
+weekdays    5 people     people    W   18-24      0.0      0.0       0.60       0.40
+weekdays    6 it_kit     equipment W    0- 8     30.0      0.0       0.40       0.60
+weekdays    7 it_kit     equipment W    8-18     80.0      0.0       0.40       0.60
+weekdays    8 it_kit     equipment W   18-24     30.0      0.0       0.40       0.60
+weekdays    9 lights     lighting  W    0- 8      0.0      0.0       0.40       0.60
+weekdays   10 lights     lighting  W    8-12    150.0      0.0       0.30       0.70
+weekdays   11 lights     lighting  W   12-13    100.0      0.0       0.30       0.70
+weekdays   12 lights     lighting  W   13-18    150.0      0.0       0.30       0.70
+weekdays   13 lights     lighting  W   18-24      0.0      0.0       0.40       0.60
+ 
+saturday    1 people     people    W    0- 9      0.0      0.0       0.60       0.40
+saturday    2 people     people    W    9-12    100.0     50.0       0.60       0.40
+saturday    3 people     people    W   12-24      0.0      0.0       0.60       0.40
+saturday    4 it_kit     equipment W    0- 9     30.0      0.0       0.40       0.60
+saturday    5 it_kit     equipment W    9-13     60.0      0.0       0.40       0.60
+saturday    6 it_kit     equipment W   13-24     30.0      0.0       0.40       0.60
+saturday    7 lights     lighting  W    0- 8      0.0      0.0       0.40       0.60
+saturday    8 lights     lighting  W    8-13    150.0      0.0       0.30       0.70
+saturday    9 lights     lighting  W   13-24      0.0      0.0       0.40       0.60
+ 
+sunday      1 people     people    W    0-24      0.0      0.0       0.60       0.40
+sunday      2 it_kit     equipment W    0-24     30.0      0.0       0.40       0.60
+sunday      3 lights     lighting  W    0-24     10.0      0.0       0.30       0.70
+ 
+holiday     1 people     people    W    0-24      0.0      0.0       0.60       0.40
+holiday     2 it_kit     equipment W    0-24     30.0      0.0       0.40       0.60
+holiday     3 lights     lighting  W    0-24      0.0      0.0       0.40       0.60
+ 
+ 
+ ____________________________________________________________
+ 
+ Zone cgc_a ( 2) is composed of 8 surfaces and 16 vertices.
+ It encloses a volume of 37.5m^3 of space, with a total surface
+ area of 70.0m^2 & approx floor area of 15.0m^2
+ cgc_a is as base case but with cgc control via analytic df
+ There is 7.5000m2 of exposed surface area, 7.5000m2 of which is vertical.
+ Outside walls are 30.800 % of floor area & average U of 0.270 & UA of 1.2482
+ Glazing is 19.200 % of floor & 38.400 % facade with average U of 2.811 & UA of 8.0947
+ 
+ A summary of the surfaces in cgc_a( 2) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  3.86    180.   0. facade       OPAQUE   VERT -        -        TimberU0.23  ||< external
+  2  12.5     90.   0. right        OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  3  7.50      0.   0. back         OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  4  12.5    270.   0. left         OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  5  15.0      0.  90. ceiling      OPAQUE   CEIL -        -        cpt_cel2flr  ||< identical environment
+  6  15.0      0. -90. floor        OPAQUE   FLOR -        -        cpt_flr2cel  ||< identical environment
+  7  0.760   180.   0. frame        OPAQUE   VERT F-FRAME  CLOSED   insul_frame  ||< external
+  8  2.88    180.   0. glazing      DCF7671_ VERT C-WINDOW CLOSED   dbl_glz      ||< external
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1     3.00000     0.00000     0.00000
+*vertex   2     6.00000     0.00000     0.00000
+*vertex   3     6.00000     5.00000     0.00000
+*vertex   4     3.00000     5.00000     0.00000
+*vertex   5     3.00000     0.00000     2.50000
+*vertex   6     6.00000     0.00000     2.50000
+*vertex   7     6.00000     5.00000     2.50000
+*vertex   8     3.00000     5.00000     2.50000
+*vertex   9     3.20000     0.00000     0.80000
+*vertex  10     5.80000     0.00000     0.80000
+*vertex  11     5.80000     0.00000     2.20000
+*vertex  12     3.20000     0.00000     2.20000
+*vertex  13     3.30000     0.00000     0.90000
+*vertex  14     5.70000     0.00000     0.90000
+*vertex  15     5.70000     0.00000     2.10000
+*vertex  16     3.30000     0.00000     2.10000
+ Number of vertices followed by list, name & perimeter length
+*edges,10,1,2,6,5,1,9,12,11,10,9   facade  20.649m perimeter
+*edges,4,2,3,7,6   right  15.000m perimeter
+*edges,4,3,4,8,7   back  11.000m perimeter
+*edges,4,4,1,5,8   left  15.000m perimeter
+*edges,4,5,6,7,8   ceiling  16.000m perimeter
+*edges,4,1,4,3,2   floor  16.000m perimeter
+*edges,10,9,10,11,12,9,13,16,15,14,13   frame  15.483m perimeter
+*edges,4,13,14,15,16   glazing   7.200m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ Casual gains are controlled in this zone.
+ 
+ Zone  2 cgc_a
+ Light zone 1
+ Average of  1 analytical daylight factor photocell types.
+ 
+ Set   |Switch-off |Minimum dimming|Minimal elec|Switch-off
+ point |light level|light output   |light output|delay time
+  400.0         1.5          0.20          0.20         0
+ 
+ Sensor| % of |Calculation         |   X  |   Y  |   Z  |  DX |  DY |  DZ |
+ number| whole|type                |      |      |      |     |     |     |
+      1  0.50 Analytical DF         4.50   2.00   0.90  0.00  0.00  1.00
+ 
+ 
+Day        |Gain| Light|Start|Finish| Control       |
+           |Type| Zone |Hour |Hour  | Type          |
+weekdays     2     1      8     18     2 Step 100:50:0
+saturday     0     1      0      1     2 Step 100:50:0
+sunday       0     1      0      1     2 Step 100:50:0
+holiday      0     1      0      1     2 Step 100:50:0
+ Light zone 2
+ Average of  1 analytical daylight factor photocell types.
+ 
+ Set   |Switch-off |Minimum dimming|Minimal elec|Switch-off
+ point |light level|light output   |light output|delay time
+  400.0         1.5          0.20          0.20         0
+ 
+ Sensor| % of |Calculation         |   X  |   Y  |   Z  |  DX |  DY |  DZ |
+ number| whole|type                |      |      |      |     |     |     |
+      1  0.50 Analytical DF         4.50   4.00   0.90  0.00  0.00  1.00
+ 
+ 
+Day        |Gain| Light|Start|Finish| Control       |
+           |Type| Zone |Hour |Hour  | Type          |
+weekdays     2     2      8     18     2 Step 100:50:0
+saturday     0     2      0      1     2 Step 100:50:0
+sunday       0     2      0      1     2 Step 100:50:0
+holiday      0     2      0      1     2 Step 100:50:0
+ 
+ 
+ Air schedule notes:
+half air change of infiltration
+ Control: no control of air flow
+ 
+Scheduled air infiltration and ventilation:
+Daytype    Period     Infiltration     Ventilation     From Source
+           id Hours   Rate ac/h m3/s   Rate ac/h m3/s  Zone DegC
+weekdays   1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+saturday   1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+sunday     1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+holiday    1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+ 
+Notes:
+general office hours weekdays mornings on saturday 2 people but less
+at lunch  small IT load outwith office hours  lights partly switched
+at lunch hour
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekdays    1 people     people    W    0- 8      0.0      0.0       0.60       0.40
+weekdays    2 people     people    W    8-12    200.0    100.0       0.60       0.40
+weekdays    3 people     people    W   12-13    100.0     50.0       0.60       0.40
+weekdays    4 people     people    W   13-18    180.0     90.0       0.60       0.40
+weekdays    5 people     people    W   18-24      0.0      0.0       0.60       0.40
+weekdays    6 it_kit     equipment W    0- 8     30.0      0.0       0.40       0.60
+weekdays    7 it_kit     equipment W    8-18     80.0      0.0       0.40       0.60
+weekdays    8 it_kit     equipment W   18-24     30.0      0.0       0.40       0.60
+weekdays    9 lights     lighting  W    0- 8      0.0      0.0       0.40       0.60
+weekdays   10 lights     lighting  W    8-12    150.0      0.0       0.30       0.70
+weekdays   11 lights     lighting  W   12-13    100.0      0.0       0.30       0.70
+weekdays   12 lights     lighting  W   13-18    150.0      0.0       0.30       0.70
+weekdays   13 lights     lighting  W   18-24      0.0      0.0       0.40       0.60
+ 
+saturday    1 people     people    W    0- 9      0.0      0.0       0.60       0.40
+saturday    2 people     people    W    9-12    100.0     50.0       0.60       0.40
+saturday    3 people     people    W   12-24      0.0      0.0       0.60       0.40
+saturday    4 it_kit     equipment W    0- 9     30.0      0.0       0.40       0.60
+saturday    5 it_kit     equipment W    9-13     60.0      0.0       0.40       0.60
+saturday    6 it_kit     equipment W   13-24     30.0      0.0       0.40       0.60
+saturday    7 lights     lighting  W    0- 8      0.0      0.0       0.40       0.60
+saturday    8 lights     lighting  W    8-13    150.0      0.0       0.30       0.70
+saturday    9 lights     lighting  W   13-24      0.0      0.0       0.40       0.60
+ 
+sunday      1 people     people    W    0-24      0.0      0.0       0.60       0.40
+sunday      2 it_kit     equipment W    0-24     30.0      0.0       0.40       0.60
+sunday      3 lights     lighting  W    0-24     10.0      0.0       0.30       0.70
+ 
+holiday     1 people     people    W    0-24      0.0      0.0       0.60       0.40
+holiday     2 it_kit     equipment W    0-24     30.0      0.0       0.40       0.60
+holiday     3 lights     lighting  W    0-24      0.0      0.0       0.40       0.60
+ 
+ 
+ ____________________________________________________________
+ 
+ Zone cgc_b ( 3) is composed of 8 surfaces and 16 vertices.
+ It encloses a volume of 37.5m^3 of space, with a total surface
+ area of 70.0m^2 & approx floor area of 15.0m^2
+ cgc_b similar to cgc_a but with user specified df
+ There is 7.5000m2 of exposed surface area, 7.5000m2 of which is vertical.
+ Outside walls are 30.800 % of floor area & average U of 0.270 & UA of 1.2482
+ Glazing is 19.200 % of floor & 38.400 % facade with average U of 2.811 & UA of 8.0947
+ 
+ A summary of the surfaces in cgc_b( 3) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  3.86    180.   0. facade       OPAQUE   VERT -        -        TimberU0.23  ||< external
+  2  12.5     90.   0. right        OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  3  7.50      0.   0. back         OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  4  12.5    270.   0. left         OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  5  15.0      0.  90. ceiling      OPAQUE   CEIL -        -        cpt_cel2flr  ||< identical environment
+  6  15.0      0. -90. floor        OPAQUE   FLOR -        -        cpt_flr2cel  ||< identical environment
+  7  0.760   180.   0. frame        OPAQUE   VERT F-FRAME  CLOSED   insul_frame  ||< external
+  8  2.88    180.   0. glazing      DCF7671_ VERT C-WINDOW CLOSED   dbl_glz      ||< external
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1     6.00000     0.00000     0.00000
+*vertex   2     9.00000     0.00000     0.00000
+*vertex   3     9.00000     5.00000     0.00000
+*vertex   4     6.00000     5.00000     0.00000
+*vertex   5     6.00000     0.00000     2.50000
+*vertex   6     9.00000     0.00000     2.50000
+*vertex   7     9.00000     5.00000     2.50000
+*vertex   8     6.00000     5.00000     2.50000
+*vertex   9     6.20000     0.00000     0.80000
+*vertex  10     8.80000     0.00000     0.80000
+*vertex  11     8.80000     0.00000     2.20000
+*vertex  12     6.20000     0.00000     2.20000
+*vertex  13     6.30000     0.00000     0.90000
+*vertex  14     8.70000     0.00000     0.90000
+*vertex  15     8.70000     0.00000     2.10000
+*vertex  16     6.30000     0.00000     2.10000
+ Number of vertices followed by list, name & perimeter length
+*edges,10,1,2,6,5,1,9,12,11,10,9   facade  20.649m perimeter
+*edges,4,2,3,7,6   right  15.000m perimeter
+*edges,4,3,4,8,7   back  11.000m perimeter
+*edges,4,4,1,5,8   left  15.000m perimeter
+*edges,4,5,6,7,8   ceiling  16.000m perimeter
+*edges,4,1,4,3,2   floor  16.000m perimeter
+*edges,10,9,10,11,12,9,13,16,15,14,13   frame  15.483m perimeter
+*edges,4,13,14,15,16   glazing   7.200m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ Casual gains are controlled in this zone.
+ 
+ Zone  3 cgc_b
+ Light zone 1
+ Average of  1 user specified daylight factor photocell types.
+ There are  1 source surfaces for daylighting in the zone.
+ 
+ Set   |Switch-off |Minimum dimming|Minimal elec|Switch-off
+ point |light level|light output   |light output|delay time
+  400.0         1.5          0.20          0.20         0
+ 
+ Sensor| % of |Calculation         |   X  |   Y  |   Z  |  DX |  DY |  DZ |
+ number| whole|type                |      |      |      |     |     |     |
+      1  0.50 User defined DF       7.50   2.00   0.90  0.00  0.00  1.00
+ 
+ 
+ Source  | Daylight |
+ surface | factor(%)|
+    8        5.96
+ 
+Day        |Gain| Light|Start|Finish| Control       |
+           |Type| Zone |Hour |Hour  | Type          |
+weekdays     2     1      8     18     2 Step 100:50:0
+saturday     0     1      0      1     2 Step 100:50:0
+sunday       0     1      0      1     2 Step 100:50:0
+holiday      0     1      0      1     2 Step 100:50:0
+ Light zone 2
+ Average of  1 user specified daylight factor photocell types.
+ There are  1 source surfaces for daylighting in the zone.
+ 
+ Set   |Switch-off |Minimum dimming|Minimal elec|Switch-off
+ point |light level|light output   |light output|delay time
+  400.0         1.5          0.20          0.20         0
+ 
+ Sensor| % of |Calculation         |   X  |   Y  |   Z  |  DX |  DY |  DZ |
+ number| whole|type                |      |      |      |     |     |     |
+      1  0.50 User defined DF       7.50   4.00   0.90  0.00  0.00  1.00
+ 
+ 
+ Source  | Daylight |
+ surface | factor(%)|
+    8        1.60
+ 
+Day        |Gain| Light|Start|Finish| Control       |
+           |Type| Zone |Hour |Hour  | Type          |
+weekdays     2     2      8     18     2 Step 100:50:0
+saturday     0     2      0      1     2 Step 100:50:0
+sunday       0     2      0      1     2 Step 100:50:0
+holiday      0     2      0      1     2 Step 100:50:0
+ 
+ 
+ Air schedule notes:
+half air change of infiltration
+ Control: no control of air flow
+ 
+Scheduled air infiltration and ventilation:
+Daytype    Period     Infiltration     Ventilation     From Source
+           id Hours   Rate ac/h m3/s   Rate ac/h m3/s  Zone DegC
+weekdays   1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+saturday   1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+sunday     1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+holiday    1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+ 
+Notes:
+general office hours weekdays mornings on saturday 2 people but less
+at lunch  small IT load outwith office hours  lights partly switched
+at lunch hour
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekdays    1 people     people    W    0- 8      0.0      0.0       0.60       0.40
+weekdays    2 people     people    W    8-12    200.0    100.0       0.60       0.40
+weekdays    3 people     people    W   12-13    100.0     50.0       0.60       0.40
+weekdays    4 people     people    W   13-18    180.0     90.0       0.60       0.40
+weekdays    5 people     people    W   18-24      0.0      0.0       0.60       0.40
+weekdays    6 it_kit     equipment W    0- 8     30.0      0.0       0.40       0.60
+weekdays    7 it_kit     equipment W    8-18     80.0      0.0       0.40       0.60
+weekdays    8 it_kit     equipment W   18-24     30.0      0.0       0.40       0.60
+weekdays    9 lights     lighting  W    0- 8      0.0      0.0       0.40       0.60
+weekdays   10 lights     lighting  W    8-12    150.0      0.0       0.30       0.70
+weekdays   11 lights     lighting  W   12-13    100.0      0.0       0.30       0.70
+weekdays   12 lights     lighting  W   13-18    150.0      0.0       0.30       0.70
+weekdays   13 lights     lighting  W   18-24      0.0      0.0       0.40       0.60
+ 
+saturday    1 people     people    W    0- 9      0.0      0.0       0.60       0.40
+saturday    2 people     people    W    9-12    100.0     50.0       0.60       0.40
+saturday    3 people     people    W   12-24      0.0      0.0       0.60       0.40
+saturday    4 it_kit     equipment W    0- 9     30.0      0.0       0.40       0.60
+saturday    5 it_kit     equipment W    9-13     60.0      0.0       0.40       0.60
+saturday    6 it_kit     equipment W   13-24     30.0      0.0       0.40       0.60
+saturday    7 lights     lighting  W    0- 8      0.0      0.0       0.40       0.60
+saturday    8 lights     lighting  W    8-13    150.0      0.0       0.30       0.70
+saturday    9 lights     lighting  W   13-24      0.0      0.0       0.40       0.60
+ 
+sunday      1 people     people    W    0-24      0.0      0.0       0.60       0.40
+sunday      2 it_kit     equipment W    0-24     30.0      0.0       0.40       0.60
+sunday      3 lights     lighting  W    0-24     10.0      0.0       0.30       0.70
+ 
+holiday     1 people     people    W    0-24      0.0      0.0       0.60       0.40
+holiday     2 it_kit     equipment W    0-24     30.0      0.0       0.40       0.60
+holiday     3 lights     lighting  W    0-24      0.0      0.0       0.40       0.60
+ 
+ 
+ ____________________________________________________________
+ 
+ Zone cgc_c ( 4) is composed of 8 surfaces and 16 vertices.
+ It encloses a volume of 37.5m^3 of space, with a total surface
+ area of 70.0m^2 & approx floor area of 15.0m^2
+ cgc_c similar to cgc_a but with external surface sensor
+ There is 7.5000m2 of exposed surface area, 7.5000m2 of which is vertical.
+ Outside walls are 30.800 % of floor area & average U of 0.270 & UA of 1.2482
+ Glazing is 19.200 % of floor & 38.400 % facade with average U of 2.811 & UA of 8.0947
+ 
+ A summary of the surfaces in cgc_c( 4) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  3.86    180.   0. facade       OPAQUE   VERT -        -        TimberU0.23  ||< external
+  2  12.5     90.   0. right        OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  3  7.50      0.   0. back         OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  4  12.5    270.   0. left         OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  5  15.0      0.  90. ceiling      OPAQUE   CEIL -        -        cpt_cel2flr  ||< identical environment
+  6  15.0      0. -90. floor        OPAQUE   FLOR -        -        cpt_flr2cel  ||< identical environment
+  7  0.760   180.   0. frame        OPAQUE   VERT F-FRAME  CLOSED   insul_frame  ||< external
+  8  2.88    180.   0. glazing      DCF7671_ VERT C-WINDOW CLOSED   dbl_glz      ||< external
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1     9.00000     0.00000     0.00000
+*vertex   2    12.00000     0.00000     0.00000
+*vertex   3    12.00000     5.00000     0.00000
+*vertex   4     9.00000     5.00000     0.00000
+*vertex   5     9.00000     0.00000     2.50000
+*vertex   6    12.00000     0.00000     2.50000
+*vertex   7    12.00000     5.00000     2.50000
+*vertex   8     9.00000     5.00000     2.50000
+*vertex   9     9.20000     0.00000     0.80000
+*vertex  10    11.80000     0.00000     0.80000
+*vertex  11    11.80000     0.00000     2.20000
+*vertex  12     9.20000     0.00000     2.20000
+*vertex  13     9.30000     0.00000     0.90000
+*vertex  14    11.70000     0.00000     0.90000
+*vertex  15    11.70000     0.00000     2.10000
+*vertex  16     9.30000     0.00000     2.10000
+ Number of vertices followed by list, name & perimeter length
+*edges,10,1,2,6,5,1,9,12,11,10,9   facade  20.649m perimeter
+*edges,4,2,3,7,6   right  15.000m perimeter
+*edges,4,3,4,8,7   back  11.000m perimeter
+*edges,4,4,1,5,8   left  15.000m perimeter
+*edges,4,5,6,7,8   ceiling  16.000m perimeter
+*edges,4,1,4,3,2   floor  16.000m perimeter
+*edges,10,9,10,11,12,9,13,16,15,14,13   frame  15.483m perimeter
+*edges,4,13,14,15,16   glazing   7.200m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ Casual gains are controlled in this zone.
+ 
+ Zone  4 cgc_c
+ Light zone 1
+ External lighting sensor.
+ 
+ Set   |Switch-off |Minimum dimming|Minimal elec|Switch-off
+ point |light level|light output   |light output|delay time
+ 1000.0         1.5          0.20          0.20         0
+ 
+ % of |Calculation     | Sensor | Sensor |
+ whole|type            | posit. | type   |
+  0.50 External sensor         1.0      0.0
+ 
+ 
+Day        |Gain| Light|Start|Finish| Control       |
+           |Type| Zone |Hour |Hour  | Type          |
+weekdays     2     1      8     18     2 Step 100:50:0
+saturday     0     1      0      1     2 Step 100:50:0
+sunday       0     1      0      1     2 Step 100:50:0
+holiday      0     1      0      1     2 Step 100:50:0
+ Light zone 2
+ External lighting sensor.
+ 
+ Set   |Switch-off |Minimum dimming|Minimal elec|Switch-off
+ point |light level|light output   |light output|delay time
+ 1000.0         1.5          0.20          0.20         0
+ 
+ % of |Calculation     | Sensor | Sensor |
+ whole|type            | posit. | type   |
+  0.50 External sensor         1.0      0.0
+ 
+ 
+Day        |Gain| Light|Start|Finish| Control       |
+           |Type| Zone |Hour |Hour  | Type          |
+weekdays     2     2      8     18     2 Step 100:50:0
+saturday     0     2      0      1     2 Step 100:50:0
+sunday       0     2      0      1     2 Step 100:50:0
+holiday      0     2      0      1     2 Step 100:50:0
+ 
+ 
+ Air schedule notes:
+half air change of infiltration
+ Control: no control of air flow
+ 
+Scheduled air infiltration and ventilation:
+Daytype    Period     Infiltration     Ventilation     From Source
+           id Hours   Rate ac/h m3/s   Rate ac/h m3/s  Zone DegC
+weekdays   1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+saturday   1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+sunday     1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+holiday    1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+ 
+Notes:
+general office hours weekdays mornings on saturday 2 people but less
+at lunch  small IT load outwith office hours  lights partly switched
+at lunch hour
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekdays    1 people     people    W    0- 8      0.0      0.0       0.60       0.40
+weekdays    2 people     people    W    8-12    200.0    100.0       0.60       0.40
+weekdays    3 people     people    W   12-13    100.0     50.0       0.60       0.40
+weekdays    4 people     people    W   13-18    180.0     90.0       0.60       0.40
+weekdays    5 people     people    W   18-24      0.0      0.0       0.60       0.40
+weekdays    6 it_kit     equipment W    0- 8     30.0      0.0       0.40       0.60
+weekdays    7 it_kit     equipment W    8-18     80.0      0.0       0.40       0.60
+weekdays    8 it_kit     equipment W   18-24     30.0      0.0       0.40       0.60
+weekdays    9 lights     lighting  W    0- 8      0.0      0.0       0.40       0.60
+weekdays   10 lights     lighting  W    8-12    150.0      0.0       0.30       0.70
+weekdays   11 lights     lighting  W   12-13    100.0      0.0       0.30       0.70
+weekdays   12 lights     lighting  W   13-18    150.0      0.0       0.30       0.70
+weekdays   13 lights     lighting  W   18-24      0.0      0.0       0.40       0.60
+ 
+saturday    1 people     people    W    0- 9      0.0      0.0       0.60       0.40
+saturday    2 people     people    W    9-12    100.0     50.0       0.60       0.40
+saturday    3 people     people    W   12-24      0.0      0.0       0.60       0.40
+saturday    4 it_kit     equipment W    0- 9     30.0      0.0       0.40       0.60
+saturday    5 it_kit     equipment W    9-13     60.0      0.0       0.40       0.60
+saturday    6 it_kit     equipment W   13-24     30.0      0.0       0.40       0.60
+saturday    7 lights     lighting  W    0- 8      0.0      0.0       0.40       0.60
+saturday    8 lights     lighting  W    8-13    150.0      0.0       0.30       0.70
+saturday    9 lights     lighting  W   13-24      0.0      0.0       0.40       0.60
+ 
+sunday      1 people     people    W    0-24      0.0      0.0       0.60       0.40
+sunday      2 it_kit     equipment W    0-24     30.0      0.0       0.40       0.60
+sunday      3 lights     lighting  W    0-24     10.0      0.0       0.30       0.70
+ 
+holiday     1 people     people    W    0-24      0.0      0.0       0.60       0.40
+holiday     2 it_kit     equipment W    0-24     30.0      0.0       0.40       0.60
+holiday     3 lights     lighting  W    0-24      0.0      0.0       0.40       0.60
+ 
+ 
+ ____________________________________________________________
+ 
+ Zone cgc_d ( 5) is composed of 8 surfaces and 16 vertices.
+ It encloses a volume of 37.5m^3 of space, with a total surface
+ area of 70.0m^2 & approx floor area of 15.0m^2
+ cgc_d as cgc_b but with Hunt probability switching
+ There is 7.5000m2 of exposed surface area, 7.5000m2 of which is vertical.
+ Outside walls are 30.800 % of floor area & average U of 0.270 & UA of 1.2482
+ Glazing is 19.200 % of floor & 38.400 % facade with average U of 2.811 & UA of 8.0947
+ 
+ A summary of the surfaces in cgc_d( 5) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  3.86    180.   0. facade       OPAQUE   VERT -        -        TimberU0.23  ||< external
+  2  12.5     90.   0. right        OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  3  7.50      0.   0. back         OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  4  12.5    270.   0. left         OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  5  15.0      0.  90. ceiling      OPAQUE   CEIL -        -        cpt_cel2flr  ||< identical environment
+  6  15.0      0. -90. floor        OPAQUE   FLOR -        -        cpt_flr2cel  ||< identical environment
+  7  0.760   180.   0. frame        OPAQUE   VERT F-FRAME  CLOSED   insul_frame  ||< external
+  8  2.88    180.   0. glazing      DCF7671_ VERT C-WINDOW CLOSED   dbl_glz      ||< external
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1    12.00000     0.00000     0.00000
+*vertex   2    15.00000     0.00000     0.00000
+*vertex   3    15.00000     5.00000     0.00000
+*vertex   4    12.00000     5.00000     0.00000
+*vertex   5    12.00000     0.00000     2.50000
+*vertex   6    15.00000     0.00000     2.50000
+*vertex   7    15.00000     5.00000     2.50000
+*vertex   8    12.00000     5.00000     2.50000
+*vertex   9    12.20000     0.00000     0.80000
+*vertex  10    14.80000     0.00000     0.80000
+*vertex  11    14.80000     0.00000     2.20000
+*vertex  12    12.20000     0.00000     2.20000
+*vertex  13    12.30000     0.00000     0.90000
+*vertex  14    14.70000     0.00000     0.90000
+*vertex  15    14.70000     0.00000     2.10000
+*vertex  16    12.30000     0.00000     2.10000
+ Number of vertices followed by list, name & perimeter length
+*edges,10,1,2,6,5,1,9,12,11,10,9   facade  20.649m perimeter
+*edges,4,2,3,7,6   right  15.000m perimeter
+*edges,4,3,4,8,7   back  11.000m perimeter
+*edges,4,4,1,5,8   left  15.000m perimeter
+*edges,4,5,6,7,8   ceiling  16.000m perimeter
+*edges,4,1,4,3,2   floor  16.000m perimeter
+*edges,10,9,10,11,12,9,13,16,15,14,13   frame  15.483m perimeter
+*edges,4,13,14,15,16   glazing   7.200m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ Casual gains are controlled in this zone.
+ 
+ Zone  5 cgc_d
+ Light zone 1
+ Average of  1 user specified daylight factor photocell types.
+ There are  1 source surfaces for daylighting in the zone.
+ 
+ Set   |Switch-off |Minimum dimming|Minimal elec|Switch-off
+ point |light level|light output   |light output|delay time
+  400.0         1.5          0.20          0.20         0
+ 
+ Sensor| % of |Calculation         |   X  |   Y  |   Z  |  DX |  DY |  DZ |
+ number| whole|type                |      |      |      |     |     |     |
+      1  1.00 User defined DF      13.50   2.00   0.90  0.00  0.00  1.00
+ 
+ 
+ Source  | Daylight |
+ surface | factor(%)|
+    8        5.96
+ 
+Day        |Gain| Light|Start|Finish| Control       |
+           |Type| Zone |Hour |Hour  | Type          |
+weekdays     2     1      8     18     4 On-Off probability
+saturday     0     1      0      1     4 On-Off probability
+sunday       0     1      0      1     4 On-Off probability
+holiday      0     1      0      1     4 On-Off probability
+ 
+ 
+ Air schedule notes:
+half air change of infiltration
+ Control: no control of air flow
+ 
+Scheduled air infiltration and ventilation:
+Daytype    Period     Infiltration     Ventilation     From Source
+           id Hours   Rate ac/h m3/s   Rate ac/h m3/s  Zone DegC
+weekdays   1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+saturday   1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+sunday     1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+holiday    1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+ 
+Notes:
+general office hours weekdays mornings on saturday 2 people but less
+at lunch  small IT load outwith office hours  lights partly switched
+at lunch hour
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekdays    1 people     people    W    0- 8      0.0      0.0       0.60       0.40
+weekdays    2 people     people    W    8-12    200.0    100.0       0.60       0.40
+weekdays    3 people     people    W   12-13    100.0     50.0       0.60       0.40
+weekdays    4 people     people    W   13-18    180.0     90.0       0.60       0.40
+weekdays    5 people     people    W   18-24      0.0      0.0       0.60       0.40
+weekdays    6 it_kit     equipment W    0- 8     30.0      0.0       0.40       0.60
+weekdays    7 it_kit     equipment W    8-18     80.0      0.0       0.40       0.60
+weekdays    8 it_kit     equipment W   18-24     30.0      0.0       0.40       0.60
+weekdays    9 lights     lighting  W    0- 8      0.0      0.0       0.40       0.60
+weekdays   10 lights     lighting  W    8-12    150.0      0.0       0.30       0.70
+weekdays   11 lights     lighting  W   12-13    100.0      0.0       0.30       0.70
+weekdays   12 lights     lighting  W   13-18    150.0      0.0       0.30       0.70
+weekdays   13 lights     lighting  W   18-24      0.0      0.0       0.40       0.60
+ 
+saturday    1 people     people    W    0- 9      0.0      0.0       0.60       0.40
+saturday    2 people     people    W    9-12    100.0     50.0       0.60       0.40
+saturday    3 people     people    W   12-24      0.0      0.0       0.60       0.40
+saturday    4 it_kit     equipment W    0- 9     30.0      0.0       0.40       0.60
+saturday    5 it_kit     equipment W    9-13     60.0      0.0       0.40       0.60
+saturday    6 it_kit     equipment W   13-24     30.0      0.0       0.40       0.60
+saturday    7 lights     lighting  W    0- 8      0.0      0.0       0.40       0.60
+saturday    8 lights     lighting  W    8-13    150.0      0.0       0.30       0.70
+saturday    9 lights     lighting  W   13-24      0.0      0.0       0.40       0.60
+ 
+sunday      1 people     people    W    0-24      0.0      0.0       0.60       0.40
+sunday      2 it_kit     equipment W    0-24     30.0      0.0       0.40       0.60
+sunday      3 lights     lighting  W    0-24     10.0      0.0       0.30       0.70
+ 
+holiday     1 people     people    W    0-24      0.0      0.0       0.60       0.40
+holiday     2 it_kit     equipment W    0-24     30.0      0.0       0.40       0.60
+holiday     3 lights     lighting  W    0-24      0.0      0.0       0.40       0.60
+ 
+ 
+ ____________________________________________________________
+ 
+ Zone cgc_e ( 6) is composed of 8 surfaces and 16 vertices.
+ It encloses a volume of 37.5m^3 of space, with a total surface
+ area of 70.0m^2 & approx floor area of 15.0m^2
+ cgc_e with radiance coupling every timestep
+ There is 7.5000m2 of exposed surface area, 7.5000m2 of which is vertical.
+ Outside walls are 30.800 % of floor area & average U of 0.270 & UA of 1.2482
+ Glazing is 19.200 % of floor & 38.400 % facade with average U of 2.811 & UA of 8.0947
+ 
+ A summary of the surfaces in cgc_e( 6) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  3.86    180.   0. facade       OPAQUE   VERT -        -        TimberU0.23  ||< external
+  2  12.5     90.   0. right        OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  3  7.50      0.   0. back         OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  4  12.5    270.   0. left         OPAQUE   VERT -        -        gyp_blk_ptn  ||< identical environment
+  5  15.0      0.  90. ceiling      OPAQUE   CEIL -        -        cpt_cel2flr  ||< identical environment
+  6  15.0      0. -90. floor        OPAQUE   FLOR -        -        cpt_flr2cel  ||< identical environment
+  7  0.760   180.   0. frame        OPAQUE   VERT F-FRAME  CLOSED   insul_frame  ||< external
+  8  2.88    180.   0. glazing      DCF7671_ VERT C-WINDOW CLOSED   dbl_glz      ||< external
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1    15.00000     0.00000     0.00000
+*vertex   2    18.00000     0.00000     0.00000
+*vertex   3    18.00000     5.00000     0.00000
+*vertex   4    15.00000     5.00000     0.00000
+*vertex   5    15.00000     0.00000     2.50000
+*vertex   6    18.00000     0.00000     2.50000
+*vertex   7    18.00000     5.00000     2.50000
+*vertex   8    15.00000     5.00000     2.50000
+*vertex   9    15.20000     0.00000     0.80000
+*vertex  10    17.80000     0.00000     0.80000
+*vertex  11    17.80000     0.00000     2.20000
+*vertex  12    15.20000     0.00000     2.20000
+*vertex  13    15.30000     0.00000     0.90000
+*vertex  14    17.70000     0.00000     0.90000
+*vertex  15    17.70000     0.00000     2.10000
+*vertex  16    15.30000     0.00000     2.10000
+ Number of vertices followed by list, name & perimeter length
+*edges,10,1,2,6,5,1,9,12,11,10,9   facade  20.649m perimeter
+*edges,4,2,3,7,6   right  15.000m perimeter
+*edges,4,3,4,8,7   back  11.000m perimeter
+*edges,4,4,1,5,8   left  15.000m perimeter
+*edges,4,5,6,7,8   ceiling  16.000m perimeter
+*edges,4,1,4,3,2   floor  16.000m perimeter
+*edges,10,9,10,11,12,9,13,16,15,14,13   frame  15.483m perimeter
+*edges,4,13,14,15,16   glazing   7.200m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ Casual gains are controlled in this zone.
+ 
+ Zone  6 cgc_e
+ Light zone 1
+ Average of  1 direct coupling photocell types.
+ 
+ Set   |Switch-off |Minimum dimming|Minimal elec|Switch-off
+ point |light level|light output   |light output|delay time
+  400.0         1.5          0.20          0.20         0
+ 
+ Sensor| % of |Calculation         |   X  |   Y  |   Z  |  DX |  DY |  DZ |
+ number| whole|type                |      |      |      |     |     |     |
+      1  1.00 Time step coupling   16.50   2.00   0.90  0.00  0.00  1.00
+ 
+ 
+Day        |Gain| Light|Start|Finish| Control       |
+           |Type| Zone |Hour |Hour  | Type          |
+weekdays     2     1      8     18     2 Step 100:50:0
+saturday     0     1      0      1     2 Step 100:50:0
+sunday       0     1      0      1     2 Step 100:50:0
+holiday      0     1      0      1     2 Step 100:50:0
+ 
+ 
+ Air schedule notes:
+half air change of infiltration
+ Control: no control of air flow
+ 
+Scheduled air infiltration and ventilation:
+Daytype    Period     Infiltration     Ventilation     From Source
+           id Hours   Rate ac/h m3/s   Rate ac/h m3/s  Zone DegC
+weekdays   1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+saturday   1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+sunday     1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+holiday    1  0 - 24    0.50  0.0052    0.00  0.0000   0     0.00
+ 
+Notes:
+general office hours weekdays mornings on saturday 2 people but less
+at lunch  small IT load outwith office hours  lights partly switched
+at lunch hour
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekdays    1 people     people    W    0- 8      0.0      0.0       0.60       0.40
+weekdays    2 people     people    W    8-12    200.0    100.0       0.60       0.40
+weekdays    3 people     people    W   12-13    100.0     50.0       0.60       0.40
+weekdays    4 people     people    W   13-18    180.0     90.0       0.60       0.40
+weekdays    5 people     people    W   18-24      0.0      0.0       0.60       0.40
+weekdays    6 it_kit     equipment W    0- 8     30.0      0.0       0.40       0.60
+weekdays    7 it_kit     equipment W    8-18     80.0      0.0       0.40       0.60
+weekdays    8 it_kit     equipment W   18-24     30.0      0.0       0.40       0.60
+weekdays    9 lights     lighting  W    0- 8      0.0      0.0       0.40       0.60
+weekdays   10 lights     lighting  W    8-12    150.0      0.0       0.30       0.70
+weekdays   11 lights     lighting  W   12-13    100.0      0.0       0.30       0.70
+weekdays   12 lights     lighting  W   13-18    150.0      0.0       0.30       0.70
+weekdays   13 lights     lighting  W   18-24      0.0      0.0       0.40       0.60
+ 
+saturday    1 people     people    W    0- 9      0.0      0.0       0.60       0.40
+saturday    2 people     people    W    9-12    100.0     50.0       0.60       0.40
+saturday    3 people     people    W   12-24      0.0      0.0       0.60       0.40
+saturday    4 it_kit     equipment W    0- 9     30.0      0.0       0.40       0.60
+saturday    5 it_kit     equipment W    9-13     60.0      0.0       0.40       0.60
+saturday    6 it_kit     equipment W   13-24     30.0      0.0       0.40       0.60
+saturday    7 lights     lighting  W    0- 8      0.0      0.0       0.40       0.60
+saturday    8 lights     lighting  W    8-13    150.0      0.0       0.30       0.70
+saturday    9 lights     lighting  W   13-24      0.0      0.0       0.40       0.60
+ 
+sunday      1 people     people    W    0-24      0.0      0.0       0.60       0.40
+sunday      2 it_kit     equipment W    0-24     30.0      0.0       0.40       0.60
+sunday      3 lights     lighting  W    0-24     10.0      0.0       0.30       0.70
+ 
+holiday     1 people     people    W    0-24      0.0      0.0       0.60       0.40
+holiday     2 it_kit     equipment W    0-24     30.0      0.0       0.40       0.60
+holiday     3 lights     lighting  W    0-24      0.0      0.0       0.40       0.60
+ 
+ 
+ ____________________________________________________________
+ 
+ Project floor area is 90.000m2, wall area is 27.720m2, window area is 17.280m2.
+ Sloped roof area is 0.00m2, flat roof area is 0.00m2, skylight area is 0.00m2.
+ In contact with ground 0.00m2.
+ There is 45.000m2 of outside surface area, 45.000m2 of which is vertical.
+ 
+ Outside walls are 30.800 % of floor area & average U of 0.270 & UA of 7.4890 & max MLC thickness 0.258
+ Glazing is 19.200 % of floor & 38.400 % facade with average U of 2.811 & UA of 48.568
+ 
+ ____________________________________________________________
+ Multi-layer constructions used:
+ 
+ Details of opaque construction: TimberU0.23 and overall thickness  0.258
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
+ Ext    21.0     0.140   650.  2000. 0.91 0.65   100.  0.15 weatherboard : Weatherboard (source does not clarify what it is)
+    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
+    3    9.5     0.120   540.  1210. 0.90 0.90   576.  0.08 plywood sheathing : Plywood sheathing (UK code)
+    4  140.0     0.040    25.  1000. 0.90 0.70    30.  3.50 Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygroscopic)
+    5   25.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
+ Int    12.5     0.210   900.  1000. 0.91 0.70    11.  0.06 Plasterboard (UK code) : Plasterboard (UK code)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.233  0.234  0.230 (partition)  0.228
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.23
+ External surface admittance Y=  0.90  w=  4.49 decrement factor f=  0.96  phi=  0.40 surface factor f=  0.96  phi=  0.40
+ Partition admittance Y=  1.00  w=  5.27 surface factor f=  0.98  phi=  0.46
+ Total area of TimberU0.23 is     23.16
+ 
+ Details of opaque construction: gyp_blk_ptn and overall thickness  0.226
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
+ Ext    13.0     0.190   950.   840. 0.91 0.22    11.  0.07 white gypboard : White painted Gypboard (inorganic-porous)
+    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
+    3  100.0     0.510  1400.  1000. 0.90 0.65    10.  0.20 block inner : Block inner (3% mc)
+    4   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
+ Int    13.0     0.190   950.   840. 0.91 0.22    11.  0.07 white gypboard : White painted Gypboard (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  1.186  1.230  1.133 (partition)  1.072
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.17
+ External surface admittance Y=  2.38  w=  1.44 decrement factor f=  0.74  phi=  0.54 surface factor f=  0.74  phi=  0.54
+ Partition admittance Y=  2.59  w=  2.21 surface factor f=  0.76  phi=  0.86
+ Total area of gyp_blk_ptn is    195.00
+ 
+ Details of transparent construction: dbl_glz with DCF7671_06nb optics and overall thickness  0.024
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
+ Ext     6.0     0.760  2710.   837. 0.83 0.05 19200.  0.01 plate glass : Plate glass with placeholder single layer optics
+    2   12.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
+ Int     6.0     0.760  2710.   837. 0.83 0.05 19200.  0.01 plate glass : Plate glass with placeholder single layer optics
+ ISO 6946 U values (horiz/upward/downward heat flow)=  2.811  3.069  2.527 (partition)  2.243
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.73
+ External surface admittance Y=  2.81  w=  0.63 decrement factor f=  0.67  phi=  0.31 surface factor f=  0.67  phi=  0.31
+ Partition admittance Y=  0.82  w=  5.64 surface factor f=  1.00  phi=  0.38
+ 
+ Clear float 76/71,     6mm, no blind: with id of: DCF7671_06nb
+ with 3 layers [including air gaps] and visible trn: 0.76
+ Direct transmission @ 0, 40, 55, 70, 80 deg
+   0.611 0.583 0.534 0.384 0.170
+ Layer| absorption @ 0, 40, 55, 70, 80 deg
+    1  0.157 0.172 0.185 0.201 0.202
+    2  0.001 0.002 0.003 0.004 0.005
+    3  0.117 0.124 0.127 0.112 0.077
+ Total area of dbl_glz is     17.28
+ 
+ Details of opaque construction: insul_frame and overall thickness  0.088
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
+ Ext     4.0   210.000  2700.   880. 0.82 0.72 19200.  0.00 grey cotd alum : Grey coated aluminium
+    2   80.0     0.040    12.   840. 0.90 0.65    30.  2.00 glass fibre quilt : Glass Fibre Quilt (non-hygroscopic)
+ Int     4.0   210.000  2700.   880. 0.82 0.72 19200.  0.00 grey cotd alum : Grey coated aluminium
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.461  0.467  0.452 (partition)  0.442
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.46
+ External surface admittance Y=  0.81  w=  3.41 decrement factor f=  0.94  phi=  0.31 surface factor f=  0.94  phi=  0.31
+ Partition admittance Y=  0.70  w=  5.68 surface factor f=  1.00  phi=  0.32
+ Total area of insul_frame is      4.56
+ 
+ Details of opaque construction: cpt_cel2flr linked to cpt_flr2cel & with overall thickness  0.142
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
+ Ext     6.0     0.060   186.  1360. 0.90 0.85    10.  0.10 dk grey Wilton : Dark grey Wilton carpet (organic-hygroscopic)
+    2    6.0     0.100   400.  1360. 0.90 0.65  1000.  0.06 cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopic)
+    3   18.0     0.150   700.  1420. 0.90 0.65   576.  0.12 plywood 700d : Plywood (700 density)
+    4  100.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
+ Int    12.5     0.190   950.   840. 0.91 0.22    11.  0.07 white gypboard : White painted Gypboard (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  1.458  1.525  1.378 (partition)  1.289
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.44
+ External surface admittance Y=  1.69  w=  1.51 decrement factor f=  0.82  phi=  0.37 surface factor f=  0.82  phi=  0.37
+ Partition admittance Y=  1.14  w=  5.18 surface factor f=  0.98  phi=  0.52
+ Total area of cpt_cel2flr is     90.00
+ 
+ Details of opaque construction: cpt_flr2cel linked to cpt_cel2flr & with overall thickness  0.142
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
+ Ext    12.5     0.190   950.   840. 0.91 0.22    11.  0.07 white gypboard : White painted Gypboard (inorganic-porous)
+    2  100.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
+    3   18.0     0.150   700.  1420. 0.90 0.65   576.  0.12 plywood 700d : Plywood (700 density)
+    4    6.0     0.100   400.  1360. 0.90 0.65  1000.  0.06 cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopic)
+ Int     6.0     0.060   186.  1360. 0.90 0.85    10.  0.10 dk grey Wilton : Dark grey Wilton carpet (organic-hygroscopic)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  1.458  1.525  1.378 (partition)  1.289
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.44
+ External surface admittance Y=  1.63  w=  1.17 decrement factor f=  0.82  phi=  0.28 surface factor f=  0.82  phi=  0.28
+ Partition admittance Y=  0.97  w=  5.09 surface factor f=  0.98  phi=  0.44
+ Total area of cpt_flr2cel is     90.00

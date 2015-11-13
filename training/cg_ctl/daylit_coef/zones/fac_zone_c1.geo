@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,fac_zone_c1 # tag version, format, zone name
-*date Mon Jul 20 15:25:33 2009  # latest file modification 
+*date Tue Sep 15 09:43:03 2015  # latest file modification 
 fac_zone_c1 describes a...
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,1.00000,1.00000,0.00000  #   1
@@ -52,8 +52,8 @@ fac_zone_c1 describes a...
 *surf,Facade_top,VERT,-,-,-,Facade_top,OPAQUE,EXTERIOR,0,0  #   7 ||< external
 *surf,Facade_bot,VERT,-,-,-,Facade_bot,OPAQUE,EXTERIOR,0,0  #   8 ||< external
 *surf,Frame_top,VERT,-,-,-,Frame,OPAQUE,EXTERIOR,0,0  #   9 ||< external
-*surf,Window_bot,VERT,-,-,-,dbl_glz_low,DBL_glz_6nb2,EXTERIOR,0,0  #  10 ||< external
-*surf,Window_top,VERT,-,-,-,dbl_gl_up,DBL_glz_6nb1,EXTERIOR,0,0  #  11 ||< external
+*surf,Window_bot,VERT,Frame_bot,-,-,dbl_glz_low,DBL_glz_6nb2,EXTERIOR,0,0  #  10 ||< external
+*surf,Window_top,VERT,Frame_top,-,-,dbl_gl_up,DBL_glz_6nb1,EXTERIOR,0,0  #  11 ||< external
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 
@@ -68,16 +68,23 @@ fac_zone_c1 describes a...
 # 
 # block entities:
 #  *obs = obstructions
-*block_start,15 15 # geometric blocks
-*obs,0.900,0.700,0.000,0.100,0.299,3.400,0.000,recess_w,Facade_top  # block  1
-*obs,5.501,0.700,0.000,0.100,0.299,3.400,0.000,recess_e,Facade_top  # block  2
-*obs,1.000,0.700,-0.100,4.500,0.299,0.100,0.000,recess_b,Facade_top  # block  3
-*obs,1.000,0.700,3.400,4.500,0.299,0.100,0.000,recess_t,Facade_top  # block  4
-*obs,1.000,0.400,2.050,4.500,0.599,0.010,0.000,LS_ex_t,Light_sh_t  # block  5
-*obs,1.000,0.400,2.040,4.500,0.599,0.010,0.000,LS_ex_b,Light_sh_b  # block  6
-*obs,1.950,0.700,0.980,0.010,0.299,1.070,0.000,Fin_left,Frame  # block  7
-*obs,3.249,0.700,0.980,0.010,0.299,1.070,0.000,Fin_cent,Frame  # block  8
-*obs,4.550,0.700,0.980,0.010,0.299,1.070,0.000,Fin_righ,Frame  # block  9
-*obs,1.000,1.010,2.050,4.500,1.000,0.010,0.000,LS_in_t,Light_sh_t  # block 10
-*obs,1.000,1.010,2.040,4.500,1.000,0.010,0.000,LS_in_b,Light_sh_b  # block 11
+*block_start, 15 15 # geometric blocks
+*obs,0.9000,0.7000,0.0000,0.1000,0.2990,3.4000,0.0000,1.00,recess_w,Facade_top  # block   1
+*obs,5.5010,0.7000,0.0000,0.1000,0.2990,3.4000,0.0000,1.00,recess_e,Facade_top  # block   2
+*obs,1.0000,0.7000,-0.1000,4.5000,0.2990,0.1000,0.0000,1.00,recess_b,Facade_top  # block   3
+*obs,1.0000,0.7000,3.4000,4.5000,0.2990,0.1000,0.0000,1.00,recess_t,Facade_top  # block   4
+*obs,1.0000,0.4000,2.0500,4.5000,0.5990,0.0100,0.0000,1.00,LS_ex_t,Light_sh_t  # block   5
+*obs,1.0000,0.4000,2.0400,4.5000,0.5990,0.0100,0.0000,1.00,LS_ex_b,Light_sh_b  # block   6
+*obs,1.9500,0.7000,0.9800,0.0100,0.2990,1.0700,0.0000,1.00,Fin_left,Frame  # block   7
+*obs,3.2490,0.7000,0.9800,0.0100,0.2990,1.0700,0.0000,1.00,Fin_cent,Frame  # block   8
+*obs,4.5500,0.7000,0.9800,0.0100,0.2990,1.0700,0.0000,1.00,Fin_righ,Frame  # block   9
 *end_block
+# 
+# visual entities:
+#  *vis = visual blocks
+#  *vis3 = visual 3 axis
+#  *visp = visual polys
+*visual_start
+*vis,1.0000,1.0100,2.0500,4.5000,1.0000,0.0100,0.0000,1.00,LS_in_t,Light_sh_t  # visual   1
+*vis,1.0000,1.0100,2.0400,4.5000,1.0000,0.0100,0.0000,1.00,LS_in_b,Light_sh_b  # visual   2
+*end_visual

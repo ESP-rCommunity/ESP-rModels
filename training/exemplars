@@ -69,7 +69,7 @@
 *cfg	/usr/esru/esp-r/training/cellular_hires/cfg/cellular_hires.cfg
 *root	/usr/esru/esp-r/training/cellular_hires
 *item
-*name	... with high resolution and internal mass
+*name	... with high resolution and furniture mass
 *cfg	/usr/esru/esp-r/training/cellular_furn/cfg/cellular_furn.cfg
 *root	/usr/esru/esp-r/training/cellular_furn
 *item
@@ -251,6 +251,18 @@
 *cfg	/usr/esru/esp-r/training/cfd/cfd_benchmark/cfg/cfd_benchmark_cpld.cfg
 *root	/usr/esru/esp-r/training/cfd/cfd_benchmark
 *item
+*name	A pair of rooms to add component based mechanical ventilation
+*cfg	/usr/esru/esp-r/training/plant/mech_vent_2izn/cfg/mech_vent_bc.cfg
+*root	/usr/esru/esp-r/training/plant/mech_vent_2izn
+*item
+*name	A pair of rooms with component based mechanical vent ON-OFF ctl
+*cfg	/usr/esru/esp-r/training/plant/mech_vent_2izn/cfg/mech_vent_2z.cfg
+*root	/usr/esru/esp-r/training/plant/mech_vent_2izn
+*item
+*name	A pair of rooms with component based mechanical vent PROP ctl
+*cfg	/usr/esru/esp-r/training/plant/mech_vent_2izn/cfg/mech_vent_2zp.cfg
+*root	/usr/esru/esp-r/training/plant/mech_vent_2izn
+*item
 *group	network ventilation
 *help	These models demonstrate the nodal network approach to flow modelling.
 *item
@@ -414,13 +426,17 @@
 *group	windows and daylighting
 *help	A set of models focusing on glazing system performance.
 *item
-*name	office, with photocells for luminaire control
-*cfg	/usr/esru/esp-r/training/cg_ctl/static/cfg/cg_ctl.cfg
-*root	/usr/esru/esp-r/training/cg_ctl/static
+*name	offices with various casual gain controls
+*cfg	/usr/esru/esp-r/training/casual_gain_ctl/cfg/casual_gain_control.cfg
+*root	/usr/esru/esp-r/training/casual_gain_ctl/cfg/
 *item
-*name	... with luminaire control and illuminance prediction
-*cfg	/usr/esru/esp-r/training/cg_ctl/coupling/cfg/coupling.cfg
-*root	/usr/esru/esp-r/training/cg_ctl/coupling
+*name	... with luminaire control via daylight coefficients
+*cfg	/usr/esru/esp-r/training/cg_ctl/daylit_coef/cfg/facade_60.cfg
+*root	/usr/esru/esp-r/training/cg_ctl/daylit_coef/cfg/
+*item
+*name	... with light levels via timestep Radiance coupling
+*cfg	/usr/esru/esp-r/training/cg_ctl/daylit_coef/cfg/facade_coupling.cfg
+*root	/usr/esru/esp-r/training/cg_ctl/daylit_coef/cfg/
 *item
 *name	... with luminaire control and electrochromic glazing
 *cfg	/usr/esru/esp-r/training/el_chr_ctl/cfg/office.cfg

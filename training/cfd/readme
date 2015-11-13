@@ -1,3 +1,8 @@
+File template.dfd is an example dfs input file
+which can be modified to suit a given problem.  Its flow
+field can be viewed by opening (with xv, for example)
+template.bitmap.
+
 Directory IEA_annex20/isotherm contains a model corresponding to
 an IEA Annex 20 test case under 2D, isothermal conditions. These
 are older model format files.

@@ -265,6 +265,15 @@ rc_in_gyp_gyp_ptn  polygon  manager_b:pt_other_b
   
 # corridor Surface defs..
   
+rc_in_door  polygon  corridor:right
+0 
+0 
+ 12
+    6.09700    4.55000    3.00000
+    6.09700    5.55000    3.00000
+    6.09700    5.55000    0.00000
+    6.09700    4.55000    0.00000
+  
 rc_in_gyp_blk_ptn  polygon  corridor:wall
 0 
 0 
@@ -273,6 +282,15 @@ rc_in_gyp_blk_ptn  polygon  corridor:wall
     0.00000    5.54700    3.00000
     0.00000    5.54700    0.00000
     6.10000    5.54700    0.00000
+  
+rc_in_door  polygon  corridor:left
+0 
+0 
+ 12
+    0.00300    5.55000    3.00000
+    0.00300    4.55000    3.00000
+    0.00300    4.55000    0.00000
+    0.00300    5.55000    0.00000
   
 rc_in_ceiling  polygon  corridor:ceiling
 0 

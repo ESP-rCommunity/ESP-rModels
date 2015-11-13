@@ -1,0 +1,1328 @@
+Synopsis
+ 
+Synopsis of the model A model of a (similar) building to the ELSA building
+Ispra, Italy defined in elsa.cfg generated on Mon Sep 14 17:13:28 2015.
+Associated notes are in ../doc/elsa.log
+ 
+The model is located at latitude   50.00 with a longitude difference of   0.00
+from the local time meridian. The year used in simulations is 1999 and
+weekends occur on Saturday and Sunday.
+The site exposure is typical rural site and the ground reflectance is 0.20.
+ 
+ 
+Simulationist name: not yet defined
+Simulationist telephone: not yet defined
+Simulationist address: not yet defined
+Simulationist city: not yet defined
+Simulationist postcode: not yet defined
+ 
+The climate is: ESP test climate and is held in: clm67 with hour centred solar
+data.
+ standard annual weather: clm67
+Calculated ground temp at 0.5m depth
+3.0888 4.3008 6.6610 8.8949 13.123 15.349 15.963 14.834 12.227 8.9770 5.7777 3.6649
+Calculated ground temp at 1.0m depth
+3.6630 4.5020 6.4738 8.4398 12.343 14.560 15.374 14.612 12.434 9.5459 6.5633 4.4524
+Calculated ground temp at 2.0m depth
+4.7588 5.0557 6.4004 7.8990 11.149 13.226 14.259 14.027 12.542 10.298 7.7730 5.7855
+Calculated ground temp at 4.0m depth
+6.4880 6.2779 6.8663 7.7174 9.8661 11.475 12.517 12.771 12.121 10.800 9.0880 7.5409
+ 
+Primary energy conversions (demand kWhr to primary kWhr) are:
+ heating   : 1.250
+ cooling   : 1.250
+ lighting  : 3.010
+ fans&pumps: 3.010
+ small powr: 3.010
+ hot water : 1.250
+ 
+ Emissions (g/kWh) co2  nox  sox
+ heating :  190.00   0.30   0.20
+ cooling :  612.00   2.06   7.57
+ lighting:  612.00   2.06   7.57
+ fan_pump:  612.00   2.06   7.57
+ small pr:  612.00   2.10   7.57
+ hot water: 190.00   0.30   0.20
+An Integrated Performance View is incomplete or missing.
+ 
+Databases associated with the model:
+ standard pressure distr: pressc.db1
+ materials              : ../dbs/elsa.materialdb
+ constructions          : ../dbs/elsa.mlc
+ standard plant comp    : plantc.db1
+ standard event profiles: profiles.db1.a
+ optical properties     : ../dbs/elsa.odb
+ standard UK NCM data   : SBEM.db1
+ standard mould isopleth: mould.db1
+ 
+ ____________________________________________________________
+ 
+The model includes ideal controls as follows:
+Control description:
+proj cntrl
+ 
+Zones control includes  3 functions.
+no descrip
+Details of control loops referenced in the model:
+ 
+ The sensor for function  1 senses dry bulb temperature in office_fl1.
+ The actuator for function  1 is the air point in office_fl1.
+There have been  1 periods of validity defined during the year.
+ Control is valid Fri-01-Jan to Fri-31-Dec, 1999 with  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 db temp   > flux      plant/zone coupling: source plant component 6 plant
+component node 1 coupling type mCp(0s-0a) sequential. Max heating 100000.00W max cooling
+0.00W. Extract plant component 15 and extract node 1.
+ 
+ The sensor for function  2 senses dry bulb temperature in office_fl2.
+ The actuator for function  2 is the air point in office_fl2.
+There have been  1 periods of validity defined during the year.
+ Control is valid Fri-01-Jan to Fri-31-Dec, 1999 with  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 db temp   > flux      plant/zone coupling: source plant component 7 plant
+component node 1 coupling type mCp(0s-0a) sequential. Max heating 100000.00W max cooling
+0.00W. Extract plant component 15 and extract node 1.
+ 
+ The sensor for function  3 senses dry bulb temperature in office_fl3.
+ The actuator for function  3 is the air point in office_fl3.
+There have been  1 periods of validity defined during the year.
+ Control is valid Fri-01-Jan to Fri-31-Dec, 1999 with  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 db temp   > flux      plant/zone coupling: source plant component 8 plant
+component node 1 coupling type mCp(0s-0a) sequential. Max heating 100000.00W max cooling
+0.00W. Extract plant component 16 and extract node 1.
+ 
+ Zone to contol loop linkages:
+ zone ( 1) factory_area << control  0
+ zone ( 2) office_fl1   << control  1
+ zone ( 3) office_fl2   << control  2
+ zone ( 4) office_fl3   << control  3
+ zone ( 5) pv_layer1    << control  0
+ zone ( 6) pv_layer2    << control  0
+ zone ( 7) pv_layer3    << control  0
+ zone ( 8) pv_layer4    << control  0
+ 
+ Plant control includes  5 loops.
+no descrip
+ 
+ The sensor for function  1 senses dry bulb temperature in office_fl1.
+ The actuator for function  1 is plant component   9:re_heat1 @ node no.  1
+ The following day types are defined:
+weekday     saturday    sunday
+ Day type weekday control has  3 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb   > flux     period off
+   2  7.00 dry bulb   > flux     non-recursive postnl mode 1.0 max capacity 10000.0W min
+capacity 0.0W setpoint 19.00C Tmp range 2.00C
+   3 18.00 dry bulb   > flux     period off
+ Day type saturday control has  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb   > flow     period off
+ Day type sunday control has  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb   > flow     period off
+ 
+ The sensor for function  2 senses dry bulb temperature in office_fl2.
+ The actuator for function  2 is plant component  10:re_heat2 @ node no.  1
+ The following day types are defined:
+weekday     saturday    sunday
+ Day type weekday control has  3 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb   > flux     period off
+   2  7.00 dry bulb   > flux     non-recursive postnl mode 1.0 max capacity 10000.0W min
+capacity 0.0W setpoint 19.00C Tmp range 2.00C
+   3 18.00 dry bulb   > flux     period off
+ Day type saturday control has  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb   > flux     period off
+ Day type sunday control has  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb   > flux     period off
+ 
+ The sensor for function  3 senses dry bulb temperature in office_fl3.
+ The actuator for function  3 is plant component  11:re_heat3 @ node no.  1
+ The following day types are defined:
+weekday     saturday    sunday
+ Day type weekday control has  3 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb   > flux     period off
+   2  7.00 dry bulb   > flux     non-recursive postnl mode 1.0 max capacity 10000.0W min
+capacity 0.0W setpoint 19.00C Tmp range 2.00C
+   3 18.00 dry bulb   > flux     period off
+ Day type saturday control has  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb   > flux     period off
+ Day type sunday control has  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb   > flux     period off
+ 
+ The sensor for function  4 senses dry bulb temperature in office_fl2.
+ The actuator for function  4 is plant component   5:heating_coil @ node no.  1
+ The following day types are defined:
+weekday     saturday    sunday
+ Day type weekday control has  3 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb   > flux     non-recursive postnl mode 1.0 max capacity 20000.0W min
+capacity 0.0W setpoint 14.00C Tmp range 2.00C
+   2  7.00 dry bulb   > flux     non-recursive postnl mode 1.0 max capacity 20000.0W min
+capacity 0.0W setpoint 19.00C Tmp range 2.00C
+   3 18.00 dry bulb   > flux     non-recursive postnl mode 1.0 max capacity 20000.0W min
+capacity 0.0W setpoint 14.00C Tmp range 2.00C
+ Day type saturday control has  3 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb   > flux     non-recursive postnl mode 1.0 max capacity 20000.0W min
+capacity 0.0W setpoint 14.00C Tmp range 2.00C
+   2  7.00 dry bulb   > flux     non-recursive postnl mode 1.0 max capacity 20000.0W min
+capacity 0.0W setpoint 14.00C Tmp range 2.00C
+   3 18.00 dry bulb   > flux     non-recursive postnl mode 1.0 max capacity 20000.0W min
+capacity 0.0W setpoint 14.00C Tmp range 2.00C
+ Day type sunday control has  3 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb   > flux     non-recursive postnl mode 1.0 max capacity 20000.0W min
+capacity 0.0W setpoint 14.00C Tmp range 2.00C
+   2  7.00 dry bulb   > flux     non-recursive postnl mode 1.0 max capacity 20000.0W min
+capacity 0.0W setpoint 14.00C Tmp range 2.00C
+   3 18.00 dry bulb   > flux     non-recursive postnl mode 1.0 max capacity 20000.0W min
+capacity 0.0W setpoint 14.00C Tmp range 2.00C
+ 
+ The sensor for function  5 senses var in compt.  1:inlet_duct @ node no.  1
+ The actuator for function  5 is plant component   2:frost_coil @ node no.  1
+There have been  1 periods of validity defined during the year.
+ Control is valid Fri-01-Jan to Fri-31-Dec, 1999 with  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb   > flux     non-recursive postnl mode 1.0 max capacity 5000.0W min
+capacity 0.0W setpoint 9.00C Tmp range 2.00C
+ 
+ Flow control includes  1 loops.
+no descrip
+ 
+ The sensor for function  1 sensor node(s) not yet defined
+ The actuator for function  1 is flow component:   4 fan
+There have been  1 periods of validity defined during the year.
+ Control is valid Fri-01-Jan to Fri-31-Dec, 1999 with  3 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 dry bulb > flow       on/off setpoint 100.00 direct action ON fraction 0.000.
+   2  6.50 dry bulb > flow       on/off setpoint 23.00 inverse action ON fraction 0.000.
+   3 18.50 dry bulb > flow       on/off setpoint 100.00 direct action ON fraction 0.000.
+ ____________________________________________________________
+ 
+The model includes an air flow network.
+ 
+ Flow network description.
+ 
+  18 nodes,   5 components,  23 connections;     wind reduction =  0.779
+   # Node      Fluid   Node Type           Height Temperature    Data_1       Data_2
+   1 entry        air   boundary & wind ind  12.4000   0.0000     coef   19.000  azim 180.000
+   2 pv1          air   internal & unknown   14.4500   20.000     (-)     0.000  vol    0.000
+   3 pv2          air   internal & unknown   18.1350   20.000     (-)     0.000  vol    0.000
+   4 pv3          air   internal & unknown   21.3800   20.000     (-)     0.000  vol    0.000
+   5 pv4          air   internal & unknown   23.7900   20.000     (-)     0.000  vol    0.000
+   6 exit         air   boundary & wind ind  24.6000   0.0000     coef   15.000  azim 180.000
+   7 sfan         air   internal & unknown   24.0000   20.000     (-)     0.000  vol    0.000
+   8 efan         air   internal & unknown   24.0000   20.000     (-)     0.000  vol    0.000
+   9 west         air   boundary & wind ind  15.0000   0.0000     coef    5.000  azim 270.000
+  10 south        air   boundary & wind ind  15.0000   0.0000     coef    5.000  azim 180.000
+  11 east         air   boundary & wind ind  15.0000   0.0000     coef    5.000  azim  90.000
+  12 fact         air   internal & unknown    3.0000   20.000     (-)     0.000  vol    0.000
+  13 off1         air   internal & unknown    0.0000   20.000     (-)     0.000  vol    0.000
+  14 off2         air   internal & unknown    0.0000   20.000     (-)     0.000  vol    0.000
+  15 off3         air   internal & unknown    0.0000   20.000     (-)     0.000  vol    0.000
+  16 cvg1         air   internal & unknown    0.0000   20.000     (-)     0.000  vol    0.000
+  17 cvg2         air   internal & unknown    0.0000   20.000     (-)     0.000  vol    0.000
+  18 dvg          air   internal & unknown    0.0000   20.000     (-)     0.000  vol    0.000
+ 
+ Component    Type C+ L+ Description
+ 
+ slot           40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Fluid  1.0 opening area (m^2)  2.400 discharge factor (-) 0.300
+ 
+ plant          40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Fluid  1.0 opening area (m^2)  0.100 discharge factor (-) 0.800
+ 
+ plant2         40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Fluid  1.0 opening area (m^2)  0.200 discharge factor (-) 0.800
+ 
+ fan            30  2  0 Constant vol. flow rate component   m = rho.a
+ Fluid  1.0 flow rate (m^3/s)  0.50000
+ 
+ crack         120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
+ Fluid  1.0 crack width (m)  0.0010 crack length (m) 10.000
+ 
+    # +Node         dHght   -Node         dHght   Component       Z @+    Z @-
+    1 entry         0.000   pv1          -1.610   slot           12.400  12.840
+    2 pv1           1.610   pv2          -1.610   slot           16.060  16.525
+    3 pv2           1.610   pv3          -1.610   slot           19.745  19.770
+    4 pv3           1.611   pv4          -0.880   slot           22.991  22.910
+    5 pv4           0.000   sfan          0.000   fan            23.790  24.000
+    6 sfan          0.000   dvg           0.000   plant          24.000   0.000
+    7 dvg           0.000   off1          0.000   plant           0.000   0.000
+    8 dvg           0.000   off2          0.000   plant           0.000   0.000
+    9 dvg           0.000   off3          0.000   plant           0.000   0.000
+   10 off1          0.000   cvg1          0.000   plant2          0.000   0.000
+   11 off2          0.000   cvg1          0.000   plant2          0.000   0.000
+   12 off3          0.000   cvg2          0.000   plant           0.000   0.000
+   13 cvg1          0.000   cvg2          0.000   plant2          0.000   0.000
+   14 cvg2          0.000   efan          0.000   plant           0.000  24.000
+   15 efan          0.000   exit          0.000   fan            24.000  24.600
+   16 fact          0.000   west          0.000   crack           3.000  15.000
+   17 fact          0.000   east          0.000   crack           3.000  15.000
+   18 off1          0.000   south         0.000   crack           0.000  15.000
+   19 off2          0.000   south         0.000   crack           0.000  15.000
+   20 off3          0.000   south         0.000   crack           0.000  15.000
+   21 south         0.000   dvg           0.000   fan            15.000   0.000
+   22 efan          0.000   exit          0.000   crack          24.000  24.600
+   23 pv4           0.000   sfan          0.000   crack          23.790  24.000
+thermal zone to air flow node mapping:
+thermal zone -> air flow node
+factory_area -> fact
+office_fl1   -> off1
+office_fl2   -> off2
+office_fl3   -> off3
+pv_layer1    -> pv1
+pv_layer2    -> pv2
+pv_layer3    -> pv3
+pv_layer4    -> pv4
+ 
+ 
+The model includes a plant network.
+ 
+ The plant network contains 16 components from plantc.db1
+ 
+ Component: inlet_duct ( 1) code  1, db reference   6
+ No Control data
+ Modified parameters for inlet_duct
+ Component total mass (kg)                          :   9.2500
+ Mass weighted average specific heat (J/kgK)        :   500.00
+ UA modulus (W/K)                                   :   14.000
+ Hydraulic diameter of duct (m)                     :  0.12500
+ Length of duct section (m)                         :   5.0000
+ Cross sectional face area (m^2)                    :  0.12270E-01
+ 
+ Component: frost_coil ( 2) code  2, db reference   5
+ Control data:    0.000
+ Modified parameters for frost_coil
+ Component total mass (kg)                          :   15.000
+ Mass weighted average specific heat (J/kgK)        :   1000.0
+ UA modulus (W/K)                                   :   3.5000
+Electrical data for component   2
+1.000   0      0.000    220.000   1
+ 
+ 
+ Component: supply_fan ( 3) code  3, db reference   3
+ Control data:    0.000
+ Modified parameters for supply_fan
+ Component total mass (kg)                          :   10.000
+ Mass weighted average specific heat (J/kgK)        :   500.00
+ UA modulus (W/K)                                   :   7.0000
+ Rated total absorbed power (W)                     :   535.00
+ Rated volume flow rate (m^3/s)                     :   1.0000
+ Overall efficiency (-)                             :  0.80000
+Electrical data for component   3
+0.800   1      0.000    440.000   4
+ 
+ 
+ Component: heat_exchanger ( 4) code  4, db reference  10
+ No Control data
+ Modified parameters for heat_exchanger
+ Component total mass (kg)                          :   10.000
+ Mass weighted average specific heat (J/kgK)        :   1000.0
+ UA modulus (W/K)                                   :   7.0000
+ Total plate heat transfer area (m^2)               :   15.000
+ Heat exchanger net face area (m^2)                 :  0.25000
+ 
+ Component: heating_coil ( 5) code  5, db reference   5
+ Control data:    0.000
+ Modified parameters for heating_coil
+ Component total mass (kg)                          :   15.000
+ Mass weighted average specific heat (J/kgK)        :   1000.0
+ UA modulus (W/K)                                   :   3.5000
+Electrical data for component   5
+1.000   0      0.000    220.000   1
+ 
+ 
+ Component: supply_duc1 ( 6) code  6, db reference   6
+ No Control data
+ Modified parameters for supply_duc1
+ Component total mass (kg)                          :   9.2500
+ Mass weighted average specific heat (J/kgK)        :   500.00
+ UA modulus (W/K)                                   :   14.000
+ Hydraulic diameter of duct (m)                     :  0.12500
+ Length of duct section (m)                         :   5.0000
+ Cross sectional face area (m^2)                    :  0.12270E-01
+ 
+ Component: supply_duc2 ( 7) code  7, db reference   6
+ No Control data
+ Modified parameters for supply_duc2
+ Component total mass (kg)                          :   9.2500
+ Mass weighted average specific heat (J/kgK)        :   500.00
+ UA modulus (W/K)                                   :   14.000
+ Hydraulic diameter of duct (m)                     :  0.12500
+ Length of duct section (m)                         :   5.0000
+ Cross sectional face area (m^2)                    :  0.12270E-01
+ 
+ Component: supply_duc3 ( 8) code  8, db reference   6
+ No Control data
+ Modified parameters for supply_duc3
+ Component total mass (kg)                          :   9.2500
+ Mass weighted average specific heat (J/kgK)        :   500.00
+ UA modulus (W/K)                                   :   14.000
+ Hydraulic diameter of duct (m)                     :  0.12500
+ Length of duct section (m)                         :   5.0000
+ Cross sectional face area (m^2)                    :  0.12270E-01
+ 
+ Component: re_heat1 ( 9) code  9, db reference   5
+ Control data:    0.000
+ Modified parameters for re_heat1
+ Component total mass (kg)                          :   15.000
+ Mass weighted average specific heat (J/kgK)        :   1000.0
+ UA modulus (W/K)                                   :   3.5000
+Electrical data for component   9
+1.000   0      0.000    220.000   3
+ 
+ 
+ Component: re_heat2 (10) code 10, db reference   5
+ Control data:    0.000
+ Modified parameters for re_heat2
+ Component total mass (kg)                          :   15.000
+ Mass weighted average specific heat (J/kgK)        :   1000.0
+ UA modulus (W/K)                                   :   3.5000
+Electrical data for component  10
+1.000   0      0.000    220.000   3
+ 
+ 
+ Component: re_heat3 (11) code 11, db reference   5
+ Control data:    0.000
+ Modified parameters for re_heat3
+ Component total mass (kg)                          :   15.000
+ Mass weighted average specific heat (J/kgK)        :   1000.0
+ UA modulus (W/K)                                   :   3.5000
+Electrical data for component  11
+1.000   0      0.000    220.000   3
+ 
+ 
+ Component: pv_duct (12) code 12, db reference   6
+ No Control data
+ Modified parameters for pv_duct
+ Component total mass (kg)                          :   9.2500
+ Mass weighted average specific heat (J/kgK)        :   500.00
+ UA modulus (W/K)                                   :   14.000
+ Hydraulic diameter of duct (m)                     :  0.12500
+ Length of duct section (m)                         :   5.0000
+ Cross sectional face area (m^2)                    :  0.12270E-01
+ 
+ Component: exit_duct (13) code 13, db reference   6
+ No Control data
+ Modified parameters for exit_duct
+ Component total mass (kg)                          :   9.2500
+ Mass weighted average specific heat (J/kgK)        :   500.00
+ UA modulus (W/K)                                   :   14.000
+ Hydraulic diameter of duct (m)                     :  0.12500
+ Length of duct section (m)                         :   5.0000
+ Cross sectional face area (m^2)                    :  0.12270E-01
+ 
+ Component: extr_fan (14) code 14, db reference   3
+ Control data:    0.000
+ Modified parameters for extr_fan
+ Component total mass (kg)                          :   10.000
+ Mass weighted average specific heat (J/kgK)        :   500.00
+ UA modulus (W/K)                                   :   7.0000
+ Rated total absorbed power (W)                     :   535.00
+ Rated volume flow rate (m^3/s)                     :   1.0000
+ Overall efficiency (-)                             :  0.80000
+Electrical data for component  14
+0.800   1      0.000    440.000   4
+ 
+ 
+ Component: convg1 (15) code 15, db reference   1
+ No Control data
+ Modified parameters for convg1
+ Component total mass (kg)                          :   1.0000
+ Mass weighted average specific heat (J/kgK)        :   500.00
+ UA modulus (W/K)                                   :   3.5000
+ 
+ Component: convg2 (16) code 16, db reference   1
+ No Control data
+ Modified parameters for convg2
+ Component total mass (kg)                          :   1.0000
+ Mass weighted average specific heat (J/kgK)        :   500.00
+ UA modulus (W/K)                                   :   3.5000
+ 
+ Nb of plant component connections: 19
+ Con receiving component node type sending component node
+ 
+  1 pv_duct node 1 (zone air or ambient.) exit_duct node 1 details:     1.00    8.00    0.00
+ 
+  2 frost_coil node 1 (from another component.) pv_duct node 1 details:     1.00    0.00    0.00
+ 
+  3 inlet_duct node 1 (from another component.) frost_coil node 1 details:     1.00    0.00    0.00
+ 
+  4 supply_fan node 1 (from another component.) inlet_duct node 1 details:     1.00    0.00    0.00
+ 
+  5 heat_exchanger node 1 (from another component.) supply_fan node 1 details:     1.00    0.00    0.00
+ 
+  6 heating_coil node 1 (from another component.) heat_exchanger node 1 details:     1.00    0.00    0.00
+ 
+  7 supply_duc1 node 1 (from another component.) heating_coil node 1 details:     0.33    0.00    0.00
+ 
+  8 re_heat1 node 1 (from another component.) supply_duc1 node 1 details:     1.00    0.00    0.00
+ 
+  9 supply_duc2 node 1 (from another component.) heating_coil node 1 details:     0.33    0.00    0.00
+ 
+ 10 re_heat2 node 1 (from another component.) supply_duc2 node 1 details:     1.00    0.00    0.00
+ 
+ 11 supply_duc3 node 1 (from another component.) heating_coil node 1 details:     0.33    0.00    0.00
+ 
+ 12 re_heat3 node 1 (from another component.) supply_duc3 node 1 details:     1.00    0.00    0.00
+ 
+ 13 convg1 node 1 (zone air or ambient.) re_heat1 node 1 details:     1.00    2.00    0.00
+ 
+ 14 convg1 node 1 (zone air or ambient.) re_heat2 node 1 details:     1.00    3.00    0.00
+ 
+ 15 convg2 node 1 (zone air or ambient.) re_heat3 node 1 details:     1.00    4.00    0.00
+ 
+ 16 convg2 node 1 (from another component.) convg1 node 1 details:     1.00    0.00    0.00
+ 
+ 17 extr_fan node 1 (from another component.) convg2 node 1 details:     1.00    0.00    0.00
+ 
+ 18 heat_exchanger node 2 (from another component.) extr_fan node 1 details:     1.00    0.00    0.00
+ 
+ 19 exit_duct node 1 (from another component.) heat_exchanger node 2 details:     1.00    0.00    0.00
+ 
+ No of component containments =  0
+  Component      | Containment descr. | Type
+ 
+  plant inter-connection/fluid flow  connection mapping :
+   6   6   6   6   6   6   7   7   8   8
+   9   9  10  11  12  13  14  15  15   0
+ 
+ ____________________________________________________________
+ 
+ID Zone         Volume|          Surface
+   Name         m^3   | No. Opaque  Transp  ~Floor
+ 1 factory_area31263.0  17  6530.8    93.5  1248.0  factory_area describes a
+ 2 office_fl1   1241.4   7  1076.8    59.1   413.8  office_fl1 describes a
+ 3 office_fl2   1944.9   7  1245.3    65.2   413.8  office_fl2 describes a
+ 4 office_fl3   1944.9   7  1245.3    65.2   413.8  office_fl3 describes a
+ 5 pv_layer1      59.6   9   318.2   230.3    14.4  pv_layer1 describes a
+ 6 pv_layer2      46.2   9   259.6   172.5    14.4  pv_layer2 describes a
+ 7 pv_layer3      46.2   9   259.6   172.5    14.4  pv_layer3 describes a
+ 8 pv_layer4      29.6   9   167.7   119.0    14.4  pv_layer4 describes a
+   all         36576.   74  11103.    977.   2547.
+ 
+ 
+ Zone factory_area ( 1) is composed of 17 surfaces and 27 vertices.
+ It encloses a volume of 31300.m^3 of space, with a total surface
+ area of 6620.m^2 & approx floor area of 1250.m^2
+ factory_area describes a
+ There is 4073.8m2 of exposed surface area, 2825.8m2 of which is vertical.
+ Outside walls are 226.42 % of floor area & average U of 0.626 & UA of 1767.7
+ Flat roof is 100.00 % of floor area & average U of 0.334 & UA of 416.39
+ Ground contact is 100.00 % of floor area & average U of 0.389 & perimeter 123.42
+ 
+ A summary of the surfaces in factory_area( 1) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  261.    180.   0. Surf-1       OPAQUE   VERT -        -        wall_clad    ||< external
+  2  501.     90.   0. Surf-2       OPAQUE   VERT -        -        wall_clad    ||< external
+  3  1560.     0.   0. Surf-3       OPAQUE   VERT -        -        wall_clad    ||< external
+  4  501.    270.   0. Surf-4       OPAQUE   VERT -        -        wall_clad    ||< external
+  5  1250.     0.  90. Surf-5       OPAQUE   CEIL -        -        roof_clad    ||< external
+  6  1250.     0. -90. Surf-6       OPAQUE   FLOR -        -        Floor_slab   ||< ground profile  1
+  7  228.    180.   0. pv_back1     OPAQUE   VERT -        -        pv_back_wall ||< Surf-3:pv_layer1
+  8  177.    180.   0. pv_back2     OPAQUE   VERT -        -        pv_back_wall ||< Surf-3:pv_layer2
+  9  177.    180.   0. pv_back3     OPAQUE   VERT -        -        pv_back_wall ||< Surf-3:pv_layer3
+ 10  113.    180.   0. pv_back4     OPAQUE   VERT -        -        pv_back_wall ||< Surf-3:pv_layer4
+ 11  30.7    180.   0. pv_glaz1     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz1:pv_layer1
+ 12  23.8    180.   0. pv_glaz2     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz2:pv_layer2
+ 13  23.8    180.   0. pv_glaz3     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz3:pv_layer3
+ 14  15.2    180.   0. pv_glaz4     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz4:pv_layer4
+ 15  124.    180.   0. off1-back    OPAQUE   VERT -        -        wall_clad    ||< Surf-3:office_fl1
+ 16  194.    180.   0. off2-back    OPAQUE   VERT -        -        wall_clad    ||< Surf-3:office_fl2
+ 17  194.    180.   0. off3-back    OPAQUE   VERT -        -        wall_clad    ||< Surf-3:office_fl3
+ 
+ Vertices ( index X Y Z) in the zone...
+vertex   1    0.00000   10.00000    0.00000   vertex  14   62.40000   10.00000   19.77000
+vertex   2   62.40000   10.00000    0.00000   vertex  15   62.40000   10.00000   22.99000
+vertex   3   62.40000   30.00000    0.00000   vertex  16    0.00000   10.00000   22.99000
+vertex   4    0.00000   30.00000    0.00000   vertex  17   55.01000   10.00000   25.05000
+vertex   5    0.00000   10.00000   25.05000   vertex  18   55.01000   10.00000   22.99000
+vertex   6   62.40000   10.00000   25.05000   vertex  19   55.01000   10.00000   19.77000
+vertex   7   62.40000   30.00000   25.05000   vertex  20   55.01000   10.00000   16.55000
+vertex   8    0.00000   30.00000   25.05000   vertex  21   55.01000   10.00000   12.40000
+vertex   9   62.40000   10.00000   12.40000   vertex  22   41.38000   10.00000    0.00000
+vertex  10    0.00000   10.00000   12.40000   vertex  23    0.00000   10.00000    3.00000
+vertex  11    0.00000   10.00000   16.55000   vertex  24   41.38000   10.00000    3.00000
+vertex  12   62.40000   10.00000   16.55000   vertex  25    0.00000   10.00000    7.70000
+vertex  13    0.00000   10.00000   19.77000   vertex  26   41.38000   10.00000    7.70000
+                                              vertex  27   41.38000   10.00000   12.40000
+ Number of vertices followed by list, name & perimeter length
+*edges,7,22,2,9,21,27,26,24   Surf-1  66.840m perimeter
+*edges,8,2,3,7,6,15,14,12,9   Surf-2  90.100m perimeter
+*edges,4,3,4,8,7   Surf-3 174.900m perimeter
+*edges,10,4,1,23,25,10,11,13,16,5,8   Surf-4  90.100m perimeter
+*edges,5,5,17,6,7,8   Surf-5 164.800m perimeter
+*edges,5,1,4,3,2,22   Surf-6 164.800m perimeter
+*edges,5,10,27,21,20,11   pv_back1 118.320m perimeter
+*edges,4,11,20,19,13   pv_back2 116.460m perimeter
+*edges,4,13,19,18,16   pv_back3 116.460m perimeter
+*edges,4,16,18,17,5   pv_back4 114.140m perimeter
+*edges,4,21,9,12,20   pv_glaz1  23.080m perimeter
+*edges,4,20,12,14,19   pv_glaz2  21.220m perimeter
+*edges,4,19,14,15,18   pv_glaz3  21.220m perimeter
+*edges,4,18,15,6,17   pv_glaz4  18.900m perimeter
+*edges,4,1,22,24,23   off1-back  88.760m perimeter
+*edges,4,23,24,26,25   off2-back  92.160m perimeter
+*edges,4,25,26,27,10   off3-back  92.160m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: fact
+ 
+Notes:
+the factory area is quite busy with equipment loads
+ 
+Daytype   Gain Label    Type    Unit Period Sensible  Latent  Radiant  Convec   p.f +/-  Power Voltage Phase
+          No.                        Hours  Magn.(W) Magn.(W) Frac     Frac     (-) (-)    (W)    (V) (rgb)
+weekday     1 Occupt     people    W    0- 7      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday     2 Occupt     people    W    7- 8     19.0      9.0    0.70    0.30    0.00  0    0.0    0.0  1
+weekday     3 Occupt     people    W    8- 9    570.0    270.0    0.70    0.30    0.00  0    0.0    0.0  1
+weekday     4 Occupt     people    W    9-12    950.0    450.0    0.70    0.30    0.00  0    0.0    0.0  1
+weekday     5 Occupt     people    W   12-13    190.0     90.0    0.70    0.30    0.00  0    0.0    0.0  1
+weekday     6 Occupt     people    W   13-16    950.0    450.0    0.70    0.30    0.00  0    0.0    0.0  1
+weekday     7 Occupt     people    W   16-24      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday     8 Lights     lighting  W    0- 7      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday     9 Lights     lighting  W    7-18   7200.0      0.0    0.50    0.50    0.95  1 7200.0  240.0  1
+weekday    10 Lights     lighting  W   18-24      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday    11 Equipt     equipment W    0- 8      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday    12 Equipt     equipment W    8- 9   3600.0      0.0    0.50    0.50    0.80  1 3600.0  440.0  4
+weekday    13 Equipt     equipment W    9-10   7200.0      0.0    0.50    0.50    0.80  1 7200.0  440.0  4
+weekday    14 Equipt     equipment W   10-11   9600.0      0.0    0.50    0.50    0.80  1 9600.0  440.0  4
+weekday    15 Equipt     equipment W   11-12  10800.0      0.0    0.50    0.50    0.80  110800.0  440.0  4
+weekday    16 Equipt     equipment W   12-16  12000.0      0.0    0.50    0.50    0.80  112000.0  440.0  4
+weekday    17 Equipt     equipment W   16-18   8400.0      0.0    0.50    0.50    0.80  1 8400.0  440.0  4
+weekday    18 Equipt     equipment W   18-24      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+ 
+ ____________________________________________________________
+ 
+ Zone office_fl1 ( 2) is composed of 7 surfaces and 12 vertices.
+ It encloses a volume of 1240.m^3 of space, with a total surface
+ area of 1140.m^2 & approx floor area of 414.m^2
+ office_fl1 describes a
+ There is 184.14m2 of exposed surface area, 184.14m2 of which is vertical.
+ Outside walls are 30.225 % of floor area & average U of 0.626 & UA of 78.238
+ Glazing is 14.275 % of floor & 32.079 % facade with average U of 5.753 & UA of 339.85
+ Ground contact is 100.00 % of floor area & average U of 0.389 & perimeter 61.380
+ 
+ A summary of the surfaces in office_fl1( 2) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  65.1    180.   0. Surf-1       OPAQUE   VERT -        -        wall_clad    ||< external
+  2  30.0     90.   0. Surf-2       OPAQUE   VERT -        -        wall_clad    ||< external
+  3  124.      0.   0. Surf-3       OPAQUE   VERT -        -        wall_clad    ||< off1-back:factory_area
+  4  30.0    270.   0. Surf-4       OPAQUE   VERT -        -        wall_clad    ||< external
+  5  414.      0.  90. Surf-5       OPAQUE   CEIL -        -        off_flr-r    ||< Surf-6:office_fl2
+  6  414.      0. -90. Surf-6       OPAQUE   FLOR -        -        Floor_slab   ||< ground profile  1
+  7  59.1    180.   0. window_off1  SCF8783_ VERT -        -        clear_glaz   ||< external
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1     0.00000     0.00000     0.00000
+*vertex   2    41.38000     0.00000     0.00000
+*vertex   3    41.38000    10.00000     0.00000
+*vertex   4     0.00000    10.00000     0.00000
+*vertex   5     0.00000     0.00000     3.00000
+*vertex   6    41.38000     0.00000     3.00000
+*vertex   7    41.38000    10.00000     3.00000
+*vertex   8     0.00000    10.00000     3.00000
+*vertex   9     1.00000     0.00000     1.00000
+*vertex  10    40.38000     0.00000     1.00000
+*vertex  11    40.38000     0.00000     2.50000
+*vertex  12     1.00000     0.00000     2.50000
+ Number of vertices followed by list, name & perimeter length
+*edges,10,1,2,6,5,1,9,12,11,10,9   Surf-1 173.348m perimeter
+*edges,4,2,3,7,6   Surf-2  26.000m perimeter
+*edges,4,3,4,8,7   Surf-3  88.760m perimeter
+*edges,4,4,1,5,8   Surf-4  26.000m perimeter
+*edges,4,5,6,7,8   Surf-5 102.760m perimeter
+*edges,4,1,4,3,2   Surf-6 102.760m perimeter
+*edges,4,9,10,11,12   window_off1  81.760m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ Casual gains are controlled in this zone.
+ 
+ Zone  2 office_fl1
+ Light zone 1
+ Average of  1 analytical daylight factor photocell types.
+ 
+ Set   |Switch-off |Minimum dimming|Minimal elec|Switch-off
+ point |light level|light output   |light output|delay time
+  500.0         1.5          0.10          0.10         0
+ 
+ Sensor| % of |Calculation       |   X  |   Y  |   Z  |  DX |  DY |  DZ |
+ number| whole|type              |      |      |      |     |     |     |
+      1  1.00 Analytical DF        20.00   7.00   1.50  0.00 -1.00  0.00
+ 
+ 
+Day        |Gain| Light|Start|Finish| Control       |
+           |Type| Zone |Hour |Hour  | Type          |
+weekday      2     1      8     18   1 On-Off
+saturday     0     1      0      1   1 On-Off
+sunday       0     1      0      1   1 On-Off
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: off1
+ 
+Notes:
+offices have a complex profile with electical data included
+ 
+Daytype   Gain Label    Type    Unit Period Sensible  Latent  Radiant  Convec   p.f +/-  Power Voltage Phase
+          No.                        Hours  Magn.(W) Magn.(W) Frac     Frac     (-) (-)    (W)    (V) (rgb)
+weekday     1 Occupt     people    W    0- 7      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday     2 Occupt     people    W    7- 8    240.0    360.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     3 Occupt     people    W    8- 9    900.0   1080.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     4 Occupt     people    W    9-12    650.0   1800.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     5 Occupt     people    W   12-14    600.0   1080.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     6 Occupt     people    W   14-17    650.0   1800.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     7 Occupt     people    W   17-21    120.0    180.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     8 Occupt     people    W   21-24      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday     9 Lights     lighting  W    0- 7      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday    10 Lights     lighting  W    7- 8   1000.0      0.0    0.50    0.50    0.95  1 1000.0  240.0  3
+weekday    11 Lights     lighting  W    8- 9   3000.0      0.0    0.50    0.50    0.95  1 3000.0  240.0  3
+weekday    12 Lights     lighting  W    9-12   5000.0      0.0    0.50    0.50    0.95  1 5000.0  240.0  3
+weekday    13 Lights     lighting  W   12-14   3000.0      0.0    0.50    0.50    0.95  1 3000.0  240.0  3
+weekday    14 Lights     lighting  W   14-17   5000.0      0.0    0.50    0.50    0.95  1 5000.0  240.0  3
+weekday    15 Lights     lighting  W   17-21    500.0      0.0    0.50    0.50    0.95  1  500.0  240.0  3
+weekday    16 Lights     lighting  W   21-24      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday    17 Equipt     equipment W    0- 7      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday    18 Equipt     equipment W    7- 8    440.0      0.0    0.50    0.50    0.90  1  440.0  240.0  2
+weekday    19 Equipt     equipment W    8- 9   1200.0      0.0    0.50    0.50    0.90  1 1200.0  240.0  2
+weekday    20 Equipt     equipment W    9-12   3200.0      0.0    0.50    0.50    0.90  1 3200.0  240.0  2
+weekday    21 Equipt     equipment W   12-14   1200.0      0.0    0.50    0.50    0.90  1 1200.0  240.0  2
+weekday    22 Equipt     equipment W   14-17   3100.0      0.0    0.50    0.50    0.90  1 3100.0  240.0  2
+weekday    23 Equipt     equipment W   17-21    220.0      0.0    0.50    0.50    0.90  1  220.0  240.0  2
+weekday    24 Equipt     equipment W   21-24      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+ 
+ ____________________________________________________________
+ 
+ Zone office_fl2 ( 3) is composed of 7 surfaces and 12 vertices.
+ It encloses a volume of 1940.m^3 of space, with a total surface
+ area of 1310.m^2 & approx floor area of 414.m^2
+ office_fl2 describes a
+ There is 288.49m2 of exposed surface area, 288.49m2 of which is vertical.
+ Outside walls are 53.949 % of floor area & average U of 0.626 & UA of 139.65
+ Glazing is 15.768 % of floor & 22.617 % facade with average U of 5.753 & UA of 375.39
+ 
+ A summary of the surfaces in office_fl2( 3) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  129.    180.   0. Surf-1       OPAQUE   VERT -        -        wall_clad    ||< external
+  2  47.0     90.   0. Surf-2       OPAQUE   VERT -        -        wall_clad    ||< external
+  3  194.      0.   0. Surf-3       OPAQUE   VERT -        -        wall_clad    ||< off2-back:factory_area
+  4  47.0    270.   0. Surf-4       OPAQUE   VERT -        -        wall_clad    ||< external
+  5  414.      0.  90. Surf-5       OPAQUE   CEIL -        -        off_flr-r    ||< Surf-6:office_fl3
+  6  414.      0. -90. Surf-6       OPAQUE   FLOR -        -        off_flr      ||< Surf-5:office_fl1
+  7  65.2    180.   0. window_off2  SCF8783_ VERT -        -        clear_glaz   ||< external
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1     0.00000     0.00000     3.00000
+*vertex   2    41.38000     0.00000     3.00000
+*vertex   3    41.38000    10.00000     3.00000
+*vertex   4     0.00000    10.00000     3.00000
+*vertex   5     0.00000     0.00000     7.70000
+*vertex   6    41.38000     0.00000     7.70000
+*vertex   7    41.38000    10.00000     7.70000
+*vertex   8     0.00000    10.00000     7.70000
+*vertex   9     1.00000     0.00000     4.00000
+*vertex  10    39.38000     0.00000     4.00000
+*vertex  11    39.38000     0.00000     5.70000
+*vertex  12     1.00000     0.00000     5.70000
+ Number of vertices followed by list, name & perimeter length
+*edges,10,1,2,6,5,1,9,12,11,10,9   Surf-1 175.148m perimeter
+*edges,4,2,3,7,6   Surf-2  29.400m perimeter
+*edges,4,3,4,8,7   Surf-3  92.160m perimeter
+*edges,4,4,1,5,8   Surf-4  29.400m perimeter
+*edges,4,5,6,7,8   Surf-5 102.760m perimeter
+*edges,4,1,4,3,2   Surf-6 102.760m perimeter
+*edges,4,9,10,11,12   window_off2  80.160m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ Casual gains are controlled in this zone.
+ 
+ Zone  3 office_fl2
+ Light zone 1
+ Average of  1 analytical daylight factor photocell types.
+ 
+ Set   |Switch-off |Minimum dimming|Minimal elec|Switch-off
+ point |light level|light output   |light output|delay time
+  500.0         1.5          0.10          0.10         0
+ 
+ Sensor| % of |Calculation       |   X  |   Y  |   Z  |  DX |  DY |  DZ |
+ number| whole|type              |      |      |      |     |     |     |
+      1  1.00 Analytical DF        20.00   7.00   4.50  0.00 -1.00  0.00
+ 
+ 
+Day        |Gain| Light|Start|Finish| Control       |
+           |Type| Zone |Hour |Hour  | Type          |
+weekday      2     1      8     18   1 On-Off
+saturday     0     1      0      1   1 On-Off
+sunday       0     1      0      1   1 On-Off
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: off2
+ 
+Notes:
+this office is used on weekdays and has electrical data
+ 
+Daytype   Gain Label    Type    Unit Period Sensible  Latent  Radiant  Convec   p.f +/-  Power Voltage Phase
+          No.                        Hours  Magn.(W) Magn.(W) Frac     Frac     (-) (-)    (W)    (V) (rgb)
+weekday     1 Occupt     people    W    0- 7      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday     2 Occupt     people    W    7- 8      0.0    360.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday     3 Occupt     people    W    8- 9    900.0   1080.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     4 Occupt     people    W    9-12    650.0   1800.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     5 Occupt     people    W   12-14    600.0   1080.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     6 Occupt     people    W   14-17    650.0   1800.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     7 Occupt     people    W   17-21      0.0    180.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday     8 Occupt     people    W   21-24      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday     9 Lights     lighting  W    0- 7      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday    10 Lights     lighting  W    7- 8    500.0      0.0    0.50    0.50    0.95  1  500.0  240.0  3
+weekday    11 Lights     lighting  W    8- 9   3000.0      0.0    0.50    0.50    0.95  1 3000.0  240.0  3
+weekday    12 Lights     lighting  W    9-12   5000.0      0.0    0.50    0.50    0.95  1 5000.0  240.0  3
+weekday    13 Lights     lighting  W   12-14   3000.0      0.0    0.50    0.50    0.95  1 3000.0  240.0  3
+weekday    14 Lights     lighting  W   14-17   5000.0      0.0    0.50    0.50    0.95  1 5000.0  240.0  3
+weekday    15 Lights     lighting  W   17-21    500.0      0.0    0.50    0.50    0.95  1  500.0  240.0  3
+weekday    16 Lights     lighting  W   21-24      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday    17 Equipt     equipment W    0- 7      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday    18 Equipt     equipment W    7- 8    440.0      0.0    0.50    0.50    0.90  1  440.0  240.0  2
+weekday    19 Equipt     equipment W    8- 9   1200.0      0.0    0.50    0.50    0.90  1 1200.0  240.0  2
+weekday    20 Equipt     equipment W    9-12   1100.0      0.0    0.50    0.50    0.90  1 1100.0  240.0  2
+weekday    21 Equipt     equipment W   12-14   1200.0      0.0    0.50    0.50    0.90  1 1200.0  240.0  2
+weekday    22 Equipt     equipment W   14-17   1100.0      0.0    0.50    0.50    0.90  1 1100.0  240.0  2
+weekday    23 Equipt     equipment W   17-21    220.0      0.0    0.50    0.50    0.90  1  220.0  240.0  2
+weekday    24 Equipt     equipment W   21-24      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+ 
+ ____________________________________________________________
+ 
+ Zone office_fl3 ( 4) is composed of 7 surfaces and 12 vertices.
+ It encloses a volume of 1940.m^3 of space, with a total surface
+ area of 1310.m^2 & approx floor area of 414.m^2
+ office_fl3 describes a
+ There is 702.29m2 of exposed surface area, 288.49m2 of which is vertical.
+ Outside walls are 53.949 % of floor area & average U of 0.626 & UA of 139.65
+ Flat roof is 100.00 % of floor area & average U of 0.334 & UA of 138.06
+ Glazing is 15.768 % of floor & 22.617 % facade with average U of 5.753 & UA of 375.39
+ 
+ A summary of the surfaces in office_fl3( 4) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  129.    180.   0. Surf-1       OPAQUE   VERT -        -        wall_clad    ||< external
+  2  47.0     90.   0. Surf-2       OPAQUE   VERT -        -        wall_clad    ||< external
+  3  194.      0.   0. Surf-3       OPAQUE   VERT -        -        wall_clad    ||< off3-back:factory_area
+  4  47.0    270.   0. Surf-4       OPAQUE   VERT -        -        wall_clad    ||< external
+  5  414.      0.  90. Surf-5       OPAQUE   CEIL -        -        roof_clad    ||< external
+  6  414.      0. -90. Surf-6       OPAQUE   FLOR -        -        off_flr      ||< Surf-5:office_fl2
+  7  65.2    180.   0. window_off3  SCF8783_ VERT -        -        clear_glaz   ||< external
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1     0.00000     0.00000     7.70000
+*vertex   2    41.38000     0.00000     7.70000
+*vertex   3    41.38000    10.00000     7.70000
+*vertex   4     0.00000    10.00000     7.70000
+*vertex   5     0.00000     0.00000    12.40000
+*vertex   6    41.38000     0.00000    12.40000
+*vertex   7    41.38000    10.00000    12.40000
+*vertex   8     0.00000    10.00000    12.40000
+*vertex   9     1.00000     0.00000     8.70000
+*vertex  10    39.38000     0.00000     8.70000
+*vertex  11    39.38000     0.00000    10.40000
+*vertex  12     1.00000     0.00000    10.40000
+ Number of vertices followed by list, name & perimeter length
+*edges,10,1,2,6,5,1,9,12,11,10,9   Surf-1 175.148m perimeter
+*edges,4,2,3,7,6   Surf-2  29.400m perimeter
+*edges,4,3,4,8,7   Surf-3  92.160m perimeter
+*edges,4,4,1,5,8   Surf-4  29.400m perimeter
+*edges,4,5,6,7,8   Surf-5 102.760m perimeter
+*edges,4,1,4,3,2   Surf-6 102.760m perimeter
+*edges,4,9,10,11,12   window_off3  80.160m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ Casual gains are controlled in this zone.
+ 
+ Zone  4 office_fl3
+ Light zone 1
+ Average of  1 analytical daylight factor photocell types.
+ 
+ Set   |Switch-off |Minimum dimming|Minimal elec|Switch-off
+ point |light level|light output   |light output|delay time
+  500.0         1.5          0.10          0.10         0
+ 
+ Sensor| % of |Calculation       |   X  |   Y  |   Z  |  DX |  DY |  DZ |
+ number| whole|type              |      |      |      |     |     |     |
+      1  1.00 Analytical DF        20.00   7.00   9.30  0.00 -1.00  0.00
+ 
+ 
+Day        |Gain| Light|Start|Finish| Control       |
+           |Type| Zone |Hour |Hour  | Type          |
+weekday      2     1      8     18   1 On-Off
+saturday     0     1      0      1   1 On-Off
+sunday       0     1      0      1   1 On-Off
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: off3
+ 
+Notes:
+this office is used on weekdays and has electical attributes
+ 
+Daytype   Gain Label    Type    Unit Period Sensible  Latent  Radiant  Convec   p.f +/-  Power Voltage Phase
+          No.                        Hours  Magn.(W) Magn.(W) Frac     Frac     (-) (-)    (W)    (V) (rgb)
+weekday     1 Occupt     people    W    0- 7      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday     2 Occupt     people    W    7- 8    240.0    360.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     3 Occupt     people    W    8- 9    900.0   1080.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     4 Occupt     people    W    9-12    650.0   1800.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     5 Occupt     people    W   12-14    600.0   1080.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     6 Occupt     people    W   14-17    650.0   1800.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     7 Occupt     people    W   17-21    120.0    180.0    0.60    0.40    0.00  0    0.0    0.0  1
+weekday     8 Occupt     people    W   21-24      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday     9 Lights     lighting  W    0- 7      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday    10 Lights     lighting  W    7- 8    200.0      0.0    0.50    0.50    0.95  1  200.0  240.0  3
+weekday    11 Lights     lighting  W    8- 9   3000.0      0.0    0.50    0.50    0.95  1 3000.0  240.0  3
+weekday    12 Lights     lighting  W    9-12    100.0      0.0    0.50    0.50    0.95  1  100.0  240.0  3
+weekday    13 Lights     lighting  W   12-14   3000.0      0.0    0.50    0.50    0.95  1 3000.0  240.0  3
+weekday    14 Lights     lighting  W   14-17    200.0      0.0    0.50    0.50    0.95  1  200.0  240.0  3
+weekday    15 Lights     lighting  W   17-21    500.0      0.0    0.50    0.50    0.95  1  500.0  240.0  3
+weekday    16 Lights     lighting  W   21-24      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday    17 Equipt     equipment W    0- 7      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+weekday    18 Equipt     equipment W    7- 8    440.0      0.0    0.50    0.50    0.90  1  440.0  240.0  2
+weekday    19 Equipt     equipment W    8- 9    100.0      0.0    0.50    0.50    0.90  1  100.0  240.0  2
+weekday    20 Equipt     equipment W    9-12   3200.0      0.0    0.50    0.50    0.90  1 3200.0  240.0  2
+weekday    21 Equipt     equipment W   12-14   1200.0      0.0    0.50    0.50    0.90  1 1200.0  240.0  2
+weekday    22 Equipt     equipment W   14-17   3700.0      0.0    0.50    0.50    0.90  1 3700.0  240.0  2
+weekday    23 Equipt     equipment W   17-21      0.0      0.0    0.50    0.50    0.90  1    0.0  240.0  2
+weekday    24 Equipt     equipment W   21-24      0.0      0.0    0.50    0.50    0.00  0    0.0    0.0  1
+ 
+ ____________________________________________________________
+ 
+ Zone pv_layer1 ( 5) is composed of 9 surfaces and 14 vertices.
+ It encloses a volume of 59.6m^3 of space, with a total surface
+ area of 549.m^2 & approx floor area of 14.4m^2
+ pv_layer1 describes a
+ There is 275.22m2 of exposed surface area, 260.87m2 of which is vertical.
+ Outside walls are 526.42 % of floor area & average U of 5.088 & UA of 384.37
+ Glazing is 1391.5 % of floor & 76.544 % facade with average U of 4.506 & UA of 899.83
+ 
+ A summary of the surfaces in pv_layer1( 5) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  176.    180.   0. Surf-1       DC_PVpn_ VERT -        -        a-Si_PV      ||< external
+  2  0.955    90.   0. Surf-2       OPAQUE   VERT -        -        frame        ||< external
+  3  228.      0.   0. Surf-3       OPAQUE   VERT -        -        pv_back_wall ||< pv_back1:factory_area
+  4  0.955   270.   0. Surf-4       OPAQUE   VERT -        -        frame        ||< external
+  5  14.4      0.  90. Surf-5       OPAQUE   CEIL -        -        frame        ||< Surf-6:pv_layer2
+  6  14.4      0. -90. Surf-6       OPAQUE   FLOR -        -        frame        ||< external
+  7  59.3    180.   0. pv_base_fm   OPAQUE   VERT -        -        opq_glaz     ||< external
+  8  23.6    180.   0. pv1-glaz     SCF8783_ VERT -        -        clear_glaz   ||< external
+  9  30.7      0.   0. pv_glaz1     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz1:factory_area
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1     0.00000     9.77000    12.40000
+*vertex   2    62.40000     9.77000    12.40000
+*vertex   3    62.40000    10.00000    12.40000
+*vertex   4     0.00000    10.00000    12.40000
+*vertex   5     0.00000     9.77000    16.55000
+*vertex   6    62.40000     9.77000    16.55000
+*vertex   7    62.40000    10.00000    16.55000
+*vertex   8     0.00000    10.00000    16.55000
+*vertex   9     0.00000     9.77000    13.35000
+*vertex  10    62.40000     9.77000    13.35000
+*vertex  11    55.01000     9.77000    16.55000
+*vertex  12    55.01000     9.77000    13.35000
+*vertex  13    55.01000    10.00000    12.40000
+*vertex  14    55.01000    10.00000    16.55000
+ Number of vertices followed by list, name & perimeter length
+*edges,4,9,12,11,5   Surf-1 116.420m perimeter
+*edges,5,2,3,7,6,10   Surf-2   8.760m perimeter
+*edges,4,13,4,8,14   Surf-3 118.320m perimeter
+*edges,5,4,1,9,5,8   Surf-4   8.760m perimeter
+*edges,6,5,11,6,7,14,8   Surf-5 125.260m perimeter
+*edges,5,1,4,13,3,2   Surf-6 125.260m perimeter
+*edges,5,1,2,10,12,9   pv_base_fm 126.700m perimeter
+*edges,4,12,10,6,11   pv1-glaz  21.180m perimeter
+*edges,4,3,13,14,7   pv_glaz1  23.080m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ Opened existing hc control file.
+ 
+ Number of control periods:  1
+ 
+ Period  1 start   0.00 finish  24.00
+ User specified convection coefficients
+ Imported legacy file with no regime docs.
+   Surface orinetation  Inside     Outside
+ 1 Surf-1       (VERT)     7.000   default
+ 2 Surf-2       (VERT)     7.000   default
+ 3 Surf-3       (VERT)     7.000   default
+ 4 Surf-4       (VERT)     7.000   default
+ 5 Surf-5       (CEIL)     7.000   default
+ 6 Surf-6       (FLOR)     7.000   default
+ 7 pv_base_fm   (VERT)     7.000   default
+ 8 pv1-glaz     (VERT)     7.000   default
+ 9 pv_glaz1     (VERT)     7.000   default
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: pv1
+ 
+Notes:
+nil_operations
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+ 
+ ____________________________________________________________
+ 
+ Zone pv_layer2 ( 6) is composed of 9 surfaces and 15 vertices.
+ It encloses a volume of 46.2m^3 of space, with a total surface
+ area of 432.m^2 & approx floor area of 14.4m^2
+ pv_layer2 describes a
+ There is 202.41m2 of exposed surface area, 202.41m2 of which is vertical.
+ Outside walls are 374.50 % of floor area & average U of 2.941 & UA of 158.05
+ Glazing is 1036.0 % of floor & 73.449 % facade with average U of 4.565 & UA of 678.71
+ 
+ A summary of the surfaces in pv_layer2( 6) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  125.    180.   0. Surf-1       DC_PVpn_ VERT -        -        a-Si_PV      ||< external
+  2  0.741    90.   0. Surf-2       OPAQUE   VERT -        -        frame        ||< external
+  3  177.      0.   0. Surf-3       OPAQUE   VERT -        -        pv_back_wall ||< pv_back2:factory_area
+  4  0.741   270.   0. Surf-4       OPAQUE   VERT -        -        frame        ||< external
+  5  14.4      0.  90. Surf-5       OPAQUE   CEIL -        -        frame        ||< Surf-6:pv_layer3
+  6  14.4      0. -90. Surf-6       OPAQUE   FLOR -        -        frame        ||< Surf-5:pv_layer1
+  7  52.3    180.   0. pv_base_fm   OPAQUE   VERT -        -        frame        ||< external
+  8  23.8    180.   0. pv1-glaz     SCF8783_ VERT -        -        clear_glaz   ||< external
+  9  23.8      0.   0. pv_glaz2     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz2:factory_area
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1     0.00000     9.77000    16.55000
+*vertex   2    62.40000     9.77000    16.55000
+*vertex   3    62.40000    10.00000    16.55000
+*vertex   4     0.00000    10.00000    16.55000
+*vertex   5     0.00000     9.77000    19.77000
+*vertex   6    62.40000     9.77000    19.77000
+*vertex   7    62.40000    10.00000    19.77000
+*vertex   8     0.00000    10.00000    19.77000
+*vertex   9     0.00000     9.77000    17.50000
+*vertex  10    62.40000     9.77000    17.50000
+*vertex  11    55.01000     9.77000    19.77000
+*vertex  12    55.01000     9.77000    17.50000
+*vertex  13    55.01000     9.77000    16.55000
+*vertex  14    55.01000    10.00000    16.55000
+*vertex  15    55.01000    10.00000    19.77000
+ Number of vertices followed by list, name & perimeter length
+*edges,4,9,12,11,5   Surf-1 114.560m perimeter
+*edges,5,2,3,7,6,10   Surf-2   6.900m perimeter
+*edges,4,14,4,8,15   Surf-3 116.460m perimeter
+*edges,5,4,1,9,5,8   Surf-4   6.900m perimeter
+*edges,6,5,11,6,7,15,8   Surf-5 125.260m perimeter
+*edges,6,1,4,14,3,2,13   Surf-6 125.260m perimeter
+*edges,4,1,13,12,9   pv_base_fm 111.920m perimeter
+*edges,6,12,13,2,10,6,11   pv1-glaz  21.220m perimeter
+*edges,4,3,14,15,7   pv_glaz2  21.220m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ Opened existing hc control file.
+ 
+ Number of control periods:  1
+ 
+ Period  1 start   0.00 finish  24.00
+ User specified convection coefficients
+ Imported legacy file with no regime docs.
+   Surface orinetation  Inside     Outside
+ 1 Surf-1       (VERT)     7.000   default
+ 2 Surf-2       (VERT)     7.000   default
+ 3 Surf-3       (VERT)     7.000   default
+ 4 Surf-4       (VERT)     7.000   default
+ 5 Surf-5       (CEIL)     7.000   default
+ 6 Surf-6       (FLOR)     7.000   default
+ 7 pv_base_fm   (VERT)     7.000   default
+ 8 pv1-glaz     (VERT)     7.000   default
+ 9 pv_glaz2     (VERT)     7.000   default
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: pv2
+ 
+Notes:
+nil_operations
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+ 
+ ____________________________________________________________
+ 
+ Zone pv_layer3 ( 7) is composed of 9 surfaces and 15 vertices.
+ It encloses a volume of 46.2m^3 of space, with a total surface
+ area of 432.m^2 & approx floor area of 14.4m^2
+ pv_layer3 describes a
+ There is 202.41m2 of exposed surface area, 202.41m2 of which is vertical.
+ Outside walls are 374.50 % of floor area & average U of 2.941 & UA of 158.05
+ Glazing is 1036.0 % of floor & 73.450 % facade with average U of 4.565 & UA of 678.71
+ 
+ A summary of the surfaces in pv_layer3( 7) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  125.    180.   0. Surf-1       DC_PVpn_ VERT -        -        a-Si_PV      ||< external
+  2  0.741    90.   0. Surf-2       OPAQUE   VERT -        -        frame        ||< external
+  3  177.      0.   0. Surf-3       OPAQUE   VERT -        -        pv_back_wall ||< pv_back3:factory_area
+  4  0.741   270.   0. Surf-4       OPAQUE   VERT -        -        frame        ||< external
+  5  14.4      0.  90. Surf-5       OPAQUE   CEIL -        -        frame        ||< Surf-6:pv_layer4
+  6  14.4      0. -90. Surf-6       OPAQUE   FLOR -        -        frame        ||< Surf-5:pv_layer2
+  7  52.3    180.   0. pv_base_fm   OPAQUE   VERT -        -        frame        ||< external
+  8  23.8    180.   0. pv1-glaz     SCF8783_ VERT -        -        clear_glaz   ||< external
+  9  23.8      0.   0. pv_glaz3     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz3:factory_area
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1     0.00000     9.77000    19.77000
+*vertex   2    62.40000     9.77000    19.77000
+*vertex   3    62.40000    10.00000    19.77000
+*vertex   4     0.00000    10.00000    19.77000
+*vertex   5     0.00000     9.77000    22.99000
+*vertex   6    62.40000     9.77000    22.99000
+*vertex   7    62.40000    10.00000    22.99000
+*vertex   8     0.00000    10.00000    22.99000
+*vertex   9     0.00000     9.77000    20.72000
+*vertex  10    62.40000     9.77000    20.72000
+*vertex  11    55.01000     9.77000    22.99000
+*vertex  12    55.01000     9.77000    20.72000
+*vertex  13    55.01000     9.77000    19.77000
+*vertex  14    55.01000    10.00000    19.77000
+*vertex  15    55.01000    10.00000    22.99000
+ Number of vertices followed by list, name & perimeter length
+*edges,4,9,12,11,5   Surf-1 114.560m perimeter
+*edges,5,2,3,7,6,10   Surf-2   6.900m perimeter
+*edges,4,14,4,8,15   Surf-3 116.460m perimeter
+*edges,5,4,1,9,5,8   Surf-4   6.900m perimeter
+*edges,6,5,11,6,7,15,8   Surf-5 125.260m perimeter
+*edges,6,1,4,14,3,2,13   Surf-6 125.260m perimeter
+*edges,4,1,13,12,9   pv_base_fm 111.920m perimeter
+*edges,6,12,13,2,10,6,11   pv1-glaz  21.220m perimeter
+*edges,4,3,14,15,7   pv_glaz3  21.220m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ Opened existing hc control file.
+ 
+ Number of control periods:  1
+ 
+ Period  1 start   0.00 finish  24.00
+ User specified convection coefficients
+ Imported legacy file with no regime docs.
+   Surface orinetation  Inside     Outside
+ 1 Surf-1       (VERT)     7.000   default
+ 2 Surf-2       (VERT)     7.000    7.000
+ 3 Surf-3       (VERT)     7.000   default
+ 4 Surf-4       (VERT)     7.000   default
+ 5 Surf-5       (CEIL)     7.000   default
+ 6 Surf-6       (FLOR)     7.000   default
+ 7 pv_base_fm   (VERT)     7.000   default
+ 8 pv1-glaz     (VERT)     7.000   default
+ 9 pv_glaz3     (VERT)     7.000   default
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: pv3
+ 
+Notes:
+nil_operations
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+ 
+ ____________________________________________________________
+ 
+ Zone pv_layer4 ( 8) is composed of 9 surfaces and 15 vertices.
+ It encloses a volume of 29.6m^3 of space, with a total surface
+ area of 287.m^2 & approx floor area of 14.4m^2
+ pv_layer4 describes a
+ There is 143.84m2 of exposed surface area, 129.49m2 of which is vertical.
+ Outside walls are 179.11 % of floor area & average U of 2.941 & UA of 75.590
+ Flat roof is 100.01 % of floor area & average U of 3.226 & UA of 46.294
+ Glazing is 723.27 % of floor & 80.152 % facade with average U of 4.546 & UA of 471.86
+ 
+ A summary of the surfaces in pv_layer4( 8) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  24.8    180.   0. frame        OPAQUE   VERT -        -        frame        ||< external
+  2  0.474    90.   0. Surf-2       OPAQUE   VERT -        -        frame        ||< external
+  3  113.      0.   0. Surf-3       OPAQUE   VERT -        -        pv_back_wall ||< pv_back4:factory_area
+  4  0.474   270.   0. Surf-4       OPAQUE   VERT -        -        frame        ||< external
+  5  14.4      0.  90. Surf-5       OPAQUE   CEIL -        -        frame        ||< external
+  6  14.4      0. -90. Surf-6       OPAQUE   FLOR -        -        frame        ||< Surf-5:pv_layer3
+  7  88.6    180.   0. pv           DC_PVpn_ VERT -        -        a-Si_PV      ||< external
+  8  15.2    180.   0. pv1-glaz     SCF8783_ VERT -        -        clear_glaz   ||< external
+  9  15.2      0.   0. pv_glaz4     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz4:factory_area
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1     0.00000     9.77000    22.99000
+*vertex   2    62.40000     9.77000    22.99000
+*vertex   3    62.40000    10.00000    22.99000
+*vertex   4     0.00000    10.00000    22.99000
+*vertex   5     0.00000     9.77000    25.05000
+*vertex   6    62.40000     9.77000    25.05000
+*vertex   7    62.40000    10.00000    25.05000
+*vertex   8     0.00000    10.00000    25.05000
+*vertex   9     0.00000     9.77000    24.60000
+*vertex  10    62.40000     9.77000    23.94000
+*vertex  11    55.01000     9.77000    25.05000
+*vertex  12    55.01000     9.77000    24.60000
+*vertex  13    55.01000     9.77000    22.99000
+*vertex  14    55.01000    10.00000    22.99000
+*vertex  15    55.01000    10.00000    25.05000
+ Number of vertices followed by list, name & perimeter length
+*edges,4,9,12,11,5   frame 110.920m perimeter
+*edges,5,2,3,7,6,10   Surf-2   4.580m perimeter
+*edges,4,14,4,8,15   Surf-3 114.140m perimeter
+*edges,5,4,1,9,5,8   Surf-4   4.580m perimeter
+*edges,6,5,11,6,7,15,8   Surf-5 125.260m perimeter
+*edges,6,1,4,14,3,2,13   Surf-6 125.260m perimeter
+*edges,4,1,13,12,9   pv 113.240m perimeter
+*edges,6,12,13,2,10,6,11   pv1-glaz  18.900m perimeter
+*edges,4,3,14,15,7   pv_glaz4  18.900m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ Opened existing hc control file.
+ 
+ Number of control periods:  1
+ 
+ Period  1 start   0.00 finish  24.00
+ User specified convection coefficients
+ Imported legacy file with no regime docs.
+   Surface orinetation  Inside     Outside
+ 1 frame        (VERT)     7.000   default
+ 2 Surf-2       (VERT)     7.000   default
+ 3 Surf-3       (VERT)     7.000   default
+ 4 Surf-4       (VERT)     7.000   default
+ 5 Surf-5       (CEIL)     7.000   default
+ 6 Surf-6       (FLOR)     7.000   default
+ 7 pv           (VERT)     7.000   default
+ 8 pv1-glaz     (VERT)     7.000   default
+ 9 pv_glaz4     (VERT)     7.000   default
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: pv4
+ 
+Notes:
+nil_operations
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+ 
+ ____________________________________________________________
+ 
+ Project floor area is 2546.8m2, wall area is 3606.0m2, window area is 790.37m2.
+ Sloped roof area is 0.00m2, flat roof area is 1676.2m2, skylight area is 0.00m2.
+ In contact with ground 1661.8m2.
+ There is 6072.6m2 of outside surface area, 4382.1m2 of which is vertical.
+ 
+ Outside walls are 141.59 % of floor area & average U of 0.805 & UA of 2901.3 & max MLC thickness 0.044
+ Flat roof is 65.814 % of floor area & average U of 0.358 & UA of 600.75
+ Glazing is 31.034 % of floor & 18.036 % facade with average U of 4.833 & UA of 3819.7
+ Ground contact is 65.250 % of floor area & average U of 0.389 & perimeter 184.80 & max MLC thickness 0.560
+ CIBSE ground beta!17.985 dt 3.960 Ufleft 0.050 Ufright 2.726 Uf 0.135 R extra @ virtual layer 4.823
+ 
+ ____________________________________________________________
+ Multi-layer constructions used:
+ 
+ Details of transparent construction: clear_glaz with SCF8783_06nb optics and overall thickness  0.004
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
+    1    4.0     1.050  2500.   750. 0.83 0.05 19200.  0.00 Glass_clear_float : Glass_clear_float
+ ISO 6946 U values (horiz/upward/downward heat flow)=  5.753  6.954  4.677 (partition)  3.791
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  5.44
+ External surface admittance Y=  5.44  w=  0.04 decrement factor f=  0.35  phi=  0.08 surface factor f=  0.35  phi=  0.08
+ Partition admittance Y=  0.18  w=  5.92 surface factor f=  1.00  phi=  0.08
+ 
+ Clear float 87/83,     6mm, no blind: with id of: SCF8783_06nb
+ with 1 layers [including air gaps] and visible trn: 0.87
+ Direct transmission @ 0, 40, 55, 70, 80 deg
+   0.779 0.759 0.717 0.581 0.348
+ Layer| absorption @ 0, 40, 55, 70, 80 deg
+    1  0.149 0.163 0.173 0.179 0.169
+ Total area of clear_glaz is     65.25
+ 
+ Details of opaque construction: wall_clad and overall thickness  0.044
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
+ Ext     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 Aluminium : Aluminium
+    2   40.0     0.028    30.  1470. 0.90 0.50    30.  1.43 polyure_foam : polyure_foam
+ Int     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 Aluminium : Aluminium
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.626  0.638  0.610 (partition)  0.592
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.62
+ External surface admittance Y=  0.72  w=  1.84 decrement factor f=  0.92  phi=  0.17 surface factor f=  0.92  phi=  0.17
+ Partition admittance Y=  0.39  w=  5.82 surface factor f=  1.00  phi=  0.18
+ Total area of wall_clad is    417.73
+ 
+ Details of opaque construction: roof_clad and overall thickness  0.084
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
+ Ext     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 Aluminium : Aluminium
+    2   80.0     0.028    30.  1470. 0.90 0.50    30.  2.86 polyure_foam : polyure_foam
+ Int     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 Aluminium : Aluminium
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.330  0.334  0.326 (partition)  0.321
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.33
+ External surface admittance Y=  0.53  w=  3.23 decrement factor f=  0.96  phi=  0.19 surface factor f=  0.96  phi=  0.19
+ Partition admittance Y=  0.46  w=  5.74 surface factor f=  1.00  phi=  0.21
+ Total area of roof_clad is    413.80
+ 
+ Details of opaque construction: off_flr linked to off_flr-r & with overall thickness  0.115
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
+ Ext   100.0     0.380  1200.   653. 0.90 0.65     6.  0.26 Concrete_(Gibat) : Concrete_(Gibat)
+ Int    15.0     0.850  2000.   837. 0.91 0.65 19200.  0.02 Tile : Tile
+ ISO 6946 U values (horiz/upward/downward heat flow)=  2.218  2.376  2.037 (partition)  1.849
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.17
+ External surface admittance Y=  3.41  w=  2.01 decrement factor f=  0.68  phi=  1.17 surface factor f=  0.68  phi=  1.17
+ Partition admittance Y=  3.30  w=  4.23 surface factor f=  0.90  phi=  1.55
+ Total area of off_flr is    413.80

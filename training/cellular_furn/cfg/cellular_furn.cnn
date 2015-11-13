@@ -1,6 +1,6 @@
 *connections for cellular_furn
-*Date Sun Dec  8 13:09:17 2013
-     62   # number of connections
+*Date Tue Aug 11 16:41:30 2015
+     84   # number of connections
    1   1   3   3   1  #    1 pt_general in manager_a >|< pt_general in manager_b
    1   2   3   2   8  #    2 part_frame in manager_a >|< part_frame in corridor
    1   3   3   2   6  #    3 door in manager_a >|< door in corridor
@@ -21,8 +21,8 @@
    1  18   1   0   0  #   18 floor_c in manager_a >|< Identical environment
    1  19   1   0   0  #   19 ceiling_b in manager_a >|< Identical environment
    1  20   1   0   0  #   20 ceiling_c in manager_a >|< Identical environment
-   1  21   5   0   0  #   21 desk in manager_a is adiabatic
-   1  22   5   0   0  #   22 desk_a in manager_a is adiabatic
+   1  21   3   1  22  #   21 desk in manager_a >|< desk_a in manager_a
+   1  22   3   1  21  #   22 desk_a in manager_a >|< desk in manager_a
    2   1   1   0   0  #   23 right in corridor >|< Identical environment
    2   2   1   0   0  #   24 wall in corridor >|< Identical environment
    2   3   1   0   0  #   25 left in corridor >|< Identical environment
@@ -57,9 +57,31 @@
    3  18   1   0   0  #   54 floor_c in manager_b >|< Identical environment
    3  19   1   0   0  #   55 ceiling_b in manager_b >|< Identical environment
    3  20   1   0   0  #   56 ceiling_c in manager_b >|< Identical environment
-   3  21   5   0   0  #   57 desk in manager_b is adiabatic
-   3  22   5   0   0  #   58 desk_a in manager_b is adiabatic
-   3  23   5   0   0  #   59 cabinet_a in manager_b is adiabatic
-   3  24   5   0   0  #   60 cabinet_aa in manager_b is adiabatic
-   3  25   5   0   0  #   61 cabinet_b in manager_b is adiabatic
-   3  26   5   0   0  #   62 cabinet_bb in manager_b is adiabatic
+   3  21   3   3  22  #   57 adesk_t in manager_b >|< adesk_t_ in manager_b
+   3  22   3   3  21  #   58 adesk_t_ in manager_b >|< adesk_t in manager_b
+   3  23   3   3  24  #   59 bdesk_t in manager_b >|< bdesk_t_ in manager_b
+   3  24   3   3  23  #   60 bdesk_t_ in manager_b >|< bdesk_t in manager_b
+   3  25   3   3  26  #   61 aseat in manager_b >|< aseat_ in manager_b
+   3  26   3   3  25  #   62 aseat_ in manager_b >|< aseat in manager_b
+   3  27   3   3  28  #   63 astback in manager_b >|< astback_ in manager_b
+   3  28   3   3  27  #   64 astback_ in manager_b >|< astback in manager_b
+   3  29   3   3  30  #   65 bseat in manager_b >|< bseat_ in manager_b
+   3  30   3   3  29  #   66 bseat_ in manager_b >|< bseat in manager_b
+   3  31   3   3  32  #   67 bstback in manager_b >|< bstback_ in manager_b
+   3  32   3   3  31  #   68 bstback_ in manager_b >|< bstback in manager_b
+   3  33   3   3  34  #   69 acab_lf in manager_b >|< acab_lf_ in manager_b
+   3  34   3   3  33  #   70 acab_lf_ in manager_b >|< acab_lf in manager_b
+   3  35   3   3  36  #   71 acab_rt in manager_b >|< acab_rt_ in manager_b
+   3  36   3   3  35  #   72 acab_rt_ in manager_b >|< acab_rt in manager_b
+   3  37   3   3  38  #   73 bcab_lf in manager_b >|< bcab_lf_ in manager_b
+   3  38   3   3  37  #   74 bcab_lf_ in manager_b >|< bcab_lf in manager_b
+   3  39   3   3  40  #   75 bcab_rt in manager_b >|< bcab_rt_ in manager_b
+   3  40   3   3  39  #   76 bcab_rt_ in manager_b >|< bcab_rt in manager_b
+   3  41   3   3  42  #   77 acase in manager_b >|< acase_ in manager_b
+   3  42   3   3  41  #   78 acase_ in manager_b >|< acase in manager_b
+   3  43   3   3  44  #   79 acircuit in manager_b >|< acircuit_ in manager_b
+   3  44   3   3  43  #   80 acircuit_ in manager_b >|< acircuit in manager_b
+   3  45   3   3  46  #   81 bcase in manager_b >|< bcase_ in manager_b
+   3  46   3   3  45  #   82 bcase_ in manager_b >|< bcase in manager_b
+   3  47   3   3  48  #   83 bcircuit in manager_b >|< bcircuit_ in manager_b
+   3  48   3   3  47  #   84 bcircuit_ in manager_b >|< bcircuit in manager_b

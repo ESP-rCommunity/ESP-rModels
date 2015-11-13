@@ -1,0 +1,11 @@
+*ESP-r visualisation scene configuration file.
+Mon Sep 14 09:31:59 2015 # latest file modification.
+  1 # No. of scenes
+# Scene number  1
+*rnm fac_zone_c1_Intern.rif                   # Rif name
+*rnm fac_zone_c1_Intern_a.rif                 # Alternate rif
+*srt fac_zone_c1_Intern                       # Scene root
+*rde Scene of fac_zone_c1 for placing sensor. # Description
+*rpu Internal                                 # Intended use
+*sceneEND
+*end

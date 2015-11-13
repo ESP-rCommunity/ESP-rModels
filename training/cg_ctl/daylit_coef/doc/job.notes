@@ -2,17 +2,25 @@ Project notes for facade.cfg
 Description: Test case for Daylight Coefficient method
 In directory: /usr3/milan/coupling/esp-r
 By: milan
-Date: 3. 2. 1997 and 2007
+Date: 3. 2. 1997 and 2007, updated Sept 2015
 For: ESRU
 Project reference: Coupling
 Notes: 
 _____________________________
  
-facade_60.cfg PROBLEM HAVE TO BE RUN FROM 5th DECEMBER TO 31st 
-              DECEMBER WITH HOURLY TIME STEP!!!
+facade_bc.cfg Used to setup the Radiance model and visually explore
+              the sensor position. No casual gain control included.
+ 
+facade_60.cfg Uses daylight coefficients for 5th Dec TO 31st 
+              Dec with an hourly timestep.
 
-facade_5.cfg  PROBLEM HAVE TO BE RUN FROM 5th DECEMBER TO 31st 
-              DECEMBER WITH 5 MINUTELY TIME STEP!!!
+facade_5.cfg  Uses daylight coefficients for 5th Dec TO 31st 
+              Dec with an 5 minute timestep and 5 minute solar
+              data (via a temporal file).
+
+facade_coupling.cfg Uses Radiance coupling at each timestep. The
+              test period is 5 Dec to 10 Dec at one hour timesteps.
+              The lighting control is an ideal proportional control.
 
 LIGHTING CONTROL CASE STUDY
 To demonstrate the application of the daylight coefficient method
@@ -114,3 +122,20 @@ approach (i.e. ideal control with 60 minutes time step).
 For integral reset controller application, the ideal control approach 
 will fail to reproduce the dynamic behaviour and predict the correct 
 power consumption.
+
+Adding the sensor to the radiance model:
+in the rad folder is a file photocell2.rad  this needs to be transformed
+to the correct location on the ceiling and included in the model. One
+way to do this is to issue the following command within the rad
+folder:
+xform -n sensor -rz 0 -rx 0 -t 3.25 4.00 3.39 photocell1.rad >sensor.rad
+and then in e2r include sensor.rad as the other (furniture&fittings) file.
+
+The second approach is to add the following to the end of the 
+fac_zone_c1_Intern-in.rad file (uncomment the !xform line in the
+file and remove sensor.rad from the scenes:
+    
+# this is one way to place sensor on ceiling rather than
+# using a separate sensor.rad file
+ !xform -n sensor -rz 0 -rx 0 -t 3.25 4.00 3.29 photocell2.rad
+

@@ -1,0 +1,9 @@
+*Casual_gain_ctl
+*desc Uses coupling with Radiance via ceiling sensor
+2 0 0 # Gain to ctl for different day types
+   8  18   0   1   0   1  # Control period start & end hours
+  1  # No. of lighting zone(s)
+ 320.0  1.5  0.1  0.3  0 # Setpt, switch off lvl, min dim/el, delay
+ 1.00  1  4 # % casual, no of sensors, calc type
+  3.250  4.000  3.390  0.000  0.000 -1.000 # Sensor x y z & dir vect
+  3 # Control law: Dimming ideal   

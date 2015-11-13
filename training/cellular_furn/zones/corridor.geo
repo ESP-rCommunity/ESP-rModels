@@ -1,14 +1,14 @@
 *Geometry 1.1,GEN,corridor # tag version, format, zone name
-*date Wed Aug 22 15:44:04 2007  # latest file modification 
+*date Tue Aug 11 15:42:14 2015  # latest file modification 
 corridor describes passage adjacent to offices
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,0.00000,4.55000,0.00000  #   1
-*vertex,7.10000,4.55000,0.00000  #   2
-*vertex,7.10000,5.55000,0.00000  #   3
+*vertex,6.70000,4.55000,0.00000  #   2
+*vertex,6.70000,5.55000,0.00000  #   3
 *vertex,0.00000,5.55000,0.00000  #   4
 *vertex,0.00000,4.55000,3.00000  #   5
-*vertex,7.10000,4.55000,3.00000  #   6
-*vertex,7.10000,5.55000,3.00000  #   7
+*vertex,6.70000,4.55000,3.00000  #   6
+*vertex,6.70000,5.55000,3.00000  #   7
 *vertex,0.00000,5.55000,3.00000  #   8
 *vertex,1.20000,4.55000,0.00000  #   9
 *vertex,0.40000,4.55000,0.00000  #  10
@@ -52,7 +52,7 @@ corridor describes passage adjacent to offices
 *edges,4,15,22,27,16  # 14
 # 
 # surf attributes:
-#  surf name, surf position VERT/CIIL/FLOR/SLOP/UNKN
+#  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
@@ -64,11 +64,11 @@ corridor describes passage adjacent to offices
 *surf,door,VERT,-,-,-,door,OPAQUE,ANOTHER,01,03  #   6 ||< door:manager_a
 *surf,ptn_corid,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,01,11  #   7 ||< ptn_corid:manager_a
 *surf,part_frame,VERT,-,-,-,insul_frame,OPAQUE,ANOTHER,01,02  #   8 ||< part_frame:manager_a
-*surf,part_glaz,VERT,-,-,-,dbl_glz,DCF7671_06nb,ANOTHER,01,10  #   9 ||< part_glaz:manager_a
+*surf,part_glaz,VERT,part_frame,-,-,dbl_glz,DCF7671_06nb,ANOTHER,01,10  #   9 ||< part_glaz:manager_a
 *surf,part_frameb,VERT,-,-,-,insul_frame,OPAQUE,ANOTHER,03,02  #  10 ||< part_frame:manager_b
 *surf,door_b,VERT,-,-,-,door,OPAQUE,ANOTHER,03,03  #  11 ||< door:manager_b
 *surf,ptn_coridb,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,03,11  #  12 ||< ptn_corid:manager_b
-*surf,part_glazb,VERT,-,-,-,dbl_glz,DCF7671_06nb,ANOTHER,03,10  #  13 ||< part_glaz:manager_b
+*surf,part_glazb,VERT,part_frameb,-,-,dbl_glz,DCF7671_06nb,ANOTHER,03,10  #  13 ||< part_glaz:manager_b
 *surf,filler,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ADIABATIC,0,0  #  14 ||< adiabatic
 # 
 *insol,3,0,0,0  # default insolation distribution
@@ -78,4 +78,4 @@ corridor describes passage adjacent to offices
 # 
 *insol_calc,none  # no insolation requested
 # 
-*base_list,2,6,5,     9.42 0  # zone base list
+*base_list,2,6,5,     9.02 0  # zone base list

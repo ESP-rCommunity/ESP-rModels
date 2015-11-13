@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,corridor # tag version, format, zone name
-*date Thu Aug 23 17:28:43 2007  # latest file modification 
+*date Fri May  8 11:12:59 2015  # latest file modification 
 corridor describes passage adjacent to offices
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,0.00000,4.55000,0.00000  #   1
@@ -52,7 +52,7 @@ corridor describes passage adjacent to offices
 *edges,4,15,22,27,16  # 14
 # 
 # surf attributes:
-#  surf name, surf position VERT/CIIL/FLOR/SLOP/UNKN
+#  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items

@@ -16,6 +16,26 @@ void glass dbl_glz
 0 
 3    0.83  0.83  0.83
   
+void glass switched_gl
+0 
+0 
+3    0.83  0.83  0.83
+  
+void glass fictitious
+0 
+0 
+3    1.08  1.08  1.08
+  
+void glass Not_DisplayG
+0 
+0 
+3    0.75  0.75  0.75
+  
+void glass window_Not_G
+0 
+0 
+3    0.75  0.75  0.75
+  
 # manager_a Surface defs..
   
   
@@ -62,13 +82,9 @@ dbl_glz  polygon  manager_b:part_glaz
     4.80000    4.50000    0.10000
 # corridor Surface defs..
   
-# skipping fict surface: corridor:right_fict                                                                                 
   
-# skipping fict surface: corridor:left_fict                                                                                  
-  
-  
-# skipping transparent surface: corridor:part_glaz                                                                           
+# skipping transparent surface: corridor:part_glaz                                                                          
   
   
-# skipping transparent surface: corridor:part_glazb                                                                          
+# skipping transparent surface: corridor:part_glazb                                                                         
   

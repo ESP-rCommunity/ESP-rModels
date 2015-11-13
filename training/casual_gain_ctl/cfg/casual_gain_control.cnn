@@ -1,0 +1,51 @@
+*connections for casual_gain_control
+*Date Thu Sep 10 09:38:18 2015
+     48   # number of connections
+   1   1   0   0   0  #    1 facade in basecase is External
+   1   2   1   0   0  #    2 right in basecase >|< Identical environment
+   1   3   1   0   0  #    3 back in basecase >|< Identical environment
+   1   4   1   0   0  #    4 left in basecase >|< Identical environment
+   1   5   1   0   0  #    5 ceiling in basecase >|< Identical environment
+   1   6   1   0   0  #    6 floor in basecase >|< Identical environment
+   1   7   0   0   0  #    7 frame in basecase is External
+   1   8   0   0   0  #    8 glazing in basecase is External
+   2   1   0   0   0  #    9 facade in cgc_a is External
+   2   2   1   0   0  #   10 right in cgc_a >|< Identical environment
+   2   3   1   0   0  #   11 back in cgc_a >|< Identical environment
+   2   4   1   0   0  #   12 left in cgc_a >|< Identical environment
+   2   5   1   0   0  #   13 ceiling in cgc_a >|< Identical environment
+   2   6   1   0   0  #   14 floor in cgc_a >|< Identical environment
+   2   7   0   0   0  #   15 frame in cgc_a is External
+   2   8   0   0   0  #   16 glazing in cgc_a is External
+   3   1   0   0   0  #   17 facade in cgc_b is External
+   3   2   1   0   0  #   18 right in cgc_b >|< Identical environment
+   3   3   1   0   0  #   19 back in cgc_b >|< Identical environment
+   3   4   1   0   0  #   20 left in cgc_b >|< Identical environment
+   3   5   1   0   0  #   21 ceiling in cgc_b >|< Identical environment
+   3   6   1   0   0  #   22 floor in cgc_b >|< Identical environment
+   3   7   0   0   0  #   23 frame in cgc_b is External
+   3   8   0   0   0  #   24 glazing in cgc_b is External
+   4   1   0   0   0  #   25 facade in cgc_c is External
+   4   2   1   0   0  #   26 right in cgc_c >|< Identical environment
+   4   3   1   0   0  #   27 back in cgc_c >|< Identical environment
+   4   4   1   0   0  #   28 left in cgc_c >|< Identical environment
+   4   5   1   0   0  #   29 ceiling in cgc_c >|< Identical environment
+   4   6   1   0   0  #   30 floor in cgc_c >|< Identical environment
+   4   7   0   0   0  #   31 frame in cgc_c is External
+   4   8   0   0   0  #   32 glazing in cgc_c is External
+   5   1   0   0   0  #   33 facade in cgc_d is External
+   5   2   1   0   0  #   34 right in cgc_d >|< Identical environment
+   5   3   1   0   0  #   35 back in cgc_d >|< Identical environment
+   5   4   1   0   0  #   36 left in cgc_d >|< Identical environment
+   5   5   1   0   0  #   37 ceiling in cgc_d >|< Identical environment
+   5   6   1   0   0  #   38 floor in cgc_d >|< Identical environment
+   5   7   0   0   0  #   39 frame in cgc_d is External
+   5   8   0   0   0  #   40 glazing in cgc_d is External
+   6   1   0   0   0  #   41 facade in cgc_e is External
+   6   2   1   0   0  #   42 right in cgc_e >|< Identical environment
+   6   3   1   0   0  #   43 back in cgc_e >|< Identical environment
+   6   4   1   0   0  #   44 left in cgc_e >|< Identical environment
+   6   5   1   0   0  #   45 ceiling in cgc_e >|< Identical environment
+   6   6   1   0   0  #   46 floor in cgc_e >|< Identical environment
+   6   7   0   0   0  #   47 frame in cgc_e is External
+   6   8   0   0   0  #   48 glazing in cgc_e is External

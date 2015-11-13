@@ -1,15 +1,39 @@
 # Radiance opaque material definitions.
 # (first line of file must not be edited)
   
+# use this for fine surface finish 
 void brightfunc fin_in
-4 dirt dirt.cal -s 0.05
+4 dirt dirt.cal -s 0.005
 0 
 1 0.05
   
 void texfunc fin_ex
+6 cdx cdy cdz adobe.cal -s 0.02
+0 
+1 0.01
+  
+# use this for medium surface finish 
+void brightfunc min_in
+4 dirt dirt.cal -s 0.01
+0 
+1 0.05
+  
+void texfunc min_ex
+6 cdx cdy cdz adobe.cal -s 0.03
+0 
+1 0.015
+  
+# use this for rough surface finish 
+void brightfunc rin_in
+4 dirt dirt.cal -s 0.05
+0 
+1 0.05
+  
+void texfunc rin_ex
 6 cdx cdy cdz adobe.cal -s 0.05
 0 
 1 0.05
+  
 void plastic rc_ex_unknown
 0 
 0 
@@ -151,4 +175,148 @@ fin_in plastic rc_in_gyp_gyp_ptn
 0 
 0 
 5  0.78 0.78 0.78 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_pa_fl_notion
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_pa_fl_notion
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_Sol_grnd_not
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_Sol_grnd_not
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_Fl_roof_noti
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_Fl_roof_noti
+0 
+0 
+5  0.74 0.74 0.74 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_SC_Pitch_roo
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_SC_Pitch_roo
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_party_wall_n
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_party_wall_n
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_Wall_NI_noti
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_Wall_NI_noti
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_Wall_EW_noti
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_Wall_EW_noti
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_Wall_Scot_no
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_Wall_Scot_no
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_opDoorWind_n
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_opDoorWind_n
+0 
+0 
+5  0.74 0.74 0.74 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_EW_notPitch_
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_EW_notPitch_
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_Vehicle_door
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_Vehicle_door
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_frame_notion
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_frame_notion
+0 
+0 
+5  0.80 0.80 0.80 0 0 
   

@@ -1,15 +1,18 @@
-This model contains files for both Sun equipment and
-Linux/GNU PCs. The following files need to be copied
-or linked in order to run assessments:
+This model contains files that need to be converted:
 
 For Linux
-ln -s dec94.clm_linux dec94.clm
-cp dec94.tdf_linux dec94.tdf
-ln -s ../zones/fac_zone_c1.shd_linux ../zones/fac_zone_c1.shd
+dec94_clm.a - use clm module to convert this ascii file to binary.
+the model expects a file dec94.
 
-For Sun
-ln -s dec94.clm_sun dec94.clm
-cp dec94.tdf_sun dec94.tdf
-ln -s ../zones/fac_zone_c1.shd_sun ../zones/fac_zone_c1.shd
+The casual gain control files are populated with daylight
+coefficients (calculated via the e2r module which takes
+quite a bit of time).
 
+The Radiance model has been regenerated to match current
+versions of Radiance (R3.9 or newer).
 
+The file facade_5.33.gz is a compressed trace for the five
+minute lighting control for the december test period.
+
+See the doc folder for job.notes
+ 

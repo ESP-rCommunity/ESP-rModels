@@ -1,0 +1,21 @@
+# Radiance RIF file: cgc_e_Coupli.rif
+#e2r_gen_view   1  6
+#e2r_glaz_type   1
+scene= cgc_e_Coupli.sky
+scene= cgc_e_Coupli-glz.rad
+scene= cgc_e_Coupli.mat
+scene= cgc_e_Coupli-out.rad
+scene= cgc_e_Coupli-in.rad
+UP= Z
+QUALITY= High  
+DETAIL= Medium
+VARIABILITY= High  
+RESOLUTION=   500
+INDIRECT=  2
+PENUMBRAS= False
+REPORT=    1
+render= -av 0 0 0
+ZONE= Interior    15.00   18.00    0.00    5.00    0.00    2.50
+OPTFILE= cgc_e_Coupli.opt
+OCTREE= cgc_e_Coupli.oct
+PICTURE= cgc_e_Coupli

@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,main-hall # tag version, format, zone name
-*date Tue Jul 21 18:31:39 2009  # latest file modification 
+*date Mon Sep 14 17:43:04 2015  # latest file modification 
 main-hall describes a
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,10.00000,10.00000,0.00000  #   1
@@ -74,15 +74,15 @@ main-hall describes a
 #  construction name, optical name
 #  boundary condition tag followed by two data items
 *surf,Surf-1,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   1 ||< external
-*surf,Surf-2,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   2 ||< external
+*surf,Surf-2,VERT,glaz-1,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   2 ||< external
 *surf,Surf-3,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   3 ||< external
 *surf,Surf-4,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   4 ||< external
-*surf,Surf-5,SLOP,-,-,-,roof,OPAQUE,EXTERIOR,0,0         #   5 ||< external
-*surf,Surf-6,FLOR,-,-,-,hall_floor,OPAQUE,EXTERIOR,0,0   #   6 ||< external
-*surf,Surf-7,SLOP,-,-,-,roof,OPAQUE,EXTERIOR,0,0     #   7 ||< external
-*surf,Surf-8,ROOF,PITCHED,-,-,roof,OPAQUE,EXTERIOR,0,0  #   8 ||< external
-*surf,Surf-9,ROOF,PITCHED,-,-,roof,OPAQUE,EXTERIOR,0,0  #   9 ||< external
-*surf,Surf-10,CEIL,-,-,-,roof,OPAQUE,EXTERIOR,0,0        #  10 ||< external
+*surf,Surf-5,SLOP,-,-,-,roof,OPAQUE,EXTERIOR,0,0  #   5 ||< external
+*surf,Surf-6,FLOR,-,-,-,hall_floor,OPAQUE,EXTERIOR,0,0  #   6 ||< external
+*surf,Surf-7,SLOP,-,-,-,roof,OPAQUE,EXTERIOR,0,0  #   7 ||< external
+*surf,Surf-8,UNKN,-,-,-,roof,OPAQUE,EXTERIOR,0,0  #   8 ||< external
+*surf,Surf-9,UNKN,-,-,-,roof,OPAQUE,EXTERIOR,0,0  #   9 ||< external
+*surf,Surf-10,CEIL,-,-,-,roof,OPAQUE,EXTERIOR,0,0  #  10 ||< external
 *surf,xSurf-4,VERT,-,-,-,intern_wall,OPAQUE,ANOTHER,04,04  #  11 ||< Surf-4:entrance
 *surf,xSurf-3,VERT,-,-,-,intern_wall,OPAQUE,ANOTHER,04,03  #  12 ||< Surf-3:entrance
 *surf,change-r,VERT,-,-,-,intern_wall,OPAQUE,ANOTHER,01,02  #  13 ||< Surf-2:changing

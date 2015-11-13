@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,manager_a # tag version, format, zone name
-*date Wed Aug 22 15:44:04 2007  # latest file modification 
+*date Tue Aug 11 15:41:42 2015  # latest file modification 
 manager describes cellular office on left
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,0.00000,0.00000,0.00000  #   1
@@ -68,7 +68,7 @@ manager describes cellular office on left
 *edges,4,38,37,40,39  # 22
 # 
 # surf attributes:
-#  surf name, surf position VERT/CIIL/FLOR/SLOP/UNKN
+#  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
@@ -80,8 +80,8 @@ manager describes cellular office on left
 *surf,floor,FLOR,-,-,-,susp_flr_re,OPAQUE,SIMILAR,00,00  #   6 ||< identical environment
 *surf,spandral,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   7 ||< external
 *surf,frame,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   8 ||< external
-*surf,glazing,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #   9 ||< external
-*surf,part_glaz,VERT,-,-,-,dbl_glz,DCF7671_06nb,ANOTHER,02,09  #  10 ||< part_glaz:corridor
+*surf,glazing,VERT,frame,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #   9 ||< external
+*surf,part_glaz,VERT,part_frame,-,-,dbl_glz,DCF7671_06nb,ANOTHER,02,09  #  10 ||< part_glaz:corridor
 *surf,ptn_corid,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,02,07  #  11 ||< ptn_corid:corridor
 *surf,pt_other_a,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #  12 ||< identical environment
 *surf,pt_other_b,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #  13 ||< identical environment
@@ -92,8 +92,8 @@ manager describes cellular office on left
 *surf,floor_c,FLOR,-,-,-,susp_flr_re,OPAQUE,SIMILAR,00,00  #  18 ||< identical environment
 *surf,ceiling_b,CEIL,-,-,-,ceiling,OPAQUE,SIMILAR,00,00  #  19 ||< identical environment
 *surf,ceiling_c,CEIL,-,-,-,ceiling,OPAQUE,SIMILAR,00,00  #  20 ||< identical environment
-*surf,desk,CEIL,-,-,-,door,OPAQUE,ADIABATIC,0,0  #  21 ||< adiabatic
-*surf,desk_a,FLOR,-,-,-,door,OPAQUE,ADIABATIC,0,0  #  22 ||< adiabatic
+*surf,desk,CEIL,-,-,-,door,OPAQUE,ANOTHER,01,22  #  21 ||< desk_a:manager_a
+*surf,desk_a,FLOR,-,-,-,door,OPAQUE,ANOTHER,01,21  #  22 ||< desk:manager_a
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

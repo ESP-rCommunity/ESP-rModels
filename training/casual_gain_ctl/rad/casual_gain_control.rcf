@@ -1,0 +1,11 @@
+*ESP-r visualisation scene configuration file.
+Tue Sep  1 11:38:33 2015 # latest file modification.
+  1 # No. of scenes
+# Scene number  1
+*rnm cgc_e_Coupli.rif                      # Rif name
+*srt cgc_e_Coupli                          # Scene root
+*rde Scene of cgc_e for Coupling analysis. # Description
+*rpu Coupling                              # Intended use
+*slc cgc_e_Coupli.slc                      # Sensor locations
+*sceneEND
+*end

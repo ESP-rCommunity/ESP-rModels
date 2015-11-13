@@ -1,0 +1,24 @@
+# Radiance RIF file: fac_zone_c1_Intern.rif
+#e2r_gen_view   1  1
+#e2r_glaz_type   1
+view= back -vtv -vp   3.25  5.40  1.60 -vd  -0.0000 -1.0000  0.0000 -vu  0.000 0.000 1.000 -vh 120.00 -vv 110.00 -vs 0
+view= lookup -vtv -vp   3.25   5.45   1.90 -vd   0.0000 -0.6428  0.7660 -vu  0.000 0.000 1.000 -vh 120.00 -vv 140.00 -vs 0
+view= lookdn -vtv -vp   3.25   4.00   3.389 -vd  0.0000 0.000  -1.0 -vu  0.000 1.000 0.000 -vh 120.00 -vv 120.00 -vs 0
+scene= fac_zone_c1_Intern.sky
+scene= fac_zone_c1_Intern-glz.rad
+scene= fac_zone_c1_Intern.mat
+scene= fac_zone_c1_Intern-out.rad
+scene= fac_zone_c1_Intern-in.rad
+UP= Z
+QUALITY= Medium
+DETAIL= High  
+VARIABILITY= High  
+RESOLUTION=   600
+INDIRECT=  2
+PENUMBRAS= True 
+REPORT=    1
+render= -av  0.7400  0.7400  0.7400
+ZONE= Interior     1.00    5.50    1.00    5.50    0.00    3.40
+OPTFILE= fac_zone_c1_Intern.opt
+OCTREE= fac_zone_c1_Intern.oct
+PICTURE= fac_zone_c1_photocellx2

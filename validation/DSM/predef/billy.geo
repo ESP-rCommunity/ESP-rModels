@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,billy # tag version, format, zone name
-*date Tue Aug 18 13:23:24 2015  # latest file modification 
+*date Wed Mar  2 12:24:38 2016  # latest file modification 
 billy describes an Ikea Billy book shelf .38x.26x2.02
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,0.00500,0.00500,0.00500  #   1
@@ -10,12 +10,18 @@ billy describes an Ikea Billy book shelf .38x.26x2.02
 *vertex,0.37500,0.25500,0.00500  #   6
 *vertex,0.37500,0.25500,2.00500  #   7
 *vertex,0.37500,0.00500,2.00500  #   8
+*vertex,0.01500,0.25500,0.00500  #   9
+*vertex,0.01500,0.25500,2.00500  #  10
+*vertex,0.36000,0.25500,0.00500  #  11
+*vertex,0.36000,0.25500,2.00500  #  12
 # 
 # tag, number of vertices followed by list of associated vert
 *edges,4,1,2,3,4  #  1
 *edges,4,2,1,4,3  #  2
 *edges,4,5,6,7,8  #  3
 *edges,4,6,5,8,7  #  4
+*edges,4,9,11,12,10  #  5
+*edges,4,11,9,10,12  #  6
 # 
 # surf attributes:
 #  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
@@ -26,6 +32,8 @@ billy describes an Ikea Billy book shelf .38x.26x2.02
 *surf,bil_lft_,VERT,-,PARTN,-,furn_wd10mm,OPAQUE,ANOTHER,11,01  #   2 ||< bil_lft:billy
 *surf,bil_rt,VERT,-,PARTN,-,furn_wd10mm,OPAQUE,ANOTHER,11,04  #   3 ||< bil_rt_:billy
 *surf,bil_rt_,VERT,-,PARTN,-,furn_wd10mm,OPAQUE,ANOTHER,11,03  #   4 ||< bil_rt:billy
+*surf,books,VERT,-,-,-,stuffonshelf,OPAQUE,ANOTHER,11,06  #   5 ||< books_:billy
+*surf,books_,VERT,-,-,-,stuffonshelf,OPAQUE,ANOTHER,11,05  #   6 ||< books:billy
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

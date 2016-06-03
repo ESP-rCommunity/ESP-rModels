@@ -1,13 +1,14 @@
 -dp 512
 -ar 518
 -ms 0.092
--ds .3
+-ds .2
+-dj .9
 -dt .1
 -dc .5
 -dr 1
 -ss 1
 -st .1
--ab 1
+-ab 2
 -aa .1
 -ad 1536
 -as 392

@@ -18,10 +18,6 @@
 *cfg	/usr/esru/esp-r/training/simple/cfg/bld_simple_shd.cfg
 *root	/usr/esru/esp-r/training/simple
 *item
-*name	... with convective heating system & fuzzy control
-*cfg	/usr/esru/esp-r/training/simple/cfg/bld_simple_fzy.cfg
-*root	/usr/esru/esp-r/training/simple
-*item
 *name	3 zones with convective heating & basic control
 *cfg	/usr/esru/esp-r/training/basic/cfg/bld_basic.cfg
 *root	/usr/esru/esp-r/training/basic
@@ -42,7 +38,7 @@
 *cfg	/usr/esru/esp-r/training/basic/cfg/bld_basic_prht.cfg
 *root	/usr/esru/esp-r/training/basic
 *item
-*name	... with zone ambient temperature matching
+*name	... with zone ambient temperature matching (to ambient)
 *cfg	/usr/esru/esp-r/training/basic/cfg/bld_basic_tm1.cfg
 *root	/usr/esru/esp-r/training/basic
 *item
@@ -146,10 +142,6 @@
 *cfg	/usr/esru/esp-r/training/cellular_cvvt/cfg/cellular_onoff.cfg
 *root	/usr/esru/esp-r/training/cellular_cvvt
 *item
-*name	... with alternative ON/OFF control
-*cfg	/usr/esru/esp-r/training/cellular_cvvt/cfg/cellular_onoffpro.cfg
-*root	/usr/esru/esp-r/training/cellular_cvvt
-*item
 *name	... with master-slave control
 *cfg	/usr/esru/esp-r/training/cellular_cvvt/cfg/cellular_master.cfg
 *root	/usr/esru/esp-r/training/cellular_cvvt
@@ -160,10 +152,6 @@
 *item
 *name	... with P and P+I control
 *cfg	/usr/esru/esp-r/training/cellular_cvvt/cfg/cellular_pi.cfg
-*root	/usr/esru/esp-r/training/cellular_cvvt
-*item
-*name	... with optimum start control
-*cfg	/usr/esru/esp-r/training/cellular_cvvt/cfg/cellular_optst.cfg
 *root	/usr/esru/esp-r/training/cellular_cvvt
 *item
 *name	... with associated measured temperatures
@@ -428,15 +416,15 @@
 *item
 *name	offices with various casual gain controls
 *cfg	/usr/esru/esp-r/training/casual_gain_ctl/cfg/casual_gain_control.cfg
-*root	/usr/esru/esp-r/training/casual_gain_ctl/cfg/
+*root	/usr/esru/esp-r/training/casual_gain_ctl
 *item
 *name	... with luminaire control via daylight coefficients
 *cfg	/usr/esru/esp-r/training/cg_ctl/daylit_coef/cfg/facade_60.cfg
-*root	/usr/esru/esp-r/training/cg_ctl/daylit_coef/cfg/
+*root	/usr/esru/esp-r/training/cg_ctl/daylit_coef
 *item
 *name	... with light levels via timestep Radiance coupling
 *cfg	/usr/esru/esp-r/training/cg_ctl/daylit_coef/cfg/facade_coupling.cfg
-*root	/usr/esru/esp-r/training/cg_ctl/daylit_coef/cfg/
+*root	/usr/esru/esp-r/training/cg_ctl/daylit_coef
 *item
 *name	... with luminaire control and electrochromic glazing
 *cfg	/usr/esru/esp-r/training/el_chr_ctl/cfg/office.cfg

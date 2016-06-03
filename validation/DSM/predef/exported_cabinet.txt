@@ -1,0 +1,39 @@
+# 
+*item,cabinet,cabinet describes a # tag name menu entry
+*incat,office_furn     
+*sourced,Derived from an ESP-r geometry file.
+*origin,0.0,0.0,0.0  # local origin
+*bounding_box,  0.400  0.400  1.250  # extents of object
+*Text
+An office filing cabinet with four visible drawers. Composed of
+3mm steel with mass represented by pairs of vertial 3mm steel
+at left right and front edges.
+*End_text
+# 
+*vertex,0.00500,0.40500,0.00500  #   1
+*vertex,0.00500,0.01500,0.00500  #   2
+*vertex,0.00500,0.01500,1.24500  #   3
+*vertex,0.00500,0.40500,1.24500  #   4
+*vertex,0.39500,0.40500,0.00500  #   5
+*vertex,0.39500,0.01500,0.00500  #   6
+*vertex,0.39500,0.01500,1.24500  #   7
+*vertex,0.39500,0.40500,1.24500  #   8
+*vertex,0.01500,0.01500,0.00500  #   9
+*vertex,0.38500,0.01500,0.00500  #  10
+*vertex,0.38500,0.01500,1.24500  #  11
+*vertex,0.01500,0.01500,1.24500  #  12
+# 
+*mass,cab_lf,steel_pl_3mm,OPAQUE, 4,  1  2  3  4  #   1
+*mass,cab_lf_,steel_pl_3mm,OPAQUE, 4,  2  1  4  3  #   2
+*mass,cab_rt,steel_pl_3mm,OPAQUE, 4,  5  6  7  8  #   3
+*mass,cab_rt_,steel_pl_3mm,OPAQUE, 4,  6  5  8  7  #   4
+*mass,cab_fr,steel_gr_3mm,OPAQUE, 4,  9 10 11 12  #   5
+*mass,cab_fr_,steel_gr_3mm,OPAQUE, 4, 10  9 12 11  #   6
+# 
+*vis,0.0000,0.4000,0.0000,0.4000,0.4000,1.2500,-90.0000,1.00,f_cabinet,steel_pl_3mm  # visual   1
+*vis,0.0300,0.0000,0.0500,0.0100,0.3400,0.2930,-90.0000,1.00,drw_a,steel_pl_3mm  # visual   2
+*vis,0.0300,0.0000,0.3480,0.0100,0.3400,0.2930,-90.0000,1.00,drw_b,steel_pl_3mm  # visual   3
+*vis,0.0300,0.0000,0.6460,0.0100,0.3400,0.2930,-90.0000,1.00,drw_c,steel_pl_3mm  # visual   4
+*vis,0.0300,0.0000,0.9440,0.0100,0.3400,0.2930,-90.0000,1.00,drw_d,steel_pl_3mm  # visual   5
+# 
+*vobject,4drawer-fc,four drawer file cabinet, 5,f_cabinet,drw_a,drw_b,drw_c,drw_d

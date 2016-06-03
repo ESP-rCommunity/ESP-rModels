@@ -1,6 +1,6 @@
 *ESP-r visualisation scene configuration file.
-Fri Aug 19 19:00:40 2005 # latest file modification.
-  1 # No. of scenes
+Wed Sep  2 13:45:08 2015 # latest file modification.
+  3 # No. of scenes
 # Scene number  1
 *rnm cellular_furn_Extern.rif                      # Rif name
 *srt cellular_furn_Extern                          # Scene root
@@ -12,5 +12,11 @@ Fri Aug 19 19:00:40 2005 # latest file modification.
 *srt manager_b_Intern                          # Scene root
 *rde Scene of manager_b for Internal analysis. # Description
 *rpu Internal                                  # Intended use
+*sceneEND
+# Scene number  3
+*rnm manager_b_Glare.rif                    # Rif name
+*srt manager_b_Glare                        # Scene root
+*rde Scene of manager_b for Glare analysis. # Description
+*rpu Glare                                  # Intended use
 *sceneEND
 *end

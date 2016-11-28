@@ -1,19 +1,19 @@
 # thermophysical properties of crawl defined in ../zones/crawl.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     5,     1  #  1 br2_floor    Ceilti_crlc 
-     5,     1  #  2 hall_floor   Ceilti_crlc 
-     4,     1  #  3 vest_floor   Ceilti_crl  
-     5,     1  #  4 br1_floor    Ceilti_crlc 
-     4,     1  #  5 stor_floor   Ceilti_crl  
-     5,     1  #  6 liv_floor    Ceilti_crlc 
-     4,     1  #  7 bath_floor   Ceilti_crl  
-     4,     1  #  8 kit_floor    Ceilti_crl  
-     1,     0  #  9 left         Crawl_wall  
-     1,     0  # 10 front        Crawl_wall  
-     1,     0  # 11 right        Crawl_wall  
-     1,     0  # 12 back         Crawl_wall  
-     7,     0  # 13 ground       ground      
+# layers|gaps|number &  name   | database name 
+     5,     1  #  1 br2_floor    Ceilti_crlc
+     5,     1  #  2 hall_floor   Ceilti_crlc
+     4,     1  #  3 vest_floor   Ceilti_crl
+     5,     1  #  4 br1_floor    Ceilti_crlc
+     4,     1  #  5 stor_floor   Ceilti_crl
+     5,     1  #  6 liv_floor    Ceilti_crlc
+     4,     1  #  7 bath_floor   Ceilti_crl
+     4,     1  #  8 kit_floor    Ceilti_crl
+     1,     0  #  9 left         Crawl_wall
+     1,     0  # 10 front        Crawl_wall
+     1,     0  # 11 right        Crawl_wall
+     1,     0  # 12 back         Crawl_wall
+     7,     0  # 13 ground       ground
 # air gap position & resistance for surface  1
   4,   0.170,
 # air gap position & resistance for surface  2

@@ -1,17 +1,17 @@
 # thermophysical properties of upper_wc defined in ../zones/upper_wc.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
+# layers|gaps|number &  name   | database name 
      3,     0  #  1 ptn_br1      intcnc_block
      4,     1  #  2 facade       conc_blck_rn
      3,     0  #  3 ptn_br1_a    intcnc_block
-     7,     1  #  4 wc_floor     Floorti_up  
+     7,     1  #  4 wc_floor     Floorti_up
      3,     0  #  5 ptn_wc_a     intcnc_block
      3,     0  #  6 ptn_wc_b     intcnc_block
-     3,     1  #  7 door_wc_b    Doorint_sol 
+     3,     1  #  7 door_wc_b    Doorint_sol
      3,     0  #  8 ptn_wc_c     intcnc_block
-     2,     0  #  9 wc_ceiling   Ceiltk_up   
-     1,     0  # 10 frame        Window_frme 
-     3,     1  # 11 glazing      Window_ext  
+     2,     0  #  9 wc_ceiling   Ceiltk_up
+     1,     0  # 10 frame        Window_frme
+     3,     1  # 11 glazing      Window_ext
 # air gap position & resistance for surface  2
   3,   0.170,
 # air gap position & resistance for surface  4

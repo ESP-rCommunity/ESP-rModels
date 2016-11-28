@@ -1,30 +1,30 @@
 # thermophysical properties of entry defined in ../zones/entry.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
+# layers|gaps|number &  name   | database name 
      3,     0  #  1 ptn_bath_b   intcnc_block
-     3,     1  #  2 door_bath    Doorint_sol 
+     3,     1  #  2 door_bath    Doorint_sol
      3,     0  #  3 ptn_bath_a   intcnc_block
      4,     1  #  4 facade_a     conc_blck_rn
-     1,     0  #  5 ent_door     Door_ext    
+     1,     0  #  5 ent_door     Door_ext
      4,     1  #  6 facade_b     conc_blck_rn
-     3,     1  #  7 door_und_st  Doorint_sol 
+     3,     1  #  7 door_und_st  Doorint_sol
      3,     0  #  8 ptn_liv_c    intcnc_block
-     3,     1  #  9 door_liv     Doorint_sol 
+     3,     1  #  9 door_liv     Doorint_sol
      3,     0  # 10 ptn_liv_b    intcnc_block
      3,     0  # 11 ptn_liv_a    intcnc_block
-     8,     1  # 12 ceil_entry   Ceilti_lowc 
+     8,     1  # 12 ceil_entry   Ceilti_lowc
      5,     1  # 13 entry_floor  Floorti_lowc
-     8,     1  # 14 landing      Floorti_upc 
-     8,     1  # 15 steps        Floorti_upc 
-     8,     1  # 16 up_steps     Floorti_upc 
+     8,     1  # 14 landing      Floorti_upc
+     8,     1  # 15 steps        Floorti_upc
+     8,     1  # 16 up_steps     Floorti_upc
      4,     1  # 17 land_wall    conc_blck_rn
      3,     0  # 18 side_wall    intcnc_block
      3,     0  # 19 banister     intcnc_block
      3,     0  # 20 xbanister    intcnc_block
-     1,     0  # 21 fict         fict        
-     1,     0  # 22 fict_b       fict        
+     1,     0  # 21 fict         fict
+     1,     0  # 22 fict_b       fict
      3,     0  # 23 low_banist   intcnc_block
-     7,     1  # 24 ceil_wc      Ceilti_low  
+     7,     1  # 24 ceil_wc      Ceilti_low
 # air gap position & resistance for surface  2
   2,   0.170,
 # air gap position & resistance for surface  4

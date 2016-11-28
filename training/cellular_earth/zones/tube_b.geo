@@ -61,7 +61,7 @@ tube_b is the b section of the earth tube
 *surf,side_j,VERT,-,-,-,earth_side,OPAQUE,GROUND,00,01  #  11 ||< user def grnd profile  1
 *surf,side_k,VERT,-,-,-,earth_side,OPAQUE,GROUND,00,01  #  12 ||< user def grnd profile  1
 *surf,top,CEIL,-,-,-,earth_top,OPAQUE,EXTERIOR,0,0  #  13 ||< external
-*surf,base,FLOR,-,-,-,below,OPAQUE,GROUND,00,01  #  14 ||< user def grnd profile  1
+*surf,base,FLOR,-,-,-,below_tube,OPAQUE,GROUND,00,01  #  14 ||< user def grnd profile  1
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

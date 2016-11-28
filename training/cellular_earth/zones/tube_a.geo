@@ -37,7 +37,7 @@ tube_a describes the a section of earth tube
 *surf,side_f,VERT,-,-,-,earth_side,OPAQUE,GROUND,00,01  #   5 ||< user def grnd profile  1
 *surf,side_g,VERT,-,-,-,earth_side,OPAQUE,GROUND,00,01  #   6 ||< user def grnd profile  1
 *surf,top,CEIL,-,-,-,earth_top,OPAQUE,EXTERIOR,0,0  #   7 ||< external
-*surf,base,FLOR,-,-,-,below,OPAQUE,GROUND,00,01  #   8 ||< user def grnd profile  1
+*surf,base,FLOR,-,-,-,below_tube,OPAQUE,GROUND,00,01  #   8 ||< user def grnd profile  1
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

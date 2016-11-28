@@ -1,20 +1,20 @@
 # thermophysical properties of bathroom defined in ../zones/bathroom.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     5,     1  #  1 fr_wall_a    tk_block_rn 
-     5,     1  #  2 head         tk_block_rn 
-     5,     1  #  3 fr_wall_b    tk_block_rn 
-     3,     1  #  4 ptn_bath     Parttim     
-     3,     1  #  5 ptn_hall_a   Parttim     
-     3,     1  #  6 door_hall    Doorint_sol 
-     3,     1  #  7 ptn_hall_b   Parttim     
-     3,     1  #  8 ptn_hall_c   Parttim     
-     3,     1  #  9 ptn_store    Parttim     
-     2,     0  # 10 bath_ceil    Ceiltk_up   
-     4,     1  # 11 bath_floor   Floorti_low 
-     1,     0  # 12 frame        Window_frme 
-     5,     1  # 13 sill         tk_block_rn 
-     3,     1  # 14 glazing      Window_ext  
+# layers|gaps|number &  name   | database name 
+     5,     1  #  1 fr_wall_a    tk_block_rn
+     5,     1  #  2 head         tk_block_rn
+     5,     1  #  3 fr_wall_b    tk_block_rn
+     3,     1  #  4 ptn_bath     Parttim
+     3,     1  #  5 ptn_hall_a   Parttim
+     3,     1  #  6 door_hall    Doorint_sol
+     3,     1  #  7 ptn_hall_b   Parttim
+     3,     1  #  8 ptn_hall_c   Parttim
+     3,     1  #  9 ptn_store    Parttim
+     2,     0  # 10 bath_ceil    Ceiltk_up
+     4,     1  # 11 bath_floor   Floorti_low
+     1,     0  # 12 frame        Window_frme
+     5,     1  # 13 sill         tk_block_rn
+     3,     1  # 14 glazing      Window_ext
 # air gap position & resistance for surface  1
   4,   0.190,
 # air gap position & resistance for surface  2

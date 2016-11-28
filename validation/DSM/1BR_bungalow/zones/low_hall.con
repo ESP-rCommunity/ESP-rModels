@@ -1,22 +1,22 @@
 # thermophysical properties of low_hall defined in ../zones/low_hall.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     3,     1  #  1 door_bath    Doorint_sol 
-     3,     1  #  2 ptn_liv      Parttim     
-     3,     1  #  3 ptn_br_a     Parttim     
-     3,     1  #  4 door_br      Doorint_sol 
-     3,     1  #  5 ptn_br_b     Parttim     
-     3,     1  #  6 ptn_br_c     Parttim     
-     3,     1  #  7 ptn_br_d     Parttim     
-     1,     0  #  8 door_stair   Door_fire   
-     3,     1  #  9 ptn_stor_a   Parttim     
-     3,     1  # 10 ptn_stor_b   Parttim     
-     3,     1  # 11 ptn_stor_c   Parttim     
-     3,     1  # 12 door_stor    Doorint_sol 
-     3,     1  # 13 ptn_stor_d   Parttim     
-     3,     1  # 14 ptn_bath_a   Parttim     
-     3,     1  # 15 ptn_bath_b   Parttim     
-     2,     0  # 16 hall_ceil    Ceilti_up   
+# layers|gaps|number &  name   | database name 
+     3,     1  #  1 door_bath    Doorint_sol
+     3,     1  #  2 ptn_liv      Parttim
+     3,     1  #  3 ptn_br_a     Parttim
+     3,     1  #  4 door_br      Doorint_sol
+     3,     1  #  5 ptn_br_b     Parttim
+     3,     1  #  6 ptn_br_c     Parttim
+     3,     1  #  7 ptn_br_d     Parttim
+     1,     0  #  8 door_stair   Door_fire
+     3,     1  #  9 ptn_stor_a   Parttim
+     3,     1  # 10 ptn_stor_b   Parttim
+     3,     1  # 11 ptn_stor_c   Parttim
+     3,     1  # 12 door_stor    Doorint_sol
+     3,     1  # 13 ptn_stor_d   Parttim
+     3,     1  # 14 ptn_bath_a   Parttim
+     3,     1  # 15 ptn_bath_b   Parttim
+     2,     0  # 16 hall_ceil    Ceilti_up
      5,     1  # 17 hall_floor   Floorti_lowc
 # air gap position & resistance for surface  1
   2,   0.170,

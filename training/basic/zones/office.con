@@ -1,14 +1,14 @@
 # thermophysical properties of office defined in ../zones/office.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     3,     1  #  1 part_b       gyp_gyp_ptn 
-     3,     1  #  2 part_a       gyp_gyp_ptn 
-     4,     1  #  3 North_w      extern_wall 
-     4,     1  #  4 West_w       extern_wall 
-     2,     0  #  5 Ceiling      ceiling     
-     8,     0  #  6 Floor        floor_1     
-     1,     0  #  7 door_a       door        
-     3,     1  #  8 west_glz     dbl_glz     
+# layers|gaps|number &  name   | database name 
+     3,     1  #  1 part_b       gyp_gyp_ptn
+     3,     1  #  2 part_a       gyp_gyp_ptn
+     4,     1  #  3 North_w      extern_wall
+     4,     1  #  4 West_w       extern_wall
+     2,     0  #  5 Ceiling      ceiling
+     8,     0  #  6 Floor        floor_1
+     1,     0  #  7 door_a       door
+     3,     1  #  8 west_glz     dbl_glz
 # air gap position & resistance for surface  1
   2,   0.170,
 # air gap position & resistance for surface  2

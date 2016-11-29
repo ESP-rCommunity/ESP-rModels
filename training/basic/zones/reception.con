@@ -1,20 +1,20 @@
 # thermophysical properties of reception defined in ../zones/reception.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     4,     1  #  1 south        extern_wall 
-     4,     1  #  2 east         extern_wall 
-     5,     2  #  3 pasg         gyp_blk_ptn 
-     4,     1  #  4 north        extern_wall 
-     3,     1  #  5 part_a       gyp_gyp_ptn 
-     3,     1  #  6 part_b       gyp_gyp_ptn 
-     4,     1  #  7 west         extern_wall 
-     2,     0  #  8 ceiling      ceiling     
-     8,     0  #  9 floor        floor_1     
-     3,     1  # 10 glz_s        dbl_glz     
-     1,     0  # 11 door_p       door        
-     1,     0  # 12 door_a       door        
-     1,     0  # 13 door_w       door        
-     3,     1  # 14 east_glz     dbl_glz     
+# layers|gaps|number &  name   | database name 
+     4,     1  #  1 south        extern_wall
+     4,     1  #  2 east         extern_wall
+     5,     2  #  3 pasg         gyp_blk_ptn
+     4,     1  #  4 north        extern_wall
+     3,     1  #  5 part_a       gyp_gyp_ptn
+     3,     1  #  6 part_b       gyp_gyp_ptn
+     4,     1  #  7 west         extern_wall
+     2,     0  #  8 ceiling      ceiling
+     8,     0  #  9 floor        floor_1
+     3,     1  # 10 glz_s        dbl_glz
+     1,     0  # 11 door_p       door
+     1,     0  # 12 door_a       door
+     1,     0  # 13 door_w       door
+     3,     1  # 14 east_glz     dbl_glz
 # air gap position & resistance for surface  1
   3,   0.170,
 # air gap position & resistance for surface  2

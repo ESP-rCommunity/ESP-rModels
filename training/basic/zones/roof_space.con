@@ -1,13 +1,13 @@
 # thermophysical properties of roof_space defined in ../zones/roof_space.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     2,     0  #  1 Ceiling_r    ceiling_rev 
-     2,     0  #  2 Ceiling_o    ceiling_rev 
-     4,     1  #  3 s_roof       roof_1      
-     4,     1  #  4 Fire_wall    extern_wall 
-     4,     1  #  5 North_wall   extern_wall 
-     4,     1  #  6 w_roof       roof_1      
-     2,     0  #  7 soffit       ceiling_rev 
+# layers|gaps|number &  name   | database name 
+     2,     0  #  1 Ceiling_r    ceiling_rev
+     2,     0  #  2 Ceiling_o    ceiling_rev
+     4,     1  #  3 s_roof       roof_1
+     4,     1  #  4 Fire_wall    extern_wall
+     4,     1  #  5 North_wall   extern_wall
+     4,     1  #  6 w_roof       roof_1
+     2,     0  #  7 soffit       ceiling_rev
 # air gap position & resistance for surface  3
   3,   0.170,
 # air gap position & resistance for surface  4

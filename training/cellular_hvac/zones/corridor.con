@@ -1,20 +1,20 @@
 # thermophysical properties of corridor defined in ../zones/corridor.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     1,     0  #  1 right        door        
-     5,     2  #  2 wall         gyp_blk_ptn 
-     1,     0  #  3 left         door        
-     2,     0  #  4 ceiling      ceiling     
-     5,     1  #  5 floor        susp_flr_re 
-     1,     0  #  6 door         door        
-     3,     1  #  7 ptn_corid    gyp_gyp_ptn 
-     3,     0  #  8 part_frame   insul_frame 
-     3,     1  #  9 part_glaz    dbl_glz     
-     3,     0  # 10 part_frameb  insul_frame 
-     1,     0  # 11 door_b       door        
-     3,     1  # 12 ptn_coridb   gyp_gyp_ptn 
-     3,     1  # 13 part_glazb   dbl_glz     
-     3,     1  # 14 filler       gyp_gyp_ptn 
+# layers|gaps|number &  name   | database name 
+     1,     0  #  1 right        door
+     5,     2  #  2 wall         gyp_blk_ptn
+     1,     0  #  3 left         door
+     2,     0  #  4 ceiling      ceiling
+     5,     1  #  5 floor        susp_flr_re
+     1,     0  #  6 door         door
+     3,     1  #  7 ptn_corid    gyp_gyp_ptn
+     3,     0  #  8 part_frame   insul_frame
+     3,     1  #  9 part_glaz    dbl_glz
+     3,     0  # 10 part_frameb  insul_frame
+     1,     0  # 11 door_b       door
+     3,     1  # 12 ptn_coridb   gyp_gyp_ptn
+     3,     1  # 13 part_glazb   dbl_glz
+     3,     1  # 14 filler       gyp_gyp_ptn
 # air gap position & resistance for surface  2
   2,   0.170, 4,   0.170,
 # air gap position & resistance for surface  5

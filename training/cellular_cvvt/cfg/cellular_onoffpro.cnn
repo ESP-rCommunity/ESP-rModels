@@ -1,5 +1,5 @@
 *connections for cellular_onoffpro
-*Date Sat Dec  7 18:25:32 2013
+*Date Thu Dec  1 09:11:30 2016
      40   # number of connections
    1   1   3   2   1  #    1 pt_general in manager_a >|< pt_general in manager_b
    1   2   3   3   8  #    2 part_frame in manager_a >|< part_frame in corridor

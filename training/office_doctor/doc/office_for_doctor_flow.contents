@@ -1,7 +1,7 @@
 Synopsis
  
-Synopsis of the model for training session with graphic flow defined in
-office_for_doctor_gflow.cfg generated on Thu Dec  1 08:06:34 2016. Associated
+Synopsis of the model for training session on thursday defined in
+office_for_doctor_flow.cfg generated on Thu Dec  1 08:05:55 2016. Associated
 notes are in ../doc/office_for_doctor.log
  
 The model is located at latitude   55.90 with a longitude difference of  -4.10
@@ -99,12 +99,12 @@ The model includes an air flow network.
  
  Flow network description.
  
-   8 nodes,  11 components,  11 connections;     wind reduction =  1.000
+   8 nodes,   7 components,  11 connections;     wind reduction =  1.000
    # Node      Fluid   Node Type           Height Temperature    Data_1       Data_2
    1 reception    air   internal & unknown    1.5000   20.000     (-)     0.000  vol  120.000
-   2 examination  air   internal & unknown    2.2500   20.000     (-)     0.000  vol   60.000
+   2 examination  air   internal & unknown    2.2500   20.000     (-)     0.000  vol   60.001
    3 south_exam   air   boundary & wind ind   2.3750   0.0000     coef    5.000  azim 180.000
-   4 south_recp   air   boundary & wind ind   2.3750   0.0000     coef    1.000  azim 180.000
+   4 south_recp   air   boundary & wind ind   2.3750   0.0000     coef    5.000  azim 180.000
    5 north_recp   air   boundary & wind ind   2.3750   0.0000     coef    9.000  azim   0.000
    6 north_exam   air   boundary & wind ind   3.7500   0.0000     coef    1.000  azim   0.000
    7 exam_extr    air   boundary & wind ind   3.9000   0.0000     coef    1.000  azim  90.000
@@ -112,51 +112,39 @@ The model includes an air flow network.
  
  Component    Type C+ L+ Description
  
- long_wina     110  2  0 Specific air flow opening           m = rho.f(A,dP)
- Fluid  1.0 opening area (m)  1.000
- 
- long_winr     110  2  0 Specific air flow opening           m = rho.f(A,dP)
+ long_win      110  2  0 Specific air flow opening           m = rho.f(A,dP)
  Fluid  1.0 opening area (m)  1.000
  
  long_cr       120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
  Fluid  1.0 crack width (m)  0.0050 crack length (m)  7.500
  
- long_crr      120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
- Fluid  1.0 crack width (m)  0.0050 crack length (m)  7.500
- 
- door_icr      120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
+ door_cr       120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
  Fluid  1.0 crack width (m)  0.0100 crack length (m)  0.800
  
- door_ecr      120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
- Fluid  1.0 crack width (m)  0.0100 crack length (m)  0.800
+ upper_win      40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Fluid  1.0 opening area (m^2)  1.500 discharge factor (-) 0.500
  
- up_crack      120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
+ upper_cr      120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
  Fluid  1.0 crack width (m)  0.0050 crack length (m)  9.800
+ 
+ short_win     110  2  0 Specific air flow opening           m = rho.f(A,dP)
+ Fluid  1.0 opening area (m)  0.300
  
  extr_fan       30  2  0 Constant vol. flow rate component   m = rho.a
  Fluid  1.0 flow rate (m^3/s)  0.10000
  
- long_winn     110  2  0 Specific air flow opening           m = rho.f(A,dP)
- Fluid  1.0 opening area (m)  1.000
- 
- l_crn         120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
- Fluid  1.0 crack width (m)  0.0050 crack length (m)  7.500
- 
- up_win         40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
- Fluid  1.0 opening area (m^2)  1.500 discharge factor (-) 0.500
- 
     # +Node         dHght   -Node         dHght   Component       Z @+    Z @-
-    1 south_exam    0.000   examination   0.125   long_wina       2.375   2.375
-    2 south_recp    0.000   reception     0.875   long_crr        2.375   2.375
-    3 north_recp    0.000   reception     0.875   long_winn       2.375   2.375
-    4 north_recp    0.000   reception     0.875   l_crn           2.375   2.375
-    5 north_exam    0.000   examination   1.500   up_win          3.750   3.750
-    6 north_exam    0.000   examination   1.500   up_crack        3.750   3.750
-    7 examination   1.650   exam_extr     0.000   extr_fan        3.900   3.900
-    8 reception    -1.400   examination  -2.150   door_icr        0.100   0.100
-    9 east_door    -0.100   reception    -1.400   door_ecr        0.100   0.100
-   10 south_exam    0.000   examination   0.125   long_cr         2.375   2.375
-   11 south_recp    0.000   reception     0.875   long_winr       2.375   2.375
+    1 south_exam   -0.000   examination   0.120   long_win        2.375   2.370
+    2 south_exam   -0.000   examination   0.000   long_cr         2.375   2.250
+    3 south_recp   -0.000   reception     0.800   long_win        2.375   2.300
+    4 south_recp   -0.000   reception     0.000   long_cr         2.375   1.500
+    5 north_recp   -0.000   reception     0.800   long_win        2.375   2.300
+    6 north_recp   -0.000   reception     0.000   long_cr         2.375   1.500
+    7 north_exam   -0.000   examination   1.500   upper_win       3.750   3.750
+    8 north_exam   -0.000   examination   0.000   upper_cr        3.750   2.250
+    9 examination   0.000   exam_extr    -0.000   extr_fan        2.250   3.900
+   10 reception    -1.500   examination  -1.500   door_cr         0.000   0.750
+   11 east_door     0.000   reception    -1.500   door_cr         0.200   0.000
 thermal zone to air flow node mapping:
 thermal zone -> air flow node
 reception    -> reception

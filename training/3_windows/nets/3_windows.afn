@@ -30,5 +30,5 @@
  adjacent      0.000   manager_t_b  -1.450   door_crack                              
  adjacent      0.000   manager_bi   -1.450   door_crack                              
  gl_ext        0.000   manager       0.450   win_crack                                  
- low_gl_ext    0.000   manager_t_b  -0.350   win_crack                                  
+ low_glz_ext   0.000   manager_t_b  -0.350   win_crack                                  
  bi_glz        0.000   manager_bi    0.000   win_crack                                 

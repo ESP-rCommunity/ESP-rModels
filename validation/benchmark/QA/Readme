@@ -13,6 +13,9 @@ The tests cover running the simulator and results recovery:
   with different save levels. 
 In each case, a large range of variables are extracted.
 
+Model 1.2 is similar to model 1.1 but references multicon.db5 (which
+has more earth in the foundation construction).
+
 The results obtained by ESRU are stored in the Archive directory.
 These results can be used in 2 ways:
 a) to check from one version of ESP-r to the next whether there

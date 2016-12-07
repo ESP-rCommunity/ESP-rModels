@@ -1,12 +1,12 @@
 Synopsis
  
 Synopsis of the model A basic room with basic CFD with mass flow and thermal
-conflation defined in CFD_room_afn.cfg generated on Sun Dec  8 15:22:07 2013.
-Notes associated with the model are in ../doc/CFD_room.log
+conflation defined in CFD_room_afn.cfg generated on Wed Dec  7 09:02:11 2016.
+Associated notes are in ../doc/CFD_room.log
  
 The model is located at latitude   55.00 with a longitude difference of   0.00
-from the local time meridian. The year used in simulations is 2000 and
-weekends occur on Saturday and Sunday.
+from the local time meridian (east +ve). The year used in simulations is 2000
+and weekends occur on Saturday and Sunday.
 The site exposure is typical city centre and the ground reflectance is 0.20.
  
  
@@ -33,11 +33,12 @@ An Integrated Performance View is incomplete or missing.
 Databases associated with the model:
  standard pressure distr: pressc.db1
  standard materials     : material.db4.a
- constructions          : multicon.db2
+ standard constructions : multicon.db5
  standard plant comp    : plantc.db1
  standard event profiles: profiles.db1.a
  standard optical prop  : optics.db2
  standard UK NCM data   : SBEM.db1
+ standard predefined obj: predefined.db1
  standard mould isopleth: mould.db1
  ____________________________________________________________
  
@@ -45,7 +46,7 @@ The model includes an air flow network.
  
  Flow network description.
  
-   3 nodes,   1 components,   2 connections;     wind reduction =  1.000
+   3 nodes,   2 components,   2 connections;     wind reduction =  1.000
    # Node      Fluid   Node Type           Height Temperature    Data_1       Data_2
    1 room         air   internal & unknown    1.5000   20.000     (-)     0.000  vol   45.361
    2 west         air   boundary & wind ind   2.1500   0.0000     coef    1.000  azim 270.000
@@ -56,8 +57,11 @@ The model includes an air flow network.
  open          110  2  0 Specific air flow opening           m = rho.f(A,dP)
  Fluid  1.0 opening area (m)  0.060
  
+ fan            30  2  0 Constant vol. flow rate component   m = rho.a
+ Fluid  1.0 flow rate (m^3/s)  0.50000E-01
+ 
     # +Node         dHght   -Node         dHght   Component       Z @+    Z @-
-    1 west         -0.325   room          0.325   open            1.825   1.825
+    1 west         -0.325   room          0.325   fan             1.825   1.825
     2 roof         -0.750   room          0.750   open            2.250   2.250
 thermal zone to air flow node mapping:
 thermal zone -> air flow node
@@ -78,25 +82,96 @@ ID Zone         Volume|          Surface
  room describes a basic room
  There is 36.000m2 of exposed surface area, 36.000m2 of which is vertical.
  Outside walls are 238.10 % of floor area & average U of 0.393 & UA of 14.137
- Ground contact is 100.00 % of floor area & average U of 2.825 & perimeter 12.000
+ Ground contact is 100.00 % of floor area & average U of 0.946 & perimeter 12.000
  
  A summary of the surfaces in room( 1) follows:
  
- Sur| Area  |Azim|Elev| surface    |    geometry       | construction |environment
-    | m^2   |deg |deg | name       |optical|locat| use | name         |other side
-  1  12.6    180.   0. south        OPAQUE   VERT -     extern_wall  ||< external
-  2  10.8     90.   0. east         OPAQUE   VERT -     extern_wall  ||< external
-  3  12.6      0.   0. north        OPAQUE   VERT -     extern_wall  ||< external
-  4  10.7    270.   0. west         OPAQUE   VERT -     partition    ||< identical environment
-  5  15.1      0.  90. ceiling      OPAQUE   CEIL -     ceiling      ||< identical environment
-  6  15.1      0. -90. floor        OPAQUE   FLOR -     floor_1      ||< ground profile  1
-  7  0.060   270.   0. inlet        OPAQUE   VERT -     dummy_pnls   ||< identical environment
-  8  0.060     0.  90. outlet       OPAQUE   CEIL -     dummy_pnls   ||< identical environment
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  12.6    180.   0. south        OPAQUE   VERT -        -        extern_wall ||< external
+  2  10.8     90.   0. east         OPAQUE   VERT -        -        extern_wall ||< external
+  3  12.6      0.   0. north        OPAQUE   VERT -        -        extern_wall ||< external
+  4  10.7    270.   0. west         OPAQUE   VERT -        -        partition ||< identical environment
+  5  15.1      0.  90. ceiling      OPAQUE   CEIL -        -        ceiling ||< identical environment
+  6  15.1      0. -90. floor        OPAQUE   FLOR -        -        floor_1 ||< ground profile  1
+  7  0.060   270.   0. inlet        OPAQUE   VERT -        -        dummy_pnls ||< identical environment
+  8  0.060     0.  90. outlet       OPAQUE   CEIL -        -        dummy_pnls ||< identical environment
  
  
  All surfaces will receive diffuse insolation (if shading not calculated).
  No shading analysis requested.
  No insolation analysis requested.
+ 
+ 
+A CFD domain has been described for: room
+Description is: A room with a CFD domain, coupled with the building simulation a
+Building-CFD conflation type 1: thermal conflation
+ 
+The current domain is orthogonal with:
+   3 X regions
+   3 Y regions
+   3 Z regions
+X Region   1, cells:  10, size:  3.75, power law coef: 1.100
+X Region   2, cells:   1, size:  0.20, power law coef: 1.000
+X Region   3, cells:   1, size:  0.25, power law coef: 1.000
+  Totals            12        4.20
+Y Region   1, cells:   4, size:  1.65, power law coef: 1.100
+Y Region   2, cells:   1, size:  0.30, power law coef: 1.000
+Y Region   3, cells:   4, size:  1.65, power law coef: 1.100
+  Totals             9        3.60
+Z Region  1, cells:   6, size:  2.05, power law coef: 1.100
+Z Region  2, cells:   1, size:  0.20, power law coef: 1.000
+Z Region  3, cells:   3, size:  0.75, power law coef: 1.000
+  Totals            10        3.00
+ 
+Volume Inlet is on the West face, cells:   1   1   5   5   7   7
+Volume Outlet is on the High face, cells:  11  11   5   5  10  10
+Volume West_low is on the West face, cells:   1   1   1   9   1   6
+Volume West_mid1 is on the West face, cells:   1   1   1   4   7   7
+Volume West_mid2 is on the West face, cells:   1   1   6   9   7   7
+Volume West_top is on the West face, cells:   1   1   1   9   8  10
+Volume South is on the South face, cells:   1  12   1   1   1  10
+Volume North is on the North face, cells:   1  12   9   9   1  10
+Volume East is on the East face, cells:  12  12   1   9   1  10
+Volume Floor is on the Low face, cells:   1  12   1   9   1   1
+Volume Ceiling1 is on the High face, cells:   1  10   1   9  10  10
+Volume Ceiling2 is on the High face, cells:  11  11   1   4  10  10
+Volume Ceiling3 is on the High face, cells:  11  11   6   9  10  10
+Volume Ceiling4 is on the High face, cells:  12  12   1   9  10  10
+NOTE: Face orientations (North, South, East and West) are in terms of the CFD domain only.
+      This does not necessarily match building geometry.
+ 
+Solid boundary condition West_low is of type Temp, with temperature associated with building surface west
+Solid boundary condition West_mid1 is of type Temp, with temperature associated with building surface west
+Solid boundary condition West_mid2 is of type Temp, with temperature associated with building surface west
+Solid boundary condition West_top is of type Temp, with temperature associated with building surface west
+Solid boundary condition South is of type Temp, with temperature associated with building surface south
+Solid boundary condition North is of type Temp, with temperature associated with building surface north
+Solid boundary condition East is of type Temp, with temperature associated with building surface east
+Solid boundary condition Floor is of type Temp, with temperature associated with building surface floor
+Solid boundary condition Ceiling1 is of type Temp, with temperature associated with building surface ceiling
+Solid boundary condition Ceiling2 is of type Temp, with temperature associated with building surface ceiling
+Solid boundary condition Ceiling3 is of type Temp, with temperature associated with building surface ceiling
+Solid boundary condition Ceiling4 is of type Temp, with temperature associated with building surface ceiling
+ 
+Opening Inlet is of type Velocity, conflated to mass flow connection  1
+Opening Outlet is of type Velocity, conflated to mass flow connection  2
+ 
+ Following conflated flow network will be used
+ 
+ 
+ 
+ 
+MIT zero-equation turbulence model active
+Solving buoyancy by full ideal gas law calculations, relaxation factor 0.50
+Solving pressure (P), initial value   0.0000, relaxation factor 0.50, relaxation factor 2 0.10
+Solving velocity in X direction (Vu), initial value   0.0010, relaxation factor 0.30, relaxation factor 2 0.10
+Solving velocity in Y direction (Vv), initial value   0.0010, relaxation factor 0.30, relaxation factor 2 0.10
+Solving velocity in Z direction (Vw), initial value   0.0010, relaxation factor 0.30, relaxation factor 2 0.10
+Solving temperature (T), initial value  20.0000, relaxation factor 0.30, relaxation factor 2 0.20
+Solving local mean age of air, initial value not used, relaxation factor not used (always 0.9)
+Convergence criterion is maximum sum of residuals  0.100E+00 within  2000 iterations.
+Monitoring cell is  7  5  6
  
  Ventilation & infiltration is assessed via network analysis
  and the associated network node is: room
@@ -115,81 +190,103 @@ Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Con
  There is 36.000m2 of outside surface area, 36.000m2 of which is vertical.
  
  Outside walls are 238.10 % of floor area & average U of 0.393 & UA of 14.137 & max MLC thickness 0.325
- Ground contact is 100.00 % of floor area & average U of 2.825 & perimeter 12.000 & max MLC thickness 0.300
- CIBSE ground beta! 2.520 dt 0.916 Ufleft 0.340 Ufright 2.266 Uf 0.770 R extra @ virtual layer 0.945
+ Ground contact is 100.00 % of floor area & average U of 0.946 & perimeter 12.000 & max MLC thickness 1.200
+ CIBSE ground beta! 2.520 dt 1.971 Ufleft 0.303 Ufright 1.613 Uf 0.489 R extra @ virtual layer 0.986
  
  ____________________________________________________________
  Multi-layer constructions used:
  
  Details of opaque construction: extern_wall and overall thickness  0.325
+ In category legacy also shown in menus as: cavity insulated brick-block
+typical UK insulated cavity brick-block wall with 50mm air gap & 75mm insulation (legacy
+construction used in some training models)
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   100.0     0.960  2000.   650. 0.90 0.93    25.  0.10 outer leaf brick : Outer leaf brick (inorganic-porous)
-    2   75.0     0.040   250.   840. 0.90 0.30     4.  1.88 glasswool : Glasswool (generic) (non-hygroscopic)
-    3   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int   100.0     0.440  1500.   650. 0.90 0.65    15.  0.23 breeze block : Breeze block (inorganic-porous)
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   100.0     0.960  2000.   650. 0.90 0.70    25.  0.10 200.0 Lt brown brick : Light brown brick (inorganic-porous)
+    2   75.0     0.040   250.   840. 0.90 0.30     4.  1.88  18.8 glasswool : Glasswool (generic) (non-hygroscopic)
+    3   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+ Int   100.0     0.440  1500.   650. 0.90 0.65    15.  0.23 150.0 breeze block : Breeze block (inorganic-porous)
  ISO 6946 U values (horiz/upward/downward heat flow)=  0.393  0.397  0.387 (partition)  0.379
+ Weight per m^2 of this construction 368.81
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.39
  External surface admittance Y=  3.94  w=  2.38 decrement factor f=  0.68  phi=  1.61 surface factor f=  0.68  phi=  1.61
  Partition admittance Y=  4.10  w=  2.39 surface factor f=  0.67  phi=  1.71
  Total area of extern_wall is     36.00
  
- Details of opaque construction: floor_1 and overall thickness  0.300
- 
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   100.0     1.280  1460.   879. 0.90 0.85     5.  0.08 earth std : Common_earth
-    2  100.0     2.900  2650.   900. 0.90 0.55    77.  0.03 red granite : Red granite (inorganic-porous)
-    3   50.0     1.400  2100.   653. 0.90 0.65    19.  0.04 heavy mix concrete : Heavy mix concrete
- Int    50.0     1.400  2100.   650. 0.91 0.65    19.  0.04 cement screed : Cement screed (inorganic-porous)
- ISO 6946 U values (horiz/upward/downward heat flow)=  2.825  3.086  2.538 (partition)  2.252
- 
-Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.75
- External surface admittance Y=  5.40  w=  0.99 decrement factor f=  0.41  phi=  1.60 surface factor f=  0.41  phi=  1.60
- Partition admittance Y=  5.94  w=  1.56 surface factor f=  0.45  phi=  2.62
- Total area of floor_1 is     15.12
- 
- Details of opaque construction: partition and overall thickness  0.226
- 
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext    13.0     0.420  1200.   837. 0.91 0.50    11.  0.03 gypsum plaster : Gypsum based plaster (inorganic-porous)
-    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
-    3  100.0     0.510  1400.  1000. 0.90 0.65    10.  0.20 block inner : Block inner (3% mc)
-    4   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int    13.0     0.420  1200.   837. 0.91 0.50    11.  0.03 gypsum plaster : Gypsum based plaster (inorganic-porous)
- ISO 6946 U values (horiz/upward/downward heat flow)=  1.302  1.355  1.238 (partition)  1.166
- 
-Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.29
- External surface admittance Y=  2.63  w=  1.60 decrement factor f=  0.72  phi=  0.68 surface factor f=  0.72  phi=  0.68
- Partition admittance Y=  2.89  w=  2.42 surface factor f=  0.75  phi=  1.06
- Total area of partition is     10.74
- 
  Details of opaque construction: dummy_pnls and overall thickness  0.086
+ In category legacy also shown in menus as: insulated alum wall panel
+insulated bright aluminium panel wall with 80mm insulation (legacy construction used in some
+training models)
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext     3.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 aluminium : Aluminium
-    2   80.0     0.040    12.   840. 0.90 0.65    30.  2.00 glass fibre quilt : Glass Fibre Quilt (non-hygroscopic)
- Int     3.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 aluminium : Aluminium
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     3.0   210.000  2700.   880. 0.22 0.20 19200.  0.00   8.1 aluminium : Aluminium
+    2   80.0     0.040    12.   840. 0.90 0.65    30.  2.00   1.0 glass fibre quilt : Glass Fibre Quilt (non-hygroscopic)
+ Int     3.0   210.000  2700.   880. 0.22 0.20 19200.  0.00   8.1 aluminium : Aluminium
  ISO 6946 U values (horiz/upward/downward heat flow)=  0.461  0.467  0.452 (partition)  0.442
+ Weight per m^2 of this construction  17.16
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.46
  External surface admittance Y=  0.68  w=  2.97 decrement factor f=  0.94  phi=  0.23 surface factor f=  0.94  phi=  0.23
  Partition admittance Y=  0.53  w=  5.76 surface factor f=  1.00  phi=  0.24
  Total area of dummy_pnls is      0.12
  
- Details of opaque construction: ceiling linked to ceiling_rev & with overall thickness  0.110
+ Details of opaque construction: partition and overall thickness  0.226
+ In category partitions also shown in menus as: plaster over 100mm concrete blk
+partition - plaster over 100mm concret block.
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   100.0     0.040   250.   840. 0.90 0.30     4.  2.50 glasswool : Glasswool (generic) (non-hygroscopic)
- Int    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33 ceiling mineral : Ceiling acoustic tile (mineral fibre based)
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    13.0     0.420  1200.   837. 0.91 0.50    11.  0.03  15.6 gypsum plaster : Gypsum based plaster (inorganic-porous)
+    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+    3  100.0     0.510  1400.  1000. 0.90 0.65    10.  0.20 140.0 block inner : Block inner (3% mc)
+    4   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+ Int    13.0     0.420  1200.   837. 0.91 0.50    11.  0.03  15.6 gypsum plaster : Gypsum based plaster (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  1.302  1.355  1.238 (partition)  1.166
+ Weight per m^2 of this construction 171.32
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.29
+ External surface admittance Y=  2.63  w=  1.60 decrement factor f=  0.72  phi=  0.68 surface factor f=  0.72  phi=  0.68
+ Partition admittance Y=  2.89  w=  2.42 surface factor f=  0.75  phi=  1.06
+ Total area of partition is     10.74
+ 
+ Details of opaque construction: ceiling linked to ceiling_rev & with overall thickness  0.110
+ In category ceil_floor also shown in menus as: suspended acoustic ceiling acous
+A mineral time with 100mm acoustic treatment. For use as a suspended ceiling. To be referenced
+from room. Reversed version is ceiling_rev
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   100.0     0.040   250.   840. 0.90 0.30     4.  2.50  25.0 glasswool : Glasswool (generic) (non-hygroscopic)
+ Int    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33   2.9 ceiling mineral : Ceiling acoustic tile (mineral fibre based)
  ISO 6946 U values (horiz/upward/downward heat flow)=  0.333  0.336  0.329 (partition)  0.323
+ Weight per m^2 of this construction  27.90
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.33
  External surface admittance Y=  0.82  w=  3.17 decrement factor f=  0.94  phi=  0.30 surface factor f=  0.94  phi=  0.30
  Partition admittance Y=  0.92  w=  4.35 surface factor f=  0.96  phi=  0.40
  Total area of ceiling is     15.06
+ 
+ Details of opaque construction: floor_1 and overall thickness  1.200
+ In category legacy also shown in menus as: thin concrete floor hardcore-ear
+An uninsulated slab on grade foundation over hardcore and 1m of earth with exposed screed.
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    2  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    3  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    4  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    5  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    6  100.0     2.900  2650.   900. 0.90 0.55    77.  0.03 265.0 red granite : Red granite (inorganic-porous)
+    7   50.0     1.400  2100.   653. 0.90 0.65    19.  0.04 105.0 heavy mix concrete : Heavy mix concrete
+ Int    50.0     1.400  2100.   650. 0.91 0.65    19.  0.04 105.0 cement screed : Cement screed (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.946  0.974  0.911 (partition)  0.872
+ Weight per m^2 of this construction1935.00
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.94
+ External surface admittance Y=  5.38  w=  0.96 decrement factor f=  0.41  phi=  1.55 surface factor f=  0.41  phi=  1.55
+ Partition admittance Y=  5.38  w=  0.96 surface factor f=  0.41  phi=  1.55
+ Total area of floor_1 is     15.12

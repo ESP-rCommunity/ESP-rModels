@@ -1,12 +1,12 @@
 Synopsis
  
 Synopsis of the model A model of a (similar) building to the ELSA building
-Ispra, Italy defined in elsa.cfg generated on Mon Sep 14 17:13:28 2015.
+Ispra, Italy defined in elsa.cfg generated on Wed Dec  7 14:16:44 2016.
 Associated notes are in ../doc/elsa.log
  
 The model is located at latitude   50.00 with a longitude difference of   0.00
-from the local time meridian. The year used in simulations is 1999 and
-weekends occur on Saturday and Sunday.
+from the local time meridian (east +ve). The year used in simulations is 1999
+and weekends occur on Saturday and Sunday.
 The site exposure is typical rural site and the ground reflectance is 0.20.
  
  
@@ -53,7 +53,21 @@ Databases associated with the model:
  standard event profiles: profiles.db1.a
  optical properties     : ../dbs/elsa.odb
  standard UK NCM data   : SBEM.db1
+ standard predefined obj: predefined.db1
  standard mould isopleth: mould.db1
+ ____________________________________________________________
+ 
+ Special materials file : ../zones/elsa_opv.spm
+  Details of special materials in the model:
+  Type  | Number of entries
+     1  |         4
+ 
+ No. Label            Zone         Surface      Construction Node Type  Num Data
+   1 photov1          pv_layer1    Surf-1       a-Si_PV                            6   Trn    10
+   2 photov2          pv_layer3    Surf-1       a-Si_PV                            6   Trn    10
+   3 photov3          pv_layer4    pv           a-Si_PV                            6   Trn    10
+   4 photov3          pv_layer2    Surf-1       a-Si_PV                            6   Trn    10
+ 
  
  ____________________________________________________________
  
@@ -497,6 +511,10 @@ Electrical data for component  14
  
  ____________________________________________________________
  
+ Electrical network file: ../networks/elsa.enf
+ 
+ ____________________________________________________________
+ 
 ID Zone         Volume|          Surface
    Name         m^3   | No. Opaque  Transp  ~Floor
  1 factory_area31263.0  17  6530.8    93.5  1248.0  factory_area describes a
@@ -523,57 +541,24 @@ ID Zone         Volume|          Surface
  
  Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
     | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
-  1  261.    180.   0. Surf-1       OPAQUE   VERT -        -        wall_clad    ||< external
-  2  501.     90.   0. Surf-2       OPAQUE   VERT -        -        wall_clad    ||< external
-  3  1560.     0.   0. Surf-3       OPAQUE   VERT -        -        wall_clad    ||< external
-  4  501.    270.   0. Surf-4       OPAQUE   VERT -        -        wall_clad    ||< external
-  5  1250.     0.  90. Surf-5       OPAQUE   CEIL -        -        roof_clad    ||< external
-  6  1250.     0. -90. Surf-6       OPAQUE   FLOR -        -        Floor_slab   ||< ground profile  1
+  1  261.    180.   0. Surf-1       OPAQUE   VERT -        -        wall_clad ||< external
+  2  501.     90.   0. Surf-2       OPAQUE   VERT -        -        wall_clad ||< external
+  3  1560.     0.   0. Surf-3       OPAQUE   VERT -        -        wall_clad ||< external
+  4  501.    270.   0. Surf-4       OPAQUE   VERT -        -        wall_clad ||< external
+  5  1250.     0.  90. Surf-5       OPAQUE   CEIL -        -        roof_clad ||< external
+  6  1250.     0. -90. Surf-6       OPAQUE   FLOR -        -        Floor_slab ||< ground profile  1
   7  228.    180.   0. pv_back1     OPAQUE   VERT -        -        pv_back_wall ||< Surf-3:pv_layer1
   8  177.    180.   0. pv_back2     OPAQUE   VERT -        -        pv_back_wall ||< Surf-3:pv_layer2
   9  177.    180.   0. pv_back3     OPAQUE   VERT -        -        pv_back_wall ||< Surf-3:pv_layer3
  10  113.    180.   0. pv_back4     OPAQUE   VERT -        -        pv_back_wall ||< Surf-3:pv_layer4
- 11  30.7    180.   0. pv_glaz1     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz1:pv_layer1
- 12  23.8    180.   0. pv_glaz2     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz2:pv_layer2
- 13  23.8    180.   0. pv_glaz3     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz3:pv_layer3
- 14  15.2    180.   0. pv_glaz4     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz4:pv_layer4
- 15  124.    180.   0. off1-back    OPAQUE   VERT -        -        wall_clad    ||< Surf-3:office_fl1
- 16  194.    180.   0. off2-back    OPAQUE   VERT -        -        wall_clad    ||< Surf-3:office_fl2
- 17  194.    180.   0. off3-back    OPAQUE   VERT -        -        wall_clad    ||< Surf-3:office_fl3
+ 11  30.7    180.   0. pv_glaz1     SCF8783_ VERT -        -        clear_glaz ||< pv_glaz1:pv_layer1
+ 12  23.8    180.   0. pv_glaz2     SCF8783_ VERT -        -        clear_glaz ||< pv_glaz2:pv_layer2
+ 13  23.8    180.   0. pv_glaz3     SCF8783_ VERT -        -        clear_glaz ||< pv_glaz3:pv_layer3
+ 14  15.2    180.   0. pv_glaz4     SCF8783_ VERT -        -        clear_glaz ||< pv_glaz4:pv_layer4
+ 15  124.    180.   0. off1-back    OPAQUE   VERT -        -        wall_clad ||< Surf-3:office_fl1
+ 16  194.    180.   0. off2-back    OPAQUE   VERT -        -        wall_clad ||< Surf-3:office_fl2
+ 17  194.    180.   0. off3-back    OPAQUE   VERT -        -        wall_clad ||< Surf-3:office_fl3
  
- Vertices ( index X Y Z) in the zone...
-vertex   1    0.00000   10.00000    0.00000   vertex  14   62.40000   10.00000   19.77000
-vertex   2   62.40000   10.00000    0.00000   vertex  15   62.40000   10.00000   22.99000
-vertex   3   62.40000   30.00000    0.00000   vertex  16    0.00000   10.00000   22.99000
-vertex   4    0.00000   30.00000    0.00000   vertex  17   55.01000   10.00000   25.05000
-vertex   5    0.00000   10.00000   25.05000   vertex  18   55.01000   10.00000   22.99000
-vertex   6   62.40000   10.00000   25.05000   vertex  19   55.01000   10.00000   19.77000
-vertex   7   62.40000   30.00000   25.05000   vertex  20   55.01000   10.00000   16.55000
-vertex   8    0.00000   30.00000   25.05000   vertex  21   55.01000   10.00000   12.40000
-vertex   9   62.40000   10.00000   12.40000   vertex  22   41.38000   10.00000    0.00000
-vertex  10    0.00000   10.00000   12.40000   vertex  23    0.00000   10.00000    3.00000
-vertex  11    0.00000   10.00000   16.55000   vertex  24   41.38000   10.00000    3.00000
-vertex  12   62.40000   10.00000   16.55000   vertex  25    0.00000   10.00000    7.70000
-vertex  13    0.00000   10.00000   19.77000   vertex  26   41.38000   10.00000    7.70000
-                                              vertex  27   41.38000   10.00000   12.40000
- Number of vertices followed by list, name & perimeter length
-*edges,7,22,2,9,21,27,26,24   Surf-1  66.840m perimeter
-*edges,8,2,3,7,6,15,14,12,9   Surf-2  90.100m perimeter
-*edges,4,3,4,8,7   Surf-3 174.900m perimeter
-*edges,10,4,1,23,25,10,11,13,16,5,8   Surf-4  90.100m perimeter
-*edges,5,5,17,6,7,8   Surf-5 164.800m perimeter
-*edges,5,1,4,3,2,22   Surf-6 164.800m perimeter
-*edges,5,10,27,21,20,11   pv_back1 118.320m perimeter
-*edges,4,11,20,19,13   pv_back2 116.460m perimeter
-*edges,4,13,19,18,16   pv_back3 116.460m perimeter
-*edges,4,16,18,17,5   pv_back4 114.140m perimeter
-*edges,4,21,9,12,20   pv_glaz1  23.080m perimeter
-*edges,4,20,12,14,19   pv_glaz2  21.220m perimeter
-*edges,4,19,14,15,18   pv_glaz3  21.220m perimeter
-*edges,4,18,15,6,17   pv_glaz4  18.900m perimeter
-*edges,4,1,22,24,23   off1-back  88.760m perimeter
-*edges,4,23,24,26,25   off2-back  92.160m perimeter
-*edges,4,25,26,27,10   off3-back  92.160m perimeter
  
  All surfaces will receive diffuse insolation (if shading not calculated).
  No shading analysis requested.
@@ -623,35 +608,14 @@ weekday    18 Equipt     equipment W   18-24      0.0      0.0    0.50    0.50  
  
  Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
     | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
-  1  65.1    180.   0. Surf-1       OPAQUE   VERT -        -        wall_clad    ||< external
-  2  30.0     90.   0. Surf-2       OPAQUE   VERT -        -        wall_clad    ||< external
-  3  124.      0.   0. Surf-3       OPAQUE   VERT -        -        wall_clad    ||< off1-back:factory_area
-  4  30.0    270.   0. Surf-4       OPAQUE   VERT -        -        wall_clad    ||< external
-  5  414.      0.  90. Surf-5       OPAQUE   CEIL -        -        off_flr-r    ||< Surf-6:office_fl2
-  6  414.      0. -90. Surf-6       OPAQUE   FLOR -        -        Floor_slab   ||< ground profile  1
-  7  59.1    180.   0. window_off1  SCF8783_ VERT -        -        clear_glaz   ||< external
+  1  65.1    180.   0. Surf-1       OPAQUE   VERT -        -        wall_clad ||< external
+  2  30.0     90.   0. Surf-2       OPAQUE   VERT -        -        wall_clad ||< external
+  3  124.      0.   0. Surf-3       OPAQUE   VERT -        -        wall_clad ||< off1-back:factory_area
+  4  30.0    270.   0. Surf-4       OPAQUE   VERT -        -        wall_clad ||< external
+  5  414.      0.  90. Surf-5       OPAQUE   CEIL -        -        off_flr-r ||< Surf-6:office_fl2
+  6  414.      0. -90. Surf-6       OPAQUE   FLOR -        -        Floor_slab ||< ground profile  1
+  7  59.1    180.   0. window_off1  SCF8783_ VERT -        -        clear_glaz ||< external
  
- Vertices ( index X Y Z) in the zone...
-*vertex   1     0.00000     0.00000     0.00000
-*vertex   2    41.38000     0.00000     0.00000
-*vertex   3    41.38000    10.00000     0.00000
-*vertex   4     0.00000    10.00000     0.00000
-*vertex   5     0.00000     0.00000     3.00000
-*vertex   6    41.38000     0.00000     3.00000
-*vertex   7    41.38000    10.00000     3.00000
-*vertex   8     0.00000    10.00000     3.00000
-*vertex   9     1.00000     0.00000     1.00000
-*vertex  10    40.38000     0.00000     1.00000
-*vertex  11    40.38000     0.00000     2.50000
-*vertex  12     1.00000     0.00000     2.50000
- Number of vertices followed by list, name & perimeter length
-*edges,10,1,2,6,5,1,9,12,11,10,9   Surf-1 173.348m perimeter
-*edges,4,2,3,7,6   Surf-2  26.000m perimeter
-*edges,4,3,4,8,7   Surf-3  88.760m perimeter
-*edges,4,4,1,5,8   Surf-4  26.000m perimeter
-*edges,4,5,6,7,8   Surf-5 102.760m perimeter
-*edges,4,1,4,3,2   Surf-6 102.760m perimeter
-*edges,4,9,10,11,12   window_off1  81.760m perimeter
  
  All surfaces will receive diffuse insolation (if shading not calculated).
  No shading analysis requested.
@@ -726,35 +690,14 @@ weekday    24 Equipt     equipment W   21-24      0.0      0.0    0.50    0.50  
  
  Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
     | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
-  1  129.    180.   0. Surf-1       OPAQUE   VERT -        -        wall_clad    ||< external
-  2  47.0     90.   0. Surf-2       OPAQUE   VERT -        -        wall_clad    ||< external
-  3  194.      0.   0. Surf-3       OPAQUE   VERT -        -        wall_clad    ||< off2-back:factory_area
-  4  47.0    270.   0. Surf-4       OPAQUE   VERT -        -        wall_clad    ||< external
-  5  414.      0.  90. Surf-5       OPAQUE   CEIL -        -        off_flr-r    ||< Surf-6:office_fl3
-  6  414.      0. -90. Surf-6       OPAQUE   FLOR -        -        off_flr      ||< Surf-5:office_fl1
-  7  65.2    180.   0. window_off2  SCF8783_ VERT -        -        clear_glaz   ||< external
+  1  129.    180.   0. Surf-1       OPAQUE   VERT -        -        wall_clad ||< external
+  2  47.0     90.   0. Surf-2       OPAQUE   VERT -        -        wall_clad ||< external
+  3  194.      0.   0. Surf-3       OPAQUE   VERT -        -        wall_clad ||< off2-back:factory_area
+  4  47.0    270.   0. Surf-4       OPAQUE   VERT -        -        wall_clad ||< external
+  5  414.      0.  90. Surf-5       OPAQUE   CEIL -        -        off_flr-r ||< Surf-6:office_fl3
+  6  414.      0. -90. Surf-6       OPAQUE   FLOR -        -        off_flr ||< Surf-5:office_fl1
+  7  65.2    180.   0. window_off2  SCF8783_ VERT -        -        clear_glaz ||< external
  
- Vertices ( index X Y Z) in the zone...
-*vertex   1     0.00000     0.00000     3.00000
-*vertex   2    41.38000     0.00000     3.00000
-*vertex   3    41.38000    10.00000     3.00000
-*vertex   4     0.00000    10.00000     3.00000
-*vertex   5     0.00000     0.00000     7.70000
-*vertex   6    41.38000     0.00000     7.70000
-*vertex   7    41.38000    10.00000     7.70000
-*vertex   8     0.00000    10.00000     7.70000
-*vertex   9     1.00000     0.00000     4.00000
-*vertex  10    39.38000     0.00000     4.00000
-*vertex  11    39.38000     0.00000     5.70000
-*vertex  12     1.00000     0.00000     5.70000
- Number of vertices followed by list, name & perimeter length
-*edges,10,1,2,6,5,1,9,12,11,10,9   Surf-1 175.148m perimeter
-*edges,4,2,3,7,6   Surf-2  29.400m perimeter
-*edges,4,3,4,8,7   Surf-3  92.160m perimeter
-*edges,4,4,1,5,8   Surf-4  29.400m perimeter
-*edges,4,5,6,7,8   Surf-5 102.760m perimeter
-*edges,4,1,4,3,2   Surf-6 102.760m perimeter
-*edges,4,9,10,11,12   window_off2  80.160m perimeter
  
  All surfaces will receive diffuse insolation (if shading not calculated).
  No shading analysis requested.
@@ -830,35 +773,14 @@ weekday    24 Equipt     equipment W   21-24      0.0      0.0    0.50    0.50  
  
  Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
     | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
-  1  129.    180.   0. Surf-1       OPAQUE   VERT -        -        wall_clad    ||< external
-  2  47.0     90.   0. Surf-2       OPAQUE   VERT -        -        wall_clad    ||< external
-  3  194.      0.   0. Surf-3       OPAQUE   VERT -        -        wall_clad    ||< off3-back:factory_area
-  4  47.0    270.   0. Surf-4       OPAQUE   VERT -        -        wall_clad    ||< external
-  5  414.      0.  90. Surf-5       OPAQUE   CEIL -        -        roof_clad    ||< external
-  6  414.      0. -90. Surf-6       OPAQUE   FLOR -        -        off_flr      ||< Surf-5:office_fl2
-  7  65.2    180.   0. window_off3  SCF8783_ VERT -        -        clear_glaz   ||< external
+  1  129.    180.   0. Surf-1       OPAQUE   VERT -        -        wall_clad ||< external
+  2  47.0     90.   0. Surf-2       OPAQUE   VERT -        -        wall_clad ||< external
+  3  194.      0.   0. Surf-3       OPAQUE   VERT -        -        wall_clad ||< off3-back:factory_area
+  4  47.0    270.   0. Surf-4       OPAQUE   VERT -        -        wall_clad ||< external
+  5  414.      0.  90. Surf-5       OPAQUE   CEIL -        -        roof_clad ||< external
+  6  414.      0. -90. Surf-6       OPAQUE   FLOR -        -        off_flr ||< Surf-5:office_fl2
+  7  65.2    180.   0. window_off3  SCF8783_ VERT -        -        clear_glaz ||< external
  
- Vertices ( index X Y Z) in the zone...
-*vertex   1     0.00000     0.00000     7.70000
-*vertex   2    41.38000     0.00000     7.70000
-*vertex   3    41.38000    10.00000     7.70000
-*vertex   4     0.00000    10.00000     7.70000
-*vertex   5     0.00000     0.00000    12.40000
-*vertex   6    41.38000     0.00000    12.40000
-*vertex   7    41.38000    10.00000    12.40000
-*vertex   8     0.00000    10.00000    12.40000
-*vertex   9     1.00000     0.00000     8.70000
-*vertex  10    39.38000     0.00000     8.70000
-*vertex  11    39.38000     0.00000    10.40000
-*vertex  12     1.00000     0.00000    10.40000
- Number of vertices followed by list, name & perimeter length
-*edges,10,1,2,6,5,1,9,12,11,10,9   Surf-1 175.148m perimeter
-*edges,4,2,3,7,6   Surf-2  29.400m perimeter
-*edges,4,3,4,8,7   Surf-3  92.160m perimeter
-*edges,4,4,1,5,8   Surf-4  29.400m perimeter
-*edges,4,5,6,7,8   Surf-5 102.760m perimeter
-*edges,4,1,4,3,2   Surf-6 102.760m perimeter
-*edges,4,9,10,11,12   window_off3  80.160m perimeter
  
  All surfaces will receive diffuse insolation (if shading not calculated).
  No shading analysis requested.
@@ -933,41 +855,16 @@ weekday    24 Equipt     equipment W   21-24      0.0      0.0    0.50    0.50  
  
  Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
     | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
-  1  176.    180.   0. Surf-1       DC_PVpn_ VERT -        -        a-Si_PV      ||< external
-  2  0.955    90.   0. Surf-2       OPAQUE   VERT -        -        frame        ||< external
+  1  176.    180.   0. Surf-1       DC_PVpn_ VERT -        -        a-Si_PV ||< external
+  2  0.955    90.   0. Surf-2       OPAQUE   VERT -        -        frame ||< external
   3  228.      0.   0. Surf-3       OPAQUE   VERT -        -        pv_back_wall ||< pv_back1:factory_area
-  4  0.955   270.   0. Surf-4       OPAQUE   VERT -        -        frame        ||< external
-  5  14.4      0.  90. Surf-5       OPAQUE   CEIL -        -        frame        ||< Surf-6:pv_layer2
-  6  14.4      0. -90. Surf-6       OPAQUE   FLOR -        -        frame        ||< external
-  7  59.3    180.   0. pv_base_fm   OPAQUE   VERT -        -        opq_glaz     ||< external
-  8  23.6    180.   0. pv1-glaz     SCF8783_ VERT -        -        clear_glaz   ||< external
-  9  30.7      0.   0. pv_glaz1     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz1:factory_area
+  4  0.955   270.   0. Surf-4       OPAQUE   VERT -        -        frame ||< external
+  5  14.4      0.  90. Surf-5       OPAQUE   CEIL -        -        frame ||< Surf-6:pv_layer2
+  6  14.4      0. -90. Surf-6       OPAQUE   FLOR -        -        frame ||< external
+  7  59.3    180.   0. pv_base_fm   OPAQUE   VERT -        -        opq_glaz ||< external
+  8  23.6    180.   0. pv1-glaz     SCF8783_ VERT -        -        clear_glaz ||< external
+  9  30.7      0.   0. pv_glaz1     SCF8783_ VERT -        -        clear_glaz ||< pv_glaz1:factory_area
  
- Vertices ( index X Y Z) in the zone...
-*vertex   1     0.00000     9.77000    12.40000
-*vertex   2    62.40000     9.77000    12.40000
-*vertex   3    62.40000    10.00000    12.40000
-*vertex   4     0.00000    10.00000    12.40000
-*vertex   5     0.00000     9.77000    16.55000
-*vertex   6    62.40000     9.77000    16.55000
-*vertex   7    62.40000    10.00000    16.55000
-*vertex   8     0.00000    10.00000    16.55000
-*vertex   9     0.00000     9.77000    13.35000
-*vertex  10    62.40000     9.77000    13.35000
-*vertex  11    55.01000     9.77000    16.55000
-*vertex  12    55.01000     9.77000    13.35000
-*vertex  13    55.01000    10.00000    12.40000
-*vertex  14    55.01000    10.00000    16.55000
- Number of vertices followed by list, name & perimeter length
-*edges,4,9,12,11,5   Surf-1 116.420m perimeter
-*edges,5,2,3,7,6,10   Surf-2   8.760m perimeter
-*edges,4,13,4,8,14   Surf-3 118.320m perimeter
-*edges,5,4,1,9,5,8   Surf-4   8.760m perimeter
-*edges,6,5,11,6,7,14,8   Surf-5 125.260m perimeter
-*edges,5,1,4,13,3,2   Surf-6 125.260m perimeter
-*edges,5,1,2,10,12,9   pv_base_fm 126.700m perimeter
-*edges,4,12,10,6,11   pv1-glaz  21.180m perimeter
-*edges,4,3,13,14,7   pv_glaz1  23.080m perimeter
  
  All surfaces will receive diffuse insolation (if shading not calculated).
  No shading analysis requested.
@@ -1015,42 +912,16 @@ Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Con
  
  Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
     | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
-  1  125.    180.   0. Surf-1       DC_PVpn_ VERT -        -        a-Si_PV      ||< external
-  2  0.741    90.   0. Surf-2       OPAQUE   VERT -        -        frame        ||< external
+  1  125.    180.   0. Surf-1       DC_PVpn_ VERT -        -        a-Si_PV ||< external
+  2  0.741    90.   0. Surf-2       OPAQUE   VERT -        -        frame ||< external
   3  177.      0.   0. Surf-3       OPAQUE   VERT -        -        pv_back_wall ||< pv_back2:factory_area
-  4  0.741   270.   0. Surf-4       OPAQUE   VERT -        -        frame        ||< external
-  5  14.4      0.  90. Surf-5       OPAQUE   CEIL -        -        frame        ||< Surf-6:pv_layer3
-  6  14.4      0. -90. Surf-6       OPAQUE   FLOR -        -        frame        ||< Surf-5:pv_layer1
-  7  52.3    180.   0. pv_base_fm   OPAQUE   VERT -        -        frame        ||< external
-  8  23.8    180.   0. pv1-glaz     SCF8783_ VERT -        -        clear_glaz   ||< external
-  9  23.8      0.   0. pv_glaz2     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz2:factory_area
+  4  0.741   270.   0. Surf-4       OPAQUE   VERT -        -        frame ||< external
+  5  14.4      0.  90. Surf-5       OPAQUE   CEIL -        -        frame ||< Surf-6:pv_layer3
+  6  14.4      0. -90. Surf-6       OPAQUE   FLOR -        -        frame ||< Surf-5:pv_layer1
+  7  52.3    180.   0. pv_base_fm   OPAQUE   VERT -        -        frame ||< external
+  8  23.8    180.   0. pv1-glaz     SCF8783_ VERT -        -        clear_glaz ||< external
+  9  23.8      0.   0. pv_glaz2     SCF8783_ VERT -        -        clear_glaz ||< pv_glaz2:factory_area
  
- Vertices ( index X Y Z) in the zone...
-*vertex   1     0.00000     9.77000    16.55000
-*vertex   2    62.40000     9.77000    16.55000
-*vertex   3    62.40000    10.00000    16.55000
-*vertex   4     0.00000    10.00000    16.55000
-*vertex   5     0.00000     9.77000    19.77000
-*vertex   6    62.40000     9.77000    19.77000
-*vertex   7    62.40000    10.00000    19.77000
-*vertex   8     0.00000    10.00000    19.77000
-*vertex   9     0.00000     9.77000    17.50000
-*vertex  10    62.40000     9.77000    17.50000
-*vertex  11    55.01000     9.77000    19.77000
-*vertex  12    55.01000     9.77000    17.50000
-*vertex  13    55.01000     9.77000    16.55000
-*vertex  14    55.01000    10.00000    16.55000
-*vertex  15    55.01000    10.00000    19.77000
- Number of vertices followed by list, name & perimeter length
-*edges,4,9,12,11,5   Surf-1 114.560m perimeter
-*edges,5,2,3,7,6,10   Surf-2   6.900m perimeter
-*edges,4,14,4,8,15   Surf-3 116.460m perimeter
-*edges,5,4,1,9,5,8   Surf-4   6.900m perimeter
-*edges,6,5,11,6,7,15,8   Surf-5 125.260m perimeter
-*edges,6,1,4,14,3,2,13   Surf-6 125.260m perimeter
-*edges,4,1,13,12,9   pv_base_fm 111.920m perimeter
-*edges,6,12,13,2,10,6,11   pv1-glaz  21.220m perimeter
-*edges,4,3,14,15,7   pv_glaz2  21.220m perimeter
  
  All surfaces will receive diffuse insolation (if shading not calculated).
  No shading analysis requested.
@@ -1098,42 +969,16 @@ Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Con
  
  Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
     | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
-  1  125.    180.   0. Surf-1       DC_PVpn_ VERT -        -        a-Si_PV      ||< external
-  2  0.741    90.   0. Surf-2       OPAQUE   VERT -        -        frame        ||< external
+  1  125.    180.   0. Surf-1       DC_PVpn_ VERT -        -        a-Si_PV ||< external
+  2  0.741    90.   0. Surf-2       OPAQUE   VERT -        -        frame ||< external
   3  177.      0.   0. Surf-3       OPAQUE   VERT -        -        pv_back_wall ||< pv_back3:factory_area
-  4  0.741   270.   0. Surf-4       OPAQUE   VERT -        -        frame        ||< external
-  5  14.4      0.  90. Surf-5       OPAQUE   CEIL -        -        frame        ||< Surf-6:pv_layer4
-  6  14.4      0. -90. Surf-6       OPAQUE   FLOR -        -        frame        ||< Surf-5:pv_layer2
-  7  52.3    180.   0. pv_base_fm   OPAQUE   VERT -        -        frame        ||< external
-  8  23.8    180.   0. pv1-glaz     SCF8783_ VERT -        -        clear_glaz   ||< external
-  9  23.8      0.   0. pv_glaz3     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz3:factory_area
+  4  0.741   270.   0. Surf-4       OPAQUE   VERT -        -        frame ||< external
+  5  14.4      0.  90. Surf-5       OPAQUE   CEIL -        -        frame ||< Surf-6:pv_layer4
+  6  14.4      0. -90. Surf-6       OPAQUE   FLOR -        -        frame ||< Surf-5:pv_layer2
+  7  52.3    180.   0. pv_base_fm   OPAQUE   VERT -        -        frame ||< external
+  8  23.8    180.   0. pv1-glaz     SCF8783_ VERT -        -        clear_glaz ||< external
+  9  23.8      0.   0. pv_glaz3     SCF8783_ VERT -        -        clear_glaz ||< pv_glaz3:factory_area
  
- Vertices ( index X Y Z) in the zone...
-*vertex   1     0.00000     9.77000    19.77000
-*vertex   2    62.40000     9.77000    19.77000
-*vertex   3    62.40000    10.00000    19.77000
-*vertex   4     0.00000    10.00000    19.77000
-*vertex   5     0.00000     9.77000    22.99000
-*vertex   6    62.40000     9.77000    22.99000
-*vertex   7    62.40000    10.00000    22.99000
-*vertex   8     0.00000    10.00000    22.99000
-*vertex   9     0.00000     9.77000    20.72000
-*vertex  10    62.40000     9.77000    20.72000
-*vertex  11    55.01000     9.77000    22.99000
-*vertex  12    55.01000     9.77000    20.72000
-*vertex  13    55.01000     9.77000    19.77000
-*vertex  14    55.01000    10.00000    19.77000
-*vertex  15    55.01000    10.00000    22.99000
- Number of vertices followed by list, name & perimeter length
-*edges,4,9,12,11,5   Surf-1 114.560m perimeter
-*edges,5,2,3,7,6,10   Surf-2   6.900m perimeter
-*edges,4,14,4,8,15   Surf-3 116.460m perimeter
-*edges,5,4,1,9,5,8   Surf-4   6.900m perimeter
-*edges,6,5,11,6,7,15,8   Surf-5 125.260m perimeter
-*edges,6,1,4,14,3,2,13   Surf-6 125.260m perimeter
-*edges,4,1,13,12,9   pv_base_fm 111.920m perimeter
-*edges,6,12,13,2,10,6,11   pv1-glaz  21.220m perimeter
-*edges,4,3,14,15,7   pv_glaz3  21.220m perimeter
  
  All surfaces will receive diffuse insolation (if shading not calculated).
  No shading analysis requested.
@@ -1182,42 +1027,16 @@ Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Con
  
  Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
     | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
-  1  24.8    180.   0. frame        OPAQUE   VERT -        -        frame        ||< external
-  2  0.474    90.   0. Surf-2       OPAQUE   VERT -        -        frame        ||< external
+  1  24.8    180.   0. frame        OPAQUE   VERT -        -        frame ||< external
+  2  0.474    90.   0. Surf-2       OPAQUE   VERT -        -        frame ||< external
   3  113.      0.   0. Surf-3       OPAQUE   VERT -        -        pv_back_wall ||< pv_back4:factory_area
-  4  0.474   270.   0. Surf-4       OPAQUE   VERT -        -        frame        ||< external
-  5  14.4      0.  90. Surf-5       OPAQUE   CEIL -        -        frame        ||< external
-  6  14.4      0. -90. Surf-6       OPAQUE   FLOR -        -        frame        ||< Surf-5:pv_layer3
-  7  88.6    180.   0. pv           DC_PVpn_ VERT -        -        a-Si_PV      ||< external
-  8  15.2    180.   0. pv1-glaz     SCF8783_ VERT -        -        clear_glaz   ||< external
-  9  15.2      0.   0. pv_glaz4     SCF8783_ VERT -        -        clear_glaz   ||< pv_glaz4:factory_area
+  4  0.474   270.   0. Surf-4       OPAQUE   VERT -        -        frame ||< external
+  5  14.4      0.  90. Surf-5       OPAQUE   CEIL -        -        frame ||< external
+  6  14.4      0. -90. Surf-6       OPAQUE   FLOR -        -        frame ||< Surf-5:pv_layer3
+  7  88.6    180.   0. pv           DC_PVpn_ VERT -        -        a-Si_PV ||< external
+  8  15.2    180.   0. pv1-glaz     SCF8783_ VERT -        -        clear_glaz ||< external
+  9  15.2      0.   0. pv_glaz4     SCF8783_ VERT -        -        clear_glaz ||< pv_glaz4:factory_area
  
- Vertices ( index X Y Z) in the zone...
-*vertex   1     0.00000     9.77000    22.99000
-*vertex   2    62.40000     9.77000    22.99000
-*vertex   3    62.40000    10.00000    22.99000
-*vertex   4     0.00000    10.00000    22.99000
-*vertex   5     0.00000     9.77000    25.05000
-*vertex   6    62.40000     9.77000    25.05000
-*vertex   7    62.40000    10.00000    25.05000
-*vertex   8     0.00000    10.00000    25.05000
-*vertex   9     0.00000     9.77000    24.60000
-*vertex  10    62.40000     9.77000    23.94000
-*vertex  11    55.01000     9.77000    25.05000
-*vertex  12    55.01000     9.77000    24.60000
-*vertex  13    55.01000     9.77000    22.99000
-*vertex  14    55.01000    10.00000    22.99000
-*vertex  15    55.01000    10.00000    25.05000
- Number of vertices followed by list, name & perimeter length
-*edges,4,9,12,11,5   frame 110.920m perimeter
-*edges,5,2,3,7,6,10   Surf-2   4.580m perimeter
-*edges,4,14,4,8,15   Surf-3 114.140m perimeter
-*edges,5,4,1,9,5,8   Surf-4   4.580m perimeter
-*edges,6,5,11,6,7,15,8   Surf-5 125.260m perimeter
-*edges,6,1,4,14,3,2,13   Surf-6 125.260m perimeter
-*edges,4,1,13,12,9   pv 113.240m perimeter
-*edges,6,12,13,2,10,6,11   pv1-glaz  18.900m perimeter
-*edges,4,3,14,15,7   pv_glaz4  18.900m perimeter
  
  All surfaces will receive diffuse insolation (if shading not calculated).
  No shading analysis requested.
@@ -1267,12 +1086,69 @@ Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Con
  ____________________________________________________________
  Multi-layer constructions used:
  
+ Details of transparent construction: a-Si_PV with DC_PVpn_06nb optics and overall thickness  0.013
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     4.0     1.050  2500.   750. 0.83 0.05 19200.  0.00  10.0 ESG glass (low iron) : ESG glass (low iron)
+    2    3.0     1.050  2500.   750. 0.83 0.05 19200.  0.00   7.5 Glass_clear_float : Glass_clear_float
+    3    2.0     0.040    20.  1000. 0.80 0.05 19200.  0.05   0.0 pv_resin : pv_resin
+ Int     4.0     1.050  2500.   750. 0.83 0.05 19200.  0.00  10.0 ESG glass (low iron) : ESG glass (low iron)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  4.339  4.988  3.697 (partition)  3.120
+ Weight per m^2 of this construction  27.54
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  4.16
+ External surface admittance Y=  4.17  w=  0.18 decrement factor f=  0.50  phi=  0.18 surface factor f=  0.50  phi=  0.18
+ Partition admittance Y=  0.52  w=  5.76 surface factor f=  1.00  phi=  0.24
+ 
+ a-Si PV panel    ,     13mm, no blin: with id of: DC_PVpn_06nb
+ with 4 layers [including air gaps] and visible trn: 0.70
+ Direct transmission @ 0, 40, 55, 70, 80 deg
+   0.586 0.553 0.476 0.272 0.089
+ Layer| absorption @ 0, 40, 55, 70, 80 deg
+    1  0.031 0.035 0.039 0.045 0.049
+    2  0.089 0.097 0.105 0.108 0.094
+    3  0.062 0.066 0.068 0.062 0.045
+    4  0.018 0.019 0.018 0.013 0.007
+ Total area of a-Si_PV is    514.34
+ 
+ Details of opaque construction: pv_back_wall and overall thickness  0.089
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     2.0    50.000  7800.   502. 0.20 0.40 19200.  0.00  15.6 Steel_1 : Steel_1
+    2   85.0     0.040    12.   840. 0.90 0.65    30.  2.12   1.0 Glass Fibre : Glass Fibre
+ Int     2.0    50.000  7800.   502. 0.20 0.40 19200.  0.00  15.6 Steel_1 : Steel_1
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.436  0.441  0.428 (partition)  0.419
+ Weight per m^2 of this construction  32.22
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.43
+ External surface admittance Y=  0.71  w=  3.23 decrement factor f=  0.95  phi=  0.26 surface factor f=  0.95  phi=  0.26
+ Partition admittance Y=  0.58  w=  5.74 surface factor f=  1.00  phi=  0.27
+ Total area of pv_back_wall is   1391.75
+ 
+ Details of opaque construction: frame and overall thickness  0.024
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00   5.4 Aluminium : Aluminium
+    2   20.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.0 air  0.17 0.17 0.17
+ Int     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00   5.4 Aluminium : Aluminium
+ ISO 6946 U values (horiz/upward/downward heat flow)=  2.941  3.226  2.631 (partition)  2.325
+ Weight per m^2 of this construction  10.82
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.86
+ External surface admittance Y=  2.87  w=  0.21 decrement factor f=  0.66  phi=  0.11 surface factor f=  0.66  phi=  0.11
+ Partition admittance Y=  0.29  w=  5.88 surface factor f=  1.00  phi=  0.13
+ Total area of frame is    249.91
+ 
  Details of transparent construction: clear_glaz with SCF8783_06nb optics and overall thickness  0.004
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
-    1    4.0     1.050  2500.   750. 0.83 0.05 19200.  0.00 Glass_clear_float : Glass_clear_float
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1    4.0     1.050  2500.   750. 0.83 0.05 19200.  0.00  10.0 Glass_clear_float : Glass_clear_float
  ISO 6946 U values (horiz/upward/downward heat flow)=  5.753  6.954  4.677 (partition)  3.791
+ Weight per m^2 of this construction  10.00
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  5.44
  External surface admittance Y=  5.44  w=  0.04 decrement factor f=  0.35  phi=  0.08 surface factor f=  0.35  phi=  0.08
@@ -1284,45 +1160,92 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  5.44
    0.779 0.759 0.717 0.581 0.348
  Layer| absorption @ 0, 40, 55, 70, 80 deg
     1  0.149 0.163 0.173 0.179 0.169
- Total area of clear_glaz is     65.25
+ Total area of clear_glaz is    462.99
+ 
+ Details of opaque construction: opq_glaz and overall thickness  0.006
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     4.0     1.050  2500.   750. 0.83 0.05 19200.  0.00  10.0 Glass_clear_float : Glass_clear_float
+ Int     2.0    50.000  7800.   502. 0.20 0.40 19200.  0.00  15.6 Steel_1 : Steel_1
+ ISO 6946 U values (horiz/upward/downward heat flow)=  5.752  6.952  4.676 (partition)  3.790
+ Weight per m^2 of this construction  25.60
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  5.44
+ External surface admittance Y=  5.45  w=  0.09 decrement factor f=  0.35  phi=  0.17 surface factor f=  0.35  phi=  0.17
+ Partition admittance Y=  0.38  w=  5.83 surface factor f=  1.00  phi=  0.17
+ Total area of opq_glaz is     59.28
  
  Details of opaque construction: wall_clad and overall thickness  0.044
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 Aluminium : Aluminium
-    2   40.0     0.028    30.  1470. 0.90 0.50    30.  1.43 polyure_foam : polyure_foam
- Int     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 Aluminium : Aluminium
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00   5.4 Aluminium : Aluminium
+    2   40.0     0.028    30.  1470. 0.90 0.50    30.  1.43   1.2 polyure_foam : polyure_foam
+ Int     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00   5.4 Aluminium : Aluminium
  ISO 6946 U values (horiz/upward/downward heat flow)=  0.626  0.638  0.610 (partition)  0.592
+ Weight per m^2 of this construction  12.00
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.62
  External surface admittance Y=  0.72  w=  1.84 decrement factor f=  0.92  phi=  0.17 surface factor f=  0.92  phi=  0.17
  Partition admittance Y=  0.39  w=  5.82 surface factor f=  1.00  phi=  0.18
- Total area of wall_clad is    417.73
+ Total area of wall_clad is   4423.54
  
  Details of opaque construction: roof_clad and overall thickness  0.084
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 Aluminium : Aluminium
-    2   80.0     0.028    30.  1470. 0.90 0.50    30.  2.86 polyure_foam : polyure_foam
- Int     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 Aluminium : Aluminium
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00   5.4 Aluminium : Aluminium
+    2   80.0     0.028    30.  1470. 0.90 0.50    30.  2.86   2.4 polyure_foam : polyure_foam
+ Int     2.0   210.000  2700.   880. 0.22 0.20 19200.  0.00   5.4 Aluminium : Aluminium
  ISO 6946 U values (horiz/upward/downward heat flow)=  0.330  0.334  0.326 (partition)  0.321
+ Weight per m^2 of this construction  13.20
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.33
  External surface admittance Y=  0.53  w=  3.23 decrement factor f=  0.96  phi=  0.19 surface factor f=  0.96  phi=  0.19
  Partition admittance Y=  0.46  w=  5.74 surface factor f=  1.00  phi=  0.21
- Total area of roof_clad is    413.80
+ Total area of roof_clad is   1661.80
+ 
+ Details of opaque construction: Floor_slab and overall thickness  0.560
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    10.0     0.850  2000.   837. 0.91 0.65 19200.  0.01  20.0 Tile : Tile
+    2  250.0     0.380  1200.   653. 0.90 0.65     6.  0.66 300.0 Concrete_(Gibat) : Concrete_(Gibat)
+    3   50.0     0.040    33.   850. 0.90 0.50    30.  1.25   1.6 Styropor_1 : Styropor_1
+ Int   250.0     0.520  2050.   184. 0.90 0.85     2.  0.48 512.5 Gravel : Gravel
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.389  0.394  0.383 (partition)  0.376
+ Weight per m^2 of this construction 834.15
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.39
+ External surface admittance Y=  2.98  w=  2.25 decrement factor f=  0.73  phi=  1.06 surface factor f=  0.73  phi=  1.06
+ Partition admittance Y=  3.00  w=  2.20 surface factor f=  0.73  phi=  1.05
+ Total area of Floor_slab is   1661.80
  
  Details of opaque construction: off_flr linked to off_flr-r & with overall thickness  0.115
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   100.0     0.380  1200.   653. 0.90 0.65     6.  0.26 Concrete_(Gibat) : Concrete_(Gibat)
- Int    15.0     0.850  2000.   837. 0.91 0.65 19200.  0.02 Tile : Tile
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   100.0     0.380  1200.   653. 0.90 0.65     6.  0.26 120.0 Concrete_(Gibat) : Concrete_(Gibat)
+ Int    15.0     0.850  2000.   837. 0.91 0.65 19200.  0.02  30.0 Tile : Tile
  ISO 6946 U values (horiz/upward/downward heat flow)=  2.218  2.376  2.037 (partition)  1.849
+ Weight per m^2 of this construction 150.00
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.17
  External surface admittance Y=  3.41  w=  2.01 decrement factor f=  0.68  phi=  1.17 surface factor f=  0.68  phi=  1.17
  Partition admittance Y=  3.30  w=  4.23 surface factor f=  0.90  phi=  1.55
- Total area of off_flr is    413.80
+ Total area of off_flr is    827.60
+ 
+ Details of opaque construction: off_flr-r linked to off_flr & with overall thickness  0.115
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    15.0     0.850  2000.   837. 0.91 0.65 19200.  0.02  30.0 Tile : Tile
+ Int   100.0     0.380  1200.   653. 0.90 0.65     6.  0.26 120.0 Concrete_(Gibat) : Concrete_(Gibat)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  2.218  2.376  2.037 (partition)  1.849
+ Weight per m^2 of this construction 150.00
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.17
+ External surface admittance Y=  2.88  w=  1.60 decrement factor f=  0.70  phi=  0.77 surface factor f=  0.70  phi=  0.77
+ Partition admittance Y=  2.60  w=  4.37 surface factor f=  0.92  phi=  1.21
+ Total area of off_flr-r is    827.60

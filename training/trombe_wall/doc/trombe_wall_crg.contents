@@ -1,8 +1,8 @@
 Synopsis
  
-Synopsis of the model Office with clear story window and trombe-michelle wall
-defined in trombe_wall.cfg generated on Wed Dec  7 11:18:16 2016. Associated
-notes are in ../doc/trombe_wall_office.log
+Synopsis of the model Office with clear story window & TM wall & small dampers
+network defined in trombe_wall_crackg.cfg generated on Wed Dec  7 11:18:54
+2016. Associated notes are in ../doc/trombe_wall_office.log
  
 The model is located at latitude   55.90 with a longitude difference of  -4.10
 from the local time meridian (east +ve). The year used in simulations is 2007
@@ -46,55 +46,68 @@ The model includes an air flow network.
  
  Flow network description.
  
-   9 nodes,   8 components,  10 connections;     wind reduction =  1.000
+   9 nodes,  12 components,  11 connections;     wind reduction =  1.000
    # Node      Fluid   Node Type           Height Temperature    Data_1       Data_2
-   1 trombe_low   air   internal & unknown    0.3750   20.000     (-)     0.000  vol    0.600
-   2 trombe_mid   air   internal & unknown    1.1250   20.000     (-)     0.000  vol    0.600
-   3 trombe_mid2  air   internal & unknown    1.8750   20.000     (-)     0.000  vol    0.600
-   4 trombe_up    air   internal & unknown    2.6250   20.000     (-)     0.000  vol    0.600
-   5 bypass       air   internal & unknown    1.5000   20.000     (-)     0.000  vol    0.120
-   6 office       air   internal & unknown    1.5000   20.000     (-)     0.000  vol   49.501
+   1 office       air   internal & unknown    1.5000   20.000     (-)     0.000  vol   49.500
+   2 bypass       air   internal & unknown    1.5000   20.000     (-)     0.000  vol    0.100
+   3 trombe_low   air   internal & unknown    0.3750   20.000     (-)     0.000  vol    0.600
+   4 trombe_mid   air   internal & unknown    1.1250   20.000     (-)     0.000  vol    0.600
+   5 trombe_mid2  air   internal & unknown    1.8750   20.000     (-)     0.000  vol    0.600
+   6 trombe_up    air   internal & unknown    2.6250   20.000     (-)     0.000  vol    0.600
    7 sou_low      air   boundary & wind ind   0.1000   0.0000     coef    5.000  azim 180.000
    8 sou_up       air   boundary & wind ind   2.9000   0.0000     coef    5.000  azim 180.000
    9 nor_low      air   boundary & wind ind   0.1000   0.0000     coef    5.000  azim   0.000
  
  Component    Type C+ L+ Description
  
- ext_vent_cr   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
+ cr_low_v      120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
  Fluid  1.0 crack width (m)  0.0040 crack length (m)  2.000
  
- office_crac   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
+ cr_hi_v       120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
+ Fluid  1.0 crack width (m)  0.0040 crack length (m)  2.000
+ 
+ cr_office     120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
  Fluid  1.0 crack width (m)  0.0040 crack length (m)  4.000
  
- low_damper     40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
- Fluid  1.0 opening area (m^2)  0.200 discharge factor (-) 0.500
- 
- upper_dampe    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
- Fluid  1.0 opening area (m^2)  0.200 discharge factor (-) 0.400
- 
- clear_story   110  2  0 Specific air flow opening           m = rho.f(A,dP)
- Fluid  1.0 opening area (m)  0.400
- 
- horiz_layer    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
- Fluid  1.0 opening area (m^2)  0.600 discharge factor (-) 0.700
- 
- bypass_op      40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
- Fluid  1.0 opening area (m^2)  0.050 discharge factor (-) 0.400
- 
- int_vent_cr   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
+ cr_int_vntl   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
  Fluid  1.0 crack width (m)  0.0050 crack length (m)  2.000
  
+ cr_int_vntu   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
+ Fluid  1.0 crack width (m)  0.0050 crack length (m)  2.000
+ 
+ hor_1m         40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Fluid  1.0 opening area (m^2)  0.600 discharge factor (-) 0.700
+ 
+ hor_mm2        40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Fluid  1.0 opening area (m^2)  0.600 discharge factor (-) 0.700
+ 
+ hor_m2u        40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Fluid  1.0 opening area (m^2)  0.600 discharge factor (-) 0.700
+ 
+ byp_low        40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Fluid  1.0 opening area (m^2)  0.050 discharge factor (-) 0.400
+ 
+ byp_up         40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Fluid  1.0 opening area (m^2)  0.050 discharge factor (-) 0.400
+ 
+ damp_low       40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Fluid  1.0 opening area (m^2)  0.100 discharge factor (-) 0.400
+ 
+ damp_up        40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Fluid  1.0 opening area (m^2)  0.100 discharge factor (-) 0.400
+ 
     # +Node         dHght   -Node         dHght   Component       Z @+    Z @-
-    1 sou_low       0.000   trombe_low   -0.275   ext_vent_cr     0.100   0.100
-    2 sou_up        0.000   trombe_up     0.280   ext_vent_cr     2.900   2.905
-    3 nor_low       0.000   office       -1.400   office_crac     0.100   0.100
-    4 trombe_low   -0.300   office       -1.400   int_vent_cr     0.075   0.100
-    5 trombe_up    -0.300   office        1.400   int_vent_cr     2.325   2.900
-    6 trombe_low    0.375   trombe_mid   -0.375   horiz_layer     0.750   0.750
-    7 trombe_mid    0.375   trombe_mid2  -0.375   horiz_layer     1.500   1.500
-    8 trombe_mid2   0.375   trombe_up    -0.375   horiz_layer     2.250   2.250
-    9 trombe_low    0.562   bypass       -0.562   bypass_op       0.937   0.938
-   10 bypass        0.562   trombe_up    -0.562   bypass_op       2.062   2.063
+    1 sou_low       0.000   trombe_low   -0.275   cr_low_v        0.100   0.100
+    2 sou_up        0.000   trombe_up     0.275   cr_hi_v         2.900   2.900
+    3 nor_low       0.000   office       -1.400   cr_office       0.100   0.100
+    4 trombe_low   -0.275   office       -1.400   cr_int_vntl     0.100   0.100
+    5 trombe_up     0.275   office        1.400   cr_int_vntu     2.900   2.900
+    6 trombe_low    0.375   trombe_mid   -0.375   hor_1m          0.750   0.750
+    7 trombe_mid    0.375   trombe_mid2  -0.375   hor_mm2         1.500   1.500
+    8 trombe_mid2   0.375   trombe_up    -0.375   hor_m2u         2.250   2.250
+    9 trombe_low    0.555   bypass       -0.570   byp_low         0.930   0.930
+   10 bypass        0.550   trombe_up    -0.575   byp_up          2.050   2.050
+   11 office        1.400   trombe_up     0.275   damp_up         2.900   2.900
 thermal zone to air flow node mapping:
 thermal zone -> air flow node
 trombe_low   -> trombe_low

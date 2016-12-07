@@ -25,7 +25,7 @@
 # layers  description   optics name   symmetry tag
     2    trombe_mass   OPAQ  OPAQUE        trombe_mas_a  
 # mat ref thickness (m) mat descr & air gap R
-   50    0.2500  solar_absorb concrete : Heavy mix concrete with dark surface for use in
+   54    0.2500  solar_absorb concrete : Heavy mix concrete with dark surface for use in
    34    0.2500  white ptd concrete : White painted heavy mix concrete
 # layers  description   optics name   symmetry tag
     1    single_glz    TRAN  SCF8477_10nb  SYMMETRIC     
@@ -134,7 +134,7 @@
     2    trombe_mas_a  OPAQ  OPAQUE        trombe_mass   
 # mat ref thickness (m) mat descr & air gap R
    34    0.2500  white ptd concrete : White painted heavy mix concrete
-   50    0.2500  solar_absorb concrete : Heavy mix concrete with dark surface for use in
+   54    0.2500  solar_absorb concrete : Heavy mix concrete with dark surface for use in
 # layers  description   optics name   symmetry tag
     3    ins_mas200    OPAQ  OPAQUE        mas200_ins    
 # mat ref thickness (m) mat descr & air gap R

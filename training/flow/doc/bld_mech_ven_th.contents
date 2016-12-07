@@ -1,12 +1,12 @@
 Synopsis
  
 Synopsis of the model Basic 3 zone model with mechanical network flow (mixing
-box). defined in bld_mech_ven_th.cfg generated on Sun Jun 23 20:09:30 2013.
-Notes associated with the model are in ../doc/bld_basic.log
+box). defined in bld_mech_ven_th.cfg generated on Wed Dec  7 12:44:03 2016.
+Associated notes are in ../doc/bld_basic.log
  
 The model is located at latitude   51.70 with a longitude difference of  -0.50
-from the local time meridian. The year used in simulations is 1967 and
-weekends occur on Saturday and Sunday.
+from the local time meridian (east +ve). The year used in simulations is 1967
+and weekends occur on Saturday and Sunday.
 The site exposure is typical urban site and the ground reflectance is 0.20.
  
  
@@ -102,12 +102,13 @@ Zones: reception office roof_space
  
 Databases associated with the model:
  standard pressure distr: pressc.db1
- standard materials     : material.db3.a
- standard constructions : multicon.db3
+ standard materials     : material.db4.a
+ standard constructions : multicon.db5
  plant components       : ../dbs/plantf.db1
  standard event profiles: profiles.db1.a
  standard optical prop  : optics.db2
  standard UK NCM data   : SBEM.db1
+ standard predefined obj: predefined.db1
  standard mould isopleth: mould.db1
  
  ____________________________________________________________
@@ -125,7 +126,7 @@ There have been  1 periods of validity defined during the year.
  Control is valid Sun-01-Jan to Sun-31-Dec, 1967 with  1 periods.
  Per|Start|Sensing  |Actuating  | Control law description
    1  0.00 delt T > flow         proportional + hysteresis: signal lower limit -5.00
-valve lower limit (%)**** signal upper limit 5.00 valve upper limit (%) 10.0 dS 0.00.
+valve lower limit (%)100.0 signal upper limit 5.00 valve upper limit (%) 10.0 dS 0.00.
  
  The sensor for function  2 sensor node(s) not yet defined
  The actuator for function  2 is flow component:   7 damp_2
@@ -141,7 +142,7 @@ There have been  1 periods of validity defined during the year.
  Control is valid Sun-01-Jan to Sun-31-Dec, 1967 with  1 periods.
  Per|Start|Sensing  |Actuating  | Control law description
    1  0.00 abs Delt T > flow     proportional + hysteresis: signal lower limit -5.00
-valve lower limit (%)**** signal upper limit 5.00 valve upper limit (%) 10.0 dS 0.00.
+valve lower limit (%)100.0 signal upper limit 5.00 valve upper limit (%) 10.0 dS 0.00.
  ____________________________________________________________
  
 The model includes an air flow network.
@@ -224,7 +225,7 @@ ID Zone         Volume|          Surface
  2 office         48.0   8    77.5     2.5    16.0  office describes a...
  3 roof_space     49.5   7   180.3     0.0    81.0  roof_space describes a...
  4 mixing          0.0   6     0.1     0.0     0.0  mixing describes a...
-   all           242.   35    440.     13.    145.
+   all           242.   35    440.     12.    145.
  
  
  Zone reception ( 1) is composed of 14 surfaces and 34 vertices.
@@ -237,22 +238,22 @@ ID Zone         Volume|          Surface
  
  A summary of the surfaces in reception( 1) follows:
  
- Sur| Area  |Azim|Elev| surface    |    geometry       | construction |environment
-    | m^2   |deg |deg | name       |optical|locat| use | name         |other side
-  1  16.5    180.   0. south        OPAQUE   VERT -     extern_wall  ||< external
-  2  8.00     90.   0. east         OPAQUE   VERT -     extern_wall  ||< external
-  3  11.0     90.   0. pasg         OPAQUE   VERT -     gyp_blk_ptn  ||< identical environment
-  4  12.0      0.   0. north        OPAQUE   VERT -     extern_wall  ||< external
-  5  9.50    270.   0. part_a       OPAQUE   VERT -     gyp_gyp_ptn  ||< part_a:office
-  6  12.0      0.   0. part_b       OPAQUE   VERT -     gyp_gyp_ptn  ||< part_b:office
-  7  9.50    270.   0. west         OPAQUE   VERT -     extern_wall  ||< external
-  8  48.0      0.  90. ceiling      OPAQUE   CEIL -     ceiling      ||< Ceiling_r:roof_space
-  9  48.0      0. -90. floor        OPAQUE   FLOR -     floor_1      ||< constant @ 20dC &   0W rad
- 10  7.50    180.   0. glz_s        DCF7671_ VERT -     dbl_glz      ||< external
- 11  2.50     90.   0. door_p       OPAQUE   VERT -     door         ||< identical environment
- 12  2.50    270.   0. door_a       OPAQUE   VERT -     door         ||< door_a:office
- 13  2.50    270.   0. door_w       OPAQUE   VERT -     door         ||< external
- 14  2.50     90.   0. east_glz     DCF7671_ VERT -     dbl_glz      ||< external
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  16.5    180.   0. south        OPAQUE   VERT -        -        extern_wall ||< external
+  2  8.00     90.   0. east         OPAQUE   VERT -        -        extern_wall ||< external
+  3  11.0     90.   0. pasg         OPAQUE   VERT -        -        gyp_blk_ptn ||< identical environment
+  4  12.0      0.   0. north        OPAQUE   VERT -        -        extern_wall ||< external
+  5  9.50    270.   0. part_a       OPAQUE   VERT -        -        gyp_gyp_ptn ||< part_a:office
+  6  12.0      0.   0. part_b       OPAQUE   VERT -        -        gyp_gyp_ptn ||< part_b:office
+  7  9.50    270.   0. west         OPAQUE   VERT -        -        extern_wall ||< external
+  8  48.0      0.  90. ceiling      OPAQUE   CEIL -        -        ceiling ||< Ceiling_r:roof_space
+  9  48.0      0. -90. floor        OPAQUE   FLOR -        -        floor_1 ||< constant @ 20dC &   0W rad
+ 10  7.50    180.   0. glz_s        DCF7671_ VERT -        -        dbl_glz ||< external
+ 11  2.50     90.   0. door_p       OPAQUE   VERT -        -        door ||< identical environment
+ 12  2.50    270.   0. door_a       OPAQUE   VERT -        -        door ||< door_a:office
+ 13  2.50    270.   0. door_w       OPAQUE   VERT -        -        door ||< external
+ 14  2.50     90.   0. east_glz     DCF7671_ VERT -        -        dbl_glz ||< external
  
  
  All surfaces will receive diffuse insolation (if shading not calculated).
@@ -296,16 +297,16 @@ sunday      1 Equipt     equipment W    0-24    800.0      0.0       0.20       
  
  A summary of the surfaces in office( 2) follows:
  
- Sur| Area  |Azim|Elev| surface    |    geometry       | construction |environment
-    | m^2   |deg |deg | name       |optical|locat| use | name         |other side
-  1  12.0    180.   0. part_b       OPAQUE   VERT -     gyp_gyp_ptn  ||< part_b:reception
-  2  9.50     90.   0. part_a       OPAQUE   VERT -     gyp_gyp_ptn  ||< part_a:reception
-  3  12.0      0.   0. North_w      OPAQUE   VERT -     extern_wall  ||< external
-  4  9.50    270.   0. West_w       OPAQUE   VERT -     extern_wall  ||< external
-  5  16.0      0.  90. Ceiling      OPAQUE   CEIL -     ceiling      ||< Ceiling_o:roof_space
-  6  16.0      0. -90. Floor        OPAQUE   FLOR -     floor_1      ||< ground profile  1
-  7  2.50     90.   0. door_a       OPAQUE   VERT -     door         ||< door_a:reception
-  8  2.50    270.   0. west_glz     DCF7671_ VERT -     dbl_glz      ||< external
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  12.0    180.   0. part_b       OPAQUE   VERT -        -        gyp_gyp_ptn ||< part_b:reception
+  2  9.50     90.   0. part_a       OPAQUE   VERT -        -        gyp_gyp_ptn ||< part_a:reception
+  3  12.0      0.   0. North_w      OPAQUE   VERT -        -        extern_wall ||< external
+  4  9.50    270.   0. West_w       OPAQUE   VERT -        -        extern_wall ||< external
+  5  16.0      0.  90. Ceiling      OPAQUE   CEIL -        -        ceiling ||< Ceiling_o:roof_space
+  6  16.0      0. -90. Floor        OPAQUE   FLOR -        -        floor_1 ||< ground profile  1
+  7  2.50     90.   0. door_a       OPAQUE   VERT -        -        door ||< door_a:reception
+  8  2.50    270.   0. west_glz     DCF7671_ VERT -        -        dbl_glz ||< external
  
  
  All surfaces will receive diffuse insolation (if shading not calculated).
@@ -342,15 +343,15 @@ weekday     6 Lights     lighting  W   17-24      0.0      0.0       0.50       
  
  A summary of the surfaces in roof_space( 3) follows:
  
- Sur| Area  |Azim|Elev| surface    |    geometry       | construction |environment
-    | m^2   |deg |deg | name       |optical|locat| use | name         |other side
-  1  48.0      0. -90. Ceiling_r    OPAQUE   FLOR -     ceiling_rev  ||< ceiling:reception
-  2  16.0      0. -90. Ceiling_o    OPAQUE   FLOR -     ceiling_rev  ||< Ceiling:office
-  3  23.5    180.  73. s_roof       OPAQUE   SLOP -     roof_1       ||< external
-  4  9.75     90.   0. Fire_wall    OPAQUE   VERT -     extern_wall  ||< constant @ 12dC &   0W rad
-  5  6.75      0.   0. North_wall   OPAQUE   VERT -     extern_wall  ||< external
-  6  59.3    270.  81. w_roof       OPAQUE   SLOP -     roof_1       ||< external
-  7  17.0      0. -90. soffit       OPAQUE   FLOR -     ceiling_rev  ||< external
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  48.0      0. -90. Ceiling_r    OPAQUE   FLOR -        -        ceiling_rev ||< ceiling:reception
+  2  16.0      0. -90. Ceiling_o    OPAQUE   FLOR -        -        ceiling_rev ||< Ceiling:office
+  3  23.5    180.  73. s_roof       OPAQUE   SLOP -        -        roof_1 ||< external
+  4  9.75     90.   0. Fire_wall    OPAQUE   VERT -        -        extern_wall ||< constant @ 12dC &   0W rad
+  5  6.75      0.   0. North_wall   OPAQUE   VERT -        -        extern_wall ||< external
+  6  59.3    270.  81. w_roof       OPAQUE   SLOP -        -        roof_1 ||< external
+  7  17.0      0. -90. soffit       OPAQUE   FLOR -        -        ceiling_rev ||< external
  
  
  All surfaces will receive diffuse insolation (if shading not calculated).
@@ -380,14 +381,14 @@ sunday      1 Occupt     people    W    0-24      0.0      0.0       0.50       
  
  A summary of the surfaces in mixing( 4) follows:
  
- Sur| Area  |Azim|Elev| surface    |    geometry       | construction |environment
-    | m^2   |deg |deg | name       |optical|locat| use | name         |other side
-  1  0.010   180.   0. Surf-1       OPAQUE   VERT -     extern_wall  ||< external
-  2  0.010    90.   0. Surf-2       OPAQUE   VERT -     extern_wall  ||< external
-  3  0.010   360.   0. Surf-3       OPAQUE   VERT -     extern_wall  ||< external
-  4  0.010   270.   0. Surf-4       OPAQUE   VERT -     extern_wall  ||< external
-  5  0.010     0.  90. Surf-5       OPAQUE   CEIL -     extern_wall  ||< external
-  6  0.010     0. -90. Surf-6       OPAQUE   FLOR -     extern_wall  ||< external
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  0.010   180.   0. Surf-1       OPAQUE   VERT -        -        extern_wall ||< external
+  2  0.010    90.   0. Surf-2       OPAQUE   VERT -        -        extern_wall ||< external
+  3  0.010   360.   0. Surf-3       OPAQUE   VERT -        -        extern_wall ||< external
+  4  0.010   270.   0. Surf-4       OPAQUE   VERT -        -        extern_wall ||< external
+  5  0.010     0.  90. Surf-5       OPAQUE   CEIL -        -        extern_wall ||< external
+  6  0.010     0. -90. Surf-6       OPAQUE   FLOR -        -        extern_wall ||< external
  
  
  All surfaces will receive diffuse insolation (if shading not calculated).
@@ -421,26 +422,69 @@ Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Con
  Multi-layer constructions used:
  
  Details of opaque construction: extern_wall and overall thickness  0.325
+ In category legacy also shown in menus as: cavity insulated brick-block
+typical UK insulated cavity brick-block wall with 50mm air gap & 75mm insulation (legacy
+construction used in some training models)
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   100.0     0.960  2000.   650. 0.90 0.70    25.  0.10 Lt brown brick : Light brown brick
-    2   75.0     0.040   250.   840. 0.90 0.30     4.  1.88 glasswool : Glasswool (generic)
-    3   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int   100.0     0.440  1500.   650. 0.90 0.65    15.  0.23 breeze block : Breeze block
- ISO 6946 U values (horizontal/upward/downward heat flow)=  0.393  0.397  0.387 (partition)  0.379
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   100.0     0.960  2000.   650. 0.90 0.70    25.  0.10 200.0 Lt brown brick : Light brown brick (inorganic-porous)
+    2   75.0     0.040   250.   840. 0.90 0.30     4.  1.88  18.8 glasswool : Glasswool (generic) (non-hygroscopic)
+    3   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+ Int   100.0     0.440  1500.   650. 0.90 0.65    15.  0.23 150.0 breeze block : Breeze block (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.393  0.397  0.387 (partition)  0.379
+ Weight per m^2 of this construction 368.81
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.39
  External surface admittance Y=  3.94  w=  2.38 decrement factor f=  0.68  phi=  1.61 surface factor f=  0.68  phi=  1.61
  Partition admittance Y=  4.10  w=  2.39 surface factor f=  0.67  phi=  1.71
  Total area of extern_wall is     84.06
  
- Details of opaque construction: door and overall thickness  0.025
+ Details of opaque construction: gyp_blk_ptn and overall thickness  0.226
+ In category partitions also shown in menus as: plasterbd dabs 100mm concrete bl
+partition - plasterboard on dabs over 100mm concret block.
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
-    1   25.0     0.190   700.  2390. 0.90 0.65    12.  0.13 oak : Oak (radial cut)
- ISO 6946 U values (horizontal/upward/downward heat flow)=  3.316  3.682  2.928 (partition)  2.554
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    13.0     0.190   950.   840. 0.91 0.22    11.  0.07  12.4 white gypboard : White painted Gypboard (inorganic-porous)
+    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+    3  100.0     0.510  1400.  1000. 0.90 0.65    10.  0.20 140.0 block inner : Block inner (3% mc)
+    4   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+ Int    13.0     0.190   950.   840. 0.91 0.22    11.  0.07  12.4 white gypboard : White painted Gypboard (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  1.186  1.230  1.133 (partition)  1.072
+ Weight per m^2 of this construction 164.82
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.17
+ External surface admittance Y=  2.38  w=  1.44 decrement factor f=  0.74  phi=  0.54 surface factor f=  0.74  phi=  0.54
+ Partition admittance Y=  2.59  w=  2.21 surface factor f=  0.76  phi=  0.86
+ Total area of gyp_blk_ptn is     11.00
+ 
+ Details of opaque construction: gyp_gyp_ptn and overall thickness  0.074
+ In category partitions also shown in menus as: plasterboard on 50mm studs
+partition - plasterboard on 50mm studs with no acoustic treatment.
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    12.0     0.190   950.   840. 0.91 0.22    11.  0.06  11.4 white gypboard : White painted Gypboard (inorganic-porous)
+    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+ Int    12.0     0.190   950.   840. 0.91 0.22    11.  0.06  11.4 white gypboard : White painted Gypboard (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  2.144  2.292  1.975 (partition)  1.798
+ Weight per m^2 of this construction  22.86
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.10
+ External surface admittance Y=  2.15  w=  0.62 decrement factor f=  0.75  phi=  0.21 surface factor f=  0.75  phi=  0.21
+ Partition admittance Y=  0.61  w=  5.69 surface factor f=  1.00  phi=  0.28
+ Total area of gyp_gyp_ptn is     43.00
+ 
+ Details of opaque construction: door and overall thickness  0.025
+ In category doors also shown in menus as: solid wood door 25mm
+solid wood oak door 25mm.
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1   25.0     0.190   700.  2390. 0.90 0.65    12.  0.13  17.5 oak : Oak (radial cut)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  3.316  3.682  2.928 (partition)  2.554
+ Weight per m^2 of this construction  17.50
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  3.21
  External surface admittance Y=  3.33  w=  0.61 decrement factor f=  0.61  phi=  0.40 surface factor f=  0.61  phi=  0.40
@@ -449,12 +493,13 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  3.21
  
  Details of transparent construction: dbl_glz with DCF7671_06nb optics and overall thickness  0.024
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext     6.0     0.760  2710.   837. 0.83 0.05 19200.  0.01 plate glass : Plate glass with placeholder single layer optics
-    2   12.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int     6.0     0.760  2710.   837. 0.83 0.05 19200.  0.01 plate glass : Plate glass with placeholder single layer optics
- ISO 6946 U values (horizontal/upward/downward heat flow)=  2.811  3.069  2.527 (partition)  2.243
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     6.0     0.760  2710.   837. 0.83 0.05 19200.  0.01  16.3 plate glass : Plate glass with placeholder single layer optics
+    2   12.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.0 air  0.17 0.17 0.17
+ Int     6.0     0.760  2710.   837. 0.83 0.05 19200.  0.01  16.3 plate glass : Plate glass with placeholder single layer optics
+ ISO 6946 U values (horiz/upward/downward heat flow)=  2.811  3.069  2.527 (partition)  2.243
+ Weight per m^2 of this construction  32.53
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.73
  External surface admittance Y=  2.81  w=  0.63 decrement factor f=  0.67  phi=  0.31 surface factor f=  0.67  phi=  0.31
@@ -471,46 +516,35 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.73
  Total area of dbl_glz is     12.50
  
  Details of opaque construction: roof_1 and overall thickness  0.120
+ In category legacy also shown in menus as: flat concrete roof with susp cei
+A flat or low slope lightweight concrete roof with embedded air space with suspended plaster
+ceiling.
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext    12.0     0.190   960.   837. 0.90 0.90    15.  0.06 roofing felt : Roofing felt
-    2   50.0     0.380  1200.   653. 0.90 0.65     6.  0.13 light mix concrete : Light mix concrete
-    3   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int     8.0     0.380  1120.   840. 0.90 0.60    12.  0.02 ceiling (plaster) : Ceiling (plaster)
- ISO 6946 U values (horizontal/upward/downward heat flow)=  1.799  1.902  1.678 (partition)  1.548
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    12.0     0.190   960.   837. 0.90 0.90    15.  0.06  11.5 roofing felt : Roofing felt (impermeable)
+    2   50.0     0.380  1200.   653. 0.90 0.65     6.  0.13  60.0 light mix concrete : Light mix concrete (inorganic-porous)
+    3   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+ Int     8.0     0.380  1120.   840. 0.90 0.60    12.  0.02   9.0 ceiling (plaster) : Ceiling (plaster) (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  1.799  1.902  1.678 (partition)  1.548
+ Weight per m^2 of this construction  80.54
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.77
  External surface admittance Y=  2.02  w=  1.20 decrement factor f=  0.77  phi=  0.37 surface factor f=  0.77  phi=  0.37
  Partition admittance Y=  1.41  w=  4.87 surface factor f=  0.96  phi=  0.64
  Total area of roof_1 is     82.80
  
- Details of opaque construction: floor_1 and overall thickness  1.200
- 
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 earth std : Common_earth
-    2  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 earth std : Common_earth
-    3  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 earth std : Common_earth
-    4  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 earth std : Common_earth
-    5  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 earth std : Common_earth
-    6  100.0     2.900  2650.   900. 0.90 0.55    77.  0.03 red granite : Red granite
-    7   50.0     1.400  2100.   653. 0.90 0.65    19.  0.04 heavy mix concrete : Heavy mix concrete
- Int    50.0     1.400  2100.   650. 0.91 0.65    19.  0.04 cement screed : Cement screed
- ISO 6946 U values (horizontal/upward/downward heat flow)=  0.946  0.974  0.911 (partition)  0.872
- 
-Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.94
- External surface admittance Y=  5.38  w=  0.96 decrement factor f=  0.41  phi=  1.55 surface factor f=  0.41  phi=  1.55
- Partition admittance Y=  5.38  w=  0.96 surface factor f=  0.41  phi=  1.55
- Total area of floor_1 is     64.00
- 
  Details of opaque construction: ceiling linked to ceiling_rev & with overall thickness  0.110
+ In category ceil_floor also shown in menus as: suspended acoustic ceiling acous
+A mineral time with 100mm acoustic treatment. For use as a suspended ceiling. To be referenced
+from room. Reversed version is ceiling_rev
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   100.0     0.040   250.   840. 0.90 0.30     4.  2.50 glasswool : Glasswool (generic)
- Int    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33 ceiling mineral : Ceiling acoustic tile (mineral fibre based)
- ISO 6946 U values (horizontal/upward/downward heat flow)=  0.333  0.336  0.329 (partition)  0.323
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   100.0     0.040   250.   840. 0.90 0.30     4.  2.50  25.0 glasswool : Glasswool (generic) (non-hygroscopic)
+ Int    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33   2.9 ceiling mineral : Ceiling acoustic tile (mineral fibre based)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.333  0.336  0.329 (partition)  0.323
+ Weight per m^2 of this construction  27.90
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.33
  External surface admittance Y=  0.82  w=  3.17 decrement factor f=  0.94  phi=  0.30 surface factor f=  0.94  phi=  0.30
@@ -518,44 +552,40 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.33
  Total area of ceiling is     64.00
  
  Details of opaque construction: ceiling_rev linked to ceiling & with overall thickness  0.110
+ In category ceil_floor also shown in menus as: rev suspended acoustic ceiling
+A mineral time with 100mm acoustic treatment. For use as a suspended ceiling. To be referenced
+from ceiling void. Reversed version is ceiling
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33 ceiling mineral : Ceiling acoustic tile (mineral fibre based)
- Int   100.0     0.040   250.   840. 0.90 0.30     4.  2.50 glasswool : Glasswool (generic)
- ISO 6946 U values (horizontal/upward/downward heat flow)=  0.333  0.336  0.329 (partition)  0.323
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33   2.9 ceiling mineral : Ceiling acoustic tile (mineral fibre based)
+ Int   100.0     0.040   250.   840. 0.90 0.30     4.  2.50  25.0 glasswool : Glasswool (generic) (non-hygroscopic)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.333  0.336  0.329 (partition)  0.323
+ Weight per m^2 of this construction  27.90
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.33
  External surface admittance Y=  0.68  w=  2.79 decrement factor f=  0.94  phi=  0.22 surface factor f=  0.94  phi=  0.22
  Partition admittance Y=  0.75  w=  4.26 surface factor f=  0.96  phi=  0.32
  Total area of ceiling_rev is     81.00
  
- Details of opaque construction: gyp_blk_ptn and overall thickness  0.226
+ Details of opaque construction: floor_1 and overall thickness  1.200
+ In category legacy also shown in menus as: thin concrete floor hardcore-ear
+An uninsulated slab on grade foundation over hardcore and 1m of earth with exposed screed.
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext    13.0     0.190   950.   840. 0.91 0.22    11.  0.07 white gypboard : White painted Gypboard
-    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
-    3  100.0     0.510  1400.  1000. 0.90 0.65    10.  0.20 block inner : Block inner (3% mc)
-    4   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int    13.0     0.190   950.   840. 0.91 0.22    11.  0.07 white gypboard : White painted Gypboard
- ISO 6946 U values (horizontal/upward/downward heat flow)=  1.186  1.230  1.133 (partition)  1.072
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    2  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    3  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    4  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    5  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    6  100.0     2.900  2650.   900. 0.90 0.55    77.  0.03 265.0 red granite : Red granite (inorganic-porous)
+    7   50.0     1.400  2100.   653. 0.90 0.65    19.  0.04 105.0 heavy mix concrete : Heavy mix concrete
+ Int    50.0     1.400  2100.   650. 0.91 0.65    19.  0.04 105.0 cement screed : Cement screed (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.946  0.974  0.911 (partition)  0.872
+ Weight per m^2 of this construction1935.00
  
-Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.17
- External surface admittance Y=  2.38  w=  1.44 decrement factor f=  0.74  phi=  0.54 surface factor f=  0.74  phi=  0.54
- Partition admittance Y=  2.59  w=  2.21 surface factor f=  0.76  phi=  0.86
- Total area of gyp_blk_ptn is     11.00
- 
- Details of opaque construction: gyp_gyp_ptn and overall thickness  0.074
- 
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext    12.0     0.190   950.   840. 0.91 0.22    11.  0.06 white gypboard : White painted Gypboard
-    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int    12.0     0.190   950.   840. 0.91 0.22    11.  0.06 white gypboard : White painted Gypboard
- ISO 6946 U values (horizontal/upward/downward heat flow)=  2.144  2.292  1.975 (partition)  1.798
- 
-Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.10
- External surface admittance Y=  2.15  w=  0.62 decrement factor f=  0.75  phi=  0.21 surface factor f=  0.75  phi=  0.21
- Partition admittance Y=  0.61  w=  5.69 surface factor f=  1.00  phi=  0.28
- Total area of gyp_gyp_ptn is     43.00
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.94
+ External surface admittance Y=  5.38  w=  0.96 decrement factor f=  0.41  phi=  1.55 surface factor f=  0.41  phi=  1.55
+ Partition admittance Y=  5.38  w=  0.96 surface factor f=  0.41  phi=  1.55
+ Total area of floor_1 is     64.00

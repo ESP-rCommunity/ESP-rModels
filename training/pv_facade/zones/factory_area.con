@@ -1,23 +1,23 @@
 # thermophysical properties of factory_area defined in ../zones/factory_area.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     3,     0  #  1 Surf-1       wall_clad   
-     3,     0  #  2 Surf-2       wall_clad   
-     3,     0  #  3 Surf-3       wall_clad   
-     3,     0  #  4 Surf-4       wall_clad   
-     3,     0  #  5 Surf-5       roof_clad   
-     4,     0  #  6 Surf-6       Floor_slab  
+# layers|gaps|number &  name   | database name 
+     3,     0  #  1 Surf-1       wall_clad
+     3,     0  #  2 Surf-2       wall_clad
+     3,     0  #  3 Surf-3       wall_clad
+     3,     0  #  4 Surf-4       wall_clad
+     3,     0  #  5 Surf-5       roof_clad
+     4,     0  #  6 Surf-6       Floor_slab
      3,     0  #  7 pv_back1     pv_back_wall
      3,     0  #  8 pv_back2     pv_back_wall
      3,     0  #  9 pv_back3     pv_back_wall
      3,     0  # 10 pv_back4     pv_back_wall
-     1,     0  # 11 pv_glaz1     clear_glaz  
-     1,     0  # 12 pv_glaz2     clear_glaz  
-     1,     0  # 13 pv_glaz3     clear_glaz  
-     1,     0  # 14 pv_glaz4     clear_glaz  
-     3,     0  # 15 off1-back    wall_clad   
-     3,     0  # 16 off2-back    wall_clad   
-     3,     0  # 17 off3-back    wall_clad   
+     1,     0  # 11 pv_glaz1     clear_glaz
+     1,     0  # 12 pv_glaz2     clear_glaz
+     1,     0  # 13 pv_glaz3     clear_glaz
+     1,     0  # 14 pv_glaz4     clear_glaz
+     3,     0  # 15 off1-back    wall_clad
+     3,     0  # 16 off2-back    wall_clad
+     3,     0  # 17 off3-back    wall_clad
 # conduc-  |  density | specific | thick- |dpnd|  ref. |  temp. |moisture| surf|lyr
 # tivity   |          | heat     |ness(m) |type|  temp | factor | factor |     |  
    210.0000,    2700.0,     880.0,  0.0020,   0,   0.00, 0.00000, 0.00000  #  1   1

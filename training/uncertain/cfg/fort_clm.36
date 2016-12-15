@@ -1,0 +1,2621 @@
+ **
+ ** Edits for changes in set:           1
+ **
+ **
+ ** Edits for changes in set:           2
+ **
+ ** Edits for changes in set:           2           4
+ Uncertainty definition            1  altered by    1.12577677    
+ ambient_T:the_zon
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    2.25155354       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+ Uncertainty definition            2  altered by   0.334697485    
+ wind_speed:the_zon
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:    2.25155354       0.00000000       0.00000000       1.03346980       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            3  altered by   -1.91970468    
+ ambient_T:the_yea
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -3.83940935       0.00000000       0.00000000       1.03346980       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            4  altered by    1.04813409    
+ wind_speed:the_yea
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -3.83940935       0.00000000       0.00000000       1.10481346       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       2.00000000       0.00000000       0.00000000    
+ ** Edits for changes in set:           2           4
+ ** Edits for changes in set:           2           4
+    
+ Entering subroutine UAT03a for day          11
+ambient   22   22   22   27   33   38   33   27   27   33   44   55   55   55   55   44   44   38   44   33   27   16   16   16
+ambient  -16  -16  -16  -11   -5    0   -5  -11  -11   -5    6   17   17   17   17    6    6    0    6   -5  -11  -22  -22  -22
+    
+ Entering subroutine UAT03a for day          12
+ambient   16   16   11   11   11   16   16   16   22   22   33   44   44   55   61   61   55   44   38   33   33   33   27   33
+ambient  -22  -22  -27  -27  -27  -22  -22  -22  -16  -16   -5    6    6   17   23   23   17    6    0   -5   -5   -5  -11   -5
+    
+ Entering subroutine UAT03a for day          13
+ambient   38   44   50   50   55   61   61   66   66   72   77   77   77   83   88   72   61   61   50   44   33   33   38   33
+ambient    0    6   12   12   17   23   23   28   28   34   39   39   39   45   50   34   23   23   12    6   -5   -5    0   -5
+    
+ Entering subroutine UAT03a for day          14
+ambient   27   27   22   27   27   27   16   11   22   33   44   55   61   61   55   38   33   33   27   22   27   33   33   33
+ambient  -11  -11  -16  -11  -11  -11  -22  -27  -16   -5    6   17   23   23   17    0   -5   -5  -11  -16  -11   -5   -5   -5
+    
+ Entering subroutine UAT03a for day          15
+ambient   27   27   27   22   22   22   22   22   22   22   16   16   16   16   16   11   11    5    5    5    0    0    0    0
+ambient  -11  -11  -11  -16  -16  -16  -16  -16  -16  -16  -22  -22  -22  -22  -22  -27  -27  -33  -33  -33  -38  -38  -38  -38
+    
+ Entering subroutine UAT03a for day          16
+ambient    0    0    0    0    0    5   11   11   11   11   11   16   22   27   27   22   22   16   16   16   16   16   22   22
+ambient  -38  -38  -38  -38  -38  -33  -27  -27  -27  -27  -27  -22  -16  -11  -11  -16  -16  -22  -22  -22  -22  -22  -16  -16
+    
+ Entering subroutine UAT03a for day          17
+ambient   22   22   22   22   22   22   22   22   22   27   33   33   33   33   33   33   33   33   33   33   38   44   50   55
+ambient  -16  -16  -16  -16  -16  -16  -16  -16  -16  -11   -5   -5   -5   -5   -5   -5   -5   -5   -5   -5    0    6   12   17
+    
+ Entering subroutine UAT03a for day          18
+ambient   55   55   61   61   66   66   66   66   66   72   77   83   83   88   83   88   77   77   83   83   83   83   83   83
+ambient   17   17   23   23   28   28   28   28   28   34   39   45   45   50   45   50   39   39   45   45   45   45   45   45
+    
+ Entering subroutine UAT03a for day          19
+ambient   83   77   77   72   72   72   72   72   72   83   88   94  100  100   94   83   72   66   55   55   55   50   44   55
+ambient   45   39   39   34   34   34   34   34   34   45   50   56   62   62   56   45   34   28   17   17   17   12    6   17
+    
+ Entering subroutine UAT03a for day          20
+ambient   50   50   50   50   44   44   38   44   50   55   66   72   77   77   83   77   72   72   72   72   66   66   66   72
+ambient   12   12   12   12    6    6    0    6   12   17   28   34   39   39   45   39   34   34   34   34   28   28   28   34
+    
+ Entering subroutine UAT03a for day          21
+ambient   72   66   66   72   72   72   72   77   83   77   77   77   77   83   77   72   61   61   55   44   38   22   22   16
+ambient   34   28   28   34   34   34   34   39   45   39   39   39   39   45   39   34   23   23   17    6    0  -16  -16  -22
+    
+ Entering subroutine UAT03a for day          22
+ambient   16   22   27   27   22   16   16   22   16   33   44   61   72   72   72   55   44   44   44   44   44   44   44   50
+ambient  -22  -16  -11  -11  -16  -22  -22  -16  -22   -5    6   23   34   34   34   17    6    6    6    6    6    6    6   12
+    
+ Entering subroutine UAT03a for day          23
+ambient   55   50   50   44   44   38   38   44   44   55   55   66   77   77   66   61   50   44   44   44   44   50   50   44
+ambient   17   12   12    6    6    0    0    6    6   17   17   28   39   39   28   23   12    6    6    6    6   12   12    6
+    
+ Entering subroutine UAT03a for day          24
+ambient   50   50   55   55   55   50   55   55   55   61   66   72   77   77   77   72   66   61   66   61   61   55   50   50
+ambient   12   12   17   17   17   12   17   17   17   23   28   34   39   39   39   34   28   23   28   23   23   17   12   12
+    
+ Entering subroutine UAT03a for day          25
+ambient   44   44   44   44   44   44   50   50   55   61   72   83   88   83   88   72   66   61   55   55   55   61   72   77
+ambient    6    6    6    6    6    6   12   12   17   23   34   45   50   45   50   34   28   23   17   17   17   23   34   39
+    
+ Entering subroutine UAT03a for day          26
+ambient   72   72   72   72   66   61   55   55   55   66   66   66   72   72   72   66   55   55   50   44   44   50   55   50
+ambient   34   34   34   34   28   23   17   17   17   28   28   28   34   34   34   28   17   17   12    6    6   12   17   12
+    
+ Entering subroutine UAT03a for day          27
+ambient   44   50   50   55   55   61   61   61   72   77   83   88   94  105  105  100  100   94   94   94  100  100  100  100
+ambient    6   12   12   17   17   23   23   23   34   39   45   50   56   67   67   62   62   56   56   56   62   62   62   62
+    
+ Entering subroutine UAT03a for day          28
+ambient  100  100   94   88   88   88   88   88   88   94  100  105  105  105  100   94   94   94   94   94   94   88   83   77
+ambient   62   62   56   50   50   50   50   50   50   56   62   67   67   67   62   56   56   56   56   56   56   50   45   39
+    
+ Entering subroutine UAT03a for day          29
+ambient   72   72   61   61   61   66   72   83   88   94   88  105  116  127  127  116  100   94   88   88   88   88   83   77
+ambient   34   34   23   23   23   28   34   45   50   56   50   67   78   89   89   78   62   56   50   50   50   50   45   39
+    
+ Entering subroutine UAT03a for day          30
+ambient   77   83   83   77   77   77   77   72   72   83   88   94   94   94   94   88   83   83   72   72   72   72   66   66
+ambient   39   45   45   39   39   39   39   34   34   45   50   56   56   56   56   50   45   45   34   34   34   34   28   28
+    
+ Entering subroutine UAT03a for day          31
+ambient   66   61   61   61   61   66   66   66   66   77   88  100  100  100  100   88   77   72   66   61   61   66   66   66
+ambient   28   23   23   23   23   28   28   28   28   39   50   62   62   62   62   50   39   34   28   23   23   28   28   28
+    
+ Entering subroutine UAT03a for day          32
+ambient   72   66   66   66   66   61   72   77   83   88   88  105  111  116  116  116  111  111  105  105  105  100  100  100
+ambient   34   28   28   28   28   23   34   39   45   50   50   67   73   78   78   78   73   73   67   67   67   62   62   62
+    
+ Entering subroutine UAT03a for day          33
+ambient  100  100  105  105  105  100  100  105  105  111  116  116  122  122  122  116  116  111  111  105  105  105  100  100
+ambient   62   62   67   67   67   62   62   67   67   73   78   78   84   84   84   78   78   73   73   67   67   67   62   62
+    
+ Entering subroutine UAT03a for day          34
+ambient  100  100  100  100  100   94   94   94   94  100  111  122  122  122  116  111  100   94   88   77   72   61   55   50
+ambient   62   62   62   62   62   56   56   56   56   62   73   84   84   84   78   73   62   56   50   39   34   23   17   12
+    
+ Entering subroutine UAT03a for day          35
+ambient   44   44   44   44   44   44   38   33   44   61   72   77   83   88   77   72   55   44   38   38   44   61   33   33
+ambient    6    6    6    6    6    6    0   -5    6   23   34   39   45   50   39   34   17    6    0    0    6   23   -5   -5
+    
+ Entering subroutine UAT03a for day          36
+ambient   33   33   33   16   22   22   16   16   22   44   55   66   77   77   77   72   61   50   44   38   33   22   27   22
+ambient   -5   -5   -5  -22  -16  -16  -22  -22  -16    6   17   28   39   39   39   34   23   12    6    0   -5  -16  -11  -16
+    
+ Entering subroutine UAT03a for day          37
+ambient   22   22   11    5   11    5   -3   -3    0    5   16   27   44   55   66   66   72   55   50   50   50   50   50   50
+ambient  -16  -16  -27  -33  -27  -33  -41  -41  -38  -33  -22  -11    6   17   28   28   34   17   12   12   12   12   12   12
+    
+ Entering subroutine UAT03a for day          38
+ambient   55   55   50   50   50   50   50   50   50   55   55   61   66   72   77   61   44   33   27   22   16   16    5    5
+ambient   17   17   12   12   12   12   12   12   12   17   17   23   28   34   39   23    6   -5  -11  -16  -22  -22  -33  -33
+    
+ Entering subroutine UAT03a for day          39
+ambient   11   11   11   11   11    5    0    0    5   16   50   66   66   83   66   61   38   33   33   33   33   33   33   33
+ambient  -27  -27  -27  -27  -27  -33  -38  -38  -33  -22   12   28   28   45   28   23    0   -5   -5   -5   -5   -5   -5   -5
+    
+ Entering subroutine UAT03a for day          40
+ambient   33   33   22   27   27   22   22   27   33   38   38   44   44   44   44   44   38   38   38   33   33   33   33   38
+ambient   -5   -5  -16  -11  -11  -16  -16  -11   -5    0    0    6    6    6    6    6    0    0    0   -5   -5   -5   -5    0
+    
+ Entering subroutine UAT03a for day          41
+ambient   38   33   22   16   16   16   11   11   11   27   38   44   44   44   50   50   44   44   38   38   38   38   38   38
+ambient    0   -5  -16  -22  -22  -22  -27  -27  -27  -11    0    6    6    6   12   12    6    6    0    0    0    0    0    0
+    
+ Entering subroutine UAT03a for day          42
+ambient   38   38   38   38   44   44   44   44   44   50   55   55   61   61   55   50   44   44   38   16   22   22   22   16
+ambient    0    0    0    0    6    6    6    6    6   12   17   17   23   23   17   12    6    6    0  -22  -16  -16  -16  -22
+    
+ Entering subroutine UAT03a for day          43
+ambient   11   16    5    0    0    0   -3    0   11   27   38   44   50   50   50   44   33   16   16   16   11   11   11   11
+ambient  -27  -22  -33  -38  -38  -38  -41  -38  -27  -11    0    6   12   12   12    6   -5  -22  -22  -22  -27  -27  -27  -27
+    
+ Entering subroutine UAT03a for day          44
+ambient    0   -3   -3  -14   -8   -3    0    0    0   11   16   16   16   11   16    5    5    5    0    0    0    5    5    0
+ambient  -38  -41  -41  -52  -46  -41  -38  -38  -38  -27  -22  -22  -22  -27  -22  -33  -33  -33  -38  -38  -38  -33  -33  -38
+    
+ Entering subroutine UAT03a for day          45
+ambient    0    0   -3  -14  -19  -14   -8    0    0    5   11   16   22   22   22   16   11   11   11   11   16   22   22   22
+ambient  -38  -38  -41  -52  -57  -52  -46  -38  -38  -33  -27  -22  -16  -16  -16  -22  -27  -27  -27  -27  -22  -16  -16  -16
+    
+ Entering subroutine UAT03a for day          46
+ambient   22   16   11   11   11   11   11   16   16   27   38   50   61   55   55   50   44   44   44   44   50   50   44   38
+ambient  -16  -22  -27  -27  -27  -27  -27  -22  -22  -11    0   12   23   17   17   12    6    6    6    6   12   12    6    0
+    
+ Entering subroutine UAT03a for day          47
+ambient   44   44   44   44   38   44   50   50   55   55   61   61   72   66   66   66   66   55   44   44   44   50   50   44
+ambient    6    6    6    6    0    6   12   12   17   17   23   23   34   28   28   28   28   17    6    6    6   12   12    6
+    
+ Entering subroutine UAT03a for day          48
+ambient   38   44   50   44   44   44   44   50   50   50   55   44   44   44   38   38   38   44   38   27   22   16   11   11
+ambient    0    6   12    6    6    6    6   12   12   12   17    6    6    6    0    0    0    6    0  -11  -16  -22  -27  -27
+    
+ Entering subroutine UAT03a for day          49
+ambient   16   16   16   16   11    5   11    0    5   27   44   61   72   77   83   72   66   61   55   55   50   50   50   55
+ambient  -22  -22  -22  -22  -27  -33  -27  -38  -33  -11    6   23   34   39   45   34   28   23   17   17   12   12   12   17
+    
+ Entering subroutine UAT03a for day          50
+ambient   66   72   72   72   66   61   55   61   72   83   94   83   77   94   94   66   61   61   50   61   55   55   55   55
+ambient   28   34   34   34   28   23   17   23   34   45   56   45   39   56   56   28   23   23   12   23   17   17   17   17
+    
+ Entering subroutine UAT03a for day          51
+ambient   50   55   44   44   38   38   44   50   55   66   66   66   66   83   77   72   66   61   55   66   88  111  122  100
+ambient   12   17    6    6    0    0    6   12   17   28   28   28   28   45   39   34   28   23   17   28   50   73   84   62
+    
+ Entering subroutine UAT03a for day          52
+ambient   66   61   55   50   50   50   50   50   50   72   83   88   88   88   77   83   72   61   55   50   44   55   55   55
+ambient   28   23   17   12   12   12   12   12   12   34   45   50   50   50   39   45   34   23   17   12    6   17   17   17
+    
+ Entering subroutine UAT03a for day          53
+ambient   55   61   61   55   55   55   55   61   61   72   77   77   83   72   72   72   77   88   94   94   94   88  100  100
+ambient   17   23   23   17   17   17   17   23   23   34   39   39   45   34   34   34   39   50   56   56   56   50   62   62
+    
+ Entering subroutine UAT03a for day          54
+ambient  105  105  105  100  100   66   50   44   50   61   61   61   55   55   55   61   55   44   44   38   33   33   33   22
+ambient   67   67   67   62   62   28   12    6   12   23   23   23   17   17   17   23   17    6    6    0   -5   -5   -5  -16
+    
+ Entering subroutine UAT03a for day          55
+ambient   27   11   11    5    5   11   11   16   33   55   77   77   83   83   83   72   61   50   44   44   44   50   50   50
+ambient  -11  -27  -27  -33  -33  -27  -27  -22   -5   17   39   39   45   45   45   34   23   12    6    6    6   12   12   12
+    
+ Entering subroutine UAT03a for day          56
+ambient   44   50   44   50   50   44   44   44   55   61   77   94  100  105  111  105  100   94   88   83   77   72   66   55
+ambient    6   12    6   12   12    6    6    6   17   23   39   56   62   67   73   67   62   56   50   45   39   34   28   17
+    
+ Entering subroutine UAT03a for day          57
+ambient   55   55   61   61   61   66   66   66   77   66   88   88   83   94   88   72   72   61   55   61   50   50   38   33
+ambient   17   17   23   23   23   28   28   28   39   28   50   50   45   56   50   34   34   23   17   23   12   12    0   -5
+    
+ Entering subroutine UAT03a for day          58
+ambient   33   27   27   33   27   22   22   27   50   66   77   83   77   77   77   72   72   72   72   72   77   83   94  100
+ambient   -5  -11  -11   -5  -11  -16  -16  -11   12   28   39   45   39   39   39   34   34   34   34   34   39   45   56   62
+    
+ Entering subroutine UAT03a for day          59
+ambient  100   83   88   88   88   88   61   72   77   83   94  100   88   83   88   83   77   66   55   50   44   44   44   44
+ambient   62   45   50   50   50   50   23   34   39   45   56   62   50   45   50   45   39   28   17   12    6    6    6    6
+ **
+ ** Edits for changes in set:           3
+ **
+ ** Edits for changes in set:           3           4
+ Uncertainty definition            1  altered by   -1.00419867    
+ ambient_T:the_zon
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:   -2.00839734       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+ Uncertainty definition            2  altered by   0.146839887    
+ wind_speed:the_zon
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -2.00839734       0.00000000       0.00000000       1.01468396       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            3  altered by   0.935760260    
+ ambient_T:the_yea
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:    1.87152052       0.00000000       0.00000000       1.01468396       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            4  altered by    7.74771646E-02
+ wind_speed:the_yea
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:    1.87152052       0.00000000       0.00000000       1.00774777       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       2.00000000       0.00000000       0.00000000    
+ ** Edits for changes in set:           3           4
+ ** Edits for changes in set:           3           4
+    
+ Entering subroutine UAT03a for day          11
+ambient   22   22   22   27   33   38   33   27   27   33   44   55   55   55   55   44   44   38   44   33   27   16   16   16
+ambient   41   41   41   46   52   57   52   46   46   52   63   74   74   74   74   63   63   57   63   52   46   35   35   35
+    
+ Entering subroutine UAT03a for day          12
+ambient   16   16   11   11   11   16   16   16   22   22   33   44   44   55   61   61   55   44   38   33   33   33   27   33
+ambient   35   35   30   30   30   35   35   35   41   41   52   63   63   74   80   80   74   63   57   52   52   52   46   52
+    
+ Entering subroutine UAT03a for day          13
+ambient   38   44   50   50   55   61   61   66   66   72   77   77   77   83   88   72   61   61   50   44   33   33   38   33
+ambient   57   63   69   69   74   80   80   85   85   91   96   96   96  102  107   91   80   80   69   63   52   52   57   52
+    
+ Entering subroutine UAT03a for day          14
+ambient   27   27   22   27   27   27   16   11   22   33   44   55   61   61   55   38   33   33   27   22   27   33   33   33
+ambient   46   46   41   46   46   46   35   30   41   52   63   74   80   80   74   57   52   52   46   41   46   52   52   52
+    
+ Entering subroutine UAT03a for day          15
+ambient   27   27   27   22   22   22   22   22   22   22   16   16   16   16   16   11   11    5    5    5    0    0    0    0
+ambient   46   46   46   41   41   41   41   41   41   41   35   35   35   35   35   30   30   24   24   24   19   19   19   19
+    
+ Entering subroutine UAT03a for day          16
+ambient    0    0    0    0    0    5   11   11   11   11   11   16   22   27   27   22   22   16   16   16   16   16   22   22
+ambient   19   19   19   19   19   24   30   30   30   30   30   35   41   46   46   41   41   35   35   35   35   35   41   41
+    
+ Entering subroutine UAT03a for day          17
+ambient   22   22   22   22   22   22   22   22   22   27   33   33   33   33   33   33   33   33   33   33   38   44   50   55
+ambient   41   41   41   41   41   41   41   41   41   46   52   52   52   52   52   52   52   52   52   52   57   63   69   74
+    
+ Entering subroutine UAT03a for day          18
+ambient   55   55   61   61   66   66   66   66   66   72   77   83   83   88   83   88   77   77   83   83   83   83   83   83
+ambient   74   74   80   80   85   85   85   85   85   91   96  102  102  107  102  107   96   96  102  102  102  102  102  102
+    
+ Entering subroutine UAT03a for day          19
+ambient   83   77   77   72   72   72   72   72   72   83   88   94  100  100   94   83   72   66   55   55   55   50   44   55
+ambient  102   96   96   91   91   91   91   91   91  102  107  113  119  119  113  102   91   85   74   74   74   69   63   74
+    
+ Entering subroutine UAT03a for day          20
+ambient   50   50   50   50   44   44   38   44   50   55   66   72   77   77   83   77   72   72   72   72   66   66   66   72
+ambient   69   69   69   69   63   63   57   63   69   74   85   91   96   96  102   96   91   91   91   91   85   85   85   91
+    
+ Entering subroutine UAT03a for day          21
+ambient   72   66   66   72   72   72   72   77   83   77   77   77   77   83   77   72   61   61   55   44   38   22   22   16
+ambient   91   85   85   91   91   91   91   96  102   96   96   96   96  102   96   91   80   80   74   63   57   41   41   35
+    
+ Entering subroutine UAT03a for day          22
+ambient   16   22   27   27   22   16   16   22   16   33   44   61   72   72   72   55   44   44   44   44   44   44   44   50
+ambient   35   41   46   46   41   35   35   41   35   52   63   80   91   91   91   74   63   63   63   63   63   63   63   69
+    
+ Entering subroutine UAT03a for day          23
+ambient   55   50   50   44   44   38   38   44   44   55   55   66   77   77   66   61   50   44   44   44   44   50   50   44
+ambient   74   69   69   63   63   57   57   63   63   74   74   85   96   96   85   80   69   63   63   63   63   69   69   63
+    
+ Entering subroutine UAT03a for day          24
+ambient   50   50   55   55   55   50   55   55   55   61   66   72   77   77   77   72   66   61   66   61   61   55   50   50
+ambient   69   69   74   74   74   69   74   74   74   80   85   91   96   96   96   91   85   80   85   80   80   74   69   69
+    
+ Entering subroutine UAT03a for day          25
+ambient   44   44   44   44   44   44   50   50   55   61   72   83   88   83   88   72   66   61   55   55   55   61   72   77
+ambient   63   63   63   63   63   63   69   69   74   80   91  102  107  102  107   91   85   80   74   74   74   80   91   96
+    
+ Entering subroutine UAT03a for day          26
+ambient   72   72   72   72   66   61   55   55   55   66   66   66   72   72   72   66   55   55   50   44   44   50   55   50
+ambient   91   91   91   91   85   80   74   74   74   85   85   85   91   91   91   85   74   74   69   63   63   69   74   69
+    
+ Entering subroutine UAT03a for day          27
+ambient   44   50   50   55   55   61   61   61   72   77   83   88   94  105  105  100  100   94   94   94  100  100  100  100
+ambient   63   69   69   74   74   80   80   80   91   96  102  107  113  124  124  119  119  113  113  113  119  119  119  119
+    
+ Entering subroutine UAT03a for day          28
+ambient  100  100   94   88   88   88   88   88   88   94  100  105  105  105  100   94   94   94   94   94   94   88   83   77
+ambient  119  119  113  107  107  107  107  107  107  113  119  124  124  124  119  113  113  113  113  113  113  107  102   96
+    
+ Entering subroutine UAT03a for day          29
+ambient   72   72   61   61   61   66   72   83   88   94   88  105  116  127  127  116  100   94   88   88   88   88   83   77
+ambient   91   91   80   80   80   85   91  102  107  113  107  124  135  146  146  135  119  113  107  107  107  107  102   96
+    
+ Entering subroutine UAT03a for day          30
+ambient   77   83   83   77   77   77   77   72   72   83   88   94   94   94   94   88   83   83   72   72   72   72   66   66
+ambient   96  102  102   96   96   96   96   91   91  102  107  113  113  113  113  107  102  102   91   91   91   91   85   85
+    
+ Entering subroutine UAT03a for day          31
+ambient   66   61   61   61   61   66   66   66   66   77   88  100  100  100  100   88   77   72   66   61   61   66   66   66
+ambient   85   80   80   80   80   85   85   85   85   96  107  119  119  119  119  107   96   91   85   80   80   85   85   85
+    
+ Entering subroutine UAT03a for day          32
+ambient   72   66   66   66   66   61   72   77   83   88   88  105  111  116  116  116  111  111  105  105  105  100  100  100
+ambient   91   85   85   85   85   80   91   96  102  107  107  124  130  135  135  135  130  130  124  124  124  119  119  119
+    
+ Entering subroutine UAT03a for day          33
+ambient  100  100  105  105  105  100  100  105  105  111  116  116  122  122  122  116  116  111  111  105  105  105  100  100
+ambient  119  119  124  124  124  119  119  124  124  130  135  135  141  141  141  135  135  130  130  124  124  124  119  119
+    
+ Entering subroutine UAT03a for day          34
+ambient  100  100  100  100  100   94   94   94   94  100  111  122  122  122  116  111  100   94   88   77   72   61   55   50
+ambient  119  119  119  119  119  113  113  113  113  119  130  141  141  141  135  130  119  113  107   96   91   80   74   69
+    
+ Entering subroutine UAT03a for day          35
+ambient   44   44   44   44   44   44   38   33   44   61   72   77   83   88   77   72   55   44   38   38   44   61   33   33
+ambient   63   63   63   63   63   63   57   52   63   80   91   96  102  107   96   91   74   63   57   57   63   80   52   52
+    
+ Entering subroutine UAT03a for day          36
+ambient   33   33   33   16   22   22   16   16   22   44   55   66   77   77   77   72   61   50   44   38   33   22   27   22
+ambient   52   52   52   35   41   41   35   35   41   63   74   85   96   96   96   91   80   69   63   57   52   41   46   41
+    
+ Entering subroutine UAT03a for day          37
+ambient   22   22   11    5   11    5   -3   -3    0    5   16   27   44   55   66   66   72   55   50   50   50   50   50   50
+ambient   41   41   30   24   30   24   16   16   19   24   35   46   63   74   85   85   91   74   69   69   69   69   69   69
+    
+ Entering subroutine UAT03a for day          38
+ambient   55   55   50   50   50   50   50   50   50   55   55   61   66   72   77   61   44   33   27   22   16   16    5    5
+ambient   74   74   69   69   69   69   69   69   69   74   74   80   85   91   96   80   63   52   46   41   35   35   24   24
+    
+ Entering subroutine UAT03a for day          39
+ambient   11   11   11   11   11    5    0    0    5   16   50   66   66   83   66   61   38   33   33   33   33   33   33   33
+ambient   30   30   30   30   30   24   19   19   24   35   69   85   85  102   85   80   57   52   52   52   52   52   52   52
+    
+ Entering subroutine UAT03a for day          40
+ambient   33   33   22   27   27   22   22   27   33   38   38   44   44   44   44   44   38   38   38   33   33   33   33   38
+ambient   52   52   41   46   46   41   41   46   52   57   57   63   63   63   63   63   57   57   57   52   52   52   52   57
+    
+ Entering subroutine UAT03a for day          41
+ambient   38   33   22   16   16   16   11   11   11   27   38   44   44   44   50   50   44   44   38   38   38   38   38   38
+ambient   57   52   41   35   35   35   30   30   30   46   57   63   63   63   69   69   63   63   57   57   57   57   57   57
+    
+ Entering subroutine UAT03a for day          42
+ambient   38   38   38   38   44   44   44   44   44   50   55   55   61   61   55   50   44   44   38   16   22   22   22   16
+ambient   57   57   57   57   63   63   63   63   63   69   74   74   80   80   74   69   63   63   57   35   41   41   41   35
+    
+ Entering subroutine UAT03a for day          43
+ambient   11   16    5    0    0    0   -3    0   11   27   38   44   50   50   50   44   33   16   16   16   11   11   11   11
+ambient   30   35   24   19   19   19   16   19   30   46   57   63   69   69   69   63   52   35   35   35   30   30   30   30
+    
+ Entering subroutine UAT03a for day          44
+ambient    0   -3   -3  -14   -8   -3    0    0    0   11   16   16   16   11   16    5    5    5    0    0    0    5    5    0
+ambient   19   16   16    5   11   16   19   19   19   30   35   35   35   30   35   24   24   24   19   19   19   24   24   19
+    
+ Entering subroutine UAT03a for day          45
+ambient    0    0   -3  -14  -19  -14   -8    0    0    5   11   16   22   22   22   16   11   11   11   11   16   22   22   22
+ambient   19   19   16    5    0    5   11   19   19   24   30   35   41   41   41   35   30   30   30   30   35   41   41   41
+    
+ Entering subroutine UAT03a for day          46
+ambient   22   16   11   11   11   11   11   16   16   27   38   50   61   55   55   50   44   44   44   44   50   50   44   38
+ambient   41   35   30   30   30   30   30   35   35   46   57   69   80   74   74   69   63   63   63   63   69   69   63   57
+    
+ Entering subroutine UAT03a for day          47
+ambient   44   44   44   44   38   44   50   50   55   55   61   61   72   66   66   66   66   55   44   44   44   50   50   44
+ambient   63   63   63   63   57   63   69   69   74   74   80   80   91   85   85   85   85   74   63   63   63   69   69   63
+    
+ Entering subroutine UAT03a for day          48
+ambient   38   44   50   44   44   44   44   50   50   50   55   44   44   44   38   38   38   44   38   27   22   16   11   11
+ambient   57   63   69   63   63   63   63   69   69   69   74   63   63   63   57   57   57   63   57   46   41   35   30   30
+    
+ Entering subroutine UAT03a for day          49
+ambient   16   16   16   16   11    5   11    0    5   27   44   61   72   77   83   72   66   61   55   55   50   50   50   55
+ambient   35   35   35   35   30   24   30   19   24   46   63   80   91   96  102   91   85   80   74   74   69   69   69   74
+    
+ Entering subroutine UAT03a for day          50
+ambient   66   72   72   72   66   61   55   61   72   83   94   83   77   94   94   66   61   61   50   61   55   55   55   55
+ambient   85   91   91   91   85   80   74   80   91  102  113  102   96  113  113   85   80   80   69   80   74   74   74   74
+    
+ Entering subroutine UAT03a for day          51
+ambient   50   55   44   44   38   38   44   50   55   66   66   66   66   83   77   72   66   61   55   66   88  111  122  100
+ambient   69   74   63   63   57   57   63   69   74   85   85   85   85  102   96   91   85   80   74   85  107  130  141  119
+    
+ Entering subroutine UAT03a for day          52
+ambient   66   61   55   50   50   50   50   50   50   72   83   88   88   88   77   83   72   61   55   50   44   55   55   55
+ambient   85   80   74   69   69   69   69   69   69   91  102  107  107  107   96  102   91   80   74   69   63   74   74   74
+    
+ Entering subroutine UAT03a for day          53
+ambient   55   61   61   55   55   55   55   61   61   72   77   77   83   72   72   72   77   88   94   94   94   88  100  100
+ambient   74   80   80   74   74   74   74   80   80   91   96   96  102   91   91   91   96  107  113  113  113  107  119  119
+    
+ Entering subroutine UAT03a for day          54
+ambient  105  105  105  100  100   66   50   44   50   61   61   61   55   55   55   61   55   44   44   38   33   33   33   22
+ambient  124  124  124  119  119   85   69   63   69   80   80   80   74   74   74   80   74   63   63   57   52   52   52   41
+    
+ Entering subroutine UAT03a for day          55
+ambient   27   11   11    5    5   11   11   16   33   55   77   77   83   83   83   72   61   50   44   44   44   50   50   50
+ambient   46   30   30   24   24   30   30   35   52   74   96   96  102  102  102   91   80   69   63   63   63   69   69   69
+    
+ Entering subroutine UAT03a for day          56
+ambient   44   50   44   50   50   44   44   44   55   61   77   94  100  105  111  105  100   94   88   83   77   72   66   55
+ambient   63   69   63   69   69   63   63   63   74   80   96  113  119  124  130  124  119  113  107  102   96   91   85   74
+    
+ Entering subroutine UAT03a for day          57
+ambient   55   55   61   61   61   66   66   66   77   66   88   88   83   94   88   72   72   61   55   61   50   50   38   33
+ambient   74   74   80   80   80   85   85   85   96   85  107  107  102  113  107   91   91   80   74   80   69   69   57   52
+    
+ Entering subroutine UAT03a for day          58
+ambient   33   27   27   33   27   22   22   27   50   66   77   83   77   77   77   72   72   72   72   72   77   83   94  100
+ambient   52   46   46   52   46   41   41   46   69   85   96  102   96   96   96   91   91   91   91   91   96  102  113  119
+    
+ Entering subroutine UAT03a for day          59
+ambient  100   83   88   88   88   88   61   72   77   83   94  100   88   83   88   83   77   66   55   50   44   44   44   44
+ambient  119  102  107  107  107  107   80   91   96  102  113  119  107  102  107  102   96   85   74   69   63   63   63   63
+ **
+ ** Edits for changes in set:           4
+ **
+ ** Edits for changes in set:           4           4
+ Uncertainty definition            1  altered by   0.662464559    
+ ambient_T:the_zon
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    1.32492912       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+ Uncertainty definition            2  altered by  -0.295562685    
+ wind_speed:the_zon
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:    1.32492912       0.00000000       0.00000000      0.970443726       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            3  altered by   0.636633039    
+ ambient_T:the_yea
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:    1.27326608       0.00000000       0.00000000      0.970443726       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            4  altered by   0.444359422    
+ wind_speed:the_yea
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:    1.27326608       0.00000000       0.00000000       1.04443598       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       2.00000000       0.00000000       0.00000000    
+ ** Edits for changes in set:           4           4
+ ** Edits for changes in set:           4           4
+    
+ Entering subroutine UAT03a for day          11
+ambient   22   22   22   27   33   38   33   27   27   33   44   55   55   55   55   44   44   38   44   33   27   16   16   16
+ambient   35   35   35   40   46   51   46   40   40   46   57   68   68   68   68   57   57   51   57   46   40   29   29   29
+    
+ Entering subroutine UAT03a for day          12
+ambient   16   16   11   11   11   16   16   16   22   22   33   44   44   55   61   61   55   44   38   33   33   33   27   33
+ambient   29   29   24   24   24   29   29   29   35   35   46   57   57   68   74   74   68   57   51   46   46   46   40   46
+    
+ Entering subroutine UAT03a for day          13
+ambient   38   44   50   50   55   61   61   66   66   72   77   77   77   83   88   72   61   61   50   44   33   33   38   33
+ambient   51   57   63   63   68   74   74   79   79   85   90   90   90   96  101   85   74   74   63   57   46   46   51   46
+    
+ Entering subroutine UAT03a for day          14
+ambient   27   27   22   27   27   27   16   11   22   33   44   55   61   61   55   38   33   33   27   22   27   33   33   33
+ambient   40   40   35   40   40   40   29   24   35   46   57   68   74   74   68   51   46   46   40   35   40   46   46   46
+    
+ Entering subroutine UAT03a for day          15
+ambient   27   27   27   22   22   22   22   22   22   22   16   16   16   16   16   11   11    5    5    5    0    0    0    0
+ambient   40   40   40   35   35   35   35   35   35   35   29   29   29   29   29   24   24   18   18   18   13   13   13   13
+    
+ Entering subroutine UAT03a for day          16
+ambient    0    0    0    0    0    5   11   11   11   11   11   16   22   27   27   22   22   16   16   16   16   16   22   22
+ambient   13   13   13   13   13   18   24   24   24   24   24   29   35   40   40   35   35   29   29   29   29   29   35   35
+    
+ Entering subroutine UAT03a for day          17
+ambient   22   22   22   22   22   22   22   22   22   27   33   33   33   33   33   33   33   33   33   33   38   44   50   55
+ambient   35   35   35   35   35   35   35   35   35   40   46   46   46   46   46   46   46   46   46   46   51   57   63   68
+    
+ Entering subroutine UAT03a for day          18
+ambient   55   55   61   61   66   66   66   66   66   72   77   83   83   88   83   88   77   77   83   83   83   83   83   83
+ambient   68   68   74   74   79   79   79   79   79   85   90   96   96  101   96  101   90   90   96   96   96   96   96   96
+    
+ Entering subroutine UAT03a for day          19
+ambient   83   77   77   72   72   72   72   72   72   83   88   94  100  100   94   83   72   66   55   55   55   50   44   55
+ambient   96   90   90   85   85   85   85   85   85   96  101  107  113  113  107   96   85   79   68   68   68   63   57   68
+    
+ Entering subroutine UAT03a for day          20
+ambient   50   50   50   50   44   44   38   44   50   55   66   72   77   77   83   77   72   72   72   72   66   66   66   72
+ambient   63   63   63   63   57   57   51   57   63   68   79   85   90   90   96   90   85   85   85   85   79   79   79   85
+    
+ Entering subroutine UAT03a for day          21
+ambient   72   66   66   72   72   72   72   77   83   77   77   77   77   83   77   72   61   61   55   44   38   22   22   16
+ambient   85   79   79   85   85   85   85   90   96   90   90   90   90   96   90   85   74   74   68   57   51   35   35   29
+    
+ Entering subroutine UAT03a for day          22
+ambient   16   22   27   27   22   16   16   22   16   33   44   61   72   72   72   55   44   44   44   44   44   44   44   50
+ambient   29   35   40   40   35   29   29   35   29   46   57   74   85   85   85   68   57   57   57   57   57   57   57   63
+    
+ Entering subroutine UAT03a for day          23
+ambient   55   50   50   44   44   38   38   44   44   55   55   66   77   77   66   61   50   44   44   44   44   50   50   44
+ambient   68   63   63   57   57   51   51   57   57   68   68   79   90   90   79   74   63   57   57   57   57   63   63   57
+    
+ Entering subroutine UAT03a for day          24
+ambient   50   50   55   55   55   50   55   55   55   61   66   72   77   77   77   72   66   61   66   61   61   55   50   50
+ambient   63   63   68   68   68   63   68   68   68   74   79   85   90   90   90   85   79   74   79   74   74   68   63   63
+    
+ Entering subroutine UAT03a for day          25
+ambient   44   44   44   44   44   44   50   50   55   61   72   83   88   83   88   72   66   61   55   55   55   61   72   77
+ambient   57   57   57   57   57   57   63   63   68   74   85   96  101   96  101   85   79   74   68   68   68   74   85   90
+    
+ Entering subroutine UAT03a for day          26
+ambient   72   72   72   72   66   61   55   55   55   66   66   66   72   72   72   66   55   55   50   44   44   50   55   50
+ambient   85   85   85   85   79   74   68   68   68   79   79   79   85   85   85   79   68   68   63   57   57   63   68   63
+    
+ Entering subroutine UAT03a for day          27
+ambient   44   50   50   55   55   61   61   61   72   77   83   88   94  105  105  100  100   94   94   94  100  100  100  100
+ambient   57   63   63   68   68   74   74   74   85   90   96  101  107  118  118  113  113  107  107  107  113  113  113  113
+    
+ Entering subroutine UAT03a for day          28
+ambient  100  100   94   88   88   88   88   88   88   94  100  105  105  105  100   94   94   94   94   94   94   88   83   77
+ambient  113  113  107  101  101  101  101  101  101  107  113  118  118  118  113  107  107  107  107  107  107  101   96   90
+    
+ Entering subroutine UAT03a for day          29
+ambient   72   72   61   61   61   66   72   83   88   94   88  105  116  127  127  116  100   94   88   88   88   88   83   77
+ambient   85   85   74   74   74   79   85   96  101  107  101  118  129  140  140  129  113  107  101  101  101  101   96   90
+    
+ Entering subroutine UAT03a for day          30
+ambient   77   83   83   77   77   77   77   72   72   83   88   94   94   94   94   88   83   83   72   72   72   72   66   66
+ambient   90   96   96   90   90   90   90   85   85   96  101  107  107  107  107  101   96   96   85   85   85   85   79   79
+    
+ Entering subroutine UAT03a for day          31
+ambient   66   61   61   61   61   66   66   66   66   77   88  100  100  100  100   88   77   72   66   61   61   66   66   66
+ambient   79   74   74   74   74   79   79   79   79   90  101  113  113  113  113  101   90   85   79   74   74   79   79   79
+    
+ Entering subroutine UAT03a for day          32
+ambient   72   66   66   66   66   61   72   77   83   88   88  105  111  116  116  116  111  111  105  105  105  100  100  100
+ambient   85   79   79   79   79   74   85   90   96  101  101  118  124  129  129  129  124  124  118  118  118  113  113  113
+    
+ Entering subroutine UAT03a for day          33
+ambient  100  100  105  105  105  100  100  105  105  111  116  116  122  122  122  116  116  111  111  105  105  105  100  100
+ambient  113  113  118  118  118  113  113  118  118  124  129  129  135  135  135  129  129  124  124  118  118  118  113  113
+    
+ Entering subroutine UAT03a for day          34
+ambient  100  100  100  100  100   94   94   94   94  100  111  122  122  122  116  111  100   94   88   77   72   61   55   50
+ambient  113  113  113  113  113  107  107  107  107  113  124  135  135  135  129  124  113  107  101   90   85   74   68   63
+    
+ Entering subroutine UAT03a for day          35
+ambient   44   44   44   44   44   44   38   33   44   61   72   77   83   88   77   72   55   44   38   38   44   61   33   33
+ambient   57   57   57   57   57   57   51   46   57   74   85   90   96  101   90   85   68   57   51   51   57   74   46   46
+    
+ Entering subroutine UAT03a for day          36
+ambient   33   33   33   16   22   22   16   16   22   44   55   66   77   77   77   72   61   50   44   38   33   22   27   22
+ambient   46   46   46   29   35   35   29   29   35   57   68   79   90   90   90   85   74   63   57   51   46   35   40   35
+    
+ Entering subroutine UAT03a for day          37
+ambient   22   22   11    5   11    5   -3   -3    0    5   16   27   44   55   66   66   72   55   50   50   50   50   50   50
+ambient   35   35   24   18   24   18   10   10   13   18   29   40   57   68   79   79   85   68   63   63   63   63   63   63
+    
+ Entering subroutine UAT03a for day          38
+ambient   55   55   50   50   50   50   50   50   50   55   55   61   66   72   77   61   44   33   27   22   16   16    5    5
+ambient   68   68   63   63   63   63   63   63   63   68   68   74   79   85   90   74   57   46   40   35   29   29   18   18
+    
+ Entering subroutine UAT03a for day          39
+ambient   11   11   11   11   11    5    0    0    5   16   50   66   66   83   66   61   38   33   33   33   33   33   33   33
+ambient   24   24   24   24   24   18   13   13   18   29   63   79   79   96   79   74   51   46   46   46   46   46   46   46
+    
+ Entering subroutine UAT03a for day          40
+ambient   33   33   22   27   27   22   22   27   33   38   38   44   44   44   44   44   38   38   38   33   33   33   33   38
+ambient   46   46   35   40   40   35   35   40   46   51   51   57   57   57   57   57   51   51   51   46   46   46   46   51
+    
+ Entering subroutine UAT03a for day          41
+ambient   38   33   22   16   16   16   11   11   11   27   38   44   44   44   50   50   44   44   38   38   38   38   38   38
+ambient   51   46   35   29   29   29   24   24   24   40   51   57   57   57   63   63   57   57   51   51   51   51   51   51
+    
+ Entering subroutine UAT03a for day          42
+ambient   38   38   38   38   44   44   44   44   44   50   55   55   61   61   55   50   44   44   38   16   22   22   22   16
+ambient   51   51   51   51   57   57   57   57   57   63   68   68   74   74   68   63   57   57   51   29   35   35   35   29
+    
+ Entering subroutine UAT03a for day          43
+ambient   11   16    5    0    0    0   -3    0   11   27   38   44   50   50   50   44   33   16   16   16   11   11   11   11
+ambient   24   29   18   13   13   13   10   13   24   40   51   57   63   63   63   57   46   29   29   29   24   24   24   24
+    
+ Entering subroutine UAT03a for day          44
+ambient    0   -3   -3  -14   -8   -3    0    0    0   11   16   16   16   11   16    5    5    5    0    0    0    5    5    0
+ambient   13   10   10   -1    5   10   13   13   13   24   29   29   29   24   29   18   18   18   13   13   13   18   18   13
+    
+ Entering subroutine UAT03a for day          45
+ambient    0    0   -3  -14  -19  -14   -8    0    0    5   11   16   22   22   22   16   11   11   11   11   16   22   22   22
+ambient   13   13   10   -1   -6   -1    5   13   13   18   24   29   35   35   35   29   24   24   24   24   29   35   35   35
+    
+ Entering subroutine UAT03a for day          46
+ambient   22   16   11   11   11   11   11   16   16   27   38   50   61   55   55   50   44   44   44   44   50   50   44   38
+ambient   35   29   24   24   24   24   24   29   29   40   51   63   74   68   68   63   57   57   57   57   63   63   57   51
+    
+ Entering subroutine UAT03a for day          47
+ambient   44   44   44   44   38   44   50   50   55   55   61   61   72   66   66   66   66   55   44   44   44   50   50   44
+ambient   57   57   57   57   51   57   63   63   68   68   74   74   85   79   79   79   79   68   57   57   57   63   63   57
+    
+ Entering subroutine UAT03a for day          48
+ambient   38   44   50   44   44   44   44   50   50   50   55   44   44   44   38   38   38   44   38   27   22   16   11   11
+ambient   51   57   63   57   57   57   57   63   63   63   68   57   57   57   51   51   51   57   51   40   35   29   24   24
+    
+ Entering subroutine UAT03a for day          49
+ambient   16   16   16   16   11    5   11    0    5   27   44   61   72   77   83   72   66   61   55   55   50   50   50   55
+ambient   29   29   29   29   24   18   24   13   18   40   57   74   85   90   96   85   79   74   68   68   63   63   63   68
+    
+ Entering subroutine UAT03a for day          50
+ambient   66   72   72   72   66   61   55   61   72   83   94   83   77   94   94   66   61   61   50   61   55   55   55   55
+ambient   79   85   85   85   79   74   68   74   85   96  107   96   90  107  107   79   74   74   63   74   68   68   68   68
+    
+ Entering subroutine UAT03a for day          51
+ambient   50   55   44   44   38   38   44   50   55   66   66   66   66   83   77   72   66   61   55   66   88  111  122  100
+ambient   63   68   57   57   51   51   57   63   68   79   79   79   79   96   90   85   79   74   68   79  101  124  135  113
+    
+ Entering subroutine UAT03a for day          52
+ambient   66   61   55   50   50   50   50   50   50   72   83   88   88   88   77   83   72   61   55   50   44   55   55   55
+ambient   79   74   68   63   63   63   63   63   63   85   96  101  101  101   90   96   85   74   68   63   57   68   68   68
+    
+ Entering subroutine UAT03a for day          53
+ambient   55   61   61   55   55   55   55   61   61   72   77   77   83   72   72   72   77   88   94   94   94   88  100  100
+ambient   68   74   74   68   68   68   68   74   74   85   90   90   96   85   85   85   90  101  107  107  107  101  113  113
+    
+ Entering subroutine UAT03a for day          54
+ambient  105  105  105  100  100   66   50   44   50   61   61   61   55   55   55   61   55   44   44   38   33   33   33   22
+ambient  118  118  118  113  113   79   63   57   63   74   74   74   68   68   68   74   68   57   57   51   46   46   46   35
+    
+ Entering subroutine UAT03a for day          55
+ambient   27   11   11    5    5   11   11   16   33   55   77   77   83   83   83   72   61   50   44   44   44   50   50   50
+ambient   40   24   24   18   18   24   24   29   46   68   90   90   96   96   96   85   74   63   57   57   57   63   63   63
+    
+ Entering subroutine UAT03a for day          56
+ambient   44   50   44   50   50   44   44   44   55   61   77   94  100  105  111  105  100   94   88   83   77   72   66   55
+ambient   57   63   57   63   63   57   57   57   68   74   90  107  113  118  124  118  113  107  101   96   90   85   79   68
+    
+ Entering subroutine UAT03a for day          57
+ambient   55   55   61   61   61   66   66   66   77   66   88   88   83   94   88   72   72   61   55   61   50   50   38   33
+ambient   68   68   74   74   74   79   79   79   90   79  101  101   96  107  101   85   85   74   68   74   63   63   51   46
+    
+ Entering subroutine UAT03a for day          58
+ambient   33   27   27   33   27   22   22   27   50   66   77   83   77   77   77   72   72   72   72   72   77   83   94  100
+ambient   46   40   40   46   40   35   35   40   63   79   90   96   90   90   90   85   85   85   85   85   90   96  107  113
+    
+ Entering subroutine UAT03a for day          59
+ambient  100   83   88   88   88   88   61   72   77   83   94  100   88   83   88   83   77   66   55   50   44   44   44   44
+ambient  113   96  101  101  101  101   74   85   90   96  107  113  101   96  101   96   90   79   68   63   57   57   57   57
+ **
+ ** Edits for changes in set:           5
+ **
+ ** Edits for changes in set:           5           4
+ Uncertainty definition            1  altered by   -1.50108397    
+ ambient_T:the_zon
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:   -3.00216794       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+ Uncertainty definition            2  altered by   -1.16474724    
+ wind_speed:the_zon
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -3.00216794       0.00000000       0.00000000      0.883525252       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            3  altered by  -0.544858336    
+ ambient_T:the_yea
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -1.08971667       0.00000000       0.00000000      0.883525252       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            4  altered by   0.647090197    
+ wind_speed:the_yea
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -1.08971667       0.00000000       0.00000000       1.06470907       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       2.00000000       0.00000000       0.00000000    
+ ** Edits for changes in set:           5           4
+ ** Edits for changes in set:           5           4
+    
+ Entering subroutine UAT03a for day          11
+ambient   22   22   22   27   33   38   33   27   27   33   44   55   55   55   55   44   44   38   44   33   27   16   16   16
+ambient   11   11   11   16   22   27   22   16   16   22   33   44   44   44   44   33   33   27   33   22   16    5    5    5
+    
+ Entering subroutine UAT03a for day          12
+ambient   16   16   11   11   11   16   16   16   22   22   33   44   44   55   61   61   55   44   38   33   33   33   27   33
+ambient    5    5    0    0    0    5    5    5   11   11   22   33   33   44   50   50   44   33   27   22   22   22   16   22
+    
+ Entering subroutine UAT03a for day          13
+ambient   38   44   50   50   55   61   61   66   66   72   77   77   77   83   88   72   61   61   50   44   33   33   38   33
+ambient   27   33   39   39   44   50   50   55   55   61   66   66   66   72   77   61   50   50   39   33   22   22   27   22
+    
+ Entering subroutine UAT03a for day          14
+ambient   27   27   22   27   27   27   16   11   22   33   44   55   61   61   55   38   33   33   27   22   27   33   33   33
+ambient   16   16   11   16   16   16    5    0   11   22   33   44   50   50   44   27   22   22   16   11   16   22   22   22
+    
+ Entering subroutine UAT03a for day          15
+ambient   27   27   27   22   22   22   22   22   22   22   16   16   16   16   16   11   11    5    5    5    0    0    0    0
+ambient   16   16   16   11   11   11   11   11   11   11    5    5    5    5    5    0    0   -6   -6   -6  -11  -11  -11  -11
+    
+ Entering subroutine UAT03a for day          16
+ambient    0    0    0    0    0    5   11   11   11   11   11   16   22   27   27   22   22   16   16   16   16   16   22   22
+ambient  -11  -11  -11  -11  -11   -6    0    0    0    0    0    5   11   16   16   11   11    5    5    5    5    5   11   11
+    
+ Entering subroutine UAT03a for day          17
+ambient   22   22   22   22   22   22   22   22   22   27   33   33   33   33   33   33   33   33   33   33   38   44   50   55
+ambient   11   11   11   11   11   11   11   11   11   16   22   22   22   22   22   22   22   22   22   22   27   33   39   44
+    
+ Entering subroutine UAT03a for day          18
+ambient   55   55   61   61   66   66   66   66   66   72   77   83   83   88   83   88   77   77   83   83   83   83   83   83
+ambient   44   44   50   50   55   55   55   55   55   61   66   72   72   77   72   77   66   66   72   72   72   72   72   72
+    
+ Entering subroutine UAT03a for day          19
+ambient   83   77   77   72   72   72   72   72   72   83   88   94  100  100   94   83   72   66   55   55   55   50   44   55
+ambient   72   66   66   61   61   61   61   61   61   72   77   83   89   89   83   72   61   55   44   44   44   39   33   44
+    
+ Entering subroutine UAT03a for day          20
+ambient   50   50   50   50   44   44   38   44   50   55   66   72   77   77   83   77   72   72   72   72   66   66   66   72
+ambient   39   39   39   39   33   33   27   33   39   44   55   61   66   66   72   66   61   61   61   61   55   55   55   61
+    
+ Entering subroutine UAT03a for day          21
+ambient   72   66   66   72   72   72   72   77   83   77   77   77   77   83   77   72   61   61   55   44   38   22   22   16
+ambient   61   55   55   61   61   61   61   66   72   66   66   66   66   72   66   61   50   50   44   33   27   11   11    5
+    
+ Entering subroutine UAT03a for day          22
+ambient   16   22   27   27   22   16   16   22   16   33   44   61   72   72   72   55   44   44   44   44   44   44   44   50
+ambient    5   11   16   16   11    5    5   11    5   22   33   50   61   61   61   44   33   33   33   33   33   33   33   39
+    
+ Entering subroutine UAT03a for day          23
+ambient   55   50   50   44   44   38   38   44   44   55   55   66   77   77   66   61   50   44   44   44   44   50   50   44
+ambient   44   39   39   33   33   27   27   33   33   44   44   55   66   66   55   50   39   33   33   33   33   39   39   33
+    
+ Entering subroutine UAT03a for day          24
+ambient   50   50   55   55   55   50   55   55   55   61   66   72   77   77   77   72   66   61   66   61   61   55   50   50
+ambient   39   39   44   44   44   39   44   44   44   50   55   61   66   66   66   61   55   50   55   50   50   44   39   39
+    
+ Entering subroutine UAT03a for day          25
+ambient   44   44   44   44   44   44   50   50   55   61   72   83   88   83   88   72   66   61   55   55   55   61   72   77
+ambient   33   33   33   33   33   33   39   39   44   50   61   72   77   72   77   61   55   50   44   44   44   50   61   66
+    
+ Entering subroutine UAT03a for day          26
+ambient   72   72   72   72   66   61   55   55   55   66   66   66   72   72   72   66   55   55   50   44   44   50   55   50
+ambient   61   61   61   61   55   50   44   44   44   55   55   55   61   61   61   55   44   44   39   33   33   39   44   39
+    
+ Entering subroutine UAT03a for day          27
+ambient   44   50   50   55   55   61   61   61   72   77   83   88   94  105  105  100  100   94   94   94  100  100  100  100
+ambient   33   39   39   44   44   50   50   50   61   66   72   77   83   94   94   89   89   83   83   83   89   89   89   89
+    
+ Entering subroutine UAT03a for day          28
+ambient  100  100   94   88   88   88   88   88   88   94  100  105  105  105  100   94   94   94   94   94   94   88   83   77
+ambient   89   89   83   77   77   77   77   77   77   83   89   94   94   94   89   83   83   83   83   83   83   77   72   66
+    
+ Entering subroutine UAT03a for day          29
+ambient   72   72   61   61   61   66   72   83   88   94   88  105  116  127  127  116  100   94   88   88   88   88   83   77
+ambient   61   61   50   50   50   55   61   72   77   83   77   94  105  116  116  105   89   83   77   77   77   77   72   66
+    
+ Entering subroutine UAT03a for day          30
+ambient   77   83   83   77   77   77   77   72   72   83   88   94   94   94   94   88   83   83   72   72   72   72   66   66
+ambient   66   72   72   66   66   66   66   61   61   72   77   83   83   83   83   77   72   72   61   61   61   61   55   55
+    
+ Entering subroutine UAT03a for day          31
+ambient   66   61   61   61   61   66   66   66   66   77   88  100  100  100  100   88   77   72   66   61   61   66   66   66
+ambient   55   50   50   50   50   55   55   55   55   66   77   89   89   89   89   77   66   61   55   50   50   55   55   55
+    
+ Entering subroutine UAT03a for day          32
+ambient   72   66   66   66   66   61   72   77   83   88   88  105  111  116  116  116  111  111  105  105  105  100  100  100
+ambient   61   55   55   55   55   50   61   66   72   77   77   94  100  105  105  105  100  100   94   94   94   89   89   89
+    
+ Entering subroutine UAT03a for day          33
+ambient  100  100  105  105  105  100  100  105  105  111  116  116  122  122  122  116  116  111  111  105  105  105  100  100
+ambient   89   89   94   94   94   89   89   94   94  100  105  105  111  111  111  105  105  100  100   94   94   94   89   89
+    
+ Entering subroutine UAT03a for day          34
+ambient  100  100  100  100  100   94   94   94   94  100  111  122  122  122  116  111  100   94   88   77   72   61   55   50
+ambient   89   89   89   89   89   83   83   83   83   89  100  111  111  111  105  100   89   83   77   66   61   50   44   39
+    
+ Entering subroutine UAT03a for day          35
+ambient   44   44   44   44   44   44   38   33   44   61   72   77   83   88   77   72   55   44   38   38   44   61   33   33
+ambient   33   33   33   33   33   33   27   22   33   50   61   66   72   77   66   61   44   33   27   27   33   50   22   22
+    
+ Entering subroutine UAT03a for day          36
+ambient   33   33   33   16   22   22   16   16   22   44   55   66   77   77   77   72   61   50   44   38   33   22   27   22
+ambient   22   22   22    5   11   11    5    5   11   33   44   55   66   66   66   61   50   39   33   27   22   11   16   11
+    
+ Entering subroutine UAT03a for day          37
+ambient   22   22   11    5   11    5   -3   -3    0    5   16   27   44   55   66   66   72   55   50   50   50   50   50   50
+ambient   11   11    0   -6    0   -6  -14  -14  -11   -6    5   16   33   44   55   55   61   44   39   39   39   39   39   39
+    
+ Entering subroutine UAT03a for day          38
+ambient   55   55   50   50   50   50   50   50   50   55   55   61   66   72   77   61   44   33   27   22   16   16    5    5
+ambient   44   44   39   39   39   39   39   39   39   44   44   50   55   61   66   50   33   22   16   11    5    5   -6   -6
+    
+ Entering subroutine UAT03a for day          39
+ambient   11   11   11   11   11    5    0    0    5   16   50   66   66   83   66   61   38   33   33   33   33   33   33   33
+ambient    0    0    0    0    0   -6  -11  -11   -6    5   39   55   55   72   55   50   27   22   22   22   22   22   22   22
+    
+ Entering subroutine UAT03a for day          40
+ambient   33   33   22   27   27   22   22   27   33   38   38   44   44   44   44   44   38   38   38   33   33   33   33   38
+ambient   22   22   11   16   16   11   11   16   22   27   27   33   33   33   33   33   27   27   27   22   22   22   22   27
+    
+ Entering subroutine UAT03a for day          41
+ambient   38   33   22   16   16   16   11   11   11   27   38   44   44   44   50   50   44   44   38   38   38   38   38   38
+ambient   27   22   11    5    5    5    0    0    0   16   27   33   33   33   39   39   33   33   27   27   27   27   27   27
+    
+ Entering subroutine UAT03a for day          42
+ambient   38   38   38   38   44   44   44   44   44   50   55   55   61   61   55   50   44   44   38   16   22   22   22   16
+ambient   27   27   27   27   33   33   33   33   33   39   44   44   50   50   44   39   33   33   27    5   11   11   11    5
+    
+ Entering subroutine UAT03a for day          43
+ambient   11   16    5    0    0    0   -3    0   11   27   38   44   50   50   50   44   33   16   16   16   11   11   11   11
+ambient    0    5   -6  -11  -11  -11  -14  -11    0   16   27   33   39   39   39   33   22    5    5    5    0    0    0    0
+    
+ Entering subroutine UAT03a for day          44
+ambient    0   -3   -3  -14   -8   -3    0    0    0   11   16   16   16   11   16    5    5    5    0    0    0    5    5    0
+ambient  -11  -14  -14  -25  -19  -14  -11  -11  -11    0    5    5    5    0    5   -6   -6   -6  -11  -11  -11   -6   -6  -11
+    
+ Entering subroutine UAT03a for day          45
+ambient    0    0   -3  -14  -19  -14   -8    0    0    5   11   16   22   22   22   16   11   11   11   11   16   22   22   22
+ambient  -11  -11  -14  -25  -30  -25  -19  -11  -11   -6    0    5   11   11   11    5    0    0    0    0    5   11   11   11
+    
+ Entering subroutine UAT03a for day          46
+ambient   22   16   11   11   11   11   11   16   16   27   38   50   61   55   55   50   44   44   44   44   50   50   44   38
+ambient   11    5    0    0    0    0    0    5    5   16   27   39   50   44   44   39   33   33   33   33   39   39   33   27
+    
+ Entering subroutine UAT03a for day          47
+ambient   44   44   44   44   38   44   50   50   55   55   61   61   72   66   66   66   66   55   44   44   44   50   50   44
+ambient   33   33   33   33   27   33   39   39   44   44   50   50   61   55   55   55   55   44   33   33   33   39   39   33
+    
+ Entering subroutine UAT03a for day          48
+ambient   38   44   50   44   44   44   44   50   50   50   55   44   44   44   38   38   38   44   38   27   22   16   11   11
+ambient   27   33   39   33   33   33   33   39   39   39   44   33   33   33   27   27   27   33   27   16   11    5    0    0
+    
+ Entering subroutine UAT03a for day          49
+ambient   16   16   16   16   11    5   11    0    5   27   44   61   72   77   83   72   66   61   55   55   50   50   50   55
+ambient    5    5    5    5    0   -6    0  -11   -6   16   33   50   61   66   72   61   55   50   44   44   39   39   39   44
+    
+ Entering subroutine UAT03a for day          50
+ambient   66   72   72   72   66   61   55   61   72   83   94   83   77   94   94   66   61   61   50   61   55   55   55   55
+ambient   55   61   61   61   55   50   44   50   61   72   83   72   66   83   83   55   50   50   39   50   44   44   44   44
+    
+ Entering subroutine UAT03a for day          51
+ambient   50   55   44   44   38   38   44   50   55   66   66   66   66   83   77   72   66   61   55   66   88  111  122  100
+ambient   39   44   33   33   27   27   33   39   44   55   55   55   55   72   66   61   55   50   44   55   77  100  111   89
+    
+ Entering subroutine UAT03a for day          52
+ambient   66   61   55   50   50   50   50   50   50   72   83   88   88   88   77   83   72   61   55   50   44   55   55   55
+ambient   55   50   44   39   39   39   39   39   39   61   72   77   77   77   66   72   61   50   44   39   33   44   44   44
+    
+ Entering subroutine UAT03a for day          53
+ambient   55   61   61   55   55   55   55   61   61   72   77   77   83   72   72   72   77   88   94   94   94   88  100  100
+ambient   44   50   50   44   44   44   44   50   50   61   66   66   72   61   61   61   66   77   83   83   83   77   89   89
+    
+ Entering subroutine UAT03a for day          54
+ambient  105  105  105  100  100   66   50   44   50   61   61   61   55   55   55   61   55   44   44   38   33   33   33   22
+ambient   94   94   94   89   89   55   39   33   39   50   50   50   44   44   44   50   44   33   33   27   22   22   22   11
+    
+ Entering subroutine UAT03a for day          55
+ambient   27   11   11    5    5   11   11   16   33   55   77   77   83   83   83   72   61   50   44   44   44   50   50   50
+ambient   16    0    0   -6   -6    0    0    5   22   44   66   66   72   72   72   61   50   39   33   33   33   39   39   39
+    
+ Entering subroutine UAT03a for day          56
+ambient   44   50   44   50   50   44   44   44   55   61   77   94  100  105  111  105  100   94   88   83   77   72   66   55
+ambient   33   39   33   39   39   33   33   33   44   50   66   83   89   94  100   94   89   83   77   72   66   61   55   44
+    
+ Entering subroutine UAT03a for day          57
+ambient   55   55   61   61   61   66   66   66   77   66   88   88   83   94   88   72   72   61   55   61   50   50   38   33
+ambient   44   44   50   50   50   55   55   55   66   55   77   77   72   83   77   61   61   50   44   50   39   39   27   22
+    
+ Entering subroutine UAT03a for day          58
+ambient   33   27   27   33   27   22   22   27   50   66   77   83   77   77   77   72   72   72   72   72   77   83   94  100
+ambient   22   16   16   22   16   11   11   16   39   55   66   72   66   66   66   61   61   61   61   61   66   72   83   89
+    
+ Entering subroutine UAT03a for day          59
+ambient  100   83   88   88   88   88   61   72   77   83   94  100   88   83   88   83   77   66   55   50   44   44   44   44
+ambient   89   72   77   77   77   77   50   61   66   72   83   89   77   72   77   72   66   55   44   39   33   33   33   33
+ **
+ ** Edits for changes in set:           6
+ **
+ ** Edits for changes in set:           6           4
+ Uncertainty definition            1  altered by    1.11636901    
+ ambient_T:the_zon
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    2.23273802       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+ Uncertainty definition            2  altered by   0.400632232    
+ wind_speed:the_zon
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:    2.23273802       0.00000000       0.00000000       1.04006326       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            3  altered by   0.164365351    
+ ambient_T:the_yea
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   0.328730702       0.00000000       0.00000000       1.04006326       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            4  altered by    1.13625097    
+ wind_speed:the_yea
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   0.328730702       0.00000000       0.00000000       1.11362505       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       2.00000000       0.00000000       0.00000000    
+ ** Edits for changes in set:           6           4
+ ** Edits for changes in set:           6           4
+    
+ Entering subroutine UAT03a for day          11
+ambient   22   22   22   27   33   38   33   27   27   33   44   55   55   55   55   44   44   38   44   33   27   16   16   16
+ambient   25   25   25   30   36   41   36   30   30   36   47   58   58   58   58   47   47   41   47   36   30   19   19   19
+    
+ Entering subroutine UAT03a for day          12
+ambient   16   16   11   11   11   16   16   16   22   22   33   44   44   55   61   61   55   44   38   33   33   33   27   33
+ambient   19   19   14   14   14   19   19   19   25   25   36   47   47   58   64   64   58   47   41   36   36   36   30   36
+    
+ Entering subroutine UAT03a for day          13
+ambient   38   44   50   50   55   61   61   66   66   72   77   77   77   83   88   72   61   61   50   44   33   33   38   33
+ambient   41   47   53   53   58   64   64   69   69   75   80   80   80   86   91   75   64   64   53   47   36   36   41   36
+    
+ Entering subroutine UAT03a for day          14
+ambient   27   27   22   27   27   27   16   11   22   33   44   55   61   61   55   38   33   33   27   22   27   33   33   33
+ambient   30   30   25   30   30   30   19   14   25   36   47   58   64   64   58   41   36   36   30   25   30   36   36   36
+    
+ Entering subroutine UAT03a for day          15
+ambient   27   27   27   22   22   22   22   22   22   22   16   16   16   16   16   11   11    5    5    5    0    0    0    0
+ambient   30   30   30   25   25   25   25   25   25   25   19   19   19   19   19   14   14    8    8    8    3    3    3    3
+    
+ Entering subroutine UAT03a for day          16
+ambient    0    0    0    0    0    5   11   11   11   11   11   16   22   27   27   22   22   16   16   16   16   16   22   22
+ambient    3    3    3    3    3    8   14   14   14   14   14   19   25   30   30   25   25   19   19   19   19   19   25   25
+    
+ Entering subroutine UAT03a for day          17
+ambient   22   22   22   22   22   22   22   22   22   27   33   33   33   33   33   33   33   33   33   33   38   44   50   55
+ambient   25   25   25   25   25   25   25   25   25   30   36   36   36   36   36   36   36   36   36   36   41   47   53   58
+    
+ Entering subroutine UAT03a for day          18
+ambient   55   55   61   61   66   66   66   66   66   72   77   83   83   88   83   88   77   77   83   83   83   83   83   83
+ambient   58   58   64   64   69   69   69   69   69   75   80   86   86   91   86   91   80   80   86   86   86   86   86   86
+    
+ Entering subroutine UAT03a for day          19
+ambient   83   77   77   72   72   72   72   72   72   83   88   94  100  100   94   83   72   66   55   55   55   50   44   55
+ambient   86   80   80   75   75   75   75   75   75   86   91   97  103  103   97   86   75   69   58   58   58   53   47   58
+    
+ Entering subroutine UAT03a for day          20
+ambient   50   50   50   50   44   44   38   44   50   55   66   72   77   77   83   77   72   72   72   72   66   66   66   72
+ambient   53   53   53   53   47   47   41   47   53   58   69   75   80   80   86   80   75   75   75   75   69   69   69   75
+    
+ Entering subroutine UAT03a for day          21
+ambient   72   66   66   72   72   72   72   77   83   77   77   77   77   83   77   72   61   61   55   44   38   22   22   16
+ambient   75   69   69   75   75   75   75   80   86   80   80   80   80   86   80   75   64   64   58   47   41   25   25   19
+    
+ Entering subroutine UAT03a for day          22
+ambient   16   22   27   27   22   16   16   22   16   33   44   61   72   72   72   55   44   44   44   44   44   44   44   50
+ambient   19   25   30   30   25   19   19   25   19   36   47   64   75   75   75   58   47   47   47   47   47   47   47   53
+    
+ Entering subroutine UAT03a for day          23
+ambient   55   50   50   44   44   38   38   44   44   55   55   66   77   77   66   61   50   44   44   44   44   50   50   44
+ambient   58   53   53   47   47   41   41   47   47   58   58   69   80   80   69   64   53   47   47   47   47   53   53   47
+    
+ Entering subroutine UAT03a for day          24
+ambient   50   50   55   55   55   50   55   55   55   61   66   72   77   77   77   72   66   61   66   61   61   55   50   50
+ambient   53   53   58   58   58   53   58   58   58   64   69   75   80   80   80   75   69   64   69   64   64   58   53   53
+    
+ Entering subroutine UAT03a for day          25
+ambient   44   44   44   44   44   44   50   50   55   61   72   83   88   83   88   72   66   61   55   55   55   61   72   77
+ambient   47   47   47   47   47   47   53   53   58   64   75   86   91   86   91   75   69   64   58   58   58   64   75   80
+    
+ Entering subroutine UAT03a for day          26
+ambient   72   72   72   72   66   61   55   55   55   66   66   66   72   72   72   66   55   55   50   44   44   50   55   50
+ambient   75   75   75   75   69   64   58   58   58   69   69   69   75   75   75   69   58   58   53   47   47   53   58   53
+    
+ Entering subroutine UAT03a for day          27
+ambient   44   50   50   55   55   61   61   61   72   77   83   88   94  105  105  100  100   94   94   94  100  100  100  100
+ambient   47   53   53   58   58   64   64   64   75   80   86   91   97  108  108  103  103   97   97   97  103  103  103  103
+    
+ Entering subroutine UAT03a for day          28
+ambient  100  100   94   88   88   88   88   88   88   94  100  105  105  105  100   94   94   94   94   94   94   88   83   77
+ambient  103  103   97   91   91   91   91   91   91   97  103  108  108  108  103   97   97   97   97   97   97   91   86   80
+    
+ Entering subroutine UAT03a for day          29
+ambient   72   72   61   61   61   66   72   83   88   94   88  105  116  127  127  116  100   94   88   88   88   88   83   77
+ambient   75   75   64   64   64   69   75   86   91   97   91  108  119  130  130  119  103   97   91   91   91   91   86   80
+    
+ Entering subroutine UAT03a for day          30
+ambient   77   83   83   77   77   77   77   72   72   83   88   94   94   94   94   88   83   83   72   72   72   72   66   66
+ambient   80   86   86   80   80   80   80   75   75   86   91   97   97   97   97   91   86   86   75   75   75   75   69   69
+    
+ Entering subroutine UAT03a for day          31
+ambient   66   61   61   61   61   66   66   66   66   77   88  100  100  100  100   88   77   72   66   61   61   66   66   66
+ambient   69   64   64   64   64   69   69   69   69   80   91  103  103  103  103   91   80   75   69   64   64   69   69   69
+    
+ Entering subroutine UAT03a for day          32
+ambient   72   66   66   66   66   61   72   77   83   88   88  105  111  116  116  116  111  111  105  105  105  100  100  100
+ambient   75   69   69   69   69   64   75   80   86   91   91  108  114  119  119  119  114  114  108  108  108  103  103  103
+    
+ Entering subroutine UAT03a for day          33
+ambient  100  100  105  105  105  100  100  105  105  111  116  116  122  122  122  116  116  111  111  105  105  105  100  100
+ambient  103  103  108  108  108  103  103  108  108  114  119  119  125  125  125  119  119  114  114  108  108  108  103  103
+    
+ Entering subroutine UAT03a for day          34
+ambient  100  100  100  100  100   94   94   94   94  100  111  122  122  122  116  111  100   94   88   77   72   61   55   50
+ambient  103  103  103  103  103   97   97   97   97  103  114  125  125  125  119  114  103   97   91   80   75   64   58   53
+    
+ Entering subroutine UAT03a for day          35
+ambient   44   44   44   44   44   44   38   33   44   61   72   77   83   88   77   72   55   44   38   38   44   61   33   33
+ambient   47   47   47   47   47   47   41   36   47   64   75   80   86   91   80   75   58   47   41   41   47   64   36   36
+    
+ Entering subroutine UAT03a for day          36
+ambient   33   33   33   16   22   22   16   16   22   44   55   66   77   77   77   72   61   50   44   38   33   22   27   22
+ambient   36   36   36   19   25   25   19   19   25   47   58   69   80   80   80   75   64   53   47   41   36   25   30   25
+    
+ Entering subroutine UAT03a for day          37
+ambient   22   22   11    5   11    5   -3   -3    0    5   16   27   44   55   66   66   72   55   50   50   50   50   50   50
+ambient   25   25   14    8   14    8    0    0    3    8   19   30   47   58   69   69   75   58   53   53   53   53   53   53
+    
+ Entering subroutine UAT03a for day          38
+ambient   55   55   50   50   50   50   50   50   50   55   55   61   66   72   77   61   44   33   27   22   16   16    5    5
+ambient   58   58   53   53   53   53   53   53   53   58   58   64   69   75   80   64   47   36   30   25   19   19    8    8
+    
+ Entering subroutine UAT03a for day          39
+ambient   11   11   11   11   11    5    0    0    5   16   50   66   66   83   66   61   38   33   33   33   33   33   33   33
+ambient   14   14   14   14   14    8    3    3    8   19   53   69   69   86   69   64   41   36   36   36   36   36   36   36
+    
+ Entering subroutine UAT03a for day          40
+ambient   33   33   22   27   27   22   22   27   33   38   38   44   44   44   44   44   38   38   38   33   33   33   33   38
+ambient   36   36   25   30   30   25   25   30   36   41   41   47   47   47   47   47   41   41   41   36   36   36   36   41
+    
+ Entering subroutine UAT03a for day          41
+ambient   38   33   22   16   16   16   11   11   11   27   38   44   44   44   50   50   44   44   38   38   38   38   38   38
+ambient   41   36   25   19   19   19   14   14   14   30   41   47   47   47   53   53   47   47   41   41   41   41   41   41
+    
+ Entering subroutine UAT03a for day          42
+ambient   38   38   38   38   44   44   44   44   44   50   55   55   61   61   55   50   44   44   38   16   22   22   22   16
+ambient   41   41   41   41   47   47   47   47   47   53   58   58   64   64   58   53   47   47   41   19   25   25   25   19
+    
+ Entering subroutine UAT03a for day          43
+ambient   11   16    5    0    0    0   -3    0   11   27   38   44   50   50   50   44   33   16   16   16   11   11   11   11
+ambient   14   19    8    3    3    3    0    3   14   30   41   47   53   53   53   47   36   19   19   19   14   14   14   14
+    
+ Entering subroutine UAT03a for day          44
+ambient    0   -3   -3  -14   -8   -3    0    0    0   11   16   16   16   11   16    5    5    5    0    0    0    5    5    0
+ambient    3    0    0  -11   -5    0    3    3    3   14   19   19   19   14   19    8    8    8    3    3    3    8    8    3
+    
+ Entering subroutine UAT03a for day          45
+ambient    0    0   -3  -14  -19  -14   -8    0    0    5   11   16   22   22   22   16   11   11   11   11   16   22   22   22
+ambient    3    3    0  -11  -16  -11   -5    3    3    8   14   19   25   25   25   19   14   14   14   14   19   25   25   25
+    
+ Entering subroutine UAT03a for day          46
+ambient   22   16   11   11   11   11   11   16   16   27   38   50   61   55   55   50   44   44   44   44   50   50   44   38
+ambient   25   19   14   14   14   14   14   19   19   30   41   53   64   58   58   53   47   47   47   47   53   53   47   41
+    
+ Entering subroutine UAT03a for day          47
+ambient   44   44   44   44   38   44   50   50   55   55   61   61   72   66   66   66   66   55   44   44   44   50   50   44
+ambient   47   47   47   47   41   47   53   53   58   58   64   64   75   69   69   69   69   58   47   47   47   53   53   47
+    
+ Entering subroutine UAT03a for day          48
+ambient   38   44   50   44   44   44   44   50   50   50   55   44   44   44   38   38   38   44   38   27   22   16   11   11
+ambient   41   47   53   47   47   47   47   53   53   53   58   47   47   47   41   41   41   47   41   30   25   19   14   14
+    
+ Entering subroutine UAT03a for day          49
+ambient   16   16   16   16   11    5   11    0    5   27   44   61   72   77   83   72   66   61   55   55   50   50   50   55
+ambient   19   19   19   19   14    8   14    3    8   30   47   64   75   80   86   75   69   64   58   58   53   53   53   58
+    
+ Entering subroutine UAT03a for day          50
+ambient   66   72   72   72   66   61   55   61   72   83   94   83   77   94   94   66   61   61   50   61   55   55   55   55
+ambient   69   75   75   75   69   64   58   64   75   86   97   86   80   97   97   69   64   64   53   64   58   58   58   58
+    
+ Entering subroutine UAT03a for day          51
+ambient   50   55   44   44   38   38   44   50   55   66   66   66   66   83   77   72   66   61   55   66   88  111  122  100
+ambient   53   58   47   47   41   41   47   53   58   69   69   69   69   86   80   75   69   64   58   69   91  114  125  103
+    
+ Entering subroutine UAT03a for day          52
+ambient   66   61   55   50   50   50   50   50   50   72   83   88   88   88   77   83   72   61   55   50   44   55   55   55
+ambient   69   64   58   53   53   53   53   53   53   75   86   91   91   91   80   86   75   64   58   53   47   58   58   58
+    
+ Entering subroutine UAT03a for day          53
+ambient   55   61   61   55   55   55   55   61   61   72   77   77   83   72   72   72   77   88   94   94   94   88  100  100
+ambient   58   64   64   58   58   58   58   64   64   75   80   80   86   75   75   75   80   91   97   97   97   91  103  103
+    
+ Entering subroutine UAT03a for day          54
+ambient  105  105  105  100  100   66   50   44   50   61   61   61   55   55   55   61   55   44   44   38   33   33   33   22
+ambient  108  108  108  103  103   69   53   47   53   64   64   64   58   58   58   64   58   47   47   41   36   36   36   25
+    
+ Entering subroutine UAT03a for day          55
+ambient   27   11   11    5    5   11   11   16   33   55   77   77   83   83   83   72   61   50   44   44   44   50   50   50
+ambient   30   14   14    8    8   14   14   19   36   58   80   80   86   86   86   75   64   53   47   47   47   53   53   53
+    
+ Entering subroutine UAT03a for day          56
+ambient   44   50   44   50   50   44   44   44   55   61   77   94  100  105  111  105  100   94   88   83   77   72   66   55
+ambient   47   53   47   53   53   47   47   47   58   64   80   97  103  108  114  108  103   97   91   86   80   75   69   58
+    
+ Entering subroutine UAT03a for day          57
+ambient   55   55   61   61   61   66   66   66   77   66   88   88   83   94   88   72   72   61   55   61   50   50   38   33
+ambient   58   58   64   64   64   69   69   69   80   69   91   91   86   97   91   75   75   64   58   64   53   53   41   36
+    
+ Entering subroutine UAT03a for day          58
+ambient   33   27   27   33   27   22   22   27   50   66   77   83   77   77   77   72   72   72   72   72   77   83   94  100
+ambient   36   30   30   36   30   25   25   30   53   69   80   86   80   80   80   75   75   75   75   75   80   86   97  103
+    
+ Entering subroutine UAT03a for day          59
+ambient  100   83   88   88   88   88   61   72   77   83   94  100   88   83   88   83   77   66   55   50   44   44   44   44
+ambient  103   86   91   91   91   91   64   75   80   86   97  103   91   86   91   86   80   69   58   53   47   47   47   47
+ **
+ ** Edits for changes in set:           7
+ **
+ ** Edits for changes in set:           7           4
+ Uncertainty definition            1  altered by    1.30890656    
+ ambient_T:the_zon
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    2.61781311       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+ Uncertainty definition            2  altered by  -0.254545033    
+ wind_speed:the_zon
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:    2.61781311       0.00000000       0.00000000      0.974545479       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            3  altered by    2.11562300    
+ ambient_T:the_yea
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:    4.23124599       0.00000000       0.00000000      0.974545479       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            4  altered by  -0.206838593    
+ wind_speed:the_yea
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:    4.23124599       0.00000000       0.00000000      0.979316115       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       2.00000000       0.00000000       0.00000000    
+ ** Edits for changes in set:           7           4
+ ** Edits for changes in set:           7           4
+    
+ Entering subroutine UAT03a for day          11
+ambient   22   22   22   27   33   38   33   27   27   33   44   55   55   55   55   44   44   38   44   33   27   16   16   16
+ambient   64   64   64   69   75   80   75   69   69   75   86   97   97   97   97   86   86   80   86   75   69   58   58   58
+    
+ Entering subroutine UAT03a for day          12
+ambient   16   16   11   11   11   16   16   16   22   22   33   44   44   55   61   61   55   44   38   33   33   33   27   33
+ambient   58   58   53   53   53   58   58   58   64   64   75   86   86   97  103  103   97   86   80   75   75   75   69   75
+    
+ Entering subroutine UAT03a for day          13
+ambient   38   44   50   50   55   61   61   66   66   72   77   77   77   83   88   72   61   61   50   44   33   33   38   33
+ambient   80   86   92   92   97  103  103  108  108  114  119  119  119  125  130  114  103  103   92   86   75   75   80   75
+    
+ Entering subroutine UAT03a for day          14
+ambient   27   27   22   27   27   27   16   11   22   33   44   55   61   61   55   38   33   33   27   22   27   33   33   33
+ambient   69   69   64   69   69   69   58   53   64   75   86   97  103  103   97   80   75   75   69   64   69   75   75   75
+    
+ Entering subroutine UAT03a for day          15
+ambient   27   27   27   22   22   22   22   22   22   22   16   16   16   16   16   11   11    5    5    5    0    0    0    0
+ambient   69   69   69   64   64   64   64   64   64   64   58   58   58   58   58   53   53   47   47   47   42   42   42   42
+    
+ Entering subroutine UAT03a for day          16
+ambient    0    0    0    0    0    5   11   11   11   11   11   16   22   27   27   22   22   16   16   16   16   16   22   22
+ambient   42   42   42   42   42   47   53   53   53   53   53   58   64   69   69   64   64   58   58   58   58   58   64   64
+    
+ Entering subroutine UAT03a for day          17
+ambient   22   22   22   22   22   22   22   22   22   27   33   33   33   33   33   33   33   33   33   33   38   44   50   55
+ambient   64   64   64   64   64   64   64   64   64   69   75   75   75   75   75   75   75   75   75   75   80   86   92   97
+    
+ Entering subroutine UAT03a for day          18
+ambient   55   55   61   61   66   66   66   66   66   72   77   83   83   88   83   88   77   77   83   83   83   83   83   83
+ambient   97   97  103  103  108  108  108  108  108  114  119  125  125  130  125  130  119  119  125  125  125  125  125  125
+    
+ Entering subroutine UAT03a for day          19
+ambient   83   77   77   72   72   72   72   72   72   83   88   94  100  100   94   83   72   66   55   55   55   50   44   55
+ambient  125  119  119  114  114  114  114  114  114  125  130  136  142  142  136  125  114  108   97   97   97   92   86   97
+    
+ Entering subroutine UAT03a for day          20
+ambient   50   50   50   50   44   44   38   44   50   55   66   72   77   77   83   77   72   72   72   72   66   66   66   72
+ambient   92   92   92   92   86   86   80   86   92   97  108  114  119  119  125  119  114  114  114  114  108  108  108  114
+    
+ Entering subroutine UAT03a for day          21
+ambient   72   66   66   72   72   72   72   77   83   77   77   77   77   83   77   72   61   61   55   44   38   22   22   16
+ambient  114  108  108  114  114  114  114  119  125  119  119  119  119  125  119  114  103  103   97   86   80   64   64   58
+    
+ Entering subroutine UAT03a for day          22
+ambient   16   22   27   27   22   16   16   22   16   33   44   61   72   72   72   55   44   44   44   44   44   44   44   50
+ambient   58   64   69   69   64   58   58   64   58   75   86  103  114  114  114   97   86   86   86   86   86   86   86   92
+    
+ Entering subroutine UAT03a for day          23
+ambient   55   50   50   44   44   38   38   44   44   55   55   66   77   77   66   61   50   44   44   44   44   50   50   44
+ambient   97   92   92   86   86   80   80   86   86   97   97  108  119  119  108  103   92   86   86   86   86   92   92   86
+    
+ Entering subroutine UAT03a for day          24
+ambient   50   50   55   55   55   50   55   55   55   61   66   72   77   77   77   72   66   61   66   61   61   55   50   50
+ambient   92   92   97   97   97   92   97   97   97  103  108  114  119  119  119  114  108  103  108  103  103   97   92   92
+    
+ Entering subroutine UAT03a for day          25
+ambient   44   44   44   44   44   44   50   50   55   61   72   83   88   83   88   72   66   61   55   55   55   61   72   77
+ambient   86   86   86   86   86   86   92   92   97  103  114  125  130  125  130  114  108  103   97   97   97  103  114  119
+    
+ Entering subroutine UAT03a for day          26
+ambient   72   72   72   72   66   61   55   55   55   66   66   66   72   72   72   66   55   55   50   44   44   50   55   50
+ambient  114  114  114  114  108  103   97   97   97  108  108  108  114  114  114  108   97   97   92   86   86   92   97   92
+    
+ Entering subroutine UAT03a for day          27
+ambient   44   50   50   55   55   61   61   61   72   77   83   88   94  105  105  100  100   94   94   94  100  100  100  100
+ambient   86   92   92   97   97  103  103  103  114  119  125  130  136  147  147  142  142  136  136  136  142  142  142  142
+    
+ Entering subroutine UAT03a for day          28
+ambient  100  100   94   88   88   88   88   88   88   94  100  105  105  105  100   94   94   94   94   94   94   88   83   77
+ambient  142  142  136  130  130  130  130  130  130  136  142  147  147  147  142  136  136  136  136  136  136  130  125  119
+    
+ Entering subroutine UAT03a for day          29
+ambient   72   72   61   61   61   66   72   83   88   94   88  105  116  127  127  116  100   94   88   88   88   88   83   77
+ambient  114  114  103  103  103  108  114  125  130  136  130  147  158  169  169  158  142  136  130  130  130  130  125  119
+    
+ Entering subroutine UAT03a for day          30
+ambient   77   83   83   77   77   77   77   72   72   83   88   94   94   94   94   88   83   83   72   72   72   72   66   66
+ambient  119  125  125  119  119  119  119  114  114  125  130  136  136  136  136  130  125  125  114  114  114  114  108  108
+    
+ Entering subroutine UAT03a for day          31
+ambient   66   61   61   61   61   66   66   66   66   77   88  100  100  100  100   88   77   72   66   61   61   66   66   66
+ambient  108  103  103  103  103  108  108  108  108  119  130  142  142  142  142  130  119  114  108  103  103  108  108  108
+    
+ Entering subroutine UAT03a for day          32
+ambient   72   66   66   66   66   61   72   77   83   88   88  105  111  116  116  116  111  111  105  105  105  100  100  100
+ambient  114  108  108  108  108  103  114  119  125  130  130  147  153  158  158  158  153  153  147  147  147  142  142  142
+    
+ Entering subroutine UAT03a for day          33
+ambient  100  100  105  105  105  100  100  105  105  111  116  116  122  122  122  116  116  111  111  105  105  105  100  100
+ambient  142  142  147  147  147  142  142  147  147  153  158  158  164  164  164  158  158  153  153  147  147  147  142  142
+    
+ Entering subroutine UAT03a for day          34
+ambient  100  100  100  100  100   94   94   94   94  100  111  122  122  122  116  111  100   94   88   77   72   61   55   50
+ambient  142  142  142  142  142  136  136  136  136  142  153  164  164  164  158  153  142  136  130  119  114  103   97   92
+    
+ Entering subroutine UAT03a for day          35
+ambient   44   44   44   44   44   44   38   33   44   61   72   77   83   88   77   72   55   44   38   38   44   61   33   33
+ambient   86   86   86   86   86   86   80   75   86  103  114  119  125  130  119  114   97   86   80   80   86  103   75   75
+    
+ Entering subroutine UAT03a for day          36
+ambient   33   33   33   16   22   22   16   16   22   44   55   66   77   77   77   72   61   50   44   38   33   22   27   22
+ambient   75   75   75   58   64   64   58   58   64   86   97  108  119  119  119  114  103   92   86   80   75   64   69   64
+    
+ Entering subroutine UAT03a for day          37
+ambient   22   22   11    5   11    5   -3   -3    0    5   16   27   44   55   66   66   72   55   50   50   50   50   50   50
+ambient   64   64   53   47   53   47   39   39   42   47   58   69   86   97  108  108  114   97   92   92   92   92   92   92
+    
+ Entering subroutine UAT03a for day          38
+ambient   55   55   50   50   50   50   50   50   50   55   55   61   66   72   77   61   44   33   27   22   16   16    5    5
+ambient   97   97   92   92   92   92   92   92   92   97   97  103  108  114  119  103   86   75   69   64   58   58   47   47
+    
+ Entering subroutine UAT03a for day          39
+ambient   11   11   11   11   11    5    0    0    5   16   50   66   66   83   66   61   38   33   33   33   33   33   33   33
+ambient   53   53   53   53   53   47   42   42   47   58   92  108  108  125  108  103   80   75   75   75   75   75   75   75
+    
+ Entering subroutine UAT03a for day          40
+ambient   33   33   22   27   27   22   22   27   33   38   38   44   44   44   44   44   38   38   38   33   33   33   33   38
+ambient   75   75   64   69   69   64   64   69   75   80   80   86   86   86   86   86   80   80   80   75   75   75   75   80
+    
+ Entering subroutine UAT03a for day          41
+ambient   38   33   22   16   16   16   11   11   11   27   38   44   44   44   50   50   44   44   38   38   38   38   38   38
+ambient   80   75   64   58   58   58   53   53   53   69   80   86   86   86   92   92   86   86   80   80   80   80   80   80
+    
+ Entering subroutine UAT03a for day          42
+ambient   38   38   38   38   44   44   44   44   44   50   55   55   61   61   55   50   44   44   38   16   22   22   22   16
+ambient   80   80   80   80   86   86   86   86   86   92   97   97  103  103   97   92   86   86   80   58   64   64   64   58
+    
+ Entering subroutine UAT03a for day          43
+ambient   11   16    5    0    0    0   -3    0   11   27   38   44   50   50   50   44   33   16   16   16   11   11   11   11
+ambient   53   58   47   42   42   42   39   42   53   69   80   86   92   92   92   86   75   58   58   58   53   53   53   53
+    
+ Entering subroutine UAT03a for day          44
+ambient    0   -3   -3  -14   -8   -3    0    0    0   11   16   16   16   11   16    5    5    5    0    0    0    5    5    0
+ambient   42   39   39   28   34   39   42   42   42   53   58   58   58   53   58   47   47   47   42   42   42   47   47   42
+    
+ Entering subroutine UAT03a for day          45
+ambient    0    0   -3  -14  -19  -14   -8    0    0    5   11   16   22   22   22   16   11   11   11   11   16   22   22   22
+ambient   42   42   39   28   23   28   34   42   42   47   53   58   64   64   64   58   53   53   53   53   58   64   64   64
+    
+ Entering subroutine UAT03a for day          46
+ambient   22   16   11   11   11   11   11   16   16   27   38   50   61   55   55   50   44   44   44   44   50   50   44   38
+ambient   64   58   53   53   53   53   53   58   58   69   80   92  103   97   97   92   86   86   86   86   92   92   86   80
+    
+ Entering subroutine UAT03a for day          47
+ambient   44   44   44   44   38   44   50   50   55   55   61   61   72   66   66   66   66   55   44   44   44   50   50   44
+ambient   86   86   86   86   80   86   92   92   97   97  103  103  114  108  108  108  108   97   86   86   86   92   92   86
+    
+ Entering subroutine UAT03a for day          48
+ambient   38   44   50   44   44   44   44   50   50   50   55   44   44   44   38   38   38   44   38   27   22   16   11   11
+ambient   80   86   92   86   86   86   86   92   92   92   97   86   86   86   80   80   80   86   80   69   64   58   53   53
+    
+ Entering subroutine UAT03a for day          49
+ambient   16   16   16   16   11    5   11    0    5   27   44   61   72   77   83   72   66   61   55   55   50   50   50   55
+ambient   58   58   58   58   53   47   53   42   47   69   86  103  114  119  125  114  108  103   97   97   92   92   92   97
+    
+ Entering subroutine UAT03a for day          50
+ambient   66   72   72   72   66   61   55   61   72   83   94   83   77   94   94   66   61   61   50   61   55   55   55   55
+ambient  108  114  114  114  108  103   97  103  114  125  136  125  119  136  136  108  103  103   92  103   97   97   97   97
+    
+ Entering subroutine UAT03a for day          51
+ambient   50   55   44   44   38   38   44   50   55   66   66   66   66   83   77   72   66   61   55   66   88  111  122  100
+ambient   92   97   86   86   80   80   86   92   97  108  108  108  108  125  119  114  108  103   97  108  130  153  164  142
+    
+ Entering subroutine UAT03a for day          52
+ambient   66   61   55   50   50   50   50   50   50   72   83   88   88   88   77   83   72   61   55   50   44   55   55   55
+ambient  108  103   97   92   92   92   92   92   92  114  125  130  130  130  119  125  114  103   97   92   86   97   97   97
+    
+ Entering subroutine UAT03a for day          53
+ambient   55   61   61   55   55   55   55   61   61   72   77   77   83   72   72   72   77   88   94   94   94   88  100  100
+ambient   97  103  103   97   97   97   97  103  103  114  119  119  125  114  114  114  119  130  136  136  136  130  142  142
+    
+ Entering subroutine UAT03a for day          54
+ambient  105  105  105  100  100   66   50   44   50   61   61   61   55   55   55   61   55   44   44   38   33   33   33   22
+ambient  147  147  147  142  142  108   92   86   92  103  103  103   97   97   97  103   97   86   86   80   75   75   75   64
+    
+ Entering subroutine UAT03a for day          55
+ambient   27   11   11    5    5   11   11   16   33   55   77   77   83   83   83   72   61   50   44   44   44   50   50   50
+ambient   69   53   53   47   47   53   53   58   75   97  119  119  125  125  125  114  103   92   86   86   86   92   92   92
+    
+ Entering subroutine UAT03a for day          56
+ambient   44   50   44   50   50   44   44   44   55   61   77   94  100  105  111  105  100   94   88   83   77   72   66   55
+ambient   86   92   86   92   92   86   86   86   97  103  119  136  142  147  153  147  142  136  130  125  119  114  108   97
+    
+ Entering subroutine UAT03a for day          57
+ambient   55   55   61   61   61   66   66   66   77   66   88   88   83   94   88   72   72   61   55   61   50   50   38   33
+ambient   97   97  103  103  103  108  108  108  119  108  130  130  125  136  130  114  114  103   97  103   92   92   80   75
+    
+ Entering subroutine UAT03a for day          58
+ambient   33   27   27   33   27   22   22   27   50   66   77   83   77   77   77   72   72   72   72   72   77   83   94  100
+ambient   75   69   69   75   69   64   64   69   92  108  119  125  119  119  119  114  114  114  114  114  119  125  136  142
+    
+ Entering subroutine UAT03a for day          59
+ambient  100   83   88   88   88   88   61   72   77   83   94  100   88   83   88   83   77   66   55   50   44   44   44   44
+ambient  142  125  130  130  130  130  103  114  119  125  136  142  130  125  130  125  119  108   97   92   86   86   86   86
+ **
+ ** Edits for changes in set:           8
+ **
+ ** Edits for changes in set:           8           4
+ Uncertainty definition            1  altered by   0.699488401    
+ ambient_T:the_zon
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    1.39897680       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+ Uncertainty definition            2  altered by    1.49649227    
+ wind_speed:the_zon
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:    1.39897680       0.00000000       0.00000000       1.14964926       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            3  altered by   -1.35871387    
+ ambient_T:the_yea
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -2.71742773       0.00000000       0.00000000       1.14964926       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            4  altered by   0.999149978    
+ wind_speed:the_yea
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -2.71742773       0.00000000       0.00000000       1.09991503       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       2.00000000       0.00000000       0.00000000    
+ ** Edits for changes in set:           8           4
+ ** Edits for changes in set:           8           4
+    
+ Entering subroutine UAT03a for day          11
+ambient   22   22   22   27   33   38   33   27   27   33   44   55   55   55   55   44   44   38   44   33   27   16   16   16
+ambient   -5   -5   -5    0    6   11    6    0    0    6   17   28   28   28   28   17   17   11   17    6    0  -11  -11  -11
+    
+ Entering subroutine UAT03a for day          12
+ambient   16   16   11   11   11   16   16   16   22   22   33   44   44   55   61   61   55   44   38   33   33   33   27   33
+ambient  -11  -11  -16  -16  -16  -11  -11  -11   -5   -5    6   17   17   28   34   34   28   17   11    6    6    6    0    6
+    
+ Entering subroutine UAT03a for day          13
+ambient   38   44   50   50   55   61   61   66   66   72   77   77   77   83   88   72   61   61   50   44   33   33   38   33
+ambient   11   17   23   23   28   34   34   39   39   45   50   50   50   56   61   45   34   34   23   17    6    6   11    6
+    
+ Entering subroutine UAT03a for day          14
+ambient   27   27   22   27   27   27   16   11   22   33   44   55   61   61   55   38   33   33   27   22   27   33   33   33
+ambient    0    0   -5    0    0    0  -11  -16   -5    6   17   28   34   34   28   11    6    6    0   -5    0    6    6    6
+    
+ Entering subroutine UAT03a for day          15
+ambient   27   27   27   22   22   22   22   22   22   22   16   16   16   16   16   11   11    5    5    5    0    0    0    0
+ambient    0    0    0   -5   -5   -5   -5   -5   -5   -5  -11  -11  -11  -11  -11  -16  -16  -22  -22  -22  -27  -27  -27  -27
+    
+ Entering subroutine UAT03a for day          16
+ambient    0    0    0    0    0    5   11   11   11   11   11   16   22   27   27   22   22   16   16   16   16   16   22   22
+ambient  -27  -27  -27  -27  -27  -22  -16  -16  -16  -16  -16  -11   -5    0    0   -5   -5  -11  -11  -11  -11  -11   -5   -5
+    
+ Entering subroutine UAT03a for day          17
+ambient   22   22   22   22   22   22   22   22   22   27   33   33   33   33   33   33   33   33   33   33   38   44   50   55
+ambient   -5   -5   -5   -5   -5   -5   -5   -5   -5    0    6    6    6    6    6    6    6    6    6    6   11   17   23   28
+    
+ Entering subroutine UAT03a for day          18
+ambient   55   55   61   61   66   66   66   66   66   72   77   83   83   88   83   88   77   77   83   83   83   83   83   83
+ambient   28   28   34   34   39   39   39   39   39   45   50   56   56   61   56   61   50   50   56   56   56   56   56   56
+    
+ Entering subroutine UAT03a for day          19
+ambient   83   77   77   72   72   72   72   72   72   83   88   94  100  100   94   83   72   66   55   55   55   50   44   55
+ambient   56   50   50   45   45   45   45   45   45   56   61   67   73   73   67   56   45   39   28   28   28   23   17   28
+    
+ Entering subroutine UAT03a for day          20
+ambient   50   50   50   50   44   44   38   44   50   55   66   72   77   77   83   77   72   72   72   72   66   66   66   72
+ambient   23   23   23   23   17   17   11   17   23   28   39   45   50   50   56   50   45   45   45   45   39   39   39   45
+    
+ Entering subroutine UAT03a for day          21
+ambient   72   66   66   72   72   72   72   77   83   77   77   77   77   83   77   72   61   61   55   44   38   22   22   16
+ambient   45   39   39   45   45   45   45   50   56   50   50   50   50   56   50   45   34   34   28   17   11   -5   -5  -11
+    
+ Entering subroutine UAT03a for day          22
+ambient   16   22   27   27   22   16   16   22   16   33   44   61   72   72   72   55   44   44   44   44   44   44   44   50
+ambient  -11   -5    0    0   -5  -11  -11   -5  -11    6   17   34   45   45   45   28   17   17   17   17   17   17   17   23
+    
+ Entering subroutine UAT03a for day          23
+ambient   55   50   50   44   44   38   38   44   44   55   55   66   77   77   66   61   50   44   44   44   44   50   50   44
+ambient   28   23   23   17   17   11   11   17   17   28   28   39   50   50   39   34   23   17   17   17   17   23   23   17
+    
+ Entering subroutine UAT03a for day          24
+ambient   50   50   55   55   55   50   55   55   55   61   66   72   77   77   77   72   66   61   66   61   61   55   50   50
+ambient   23   23   28   28   28   23   28   28   28   34   39   45   50   50   50   45   39   34   39   34   34   28   23   23
+    
+ Entering subroutine UAT03a for day          25
+ambient   44   44   44   44   44   44   50   50   55   61   72   83   88   83   88   72   66   61   55   55   55   61   72   77
+ambient   17   17   17   17   17   17   23   23   28   34   45   56   61   56   61   45   39   34   28   28   28   34   45   50
+    
+ Entering subroutine UAT03a for day          26
+ambient   72   72   72   72   66   61   55   55   55   66   66   66   72   72   72   66   55   55   50   44   44   50   55   50
+ambient   45   45   45   45   39   34   28   28   28   39   39   39   45   45   45   39   28   28   23   17   17   23   28   23
+    
+ Entering subroutine UAT03a for day          27
+ambient   44   50   50   55   55   61   61   61   72   77   83   88   94  105  105  100  100   94   94   94  100  100  100  100
+ambient   17   23   23   28   28   34   34   34   45   50   56   61   67   78   78   73   73   67   67   67   73   73   73   73
+    
+ Entering subroutine UAT03a for day          28
+ambient  100  100   94   88   88   88   88   88   88   94  100  105  105  105  100   94   94   94   94   94   94   88   83   77
+ambient   73   73   67   61   61   61   61   61   61   67   73   78   78   78   73   67   67   67   67   67   67   61   56   50
+    
+ Entering subroutine UAT03a for day          29
+ambient   72   72   61   61   61   66   72   83   88   94   88  105  116  127  127  116  100   94   88   88   88   88   83   77
+ambient   45   45   34   34   34   39   45   56   61   67   61   78   89  100  100   89   73   67   61   61   61   61   56   50
+    
+ Entering subroutine UAT03a for day          30
+ambient   77   83   83   77   77   77   77   72   72   83   88   94   94   94   94   88   83   83   72   72   72   72   66   66
+ambient   50   56   56   50   50   50   50   45   45   56   61   67   67   67   67   61   56   56   45   45   45   45   39   39
+    
+ Entering subroutine UAT03a for day          31
+ambient   66   61   61   61   61   66   66   66   66   77   88  100  100  100  100   88   77   72   66   61   61   66   66   66
+ambient   39   34   34   34   34   39   39   39   39   50   61   73   73   73   73   61   50   45   39   34   34   39   39   39
+    
+ Entering subroutine UAT03a for day          32
+ambient   72   66   66   66   66   61   72   77   83   88   88  105  111  116  116  116  111  111  105  105  105  100  100  100
+ambient   45   39   39   39   39   34   45   50   56   61   61   78   84   89   89   89   84   84   78   78   78   73   73   73
+    
+ Entering subroutine UAT03a for day          33
+ambient  100  100  105  105  105  100  100  105  105  111  116  116  122  122  122  116  116  111  111  105  105  105  100  100
+ambient   73   73   78   78   78   73   73   78   78   84   89   89   95   95   95   89   89   84   84   78   78   78   73   73
+    
+ Entering subroutine UAT03a for day          34
+ambient  100  100  100  100  100   94   94   94   94  100  111  122  122  122  116  111  100   94   88   77   72   61   55   50
+ambient   73   73   73   73   73   67   67   67   67   73   84   95   95   95   89   84   73   67   61   50   45   34   28   23
+    
+ Entering subroutine UAT03a for day          35
+ambient   44   44   44   44   44   44   38   33   44   61   72   77   83   88   77   72   55   44   38   38   44   61   33   33
+ambient   17   17   17   17   17   17   11    6   17   34   45   50   56   61   50   45   28   17   11   11   17   34    6    6
+    
+ Entering subroutine UAT03a for day          36
+ambient   33   33   33   16   22   22   16   16   22   44   55   66   77   77   77   72   61   50   44   38   33   22   27   22
+ambient    6    6    6  -11   -5   -5  -11  -11   -5   17   28   39   50   50   50   45   34   23   17   11    6   -5    0   -5
+    
+ Entering subroutine UAT03a for day          37
+ambient   22   22   11    5   11    5   -3   -3    0    5   16   27   44   55   66   66   72   55   50   50   50   50   50   50
+ambient   -5   -5  -16  -22  -16  -22  -30  -30  -27  -22  -11    0   17   28   39   39   45   28   23   23   23   23   23   23
+    
+ Entering subroutine UAT03a for day          38
+ambient   55   55   50   50   50   50   50   50   50   55   55   61   66   72   77   61   44   33   27   22   16   16    5    5
+ambient   28   28   23   23   23   23   23   23   23   28   28   34   39   45   50   34   17    6    0   -5  -11  -11  -22  -22
+    
+ Entering subroutine UAT03a for day          39
+ambient   11   11   11   11   11    5    0    0    5   16   50   66   66   83   66   61   38   33   33   33   33   33   33   33
+ambient  -16  -16  -16  -16  -16  -22  -27  -27  -22  -11   23   39   39   56   39   34   11    6    6    6    6    6    6    6
+    
+ Entering subroutine UAT03a for day          40
+ambient   33   33   22   27   27   22   22   27   33   38   38   44   44   44   44   44   38   38   38   33   33   33   33   38
+ambient    6    6   -5    0    0   -5   -5    0    6   11   11   17   17   17   17   17   11   11   11    6    6    6    6   11
+    
+ Entering subroutine UAT03a for day          41
+ambient   38   33   22   16   16   16   11   11   11   27   38   44   44   44   50   50   44   44   38   38   38   38   38   38
+ambient   11    6   -5  -11  -11  -11  -16  -16  -16    0   11   17   17   17   23   23   17   17   11   11   11   11   11   11
+    
+ Entering subroutine UAT03a for day          42
+ambient   38   38   38   38   44   44   44   44   44   50   55   55   61   61   55   50   44   44   38   16   22   22   22   16
+ambient   11   11   11   11   17   17   17   17   17   23   28   28   34   34   28   23   17   17   11  -11   -5   -5   -5  -11
+    
+ Entering subroutine UAT03a for day          43
+ambient   11   16    5    0    0    0   -3    0   11   27   38   44   50   50   50   44   33   16   16   16   11   11   11   11
+ambient  -16  -11  -22  -27  -27  -27  -30  -27  -16    0   11   17   23   23   23   17    6  -11  -11  -11  -16  -16  -16  -16
+    
+ Entering subroutine UAT03a for day          44
+ambient    0   -3   -3  -14   -8   -3    0    0    0   11   16   16   16   11   16    5    5    5    0    0    0    5    5    0
+ambient  -27  -30  -30  -41  -35  -30  -27  -27  -27  -16  -11  -11  -11  -16  -11  -22  -22  -22  -27  -27  -27  -22  -22  -27
+    
+ Entering subroutine UAT03a for day          45
+ambient    0    0   -3  -14  -19  -14   -8    0    0    5   11   16   22   22   22   16   11   11   11   11   16   22   22   22
+ambient  -27  -27  -30  -41  -46  -41  -35  -27  -27  -22  -16  -11   -5   -5   -5  -11  -16  -16  -16  -16  -11   -5   -5   -5
+    
+ Entering subroutine UAT03a for day          46
+ambient   22   16   11   11   11   11   11   16   16   27   38   50   61   55   55   50   44   44   44   44   50   50   44   38
+ambient   -5  -11  -16  -16  -16  -16  -16  -11  -11    0   11   23   34   28   28   23   17   17   17   17   23   23   17   11
+    
+ Entering subroutine UAT03a for day          47
+ambient   44   44   44   44   38   44   50   50   55   55   61   61   72   66   66   66   66   55   44   44   44   50   50   44
+ambient   17   17   17   17   11   17   23   23   28   28   34   34   45   39   39   39   39   28   17   17   17   23   23   17
+    
+ Entering subroutine UAT03a for day          48
+ambient   38   44   50   44   44   44   44   50   50   50   55   44   44   44   38   38   38   44   38   27   22   16   11   11
+ambient   11   17   23   17   17   17   17   23   23   23   28   17   17   17   11   11   11   17   11    0   -5  -11  -16  -16
+    
+ Entering subroutine UAT03a for day          49
+ambient   16   16   16   16   11    5   11    0    5   27   44   61   72   77   83   72   66   61   55   55   50   50   50   55
+ambient  -11  -11  -11  -11  -16  -22  -16  -27  -22    0   17   34   45   50   56   45   39   34   28   28   23   23   23   28
+    
+ Entering subroutine UAT03a for day          50
+ambient   66   72   72   72   66   61   55   61   72   83   94   83   77   94   94   66   61   61   50   61   55   55   55   55
+ambient   39   45   45   45   39   34   28   34   45   56   67   56   50   67   67   39   34   34   23   34   28   28   28   28
+    
+ Entering subroutine UAT03a for day          51
+ambient   50   55   44   44   38   38   44   50   55   66   66   66   66   83   77   72   66   61   55   66   88  111  122  100
+ambient   23   28   17   17   11   11   17   23   28   39   39   39   39   56   50   45   39   34   28   39   61   84   95   73
+    
+ Entering subroutine UAT03a for day          52
+ambient   66   61   55   50   50   50   50   50   50   72   83   88   88   88   77   83   72   61   55   50   44   55   55   55
+ambient   39   34   28   23   23   23   23   23   23   45   56   61   61   61   50   56   45   34   28   23   17   28   28   28
+    
+ Entering subroutine UAT03a for day          53
+ambient   55   61   61   55   55   55   55   61   61   72   77   77   83   72   72   72   77   88   94   94   94   88  100  100
+ambient   28   34   34   28   28   28   28   34   34   45   50   50   56   45   45   45   50   61   67   67   67   61   73   73
+    
+ Entering subroutine UAT03a for day          54
+ambient  105  105  105  100  100   66   50   44   50   61   61   61   55   55   55   61   55   44   44   38   33   33   33   22
+ambient   78   78   78   73   73   39   23   17   23   34   34   34   28   28   28   34   28   17   17   11    6    6    6   -5
+    
+ Entering subroutine UAT03a for day          55
+ambient   27   11   11    5    5   11   11   16   33   55   77   77   83   83   83   72   61   50   44   44   44   50   50   50
+ambient    0  -16  -16  -22  -22  -16  -16  -11    6   28   50   50   56   56   56   45   34   23   17   17   17   23   23   23
+    
+ Entering subroutine UAT03a for day          56
+ambient   44   50   44   50   50   44   44   44   55   61   77   94  100  105  111  105  100   94   88   83   77   72   66   55
+ambient   17   23   17   23   23   17   17   17   28   34   50   67   73   78   84   78   73   67   61   56   50   45   39   28
+    
+ Entering subroutine UAT03a for day          57
+ambient   55   55   61   61   61   66   66   66   77   66   88   88   83   94   88   72   72   61   55   61   50   50   38   33
+ambient   28   28   34   34   34   39   39   39   50   39   61   61   56   67   61   45   45   34   28   34   23   23   11    6
+    
+ Entering subroutine UAT03a for day          58
+ambient   33   27   27   33   27   22   22   27   50   66   77   83   77   77   77   72   72   72   72   72   77   83   94  100
+ambient    6    0    0    6    0   -5   -5    0   23   39   50   56   50   50   50   45   45   45   45   45   50   56   67   73
+    
+ Entering subroutine UAT03a for day          59
+ambient  100   83   88   88   88   88   61   72   77   83   94  100   88   83   88   83   77   66   55   50   44   44   44   44
+ambient   73   56   61   61   61   61   34   45   50   56   67   73   61   56   61   56   50   39   28   23   17   17   17   17
+ **
+ ** Edits for changes in set:           9
+ **
+ ** Edits for changes in set:           9           4
+ Uncertainty definition            1  altered by  -0.265865803    
+ ambient_T:the_zon
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:  -0.531731606       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+ Uncertainty definition            2  altered by  -0.177293554    
+ wind_speed:the_zon
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:  -0.531731606       0.00000000       0.00000000      0.982270658       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            3  altered by  -0.912974119    
+ ambient_T:the_yea
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -1.82594824       0.00000000       0.00000000      0.982270658       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            4  altered by   -1.27331126    
+ wind_speed:the_yea
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -1.82594824       0.00000000       0.00000000      0.872668862       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       2.00000000       0.00000000       0.00000000    
+ ** Edits for changes in set:           9           4
+ ** Edits for changes in set:           9           4
+    
+ Entering subroutine UAT03a for day          11
+ambient   22   22   22   27   33   38   33   27   27   33   44   55   55   55   55   44   44   38   44   33   27   16   16   16
+ambient    4    4    4    9   15   20   15    9    9   15   26   37   37   37   37   26   26   20   26   15    9   -2   -2   -2
+    
+ Entering subroutine UAT03a for day          12
+ambient   16   16   11   11   11   16   16   16   22   22   33   44   44   55   61   61   55   44   38   33   33   33   27   33
+ambient   -2   -2   -7   -7   -7   -2   -2   -2    4    4   15   26   26   37   43   43   37   26   20   15   15   15    9   15
+    
+ Entering subroutine UAT03a for day          13
+ambient   38   44   50   50   55   61   61   66   66   72   77   77   77   83   88   72   61   61   50   44   33   33   38   33
+ambient   20   26   32   32   37   43   43   48   48   54   59   59   59   65   70   54   43   43   32   26   15   15   20   15
+    
+ Entering subroutine UAT03a for day          14
+ambient   27   27   22   27   27   27   16   11   22   33   44   55   61   61   55   38   33   33   27   22   27   33   33   33
+ambient    9    9    4    9    9    9   -2   -7    4   15   26   37   43   43   37   20   15   15    9    4    9   15   15   15
+    
+ Entering subroutine UAT03a for day          15
+ambient   27   27   27   22   22   22   22   22   22   22   16   16   16   16   16   11   11    5    5    5    0    0    0    0
+ambient    9    9    9    4    4    4    4    4    4    4   -2   -2   -2   -2   -2   -7   -7  -13  -13  -13  -18  -18  -18  -18
+    
+ Entering subroutine UAT03a for day          16
+ambient    0    0    0    0    0    5   11   11   11   11   11   16   22   27   27   22   22   16   16   16   16   16   22   22
+ambient  -18  -18  -18  -18  -18  -13   -7   -7   -7   -7   -7   -2    4    9    9    4    4   -2   -2   -2   -2   -2    4    4
+    
+ Entering subroutine UAT03a for day          17
+ambient   22   22   22   22   22   22   22   22   22   27   33   33   33   33   33   33   33   33   33   33   38   44   50   55
+ambient    4    4    4    4    4    4    4    4    4    9   15   15   15   15   15   15   15   15   15   15   20   26   32   37
+    
+ Entering subroutine UAT03a for day          18
+ambient   55   55   61   61   66   66   66   66   66   72   77   83   83   88   83   88   77   77   83   83   83   83   83   83
+ambient   37   37   43   43   48   48   48   48   48   54   59   65   65   70   65   70   59   59   65   65   65   65   65   65
+    
+ Entering subroutine UAT03a for day          19
+ambient   83   77   77   72   72   72   72   72   72   83   88   94  100  100   94   83   72   66   55   55   55   50   44   55
+ambient   65   59   59   54   54   54   54   54   54   65   70   76   82   82   76   65   54   48   37   37   37   32   26   37
+    
+ Entering subroutine UAT03a for day          20
+ambient   50   50   50   50   44   44   38   44   50   55   66   72   77   77   83   77   72   72   72   72   66   66   66   72
+ambient   32   32   32   32   26   26   20   26   32   37   48   54   59   59   65   59   54   54   54   54   48   48   48   54
+    
+ Entering subroutine UAT03a for day          21
+ambient   72   66   66   72   72   72   72   77   83   77   77   77   77   83   77   72   61   61   55   44   38   22   22   16
+ambient   54   48   48   54   54   54   54   59   65   59   59   59   59   65   59   54   43   43   37   26   20    4    4   -2
+    
+ Entering subroutine UAT03a for day          22
+ambient   16   22   27   27   22   16   16   22   16   33   44   61   72   72   72   55   44   44   44   44   44   44   44   50
+ambient   -2    4    9    9    4   -2   -2    4   -2   15   26   43   54   54   54   37   26   26   26   26   26   26   26   32
+    
+ Entering subroutine UAT03a for day          23
+ambient   55   50   50   44   44   38   38   44   44   55   55   66   77   77   66   61   50   44   44   44   44   50   50   44
+ambient   37   32   32   26   26   20   20   26   26   37   37   48   59   59   48   43   32   26   26   26   26   32   32   26
+    
+ Entering subroutine UAT03a for day          24
+ambient   50   50   55   55   55   50   55   55   55   61   66   72   77   77   77   72   66   61   66   61   61   55   50   50
+ambient   32   32   37   37   37   32   37   37   37   43   48   54   59   59   59   54   48   43   48   43   43   37   32   32
+    
+ Entering subroutine UAT03a for day          25
+ambient   44   44   44   44   44   44   50   50   55   61   72   83   88   83   88   72   66   61   55   55   55   61   72   77
+ambient   26   26   26   26   26   26   32   32   37   43   54   65   70   65   70   54   48   43   37   37   37   43   54   59
+    
+ Entering subroutine UAT03a for day          26
+ambient   72   72   72   72   66   61   55   55   55   66   66   66   72   72   72   66   55   55   50   44   44   50   55   50
+ambient   54   54   54   54   48   43   37   37   37   48   48   48   54   54   54   48   37   37   32   26   26   32   37   32
+    
+ Entering subroutine UAT03a for day          27
+ambient   44   50   50   55   55   61   61   61   72   77   83   88   94  105  105  100  100   94   94   94  100  100  100  100
+ambient   26   32   32   37   37   43   43   43   54   59   65   70   76   87   87   82   82   76   76   76   82   82   82   82
+    
+ Entering subroutine UAT03a for day          28
+ambient  100  100   94   88   88   88   88   88   88   94  100  105  105  105  100   94   94   94   94   94   94   88   83   77
+ambient   82   82   76   70   70   70   70   70   70   76   82   87   87   87   82   76   76   76   76   76   76   70   65   59
+    
+ Entering subroutine UAT03a for day          29
+ambient   72   72   61   61   61   66   72   83   88   94   88  105  116  127  127  116  100   94   88   88   88   88   83   77
+ambient   54   54   43   43   43   48   54   65   70   76   70   87   98  109  109   98   82   76   70   70   70   70   65   59
+    
+ Entering subroutine UAT03a for day          30
+ambient   77   83   83   77   77   77   77   72   72   83   88   94   94   94   94   88   83   83   72   72   72   72   66   66
+ambient   59   65   65   59   59   59   59   54   54   65   70   76   76   76   76   70   65   65   54   54   54   54   48   48
+    
+ Entering subroutine UAT03a for day          31
+ambient   66   61   61   61   61   66   66   66   66   77   88  100  100  100  100   88   77   72   66   61   61   66   66   66
+ambient   48   43   43   43   43   48   48   48   48   59   70   82   82   82   82   70   59   54   48   43   43   48   48   48
+    
+ Entering subroutine UAT03a for day          32
+ambient   72   66   66   66   66   61   72   77   83   88   88  105  111  116  116  116  111  111  105  105  105  100  100  100
+ambient   54   48   48   48   48   43   54   59   65   70   70   87   93   98   98   98   93   93   87   87   87   82   82   82
+    
+ Entering subroutine UAT03a for day          33
+ambient  100  100  105  105  105  100  100  105  105  111  116  116  122  122  122  116  116  111  111  105  105  105  100  100
+ambient   82   82   87   87   87   82   82   87   87   93   98   98  104  104  104   98   98   93   93   87   87   87   82   82
+    
+ Entering subroutine UAT03a for day          34
+ambient  100  100  100  100  100   94   94   94   94  100  111  122  122  122  116  111  100   94   88   77   72   61   55   50
+ambient   82   82   82   82   82   76   76   76   76   82   93  104  104  104   98   93   82   76   70   59   54   43   37   32
+    
+ Entering subroutine UAT03a for day          35
+ambient   44   44   44   44   44   44   38   33   44   61   72   77   83   88   77   72   55   44   38   38   44   61   33   33
+ambient   26   26   26   26   26   26   20   15   26   43   54   59   65   70   59   54   37   26   20   20   26   43   15   15
+    
+ Entering subroutine UAT03a for day          36
+ambient   33   33   33   16   22   22   16   16   22   44   55   66   77   77   77   72   61   50   44   38   33   22   27   22
+ambient   15   15   15   -2    4    4   -2   -2    4   26   37   48   59   59   59   54   43   32   26   20   15    4    9    4
+    
+ Entering subroutine UAT03a for day          37
+ambient   22   22   11    5   11    5   -3   -3    0    5   16   27   44   55   66   66   72   55   50   50   50   50   50   50
+ambient    4    4   -7  -13   -7  -13  -21  -21  -18  -13   -2    9   26   37   48   48   54   37   32   32   32   32   32   32
+    
+ Entering subroutine UAT03a for day          38
+ambient   55   55   50   50   50   50   50   50   50   55   55   61   66   72   77   61   44   33   27   22   16   16    5    5
+ambient   37   37   32   32   32   32   32   32   32   37   37   43   48   54   59   43   26   15    9    4   -2   -2  -13  -13
+    
+ Entering subroutine UAT03a for day          39
+ambient   11   11   11   11   11    5    0    0    5   16   50   66   66   83   66   61   38   33   33   33   33   33   33   33
+ambient   -7   -7   -7   -7   -7  -13  -18  -18  -13   -2   32   48   48   65   48   43   20   15   15   15   15   15   15   15
+    
+ Entering subroutine UAT03a for day          40
+ambient   33   33   22   27   27   22   22   27   33   38   38   44   44   44   44   44   38   38   38   33   33   33   33   38
+ambient   15   15    4    9    9    4    4    9   15   20   20   26   26   26   26   26   20   20   20   15   15   15   15   20
+    
+ Entering subroutine UAT03a for day          41
+ambient   38   33   22   16   16   16   11   11   11   27   38   44   44   44   50   50   44   44   38   38   38   38   38   38
+ambient   20   15    4   -2   -2   -2   -7   -7   -7    9   20   26   26   26   32   32   26   26   20   20   20   20   20   20
+    
+ Entering subroutine UAT03a for day          42
+ambient   38   38   38   38   44   44   44   44   44   50   55   55   61   61   55   50   44   44   38   16   22   22   22   16
+ambient   20   20   20   20   26   26   26   26   26   32   37   37   43   43   37   32   26   26   20   -2    4    4    4   -2
+    
+ Entering subroutine UAT03a for day          43
+ambient   11   16    5    0    0    0   -3    0   11   27   38   44   50   50   50   44   33   16   16   16   11   11   11   11
+ambient   -7   -2  -13  -18  -18  -18  -21  -18   -7    9   20   26   32   32   32   26   15   -2   -2   -2   -7   -7   -7   -7
+    
+ Entering subroutine UAT03a for day          44
+ambient    0   -3   -3  -14   -8   -3    0    0    0   11   16   16   16   11   16    5    5    5    0    0    0    5    5    0
+ambient  -18  -21  -21  -32  -26  -21  -18  -18  -18   -7   -2   -2   -2   -7   -2  -13  -13  -13  -18  -18  -18  -13  -13  -18
+    
+ Entering subroutine UAT03a for day          45
+ambient    0    0   -3  -14  -19  -14   -8    0    0    5   11   16   22   22   22   16   11   11   11   11   16   22   22   22
+ambient  -18  -18  -21  -32  -37  -32  -26  -18  -18  -13   -7   -2    4    4    4   -2   -7   -7   -7   -7   -2    4    4    4
+    
+ Entering subroutine UAT03a for day          46
+ambient   22   16   11   11   11   11   11   16   16   27   38   50   61   55   55   50   44   44   44   44   50   50   44   38
+ambient    4   -2   -7   -7   -7   -7   -7   -2   -2    9   20   32   43   37   37   32   26   26   26   26   32   32   26   20
+    
+ Entering subroutine UAT03a for day          47
+ambient   44   44   44   44   38   44   50   50   55   55   61   61   72   66   66   66   66   55   44   44   44   50   50   44
+ambient   26   26   26   26   20   26   32   32   37   37   43   43   54   48   48   48   48   37   26   26   26   32   32   26
+    
+ Entering subroutine UAT03a for day          48
+ambient   38   44   50   44   44   44   44   50   50   50   55   44   44   44   38   38   38   44   38   27   22   16   11   11
+ambient   20   26   32   26   26   26   26   32   32   32   37   26   26   26   20   20   20   26   20    9    4   -2   -7   -7
+    
+ Entering subroutine UAT03a for day          49
+ambient   16   16   16   16   11    5   11    0    5   27   44   61   72   77   83   72   66   61   55   55   50   50   50   55
+ambient   -2   -2   -2   -2   -7  -13   -7  -18  -13    9   26   43   54   59   65   54   48   43   37   37   32   32   32   37
+    
+ Entering subroutine UAT03a for day          50
+ambient   66   72   72   72   66   61   55   61   72   83   94   83   77   94   94   66   61   61   50   61   55   55   55   55
+ambient   48   54   54   54   48   43   37   43   54   65   76   65   59   76   76   48   43   43   32   43   37   37   37   37
+    
+ Entering subroutine UAT03a for day          51
+ambient   50   55   44   44   38   38   44   50   55   66   66   66   66   83   77   72   66   61   55   66   88  111  122  100
+ambient   32   37   26   26   20   20   26   32   37   48   48   48   48   65   59   54   48   43   37   48   70   93  104   82
+    
+ Entering subroutine UAT03a for day          52
+ambient   66   61   55   50   50   50   50   50   50   72   83   88   88   88   77   83   72   61   55   50   44   55   55   55
+ambient   48   43   37   32   32   32   32   32   32   54   65   70   70   70   59   65   54   43   37   32   26   37   37   37
+    
+ Entering subroutine UAT03a for day          53
+ambient   55   61   61   55   55   55   55   61   61   72   77   77   83   72   72   72   77   88   94   94   94   88  100  100
+ambient   37   43   43   37   37   37   37   43   43   54   59   59   65   54   54   54   59   70   76   76   76   70   82   82
+    
+ Entering subroutine UAT03a for day          54
+ambient  105  105  105  100  100   66   50   44   50   61   61   61   55   55   55   61   55   44   44   38   33   33   33   22
+ambient   87   87   87   82   82   48   32   26   32   43   43   43   37   37   37   43   37   26   26   20   15   15   15    4
+    
+ Entering subroutine UAT03a for day          55
+ambient   27   11   11    5    5   11   11   16   33   55   77   77   83   83   83   72   61   50   44   44   44   50   50   50
+ambient    9   -7   -7  -13  -13   -7   -7   -2   15   37   59   59   65   65   65   54   43   32   26   26   26   32   32   32
+    
+ Entering subroutine UAT03a for day          56
+ambient   44   50   44   50   50   44   44   44   55   61   77   94  100  105  111  105  100   94   88   83   77   72   66   55
+ambient   26   32   26   32   32   26   26   26   37   43   59   76   82   87   93   87   82   76   70   65   59   54   48   37
+    
+ Entering subroutine UAT03a for day          57
+ambient   55   55   61   61   61   66   66   66   77   66   88   88   83   94   88   72   72   61   55   61   50   50   38   33
+ambient   37   37   43   43   43   48   48   48   59   48   70   70   65   76   70   54   54   43   37   43   32   32   20   15
+    
+ Entering subroutine UAT03a for day          58
+ambient   33   27   27   33   27   22   22   27   50   66   77   83   77   77   77   72   72   72   72   72   77   83   94  100
+ambient   15    9    9   15    9    4    4    9   32   48   59   65   59   59   59   54   54   54   54   54   59   65   76   82
+    
+ Entering subroutine UAT03a for day          59
+ambient  100   83   88   88   88   88   61   72   77   83   94  100   88   83   88   83   77   66   55   50   44   44   44   44
+ambient   82   65   70   70   70   70   43   54   59   65   76   82   70   65   70   65   59   48   37   32   26   26   26   26
+ **
+ ** Edits for changes in set:          10
+ **
+ ** Edits for changes in set:          10           4
+ Uncertainty definition            1  altered by   -3.17884851    
+ ambient_T:the_zon
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:   -6.35769701       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+ Uncertainty definition            2  altered by   0.776841223    
+ wind_speed:the_zon
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -6.35769701       0.00000000       0.00000000       1.07768416       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            3  altered by    1.76469135    
+ ambient_T:the_yea
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:    3.52938271       0.00000000       0.00000000       1.07768416       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            4  altered by    1.48051620    
+ wind_speed:the_yea
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:    3.52938271       0.00000000       0.00000000       1.14805162       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       2.00000000       0.00000000       0.00000000    
+ ** Edits for changes in set:          10           4
+ ** Edits for changes in set:          10           4
+    
+ Entering subroutine UAT03a for day          11
+ambient   22   22   22   27   33   38   33   27   27   33   44   55   55   55   55   44   44   38   44   33   27   16   16   16
+ambient   57   57   57   62   68   73   68   62   62   68   79   90   90   90   90   79   79   73   79   68   62   51   51   51
+    
+ Entering subroutine UAT03a for day          12
+ambient   16   16   11   11   11   16   16   16   22   22   33   44   44   55   61   61   55   44   38   33   33   33   27   33
+ambient   51   51   46   46   46   51   51   51   57   57   68   79   79   90   96   96   90   79   73   68   68   68   62   68
+    
+ Entering subroutine UAT03a for day          13
+ambient   38   44   50   50   55   61   61   66   66   72   77   77   77   83   88   72   61   61   50   44   33   33   38   33
+ambient   73   79   85   85   90   96   96  101  101  107  112  112  112  118  123  107   96   96   85   79   68   68   73   68
+    
+ Entering subroutine UAT03a for day          14
+ambient   27   27   22   27   27   27   16   11   22   33   44   55   61   61   55   38   33   33   27   22   27   33   33   33
+ambient   62   62   57   62   62   62   51   46   57   68   79   90   96   96   90   73   68   68   62   57   62   68   68   68
+    
+ Entering subroutine UAT03a for day          15
+ambient   27   27   27   22   22   22   22   22   22   22   16   16   16   16   16   11   11    5    5    5    0    0    0    0
+ambient   62   62   62   57   57   57   57   57   57   57   51   51   51   51   51   46   46   40   40   40   35   35   35   35
+    
+ Entering subroutine UAT03a for day          16
+ambient    0    0    0    0    0    5   11   11   11   11   11   16   22   27   27   22   22   16   16   16   16   16   22   22
+ambient   35   35   35   35   35   40   46   46   46   46   46   51   57   62   62   57   57   51   51   51   51   51   57   57
+    
+ Entering subroutine UAT03a for day          17
+ambient   22   22   22   22   22   22   22   22   22   27   33   33   33   33   33   33   33   33   33   33   38   44   50   55
+ambient   57   57   57   57   57   57   57   57   57   62   68   68   68   68   68   68   68   68   68   68   73   79   85   90
+    
+ Entering subroutine UAT03a for day          18
+ambient   55   55   61   61   66   66   66   66   66   72   77   83   83   88   83   88   77   77   83   83   83   83   83   83
+ambient   90   90   96   96  101  101  101  101  101  107  112  118  118  123  118  123  112  112  118  118  118  118  118  118
+    
+ Entering subroutine UAT03a for day          19
+ambient   83   77   77   72   72   72   72   72   72   83   88   94  100  100   94   83   72   66   55   55   55   50   44   55
+ambient  118  112  112  107  107  107  107  107  107  118  123  129  135  135  129  118  107  101   90   90   90   85   79   90
+    
+ Entering subroutine UAT03a for day          20
+ambient   50   50   50   50   44   44   38   44   50   55   66   72   77   77   83   77   72   72   72   72   66   66   66   72
+ambient   85   85   85   85   79   79   73   79   85   90  101  107  112  112  118  112  107  107  107  107  101  101  101  107
+    
+ Entering subroutine UAT03a for day          21
+ambient   72   66   66   72   72   72   72   77   83   77   77   77   77   83   77   72   61   61   55   44   38   22   22   16
+ambient  107  101  101  107  107  107  107  112  118  112  112  112  112  118  112  107   96   96   90   79   73   57   57   51
+    
+ Entering subroutine UAT03a for day          22
+ambient   16   22   27   27   22   16   16   22   16   33   44   61   72   72   72   55   44   44   44   44   44   44   44   50
+ambient   51   57   62   62   57   51   51   57   51   68   79   96  107  107  107   90   79   79   79   79   79   79   79   85
+    
+ Entering subroutine UAT03a for day          23
+ambient   55   50   50   44   44   38   38   44   44   55   55   66   77   77   66   61   50   44   44   44   44   50   50   44
+ambient   90   85   85   79   79   73   73   79   79   90   90  101  112  112  101   96   85   79   79   79   79   85   85   79
+    
+ Entering subroutine UAT03a for day          24
+ambient   50   50   55   55   55   50   55   55   55   61   66   72   77   77   77   72   66   61   66   61   61   55   50   50
+ambient   85   85   90   90   90   85   90   90   90   96  101  107  112  112  112  107  101   96  101   96   96   90   85   85
+    
+ Entering subroutine UAT03a for day          25
+ambient   44   44   44   44   44   44   50   50   55   61   72   83   88   83   88   72   66   61   55   55   55   61   72   77
+ambient   79   79   79   79   79   79   85   85   90   96  107  118  123  118  123  107  101   96   90   90   90   96  107  112
+    
+ Entering subroutine UAT03a for day          26
+ambient   72   72   72   72   66   61   55   55   55   66   66   66   72   72   72   66   55   55   50   44   44   50   55   50
+ambient  107  107  107  107  101   96   90   90   90  101  101  101  107  107  107  101   90   90   85   79   79   85   90   85
+    
+ Entering subroutine UAT03a for day          27
+ambient   44   50   50   55   55   61   61   61   72   77   83   88   94  105  105  100  100   94   94   94  100  100  100  100
+ambient   79   85   85   90   90   96   96   96  107  112  118  123  129  140  140  135  135  129  129  129  135  135  135  135
+    
+ Entering subroutine UAT03a for day          28
+ambient  100  100   94   88   88   88   88   88   88   94  100  105  105  105  100   94   94   94   94   94   94   88   83   77
+ambient  135  135  129  123  123  123  123  123  123  129  135  140  140  140  135  129  129  129  129  129  129  123  118  112
+    
+ Entering subroutine UAT03a for day          29
+ambient   72   72   61   61   61   66   72   83   88   94   88  105  116  127  127  116  100   94   88   88   88   88   83   77
+ambient  107  107   96   96   96  101  107  118  123  129  123  140  151  162  162  151  135  129  123  123  123  123  118  112
+    
+ Entering subroutine UAT03a for day          30
+ambient   77   83   83   77   77   77   77   72   72   83   88   94   94   94   94   88   83   83   72   72   72   72   66   66
+ambient  112  118  118  112  112  112  112  107  107  118  123  129  129  129  129  123  118  118  107  107  107  107  101  101
+    
+ Entering subroutine UAT03a for day          31
+ambient   66   61   61   61   61   66   66   66   66   77   88  100  100  100  100   88   77   72   66   61   61   66   66   66
+ambient  101   96   96   96   96  101  101  101  101  112  123  135  135  135  135  123  112  107  101   96   96  101  101  101
+    
+ Entering subroutine UAT03a for day          32
+ambient   72   66   66   66   66   61   72   77   83   88   88  105  111  116  116  116  111  111  105  105  105  100  100  100
+ambient  107  101  101  101  101   96  107  112  118  123  123  140  146  151  151  151  146  146  140  140  140  135  135  135
+    
+ Entering subroutine UAT03a for day          33
+ambient  100  100  105  105  105  100  100  105  105  111  116  116  122  122  122  116  116  111  111  105  105  105  100  100
+ambient  135  135  140  140  140  135  135  140  140  146  151  151  157  157  157  151  151  146  146  140  140  140  135  135
+    
+ Entering subroutine UAT03a for day          34
+ambient  100  100  100  100  100   94   94   94   94  100  111  122  122  122  116  111  100   94   88   77   72   61   55   50
+ambient  135  135  135  135  135  129  129  129  129  135  146  157  157  157  151  146  135  129  123  112  107   96   90   85
+    
+ Entering subroutine UAT03a for day          35
+ambient   44   44   44   44   44   44   38   33   44   61   72   77   83   88   77   72   55   44   38   38   44   61   33   33
+ambient   79   79   79   79   79   79   73   68   79   96  107  112  118  123  112  107   90   79   73   73   79   96   68   68
+    
+ Entering subroutine UAT03a for day          36
+ambient   33   33   33   16   22   22   16   16   22   44   55   66   77   77   77   72   61   50   44   38   33   22   27   22
+ambient   68   68   68   51   57   57   51   51   57   79   90  101  112  112  112  107   96   85   79   73   68   57   62   57
+    
+ Entering subroutine UAT03a for day          37
+ambient   22   22   11    5   11    5   -3   -3    0    5   16   27   44   55   66   66   72   55   50   50   50   50   50   50
+ambient   57   57   46   40   46   40   32   32   35   40   51   62   79   90  101  101  107   90   85   85   85   85   85   85
+    
+ Entering subroutine UAT03a for day          38
+ambient   55   55   50   50   50   50   50   50   50   55   55   61   66   72   77   61   44   33   27   22   16   16    5    5
+ambient   90   90   85   85   85   85   85   85   85   90   90   96  101  107  112   96   79   68   62   57   51   51   40   40
+    
+ Entering subroutine UAT03a for day          39
+ambient   11   11   11   11   11    5    0    0    5   16   50   66   66   83   66   61   38   33   33   33   33   33   33   33
+ambient   46   46   46   46   46   40   35   35   40   51   85  101  101  118  101   96   73   68   68   68   68   68   68   68
+    
+ Entering subroutine UAT03a for day          40
+ambient   33   33   22   27   27   22   22   27   33   38   38   44   44   44   44   44   38   38   38   33   33   33   33   38
+ambient   68   68   57   62   62   57   57   62   68   73   73   79   79   79   79   79   73   73   73   68   68   68   68   73
+    
+ Entering subroutine UAT03a for day          41
+ambient   38   33   22   16   16   16   11   11   11   27   38   44   44   44   50   50   44   44   38   38   38   38   38   38
+ambient   73   68   57   51   51   51   46   46   46   62   73   79   79   79   85   85   79   79   73   73   73   73   73   73
+    
+ Entering subroutine UAT03a for day          42
+ambient   38   38   38   38   44   44   44   44   44   50   55   55   61   61   55   50   44   44   38   16   22   22   22   16
+ambient   73   73   73   73   79   79   79   79   79   85   90   90   96   96   90   85   79   79   73   51   57   57   57   51
+    
+ Entering subroutine UAT03a for day          43
+ambient   11   16    5    0    0    0   -3    0   11   27   38   44   50   50   50   44   33   16   16   16   11   11   11   11
+ambient   46   51   40   35   35   35   32   35   46   62   73   79   85   85   85   79   68   51   51   51   46   46   46   46
+    
+ Entering subroutine UAT03a for day          44
+ambient    0   -3   -3  -14   -8   -3    0    0    0   11   16   16   16   11   16    5    5    5    0    0    0    5    5    0
+ambient   35   32   32   21   27   32   35   35   35   46   51   51   51   46   51   40   40   40   35   35   35   40   40   35
+    
+ Entering subroutine UAT03a for day          45
+ambient    0    0   -3  -14  -19  -14   -8    0    0    5   11   16   22   22   22   16   11   11   11   11   16   22   22   22
+ambient   35   35   32   21   16   21   27   35   35   40   46   51   57   57   57   51   46   46   46   46   51   57   57   57
+    
+ Entering subroutine UAT03a for day          46
+ambient   22   16   11   11   11   11   11   16   16   27   38   50   61   55   55   50   44   44   44   44   50   50   44   38
+ambient   57   51   46   46   46   46   46   51   51   62   73   85   96   90   90   85   79   79   79   79   85   85   79   73
+    
+ Entering subroutine UAT03a for day          47
+ambient   44   44   44   44   38   44   50   50   55   55   61   61   72   66   66   66   66   55   44   44   44   50   50   44
+ambient   79   79   79   79   73   79   85   85   90   90   96   96  107  101  101  101  101   90   79   79   79   85   85   79
+    
+ Entering subroutine UAT03a for day          48
+ambient   38   44   50   44   44   44   44   50   50   50   55   44   44   44   38   38   38   44   38   27   22   16   11   11
+ambient   73   79   85   79   79   79   79   85   85   85   90   79   79   79   73   73   73   79   73   62   57   51   46   46
+    
+ Entering subroutine UAT03a for day          49
+ambient   16   16   16   16   11    5   11    0    5   27   44   61   72   77   83   72   66   61   55   55   50   50   50   55
+ambient   51   51   51   51   46   40   46   35   40   62   79   96  107  112  118  107  101   96   90   90   85   85   85   90
+    
+ Entering subroutine UAT03a for day          50
+ambient   66   72   72   72   66   61   55   61   72   83   94   83   77   94   94   66   61   61   50   61   55   55   55   55
+ambient  101  107  107  107  101   96   90   96  107  118  129  118  112  129  129  101   96   96   85   96   90   90   90   90
+    
+ Entering subroutine UAT03a for day          51
+ambient   50   55   44   44   38   38   44   50   55   66   66   66   66   83   77   72   66   61   55   66   88  111  122  100
+ambient   85   90   79   79   73   73   79   85   90  101  101  101  101  118  112  107  101   96   90  101  123  146  157  135
+    
+ Entering subroutine UAT03a for day          52
+ambient   66   61   55   50   50   50   50   50   50   72   83   88   88   88   77   83   72   61   55   50   44   55   55   55
+ambient  101   96   90   85   85   85   85   85   85  107  118  123  123  123  112  118  107   96   90   85   79   90   90   90
+    
+ Entering subroutine UAT03a for day          53
+ambient   55   61   61   55   55   55   55   61   61   72   77   77   83   72   72   72   77   88   94   94   94   88  100  100
+ambient   90   96   96   90   90   90   90   96   96  107  112  112  118  107  107  107  112  123  129  129  129  123  135  135
+    
+ Entering subroutine UAT03a for day          54
+ambient  105  105  105  100  100   66   50   44   50   61   61   61   55   55   55   61   55   44   44   38   33   33   33   22
+ambient  140  140  140  135  135  101   85   79   85   96   96   96   90   90   90   96   90   79   79   73   68   68   68   57
+    
+ Entering subroutine UAT03a for day          55
+ambient   27   11   11    5    5   11   11   16   33   55   77   77   83   83   83   72   61   50   44   44   44   50   50   50
+ambient   62   46   46   40   40   46   46   51   68   90  112  112  118  118  118  107   96   85   79   79   79   85   85   85
+    
+ Entering subroutine UAT03a for day          56
+ambient   44   50   44   50   50   44   44   44   55   61   77   94  100  105  111  105  100   94   88   83   77   72   66   55
+ambient   79   85   79   85   85   79   79   79   90   96  112  129  135  140  146  140  135  129  123  118  112  107  101   90
+    
+ Entering subroutine UAT03a for day          57
+ambient   55   55   61   61   61   66   66   66   77   66   88   88   83   94   88   72   72   61   55   61   50   50   38   33
+ambient   90   90   96   96   96  101  101  101  112  101  123  123  118  129  123  107  107   96   90   96   85   85   73   68
+    
+ Entering subroutine UAT03a for day          58
+ambient   33   27   27   33   27   22   22   27   50   66   77   83   77   77   77   72   72   72   72   72   77   83   94  100
+ambient   68   62   62   68   62   57   57   62   85  101  112  118  112  112  112  107  107  107  107  107  112  118  129  135
+    
+ Entering subroutine UAT03a for day          59
+ambient  100   83   88   88   88   88   61   72   77   83   94  100   88   83   88   83   77   66   55   50   44   44   44   44
+ambient  135  118  123  123  123  123   96  107  112  118  129  135  123  118  123  118  112  101   90   85   79   79   79   79
+ **
+ ** Edits for changes in set:          11
+ **
+ ** Edits for changes in set:          11           4
+ Uncertainty definition            1  altered by   0.271293998    
+ ambient_T:the_zon
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:   0.542587996       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+ Uncertainty definition            2  altered by    1.31184494    
+ wind_speed:the_zon
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   0.542587996       0.00000000       0.00000000       1.13118446       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            3  altered by   -1.63771188    
+ ambient_T:the_yea
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -3.27542377       0.00000000       0.00000000       1.13118446       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            4  altered by   0.647302985    
+ wind_speed:the_yea
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -3.27542377       0.00000000       0.00000000       1.06473029       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       2.00000000       0.00000000       0.00000000    
+ ** Edits for changes in set:          11           4
+ ** Edits for changes in set:          11           4
+    
+ Entering subroutine UAT03a for day          11
+ambient   22   22   22   27   33   38   33   27   27   33   44   55   55   55   55   44   44   38   44   33   27   16   16   16
+ambient  -11  -11  -11   -6    0    5    0   -6   -6    0   11   22   22   22   22   11   11    5   11    0   -6  -17  -17  -17
+    
+ Entering subroutine UAT03a for day          12
+ambient   16   16   11   11   11   16   16   16   22   22   33   44   44   55   61   61   55   44   38   33   33   33   27   33
+ambient  -17  -17  -22  -22  -22  -17  -17  -17  -11  -11    0   11   11   22   28   28   22   11    5    0    0    0   -6    0
+    
+ Entering subroutine UAT03a for day          13
+ambient   38   44   50   50   55   61   61   66   66   72   77   77   77   83   88   72   61   61   50   44   33   33   38   33
+ambient    5   11   17   17   22   28   28   33   33   39   44   44   44   50   55   39   28   28   17   11    0    0    5    0
+    
+ Entering subroutine UAT03a for day          14
+ambient   27   27   22   27   27   27   16   11   22   33   44   55   61   61   55   38   33   33   27   22   27   33   33   33
+ambient   -6   -6  -11   -6   -6   -6  -17  -22  -11    0   11   22   28   28   22    5    0    0   -6  -11   -6    0    0    0
+    
+ Entering subroutine UAT03a for day          15
+ambient   27   27   27   22   22   22   22   22   22   22   16   16   16   16   16   11   11    5    5    5    0    0    0    0
+ambient   -6   -6   -6  -11  -11  -11  -11  -11  -11  -11  -17  -17  -17  -17  -17  -22  -22  -28  -28  -28  -33  -33  -33  -33
+    
+ Entering subroutine UAT03a for day          16
+ambient    0    0    0    0    0    5   11   11   11   11   11   16   22   27   27   22   22   16   16   16   16   16   22   22
+ambient  -33  -33  -33  -33  -33  -28  -22  -22  -22  -22  -22  -17  -11   -6   -6  -11  -11  -17  -17  -17  -17  -17  -11  -11
+    
+ Entering subroutine UAT03a for day          17
+ambient   22   22   22   22   22   22   22   22   22   27   33   33   33   33   33   33   33   33   33   33   38   44   50   55
+ambient  -11  -11  -11  -11  -11  -11  -11  -11  -11   -6    0    0    0    0    0    0    0    0    0    0    5   11   17   22
+    
+ Entering subroutine UAT03a for day          18
+ambient   55   55   61   61   66   66   66   66   66   72   77   83   83   88   83   88   77   77   83   83   83   83   83   83
+ambient   22   22   28   28   33   33   33   33   33   39   44   50   50   55   50   55   44   44   50   50   50   50   50   50
+    
+ Entering subroutine UAT03a for day          19
+ambient   83   77   77   72   72   72   72   72   72   83   88   94  100  100   94   83   72   66   55   55   55   50   44   55
+ambient   50   44   44   39   39   39   39   39   39   50   55   61   67   67   61   50   39   33   22   22   22   17   11   22
+    
+ Entering subroutine UAT03a for day          20
+ambient   50   50   50   50   44   44   38   44   50   55   66   72   77   77   83   77   72   72   72   72   66   66   66   72
+ambient   17   17   17   17   11   11    5   11   17   22   33   39   44   44   50   44   39   39   39   39   33   33   33   39
+    
+ Entering subroutine UAT03a for day          21
+ambient   72   66   66   72   72   72   72   77   83   77   77   77   77   83   77   72   61   61   55   44   38   22   22   16
+ambient   39   33   33   39   39   39   39   44   50   44   44   44   44   50   44   39   28   28   22   11    5  -11  -11  -17
+    
+ Entering subroutine UAT03a for day          22
+ambient   16   22   27   27   22   16   16   22   16   33   44   61   72   72   72   55   44   44   44   44   44   44   44   50
+ambient  -17  -11   -6   -6  -11  -17  -17  -11  -17    0   11   28   39   39   39   22   11   11   11   11   11   11   11   17
+    
+ Entering subroutine UAT03a for day          23
+ambient   55   50   50   44   44   38   38   44   44   55   55   66   77   77   66   61   50   44   44   44   44   50   50   44
+ambient   22   17   17   11   11    5    5   11   11   22   22   33   44   44   33   28   17   11   11   11   11   17   17   11
+    
+ Entering subroutine UAT03a for day          24
+ambient   50   50   55   55   55   50   55   55   55   61   66   72   77   77   77   72   66   61   66   61   61   55   50   50
+ambient   17   17   22   22   22   17   22   22   22   28   33   39   44   44   44   39   33   28   33   28   28   22   17   17
+    
+ Entering subroutine UAT03a for day          25
+ambient   44   44   44   44   44   44   50   50   55   61   72   83   88   83   88   72   66   61   55   55   55   61   72   77
+ambient   11   11   11   11   11   11   17   17   22   28   39   50   55   50   55   39   33   28   22   22   22   28   39   44
+    
+ Entering subroutine UAT03a for day          26
+ambient   72   72   72   72   66   61   55   55   55   66   66   66   72   72   72   66   55   55   50   44   44   50   55   50
+ambient   39   39   39   39   33   28   22   22   22   33   33   33   39   39   39   33   22   22   17   11   11   17   22   17
+    
+ Entering subroutine UAT03a for day          27
+ambient   44   50   50   55   55   61   61   61   72   77   83   88   94  105  105  100  100   94   94   94  100  100  100  100
+ambient   11   17   17   22   22   28   28   28   39   44   50   55   61   72   72   67   67   61   61   61   67   67   67   67
+    
+ Entering subroutine UAT03a for day          28
+ambient  100  100   94   88   88   88   88   88   88   94  100  105  105  105  100   94   94   94   94   94   94   88   83   77
+ambient   67   67   61   55   55   55   55   55   55   61   67   72   72   72   67   61   61   61   61   61   61   55   50   44
+    
+ Entering subroutine UAT03a for day          29
+ambient   72   72   61   61   61   66   72   83   88   94   88  105  116  127  127  116  100   94   88   88   88   88   83   77
+ambient   39   39   28   28   28   33   39   50   55   61   55   72   83   94   94   83   67   61   55   55   55   55   50   44
+    
+ Entering subroutine UAT03a for day          30
+ambient   77   83   83   77   77   77   77   72   72   83   88   94   94   94   94   88   83   83   72   72   72   72   66   66
+ambient   44   50   50   44   44   44   44   39   39   50   55   61   61   61   61   55   50   50   39   39   39   39   33   33
+    
+ Entering subroutine UAT03a for day          31
+ambient   66   61   61   61   61   66   66   66   66   77   88  100  100  100  100   88   77   72   66   61   61   66   66   66
+ambient   33   28   28   28   28   33   33   33   33   44   55   67   67   67   67   55   44   39   33   28   28   33   33   33
+    
+ Entering subroutine UAT03a for day          32
+ambient   72   66   66   66   66   61   72   77   83   88   88  105  111  116  116  116  111  111  105  105  105  100  100  100
+ambient   39   33   33   33   33   28   39   44   50   55   55   72   78   83   83   83   78   78   72   72   72   67   67   67
+    
+ Entering subroutine UAT03a for day          33
+ambient  100  100  105  105  105  100  100  105  105  111  116  116  122  122  122  116  116  111  111  105  105  105  100  100
+ambient   67   67   72   72   72   67   67   72   72   78   83   83   89   89   89   83   83   78   78   72   72   72   67   67
+    
+ Entering subroutine UAT03a for day          34
+ambient  100  100  100  100  100   94   94   94   94  100  111  122  122  122  116  111  100   94   88   77   72   61   55   50
+ambient   67   67   67   67   67   61   61   61   61   67   78   89   89   89   83   78   67   61   55   44   39   28   22   17
+    
+ Entering subroutine UAT03a for day          35
+ambient   44   44   44   44   44   44   38   33   44   61   72   77   83   88   77   72   55   44   38   38   44   61   33   33
+ambient   11   11   11   11   11   11    5    0   11   28   39   44   50   55   44   39   22   11    5    5   11   28    0    0
+    
+ Entering subroutine UAT03a for day          36
+ambient   33   33   33   16   22   22   16   16   22   44   55   66   77   77   77   72   61   50   44   38   33   22   27   22
+ambient    0    0    0  -17  -11  -11  -17  -17  -11   11   22   33   44   44   44   39   28   17   11    5    0  -11   -6  -11
+    
+ Entering subroutine UAT03a for day          37
+ambient   22   22   11    5   11    5   -3   -3    0    5   16   27   44   55   66   66   72   55   50   50   50   50   50   50
+ambient  -11  -11  -22  -28  -22  -28  -36  -36  -33  -28  -17   -6   11   22   33   33   39   22   17   17   17   17   17   17
+    
+ Entering subroutine UAT03a for day          38
+ambient   55   55   50   50   50   50   50   50   50   55   55   61   66   72   77   61   44   33   27   22   16   16    5    5
+ambient   22   22   17   17   17   17   17   17   17   22   22   28   33   39   44   28   11    0   -6  -11  -17  -17  -28  -28
+    
+ Entering subroutine UAT03a for day          39
+ambient   11   11   11   11   11    5    0    0    5   16   50   66   66   83   66   61   38   33   33   33   33   33   33   33
+ambient  -22  -22  -22  -22  -22  -28  -33  -33  -28  -17   17   33   33   50   33   28    5    0    0    0    0    0    0    0
+    
+ Entering subroutine UAT03a for day          40
+ambient   33   33   22   27   27   22   22   27   33   38   38   44   44   44   44   44   38   38   38   33   33   33   33   38
+ambient    0    0  -11   -6   -6  -11  -11   -6    0    5    5   11   11   11   11   11    5    5    5    0    0    0    0    5
+    
+ Entering subroutine UAT03a for day          41
+ambient   38   33   22   16   16   16   11   11   11   27   38   44   44   44   50   50   44   44   38   38   38   38   38   38
+ambient    5    0  -11  -17  -17  -17  -22  -22  -22   -6    5   11   11   11   17   17   11   11    5    5    5    5    5    5
+    
+ Entering subroutine UAT03a for day          42
+ambient   38   38   38   38   44   44   44   44   44   50   55   55   61   61   55   50   44   44   38   16   22   22   22   16
+ambient    5    5    5    5   11   11   11   11   11   17   22   22   28   28   22   17   11   11    5  -17  -11  -11  -11  -17
+    
+ Entering subroutine UAT03a for day          43
+ambient   11   16    5    0    0    0   -3    0   11   27   38   44   50   50   50   44   33   16   16   16   11   11   11   11
+ambient  -22  -17  -28  -33  -33  -33  -36  -33  -22   -6    5   11   17   17   17   11    0  -17  -17  -17  -22  -22  -22  -22
+    
+ Entering subroutine UAT03a for day          44
+ambient    0   -3   -3  -14   -8   -3    0    0    0   11   16   16   16   11   16    5    5    5    0    0    0    5    5    0
+ambient  -33  -36  -36  -47  -41  -36  -33  -33  -33  -22  -17  -17  -17  -22  -17  -28  -28  -28  -33  -33  -33  -28  -28  -33
+    
+ Entering subroutine UAT03a for day          45
+ambient    0    0   -3  -14  -19  -14   -8    0    0    5   11   16   22   22   22   16   11   11   11   11   16   22   22   22
+ambient  -33  -33  -36  -47  -52  -47  -41  -33  -33  -28  -22  -17  -11  -11  -11  -17  -22  -22  -22  -22  -17  -11  -11  -11
+    
+ Entering subroutine UAT03a for day          46
+ambient   22   16   11   11   11   11   11   16   16   27   38   50   61   55   55   50   44   44   44   44   50   50   44   38
+ambient  -11  -17  -22  -22  -22  -22  -22  -17  -17   -6    5   17   28   22   22   17   11   11   11   11   17   17   11    5
+    
+ Entering subroutine UAT03a for day          47
+ambient   44   44   44   44   38   44   50   50   55   55   61   61   72   66   66   66   66   55   44   44   44   50   50   44
+ambient   11   11   11   11    5   11   17   17   22   22   28   28   39   33   33   33   33   22   11   11   11   17   17   11
+    
+ Entering subroutine UAT03a for day          48
+ambient   38   44   50   44   44   44   44   50   50   50   55   44   44   44   38   38   38   44   38   27   22   16   11   11
+ambient    5   11   17   11   11   11   11   17   17   17   22   11   11   11    5    5    5   11    5   -6  -11  -17  -22  -22
+    
+ Entering subroutine UAT03a for day          49
+ambient   16   16   16   16   11    5   11    0    5   27   44   61   72   77   83   72   66   61   55   55   50   50   50   55
+ambient  -17  -17  -17  -17  -22  -28  -22  -33  -28   -6   11   28   39   44   50   39   33   28   22   22   17   17   17   22
+    
+ Entering subroutine UAT03a for day          50
+ambient   66   72   72   72   66   61   55   61   72   83   94   83   77   94   94   66   61   61   50   61   55   55   55   55
+ambient   33   39   39   39   33   28   22   28   39   50   61   50   44   61   61   33   28   28   17   28   22   22   22   22
+    
+ Entering subroutine UAT03a for day          51
+ambient   50   55   44   44   38   38   44   50   55   66   66   66   66   83   77   72   66   61   55   66   88  111  122  100
+ambient   17   22   11   11    5    5   11   17   22   33   33   33   33   50   44   39   33   28   22   33   55   78   89   67
+    
+ Entering subroutine UAT03a for day          52
+ambient   66   61   55   50   50   50   50   50   50   72   83   88   88   88   77   83   72   61   55   50   44   55   55   55
+ambient   33   28   22   17   17   17   17   17   17   39   50   55   55   55   44   50   39   28   22   17   11   22   22   22
+    
+ Entering subroutine UAT03a for day          53
+ambient   55   61   61   55   55   55   55   61   61   72   77   77   83   72   72   72   77   88   94   94   94   88  100  100
+ambient   22   28   28   22   22   22   22   28   28   39   44   44   50   39   39   39   44   55   61   61   61   55   67   67
+    
+ Entering subroutine UAT03a for day          54
+ambient  105  105  105  100  100   66   50   44   50   61   61   61   55   55   55   61   55   44   44   38   33   33   33   22
+ambient   72   72   72   67   67   33   17   11   17   28   28   28   22   22   22   28   22   11   11    5    0    0    0  -11
+    
+ Entering subroutine UAT03a for day          55
+ambient   27   11   11    5    5   11   11   16   33   55   77   77   83   83   83   72   61   50   44   44   44   50   50   50
+ambient   -6  -22  -22  -28  -28  -22  -22  -17    0   22   44   44   50   50   50   39   28   17   11   11   11   17   17   17
+    
+ Entering subroutine UAT03a for day          56
+ambient   44   50   44   50   50   44   44   44   55   61   77   94  100  105  111  105  100   94   88   83   77   72   66   55
+ambient   11   17   11   17   17   11   11   11   22   28   44   61   67   72   78   72   67   61   55   50   44   39   33   22
+    
+ Entering subroutine UAT03a for day          57
+ambient   55   55   61   61   61   66   66   66   77   66   88   88   83   94   88   72   72   61   55   61   50   50   38   33
+ambient   22   22   28   28   28   33   33   33   44   33   55   55   50   61   55   39   39   28   22   28   17   17    5    0
+    
+ Entering subroutine UAT03a for day          58
+ambient   33   27   27   33   27   22   22   27   50   66   77   83   77   77   77   72   72   72   72   72   77   83   94  100
+ambient    0   -6   -6    0   -6  -11  -11   -6   17   33   44   50   44   44   44   39   39   39   39   39   44   50   61   67
+    
+ Entering subroutine UAT03a for day          59
+ambient  100   83   88   88   88   88   61   72   77   83   94  100   88   83   88   83   77   66   55   50   44   44   44   44
+ambient   67   50   55   55   55   55   28   39   44   50   61   67   55   50   55   50   44   33   22   17   11   11   11   11
+ **
+ ** Edits for changes in set:          12
+ **
+ ** Edits for changes in set:          12           4
+ Uncertainty definition            1  altered by   -1.10546219    
+ ambient_T:the_zon
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:   -2.21092439       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+ Uncertainty definition            2  altered by  -0.839656472    
+ wind_speed:the_zon
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:   -2.21092439       0.00000000       0.00000000      0.916034341       0.00000000       0.00000000    
+  UACLIM:    1.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            3  altered by  -0.427629858    
+ ambient_T:the_yea
+    
+ Entering subroutine UAT03
+ Dry bulb temperature will be edited.
+  IDMAT:            1           0           2
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:  -0.855259717       0.00000000       0.00000000      0.916034341       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+ Uncertainty definition            4  altered by  -0.550986946    
+ wind_speed:the_yea
+    
+ Entering subroutine UAT03
+ Wind speed           will be edited.
+  IDMAT:            4           0           1
+  UACLIM:    2.00000000       0.00000000       0.00000000       1.00000000       0.00000000       0.00000000    
+  UACLIM:  -0.855259717       0.00000000       0.00000000      0.944901288       0.00000000       0.00000000    
+  UACLIM:    2.00000000       0.00000000       0.00000000       2.00000000       0.00000000       0.00000000    
+ ** Edits for changes in set:          12           4
+ ** Edits for changes in set:          12           4
+    
+ Entering subroutine UAT03a for day          11
+ambient   22   22   22   27   33   38   33   27   27   33   44   55   55   55   55   44   44   38   44   33   27   16   16   16
+ambient   13   13   13   18   24   29   24   18   18   24   35   46   46   46   46   35   35   29   35   24   18    7    7    7
+    
+ Entering subroutine UAT03a for day          12
+ambient   16   16   11   11   11   16   16   16   22   22   33   44   44   55   61   61   55   44   38   33   33   33   27   33
+ambient    7    7    2    2    2    7    7    7   13   13   24   35   35   46   52   52   46   35   29   24   24   24   18   24
+    
+ Entering subroutine UAT03a for day          13
+ambient   38   44   50   50   55   61   61   66   66   72   77   77   77   83   88   72   61   61   50   44   33   33   38   33
+ambient   29   35   41   41   46   52   52   57   57   63   68   68   68   74   79   63   52   52   41   35   24   24   29   24
+    
+ Entering subroutine UAT03a for day          14
+ambient   27   27   22   27   27   27   16   11   22   33   44   55   61   61   55   38   33   33   27   22   27   33   33   33
+ambient   18   18   13   18   18   18    7    2   13   24   35   46   52   52   46   29   24   24   18   13   18   24   24   24
+    
+ Entering subroutine UAT03a for day          15
+ambient   27   27   27   22   22   22   22   22   22   22   16   16   16   16   16   11   11    5    5    5    0    0    0    0
+ambient   18   18   18   13   13   13   13   13   13   13    7    7    7    7    7    2    2   -4   -4   -4   -9   -9   -9   -9
+    
+ Entering subroutine UAT03a for day          16
+ambient    0    0    0    0    0    5   11   11   11   11   11   16   22   27   27   22   22   16   16   16   16   16   22   22
+ambient   -9   -9   -9   -9   -9   -4    2    2    2    2    2    7   13   18   18   13   13    7    7    7    7    7   13   13
+    
+ Entering subroutine UAT03a for day          17
+ambient   22   22   22   22   22   22   22   22   22   27   33   33   33   33   33   33   33   33   33   33   38   44   50   55
+ambient   13   13   13   13   13   13   13   13   13   18   24   24   24   24   24   24   24   24   24   24   29   35   41   46
+    
+ Entering subroutine UAT03a for day          18
+ambient   55   55   61   61   66   66   66   66   66   72   77   83   83   88   83   88   77   77   83   83   83   83   83   83
+ambient   46   46   52   52   57   57   57   57   57   63   68   74   74   79   74   79   68   68   74   74   74   74   74   74
+    
+ Entering subroutine UAT03a for day          19
+ambient   83   77   77   72   72   72   72   72   72   83   88   94  100  100   94   83   72   66   55   55   55   50   44   55
+ambient   74   68   68   63   63   63   63   63   63   74   79   85   91   91   85   74   63   57   46   46   46   41   35   46
+    
+ Entering subroutine UAT03a for day          20
+ambient   50   50   50   50   44   44   38   44   50   55   66   72   77   77   83   77   72   72   72   72   66   66   66   72
+ambient   41   41   41   41   35   35   29   35   41   46   57   63   68   68   74   68   63   63   63   63   57   57   57   63
+    
+ Entering subroutine UAT03a for day          21
+ambient   72   66   66   72   72   72   72   77   83   77   77   77   77   83   77   72   61   61   55   44   38   22   22   16
+ambient   63   57   57   63   63   63   63   68   74   68   68   68   68   74   68   63   52   52   46   35   29   13   13    7
+    
+ Entering subroutine UAT03a for day          22
+ambient   16   22   27   27   22   16   16   22   16   33   44   61   72   72   72   55   44   44   44   44   44   44   44   50
+ambient    7   13   18   18   13    7    7   13    7   24   35   52   63   63   63   46   35   35   35   35   35   35   35   41
+    
+ Entering subroutine UAT03a for day          23
+ambient   55   50   50   44   44   38   38   44   44   55   55   66   77   77   66   61   50   44   44   44   44   50   50   44
+ambient   46   41   41   35   35   29   29   35   35   46   46   57   68   68   57   52   41   35   35   35   35   41   41   35
+    
+ Entering subroutine UAT03a for day          24
+ambient   50   50   55   55   55   50   55   55   55   61   66   72   77   77   77   72   66   61   66   61   61   55   50   50
+ambient   41   41   46   46   46   41   46   46   46   52   57   63   68   68   68   63   57   52   57   52   52   46   41   41
+    
+ Entering subroutine UAT03a for day          25
+ambient   44   44   44   44   44   44   50   50   55   61   72   83   88   83   88   72   66   61   55   55   55   61   72   77
+ambient   35   35   35   35   35   35   41   41   46   52   63   74   79   74   79   63   57   52   46   46   46   52   63   68
+    
+ Entering subroutine UAT03a for day          26
+ambient   72   72   72   72   66   61   55   55   55   66   66   66   72   72   72   66   55   55   50   44   44   50   55   50
+ambient   63   63   63   63   57   52   46   46   46   57   57   57   63   63   63   57   46   46   41   35   35   41   46   41
+    
+ Entering subroutine UAT03a for day          27
+ambient   44   50   50   55   55   61   61   61   72   77   83   88   94  105  105  100  100   94   94   94  100  100  100  100
+ambient   35   41   41   46   46   52   52   52   63   68   74   79   85   96   96   91   91   85   85   85   91   91   91   91
+    
+ Entering subroutine UAT03a for day          28
+ambient  100  100   94   88   88   88   88   88   88   94  100  105  105  105  100   94   94   94   94   94   94   88   83   77
+ambient   91   91   85   79   79   79   79   79   79   85   91   96   96   96   91   85   85   85   85   85   85   79   74   68
+    
+ Entering subroutine UAT03a for day          29
+ambient   72   72   61   61   61   66   72   83   88   94   88  105  116  127  127  116  100   94   88   88   88   88   83   77
+ambient   63   63   52   52   52   57   63   74   79   85   79   96  107  118  118  107   91   85   79   79   79   79   74   68
+    
+ Entering subroutine UAT03a for day          30
+ambient   77   83   83   77   77   77   77   72   72   83   88   94   94   94   94   88   83   83   72   72   72   72   66   66
+ambient   68   74   74   68   68   68   68   63   63   74   79   85   85   85   85   79   74   74   63   63   63   63   57   57
+    
+ Entering subroutine UAT03a for day          31
+ambient   66   61   61   61   61   66   66   66   66   77   88  100  100  100  100   88   77   72   66   61   61   66   66   66
+ambient   57   52   52   52   52   57   57   57   57   68   79   91   91   91   91   79   68   63   57   52   52   57   57   57
+    
+ Entering subroutine UAT03a for day          32
+ambient   72   66   66   66   66   61   72   77   83   88   88  105  111  116  116  116  111  111  105  105  105  100  100  100
+ambient   63   57   57   57   57   52   63   68   74   79   79   96  102  107  107  107  102  102   96   96   96   91   91   91
+    
+ Entering subroutine UAT03a for day          33
+ambient  100  100  105  105  105  100  100  105  105  111  116  116  122  122  122  116  116  111  111  105  105  105  100  100
+ambient   91   91   96   96   96   91   91   96   96  102  107  107  113  113  113  107  107  102  102   96   96   96   91   91
+    
+ Entering subroutine UAT03a for day          34
+ambient  100  100  100  100  100   94   94   94   94  100  111  122  122  122  116  111  100   94   88   77   72   61   55   50
+ambient   91   91   91   91   91   85   85   85   85   91  102  113  113  113  107  102   91   85   79   68   63   52   46   41
+    
+ Entering subroutine UAT03a for day          35
+ambient   44   44   44   44   44   44   38   33   44   61   72   77   83   88   77   72   55   44   38   38   44   61   33   33
+ambient   35   35   35   35   35   35   29   24   35   52   63   68   74   79   68   63   46   35   29   29   35   52   24   24
+    
+ Entering subroutine UAT03a for day          36
+ambient   33   33   33   16   22   22   16   16   22   44   55   66   77   77   77   72   61   50   44   38   33   22   27   22
+ambient   24   24   24    7   13   13    7    7   13   35   46   57   68   68   68   63   52   41   35   29   24   13   18   13
+    
+ Entering subroutine UAT03a for day          37
+ambient   22   22   11    5   11    5   -3   -3    0    5   16   27   44   55   66   66   72   55   50   50   50   50   50   50
+ambient   13   13    2   -4    2   -4  -12  -12   -9   -4    7   18   35   46   57   57   63   46   41   41   41   41   41   41
+    
+ Entering subroutine UAT03a for day          38
+ambient   55   55   50   50   50   50   50   50   50   55   55   61   66   72   77   61   44   33   27   22   16   16    5    5
+ambient   46   46   41   41   41   41   41   41   41   46   46   52   57   63   68   52   35   24   18   13    7    7   -4   -4
+    
+ Entering subroutine UAT03a for day          39
+ambient   11   11   11   11   11    5    0    0    5   16   50   66   66   83   66   61   38   33   33   33   33   33   33   33
+ambient    2    2    2    2    2   -4   -9   -9   -4    7   41   57   57   74   57   52   29   24   24   24   24   24   24   24
+    
+ Entering subroutine UAT03a for day          40
+ambient   33   33   22   27   27   22   22   27   33   38   38   44   44   44   44   44   38   38   38   33   33   33   33   38
+ambient   24   24   13   18   18   13   13   18   24   29   29   35   35   35   35   35   29   29   29   24   24   24   24   29
+    
+ Entering subroutine UAT03a for day          41
+ambient   38   33   22   16   16   16   11   11   11   27   38   44   44   44   50   50   44   44   38   38   38   38   38   38
+ambient   29   24   13    7    7    7    2    2    2   18   29   35   35   35   41   41   35   35   29   29   29   29   29   29
+    
+ Entering subroutine UAT03a for day          42
+ambient   38   38   38   38   44   44   44   44   44   50   55   55   61   61   55   50   44   44   38   16   22   22   22   16
+ambient   29   29   29   29   35   35   35   35   35   41   46   46   52   52   46   41   35   35   29    7   13   13   13    7
+    
+ Entering subroutine UAT03a for day          43
+ambient   11   16    5    0    0    0   -3    0   11   27   38   44   50   50   50   44   33   16   16   16   11   11   11   11
+ambient    2    7   -4   -9   -9   -9  -12   -9    2   18   29   35   41   41   41   35   24    7    7    7    2    2    2    2
+    
+ Entering subroutine UAT03a for day          44
+ambient    0   -3   -3  -14   -8   -3    0    0    0   11   16   16   16   11   16    5    5    5    0    0    0    5    5    0
+ambient   -9  -12  -12  -23  -17  -12   -9   -9   -9    2    7    7    7    2    7   -4   -4   -4   -9   -9   -9   -4   -4   -9
+    
+ Entering subroutine UAT03a for day          45
+ambient    0    0   -3  -14  -19  -14   -8    0    0    5   11   16   22   22   22   16   11   11   11   11   16   22   22   22
+ambient   -9   -9  -12  -23  -28  -23  -17   -9   -9   -4    2    7   13   13   13    7    2    2    2    2    7   13   13   13
+    
+ Entering subroutine UAT03a for day          46
+ambient   22   16   11   11   11   11   11   16   16   27   38   50   61   55   55   50   44   44   44   44   50   50   44   38
+ambient   13    7    2    2    2    2    2    7    7   18   29   41   52   46   46   41   35   35   35   35   41   41   35   29
+    
+ Entering subroutine UAT03a for day          47
+ambient   44   44   44   44   38   44   50   50   55   55   61   61   72   66   66   66   66   55   44   44   44   50   50   44
+ambient   35   35   35   35   29   35   41   41   46   46   52   52   63   57   57   57   57   46   35   35   35   41   41   35
+    
+ Entering subroutine UAT03a for day          48
+ambient   38   44   50   44   44   44   44   50   50   50   55   44   44   44   38   38   38   44   38   27   22   16   11   11
+ambient   29   35   41   35   35   35   35   41   41   41   46   35   35   35   29   29   29   35   29   18   13    7    2    2
+    
+ Entering subroutine UAT03a for day          49
+ambient   16   16   16   16   11    5   11    0    5   27   44   61   72   77   83   72   66   61   55   55   50   50   50   55
+ambient    7    7    7    7    2   -4    2   -9   -4   18   35   52   63   68   74   63   57   52   46   46   41   41   41   46
+    
+ Entering subroutine UAT03a for day          50
+ambient   66   72   72   72   66   61   55   61   72   83   94   83   77   94   94   66   61   61   50   61   55   55   55   55
+ambient   57   63   63   63   57   52   46   52   63   74   85   74   68   85   85   57   52   52   41   52   46   46   46   46
+    
+ Entering subroutine UAT03a for day          51
+ambient   50   55   44   44   38   38   44   50   55   66   66   66   66   83   77   72   66   61   55   66   88  111  122  100
+ambient   41   46   35   35   29   29   35   41   46   57   57   57   57   74   68   63   57   52   46   57   79  102  113   91
+    
+ Entering subroutine UAT03a for day          52
+ambient   66   61   55   50   50   50   50   50   50   72   83   88   88   88   77   83   72   61   55   50   44   55   55   55
+ambient   57   52   46   41   41   41   41   41   41   63   74   79   79   79   68   74   63   52   46   41   35   46   46   46
+    
+ Entering subroutine UAT03a for day          53
+ambient   55   61   61   55   55   55   55   61   61   72   77   77   83   72   72   72   77   88   94   94   94   88  100  100
+ambient   46   52   52   46   46   46   46   52   52   63   68   68   74   63   63   63   68   79   85   85   85   79   91   91
+    
+ Entering subroutine UAT03a for day          54
+ambient  105  105  105  100  100   66   50   44   50   61   61   61   55   55   55   61   55   44   44   38   33   33   33   22
+ambient   96   96   96   91   91   57   41   35   41   52   52   52   46   46   46   52   46   35   35   29   24   24   24   13
+    
+ Entering subroutine UAT03a for day          55
+ambient   27   11   11    5    5   11   11   16   33   55   77   77   83   83   83   72   61   50   44   44   44   50   50   50
+ambient   18    2    2   -4   -4    2    2    7   24   46   68   68   74   74   74   63   52   41   35   35   35   41   41   41
+    
+ Entering subroutine UAT03a for day          56
+ambient   44   50   44   50   50   44   44   44   55   61   77   94  100  105  111  105  100   94   88   83   77   72   66   55
+ambient   35   41   35   41   41   35   35   35   46   52   68   85   91   96  102   96   91   85   79   74   68   63   57   46
+    
+ Entering subroutine UAT03a for day          57
+ambient   55   55   61   61   61   66   66   66   77   66   88   88   83   94   88   72   72   61   55   61   50   50   38   33
+ambient   46   46   52   52   52   57   57   57   68   57   79   79   74   85   79   63   63   52   46   52   41   41   29   24
+    
+ Entering subroutine UAT03a for day          58
+ambient   33   27   27   33   27   22   22   27   50   66   77   83   77   77   77   72   72   72   72   72   77   83   94  100
+ambient   24   18   18   24   18   13   13   18   41   57   68   74   68   68   68   63   63   63   63   63   68   74   85   91
+    
+ Entering subroutine UAT03a for day          59
+ambient  100   83   88   88   88   88   61   72   77   83   94  100   88   83   88   83   77   66   55   50   44   44   44   44
+ambient   91   74   79   79   79   79   52   63   68   74   85   91   79   74   79   74   68   57   46   41   35   35   35   35

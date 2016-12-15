@@ -54,6 +54,10 @@
 *cfg	C:\Esru\esp-r\training\basic\cfg\bld_basic_prht.cfg
 *root	C:\Esru\esp-r\training\basic
 *item
+*name	... with uncertainty definitions
+*cfg	C:\Esru\esp-r\training\uncertain\cfg\uncertain_opr.cfg
+*root	C:\Esru\esp-r\training\uncertain
+*item
 *group	technical features
 *help	A simple office model with various technical features applied.
 *item
@@ -74,8 +78,8 @@
 *root	C:\Esru\esp-r\training\cellular_shd
 *item
 *name	... with natural ventilation
-*cfg	C:\Esru\esp-r\training\cellular_natv\cfg\cellular_natv.cfg
-*root	C:\Esru\esp-r\training\cellular_natv
+*cfg	C:\Esru\esp-r\training\cellular_various\cfg\cellular_natv.cfg
+*root	C:\Esru\esp-r\training\cellular_various
 *item
 *name	... with earth tube air heating/cooling 
 *cfg	C:\Esru\esp-r\training\cellular_earth\cfg\cellular_earth.cfg
@@ -86,40 +90,40 @@
 *root	C:\Esru\esp-r\training\cellular_bound
 *item
 *name	... with CO2 tracking (open windows)
-*cfg	C:\Esru\esp-r\training\cellular_contam\cfg\cellular_contam_bc.cfg
-*root	C:\Esru\esp-r\training\cellular_contam
+*cfg	C:\Esru\esp-r\training\cellular_various\cfg\cellular_contam_bc.cfg
+*root	C:\Esru\esp-r\training\cellular_various
 *item
 *name	... with CO2 tracking (high occupancy)
-*cfg	C:\Esru\esp-r\training\cellular_contam\cfg\cellular_contam_ho.cfg
-*root	C:\Esru\esp-r\training\cellular_contam
+*cfg	C:\Esru\esp-r\training\cellular_various\cfg\cellular_contam_ho.cfg
+*root	C:\Esru\esp-r\training\cellular_various
 *item
 *name	... with CO2 tracking (mechanical ventilation)
-*cfg	C:\Esru\esp-r\training\cellular_contam\cfg\cellular_contam_mv.cfg
-*root	C:\Esru\esp-r\training\cellular_contam
+*cfg	C:\Esru\esp-r\training\cellular_various\cfg\cellular_contam_mv.cfg
+*root	C:\Esru\esp-r\training\cellular_various
 *item
 *name	... with CO2 control of mechanical ventilation system
-*cfg	C:\Esru\esp-r\training\cellular_contam\cfg\cellular_contam_mvctl.cfg
-*root	C:\Esru\esp-r\training\cellular_contam
+*cfg	C:\Esru\esp-r\training\cellular_variouscontam\cfg\cellular_contam_mvctl.cfg
+*root	C:\Esru\esp-r\training\cellular_variouscontam
 *item
 *name	... with photovoltaic-integrated facade
 *cfg	C:\Esru\esp-r\training\cellular_pv\cfg\cellular_pv.cfg
 *root	C:\Esru\esp-r\training\cellular_pv
 *item
 *name	... with multiple input single output controller
-*cfg	C:\Esru\esp-r\training\cellular_miso\cfg\cellular_miso.cfg
-*root	C:\Esru\esp-r\training\cellular_miso
+*cfg	C:\Esru\esp-r\training\cellular_various\cfg\cellular_miso.cfg
+*root	C:\Esru\esp-r\training\cellular_various
 *item
 *name	... with occupant controlled natural ventilation
-*cfg	C:\Esru\esp-r\training\cellular_natv\cfg\cellular_natv.cfg
-*root	C:\Esru\esp-r\training\cellular_natv
+*cfg	C:\Esru\esp-r\training\cellular_various\cfg\cellular_natv.cfg
+*root	C:\Esru\esp-r\training\cellular_various
 *item
 *name	... with hybrid natural & mechanical ventilation
 *cfg	C:\Esru\esp-r\training\cellular_hybrid\cfg\cellular_mctl.cfg
 *root	C:\Esru\esp-r\training\cellular_hybrid
 *item
 *name	... with component based HVAC
-*cfg	C:\Esru\esp-r\training\cellular_hvac\cfg\cellular_hvac.cfg
-*root	C:\Esru\esp-r\training\cellular_hvac
+*cfg	C:\Esru\esp-r\training\cellular_various\cfg\cellular_hvac.cfg
+*root	C:\Esru\esp-r\training\cellular_various
 *item
 *name	... with floor heating & chilled ceiling
 *cfg	C:\Esru\esp-r\training\cellular_flh\cfg\cellular_flh.cfg
@@ -130,20 +134,20 @@
 *root	C:\Esru\esp-r\training\cellular_expl_sdhw
 *item
 *name	... with constant volume HVAC controller
-*cfg	C:\Esru\esp-r\training\cellular_cvvt\cfg\cellular_cvvt.cfg
-*root	C:\Esru\esp-r\training\cellular_cvvt
+*cfg	C:\Esru\esp-r\training\cellular_various\cfg\cellular_cvvt.cfg
+*root	C:\Esru\esp-r\training\cellular_various
 *item
 *name	... with ideal VAV/CAV HVAC controller
-*cfg	C:\Esru\esp-r\training\cellular_cvvt\cfg\cellular_vav.cfg
-*root	C:\Esru\esp-r\training\cellular_cvvt
+*cfg	C:\Esru\esp-r\training\cellular_various\cfg\cellular_vav.cfg
+*root	C:\Esru\esp-r\training\cellular_various
 *item
 *name	... with master-slave control
-*cfg	C:\Esru\esp-r\training\cellular_cvvt\cfg\cellular_master.cfg
-*root	C:\Esru\esp-r\training\cellular_cvvt
+*cfg	C:\Esru\esp-r\training\cellular_various\cfg\cellular_master.cfg
+*root	C:\Esru\esp-r\training\cellular_various
 *item
 *name	... with P and P+I control
-*cfg	C:\Esru\esp-r\training\cellular_cvvt\cfg\cellular_pi.cfg
-*root	C:\Esru\esp-r\training\cellular_cvvt
+*cfg	C:\Esru\esp-r\training\cellular_various\cfg\cellular_pi.cfg
+*root	C:\Esru\esp-r\training\cellular_various
 *item
 *name	... with associated measured temperatures
 *cfg	C:\Esru\esp-r\training\cellular_bc\cfg\cellular_measured.cfg
@@ -484,9 +488,9 @@
 *cfg    C:\Esru\esp-r\training\cellular_cfd\cfg\cellular_cfd.cfg
 *root   C:\Esru\esp-r\training\cellular_cfd
 *item
-*name   Sunroom - adaptive thermal conflation
-*cfg    C:\Esru\esp-r\training\cfd\sunroom\cfg\sunroom.cfg
-*root	C:\Esru\esp-r\training\cfd\sunroom
+*name   Sunroom - adaptive thermal-CFD conflation
+*cfg    C:\Esru\esp-r\training\cfd\CFD_room/cfg/CFD_room4.cfg
+*root	C:\Esru\esp-r\training\cfd\CFD_room
 *item
 *group	combined thermal and electrical
 *help	A set of models demonstrating CHP modelling

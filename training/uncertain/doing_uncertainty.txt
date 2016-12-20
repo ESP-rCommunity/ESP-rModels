@@ -7,13 +7,13 @@ In ESP-r there is a formal description of uncertainty
 associated with specific attributes of a model. The attributes
 are a sub-set of the ESP-r data model and include:
 a) thermophysical properties, surface emissivity and absorptivity,
-layer thickness within constructions,
+   layer thickness within constructions,
 b) weather data,
 c) zone operations attributes for scheduled air flows and
-casual gains and their scheduling,
+   casual gains and their scheduling,
 d) ideal zone controls attributes e.g. heating and cooling
 magnitudes, radiant convective splits and period start times,
-e) the air volume within rooms.
+e) the air volume within rooms or surface areas within rooms.
 
 For each of these attributes user can define and name their
 own concepts of what-is-uncertain, for example [wall_insul_thick]
@@ -24,16 +24,22 @@ also given for the concept.
 
 Separately users create named locations e.g. [facade_walls] and 
 [the_roof] each of which includes a list of surfaces in the model.
+There are options to define locations for all surfaces which use
+a specific MLC or material or for all surfaces facing ambient
+conditions. 
+
 Some topics such as weather or control are defined in the concept
 of time rather than location and so an [all_year] could be created
 for use with weather or control attributes.
 
-Lastly the user creates a list of uncertainty pairs of concept
-and location. When bps starts it will recognise that there are
-uncertainty defintions and ask the user whether a differential,
-factorial or Monti-Carlo assessment should be used and how many
-runs should be comissioned beyoned the base case model, typically 
-50-100. At the start of each run the model details are scanned and
+Lastly the user creates a list of [uncertainty pairs] with
+combine the defined concepts and defined location. When bps 
+starts it will recognise that there are uncertainty defintions 
+and ask the user whether a differential, factorial or Monti-Carlo 
+assessment should be used and how many runs should be comissioned 
+beyoned the base case model, typically 50-100. 
+
+At the start of each run the model details are scanned and
 the uncertainty description drives the modification of the model
 attributes in memory ( no mode files are changed), a random number
 is generated (a standard distribution between -2 and +2) which is
@@ -55,31 +61,32 @@ via the [Browse/Edit/Simulate] menu option [p]. The password is
 (based on the model root name and ends with .ual).
 
 There is a 'create default definitions' option which brings
-up a list of material categories and at the bottom are uncertainty
-bounds (% or mean value) for . Each category has a >> toggle so you
-could mark brick as an unknown category and then use the bounds
-for unknown materials as default values. There is no specific
-requirment to use this facility.
+up a list of uncertainty topics. For each you can set the bounds
+and whether these are based on a % of the entities current 
+attributes i.e. conductivity or are a real-number offset 
+i.e. 0.01m from the current thickness of a layer. There is 
+no specific requirment to use this facility.
 
-The 1st phase assigns a so-called distribution for a chosen 
+The 1st phase assigns a so-called [distribution] for a chosen 
 model attribute (also known as a parameter). For each of the major
 groupings of model attributes i.e. thermophysical properties you
 are asked to select a material used in the model as well as
-what attribute is uncertain. Lets say conductivity. The magnitude
-of uncertainty can be either a percentage of the materials current
-conductivity or an offset value. For example copper has a conductivity
+what attribute e.g. conductivity, density, is uncertain. Lets 
+say conductivity. The magnitude of uncertainty can be either 
+a percentage of the materials current conductivity or an 
+offset value. For example copper has a conductivity
 of ~200(W/(m-K) so an offset value of 20 could be used. 
 
 The 2nd phas selects the location of what is uncertain (e.g.
 a zone or surface). There is an initial question about location
 via [spatial] or [temporal]. Choose spatial unless you are dealing
-with weather or control attribues. You are then presented with a 
-list of surfaces in the zone. Initially choose only those surfaces 
-(or a subset of those surfaces) which contain the distributions 
-you previously marked. And give the location a name.
+with weather or control attribues. You are then presented with 
+options for an automated search for surfaces matching specific
+criter or a manual selection of zones and surfaces. Lastly 
+give the location a name.
 
 The 3rd phase links the distributions and locations. Here you select 
-one or all of the distributions and locations to include. And save 
+from the list of distributions and locations. Remember to save 
 the library.
 
 When running an assessment you need to invoke the simulator in
@@ -189,7 +196,7 @@ Here is an example of changing thermophsical properties.
 
 The 'altered by' is the random number generated at the start of
 the run. This is multipled by the value of the range directive
-to get the specific change in thickness or conductivity.
+to get the specific change in the attribute.
 
 The dialog when res starts might look like:
  The name (uncertain_ctl.res) will be used.

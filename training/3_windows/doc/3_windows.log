@@ -36,6 +36,6 @@ Databases associated with the models:
  constructions          : ../dbs/office_vent_constr.db2
  plant components       : plantc.db1
  event profiles         : /usr/esru/esp-r/databases/profiles.db1.a
- optical properties     : optics.db1
+ optical properties     : optics.db2
  
  

@@ -21,7 +21,7 @@ Databases associated with the model:
  materials              : ../dbs/linford.materialdb.a
  constructions          : ../dbs/linford.constrdb
  plant components       : plantc.db1
- event profiles         : /usr/esru/esp-r/databases/profiles.db1.a
+ event profiles         : profiles.db2.a
  optical properties     : ../dbs/linford.odb
  
  ____________________________________________________________

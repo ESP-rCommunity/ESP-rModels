@@ -50,10 +50,10 @@ Databases associated with the model:
  standard materials     : material.db4.a
  standard constructions : multicon.db5
  standard plant comp    : plantc.db1
- standard event profiles: profiles.db1.a
+ standard event profiles: profiles.db2.a
  standard optical prop  : optics.db2
  standard UK NCM data   : SBEM.db1
- predefined objects     : /home/jon/esru_multicon5/esp-r/databases/predefined.db1
+ predefined objects     : predefined.db1
  standard mould isopleth: mould.db1
  
  ____________________________________________________________

@@ -35,7 +35,7 @@ Databases associated with the model:
  standard materials     : material.db4.a
  standard constructions : multicon.db4
  standard plant comp    : plantc.tt
- standard event profiles: profiles.db1.a
+ standard event profiles: profiles.db2.a
  standard optical prop  : optics.db2
  standard UK NCM data   : SBEM.db1
  standard mould isopleth: mould.db1

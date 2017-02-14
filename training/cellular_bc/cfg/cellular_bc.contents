@@ -82,7 +82,7 @@ Databases associated with the model:
  materials              : ../dbs/cellular.materials.a
  constructions          : ../dbs/cellular.constrdb
  plant components       : plantc.db1
- event profiles         : /usr/esru/esp-r/databases/profiles.db1.a
+ event profiles         : profiles.db2.a
  optical properties     : optics.db2
  
  ____________________________________________________________

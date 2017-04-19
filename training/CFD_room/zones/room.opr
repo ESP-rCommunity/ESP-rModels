@@ -1,5 +1,5 @@
 *Operations 2.1
-*date Sun Dec  8 15:21:41 2013  # latest file modification 
+*date Wed Mar 15 11:05:24 2017  # latest file modification 
 # operations of room defined in: 
 # ../zones/room.opr
 nil_operations
@@ -17,10 +17,21 @@ nil_operations
 *casual
 nil_operations
 # casual user-label type-key-word slot attributes
-*type Occupt       people            1  0  0
+*type Occupt       dynamicpeople     1  3  0
 *type Lights       lighting          2  0  0
 *type Equipt       equipment         3  0  0
 *end_type 
-     0   # number of casual gains in day type: weekday     
-     0   # number of casual gains in day type: saturday    
-     0   # number of casual gains in day type: sunday      
+     5   # number of casual gains in day type: weekday     
+# slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
+   1,   7,   8,  1.00,  0.00,  0.00,  1.40,  0.60,  0.10,  0.600,  0.400
+   1,   7,   8,  1.00,  0.00,  0.00,  1.40,  0.60,  0.10,  0.600,  0.400
+   1,   8,  10,  1.00,  0.00,  0.00,  1.40,  0.60,  0.10,  0.600,  0.400
+   1,  10,  11,  1.00,  0.00,  0.00,  1.40,  0.60,  0.10,  0.600,  0.400
+   1,  11,  12,  1.00,  0.00,  0.00,  1.40,  0.60,  0.10,  0.600,  0.400
+   1,  12,  13,  1.00,  0.00,  0.00,  1.40,  0.60,  0.10,  0.600,  0.400
+   1,  13,  24,  1.00,  0.00,  0.00,  1.40,  0.60,  0.10,  0.600,  0.400
+     1   # number of casual gains in day type: saturday 
+   1,   0,  24,  1.00,  0.00,  0.00,  1.40,  1.00,  0.10,  0.600,  0.400  
+     1   # number of casual gains in day type: sunday      
+   1,   0,  24,  1.00,  0.00,  0.00,  1.40,  1.00,  0.10,  0.600,  0.400

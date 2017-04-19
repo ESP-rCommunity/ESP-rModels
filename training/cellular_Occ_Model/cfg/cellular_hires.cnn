@@ -1,0 +1,111 @@
+*connections for cellular_hires
+*Date Tue Apr 18 16:37:48 2017
+    108   # number of connections
+   1   1   3   3   1  #    1 pt_general in manager_a >|< pt_general in manager_b
+   1   2   3   2   8  #    2 part_frame in manager_a >|< part_frame in corridor
+   1   3   3   2   6  #    3 door in manager_a >|< door in corridor
+   1   4   1   0   0  #    4 pt_other in manager_a >|< Identical environment
+   1   5   1   0   0  #    5 ceiling in manager_a >|< Identical environment
+   1   6   1   0   0  #    6 floor in manager_a >|< Identical environment
+   1   7   0   0   0  #    7 spandral in manager_a is External
+   1   8   0   0   0  #    8 frame in manager_a is External
+   1   9   0   0   0  #    9 glazing in manager_a is External
+   1  10   3   2   9  #   10 part_glaz in manager_a >|< part_glaz in corridor
+   1  11   3   2   7  #   11 ptn_corid in manager_a >|< ptn_corid in corridor
+   1  12   1   0   0  #   12 pt_other_a in manager_a >|< Identical environment
+   1  13   1   0   0  #   13 pt_other_b in manager_a >|< Identical environment
+   1  14   3   3  14  #   14 pt_gen_a in manager_a >|< pt_gen_a in manager_b
+   1  15   3   3  15  #   15 pt_gen_b in manager_a >|< pt_gen_b in manager_b
+   1  16   1   0   0  #   16 pt_other_c in manager_a >|< Identical environment
+   1  17   1   0   0  #   17 floor_b in manager_a >|< Identical environment
+   1  18   1   0   0  #   18 floor_c in manager_a >|< Identical environment
+   1  19   1   0   0  #   19 ceiling_b in manager_a >|< Identical environment
+   1  20   1   0   0  #   20 ceiling_c in manager_a >|< Identical environment
+   2   1   1   0   0  #   21 right in corridor >|< Identical environment
+   2   2   1   0   0  #   22 wall in corridor >|< Identical environment
+   2   3   1   0   0  #   23 left in corridor >|< Identical environment
+   2   4   1   0   0  #   24 ceiling in corridor >|< Identical environment
+   2   5   1   0   0  #   25 floor in corridor >|< Identical environment
+   2   6   3   1   3  #   26 door in corridor >|< door in manager_a
+   2   7   3   1  11  #   27 ptn_corid in corridor >|< ptn_corid in manager_a
+   2   8   3   1   2  #   28 part_frame in corridor >|< part_frame in manager_a
+   2   9   3   1  10  #   29 part_glaz in corridor >|< part_glaz in manager_a
+   2  10   3   3   2  #   30 part_frameb in corridor >|< part_frame in manager_b
+   2  11   3   3   3  #   31 door_b in corridor >|< door in manager_b
+   2  12   3   3  11  #   32 ptn_coridb in corridor >|< ptn_corid in manager_b
+   2  13   3   3  10  #   33 part_glazb in corridor >|< part_glaz in manager_b
+   2  14   5   0   0  #   34 filler in corridor is adiabatic
+   3   1   3   1   1  #   35 pt_general in manager_b >|< pt_general in manager_a
+   3   2   3   2  10  #   36 part_frame in manager_b >|< part_frameb in corridor
+   3   3   3   2  11  #   37 door in manager_b >|< door_b in corridor
+   3   4   1   0   0  #   38 pt_other in manager_b >|< Identical environment
+   3   5   1   0   0  #   39 ceiling in manager_b >|< Identical environment
+   3   6   1   0   0  #   40 floor in manager_b >|< Identical environment
+   3   7   0   0   0  #   41 spandral in manager_b is External
+   3   8   0   0   0  #   42 frame in manager_b is External
+   3   9   0   0   0  #   43 glazing in manager_b is External
+   3  10   3   2  13  #   44 part_glaz in manager_b >|< part_glazb in corridor
+   3  11   3   2  12  #   45 ptn_corid in manager_b >|< ptn_coridb in corridor
+   3  12   1   0   0  #   46 pt_other_a in manager_b >|< Identical environment
+   3  13   1   0   0  #   47 pt_other_b in manager_b >|< Identical environment
+   3  14   3   1  14  #   48 pt_gen_a in manager_b >|< pt_gen_a in manager_a
+   3  15   3   1  15  #   49 pt_gen_b in manager_b >|< pt_gen_b in manager_a
+   3  16   1   0   0  #   50 pt_other_c in manager_b >|< Identical environment
+   3  17   1   0   0  #   51 floor_b in manager_b >|< Identical environment
+   3  18   1   0   0  #   52 floor_c in manager_b >|< Identical environment
+   3  19   1   0   0  #   53 ceiling_b in manager_b >|< Identical environment
+   3  20   1   0   0  #   54 ceiling_c in manager_b >|< Identical environment
+   4   1   3   6   1  #   55 pt_general in manager_E+ >|< pt_general in manager_ASH
+   4   2   3   5   8  #   56 part_frame in manager_E+ >|< part_frame in corridor_c
+   4   3   3   5   6  #   57 door in manager_E+ >|< door in corridor_c
+   4   4   1   0   0  #   58 pt_other in manager_E+ >|< Identical environment
+   4   5   1   0   0  #   59 ceiling in manager_E+ >|< Identical environment
+   4   6   1   0   0  #   60 floor in manager_E+ >|< Identical environment
+   4   7   0   0   0  #   61 spandral in manager_E+ is External
+   4   8   0   0   0  #   62 frame in manager_E+ is External
+   4   9   0   0   0  #   63 glazing in manager_E+ is External
+   4  10   3   5   9  #   64 part_glaz in manager_E+ >|< part_glaz in corridor_c
+   4  11   3   5   7  #   65 ptn_corid in manager_E+ >|< ptn_corid in corridor_c
+   4  12   1   0   0  #   66 pt_other_a in manager_E+ >|< Identical environment
+   4  13   1   0   0  #   67 pt_other_b in manager_E+ >|< Identical environment
+   4  14   3   6  14  #   68 pt_gen_a in manager_E+ >|< pt_gen_a in manager_ASH
+   4  15   3   6  15  #   69 pt_gen_b in manager_E+ >|< pt_gen_b in manager_ASH
+   4  16   1   0   0  #   70 pt_other_c in manager_E+ >|< Identical environment
+   4  17   1   0   0  #   71 floor_b in manager_E+ >|< Identical environment
+   4  18   1   0   0  #   72 floor_c in manager_E+ >|< Identical environment
+   4  19   1   0   0  #   73 ceiling_b in manager_E+ >|< Identical environment
+   4  20   1   0   0  #   74 ceiling_c in manager_E+ >|< Identical environment
+   5   1   1   0   0  #   75 right in corridor_c >|< Identical environment
+   5   2   1   0   0  #   76 wall in corridor_c >|< Identical environment
+   5   3   1   0   0  #   77 left in corridor_c >|< Identical environment
+   5   4   1   0   0  #   78 ceiling in corridor_c >|< Identical environment
+   5   5   1   0   0  #   79 floor in corridor_c >|< Identical environment
+   5   6   3   4   3  #   80 door in corridor_c >|< door in manager_E+
+   5   7   3   4  11  #   81 ptn_corid in corridor_c >|< ptn_corid in manager_E+
+   5   8   3   4   2  #   82 part_frame in corridor_c >|< part_frame in manager_E+
+   5   9   3   4  10  #   83 part_glaz in corridor_c >|< part_glaz in manager_E+
+   5  10   3   6   2  #   84 part_frameb in corridor_c >|< part_frame in manager_ASH
+   5  11   3   6   3  #   85 door_b in corridor_c >|< door in manager_ASH
+   5  12   3   6  11  #   86 ptn_coridb in corridor_c >|< ptn_corid in manager_ASH
+   5  13   3   6  10  #   87 part_glazb in corridor_c >|< part_glaz in manager_ASH
+   5  14   5   0   0  #   88 filler in corridor_c is adiabatic
+   6   1   3   4   1  #   89 pt_general in manager_ASH >|< pt_general in manager_E+
+   6   2   3   5  10  #   90 part_frame in manager_ASH >|< part_frameb in corridor_c
+   6   3   3   5  11  #   91 door in manager_ASH >|< door_b in corridor_c
+   6   4   1   0   0  #   92 pt_other in manager_ASH >|< Identical environment
+   6   5   1   0   0  #   93 ceiling in manager_ASH >|< Identical environment
+   6   6   1   0   0  #   94 floor in manager_ASH >|< Identical environment
+   6   7   0   0   0  #   95 spandral in manager_ASH is External
+   6   8   0   0   0  #   96 frame in manager_ASH is External
+   6   9   0   0   0  #   97 glazing in manager_ASH is External
+   6  10   3   5  13  #   98 part_glaz in manager_ASH >|< part_glazb in corridor_c
+   6  11   3   5  12  #   99 ptn_corid in manager_ASH >|< ptn_coridb in corridor_c
+   6  12   1   0   0  #  100 pt_other_a in manager_ASH >|< Identical environment
+   6  13   1   0   0  #  101 pt_other_b in manager_ASH >|< Identical environment
+   6  14   3   4  14  #  102 pt_gen_a in manager_ASH >|< pt_gen_a in manager_E+
+   6  15   3   4  15  #  103 pt_gen_b in manager_ASH >|< pt_gen_b in manager_E+
+   6  16   1   0   0  #  104 pt_other_c in manager_ASH >|< Identical environment
+   6  17   1   0   0  #  105 floor_b in manager_ASH >|< Identical environment
+   6  18   1   0   0  #  106 floor_c in manager_ASH >|< Identical environment
+   6  19   1   0   0  #  107 ceiling_b in manager_ASH >|< Identical environment
+   6  20   1   0   0  #  108 ceiling_c in manager_ASH >|< Identical environment

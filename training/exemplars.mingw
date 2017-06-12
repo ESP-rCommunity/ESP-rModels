@@ -109,6 +109,10 @@
 *cfg	C:\Esru\esp-r\training\cellular_pv\cfg\cellular_pv.cfg
 *root	C:\Esru\esp-r\training\cellular_pv
 *item
+*name	... with alternative occupancy models
+*cfg	C:\Esru\esp-r\training\cellular_Occ_Model\cfg\cellular_hires.cfg
+*root	C:\Esru\esp-r\training\cellular_Occ_Model
+*item
 *name	... with multiple input single output controller
 *cfg	C:\Esru\esp-r\training\cellular_various\cfg\cellular_miso.cfg
 *root	C:\Esru\esp-r\training\cellular_various
@@ -152,6 +156,10 @@
 *name	... with associated measured temperatures
 *cfg	C:\Esru\esp-r\training\cellular_bc\cfg\cellular_measured.cfg
 *root	C:\Esru\esp-r\training\cellular_bc
+*item
+*name	... using CFC complex fenistration in facade
+*cfg	C:\Esru\esp-r\training\cellular_CFC\cfg\cellular_CFC.cfg
+*root	C:\Esru\esp-r\training\cellular_CFC
 *item
 *label	___ More comprehensive models:
 *item
@@ -466,6 +474,10 @@
 *item
 *name   ... with thermal and mass flow conflation
 *cfg    C:\Esru\esp-r\training\cfd\CFD_room\cfg\CFD_room_afn.cfg
+*root	C:\Esru\esp-r\training\cfd\CFD_room
+*item
+*name   ... with detailed dynamic occupant in room
+*cfg    C:\Esru\esp-r\training\cfd\CFD_room\cfg\CFD_room_occ.cfg
 *root	C:\Esru\esp-r\training\cfd\CFD_room
 *item
 *name   displacement ventilation system

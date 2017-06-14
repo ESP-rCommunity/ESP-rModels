@@ -157,9 +157,13 @@
 *cfg	C:\Esru\esp-r\training\cellular_bc\cfg\cellular_measured.cfg
 *root	C:\Esru\esp-r\training\cellular_bc
 *item
-*name	... using CFC complex fenistration in facade
+*name	... using CFC complex fenistrations in facade
 *cfg	C:\Esru\esp-r\training\cellular_CFC\cfg\cellular_CFC.cfg
 *root	C:\Esru\esp-r\training\cellular_CFC
+*item
+*name	... with stochastic occupant behaviour from obFMU
+*cfg	C:\Esru\esp-r\training\cellular_obFMU\cfg\cellular_obFMU.cfg
+*root	C:\Esru\esp-r\training\cellular_obFMU
 *item
 *label	___ More comprehensive models:
 *item

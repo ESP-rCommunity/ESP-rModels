@@ -170,6 +170,10 @@
 *cfg	/usr/esru/esp-r/training/cellular_CFC/cfg/cellular_CFC.cfg
 *root	/usr/esru/esp-r/training/cellular_CFC
 *item
+*name	... with stochastic occupant behaviour from obFMU
+*cfg	/usr/esru/esp-r/training/cellular_obFMU/cfg/cellular_obFMU.cfg
+*root	/usr/esru/esp-r/training/cellular_obFMU
+*item
 *label	___ More comprehensive models:
 *item
 *group	realistic scale

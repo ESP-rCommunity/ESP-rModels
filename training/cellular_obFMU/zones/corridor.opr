@@ -1,0 +1,22 @@
+*Operations 1.0
+*date Wed Mar 30 12:29:22 2016  # latest file modification 
+# operations of corridor defined in: 
+# ../zones/corridor.opr
+half a person and 50-100W lighting weekdays 10W weekends with electrical properties
+# control(no control of air flow  ), low mid & high setpoints 
+   0     0.000     0.000     0.000
+     0   # number of flow periods in day type: weekdays    
+     0   # number of flow periods in day type: saturday    
+     0   # number of flow periods in day type: sunday      
+     6   # number of casual gains in day type: weekdays    
+# slot, period, sensible, latent, rad_frac, conv_frac, pf, +/-, power, volt, phase
+   1,   0,   8,      0.0,      0.0,  0.600,   0.400, 0.00, 0,    0.0,    0.0, 1
+   1,   9,  18,     10.0,      5.0,  0.600,   0.400, 0.00, 0,    0.0,    0.0, 1
+   1,  18,  24,      0.0,      0.0,  0.600,   0.400, 0.00, 0,    0.0,    0.0, 1
+   2,   0,   8,      0.0,      0.0,  0.300,   0.700, 0.90, 1,   50.0,  220.0, 1
+   2,   9,  18,    100.0,      0.0,  0.300,   0.700, 0.90, 1,  100.0,  220.0, 1
+   2,  18,  24,      0.0,      0.0,  0.300,   0.700, 0.90, 1,   50.0,  220.0, 1
+     0   # number of casual gains in day type: saturday    
+     0   # number of casual gains in day type: sunday      
+# Labels for gains 
+ Occupt       Lights       Equipt      

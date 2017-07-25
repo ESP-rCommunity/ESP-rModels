@@ -1,19 +1,19 @@
 # thermophysical properties of corid_1 defined in ../zones/corid_1.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     3,     0  #  1 west_cor     insul_mtl_p 
-     1,     0  #  2 door         door        
-     1,     0  #  3 prt_d-cor    mass_part   
-     5,     2  #  4 prt_t_cor    gyp_blk_ptn 
-     1,     0  #  5 door         door        
-     3,     1  #  6 ent_a        dbl_glz     
-     3,     1  #  7 ent_b        dbl_glz     
-     3,     1  #  8 ent_c        dbl_glz     
-     1,     0  #  9 ceil         susp_ceil   
-     5,     1  # 10 floor        susp_floor  
-     3,     1  # 11 ent_d        dbl_glz     
-     3,     1  # 12 glz_w        dbl_glz     
-     3,     1  # 13 door_dcor    dbl_glz     
+# layers|gaps|number &  name   | database name 
+     3,     0  #  1 west_cor     insul_mtl_p
+     1,     0  #  2 door         door
+     1,     0  #  3 prt_d-cor    mass_part
+     5,     2  #  4 prt_t_cor    gyp_blk_ptn
+     1,     0  #  5 door         door
+     3,     1  #  6 ent_a        dbl_glz
+     3,     1  #  7 ent_b        dbl_glz
+     3,     1  #  8 ent_c        dbl_glz
+     1,     0  #  9 ceil         susp_ceil
+     5,     1  # 10 floor        susp_floor
+     3,     1  # 11 ent_d        dbl_glz
+     3,     1  # 12 glz_w        dbl_glz
+     3,     1  # 13 door_dcor    dbl_glz
 # air gap position & resistance for surface  4
   2,   0.170, 4,   0.170,
 # air gap position & resistance for surface  6

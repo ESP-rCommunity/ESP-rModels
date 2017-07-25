@@ -1,22 +1,22 @@
 # thermophysical properties of stair_deij defined in ../zones/stair_deij.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     3,     0  #  1 east         insul_mtl_p 
-     5,     2  #  2 prt_i        gyp_blk_ptn 
-     5,     2  #  3 prt_i1       gyp_blk_ptn 
-     5,     2  #  4 prt_j        gyp_blk_ptn 
-     5,     2  #  5 prt_j1       gyp_blk_ptn 
-     1,     0  #  6 ceil         susp_ceil   
-     8,     1  #  7 floor        grnd_floor  
-     5,     2  #  8 prt_cj1      gyp_blk_ptn 
-     5,     2  #  9 prt_e1       gyp_blk_ptn 
-     5,     2  # 10 prt_cj       gyp_blk_ptn 
-     5,     2  # 11 prt_e        gyp_blk_ptn 
-     5,     2  # 12 prt_ci1      gyp_blk_ptn 
-     5,     2  # 13 prt_d1       gyp_blk_ptn 
-     5,     2  # 14 prt_ci       gyp_blk_ptn 
-     5,     2  # 15 prt_d        gyp_blk_ptn 
-     1,     0  # 16 door         door        
+# layers|gaps|number &  name   | database name 
+     3,     0  #  1 east         insul_mtl_p
+     5,     2  #  2 prt_i        gyp_blk_ptn
+     5,     2  #  3 prt_i1       gyp_blk_ptn
+     5,     2  #  4 prt_j        gyp_blk_ptn
+     5,     2  #  5 prt_j1       gyp_blk_ptn
+     1,     0  #  6 ceil         susp_ceil
+     8,     1  #  7 floor        grnd_floor
+     5,     2  #  8 prt_cj1      gyp_blk_ptn
+     5,     2  #  9 prt_e1       gyp_blk_ptn
+     5,     2  # 10 prt_cj       gyp_blk_ptn
+     5,     2  # 11 prt_e        gyp_blk_ptn
+     5,     2  # 12 prt_ci1      gyp_blk_ptn
+     5,     2  # 13 prt_d1       gyp_blk_ptn
+     5,     2  # 14 prt_ci       gyp_blk_ptn
+     5,     2  # 15 prt_d        gyp_blk_ptn
+     1,     0  # 16 door         door
 # air gap position & resistance for surface  2
   2,   0.170, 4,   0.170,
 # air gap position & resistance for surface  3

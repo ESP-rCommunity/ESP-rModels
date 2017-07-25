@@ -1,20 +1,20 @@
 # thermophysical properties of entrance defined in ../zones/entrance.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     4,     1  #  1 Surf-1       extern_wall 
-     4,     1  #  2 Surf-2       extern_wall 
-     3,     0  #  3 Surf-3       intern_wall 
-     3,     0  #  4 Surf-4       intern_wall 
-     3,     0  #  5 Surf-5       intern_wall 
-     4,     1  #  6 Surf-6       extern_wall 
-     4,     1  #  7 Surf-7       roof        
-     7,     0  #  8 Surf-8       g_flr_entry 
-     4,     1  #  9 Surf-9       roof        
-     3,     1  # 10 glaz-1       d_glz       
-     3,     1  # 11 glaz-2       d_glz       
-     3,     1  # 12 glaz-3       d_glz       
-     3,     1  # 13 glaz-4       d_glz       
-     3,     1  # 14 glaz-5       d_glz       
+# layers|gaps|number &  name   | database name 
+     4,     1  #  1 Surf-1       extern_wall
+     4,     1  #  2 Surf-2       extern_wall
+     3,     0  #  3 Surf-3       intern_wall
+     3,     0  #  4 Surf-4       intern_wall
+     3,     0  #  5 Surf-5       intern_wall
+     4,     1  #  6 Surf-6       extern_wall
+     4,     1  #  7 Surf-7       roof
+     7,     0  #  8 Surf-8       g_flr_entry
+     4,     1  #  9 Surf-9       roof
+     3,     1  # 10 glaz-1       d_glz
+     3,     1  # 11 glaz-2       d_glz
+     3,     1  # 12 glaz-3       d_glz
+     3,     1  # 13 glaz-4       d_glz
+     3,     1  # 14 glaz-5       d_glz
 # air gap position & resistance for surface  1
   3,   0.170,
 # air gap position & resistance for surface  2

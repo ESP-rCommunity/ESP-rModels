@@ -1,21 +1,21 @@
 # thermophysical properties of livdinkit defined in ../zones/livdinkit_ph.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     9,     1  #  1 right_facade AWI_06      
-     5,     2  #  2 other        gyp_blk_ptn 
-     3,     1  #  3 ptn_bath_a   gyp_gyp_ptn 
-     3,     1  #  4 ptn_bath_b   gyp_gyp_ptn 
-     3,     1  #  5 ptn_hall     gyp_gyp_ptn 
-     3,     1  #  6 ptn_br_a     gyp_gyp_ptn 
-     3,     1  #  7 ptn_br_b     gyp_gyp_ptn 
-     9,     1  #  8 fr_facade_a  AWI_06      
+# layers|gaps|number &  name   | database name 
+     9,     1  #  1 right_facade AWI_06
+     5,     2  #  2 other        gyp_blk_ptn
+     3,     1  #  3 ptn_bath_a   gyp_gyp_ptn
+     3,     1  #  4 ptn_bath_b   gyp_gyp_ptn
+     3,     1  #  5 ptn_hall     gyp_gyp_ptn
+     3,     1  #  6 ptn_br_a     gyp_gyp_ptn
+     3,     1  #  7 ptn_br_b     gyp_gyp_ptn
+     9,     1  #  8 fr_facade_a  AWI_06
      9,     3  #  9 fr_facade_b  PH_alu_frame
-     9,     1  # 10 fr_facade_c  AWI_06      
-     2,     0  # 11 ceiling      ceiling     
-     5,     1  # 12 floor        susp_flr_re 
-     5,     2  # 13 operable     tripglz_089 
-     5,     2  # 14 fixed        tripglz_089 
-     1,     0  # 15 door_nonliv  door        
+     9,     1  # 10 fr_facade_c  AWI_06
+     2,     0  # 11 ceiling      ceiling
+     5,     1  # 12 floor        susp_flr_re
+     5,     2  # 13 operable     tripglz_089
+     5,     2  # 14 fixed        tripglz_089
+     1,     0  # 15 door_nonliv  door
 # air gap position & resistance for surface  1
   2,   0.050,
 # air gap position & resistance for surface  2

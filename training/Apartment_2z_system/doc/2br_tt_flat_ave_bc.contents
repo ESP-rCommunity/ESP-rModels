@@ -1,12 +1,12 @@
 Synopsis
  
 Synopsis of the model A 60m^2 modern 2BR flat with small balcony with ideal
-control defined in 2br_tt_flat_ave_bc.cfg generated on Thu Oct 10 16:15:23
-2013. Notes associated with the model are in ../doc/2br_tt_flat.log
+control defined in 2br_tt_flat_ave_bc.cfg generated on Wed Dec  7 10:18:12
+2016. Associated notes are in ../doc/2br_tt_flat.log
  
 The model is located at latitude   52.00 with a longitude difference of   0.00
-from the local time meridian. The year used in simulations is 2007 and
-weekends occur on Saturday and Sunday.
+from the local time meridian (east +ve). The year used in simulations is 2007
+and weekends occur on Saturday and Sunday.
 The site exposure is typical city centre and the ground reflectance is 0.20.
  
  
@@ -89,12 +89,13 @@ Zones:
  
 Databases associated with the model:
  standard pressure distr: pressc.db1
- materials              : ../dbs/top_tail.materialdb
- constructions          : ../dbs/top_tail.constrdb
+ standard materials     : material.db4.a
+ standard constructions : multicon.db5
  standard plant comp    : plantc.db1
  standard event profiles: profiles.db2.a
- optical properties     : ../dbs/top_tail.opticdb
+ standard optical prop  : optics.db2
  standard UK NCM data   : SBEM.db1
+ standard predefined obj: predefined.db1
  standard mould isopleth: mould.db1
  
  ____________________________________________________________
@@ -105,7 +106,7 @@ ideal convective representation free flt till 6 19-23 till 9 then free float
 until 17h00 19-23C until 23h00 then free float
  
 Zones control includes  1 functions.
-no zone control description supplied
+approximates the control applied in the detailed systems model
 Details of control loops referenced in the model:
  
  The sensor for function  1 senses the temperature of the current zone.
@@ -117,44 +118,44 @@ weekdays    saturday    sunday      holiday
    1  0.00 db temp   > flux      free floating
    2  6.00 db temp   > flux      basic control: max heating capacity 4000.0W min heating
 capacity 0.0W max cooling capacity 4000.0W min cooling capacity 0.0W. Heating setpoint
-19.00C cooling setpoint 23.00C.
+21.00C cooling setpoint 100.00C.
    3  9.00 db temp   > flux      free floating
    4 17.00 db temp   > flux      basic control: max heating capacity 4000.0W min heating
 capacity 0.0W max cooling capacity 4000.0W min cooling capacity 0.0W. Heating setpoint
-19.00C cooling setpoint 23.00C.
+21.00C cooling setpoint 100.00C.
    5 23.00 db temp   > flux      free floating
  Day type saturday control has  5 periods.
  Per|Start|Sensing  |Actuating  | Control law description
    1  0.00 db temp   > flux      free floating
    2  6.00 db temp   > flux      basic control: max heating capacity 4000.0W min heating
 capacity 0.0W max cooling capacity 4000.0W min cooling capacity 0.0W. Heating setpoint
-19.00C cooling setpoint 23.00C.
+21.00C cooling setpoint 100.00C.
    3  9.00 db temp   > flux      free floating
    4 17.00 db temp   > flux      basic control: max heating capacity 4000.0W min heating
 capacity 0.0W max cooling capacity 4000.0W min cooling capacity 0.0W. Heating setpoint
-19.00C cooling setpoint 23.00C.
+21.00C cooling setpoint 100.00C.
    5 23.00 db temp   > flux      free floating
  Day type sunday control has  5 periods.
  Per|Start|Sensing  |Actuating  | Control law description
    1  0.00 db temp   > flux      free floating
    2  6.00 db temp   > flux      basic control: max heating capacity 4000.0W min heating
 capacity 0.0W max cooling capacity 4000.0W min cooling capacity 0.0W. Heating setpoint
-19.00C cooling setpoint 23.00C.
+21.00C cooling setpoint 100.00C.
    3  9.00 db temp   > flux      free floating
    4 17.00 db temp   > flux      basic control: max heating capacity 4000.0W min heating
 capacity 0.0W max cooling capacity 4000.0W min cooling capacity 0.0W. Heating setpoint
-19.00C cooling setpoint 23.00C.
+21.00C cooling setpoint 100.00C.
    5 23.00 db temp   > flux      free floating
  Day type holiday control has  5 periods.
  Per|Start|Sensing  |Actuating  | Control law description
    1  0.00 db temp   > flux      free floating
    2  6.00 db temp   > flux      basic control: max heating capacity 4000.0W min heating
 capacity 0.0W max cooling capacity 4000.0W min cooling capacity 0.0W. Heating setpoint
-19.00C cooling setpoint 23.00C.
+21.00C cooling setpoint 100.00C.
    3  9.00 db temp   > flux      free floating
    4 17.00 db temp   > flux      basic control: max heating capacity 4000.0W min heating
 capacity 0.0W max cooling capacity 4000.0W min cooling capacity 0.0W. Heating setpoint
-19.00C cooling setpoint 23.00C.
+21.00C cooling setpoint 100.00C.
    5 23.00 db temp   > flux      free floating
  
  Zone to contol loop linkages:
@@ -180,23 +181,23 @@ ID Zone         Volume|          Surface
  
  A summary of the surfaces in livdinkit( 1) follows:
  
- Sur| Area  |Azim|Elev| surface    |    geometry       | construction |environment
-    | m^2   |deg |deg | name       |optical|locat| use | name         |other side
-  1  15.8    180.   0. right_facade OPAQUE   VERT -     Wall_EW_1990 ||< external
-  2  8.25     90.   0. other        OPAQUE   VERT -     gyp_blk_ptn  ||< identical environment
-  3  4.50      0.   0. ptn_bath_a   OPAQUE   VERT -     gyp_gyp_ptn  ||< ptn_liv_e:br12bthhall
-  4  2.50     90.   0. ptn_bath_b   OPAQUE   VERT -     gyp_gyp_ptn  ||< ptn_liv_d:br12bthhall
-  5  0.820     0.   0. ptn_hall     OPAQUE   VERT -     gyp_gyp_ptn  ||< ptn_liv_c:br12bthhall
-  6  2.50    270.   0. ptn_br_a     OPAQUE   VERT -     gyp_gyp_ptn  ||< ptn_liv_b:br12bthhall
-  7  8.75      0.   0. ptn_br_b     OPAQUE   VERT -     gyp_gyp_ptn  ||< ptn_liv_a:br12bthhall
-  8  1.80    270.   0. fr_facade_a  OPAQUE   VERT -     Wall_EW_1990 ||< external
-  9  1.30    270.   0. fr_facade_b  OPAQUE   VERT -     Doorfrm_ext  ||< external
- 10  0.750   270.   0. fr_facade_c  OPAQUE   VERT -     Wall_EW_1990 ||< external
- 11  21.8      0.  90. ceiling      OPAQUE   CEIL -     ceiling      ||< identical environment
- 12  21.8      0. -90. floor        OPAQUE   FLOR -     susp_flr_re  ||< identical environment
- 13  3.20    270.   0. operable     DCF7671_ VERT C-WIN dbl_glz      ||< external
- 14  1.20    270.   0. fixed        DCF7671_ VERT C-WIN dbl_glz      ||< external
- 15  1.68      0.   0. door_nonliv  OPAQUE   VERT DOOR  door         ||< door_liv:br12bthhall
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  15.8    180.   0. right_facade OPAQUE   VERT -        -        Wall_EW_1990 ||< external
+  2  8.25     90.   0. other        OPAQUE   VERT -        -        gyp_blk_ptn ||< identical environment
+  3  4.50      0.   0. ptn_bath_a   OPAQUE   VERT -        -        gyp_gyp_ptn ||< ptn_liv_e:br12bthhall
+  4  2.50     90.   0. ptn_bath_b   OPAQUE   VERT -        -        gyp_gyp_ptn ||< ptn_liv_d:br12bthhall
+  5  0.820     0.   0. ptn_hall     OPAQUE   VERT -        -        gyp_gyp_ptn ||< ptn_liv_c:br12bthhall
+  6  2.50    270.   0. ptn_br_a     OPAQUE   VERT -        -        gyp_gyp_ptn ||< ptn_liv_b:br12bthhall
+  7  8.75      0.   0. ptn_br_b     OPAQUE   VERT -        -        gyp_gyp_ptn ||< ptn_liv_a:br12bthhall
+  8  1.80    270.   0. fr_facade_a  OPAQUE   VERT -        -        Wall_EW_1990 ||< external
+  9  1.30    270.   0. fr_facade_b  OPAQUE   VERT -        -        Doorfrm_ext ||< external
+ 10  0.750   270.   0. fr_facade_c  OPAQUE   VERT -        -        Wall_EW_1990 ||< external
+ 11  21.8      0.  90. ceiling      OPAQUE   CEIL -        -        ceiling ||< identical environment
+ 12  21.8      0. -90. floor        OPAQUE   FLOR -        -        susp_flr_re ||< identical environment
+ 13  3.20    270.   0. operable     DCF7671_ VERT C-WINDOW CLOSED   dbl_glz ||< external
+ 14  1.20    270.   0. fixed        DCF7671_ VERT C-WINDOW CLOSED   dbl_glz ||< external
+ 15  1.68      0.   0. door_nonliv  OPAQUE   VERT DOOR     CLOSED   door ||< door_liv:br12bthhall
  
  
  An hourly solar radiation distribution is used for this zone.
@@ -211,7 +212,7 @@ Block X- Y- Z- coords DX- DY- DZ- values Orient Opacity
   2     0.0     0.0     2.5     1.2     3.3     0.2     0.0     0.0 1.00 balc_top extern_wall
   3     0.0    -0.2    -0.2     1.2     0.2     2.9     0.0     0.0 1.00 corner extern_wall
  
- Shading patterns have been calculated for this zone.
+ Shading patterns have not yet been calculated.
  
  
  Air schedule notes:
@@ -221,9 +222,9 @@ infiltration assuming mid-1990 construction - 0.7ach with 2ach if over
  Control Setpoint  Infiltration     Ventilation    Source  temp
  range             ac/h   m^3/s     ac/h   m^3/s   index   degC
  Lower    20.00    0.700  0.0106     0.000  0.0000    0     0.000
- Nominal between 20.0 &  22.0 based on period data.
- Middle   22.00    2.000  0.0303     0.000  0.0000    0     0.000
- High     24.00    3.000  0.0454     0.000  0.0000    0     0.000
+ Nominal between 20.0 &  23.0 based on period data.
+ Middle   23.00    2.000  0.0303     0.000  0.0000    0     0.000
+ High     25.00    3.000  0.0454     0.000  0.0000    0     0.000
  
 Scheduled air infiltration and ventilation:
 Daytype    Period     Infiltration     Ventilation     From Source
@@ -321,37 +322,37 @@ holiday     3 other      equipment W    0-24     20.0     10.0    0.40    0.60  
  
  A summary of the surfaces in br12bthhall( 2) follows:
  
- Sur| Area  |Azim|Elev| surface    |    geometry       | construction |environment
-    | m^2   |deg |deg | name       |optical|locat| use | name         |other side
-  1  3.00    180.   0. right_facade OPAQUE   VERT -     Wall_EW_1990 ||< external
-  2  8.75    180.   0. ptn_liv_a    OPAQUE   VERT -     gyp_gyp_ptn  ||< ptn_br_b:livdinkit
-  3  2.50     90.   0. ptn_liv_b    OPAQUE   VERT -     gyp_gyp_ptn  ||< ptn_br_a:livdinkit
-  4  0.820   180.   0. ptn_liv_c    OPAQUE   VERT -     gyp_gyp_ptn  ||< ptn_hall:livdinkit
-  5  2.50    270.   0. ptn_liv_d    OPAQUE   VERT -     gyp_gyp_ptn  ||< ptn_bath_b:livdinkit
-  6  4.50    180.   0. ptn_liv_e    OPAQUE   VERT -     gyp_gyp_ptn  ||< ptn_bath_a:livdinkit
-  7  7.00     90.   0. other_a      OPAQUE   VERT -     gyp_blk_ptn  ||< identical environment
-  8  2.50     90.   0. other_b      OPAQUE   VERT -     gyp_blk_ptn  ||< identical environment
-  9  3.32      0.   0. ptn_corid_a  OPAQUE   VERT -     gyp_blk_ptn  ||< identical environment
- 10  5.00     90.   0. ptn_corid_b  OPAQUE   VERT -     gyp_blk_ptn  ||< identical environment
- 11  13.8      0.   0. other_c      OPAQUE   VERT -     gyp_blk_ptn  ||< identical environment
- 12  5.58    270.   0. fr_facade_a  OPAQUE   VERT -     Wall_EW_1990 ||< external
- 13  5.80    270.   0. fr_facade_b  OPAQUE   VERT -     Wall_EW_1990 ||< external
- 14  38.5      0.  90. ceiling      OPAQUE   CEIL -     susp_ceil    ||< identical environment
- 15  38.5      0. -90. floor        OPAQUE   FLOR -     susp_flr_re  ||< identical environment
- 16  1.20    270.   0. br2_glz      DCF7671_ VERT C-WIN dbl_glz      ||< external
- 17  1.92    270.   0. br1_glz      DCF7671_ VERT C-WIN dbl_glz      ||< external
- 18  1.68      0.   0. entry_door   OPAQUE   VERT DOOR  door         ||< identical environment
- 19  1.68    180.   0. door_liv     OPAQUE   VERT DOOR  door         ||< door_nonliv:livdinkit
- 20  10.4    180.   0. br1-2ptn     OPAQUE   VERT PARTN gyp_gyp_ptn  ||< br1-2ptn_:br12bthhall
- 21  10.4      0.   0. br1-2ptn_    OPAQUE   VERT PARTN gyp_gyp_ptn  ||< br1-2ptn:br12bthhall
- 22  1.61    180.   0. br1a_hall    OPAQUE   VERT PARTN gyp_gyp_ptn  ||< br1a_hall_:br12bthhall
- 23  1.61      0.   0. br1a_hall_   OPAQUE   VERT PARTN gyp_gyp_ptn  ||< br1a_hall:br12bthhall
- 24  6.10    270.   0. br1b_hall    OPAQUE   VERT PARTN gyp_gyp_ptn  ||< br1b_hall_:br12bthhall
- 25  6.10     90.  -0. br1b_hall_   OPAQUE   VERT PARTN gyp_gyp_ptn  ||< br1b_hall:br12bthhall
- 26  3.68    180.   0. halla_bath   OPAQUE   VERT PARTN gyp_gyp_ptn  ||< halla_bath_:br12bthhall
- 27  3.68      0.   0. halla_bath_  OPAQUE   VERT PARTN gyp_gyp_ptn  ||< halla_bath:br12bthhall
- 28  3.45    270.   0. hallb_bath   OPAQUE   VERT PARTN gyp_gyp_ptn  ||< hallb_bath_:br12bthhall
- 29  3.45     90.   0. hallb_bath_  OPAQUE   VERT PARTN gyp_gyp_ptn  ||< hallb_bath:br12bthhall
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  3.00    180.   0. right_facade OPAQUE   VERT -        -        Wall_EW_1990 ||< external
+  2  8.75    180.   0. ptn_liv_a    OPAQUE   VERT -        -        gyp_gyp_ptn ||< ptn_br_b:livdinkit
+  3  2.50     90.   0. ptn_liv_b    OPAQUE   VERT -        -        gyp_gyp_ptn ||< ptn_br_a:livdinkit
+  4  0.820   180.   0. ptn_liv_c    OPAQUE   VERT -        -        gyp_gyp_ptn ||< ptn_hall:livdinkit
+  5  2.50    270.   0. ptn_liv_d    OPAQUE   VERT -        -        gyp_gyp_ptn ||< ptn_bath_b:livdinkit
+  6  4.50    180.   0. ptn_liv_e    OPAQUE   VERT -        -        gyp_gyp_ptn ||< ptn_bath_a:livdinkit
+  7  7.00     90.   0. other_a      OPAQUE   VERT -        -        gyp_blk_ptn ||< identical environment
+  8  2.50     90.   0. other_b      OPAQUE   VERT -        -        gyp_blk_ptn ||< identical environment
+  9  3.32      0.   0. ptn_corid_a  OPAQUE   VERT -        -        gyp_blk_ptn ||< identical environment
+ 10  5.00     90.   0. ptn_corid_b  OPAQUE   VERT -        -        gyp_blk_ptn ||< identical environment
+ 11  13.8      0.   0. other_c      OPAQUE   VERT -        -        gyp_blk_ptn ||< identical environment
+ 12  5.58    270.   0. fr_facade_a  OPAQUE   VERT -        -        Wall_EW_1990 ||< external
+ 13  5.80    270.   0. fr_facade_b  OPAQUE   VERT -        -        Wall_EW_1990 ||< external
+ 14  38.5      0.  90. ceiling      OPAQUE   CEIL -        -        susp_ceil ||< identical environment
+ 15  38.5      0. -90. floor        OPAQUE   FLOR -        -        susp_flr_re ||< identical environment
+ 16  1.20    270.   0. br2_glz      DCF7671_ VERT C-WINDOW CLOSED   dbl_glz ||< external
+ 17  1.92    270.   0. br1_glz      DCF7671_ VERT C-WINDOW CLOSED   dbl_glz ||< external
+ 18  1.68      0.   0. entry_door   OPAQUE   VERT DOOR     CLOSED   door ||< identical environment
+ 19  1.68    180.   0. door_liv     OPAQUE   VERT DOOR     CLOSED   door ||< door_nonliv:livdinkit
+ 20  10.4    180.   0. br1-2ptn     OPAQUE   VERT PARTN    -        gyp_gyp_ptn ||< br1-2ptn_:br12bthhall
+ 21  10.4      0.   0. br1-2ptn_    OPAQUE   VERT PARTN    -        gyp_gyp_ptn ||< br1-2ptn:br12bthhall
+ 22  1.61    180.   0. br1a_hall    OPAQUE   VERT PARTN    -        gyp_gyp_ptn ||< br1a_hall_:br12bthhall
+ 23  1.61      0.   0. br1a_hall_   OPAQUE   VERT PARTN    -        gyp_gyp_ptn ||< br1a_hall:br12bthhall
+ 24  6.10    270.   0. br1b_hall    OPAQUE   VERT PARTN    -        gyp_gyp_ptn ||< br1b_hall_:br12bthhall
+ 25  6.10     90.  -0. br1b_hall_   OPAQUE   VERT PARTN    -        gyp_gyp_ptn ||< br1b_hall:br12bthhall
+ 26  3.68    180.   0. halla_bath   OPAQUE   VERT PARTN    -        gyp_gyp_ptn ||< halla_bath_:br12bthhall
+ 27  3.68      0.   0. halla_bath_  OPAQUE   VERT PARTN    -        gyp_gyp_ptn ||< halla_bath:br12bthhall
+ 28  3.45    270.   0. hallb_bath   OPAQUE   VERT PARTN    -        gyp_gyp_ptn ||< hallb_bath_:br12bthhall
+ 29  3.45     90.   0. hallb_bath_  OPAQUE   VERT PARTN    -        gyp_gyp_ptn ||< hallb_bath:br12bthhall
  
  
  An hourly solar radiation distribution is used for this zone.
@@ -359,7 +360,7 @@ holiday     3 other      equipment W    0-24     20.0     10.0    0.40    0.60  
 br2_glz br1_glz
  
  
- Shading patterns have been calculated for this zone.
+ Shading patterns have not yet been calculated.
  
  
  Air schedule notes:
@@ -368,9 +369,9 @@ infiltration assuming mid-1990 construction - 0.7ach
  Control Setpoint  Infiltration     Ventilation    Source  temp
  range             ac/h   m^3/s     ac/h   m^3/s   index   degC
  Lower    20.00    0.700  0.0187     0.000  0.0000    0     0.000
- Nominal between 20.0 &  22.0 based on period data.
- Middle   22.00    2.000  0.0535     0.000  0.0000    0     0.000
- High     24.00    3.000  0.0802     0.000  0.0000    0     0.000
+ Nominal between 20.0 &  23.0 based on period data.
+ Middle   23.00    2.000  0.0535     0.000  0.0000    0     0.000
+ High     25.00    3.000  0.0802     0.000  0.0000    0     0.000
  
 Scheduled air infiltration and ventilation:
 Daytype    Period     Infiltration     Ventilation     From Source
@@ -450,16 +451,20 @@ holiday     3 other      equipment W    0-24     20.0     10.0    0.40    0.60  
  Multi-layer constructions used:
  
  Details of opaque construction: Wall_EW_1990 and overall thickness  0.319
+ In category walls also shown in menus as: EngWls brick block circa 1990
+Wall_EW_1990 is a typical 1990 brick insulated (60mm) cavity block wall with plasterboard on
+battons
  
- Layer|Matr|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   102.0     0.770  1700.  1000. 0.90 0.70    12.  0.13 Brick outer leaf : Brick (UK code)
-    2   22.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
-    3   60.0     0.040    25.  1000. 0.90 0.70    30.  1.50 Mineral wool batt 100mm : Insulation (Mineral wool batt default 100mm)
-    4  100.0     1.060  1950.  1000. 0.90 0.40    18.  0.09 concrete block : concrete block (milton keynes)
-    5   22.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int    13.0     0.210   900.  1000. 0.91 0.70    11.  0.06 Plasterboard (UK code) : Plasterboard (UK code)
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   102.0     0.770  1700.  1000. 0.90 0.70    12.  0.13 173.4 Brick outer leaf : Brick (UK code) (inorganic-porous)
+    2   22.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.0 air  0.17 0.17 0.17
+    3   60.0     0.040    25.  1000. 0.90 0.70    30.  1.50   1.5 Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygroscopic)
+    4  100.0     1.060  1950.  1000. 0.90 0.40    18.  0.09 195.0 concrete block : concrete block (milton keynes)
+    5   22.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.0 air  0.17 0.17 0.17
+ Int    13.0     0.210   900.  1000. 0.91 0.70    11.  0.06  11.7 Plasterboard (UK code) : Plasterboard (UK code)
  ISO 6946 U values (horiz/upward/downward heat flow)=  0.435  0.441  0.428 (partition)  0.419
+ Weight per m^2 of this construction 381.65
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.43
  External surface admittance Y=  2.72  w=  1.14 decrement factor f=  0.69  phi=  0.53 surface factor f=  0.69  phi=  0.53
@@ -467,15 +472,18 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.43
  Total area of Wall_EW_1990 is     32.68
  
  Details of opaque construction: gyp_blk_ptn and overall thickness  0.226
+ In category partitions also shown in menus as: plasterbd dabs 100mm concrete bl
+partition - plasterboard on dabs over 100mm concret block.
  
- Layer|Matr|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext    13.0     0.190   950.   840. 0.91 0.22    11.  0.07 white gypboard : White paintedd Gypboard
-    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
-    3  100.0     0.510  1400.  1000. 0.90 0.65    10.  0.20 block inner : Block inner (3% mc)
-    4   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int    13.0     0.190   950.   840. 0.91 0.22    11.  0.07 white gypboard : White paintedd Gypboard
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    13.0     0.190   950.   840. 0.91 0.22    11.  0.07  12.4 white gypboard : White painted Gypboard (inorganic-porous)
+    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+    3  100.0     0.510  1400.  1000. 0.90 0.65    10.  0.20 140.0 block inner : Block inner (3% mc)
+    4   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+ Int    13.0     0.190   950.   840. 0.91 0.22    11.  0.07  12.4 white gypboard : White painted Gypboard (inorganic-porous)
  ISO 6946 U values (horiz/upward/downward heat flow)=  1.186  1.230  1.133 (partition)  1.072
+ Weight per m^2 of this construction 164.82
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.17
  External surface admittance Y=  2.38  w=  1.44 decrement factor f=  0.74  phi=  0.54 surface factor f=  0.74  phi=  0.54
@@ -483,13 +491,16 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.17
  Total area of gyp_blk_ptn is     39.82
  
  Details of opaque construction: gyp_gyp_ptn and overall thickness  0.074
+ In category partitions also shown in menus as: plasterboard on 50mm studs
+partition - plasterboard on 50mm studs with no acoustic treatment.
  
- Layer|Matr|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext    12.0     0.190   950.   840. 0.91 0.22    11.  0.06 white gypboard : White paintedd Gypboard
-    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int    12.0     0.190   950.   840. 0.91 0.22    11.  0.06 white gypboard : White paintedd Gypboard
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    12.0     0.190   950.   840. 0.91 0.22    11.  0.06  11.4 white gypboard : White painted Gypboard (inorganic-porous)
+    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+ Int    12.0     0.190   950.   840. 0.91 0.22    11.  0.06  11.4 white gypboard : White painted Gypboard (inorganic-porous)
  ISO 6946 U values (horiz/upward/downward heat flow)=  2.144  2.292  1.975 (partition)  1.798
+ Weight per m^2 of this construction  22.86
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.10
  External surface admittance Y=  2.15  w=  0.62 decrement factor f=  0.75  phi=  0.21 surface factor f=  0.75  phi=  0.21
@@ -497,37 +508,29 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.10
  Total area of gyp_gyp_ptn is     88.51
  
  Details of opaque construction: door and overall thickness  0.025
+ In category doors also shown in menus as: solid wood door 25mm
+solid wood oak door 25mm.
  
- Layer|Matr|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
-    1   25.0     0.190   700.  2390. 0.90 0.65    12.  0.13 oak : Oak (radial cut)
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1   25.0     0.190   700.  2390. 0.90 0.65    12.  0.13  17.5 oak : Oak (radial cut)
  ISO 6946 U values (horiz/upward/downward heat flow)=  3.316  3.682  2.928 (partition)  2.554
+ Weight per m^2 of this construction  17.50
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  3.21
  External surface admittance Y=  3.33  w=  0.61 decrement factor f=  0.61  phi=  0.40 surface factor f=  0.61  phi=  0.40
  Partition admittance Y=  1.21  w=  5.38 surface factor f=  0.99  phi=  0.56
  Total area of door is      5.04
  
- Details of opaque construction: Doorfrm_ext and overall thickness  0.094
- 
- Layer|Matr|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
-    1   94.0     0.140   590.  1800. 0.90 0.65    12.  0.67 western larch : Wester Larch from simetric.co.uk and matbase specific ht via physi
- ISO 6946 U values (horiz/upward/downward heat flow)=  1.188  1.232  1.135 (partition)  1.074
- 
-Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.17
- External surface admittance Y=  2.40  w=  2.27 decrement factor f=  0.78  phi=  0.80 surface factor f=  0.78  phi=  0.80
- Partition admittance Y=  2.67  w=  3.59 surface factor f=  0.85  phi=  1.18
- Total area of Doorfrm_ext is      1.30
- 
  Details of transparent construction: dbl_glz with DCF7671_06nb optics and overall thickness  0.024
  
- Layer|Matr|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext     6.0     0.760  2710.   837. 0.83 0.05 19200.  0.01 plate glass : Plate glass with placeholder single layer optics
-    2   12.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int     6.0     0.760  2710.   837. 0.83 0.05 19200.  0.01 plate glass : Plate glass with placeholder single layer optics
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     6.0     0.760  2710.   837. 0.83 0.05 19200.  0.01  16.3 plate glass : Plate glass with placeholder single layer optics
+    2   12.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.0 air  0.17 0.17 0.17
+ Int     6.0     0.760  2710.   837. 0.83 0.05 19200.  0.01  16.3 plate glass : Plate glass with placeholder single layer optics
  ISO 6946 U values (horiz/upward/downward heat flow)=  2.811  3.069  2.527 (partition)  2.243
+ Weight per m^2 of this construction  32.53
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.73
  External surface admittance Y=  2.81  w=  0.63 decrement factor f=  0.67  phi=  0.31 surface factor f=  0.67  phi=  0.31
@@ -543,12 +546,31 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.73
     3  0.117 0.124 0.127 0.112 0.077
  Total area of dbl_glz is      7.52
  
- Details of opaque construction: susp_ceil and overall thickness  0.013
+ Details of opaque construction: Doorfrm_ext and overall thickness  0.094
+ In category frames also shown in menus as: Larch architrave for ext door
+Doorfrm_ext is 94mm thick larch frame for an exterior door.
  
- Layer|Matr|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
-    1   13.0     0.420  1200.   837. 0.91 0.50    11.  0.03 gypsum plaster : Gypsum based plaster
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1   94.0     0.140   590.  1800. 0.90 0.65    12.  0.67  55.5 western larch : Wester Larch from simetric.co.uk and matbase specific ht via physi
+ ISO 6946 U values (horiz/upward/downward heat flow)=  1.188  1.232  1.135 (partition)  1.074
+ Weight per m^2 of this construction  55.46
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.17
+ External surface admittance Y=  2.40  w=  2.27 decrement factor f=  0.78  phi=  0.80 surface factor f=  0.78  phi=  0.80
+ Partition admittance Y=  2.67  w=  3.59 surface factor f=  0.85  phi=  1.18
+ Total area of Doorfrm_ext is      1.30
+ 
+ Details of opaque construction: susp_ceil and overall thickness  0.013
+ In category ceil_floor also shown in menus as: suspended plaster ceiling
+A plaster ceiling with no acoustic treatment or insulation. For use as a suspended ceiling.
+Symmetric so can be referenced from room or the voild.
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1   13.0     0.420  1200.   837. 0.91 0.50    11.  0.03  15.6 gypsum plaster : Gypsum based plaster (inorganic-porous)
  ISO 6946 U values (horiz/upward/downward heat flow)=  4.976  5.850  4.150 (partition)  3.437
+ Weight per m^2 of this construction  15.60
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  4.74
  External surface admittance Y=  4.75  w=  0.10 decrement factor f=  0.43  phi=  0.13 surface factor f=  0.43  phi=  0.13
@@ -556,12 +578,16 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  4.74
  Total area of susp_ceil is     38.50
  
  Details of opaque construction: ceiling linked to ceiling_rev & with overall thickness  0.110
+ In category ceil_floor also shown in menus as: suspended acoustic ceiling acous
+A mineral time with 100mm acoustic treatment. For use as a suspended ceiling. To be referenced
+from room. Reversed version is ceiling_rev
  
- Layer|Matr|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   100.0     0.040   250.   840. 0.90 0.30     4.  2.50 glasswool : Glasswool (generic)
- Int    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33 ceiling mineral : Ceiling acoustic tile (mineral fibre based)
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   100.0     0.040   250.   840. 0.90 0.30     4.  2.50  25.0 glasswool : Glasswool (generic) (non-hygroscopic)
+ Int    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33   2.9 ceiling mineral : Ceiling acoustic tile (mineral fibre based)
  ISO 6946 U values (horiz/upward/downward heat flow)=  0.333  0.336  0.329 (partition)  0.323
+ Weight per m^2 of this construction  27.90
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.33
  External surface admittance Y=  0.82  w=  3.17 decrement factor f=  0.94  phi=  0.30 surface factor f=  0.94  phi=  0.30
@@ -569,15 +595,19 @@ Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.33
  Total area of ceiling is     21.79
  
  Details of opaque construction: susp_flr_re linked to susp_floor & with overall thickness  0.219
+ In category ceil_floor also shown in menus as: carpeted intermediate room->void
+A commercial concrete floor structure with carpet cast on steel shuttering. For use in the room
+over a ceiling void.
  
- Layer|Matr|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext     4.0    50.000  7800.   502. 0.12 0.20 19200.  0.00 steel : Steel
-    2  140.0     1.400  2100.   653. 0.90 0.65    19.  0.10 heavy mix concrete : Heavy mix concrete
-    3   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
-    4   19.0     0.150   800.  2093. 0.91 0.65    96.  0.13 chipboard : Chipboard
- Int     6.0     0.060   186.  1360. 0.90 0.60    10.  0.10 Wilton : Wilton weave wool carpet
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     4.0    50.000  7800.   502. 0.12 0.20 19200.  0.00  31.2 steel : Steel
+    2  140.0     1.400  2100.   653. 0.90 0.65    19.  0.10 294.0 heavy mix concrete : Heavy mix concrete
+    3   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+    4   19.0     0.150   800.  2093. 0.91 0.65    96.  0.13  15.2 chipboard : Chipboard
+ Int     6.0     0.060   186.  1360. 0.90 0.60    10.  0.10   1.1 Wilton : Wilton weave wool carpet (organic-hygroscopic)
  ISO 6946 U values (horiz/upward/downward heat flow)=  1.500  1.570  1.415 (partition)  1.321
+ Weight per m^2 of this construction 341.58
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.48
  External surface admittance Y=  2.11  w=  1.43 decrement factor f=  0.77  phi=  0.46 surface factor f=  0.77  phi=  0.46

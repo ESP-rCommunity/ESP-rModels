@@ -1,0 +1,32 @@
+*Uncertainty analysis library
+   2   1   2 # Changes, Locations, Actions
+#  
+# Changes definitions follow...
+#  
+*cng_def
+Cond:Brick_oute # Change id string
+   1 # Change type: Materials               
+  10   1 # material & property id
+   1     5.000     0.000 # Data
+*cng_def
+Cond:mineral_fi # Change id string
+   1 # Change type: Materials               
+ 161   1 # material & property id
+   1     5.000     0.000 # Data
+#  
+# Locations definitions follow...
+#  
+*loc_def
+walls           # Location id string
+   1 # Number of zones
+   1   4 # Zone number, Number of surfaces
+  1  2  3  4
+#  
+# Action definitions follow...
+#  
+*act_def
+   1 # Uncertanty ref: Cond:Brick_oute
+   1 # Location ref: walls          
+*act_def
+   2 # Uncertanty ref: Cond:mineral_fi
+   1 # Location ref: walls          

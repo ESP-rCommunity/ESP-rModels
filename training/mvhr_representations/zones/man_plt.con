@@ -1,16 +1,16 @@
 # thermophysical properties of man_plt defined in ../zones/man_plt.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     3,     1  #  1 pt_general   gyp_gyp_ptn 
-     3,     0  #  2 part_frame   insul_frame 
-     1,     0  #  3 door         door        
-     3,     1  #  4 pt_other     gyp_gyp_ptn 
-     2,     0  #  5 ceiling      ceiling     
-     5,     1  #  6 floor        susp_flr_re 
-     3,     0  #  7 spandral     insul_frame 
-     3,     0  #  8 frame        insul_frame 
-     3,     1  #  9 glazing      dbl_glz     
-     3,     1  # 10 part_glaz    dbl_glz     
+# layers|gaps|number &  name   | database name 
+     3,     1  #  1 pt_general   gyp_gyp_ptn
+     3,     0  #  2 part_frame   insul_frame
+     1,     0  #  3 door         door
+     3,     1  #  4 pt_other     gyp_gyp_ptn
+     2,     0  #  5 ceiling      ceiling
+     5,     1  #  6 floor        susp_flr_re
+     3,     0  #  7 spandral     insul_frame
+     3,     0  #  8 frame        insul_frame
+     3,     1  #  9 glazing      dbl_glz
+     3,     1  # 10 part_glaz    dbl_glz
 # air gap position & resistance for surface  1
   2,   0.170,
 # air gap position & resistance for surface  4

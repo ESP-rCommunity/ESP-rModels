@@ -32,10 +32,10 @@ difference can result in flows).
  
 Databases associated with the models:
  pressure distributions : pressc.db1
- materials              : /usr/esru/esp-r/databases/material.db3.a
+ materials              : material.db3.a
  constructions          : ../dbs/office_vent_constr.db2
  plant components       : plantc.db1
- event profiles         : /usr/esru/esp-r/databases/profiles.db1.a
- optical properties     : optics.db1
+ event profiles         : profiles.db2.a
+ optical properties     : optics.db2
  
  

@@ -53,7 +53,7 @@ tube_c is thye c section of the earth tube
 *surf,side_g,VERT,-,-,-,earth_side,OPAQUE,GROUND,00,01  #   9 ||< user def grnd profile  1
 *surf,side_h,VERT,-,-,-,earth_side,OPAQUE,GROUND,00,01  #  10 ||< user def grnd profile  1
 *surf,top,CEIL,-,-,-,earth_top,OPAQUE,EXTERIOR,0,0  #  11 ||< external
-*surf,base,FLOR,-,-,-,below,OPAQUE,GROUND,00,01  #  12 ||< user def grnd profile  1
+*surf,base,FLOR,-,-,-,below_tube,OPAQUE,GROUND,00,01  #  12 ||< user def grnd profile  1
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

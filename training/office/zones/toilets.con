@@ -1,20 +1,20 @@
 # thermophysical properties of toilets defined in ../zones/toilets.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     5,     2  #  1 prt_tcor     gyp_blk_ptn 
-     5,     2  #  2 prt_th       gyp_blk_ptn 
-     5,     2  #  3 prt_tg       gyp_blk_ptn 
-     5,     2  #  4 prt_ft       gyp_blk_ptn 
-     1,     0  #  5 ceiling      susp_ceil   
-     8,     1  #  6 floor        grnd_floor  
-     5,     2  #  7 prt_tcorc    gyp_blk_ptn 
-     5,     2  #  8 prt_tcor1    gyp_blk_ptn 
-     5,     2  #  9 prt_cth      gyp_blk_ptn 
-     5,     2  # 10 prt_ctc      gyp_blk_ptn 
-     5,     2  # 11 prt_ctb      gyp_blk_ptn 
-     5,     2  # 12 prt_tb       gyp_blk_ptn 
-     5,     2  # 13 prt_cat      gyp_blk_ptn 
-     5,     2  # 14 prt_ta       gyp_blk_ptn 
+# layers|gaps|number &  name   | database name 
+     5,     2  #  1 prt_tcor     gyp_blk_ptn
+     5,     2  #  2 prt_th       gyp_blk_ptn
+     5,     2  #  3 prt_tg       gyp_blk_ptn
+     5,     2  #  4 prt_ft       gyp_blk_ptn
+     1,     0  #  5 ceiling      susp_ceil
+     8,     1  #  6 floor        grnd_floor
+     5,     2  #  7 prt_tcorc    gyp_blk_ptn
+     5,     2  #  8 prt_tcor1    gyp_blk_ptn
+     5,     2  #  9 prt_cth      gyp_blk_ptn
+     5,     2  # 10 prt_ctc      gyp_blk_ptn
+     5,     2  # 11 prt_ctb      gyp_blk_ptn
+     5,     2  # 12 prt_tb       gyp_blk_ptn
+     5,     2  # 13 prt_cat      gyp_blk_ptn
+     5,     2  # 14 prt_ta       gyp_blk_ptn
 # air gap position & resistance for surface  1
   2,   0.170, 4,   0.170,
 # air gap position & resistance for surface  2

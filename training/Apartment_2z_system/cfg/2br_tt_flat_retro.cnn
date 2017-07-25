@@ -1,5 +1,5 @@
 *connections for 2br_tt_flat_retro_mCHP
-*Date Tue Oct 15 12:09:21 2013
+*Date Wed Dec  7 10:19:01 2016
      44   # number of connections
    1   1   0   0   0  #    1 right_facade in livdinkit is External
    1   2   1   0   0  #    2 other in livdinkit >|< Identical environment

@@ -15,11 +15,11 @@ weekends occur on Saturday and Sunday.
 The site exposure is typical rural site and the ground reflectance is 0.20.
  
 Databases associated with the model:
- pressure distributions : /usr/esru/esp-r/databases/pressc.db1
+ pressure distributions : pressc.db1
  materials              : ../dbs/elsa.prc.a
  constructions          : ../dbs/elsa.mlc
- plant components       : /usr/esru/esp-r/databases/plantc.db1
- event profiles         : /usr/esru/esp-r/databases/profiles.db1.a
+ plant components       : plantc.db1
+ event profiles         : profiles.db2.a
  optical properties     : ../dbs/elsa.odb
  
  ____________________________________________________________

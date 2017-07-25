@@ -50,7 +50,7 @@ Databases associated with the model:
  materials              : ../dbs/elsa.materialdb
  constructions          : ../dbs/elsa.mlc
  standard plant comp    : plantc.db1
- standard event profiles: profiles.db1.a
+ standard event profiles: profiles.db2.a
  optical properties     : ../dbs/elsa.odb
  standard UK NCM data   : SBEM.db1
  standard mould isopleth: mould.db1

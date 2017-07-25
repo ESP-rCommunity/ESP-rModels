@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<CoSimulationParameters>
+	<SpaceNameMapping>
+		<obXML_SpaceID>S1_manager_a</obXML_SpaceID>
+		<FMU_InstanceName>obm_manager_a</FMU_InstanceName>
+	</SpaceNameMapping>
+	<SpaceNameMapping>
+		<obXML_SpaceID>S2_manager_b</obXML_SpaceID>
+		<FMU_InstanceName>obm_manager_b</FMU_InstanceName>
+	</SpaceNameMapping>
+  <SimulationSettings>
+		<IsLeapYear>No</IsLeapYear><!-- Yes or No. Default No.-->
+		<DayofWeekForStartDay>Sunday</DayofWeekForStartDay><!-- Default Sunday.-->
+		<DoMovementCalculation>Yes</DoMovementCalculation><!-- Yes or No. Default Yes.-->
+                <IsDebugMode>No</IsDebugMode>
+		<!-- Start at 00:00:00 -->
+		<StartMonth>2</StartMonth>
+		<StartDay>1</StartDay>
+		<!-- End at 24:00:00 -->
+		<EndMonth>2</EndMonth>
+		<EndDay>7</EndDay>
+		<NumberofTimestepsPerHour>6</NumberofTimestepsPerHour>
+		<UseEPLaunch>No</UseEPLaunch><!-- Yes or No. Default No.-->
+  </SimulationSettings>
+</CoSimulationParameters>

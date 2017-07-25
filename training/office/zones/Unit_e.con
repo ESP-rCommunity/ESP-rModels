@@ -1,18 +1,18 @@
 # thermophysical properties of Unit_e defined in ../zones/Unit_e.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     3,     0  #  1 south        insul_mtl_p 
-     3,     0  #  2 east         insul_mtl_p 
-     5,     2  #  3 str_3        gyp_blk_ptn 
-     5,     2  #  4 str_4        gyp_blk_ptn 
-     5,     2  #  5 prt_d-e      gyp_blk_ptn 
-     1,     0  #  6 door         door        
-     3,     0  #  7 west         insul_mtl_p 
-     1,     0  #  8 ceil_e       susp_ceil   
-     5,     1  #  9 floor        susp_floor  
-     3,     1  # 10 glz_e        dbl_glz     
-     3,     1  # 11 glz_s        dbl_glz     
-     3,     1  # 12 glz_w        dbl_glz     
+# layers|gaps|number &  name   | database name 
+     3,     0  #  1 south        insul_mtl_p
+     3,     0  #  2 east         insul_mtl_p
+     5,     2  #  3 str_3        gyp_blk_ptn
+     5,     2  #  4 str_4        gyp_blk_ptn
+     5,     2  #  5 prt_d-e      gyp_blk_ptn
+     1,     0  #  6 door         door
+     3,     0  #  7 west         insul_mtl_p
+     1,     0  #  8 ceil_e       susp_ceil
+     5,     1  #  9 floor        susp_floor
+     3,     1  # 10 glz_e        dbl_glz
+     3,     1  # 11 glz_s        dbl_glz
+     3,     1  # 12 glz_w        dbl_glz
 # air gap position & resistance for surface  3
   2,   0.170, 4,   0.170,
 # air gap position & resistance for surface  4

@@ -1,20 +1,20 @@
 # thermophysical properties of hall defined in ../zones/hall.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     3,     1  #  1 door_br2     Doorint_sol 
-     3,     1  #  2 ptn_br2      Parttim     
-     3,     1  #  3 ptn_bath     Parttim     
-     3,     1  #  4 ptn_liv_a    Parttim     
-     3,     1  #  5 door_liv     Doorint_sol 
-     3,     1  #  6 ptn_liv_b    Parttim     
-     3,     1  #  7 ptn_stor     Parttim     
-     3,     1  #  8 ptn_br1_a    Parttim     
-     3,     1  #  9 door_br1     Doorint_sol 
-     3,     1  # 10 ptn_br1_b    Parttim     
-     3,     1  # 11 ptn_vest_a   Parttim     
-     3,     1  # 12 door_vest    Doorint_sol 
-     3,     1  # 13 ptn_vest_b   Parttim     
-     2,     0  # 14 hall_ceiling Ceilti_up   
+# layers|gaps|number &  name   | database name 
+     3,     1  #  1 door_br2     Doorint_sol
+     3,     1  #  2 ptn_br2      Parttim
+     3,     1  #  3 ptn_bath     Parttim
+     3,     1  #  4 ptn_liv_a    Parttim
+     3,     1  #  5 door_liv     Doorint_sol
+     3,     1  #  6 ptn_liv_b    Parttim
+     3,     1  #  7 ptn_stor     Parttim
+     3,     1  #  8 ptn_br1_a    Parttim
+     3,     1  #  9 door_br1     Doorint_sol
+     3,     1  # 10 ptn_br1_b    Parttim
+     3,     1  # 11 ptn_vest_a   Parttim
+     3,     1  # 12 door_vest    Doorint_sol
+     3,     1  # 13 ptn_vest_b   Parttim
+     2,     0  # 14 hall_ceiling Ceilti_up
      5,     1  # 15 hall_floor   Floorti_lowc
 # air gap position & resistance for surface  1
   2,   0.170,

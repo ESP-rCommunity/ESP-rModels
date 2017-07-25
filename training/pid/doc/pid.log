@@ -25,10 +25,10 @@ The site exposure is typical urban site and the ground reflectance is 0.20.
  
 Databases associated with the model:
  pressure distributions : pressc.db1
- materials              : /usr/esru/esp-r/databases/material.db3.a
- constructions          : /usr/esru/esp-r/databases/multicon.db3
+ materials              : material.db3.a
+ constructions          : multicon.db3
  plant components       : plantc.db1
- event profiles         : /usr/esru/esp-r/databases/profiles.db1.a
+ event profiles         : profiles.db2.a
  optical properties     : optics.db2
  
 The model includes a plant network. The plant network contains 12 components from plantc.db1

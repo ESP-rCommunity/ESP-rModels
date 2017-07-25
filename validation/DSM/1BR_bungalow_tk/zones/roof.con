@@ -1,23 +1,23 @@
 # thermophysical properties of roof defined in ../zones/roof.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     2,     0  #  1 ovr_store    Floortk_rf  
-     2,     0  #  2 ovr_bath     Floortk_rf  
-     2,     0  #  3 ovr_kitchen  Floortk_rf  
-     2,     0  #  4 ovr_hall     Floortk_rf  
-     2,     0  #  5 ovr_bedroom  Floortk_rf  
-     2,     0  #  6 ovr_living   Floortk_rf  
-     2,     0  #  7 roof_a       Roof        
-     2,     0  #  8 roof_back    Roof        
-     5,     1  #  9 front_a      tk_block_rn 
-     5,     1  # 10 left_b       tk_block_rn 
-     5,     1  # 11 right_a      tk_block_rn 
-     5,     1  # 12 right_b      tk_block_rn 
-     5,     1  # 13 left_c       tk_block_rn 
-     5,     1  # 14 back_a       tk_block_rn 
-     5,     1  # 15 left         tk_block_rn 
-     3,     1  # 16 ptn_stor     Parttim     
-     3,     1  # 17 mid_floor    Parttim     
+# layers|gaps|number &  name   | database name 
+     2,     0  #  1 ovr_store    Floortk_rf
+     2,     0  #  2 ovr_bath     Floortk_rf
+     2,     0  #  3 ovr_kitchen  Floortk_rf
+     2,     0  #  4 ovr_hall     Floortk_rf
+     2,     0  #  5 ovr_bedroom  Floortk_rf
+     2,     0  #  6 ovr_living   Floortk_rf
+     2,     0  #  7 roof_a       Roof
+     2,     0  #  8 roof_back    Roof
+     5,     1  #  9 front_a      tk_block_rn
+     5,     1  # 10 left_b       tk_block_rn
+     5,     1  # 11 right_a      tk_block_rn
+     5,     1  # 12 right_b      tk_block_rn
+     5,     1  # 13 left_c       tk_block_rn
+     5,     1  # 14 back_a       tk_block_rn
+     5,     1  # 15 left         tk_block_rn
+     3,     1  # 16 ptn_stor     Parttim
+     3,     1  # 17 mid_floor    Parttim
 # air gap position & resistance for surface  9
   4,   0.190,
 # air gap position & resistance for surface 10

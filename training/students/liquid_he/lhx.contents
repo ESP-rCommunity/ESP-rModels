@@ -42,10 +42,10 @@ Databases associated with the model:
  standard materials     : material.db3.a
  constructions          : ./lhx.mlc
  standard plant comp    : plantc.db1
- standard event profiles: profiles.db1.a
- standard optical prop  : optics.db1
- UK NCM data            : /home/jon/esru_jwh/esp-r/databases/SBEM.db1
- mould isopleths        : /home/jon/esru_jwh/esp-r/databases/mould.db1
+ standard event profiles: profiles.db2.a
+ standard optical prop  : optics.db2
+ UK NCM data            : SBEM.db1
+ mould isopleths        : mould.db1
  
  ____________________________________________________________
  

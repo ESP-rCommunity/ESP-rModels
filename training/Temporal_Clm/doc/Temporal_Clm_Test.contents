@@ -40,7 +40,7 @@ Databases associated with the model:
  materials              : ../dbs/prim.db.a
  constructions          : ../dbs/15265.mlc
  standard plant comp    : plantc.db1
- standard event profiles: profiles.db1.a
+ standard event profiles: profiles.db2.a
  optical properties     : ../dbs/15265.opt
  standard UK NCM data   : SBEM.db1
  standard mould isopleth: mould.db1

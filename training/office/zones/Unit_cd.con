@@ -1,19 +1,19 @@
 # thermophysical properties of Unit_cd defined in ../zones/Unit_cd.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     1,     0  #  1 passg        mass_part   
-     5,     2  #  2 prt_de       gyp_blk_ptn 
-     5,     2  #  3 str_2        gyp_blk_ptn 
-     5,     2  #  4 str_3        gyp_blk_ptn 
-     3,     0  #  5 east         insul_mtl_p 
-     5,     2  #  6 prt_bc       gyp_blk_ptn 
-     5,     2  #  7 prt_tc       gyp_blk_ptn 
-     1,     0  #  8 ceil         susp_ceil   
-     5,     1  #  9 floor        susp_floor  
-     3,     1  # 10 door         dbl_glz     
-     3,     1  # 11 w_glaz       dbl_glz     
-     1,     0  # 12 inner_p1     mass_part   
-     1,     0  # 13 inner_p2     mass_part   
+# layers|gaps|number &  name   | database name 
+     1,     0  #  1 passg        mass_part
+     5,     2  #  2 prt_de       gyp_blk_ptn
+     5,     2  #  3 str_2        gyp_blk_ptn
+     5,     2  #  4 str_3        gyp_blk_ptn
+     3,     0  #  5 east         insul_mtl_p
+     5,     2  #  6 prt_bc       gyp_blk_ptn
+     5,     2  #  7 prt_tc       gyp_blk_ptn
+     1,     0  #  8 ceil         susp_ceil
+     5,     1  #  9 floor        susp_floor
+     3,     1  # 10 door         dbl_glz
+     3,     1  # 11 w_glaz       dbl_glz
+     1,     0  # 12 inner_p1     mass_part
+     1,     0  # 13 inner_p2     mass_part
 # air gap position & resistance for surface  2
   2,   0.170, 4,   0.170,
 # air gap position & resistance for surface  3

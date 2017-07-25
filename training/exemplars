@@ -54,6 +54,10 @@
 *cfg	/usr/esru/esp-r/training/basic/cfg/bld_basic_prht.cfg
 *root	/usr/esru/esp-r/training/basic
 *item
+*name	... with uncertainty definitions
+*cfg	/usr/esru/esp-r/training/uncertain/cfg/uncertain_opr.cfg
+*root	/usr/esru/esp-r/training/uncertain
+*item
 *group	technical features
 *help	A simple office model with various technical features applied.
 *item
@@ -74,8 +78,8 @@
 *root	/usr/esru/esp-r/training/cellular_shd
 *item
 *name	... with natural ventilation
-*cfg	/usr/esru/esp-r/training/cellular_natv/cfg/cellular_natv.cfg
-*root	/usr/esru/esp-r/training/cellular_natv
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_natv.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with earth tube air heating/cooling 
 *cfg	/usr/esru/esp-r/training/cellular_earth/cfg/cellular_earth.cfg
@@ -86,32 +90,36 @@
 *root	/usr/esru/esp-r/training/cellular_bound
 *item
 *name	... with CO2 tracking (open windows)
-*cfg	/usr/esru/esp-r/training/cellular_contam/cfg/cellular_contam_bc.cfg
-*root	/usr/esru/esp-r/training/cellular_contam
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_contam_bc.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with CO2 tracking (high occupancy)
-*cfg	/usr/esru/esp-r/training/cellular_contam/cfg/cellular_contam_ho.cfg
-*root	/usr/esru/esp-r/training/cellular_contam
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_contam_ho.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with CO2 tracking (mechanical ventilation)
-*cfg	/usr/esru/esp-r/training/cellular_contam/cfg/cellular_contam_mv.cfg
-*root	/usr/esru/esp-r/training/cellular_contam
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_contam_mv.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with CO2 control of mechanical ventilation system
-*cfg	/usr/esru/esp-r/training/cellular_contam/cfg/cellular_contam_mvctl.cfg
-*root	/usr/esru/esp-r/training/cellular_contam
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_contam_mvctl.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with photovoltaic-integrated facade
 *cfg	/usr/esru/esp-r/training/cellular_pv/cfg/cellular_pv.cfg
 *root	/usr/esru/esp-r/training/cellular_pv
 *item
+*name	... with alternative occupancy models
+*cfg	/usr/esru/esp-r/training/cellular_Occ_Model/cfg/cellular_hires.cfg
+*root	/usr/esru/esp-r/training/cellular_Occ_Model
+*item
 *name	... with multiple input single output controller
-*cfg	/usr/esru/esp-r/training/cellular_miso/cfg/cellular_miso.cfg
-*root	/usr/esru/esp-r/training/cellular_miso
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_miso.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with occupant controlled natural ventilation
-*cfg	/usr/esru/esp-r/training/cellular_natv/cfg/cellular_natv.cfg
-*root	/usr/esru/esp-r/training/cellular_natv
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_natv.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with hybrid natural & mechanical ventilation
 *log    /usr/esru/esp-r/training/cellular_hybrid/dbs/readme.txt
@@ -119,8 +127,8 @@
 *root	/usr/esru/esp-r/training/cellular_hybrid
 *item
 *name	... with component based HVAC
-*cfg	/usr/esru/esp-r/training/cellular_hvac/cfg/cellular_hvac.cfg
-*root	/usr/esru/esp-r/training/cellular_hvac
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_hvac.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with floor heating & chilled ceiling
 *cfg	/usr/esru/esp-r/training/cellular_flh/cfg/cellular_flh.cfg
@@ -131,32 +139,40 @@
 *root	/usr/esru/esp-r/training/cellular_expl_sdhw
 *item
 *name	... with constant volume HVAC controller
-*cfg	/usr/esru/esp-r/training/cellular_cvvt/cfg/cellular_cvvt.cfg
-*root	/usr/esru/esp-r/training/cellular_cvvt
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_cvvt.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with ideal VAV/CAV HVAC controller
-*cfg	/usr/esru/esp-r/training/cellular_cvvt/cfg/cellular_vav.cfg
-*root	/usr/esru/esp-r/training/cellular_cvvt
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_vav.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with ON/OFF control
-*cfg	/usr/esru/esp-r/training/cellular_cvvt/cfg/cellular_onoff.cfg
-*root	/usr/esru/esp-r/training/cellular_cvvt
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_onoff.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with master-slave control
-*cfg	/usr/esru/esp-r/training/cellular_cvvt/cfg/cellular_master.cfg
-*root	/usr/esru/esp-r/training/cellular_cvvt
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_master.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with ON/OFF and 3 position control
-*cfg	/usr/esru/esp-r/training/cellular_cvvt/cfg/cellular_3pos.cfg
-*root	/usr/esru/esp-r/training/cellular_cvvt
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_3pos.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with P and P+I control
-*cfg	/usr/esru/esp-r/training/cellular_cvvt/cfg/cellular_pi.cfg
-*root	/usr/esru/esp-r/training/cellular_cvvt
+*cfg	/usr/esru/esp-r/training/cellular_various/cfg/cellular_pi.cfg
+*root	/usr/esru/esp-r/training/cellular_various
 *item
 *name	... with associated measured temperatures
 *cfg	/usr/esru/esp-r/training/cellular_bc/cfg/cellular_measured.cfg
 *root	/usr/esru/esp-r/training/cellular_bc
+*item
+*name	... using CFC complex fenistrations in facade
+*cfg	/usr/esru/esp-r/training/cellular_CFC/cfg/cellular_CFC.cfg
+*root	/usr/esru/esp-r/training/cellular_CFC
+*item
+*name	... with stochastic occupant behaviour from obFMU
+*cfg	/usr/esru/esp-r/training/cellular_obFMU/cfg/cellular_obFMU.cfg
+*root	/usr/esru/esp-r/training/cellular_obFMU
 *item
 *label	___ More comprehensive models:
 *item
@@ -468,6 +484,10 @@
 *name   displacement ventilation system
 *cfg    /usr/esru/esp-r/training/cfd/displ_vent/cfg/displ_vent.cfg
 *root	/usr/esru/esp-r/training/cfd/displ_vent
+*item
+*name   ... with detailed dynamic occupant in room
+*cfg    /usr/esru/esp-r/training/cfd/CFD_room/cfg/CFD_room_occ.cfg
+*root	/usr/esru/esp-r/training/cfd/CFD_room
 *item
 *name	... conflated within cellular office
 *cfg	/usr/esru/esp-r/training/office_dfs/cfg/office_vent_dfs_conf.cfg

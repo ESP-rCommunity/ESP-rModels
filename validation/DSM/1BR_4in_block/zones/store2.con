@@ -1,18 +1,18 @@
 # thermophysical properties of store2 defined in ../zones/store2.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     6,     2  #  1 fr_facade    Extwall_ti  
-     3,     1  #  2 ptn_bath     Parttim     
-     3,     1  #  3 ptn_hall_a   Parttim     
-     3,     1  #  4 door_hall    Doorint_sol 
-     3,     1  #  5 ptn_hall_b   Parttim     
-     3,     1  #  6 ptn_hall_c   Parttim     
-     3,     1  #  7 ptn_hall_d   Parttim     
-     1,     0  #  8 ptn_stair    Door_fire   
-     6,     2  #  9 ext          Extwall_ti  
-     6,     2  # 10 left_fac     Extwall_ti  
-     5,     1  # 11 stor2_ceil   Ceilti_intc 
-     4,     1  # 12 store2_floor Floorti_low 
+# layers|gaps|number &  name   | database name 
+     6,     2  #  1 fr_facade    Extwall_ti
+     3,     1  #  2 ptn_bath     Parttim
+     3,     1  #  3 ptn_hall_a   Parttim
+     3,     1  #  4 door_hall    Doorint_sol
+     3,     1  #  5 ptn_hall_b   Parttim
+     3,     1  #  6 ptn_hall_c   Parttim
+     3,     1  #  7 ptn_hall_d   Parttim
+     1,     0  #  8 ptn_stair    Door_fire
+     6,     2  #  9 ext          Extwall_ti
+     6,     2  # 10 left_fac     Extwall_ti
+     5,     1  # 11 stor2_ceil   Ceilti_intc
+     4,     1  # 12 store2_floor Floorti_low
 # air gap position & resistance for surface  1
   2,   0.170, 5,   0.170,
 # air gap position & resistance for surface  2

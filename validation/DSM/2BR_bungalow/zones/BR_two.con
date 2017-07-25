@@ -1,20 +1,20 @@
 # thermophysical properties of BR_two defined in ../zones/BR_two.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     6,     2  #  1 left_fac     Extwall_ti  
-     6,     2  #  2 fr_fac_a     Extwall_ti  
-     6,     2  #  3 sill_v       Extwall_ti  
-     6,     2  #  4 fr_fac_b     Extwall_ti  
-     3,     1  #  5 ptn_bath     Parttim     
-     3,     1  #  6 ptn_hall_a   Parttim     
-     3,     1  #  7 door_hall    Doorint_sol 
-     3,     1  #  8 ptn_vest_a   Parttim     
-     3,     1  #  9 ptn_vest_b   Parttim     
-     2,     0  # 10 br2_ceiling  Ceilti_up   
+# layers|gaps|number &  name   | database name 
+     6,     2  #  1 left_fac     Extwall_ti
+     6,     2  #  2 fr_fac_a     Extwall_ti
+     6,     2  #  3 sill_v       Extwall_ti
+     6,     2  #  4 fr_fac_b     Extwall_ti
+     3,     1  #  5 ptn_bath     Parttim
+     3,     1  #  6 ptn_hall_a   Parttim
+     3,     1  #  7 door_hall    Doorint_sol
+     3,     1  #  8 ptn_vest_a   Parttim
+     3,     1  #  9 ptn_vest_b   Parttim
+     2,     0  # 10 br2_ceiling  Ceilti_up
      5,     1  # 11 br2_floor    Floorti_lowc
-     6,     2  # 12 head         Extwall_ti  
-     1,     0  # 13 frame        Window_frme 
-     3,     1  # 14 glazing      Window_ext  
+     6,     2  # 12 head         Extwall_ti
+     1,     0  # 13 frame        Window_frme
+     3,     1  # 14 glazing      Window_ext
 # air gap position & resistance for surface  1
   2,   0.170, 5,   0.170,
 # air gap position & resistance for surface  2

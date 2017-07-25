@@ -1,122 +1,165 @@
-# composite construction db defined in ../dbs/mvhr_test.constrdb
-# based on materials db material.db3.a
-   19     # no of composites 
-# layers  description   optics name   symmetry tag
-    4    extern_wall   OPAQ  OPAQUE        NONSYMMETRIC  
-# material ref thickness (m) description & air gap R
-    6    0.1000  Lt brown brick : Light brown brick
-  211    0.0750  glasswool : Glasswool (generic)
-    0    0.0500  air  0.170 0.170 0.170
-    2    0.1000  breeze block : Breeze block
-# layers  description   optics name   symmetry tag
-    3    insul_mtl_p   OPAQ  OPAQUE        SYMMETRIC     
-# material ref thickness (m) description & air gap R
-   46    0.0040  grey cotd alum : Grey coated aluminium
-  203    0.1000  UF foam : UF foam
-   46    0.0040  grey cotd alum : Grey coated aluminium
-# layers  description   optics name   symmetry tag
-    5    partition     OPAQ  OPAQUE        SYMMETRIC     
-# material ref thickness (m) description & air gap R
-  104    0.0130  gypsum plaster : Gypsum based plaster
-    0    0.0500  air  0.170 0.170 0.170
-   28    0.1000  block inner : Block inner (3% mc)
-    0    0.0500  air  0.170 0.170 0.170
-  104    0.0130  gypsum plaster : Gypsum based plaster
-# layers  description   optics name   symmetry tag
-    1    door          OPAQ  OPAQUE        SYMMETRIC     
-# material ref thickness (m) description & air gap R
-   69    0.0250  oak : Oak (radial cut)
-# layers  description   optics name   symmetry tag
-    1    mass_part     OPAQ  OPAQUE        SYMMETRIC     
-# material ref thickness (m) description & air gap R
-   35    0.2400  block white ptd : block white painted inner (3% mc)
-# layers  description   optics name   symmetry tag
-    3    dbl_glz       TRAN  DCF7671_06nb  SYMMETRIC     
-# material ref thickness (m) description & air gap R
-  242    0.0060  plate glass : Plate glass with placeholder single layer optics
-    0    0.0120  air  0.170 0.170 0.170
-  242    0.0060  plate glass : Plate glass with placeholder single layer optics
-# layers  description   optics name   symmetry tag
-    3    insul_frame   OPAQ  OPAQUE        SYMMETRIC     
-# material ref thickness (m) description & air gap R
-   46    0.0040  grey cotd alum : Grey coated aluminium
-  281    0.0800  glass fibre quilt : Glass Fibre Quilt
-   46    0.0040  grey cotd alum : Grey coated aluminium
-# layers  description   optics name   symmetry tag
-    8    grnd_floor    OPAQ  OPAQUE        NONSYMMETRIC  
-# material ref thickness (m) description & air gap R
-  263    0.2000  earth std : Common_earth
-  263    0.2000  earth std : Common_earth
-  263    0.2000  earth std : Common_earth
-  262    0.1500  gravel based : Gravel based
-   32    0.1500  heavy mix concrete : Heavy mix concrete
-    0    0.0500  air  0.170 0.170 0.170
-   67    0.0190  chipboard : Chipboard
-  221    0.0060  Wilton : Wilton weave wool carpet
-# layers  description   optics name   symmetry tag
-    4    entry_floor   OPAQ  OPAQUE        NONSYMMETRIC  
-# material ref thickness (m) description & air gap R
-  263    0.2500  earth std : Common_earth
-  262    0.1500  gravel based : Gravel based
-   32    0.1500  heavy mix concrete : Heavy mix concrete
-   83    0.0240  white marble : White marble
-# layers  description   optics name   symmetry tag
-    1    susp_ceil     OPAQ  OPAQUE        SYMMETRIC     
-# material ref thickness (m) description & air gap R
-  104    0.0130  gypsum plaster : Gypsum based plaster
-# layers  description   optics name   symmetry tag
-    5    susp_floor    OPAQ  OPAQUE        susp_flr_re   
-# material ref thickness (m) description & air gap R
-  221    0.0060  Wilton : Wilton weave wool carpet
-   67    0.0190  chipboard : Chipboard
-    0    0.0500  air  0.170 0.170 0.170
-   32    0.1400  heavy mix concrete : Heavy mix concrete
-   42    0.0040  steel : Steel
-# layers  description   optics name   symmetry tag
-    5    susp_flr_re   OPAQ  OPAQUE        susp_floor    
-# material ref thickness (m) description & air gap R
-   42    0.0040  steel : Steel
-   32    0.1400  heavy mix concrete : Heavy mix concrete
-    0    0.0500  air  0.170 0.170 0.170
-   67    0.0190  chipboard : Chipboard
-  221    0.0060  Wilton : Wilton weave wool carpet
-# layers  description   optics name   symmetry tag
-    2    ceiling       OPAQ  OPAQUE        ceiling_rev   
-# material ref thickness (m) description & air gap R
-  211    0.1000  glasswool : Glasswool (generic)
-  150    0.0100  ceiling mineral : Ceiling acoustic tile (mineral fibre based)
-# layers  description   optics name   symmetry tag
-    2    ceiling_rev   OPAQ  OPAQUE        ceiling       
-# material ref thickness (m) description & air gap R
-  150    0.0100  ceiling mineral : Ceiling acoustic tile (mineral fibre based)
-  211    0.1000  glasswool : Glasswool (generic)
-# layers  description   optics name   symmetry tag
-    5    gyp_blk_ptn   OPAQ  OPAQUE        SYMMETRIC     
-# material ref thickness (m) description & air gap R
-  108    0.0130  white gypboard : White paintedd Gypboard
-    0    0.0500  air  0.170 0.170 0.170
-   28    0.1000  block inner : Block inner (3% mc)
-    0    0.0500  air  0.170 0.170 0.170
-  108    0.0130  white gypboard : White paintedd Gypboard
-# layers  description   optics name   symmetry tag
-    3    gyp_gyp_ptn   OPAQ  OPAQUE        SYMMETRIC     
-# material ref thickness (m) description & air gap R
-  108    0.0120  white gypboard : White paintedd Gypboard
-    0    0.0500  air  0.170 0.170 0.170
-  108    0.0120  white gypboard : White paintedd Gypboard
-# layers  description   optics name   symmetry tag
-    5    switched_gl   TRAN  DCF7671_6omb  SYMMETRIC     
-# material ref thickness (m) description & air gap R
-  243    0.0060  clear float : 4mm clear float glass with optics from UK national method
-    0    0.0100  air  0.170 0.170 0.170
-   45    0.0030  white ptd steel : White painted steel
-    0    0.0100  air  0.170 0.170 0.170
-  243    0.0060  clear float : 4mm clear float glass with optics from UK national method
-# layers  description   optics name   symmetry tag
-    1    fictitious    TRAN  SC_fictit     SYMMETRIC     
-# material ref thickness (m) description & air gap R
-  245    0.0040  fict : fictitious material (almost not there) with matching single laye
-# layers  description   optics name   symmetry tag
-    1    exch_plate    OPAQ  OPAQUE        SYMMETRIC     
-# material ref thickness (m) description & air gap R
-   43    0.0040  aluminium : Aluminium
+*CONSTRUCTIONS,1.0 # multilayer constructions
+*Text
+No documentation included (yet)
+*End_text
+*date,Wed Dec  7 10:56:50 2016
+*Category,general constructions,general constructions,Category general constructions includes all of the MLC constructions in the file.
+#
+*item,extern_wall,extern_wall # tag name menu entry
+*itemdoc,extern_wall  is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,6,0.1000,Lt brown brick : Light brown brick
+*layer,211,0.0750,glasswool : Glasswool (generic)
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,2,0.1000,breeze block : Breeze block
+*end_item
+*item,insul_mtl_p,insul_mtl_p # tag name menu entry
+*itemdoc,insul_mtl_p  is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,46,0.0040,grey cotd alum : Grey coated aluminium
+*layer,203,0.1000,UF foam : UF foam
+*layer,46,0.0040,grey cotd alum : Grey coated aluminium
+*end_item
+*item,partition,partition # tag name menu entry
+*itemdoc,partition    is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,104,0.0130,gypsum plaster : Gypsum based plaster
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,28,0.1000,block inner : Block inner (3% mc)
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,104,0.0130,gypsum plaster : Gypsum based plaster
+*end_item
+*item,door,door # tag name menu entry
+*itemdoc,door         is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,69,0.0250,oak : Oak (radial cut)
+*end_item
+*item,mass_part,mass_part # tag name menu entry
+*itemdoc,mass_part    is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,35,0.2400,block white ptd : block white painted inner (3% mc)
+*end_item
+*item,dbl_glz,dbl_glz # tag name menu entry
+*itemdoc,dbl_glz      is a ...
+*incat,general constructions
+*type,TRAN,DCF7671_06nb,SYMMETRIC
+*layer,242,0.0060,plate glass : Plate glass with placeholder single layer optics
+*layer,0,0.0120,air  0.170 0.170 0.170
+*layer,242,0.0060,plate glass : Plate glass with placeholder single layer optics
+*end_item
+*item,insul_frame,insul_frame # tag name menu entry
+*itemdoc,insul_frame  is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,46,0.0040,grey cotd alum : Grey coated aluminium
+*layer,281,0.0800,glass fibre quilt : Glass Fibre Quilt
+*layer,46,0.0040,grey cotd alum : Grey coated aluminium
+*end_item
+*item,grnd_floor,grnd_floor # tag name menu entry
+*itemdoc,grnd_floor   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,263,0.2000,earth std : Common_earth
+*layer,263,0.2000,earth std : Common_earth
+*layer,263,0.2000,earth std : Common_earth
+*layer,262,0.1500,gravel based : Gravel based
+*layer,32,0.1500,heavy mix concrete : Heavy mix concrete
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,67,0.0190,chipboard : Chipboard
+*layer,221,0.0060,Wilton : Wilton weave wool carpet
+*end_item
+*item,entry_floor,entry_floor # tag name menu entry
+*itemdoc,entry_floor  is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,263,0.2500,earth std : Common_earth
+*layer,262,0.1500,gravel based : Gravel based
+*layer,32,0.1500,heavy mix concrete : Heavy mix concrete
+*layer,83,0.0240,white marble : White marble
+*end_item
+*item,susp_ceil,susp_ceil # tag name menu entry
+*itemdoc,susp_ceil    is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,104,0.0130,gypsum plaster : Gypsum based plaster
+*end_item
+*item,susp_floor,susp_floor # tag name menu entry
+*itemdoc,susp_floor   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,susp_flr_re
+*layer,221,0.0060,Wilton : Wilton weave wool carpet
+*layer,67,0.0190,chipboard : Chipboard
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,32,0.1400,heavy mix concrete : Heavy mix concrete
+*layer,42,0.0040,steel : Steel
+*end_item
+*item,susp_flr_re,susp_flr_re # tag name menu entry
+*itemdoc,susp_flr_re  is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,susp_floor
+*layer,42,0.0040,steel : Steel
+*layer,32,0.1400,heavy mix concrete : Heavy mix concrete
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,67,0.0190,chipboard : Chipboard
+*layer,221,0.0060,Wilton : Wilton weave wool carpet
+*end_item
+*item,ceiling,ceiling # tag name menu entry
+*itemdoc,ceiling      is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,ceiling_rev
+*layer,211,0.1000,glasswool : Glasswool (generic)
+*layer,150,0.0100,ceiling mineral : Ceiling acoustic tile (mineral fibre based)
+*end_item
+*item,ceiling_rev,ceiling_rev # tag name menu entry
+*itemdoc,ceiling_rev  is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,ceiling
+*layer,150,0.0100,ceiling mineral : Ceiling acoustic tile (mineral fibre based)
+*layer,211,0.1000,glasswool : Glasswool (generic)
+*end_item
+*item,gyp_blk_ptn,gyp_blk_ptn # tag name menu entry
+*itemdoc,gyp_blk_ptn  is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,108,0.0130,white gypboard : White paintedd Gypboard
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,28,0.1000,block inner : Block inner (3% mc)
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,108,0.0130,white gypboard : White paintedd Gypboard
+*end_item
+*item,gyp_gyp_ptn,gyp_gyp_ptn # tag name menu entry
+*itemdoc,gyp_gyp_ptn  is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,108,0.0120,white gypboard : White paintedd Gypboard
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,108,0.0120,white gypboard : White paintedd Gypboard
+*end_item
+*item,switched_gl,switched_gl # tag name menu entry
+*itemdoc,switched_gl  is a ...
+*incat,general constructions
+*type,TRAN,DCF7671_6omb,SYMMETRIC
+*layer,243,0.0060,clear float : 4mm clear float glass with optics from UK national method
+*layer,0,0.0100,air  0.170 0.170 0.170
+*layer,45,0.0030,white ptd steel : White painted steel
+*layer,0,0.0100,air  0.170 0.170 0.170
+*layer,243,0.0060,clear float : 4mm clear float glass with optics from UK national method
+*end_item
+*item,fictitious,fictitious # tag name menu entry
+*itemdoc,fictitious   is a ...
+*incat,general constructions
+*type,TRAN,SC_fictit,SYMMETRIC
+*layer,245,0.0040,fict : fictitious material (almost not there) with matching single laye
+*end_item
+*item,exch_plate,exch_plate # tag name menu entry
+*itemdoc,exch_plate   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,43,0.0040,aluminium : Aluminium
+*end_item
+*db_end

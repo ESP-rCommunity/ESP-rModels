@@ -1,14 +1,14 @@
 # thermophysical properties of storage defined in ../zones/storage.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     3,     1  #  1 ptn_hall     Parttim     
-     3,     1  #  2 ptn_liv_a    Parttim     
-     3,     1  #  3 ptn_liv_b    Parttim     
-     6,     2  #  4 bk_facade    Extwall_ti  
-     3,     1  #  5 ptn_br1_a    Parttim     
-     3,     1  #  6 ptn_br1_b    Parttim     
-     2,     0  #  7 stor_ceil    Ceilti_up   
-     4,     1  #  8 stor_floor   Floorti_low 
+# layers|gaps|number &  name   | database name 
+     3,     1  #  1 ptn_hall     Parttim
+     3,     1  #  2 ptn_liv_a    Parttim
+     3,     1  #  3 ptn_liv_b    Parttim
+     6,     2  #  4 bk_facade    Extwall_ti
+     3,     1  #  5 ptn_br1_a    Parttim
+     3,     1  #  6 ptn_br1_b    Parttim
+     2,     0  #  7 stor_ceil    Ceilti_up
+     4,     1  #  8 stor_floor   Floorti_low
 # air gap position & resistance for surface  1
   2,   0.170,
 # air gap position & resistance for surface  2

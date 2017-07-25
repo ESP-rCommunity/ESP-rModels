@@ -1,12 +1,12 @@
 Synopsis
  
 Synopsis of the model A basic room with CFD domain defined defined in
-CFD_room_blk.cfg generated on Mon May 18 09:39:58 2015. Notes associated with
-the model are in ../doc/CFD_room.log
+CFD_room_blk.cfg generated on Wed Dec  7 09:02:36 2016. Associated notes are
+in ../doc/CFD_room.log
  
 The model is located at latitude   55.00 with a longitude difference of   0.00
-from the local time meridian. The year used in simulations is 2000 and
-weekends occur on Saturday and Sunday.
+from the local time meridian (east +ve). The year used in simulations is 2000
+and weekends occur on Saturday and Sunday.
 The site exposure is typical city centre and the ground reflectance is 0.20.
  
  
@@ -32,12 +32,13 @@ An Integrated Performance View is incomplete or missing.
  
 Databases associated with the model:
  standard pressure distr: pressc.db1
- standard materials     : constr_db3.materialdb
- standard constructions : multicon.db1
+ standard materials     : material.db4.a
+ standard constructions : multicon.db5
  standard plant comp    : plantc.db1
- standard event profiles: profiles.db1.a
- standard optical prop  : optics.db1
+ standard event profiles: profiles.db2.a
+ standard optical prop  : optics.db2
  standard UK NCM data   : SBEM.db1
+ standard predefined obj: predefined.db1
  standard mould isopleth: mould.db1
  
  ____________________________________________________________
@@ -54,52 +55,26 @@ ID Zone         Volume|          Surface
  room describes a basic room
  There is 36.000m2 of exposed surface area, 36.000m2 of which is vertical.
  Outside walls are 238.10 % of floor area & average U of 0.393 & UA of 14.137
- Ground contact is 100.00 % of floor area & average U of 2.825 & perimeter 12.000
+ Ground contact is 100.00 % of floor area & average U of 0.946 & perimeter 12.000
  
  A summary of the surfaces in room( 1) follows:
  
- Sur| Area  |Azim|Elev| surface    |    geometry       | construction |environment
-    | m^2   |deg |deg | name       |optical|locat| use | name         |other side
-  1  12.6    180.   0. south        OPAQUE   VERT -     extern_wall  ||< external
-  2  10.8     90.   0. east         OPAQUE   VERT -     extern_wall  ||< external
-  3  12.6      0.   0. north        OPAQUE   VERT -     extern_wall  ||< external
-  4  10.7    270.   0. west         OPAQUE   VERT -     partition    ||< identical environment
-  5  15.1      0.  90. ceiling      OPAQUE   CEIL -     ceiling      ||< identical environment
-  6  15.1      0. -90. floor        OPAQUE   FLOR -     floor_1      ||< ground profile  1
-  7  0.060   270.   0. inlet        OPAQUE   VERT -     dummy_pnls   ||< identical environment
-  8  0.060     0.  90. outlet       OPAQUE   CEIL -     dummy_pnls   ||< identical environment
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  12.6    180.   0. south        OPAQUE   VERT -        -        extern_wall ||< external
+  2  10.8     90.   0. east         OPAQUE   VERT -        -        extern_wall ||< external
+  3  12.6      0.   0. north        OPAQUE   VERT -        -        extern_wall ||< external
+  4  10.7    270.   0. west         OPAQUE   VERT -        -        partition ||< identical environment
+  5  15.1      0.  90. ceiling      OPAQUE   CEIL -        -        ceiling ||< identical environment
+  6  15.1      0. -90. floor        OPAQUE   FLOR -        -        floor_1 ||< ground profile  1
+  7  0.060   270.   0. inlet        OPAQUE   VERT -        -        dummy_pnls ||< identical environment
+  8  0.060     0.  90. outlet       OPAQUE   CEIL -        -        dummy_pnls ||< identical environment
  
- Vertices ( index X Y Z) in the zone...
-*vertex   1     0.00000     0.00000     0.00000
-*vertex   2     4.20000     0.00000     0.00000
-*vertex   3     4.20000     3.60000     0.00000
-*vertex   4     0.00000     3.60000     0.00000
-*vertex   5     0.00000     0.00000     3.00000
-*vertex   6     4.20000     0.00000     3.00000
-*vertex   7     4.20000     3.60000     3.00000
-*vertex   8     0.00000     3.60000     3.00000
-*vertex   9     0.00000     1.95000     2.05000
-*vertex  10     0.00000     1.65000     2.05000
-*vertex  11     0.00000     1.65000     2.25000
-*vertex  12     0.00000     1.95000     2.25000
-*vertex  13     3.75000     1.65000     3.00000
-*vertex  14     3.95000     1.65000     3.00000
-*vertex  15     3.95000     1.95000     3.00000
-*vertex  16     3.75000     1.95000     3.00000
- Number of vertices followed by list, name & perimeter length
-*edges,4,1,2,6,5   south  14.400m perimeter
-*edges,4,2,3,7,6   east  13.200m perimeter
-*edges,4,3,4,8,7   north  14.400m perimeter
-*edges,10,4,1,5,8,4,9,12,11,10,9   west  19.463m perimeter
-*edges,10,5,6,7,8,5,13,16,15,14,13   ceiling  24.794m perimeter
-*edges,4,1,4,3,2   floor  15.600m perimeter
-*edges,4,9,10,11,12   inlet   1.000m perimeter
-*edges,4,13,14,15,16   outlet   1.000m perimeter
  
  All surfaces will receive diffuse insolation (if shading not calculated).
  No shading analysis requested.
  No insolation analysis requested.
- A CFD domain has been defined for this zone.
+ 
  
 A CFD domain has been described for: room
 Description is: A room with a CFD domain, coupled with the building simulation
@@ -206,81 +181,103 @@ Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Con
  There is 36.000m2 of outside surface area, 36.000m2 of which is vertical.
  
  Outside walls are 238.10 % of floor area & average U of 0.393 & UA of 14.137 & max MLC thickness 0.325
- Ground contact is 100.00 % of floor area & average U of 2.825 & perimeter 12.000 & max MLC thickness 0.300
- CIBSE ground beta! 2.520 dt 0.916 Ufleft 0.340 Ufright 2.266 Uf 0.770 R extra @ virtual layer 0.945
+ Ground contact is 100.00 % of floor area & average U of 0.946 & perimeter 12.000 & max MLC thickness 1.200
+ CIBSE ground beta! 2.520 dt 1.971 Ufleft 0.303 Ufright 1.613 Uf 0.489 R extra @ virtual layer 0.986
  
  ____________________________________________________________
  Multi-layer constructions used:
  
  Details of opaque construction: extern_wall and overall thickness  0.325
+ In category legacy also shown in menus as: cavity insulated brick-block
+typical UK insulated cavity brick-block wall with 50mm air gap & 75mm insulation (legacy
+construction used in some training models)
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   100.0     0.960  2000.   650. 0.90 0.93    25.  0.10 Outer leaf brick : Outer leaf brick
-    2   75.0     0.040   250.   840. 0.90 0.30     4.  1.88 Glasswool : Glasswool
-    3   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int   100.0     0.440  1500.   650. 0.90 0.65    15.  0.23 Breeze block : Breeze block
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   100.0     0.960  2000.   650. 0.90 0.70    25.  0.10 200.0 Lt brown brick : Light brown brick (inorganic-porous)
+    2   75.0     0.040   250.   840. 0.90 0.30     4.  1.88  18.8 glasswool : Glasswool (generic) (non-hygroscopic)
+    3   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+ Int   100.0     0.440  1500.   650. 0.90 0.65    15.  0.23 150.0 breeze block : Breeze block (inorganic-porous)
  ISO 6946 U values (horiz/upward/downward heat flow)=  0.393  0.397  0.387 (partition)  0.379
+ Weight per m^2 of this construction 368.81
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.39
  External surface admittance Y=  3.94  w=  2.38 decrement factor f=  0.68  phi=  1.61 surface factor f=  0.68  phi=  1.61
  Partition admittance Y=  4.10  w=  2.39 surface factor f=  0.67  phi=  1.71
  Total area of extern_wall is     36.00
  
- Details of opaque construction: floor_1 and overall thickness  0.300
- 
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   100.0     1.280  1460.   879. 0.90 0.85     5.  0.08 Common_earth : Common_earth
-    2  100.0     2.900  2650.   900. 0.90 0.55    77.  0.03 Red granite : Red granite
-    3   50.0     1.400  2100.   653. 0.90 0.65    19.  0.04 Heavy mix concrete : Heavy mix concrete
- Int    50.0     1.400  2100.   650. 0.91 0.65    19.  0.04 Cement screed : Cement screed
- ISO 6946 U values (horiz/upward/downward heat flow)=  2.825  3.086  2.538 (partition)  2.252
- 
-Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.75
- External surface admittance Y=  5.40  w=  0.99 decrement factor f=  0.41  phi=  1.60 surface factor f=  0.41  phi=  1.60
- Partition admittance Y=  5.94  w=  1.56 surface factor f=  0.45  phi=  2.62
- Total area of floor_1 is     15.12
- 
- Details of opaque construction: partition and overall thickness  0.226
- 
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext    13.0     0.420  1200.   837. 0.91 0.50    11.  0.03 Gypsum plaster : Gypsum plaster
-    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
-    3  100.0     0.510  1400.  1000. 0.90 0.65    10.  0.20 Block inner (3% mc) : Block inner (3% mc)
-    4   50.0     0.000     0.     0. 0.99 0.99     1.  0.17 air  0.17 0.17 0.17
- Int    13.0     0.420  1200.   837. 0.91 0.50    11.  0.03 Gypsum plaster : Gypsum plaster
- ISO 6946 U values (horiz/upward/downward heat flow)=  1.302  1.355  1.238 (partition)  1.166
- 
-Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.29
- External surface admittance Y=  2.63  w=  1.60 decrement factor f=  0.72  phi=  0.68 surface factor f=  0.72  phi=  0.68
- Partition admittance Y=  2.89  w=  2.42 surface factor f=  0.75  phi=  1.06
- Total area of partition is     10.74
- 
  Details of opaque construction: dummy_pnls and overall thickness  0.086
+ In category legacy also shown in menus as: insulated alum wall panel
+insulated bright aluminium panel wall with 80mm insulation (legacy construction used in some
+training models)
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext     3.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 Aluminium : Aluminium
-    2   80.0     0.040    12.   840. 0.90 0.65    30.  2.00 Glass Fibre Quilt : Glass Fibre Quilt
- Int     3.0   210.000  2700.   880. 0.22 0.20 19200.  0.00 Aluminium : Aluminium
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     3.0   210.000  2700.   880. 0.22 0.20 19200.  0.00   8.1 aluminium : Aluminium
+    2   80.0     0.040    12.   840. 0.90 0.65    30.  2.00   1.0 glass fibre quilt : Glass Fibre Quilt (non-hygroscopic)
+ Int     3.0   210.000  2700.   880. 0.22 0.20 19200.  0.00   8.1 aluminium : Aluminium
  ISO 6946 U values (horiz/upward/downward heat flow)=  0.461  0.467  0.452 (partition)  0.442
+ Weight per m^2 of this construction  17.16
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.46
  External surface admittance Y=  0.68  w=  2.97 decrement factor f=  0.94  phi=  0.23 surface factor f=  0.94  phi=  0.23
  Partition admittance Y=  0.53  w=  5.76 surface factor f=  1.00  phi=  0.24
  Total area of dummy_pnls is      0.12
  
- Details of opaque construction: ceiling linked to ceiling_rev & with overall thickness  0.110
+ Details of opaque construction: partition and overall thickness  0.226
+ In category partitions also shown in menus as: plaster over 100mm concrete blk
+partition - plaster over 100mm concret block.
  
- Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    |Description
-      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W
- Ext   100.0     0.040   250.   840. 0.90 0.30     4.  2.50 Glasswool : Glasswool
- Int    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33 Ceiling (mineral) : Ceiling (mineral)
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    13.0     0.420  1200.   837. 0.91 0.50    11.  0.03  15.6 gypsum plaster : Gypsum based plaster (inorganic-porous)
+    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+    3  100.0     0.510  1400.  1000. 0.90 0.65    10.  0.20 140.0 block inner : Block inner (3% mc)
+    4   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+ Int    13.0     0.420  1200.   837. 0.91 0.50    11.  0.03  15.6 gypsum plaster : Gypsum based plaster (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  1.302  1.355  1.238 (partition)  1.166
+ Weight per m^2 of this construction 171.32
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.29
+ External surface admittance Y=  2.63  w=  1.60 decrement factor f=  0.72  phi=  0.68 surface factor f=  0.72  phi=  0.68
+ Partition admittance Y=  2.89  w=  2.42 surface factor f=  0.75  phi=  1.06
+ Total area of partition is     10.74
+ 
+ Details of opaque construction: ceiling linked to ceiling_rev & with overall thickness  0.110
+ In category ceil_floor also shown in menus as: suspended acoustic ceiling acous
+A mineral time with 100mm acoustic treatment. For use as a suspended ceiling. To be referenced
+from room. Reversed version is ceiling_rev
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   100.0     0.040   250.   840. 0.90 0.30     4.  2.50  25.0 glasswool : Glasswool (generic) (non-hygroscopic)
+ Int    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33   2.9 ceiling mineral : Ceiling acoustic tile (mineral fibre based)
  ISO 6946 U values (horiz/upward/downward heat flow)=  0.333  0.336  0.329 (partition)  0.323
+ Weight per m^2 of this construction  27.90
  
 Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.33
  External surface admittance Y=  0.82  w=  3.17 decrement factor f=  0.94  phi=  0.30 surface factor f=  0.94  phi=  0.30
  Partition admittance Y=  0.92  w=  4.35 surface factor f=  0.96  phi=  0.40
  Total area of ceiling is     15.06
+ 
+ Details of opaque construction: floor_1 and overall thickness  1.200
+ In category legacy also shown in menus as: thin concrete floor hardcore-ear
+An uninsulated slab on grade foundation over hardcore and 1m of earth with exposed screed.
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    2  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    3  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    4  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    5  200.0     1.280  1460.   879. 0.90 0.85     5.  0.16 292.0 earth std : Common_earth
+    6  100.0     2.900  2650.   900. 0.90 0.55    77.  0.03 265.0 red granite : Red granite (inorganic-porous)
+    7   50.0     1.400  2100.   653. 0.90 0.65    19.  0.04 105.0 heavy mix concrete : Heavy mix concrete
+ Int    50.0     1.400  2100.   650. 0.91 0.65    19.  0.04 105.0 cement screed : Cement screed (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.946  0.974  0.911 (partition)  0.872
+ Weight per m^2 of this construction1935.00
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.94
+ External surface admittance Y=  5.38  w=  0.96 decrement factor f=  0.41  phi=  1.55 surface factor f=  0.41  phi=  1.55
+ Partition admittance Y=  5.38  w=  0.96 surface factor f=  0.41  phi=  1.55
+ Total area of floor_1 is     15.12

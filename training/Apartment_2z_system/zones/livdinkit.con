@@ -1,21 +1,21 @@
 # thermophysical properties of livdinkit defined in ../zones/livdinkit.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
+# layers|gaps|number &  name   | database name 
      6,     2  #  1 right_facade Wall_EW_1990
-     5,     2  #  2 other        gyp_blk_ptn 
-     3,     1  #  3 ptn_bath_a   gyp_gyp_ptn 
-     3,     1  #  4 ptn_bath_b   gyp_gyp_ptn 
-     3,     1  #  5 ptn_hall     gyp_gyp_ptn 
-     3,     1  #  6 ptn_br_a     gyp_gyp_ptn 
-     3,     1  #  7 ptn_br_b     gyp_gyp_ptn 
+     5,     2  #  2 other        gyp_blk_ptn
+     3,     1  #  3 ptn_bath_a   gyp_gyp_ptn
+     3,     1  #  4 ptn_bath_b   gyp_gyp_ptn
+     3,     1  #  5 ptn_hall     gyp_gyp_ptn
+     3,     1  #  6 ptn_br_a     gyp_gyp_ptn
+     3,     1  #  7 ptn_br_b     gyp_gyp_ptn
      6,     2  #  8 fr_facade_a  Wall_EW_1990
-     1,     0  #  9 fr_facade_b  Doorfrm_ext 
+     1,     0  #  9 fr_facade_b  Doorfrm_ext
      6,     2  # 10 fr_facade_c  Wall_EW_1990
-     2,     0  # 11 ceiling      ceiling     
-     5,     1  # 12 floor        susp_flr_re 
-     3,     1  # 13 operable     dbl_glz     
-     3,     1  # 14 fixed        dbl_glz     
-     1,     0  # 15 door_nonliv  door        
+     2,     0  # 11 ceiling      ceiling
+     5,     1  # 12 floor        susp_flr_re
+     3,     1  # 13 operable     dbl_glz
+     3,     1  # 14 fixed        dbl_glz
+     1,     0  # 15 door_nonliv  door
 # air gap position & resistance for surface  1
   2,   0.170, 5,   0.170,
 # air gap position & resistance for surface  2

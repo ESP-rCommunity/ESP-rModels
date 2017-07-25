@@ -1,12 +1,12 @@
 Synopsis
  
 Synopsis of the model Ventilation system with mech inlet (restricted) and mech
-extract defined in vent_det.cfg generated on Sat Dec 14 22:27:08 2013. Notes
-associated with the model are in ../doc/vent_det.log
+extract defined in vent_det.cfg generated on Mon Nov 21 09:27:52 2016.
+Associated notes are in ../doc/vent_det.log
  
 The model is located at latitude   51.70 with a longitude difference of  -0.50
-from the local time meridian. The year used in simulations is 2000 and
-weekends occur on Saturday and Sunday.
+from the local time meridian (east +ve). The year used in simulations is 2000
+and weekends occur on Saturday and Sunday.
 The site exposure is typical urban site and the ground reflectance is 0.25.
  
  
@@ -33,11 +33,12 @@ An Integrated Performance View is incomplete or missing.
 Databases associated with the model:
  standard pressure distr: pressc.db1
  standard materials     : material.db4.a
- standard constructions : multicon.db4
+ standard constructions : multicon.db5
  standard plant comp    : plantc.db1
- standard event profiles: profiles.db1.a
- standard optical prop  : optics.db1
+ standard event profiles: profiles.db2.a
+ standard optical prop  : optics.db2
  standard UK NCM data   : SBEM.db1
+ predefined objects     : predefined.db1
  standard mould isopleth: mould.db1
  
  ____________________________________________________________

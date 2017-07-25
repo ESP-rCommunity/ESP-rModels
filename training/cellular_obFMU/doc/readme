@@ -1,0 +1,120 @@
+This model demonstrates cosimulation with obFMU, the IEA-EBC Annex 66 
+occupant behaviour toolkit. To use this model as intended, ESP-r must be
+compiled with FMI support and obFMU must be downloaded. Instructions for 
+doing this can be found in the FMI users guide at:
+[ESP-r installation directory]/manual/FMI/Users.txt
+
+The obCoSim.xml and obXML.xml files are provided, which define the zone
+mapping between the model and obFMU and the behaviour models. These are
+intended to work with the simulation preset "test", which simulates for
+1 week at the beginning of February.
+
+The model is designed to simulate with stochastic occupant movement and
+stochastic behaviour models. Selected outputs from one such simulation 
+can be found in the images folder. These show heating, casual gains, and
+air flow through windows which demonstrate obFMU in action.
+
+There are two occupants in this model; Billy and Benny. Billy occupies
+the zone called "manager_a" and Benny occupies "manager_b". Benny is
+somewhat more environmentally conscious then Billy, which is reflected
+in the behaviour models assigned to them for lighting, heating and
+windows.
+
+Behaviour models (defined in obXML.xml) are:
+
+  Lighting
+    Billy's models
+      B_L1: 95% chance of turning lights on when entering a room.
+      B_L2: Increasing chance of turning lights on as light level 
+            decreases from 500 lux.
+      B_L3: 95% chance of turning lights off when leaving a room for 
+            more than 6 hours, as long as no-one else is in the room.
+    Benny's models
+      B_L4: Increasing chance of turning lights on as light level
+            decreases from 400 lux.
+      B_L5: 98% chance of turning lights off when leaving a room, as
+            long as no-one else is in the room.
+      B_L6: Increasing chance of turning lights off as light level
+            increases from 400 lux.
+
+  Heating
+    Billy's models
+      B_AC1: 98% chance of turning heating on when entering a room.
+      B_AC3: Increasing chance of turning heating on as temperature
+             decreases from 21 degrees C.
+      B_AC4: 95% chance of turning heating off when leaving a room for 
+             more than 6 hours, as long as no-one else is in the room.
+    Benny's models
+      B_AC5: Increasing chance of turning heating off as temperature
+             increases from 25 degrees C.
+      B_AC6: Increasing chance of turning heating on as temperature
+             decreases from 20 degrees C.
+      B_AC7: 98% chance of turning heating off when leaving a room, as
+             long as no-one else is in the room.
+
+  Windows
+    Billy and Benny both use these models
+      B_W1: Increasing chance of opening windows as CO2 concentration
+            increases from 1000 ppm.
+      B_W2: 98% chance to close windows when leaving a room for more
+            than 6 hours.
+    Benny has one extra model
+      B_W3: Increasing chance to close windows as temperature decreases
+            from 21 degrees C.
+
+  Setpoints
+    Billy and Benny use the same models
+      B_Therm1: In winter heating and cooling setpoints are 21 degrees
+                C.
+      B_Therm2: In spring an autumn heating and cooling setpoints are
+                22.5 degrees C.
+      B_Therm3: In summer heating and cooling setpoints are 24 degrees 
+                C.
+  
+  Blinds
+    Billy and Benny use the same models
+      B_Blind_1: 95% chance to open blinds when entering a room.
+      B_Blind_2: 95% chance to close blinds when leaving a room for more
+                 than 6 hours.
+
+  Plug loads
+    Billy and Benny use the same models
+      B_PL1: 100% chance to turn equipment on when entering room.
+      B_PL2: 98% chance to turn most equipment off (0.3 fraction on 
+             gains) when leaving a room for more than 6 hours, as long
+             as no-one else is in the room.
+
+  Movement
+    Billy and Benny use the same models
+      B_M_Manager:
+        80% of time at work spent in their own offices, with an average
+        duration of 90 minutes.
+        10% of time at work spent in the other's office, with an average
+        duration of 30 minutes.
+        10% of time at work spent outside the model, with an average 
+        duration of 10 minutes.
+        Arrival is at 08:00 at the earliest, has 20% chance of occuring
+        by 08:30, 80% chance of occuring by 09:00, and 100% of occuring
+        by 09:30.
+        Departure typically occurs around 18:00, but can occur as early
+        as 17:30.
+        They typically leave for lunch around 12:00, but can do as early
+        as 11:00; lunch typically takes around 60 minutes, minimum 30 
+        minutes.
+
+The differences between Billy and Benny's behaviours can be observed in
+the example results provided. For example, it can be seen in the heating
+results that Billy's office uses significantly more heating energy, 
+largely due to Billy being forgetful and leaving the heating on twice 
+when she goes home! It can also be seen that Benny is rather more 
+inclined to use natural daylight, turning the lights off in his office 
+more often than Billy.
+
+Because the simulation is stochastic, your results will be different
+from those shown in the example images. Try a few simulations and see
+what happens! You could even try fiddling with the behaviour models, 
+perhaps replacing them with some of the existing behaviour models that
+are distributed with the obXML schema:
+https://behaviour.lbl.gov/?q=obxmldownload
+
+

@@ -1,0 +1,102 @@
+Lib: bld_basic_af1_def.res: For bld_basic_af1
+Period: Mon-09-Jan@00h30(1967) to Sun-15-Jan@23h30(1967) : sim@60m, output@60m
+ 
+ Zone energy requirements summary
+    Zone                 Sensible heating            Sensible cooling         Humidification    Dehumidification
+ id name                 Energy       Hours          Energy       Hours       Energy   Hours    Energy  Hours
+                     kWhrs  kWhrs/m2 required    kWhrs  kWhrs/m2 required     kWhrs  required   kWhrs  required
+  1 reception         19.54     0.41    42.0       0.00     0.00     0.0       0.00     0.0       0.00     0.0
+  2 office            33.72     2.11    60.0       0.00     0.00     0.0       0.00     0.0       0.00     0.0
+  3 roof_space         0.00     0.00     0.0       0.00     0.00     0.0       0.00     0.0       0.00     0.0
+ 
+   All                53.3      0.7    102.        0.0      0.0      0.        0.0     0.0        0.0     0.0
+ 
+    60.0 hours when heating required in at least one zone.
+     0.0 hours when cooling required in at least one zone.
+ 
+# Lib: bld_basic_af1_def.res: For bld_basic_af1
+# Period: Mon-09-Jan@00h30(1967) to Sun-15-Jan@23h30(1967) : sim@60m, output@60m
+# Zone sensible + latent load (kW)
+Description Max_value Max_occur Min_value Min_occur Ave_value Std_dev
+reception            1.00000 09-Jan@08h30      0.00000 09-Jan@00h30      0.11631      0.25420
+office               1.00000 09-Jan@08h30      0.00000 09-Jan@00h30      0.20074      0.29114
+roof_space           0.00000 09-Jan@00h30      0.00000 09-Jan@00h30      0.00000      0.00000
+ 
+   All              2.0000 09-Jan@08h30       0.00000 09-Jan@00h00           --           --
+ 
+Lib: bld_basic_af1_def.res: For bld_basic_af1
+Period: Mon-09-Jan@00h30(1967) to Sun-15-Jan@23h30(1967) : sim@60m, output@60m
+ 
+ Monthly selection of gains & losses (to nearest kWh).
+ 
+ Zone      Period| Surface convection at face of | Casual Gains (Radiant+Conv)   |Air movement   | Environmental |Solar radiation |
+           in    |   transparent |    opaque     |Occu-  |Lights |Small  |Other  |Infil- |Venti- |   controls    |absorbd|entering|
+           month |outside|other  |outside|other  |pant   |       |Power  |       |tration|lation |Heating|Cooling|within |the     |
+                 |facing |facing |facing |facing |       |       |       |       |       |       |       |       |zone   |zone    |
+ The model overall base area is    145.000000     m2.
+ reception    Jan     -26.      0.    -42.    -64.     22.      3.    126.      0.     -4.     -1.     20.      0.     17.     17.
+ office       Jan      -6.      0.    -13.    -18.      7.      1.      0.      0.     -3.      0.     34.      0.      2.      2.
+ roof_space   Jan       0.      0.    -19.      9.      0.     28.      0.      0.     -1.      0.      0.      0.      0.      0.
+ 
+ All zones    Jan     -32.      0.    -75.    -72.     29.     32.    126.      0.     -9.     -1.     53.      0.     19.     20.
+ 
+ 
+Lib: bld_basic_af1_def.res Set:   1: For bld_basic_af1
+Period: Mon-09-Jan@00h30(1967) to Sun-15-Jan@23h30(1967)
+Time steps: sim@60m, output@60m
+Resultant temperature (degC)
+Reporting number of hours above   24.00
+ 
+ Description       Maximum                Minimum            Mean    No of hours     %
+                value  occurrence     value  occurrence     value   above  below   above
+reception       20.02 12-Jan@12h30    11.87 09-Jan@06h30    16.50    0.00  168.00    0.0
+office          18.22 13-Jan@17h30     9.51 09-Jan@06h30    14.24    0.00  168.00    0.0
+roof_space       9.75 13-Jan@16h30    -4.65 09-Jan@07h30     2.64    0.00  168.00    0.0
+ 
+ Total number of hours greater than query point:      0.00  (  0.0%)
+ Total number of hours less than or equal to query point:    504.00  (100.0%)
+ 
+Lib: bld_basic_af1_def.res Set:   1: For bld_basic_af1
+Period: Mon-09-Jan@00h30(1967) to Sun-15-Jan@23h30(1967)
+Time steps: sim@60m, output@60m
+Zone db temperature (degC)
+Reporting number of hours above   24.00
+ 
+ Description       Maximum                Minimum            Mean    No of hours     %
+                value  occurrence     value  occurrence     value   above  below   above
+reception       22.00 12-Jan@12h30    12.48 09-Jan@06h30    17.70    0.00  168.00    0.0
+office          20.00 09-Jan@11h30     9.45 09-Jan@06h30    15.00    0.00  168.00    0.0
+roof_space      10.13 13-Jan@15h30    -4.64 09-Jan@07h30     2.74    0.00  168.00    0.0
+ 
+ Total number of hours greater than query point:      0.00  (  0.0%)
+ Total number of hours less than or equal to query point:    504.00  (100.0%)
+ 
+Lib: bld_basic_af1_def.res Set:   1: For bld_basic_af1
+Period: Mon-09-Jan@00h30(1967) to Sun-15-Jan@23h30(1967)
+Time steps: sim@60m, output@60m
+Resultant temperature (degC)
+Reporting number of hours above   24.00
+ 
+ Description       Maximum                Minimum            Mean    No of hours     %
+                value  occurrence     value  occurrence     value   above  below   above
+reception       20.02 12-Jan@12h30    15.11 09-Jan@09h30    18.45    0.00   40.00    0.0
+office          18.22 13-Jan@17h30    15.49 09-Jan@09h30    17.66    0.00   40.00    0.0
+roof_space No data: probably due to filtering.
+ 
+ Total number of hours greater than query point:      0.00  (  0.0%)
+ Total number of hours less than or equal to query point:     80.00  (100.0%)
+ 
+Lib: bld_basic_af1_def.res Set:   1: For bld_basic_af1
+Period: Mon-09-Jan@00h30(1967) to Sun-15-Jan@23h30(1967)
+Time steps: sim@60m, output@60m
+Zone db temperature (degC)
+Reporting number of hours above   24.00
+ 
+ Description       Maximum                Minimum            Mean    No of hours     %
+                value  occurrence     value  occurrence     value   above  below   above
+reception       22.00 12-Jan@12h30    17.51 09-Jan@09h30    20.54    0.00   40.00    0.0
+office          20.00 09-Jan@11h30    18.57 09-Jan@09h30    19.95    0.00   40.00    0.0
+roof_space No data: probably due to filtering.
+ 
+ Total number of hours greater than query point:      0.00  (  0.0%)
+ Total number of hours less than or equal to query point:     80.00  (100.0%)

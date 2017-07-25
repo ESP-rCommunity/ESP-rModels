@@ -1,6 +1,6 @@
 # thermophysical properties of living defined in ../zones/living.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
+# layers|gaps|number &  name   | database name 
      4,     1  #  1 no_facde_a   conc_blck_rn
      4,     1  #  2 nor_sill     conc_blck_rn
      4,     1  #  3 nor_facade_b conc_blck_rn
@@ -8,22 +8,22 @@
      3,     0  #  5 ptn_other_b  intcnc_block
      3,     0  #  6 ptn_hall_a   intcnc_block
      3,     0  #  7 ptn_hall_b   intcnc_block
-     3,     1  #  8 door_hall    Doorint_sol 
+     3,     1  #  8 door_hall    Doorint_sol
      3,     0  #  9 ptn_hall_c   intcnc_block
-     8,     1  # 10 liv_ceiling  Ceilti_lowc 
+     8,     1  # 10 liv_ceiling  Ceilti_lowc
      5,     1  # 11 liv_floor    Floorti_lowc
      4,     1  # 12 head_c       conc_blck_rn
-     1,     0  # 13 frame_c      Window_frme 
-     3,     1  # 14 glaz_c       Window_ext  
+     1,     0  # 13 frame_c      Window_frme
+     3,     1  # 14 glaz_c       Window_ext
      3,     0  # 15 lower_ptn    intcnc_block
      3,     0  # 16 ptn_below    intcnc_block
      3,     0  # 17 above_str    intcnc_block
-     8,     1  # 18 ceil_br3_b   Floorti_upc 
-     8,     1  # 19 ceil_hall    Ceilti_lowc 
+     8,     1  # 18 ceil_br3_b   Floorti_upc
+     8,     1  # 19 ceil_hall    Ceilti_lowc
      3,     0  # 20 ptn_liv_a    intcnc_block
      3,     0  # 21 ptn_liv_b    intcnc_block
      3,     0  # 22 ptn_liv_c    intcnc_block
-     1,     0  # 23 fict_liv     fict        
+     1,     0  # 23 fict_liv     fict
 # air gap position & resistance for surface  1
   3,   0.170,
 # air gap position & resistance for surface  2

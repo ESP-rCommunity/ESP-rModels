@@ -4,22 +4,18 @@ field can be viewed by opening (with xv, for example)
 template.bitmap.
 
 Directory IEA_annex20/isotherm contains a model corresponding to
-an IEA Annex 20 test case under 2D, isothermal conditions. These
-are older model format files.
+an IEA Annex 20 test case under 2D, isothermal conditions.
 
 Directory IEA_annex20/nonisotherm contains a model corresponding to
-an IEA Annex 20 test case under 2D, nonisothermal conditions. These
-are older model format files.
+an IEA Annex 20 test case under 2D, nonisothermal conditions.
 
 THE ABOVE PROBLEMS REQUIRE dfs ONLY.
 
 Directory ROOMVENT98 encompasses both CFD-only and BSim-CFD
-coupled simulations. Note: older model format files in the
-folder.
+`conflated' (type 1 thermal conflation) simulations.
+
+Directory dis_vent contains a displacement ventilation
+example.  Requires ESP-r simulator with CFD integrated.
 
 Directory rad_htg contains a radiant heating example,
 with models for the CFD active and not active cases.
-
-cfd_benchmark is for training workshops and includes a model
-without a domain, a model with a partially completed as well
-as a working coupled model.

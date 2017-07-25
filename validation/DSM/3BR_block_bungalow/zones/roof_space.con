@@ -1,15 +1,15 @@
 # thermophysical properties of roof_space defined in ../zones/roof_space.con
 # no of |air |surface(from geo)| multilayer construction
-# layers|gaps|  no.  name      | database name 
-     2,     0  #  1 br2_ceiling  Floortk_rf  
-     2,     0  #  2 ceil_staur   Floortk_rf  
-     2,     0  #  3 wc_ceiling   Floortk_rf  
-     2,     0  #  4 br1_ceiling  Floortk_rf  
-     2,     0  #  5 br3_ceiling  Floortk_rf  
-     2,     0  #  6 r1           Roof        
+# layers|gaps|number &  name   | database name 
+     2,     0  #  1 br2_ceiling  Floortk_rf
+     2,     0  #  2 ceil_staur   Floortk_rf
+     2,     0  #  3 wc_ceiling   Floortk_rf
+     2,     0  #  4 br1_ceiling  Floortk_rf
+     2,     0  #  5 br3_ceiling  Floortk_rf
+     2,     0  #  6 r1           Roof
      4,     1  #  7 wc_side_wall conc_blck_rn
      4,     1  #  8 side_wall    conc_blck_rn
-     2,     0  #  9 r2           Roof        
+     2,     0  #  9 r2           Roof
 # air gap position & resistance for surface  7
   3,   0.170,
 # air gap position & resistance for surface  8

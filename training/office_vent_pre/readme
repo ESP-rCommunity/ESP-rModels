@@ -1,0 +1,19 @@
+
+The Office_vent_pre folder contains a fully populated
+portion of an office block which explores the use of
+pre-defined object for internal mass and visual studies.
+The configuration files are as follows:
+
+office_vent_pre.cfg - with standard seasons (save level 4).
+office_vent_pre_nu.cfg - with annual assessment save level 2.
+
+The images folder includes images of the expected 
+performance of the model assuming an Ottawa Canada
+climate. The rad folder has the radiance files for
+various views.
+
+WARNING - this model has zones with lots of surfaces so
+ESP-r needs to have been compiled with the *large.h
+header files.
+
+

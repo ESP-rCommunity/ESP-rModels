@@ -27,10 +27,10 @@ The site exposure is typical city centre and the ground reflectance is 0.20.
  
 Databases associated with the model:
  pressure distributions : pressc.db1
- materials              : /usr/esru/esp-r/databases/material.db3.a
+ materials              : material.db3.a
  constructions          : ../dbs/office_vent_constr.db2
  plant components       : plantc.db1
- event profiles         : /usr/esru/esp-r/databases/profiles.db1.a
+ event profiles         : profiles.db2.a
  optical properties     : optics.db2
  ____________________________________________________________
  

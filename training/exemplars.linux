@@ -22,6 +22,10 @@
 *cfg	/usr/esru/esp-r/training/basic/cfg/bld_basic.cfg
 *root	/usr/esru/esp-r/training/basic
 *item
+*name	4 identical zones with variant on-off controllers
+*cfg	/usr/esru/esp-r/training/on-off_control/cfg/on-off_control.cfg
+*root	/usr/esru/esp-r/training/on-off_control
+*item
 *name	... with window reveal & external shading
 *cfg	/usr/esru/esp-r/training/basic/cfg/bld_basic_shd.cfg
 *root	/usr/esru/esp-r/training/basic

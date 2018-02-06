@@ -22,6 +22,10 @@
 *cfg	C:\Esru\esp-r\training\basic\cfg\bld_basic.cfg
 *root	C:\Esru\esp-r\training\basic
 *item
+*name	4 identical zones with variant on-off controllers
+*cfg	C:\Esru\esp-r\training\on-off_control\cfg\on-off_control.cfg
+*root	C:\Esru\esp-r\training\on-off_control
+*item
 *name	...with window reveal & external shading
 *cfg	C:\Esru\esp-r\training\basic\cfg\bld_basic_shd.cfg
 *root	C:\Esru\esp-r\training\basic

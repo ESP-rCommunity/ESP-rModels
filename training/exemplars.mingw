@@ -194,6 +194,10 @@
 *cfg	C:\Esru\esp-r\training\rad_room_heat\cfg\rad_rooms_heat.cfg
 *root	C:\Esru\esp-r\training\rad_room_heat
 *item
+*name	high resolution 3BR with zonal radiators and flow based WCH
+*cfg	C:\Esru\esp-r\training\3BR_highres_wch_obj\cfg\3BR_wch_obj1819.cfg
+*root	C:\Esru\esp-r\training\3BR_highres_wch_obj
+*item
 *group	real projects
 *help	These models were built for use in consultancy/research projects.
 *item
@@ -205,6 +209,10 @@
 *cfg	C:\Esru\esp-r\training\office_vent\cfg\office_vent_netinf.cfg
 *root	C:\Esru\esp-r\training\office_vent
 *item
+*name	... with 3D network air flow infiltration model
+*cfg	C:\Esru\esp-r\training\office_vent\cfg\office_vent_netinf_3d.cfg
+*root	C:\Esru\esp-r\training\office_vent
+*item
 *name	... with graphic network air flow infiltration model
 *cfg	C:\Esru\esp-r\training\office_vent\cfg\office_vent_netinfg.cfg
 *root	C:\Esru\esp-r\training\office_vent
@@ -212,6 +220,14 @@
 *name	... with controlled facade vents
 *cfg	C:\Esru\esp-r\training\office_vent\cfg\office_vent_ctl.cfg
 *root	C:\Esru\esp-r\training\office_vent
+*item
+*name	... 3D with controlled facade vents
+*cfg	C:\Esru\esp-r\training\office_vent\cfg\office_vent_netvent_ctl3d.cfg
+*root	C:\Esru\esp-r\training\office_vent
+*item
+*name	Office building high-res, Ottawa, Canada 
+*cfg	C:\Esru\esp-r\training\office_vent_pre\cfg\office_vent_pre_3D.cfg
+*root	C:\Esru\esp-r\training\office_vent_pre
 *item
 *label	___ Models with a special focus:
 *item

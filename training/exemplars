@@ -238,6 +238,30 @@
 *cfg	/usr/esru/esp-r/training/office_vent_pre/cfg/office_vent_pre_3D.cfg
 *root	/usr/esru/esp-r/training/office_vent_pre
 *item
+*name	Single bedroom timber bungalow
+*cfg	/usr/esru/esp-r/training/1BR_bungalow/cfg/1BR_bungalow_p1m_avg.cfg
+*root	/usr/esru/esp-r/training/1BR_bungalow
+*item
+*name	Two bedroom timber bungalow
+*cfg	/usr/esru/esp-r/training/2BR_bungalow/cfg/2BR_bungalow_p1m_avg.cfg
+*root	/usr/esru/esp-r/training/2BR_bungalow
+*item
+*name	Three bedroom 1930s rendered concrete block bungalow
+*cfg	/usr/esru/esp-r/training/3BR_block_bungalow/cfg/3BR_block_bung_p1m_avg.cfg
+*root	/usr/esru/esp-r/training/3BR_block_bungalow
+*item
+*name	Three bedroom simi-detached timber-kit 1980s
+*cfg	/usr/esru/esp-r/training/3BR_semi_timber85/cfg/3BR_semi_timber_p1m_avg.cfg
+*root	/usr/esru/esp-r/training/3BR_semi_timber85
+*item
+*name	1890s traditional stone upper level apartment
+*cfg	/usr/esru/esp-r/training/stone_simi_1890/cfg/stone_simi_1890.cfg
+*root	/usr/esru/esp-r/training/stone_simi_1890
+*item
+*name	Four level shallow plan office building
+*cfg	/usr/esru/esp-r/training/4level_office/cfg/office_4l_bc.cfg
+*root	/usr/esru/esp-r/training/4level_office
+*item
 *label	___ Models with a special focus:
 *item
 *group	training workshops
@@ -255,25 +279,13 @@
 *cfg	/usr/esru/esp-r/training/office_doctor/cfg/office_for_doctor_gflow.cfg
 *root	/usr/esru/esp-r/training/office_doctor
 *item
-*name	A simple room to add a graphic flow network
+*name	A simple room to add a graphic or 3D flow network
 *cfg	/usr/esru/esp-r/training/box_network/cfg/box_nonetwork.cfg
 *root	/usr/esru/esp-r/training/box_network
 *item
 *name	A simple room with a graphic flow network
 *cfg	/usr/esru/esp-r/training/box_network/cfg/box_network.cfg
 *root	/usr/esru/esp-r/training/box_network
-*item
-*name	Small space to test CFD gridding and volumes 
-*cfg	/usr/esru/esp-r/training/cfd/cfd_benchmark/cfg/cfd_benchmark.cfg
-*root	/usr/esru/esp-r/training/cfd/cfd_benchmark
-*item
-*name	Small space with CFD gridding and volumes (stand-alone)
-*cfg	/usr/esru/esp-r/training/cfd/cfd_benchmark/cfg/cfd_benchmark_gr.cfg
-*root	/usr/esru/esp-r/training/cfd/cfd_benchmark
-*item
-*name	Small space with CFD gridding and volumes (coupled)
-*cfg	/usr/esru/esp-r/training/cfd/cfd_benchmark/cfg/cfd_benchmark_cpld.cfg
-*root	/usr/esru/esp-r/training/cfd/cfd_benchmark
 *item
 *name	A pair of rooms to add component based mechanical ventilation
 *cfg	/usr/esru/esp-r/training/plant/mech_vent_2izn/cfg/mech_vent_bc.cfg
@@ -325,10 +337,6 @@
 *name	... with thermal mixing
 *cfg    /usr/esru/esp-r/training/flow/cfg/bld_mech_ven_th.cfg
 *root	/usr/esru/esp-r/training/flow
-*item
-*name   radiant heating system
-*cfg    /usr/esru/esp-r/training/cfd/rad_htg/cfg/rad_htg.cfg
-*root	/usr/esru/esp-r/training/cfd/rad_htg
 *item
 *name	alternative facade ventilation schemes, text network
 *cfg    /usr/esru/esp-r/training/3_windows/cfg/3_windows_legacy.cfg
@@ -501,10 +509,6 @@
 *cfg    /usr/esru/esp-r/training/cfd/CFD_room/cfg/CFD_room_afn.cfg
 *root	/usr/esru/esp-r/training/cfd/CFD_room
 *item
-*name   displacement ventilation system
-*cfg    /usr/esru/esp-r/training/cfd/displ_vent/cfg/displ_vent.cfg
-*root	/usr/esru/esp-r/training/cfd/displ_vent
-*item
 *name   ... with detailed dynamic occupant in room
 *cfg    /usr/esru/esp-r/training/cfd/CFD_room/cfg/CFD_room_occ.cfg
 *root	/usr/esru/esp-r/training/cfd/CFD_room
@@ -512,14 +516,6 @@
 *name	... conflated within cellular office
 *cfg	/usr/esru/esp-r/training/office_dfs/cfg/office_vent_dfs_conf.cfg
 *root	/usr/esru/esp-r/training/office_dfs
-*item
-*name   IEA Annex 20, isothermal test case
-*cfg    /usr/esru/esp-r/training/cfd/IEA_A20/isotherm/cfg/dfs_iso.cfg
-*root	/usr/esru/esp-r/training/cfd/IEA_A20/isotherm
-*item
-*name   ... non-isothermal test case
-*cfg    /usr/esru/esp-r/training/cfd/IEA_A20/nonisotherm/cfg/dfs_niso.cfg
-*root	/usr/esru/esp-r/training/cfd/IEA_A20/nonisotherm
 *item
 *name   Multi-zone CFD with building + flow network coupling
 *cfg    /usr/esru/esp-r/training/cellular_cfd/cfg/cellular_cfd.cfg

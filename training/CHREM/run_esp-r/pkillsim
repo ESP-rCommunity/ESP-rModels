@@ -1,3 +1,0 @@
-pkill -u $USER Core_Sim.pl
-pkill -u $USER bps
-pkill -u $USER ish

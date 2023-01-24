@@ -1,0 +1,13 @@
+*Casual_gain_ctl
+*desc two lighting zones with stepped control and analytic DF
+2 0 0 0 # Gain to ctl for different day types
+   8  18   0   1   0   1   0   1  # Control period start & end hours
+  2  # No. of lighting zone(s)
+ 400.0  1.5  0.2  0.2  0 # Setpt, switch off lvl, min dim/el, delay
+ 0.50  1  1 # % casual, no of sensors, calc type
+  4.500  2.000  0.900  0.000  0.000  1.000 # Sensor x y z & dir vect
+  2 # Control law: Step            
+ 400.0  1.5  0.2  0.2  0 # Setpt, switch off lvl, min dim/el, delay
+ 0.50  1  1 # % casual, no of sensors, calc type
+  4.500  4.000  0.900  0.000  0.000  1.000 # Sensor x y z & dir vect
+  2 # Control law: Step            

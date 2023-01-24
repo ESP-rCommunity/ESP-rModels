@@ -1,0 +1,9 @@
+System configuration file: /home/joe/embedded_SI_highR/caravan.cfg
+Synopsis: single zone, convective heating, high reflectivity external obstructions
+First created: Tue Jan 19 14:21:40 2021
+Notes:
+This model describes an office with a convective heating system
+under ideal control. External obstructions of high surface
+reflectivity are included to and ESP-r's embedded shading/insolation
+calculation method is activated to determine the added zone
+solar gain due to external reflections.

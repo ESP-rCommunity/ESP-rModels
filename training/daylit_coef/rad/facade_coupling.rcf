@@ -1,0 +1,12 @@
+*ESP-r visualisation scene configuration file.
+Tue Sep 15 11:48:34 2015 # latest file modification.
+  1 # No. of scenes
+# Scene number  1
+*rnm fac_zone_co_Coupli.rif                      # Rif name
+*rnm fac_zone_co_Coupli_a.rif                    # Alternate rif
+*srt fac_zone_co_Coupli                          # Scene root
+*rde Scene of fac_zone_co for Coupling analysis. # Description
+*rpu Coupling                                    # Intended use
+*slc fac_zone_co_Coupli.slc                      # Sensor locations
+*sceneEND
+*end

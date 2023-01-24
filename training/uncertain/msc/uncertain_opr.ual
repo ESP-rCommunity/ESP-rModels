@@ -1,0 +1,52 @@
+*Uncertainty analysis library
+   4   2   4 # Changes, Locations, Actions
+#  
+# Changes definitions follow...
+#  
+*cng_def
+infil_rate               # Change id string
+   4 # Change type: Scheduled operation
+   0   1 # Operations parameter infiltration -
+   2     0.200     0.000   # abs change infiltration
+*cng_def
+people_watts             # Change id string
+   4 # Change type: Scheduled operation
+   1   1 # Operations parameter occupants sensible
+   2    20.000     0.000   # abs change occupants
+*cng_def
+rad_frac                 # Change id string
+   4 # Change type: Scheduled operation
+   1   3 # Operations parameter occupants radiant frac
+   2     0.100     0.000   # abs change occupants
+*cng_def
+occupant_start           # Change id string
+   4 # Change type: Scheduled operation
+   1   6 # Operations parameter occupants period start
+   2     1.000     0.000   # abs change occupants
+#  
+# Locations definitions follow...
+#  
+*loc_def
+all_year        # Location id string
+   0 # Number of zones
+   1   1 365  24 # Start day, hour, finish day, hour
+*loc_def
+the_zone        # Location id string
+   1 # Number of zones
+   1   1 # Zone number Number of surfaces
+  1
+#  
+# Action definitions follow...
+#  
+*act_def
+   2 # Uncertanty ref: people_watts            
+   2 # Location ref: the_zone       
+*act_def
+   1 # Uncertanty ref: infil_rate              
+   2 # Location ref: the_zone       
+*act_def
+   3 # Uncertanty ref: rad_frac                
+   2 # Location ref: the_zone       
+*act_def
+   4 # Uncertanty ref: occupant_start          
+   2 # Location ref: the_zone       

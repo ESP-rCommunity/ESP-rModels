@@ -1,0 +1,10 @@
+System configuration file: cellular_cfd.cfg
+Synopsis: adjacent offices with a flow network imposed.
+First created: 1 August 2005.
+Notes: 
+This model can be used in conjunction with model cellular_cfd.cfg
+to determine the the quantitative and qualitative impacts of
+activating CFD domains within an integrated simulation.
+
+See file cellular_cfg.log for details on the CFD domains when
+activated.

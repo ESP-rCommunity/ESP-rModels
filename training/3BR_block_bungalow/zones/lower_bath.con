@@ -1,0 +1,85 @@
+*Constructions 2.1                              # thermophysical properties of lower_bath
+*date Fri Sep  3 13:51:05 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     4     1   0.91   0.91   0.50   0.74   0    #   1  fac_side     conc_blck_rn
+     4     1   0.91   0.91   0.50   0.74   0    #   2  fac_a        conc_blck_rn
+     4     1   0.91   0.91   0.50   0.74   0    #   3  sill_v       conc_blck_rn
+     4     1   0.91   0.91   0.50   0.74   0    #   4  fac_b        conc_blck_rn
+     3     0   0.91   0.91   0.50   0.50   0    #   5  ptn_ent_a    intcnc_block
+     3     1   0.91   0.91   0.70   0.70   0    #   6  door_ent     Doorint_sol
+     3     0   0.91   0.91   0.50   0.50   0    #   7  ptn_ent_b    intcnc_block
+     3     0   0.91   0.91   0.50   0.50   0    #   8  ptn_liv      intcnc_block
+     8     1   0.91   0.90   0.70   0.65   0    #   9  lbath_ceil   Ceilti_lowc
+     4     1   0.91   0.90   0.65   0.70   0    #  10  lbath_floor  Floorti_low
+     4     1   0.91   0.91   0.50   0.74   0    #  11  head         conc_blck_rn
+     1     0   0.90   0.90   0.65   0.65   0    #  12  frame        Window_frme
+     3     1   0.83   0.83   0.05   0.05   1    #  13  glazing      Window_ext
+# air gap layer positions and restances
+  3  0.170                                      # for fac_side
+  3  0.170                                      # and for fac_a
+  3  0.170                                      # and for sill_v
+  3  0.170                                      # and for fac_b
+  2  0.170                                      # and for door_ent
+  7  0.170                                      # and for lbath_ceil
+  2  0.170                                      # and for lbath_floor
+  3  0.170                                      # and for head
+  2  0.170                                      # and for glazing
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+     0.7900    1329.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   1   1 aged rendering
+     1.0600    1950.0    1000.0  0.2250   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.0000       0.0       0.0  0.0130   0   0.00 0.00000 0.00000  #       3 AIR
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       4 dense plaster
+     0.7900    1329.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   2   1 aged rendering
+     1.0600    1950.0    1000.0  0.2250   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.0000       0.0       0.0  0.0130   0   0.00 0.00000 0.00000  #       3 AIR
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       4 dense plaster
+     0.7900    1329.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   3   1 aged rendering
+     1.0600    1950.0    1000.0  0.2250   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.0000       0.0       0.0  0.0130   0   0.00 0.00000 0.00000  #       3 AIR
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       4 dense plaster
+     0.7900    1329.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   4   1 aged rendering
+     1.0600    1950.0    1000.0  0.2250   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.0000       0.0       0.0  0.0130   0   0.00 0.00000 0.00000  #       3 AIR
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       4 dense plaster
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   5   1 dense plaster
+     1.0600    1950.0    1000.0  0.1120   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       3 dense plaster
+     0.1300     900.0    2000.0  0.0030   0   0.00 0.00000 0.00000  #   6   1 Hardboard std
+     0.0000       0.0       0.0  0.0290   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1300     900.0    2000.0  0.0030   0   0.00 0.00000 0.00000  #       3 Hardboard std
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   7   1 dense plaster
+     1.0600    1950.0    1000.0  0.1120   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       3 dense plaster
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   8   1 dense plaster
+     1.0600    1950.0    1000.0  0.1120   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       3 dense plaster
+     0.0600     160.0    2500.0  0.0050   0   0.00 0.00000 0.00000  #   9   1 synthetic carpet
+     0.1000     400.0    1360.0  0.0100   0   0.00 0.00000 0.00000  #       2 cellular rub underlay
+     0.1500     800.0    2093.0  0.0190   0   0.00 0.00000 0.00000  #       3 chipboard
+     0.0500      12.0    1000.0  0.0600   0   0.00 0.00000 0.00000  #       4 Min wool quilt betwnstuds
+     0.0500     250.0    2000.0  0.0150   0   0.00 0.00000 0.00000  #       5 fibreboard 250kg
+     0.0500      12.0    1000.0  0.0500   0   0.00 0.00000 0.00000  #       6 Min wool quilt betwnstuds
+     0.0000       0.0       0.0  0.1800   0   0.00 0.00000 0.00000  #       7 AIR
+     0.2100     900.0    1000.0  0.0125   0   0.00 0.00000 0.00000  #       8 Plasterboard (ceiling)
+     0.0400      25.0    1000.0  0.1600   0   0.00 0.00000 0.00000  #  10   1 Mineral wool batt
+     0.0000       0.0       0.0  0.0270   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1500     800.0    2093.0  0.0190   0   0.00 0.00000 0.00000  #       3 chipboard
+     0.1400     600.0    1210.0  0.0100   0   0.00 0.00000 0.00000  #       4 flooring
+     0.7900    1329.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #  11   1 aged rendering
+     1.0600    1950.0    1000.0  0.2250   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.0000       0.0       0.0  0.0130   0   0.00 0.00000 0.00000  #       3 AIR
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       4 dense plaster
+     0.1400     590.0    1800.0  0.0600   0   0.00 0.00000 0.00000  #  12   1 western larch
+     1.0500    2500.0     750.0  0.0040   0   0.00 0.00000 0.00000  #  13   1 clear float
+     0.0000       0.0       0.0  0.0160   0   0.00 0.00000 0.00000  #       2 AIR
+     1.0500    2500.0     750.0  0.0040   0   0.00 0.00000 0.00000  #       3 clear float
+*tmc YES                                        # optical properties:
+   3  DC_8074_04nb                              # layers in tmc type 1
+  0.676  0.651  0.604  0.441  0.201  0.800      # transmission @ 5 angles & visible tr.
+  0.113  0.124  0.134  0.148  0.154             # for each layer absorption @ 5 angles
+  0.001  0.002  0.003  0.004  0.005
+  0.087  0.094  0.097  0.087  0.062
+   0                                            # no alternative optics

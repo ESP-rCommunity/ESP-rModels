@@ -1,0 +1,18 @@
+System configuration file: heat_transfer.cfg
+Synopsis: Matrix of small offices with different heat transfer methods
+Created: Mon Jan  3 08:25:47 2022
+Notes:
+A dozen small offices with associated corridors exploring different
+environmental controls and matching heat transfer methods.
+
+It includes explicit ceiling voids. The upper and lower voids
+are temperature matched to the middle ceiling void.
+
+heat_transfer.cfg - this includes convective sensing in underfloor heating
+room as well as a matching control for the upper and lower bounding zones.
+
+heat_transfer_mixed.cfg  - uses mixed sensing for the underfloor heating
+room so that it matches the sensed conditions in other spaces.
+
+heat_transfer_no_match.cfg - omitts the matching control for the upper
+and lower bounding zones.

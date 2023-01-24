@@ -1,0 +1,48 @@
+*Geometry 1.1,GEN,T_3-V_a # tag version, format, zone name
+*date Tue Dec 29 11:58:22 2020  # latest file modification 
+T_3-V_a describes a...
+# tag, X co-ord, Y co-ord, Z co-ord
+*vertex,20.00000,0.00000,0.00000  #   1
+*vertex,25.50000,0.00000,0.00000  #   2
+*vertex,25.50000,3.60000,0.00000  #   3
+*vertex,20.00000,3.60000,0.00000  #   4
+*vertex,20.00000,0.00000,2.80000  #   5
+*vertex,25.50000,0.00000,2.80000  #   6
+*vertex,25.50000,3.60000,2.80000  #   7
+*vertex,20.00000,3.60000,2.80000  #   8
+*vertex,20.00000,2.60000,0.50000  #   9
+*vertex,20.00000,0.60000,0.50000  #  10
+*vertex,20.00000,0.60000,2.25000  #  11
+*vertex,20.00000,2.60000,2.25000  #  12
+# 
+# tag, number of vertices followed by list of associated vert
+*edges,4,1,2,6,5  #   1
+*edges,4,2,3,7,6  #   2
+*edges,4,3,4,8,7  #   3
+*edges,10,4,1,5,8,4,9,12,11,10,9  #   4
+*edges,4,5,6,7,8  #   5
+*edges,4,1,4,3,2  #   6
+*edges,4,9,10,11,12  #   7
+# 
+# surf attributes:
+#  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
+#  child of (surface name), useage (pair of tags) 
+#  construction name, optical name
+#  boundary condition tag followed by two data items
+*surf,South,VERT,-,-,-,Type_n.2,OPAQUE,IDENT_CEN,00,000  #   1 ||< Identical CEN 13791
+*surf,East,VERT,-,-,-,Type_n.2,OPAQUE,IDENT_CEN,00,000  #   2 ||< Identical CEN 13791
+*surf,North,VERT,-,-,-,Type_n.2,OPAQUE,IDENT_CEN,00,000  #   3 ||< Identical CEN 13791
+*surf,West,VERT,-,-,-,Type_n.1,OPAQUE,EXTERIOR,000,000  #   4 ||< external
+*surf,Roof,CEIL,-,-,-,Type_n.5,OPAQUE,EXTERIOR,000,000  #   5 ||< external
+*surf,Floor,FLOR,-,-,-,Type_n.3-flr,OPAQUE,IDENT_CEN,00,000  #   6 ||< Identical CEN 13791
+*surf,window,VERT,West,-,-,sgl_glz_shd,SG_CEN_shd,EXTERIOR,000,000  #   7 ||< external
+# 
+*insol,3,0,0,0  # default insolation distribution
+# 
+# shading directives
+*shad_calc,none  # no temporal shading requested
+# 
+*insol_calc,all_applicable   1 # insolation sources
+  7
+# 
+*base_list,1,6,    19.80 0  # zone base list

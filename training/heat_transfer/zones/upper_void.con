@@ -1,0 +1,70 @@
+*Constructions 2.1                              # thermophysical properties of upper_void
+*date Mon Jan 17 10:24:56 2022                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     2     0   0.90   0.90   0.30   0.60   0    #   1  cor_ceil_a   ceiling_rev
+     2     0   0.90   0.90   0.30   0.60   0    #   2  cor_ceil_b   ceiling_rev
+     2     0   0.90   0.90   0.30   0.60   0    #   3  cor_ceil_c   ceiling_rev
+     2     0   0.90   0.90   0.30   0.60   0    #   4  cor_ceil_d   ceiling_rev
+     2     0   0.90   0.90   0.30   0.60   0    #   5  cor_ceil_e   ceiling_rev
+     2     0   0.90   0.90   0.30   0.60   0    #   6  cor_ceil_f   ceiling_rev
+     2     0   0.90   0.90   0.30   0.60   0    #   7  ceiling_bcr  ceiling_rev
+     2     0   0.90   0.90   0.30   0.60   0    #   8  ceiling_radf ceiling_rev
+     2     0   0.90   0.90   0.30   0.60   0    #   9  ceiling_radw ceiling_rev
+     2     0   0.90   0.90   0.30   0.60   0    #  10  ceiling_flrh ceiling_rev
+     2     0   0.90   0.90   0.30   0.60   0    #  11  ceiling_user ceiling_rev
+     2     0   0.90   0.90   0.30   0.60   0    #  12  ceiling_warm ceiling_rev
+     4     1   0.91   0.90   0.22   0.65   0    #  13  facade       frc_facade
+     4     0   0.91   0.90   0.40   0.65   0    #  14  right        insul_frc_facade_heater
+     4     0   0.91   0.90   0.40   0.65   0    #  15  left         insul_frc_facade_heater
+     5     2   0.91   0.91   0.22   0.22   0    #  16  back         gyp_blk_ptn
+     1     0   0.90   0.90   0.65   0.65   0    #  17  upper        structure100mm
+# air gap layer positions and restances
+  2  0.170                                      # for facade
+  2  0.170  4  0.170                            # and for back
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+     0.0300     290.0    2000.0  0.0100   0   0.00 0.00000 0.00000  #   1   1 ceiling mineral
+     0.0400     250.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glasswool
+     0.0300     290.0    2000.0  0.0100   0   0.00 0.00000 0.00000  #   2   1 ceiling mineral
+     0.0400     250.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glasswool
+     0.0300     290.0    2000.0  0.0100   0   0.00 0.00000 0.00000  #   3   1 ceiling mineral
+     0.0400     250.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glasswool
+     0.0300     290.0    2000.0  0.0100   0   0.00 0.00000 0.00000  #   4   1 ceiling mineral
+     0.0400     250.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glasswool
+     0.0300     290.0    2000.0  0.0100   0   0.00 0.00000 0.00000  #   5   1 ceiling mineral
+     0.0400     250.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glasswool
+     0.0300     290.0    2000.0  0.0100   0   0.00 0.00000 0.00000  #   6   1 ceiling mineral
+     0.0400     250.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glasswool
+     0.0300     290.0    2000.0  0.0100   0   0.00 0.00000 0.00000  #   7   1 ceiling mineral
+     0.0400     250.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glasswool
+     0.0300     290.0    2000.0  0.0100   0   0.00 0.00000 0.00000  #   8   1 ceiling mineral
+     0.0400     250.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glasswool
+     0.0300     290.0    2000.0  0.0100   0   0.00 0.00000 0.00000  #   9   1 ceiling mineral
+     0.0400     250.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glasswool
+     0.0300     290.0    2000.0  0.0100   0   0.00 0.00000 0.00000  #  10   1 ceiling mineral
+     0.0400     250.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glasswool
+     0.0300     290.0    2000.0  0.0100   0   0.00 0.00000 0.00000  #  11   1 ceiling mineral
+     0.0400     250.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glasswool
+     0.0300     290.0    2000.0  0.0100   0   0.00 0.00000 0.00000  #  12   1 ceiling mineral
+     0.0400     250.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glasswool
+     0.9000    1950.0     840.0  0.0200   0   0.00 0.00000 0.00000  #  13   1 Glass reinf conc
+     0.0000       0.0       0.0  0.0200   0   0.00 0.00000 0.00000  #       2 AIR
+     0.0400      12.0     840.0  0.1200   0   0.00 0.00000 0.00000  #       3 glass fibre quilt
+     0.3600    1150.0    1000.0  0.0240   0   0.00 0.00000 0.00000  #       4 gypsum_fibreboard
+     0.9000    1950.0     840.0  0.0200   0   0.00 0.00000 0.00000  #  14   1 Glass reinf conc
+     0.0400      12.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glass fibre quilt
+     0.8000    1800.0    1100.0  0.0500   0   0.00 0.00000 0.00000  #       3 lime cement plaster
+     0.8300    1400.0     920.0  0.0200   0   0.00 0.00000 0.00000  #       4 White_RK38_baumat_lime_plaster
+     0.9000    1950.0     840.0  0.0200   0   0.00 0.00000 0.00000  #  15   1 Glass reinf conc
+     0.0400      12.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       2 glass fibre quilt
+     0.8000    1800.0    1100.0  0.0500   0   0.00 0.00000 0.00000  #       3 lime cement plaster
+     0.8300    1400.0     920.0  0.0200   0   0.00 0.00000 0.00000  #       4 White_RK38_baumat_lime_plaster
+     0.1900     950.0     840.0  0.0130   0   0.00 0.00000 0.00000  #  16   1 white gypboard
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.5100    1400.0    1000.0  0.1000   0   0.00 0.00000 0.00000  #       3 block inner
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       4 AIR
+     0.1900     950.0     840.0  0.0130   0   0.00 0.00000 0.00000  #       5 white gypboard
+     1.4000    2100.0     653.0  0.1000   0   0.00 0.00000 0.00000  #  17   1 heavy mix concrete
+*tmc NONE                                       # all surfaces are opaque

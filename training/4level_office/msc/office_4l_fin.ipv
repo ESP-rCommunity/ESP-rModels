@@ -1,0 +1,55 @@
+*IPV  4 2 i5t                   # IPV V4 tabbed report format five seasons (typical weeks)
+*title,Four level office building with ceil    
+*synop,:An office building taken from IEA Annex 46 with overhangs on south, east and west facades.
+*images,0
+*simulations   5                # assessments to run
+# tag start doy finish doy description
+*period      22      28    office 1st winter run                   
+*period      94     100    office spring run                       
+*period     220     226    office summer run                       
+*period     262     268    office autumn run                       
+*period     325     331    office 2nd winter run                   
+*display_days,5,44,135,156,275,331
+# season multipliers
+# name |heating |cooling|lights |fans  |smallpwr|DWH
+*win1     9.000   9.000   9.000   9.000   9.000   9.000
+*spr      9.441   9.000   9.000   9.000   9.000   9.000
+*sum     22.944  27.697  16.000  16.000  16.000  16.000
+*aut     10.000  10.000  10.000  10.000  10.000  10.000
+*win2     7.643   7.000   7.000   7.000   7.000   7.000
+*metrics  10                    # metrics to report
+# metric results miscelaneous number floor scal- weigh- topic
+# name   index   data  data   zones  area  ing   ting
+*metric_1     6     1     1    10  1844.0  1.000  1.000,comfort,ocup_zones,Resultant T (degC)
+ 1,2,3,4,5,6,11,12,13,14
+*metric_2     6     1     1     5   308.0  1.000  1.000,comfort,ocup_core,Resultant T (degC)
+ 7,8,9,10,15
+*metric_3    11     0     0    10  1844.0  1.000  1.000,Infil,infil_offic,Infiltration (W)
+ 1,2,3,4,5,6,11,12,13,14
+*metric_4    11     0     0     5   308.0  1.000  1.000,Infil,infil_other,Infiltration (W)
+ 7,8,9,10,15
+*metric_5    12     0     0    10  1844.0  1.000  1.000,Vent,vent_offic,Ventilation (W)
+ 1,2,3,4,5,6,11,12,13,14
+*metric_6    12     0     0     5   308.0  1.000  1.000,Vent,vent_other,Ventilation (W)
+ 7,8,9,10,15
+*metric_7     1     0     0    10  1844.0  1.000  1.000,ZndbT,dbt_offices,Zone db T (degC)
+ 1,2,3,4,5,6,11,12,13,14
+*metric_8    74     0     0    10  1844.0  1.000  1.000,Plt_C+R&L,pltcrl_offs,Plnt cnv+rad&lat (W)
+ 1,2,3,4,5,6,11,12,13,14
+*metric_9    74     0     0     4   256.0  1.000  1.000,Plt_C+R&L,pltcrl_cores,Plnt cnv+rad&lat (W)
+ 7,8,9,10
+*metric_10    74     0     0     1     9.0  1.000  1.000,Plt_C+R&L,pltcrl_mixs,Plnt cnv+rad&lat (W)
+ 21
+*demand_sets   3                # energy demands to report
+# tag  number miscelaneoous aggregate floor scal- description
+#      zones  data  data    toggle    area  ing
+*energy_1    10     0     0     0  1844.0  1.000,energy_off
+ 1,2,3,4,5,6,11,12,13,14
+*energy_2     5     0     0     0   308.0  1.000,energy_core
+ 7,8,9,10,15
+*energy_3     1     0     0     0     9.0  1.000,energy_mix
+ 21
+# non-specific demands: occup/light/sm pwr/fans/pumps/lifts/dhw
+# tag occup/light/sm pwr/fans/pumps/lifts/dhw
+*dmds     0     0     0     1     0     0     0
+*end

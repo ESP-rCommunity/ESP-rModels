@@ -1,0 +1,6 @@
+Synopsis: A basic room with CFD domain imposed.
+Created by: Iain, 8 Aug 2002
+Updated by: Andy, 23 January 2002
+Notes:
+A room with a decoupled CFD domain allowing. Simulations of
+the zone and CFD domains can be separately sent for simulation.

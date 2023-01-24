@@ -1,0 +1,8 @@
+System configuration file: /home/joe/basic/bld_basic_gb2.cfg
+Synopsis: multi-zone, convective heating, load shedding control
+First created: Tue Jan 19 14:21:40 2021
+Notes:
+This model represents a 3 zone building with convective heating
+under ideal control in which heating loads are shed according to
+a specified zone sequence (as a means to maintain the total demand
+within a given limit).

@@ -1,0 +1,49 @@
+*Constructions 2.1                              # thermophysical properties of Staff_traing
+*date Tue Sep  7 18:26:11 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     3     0   0.82   0.82   0.32   0.72   0    #   1  front_fac    SMexwal2008
+     3     0   0.82   0.82   0.32   0.72   0    #   2  left_fac     SMexwal2008
+     1     0   0.90   0.90   0.25   0.25   0    #   3  ptn_shop     mass_part
+     3     0   0.82   0.82   0.32   0.72   0    #   4  right_fac    SMexwal2008
+     3     0   0.82   0.82   0.30   0.45   0    #   5  roof         SM_roof2008
+     5     1   0.90   0.12   0.60   0.20   0    #   6  floor        susp_flr_re
+     3     1   0.83   0.83   0.05   0.05   1    #   7  fac_glaz     SM_glazing
+     1     0   0.90   0.90   0.25   0.25   0    #   8  ptn_staff    mass_part
+     1     0   0.90   0.90   0.25   0.25   0    #   9  tri_right    mass_part
+# air gap layer positions and restances
+  3  0.170                                      # for floor
+  2  0.260                                      # and for fac_glaz
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #   1   1 grey cotd alum
+     0.0300      30.0     837.0  0.0800   0   0.00 0.00000 0.00000  #       2 Polyurethane foam bd
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #       3 wt cotd alum
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #   2   1 grey cotd alum
+     0.0300      30.0     837.0  0.0800   0   0.00 0.00000 0.00000  #       2 Polyurethane foam bd
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #       3 wt cotd alum
+     0.5100    1400.0    1000.0  0.2000   0   0.00 0.00000 0.00000  #   3   1 block white ptd
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #   4   1 grey cotd alum
+     0.0300      30.0     837.0  0.0800   0   0.00 0.00000 0.00000  #       2 Polyurethane foam bd
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #       3 wt cotd alum
+    40.0000    7800.0     502.0  0.0010   0   0.00 0.00000 0.00000  #   5   1 beige ptd steel
+     0.0300      30.0     837.0  0.1150   0   0.00 0.00000 0.00000  #       2 Polyurethane foam bd
+    40.0000    7800.0     502.0  0.0010   0   0.00 0.00000 0.00000  #       3 white ptd steel
+    50.0000    7800.0     502.0  0.0040   0   0.00 0.00000 0.00000  #   6   1 steel
+     1.4000    2100.0     653.0  0.1400   0   0.00 0.00000 0.00000  #       2 heavy mix concrete
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       3 AIR
+     0.1500     800.0    2093.0  0.0190   0   0.00 0.00000 0.00000  #       4 chipboard
+     0.0600     186.0    1360.0  0.0060   0   0.00 0.00000 0.00000  #       5 Wilton
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #   7   1 clear float
+     0.0000       0.0       0.0  0.0160   0   0.00 0.00000 0.00000  #       2 AIR
+     0.7600    2710.0     837.0  0.0080   0   0.00 0.00000 0.00000  #       3 plate glass
+     0.5100    1400.0    1000.0  0.2000   0   0.00 0.00000 0.00000  #   8   1 block white ptd
+     0.5100    1400.0    1000.0  0.2000   0   0.00 0.00000 0.00000  #   9   1 block white ptd
+*tmc YES                                        # optical properties:
+   3  DCF7671_06nb                              # layers in tmc type 1
+  0.611  0.583  0.534  0.384  0.170  0.760      # transmission @ 5 angles & visible tr.
+  0.157  0.172  0.185  0.201  0.202             # for each layer absorption @ 5 angles
+  0.001  0.002  0.003  0.004  0.005
+  0.117  0.124  0.127  0.112  0.077
+   0                                            # no alternative optics

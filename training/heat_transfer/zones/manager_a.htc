@@ -1,0 +1,56 @@
+*HC_CTL                         # heat transfer control for manager_a
+*Date,Mon Dec 20 17:02:33 2021  # latest file modification
+*Days  1                        # number of control day types
+  1                             # number control intervals for all day types
+ 43                             # number of surfaces
+# (pt_general part_frame door pt_other ceiling floor spandral frame glazing part_glaz ptn_corid pt_other_a pt_other_b  )
+# (adesk_t adesk_t_ bdesk_t bdesk_t_ cseat cseat_ cstback cstback_ dseat dseat_ dstback dstback_ ecab_lf ecab_rt  )
+# (ecab_fr ecab_bk ecab_to ecab_bs fbil_lft fbil_lft_ fbil_rt fbil_rt_ fbooks fbooks_ gcase gcase_ gcircuit gcircuit_  )
+# (grill_in__l grill_ret)
+  0.00  24.00                   # start and end time of interval
+  3                             # adaptive calculation control type
+*Doc,mixed convec. via CVVT vent from
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+   4.   5.  40.  15.   2.  99.   4.  -1.
+  0 0.000 0.000                 # Air origin zone (+ chan. width & height if Bar-Cohen cor.)

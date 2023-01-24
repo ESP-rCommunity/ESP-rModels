@@ -1,0 +1,406 @@
+*EXEMPLARS
+*help	Models of incremental complexity that provide
+*help	a basic introduction to ESP-r model definition.
+*label	___ Models for the beginner:
+*item
+*group	simple
+*help	Models demonstrating basic representations.
+*item
+*name	zone with convective heating & basic control
+*cfg	/opt/esp-r/training/simple/cfg/bld_simple.cfg
+*root	/opt/esp-r/training/simple
+*item
+*name	... with underfloor heating
+*cfg	/opt/esp-r/training/simple/cfg/bld_simple_ufh.cfg
+*root	/opt/esp-r/training/simple
+*item
+*name	... with external shading
+*cfg	/opt/esp-r/training/simple/cfg/bld_simple_shd.cfg
+*root	/opt/esp-r/training/simple
+*item
+*name	... with dynamic shading (low reflectivity obstruction surfaces)
+*cfg	/opt/esp-r/training/embedded_SI_lowR/cfg/embedded_SI.cfg
+*root	/opt/esp-r/training/embedded_SI_lowR
+*item
+*name	... with dynamic shading (high reflectivity obstruction surfaces)
+*cfg	/opt/esp-r/training/embedded_SI_highR/cfg/caravan.cfg
+*root	/opt/esp-r/training/embedded_SI_highR
+*item
+*name	multi-zone with convective heating & basic control
+*cfg	/opt/esp-r/training/basic/cfg/bld_basic.cfg
+*root	/opt/esp-r/training/basic
+*item
+*name	identical zones with two-position controller
+*cfg	/opt/esp-r/training/two-position_control/cfg/two-position_control.cfg
+*root	/opt/esp-r/training/two-position_control
+*item
+*name	... with window reveal and external shading
+*cfg	/opt/esp-r/training/basic/cfg/bld_basic_shd.cfg
+*root	/opt/esp-r/training/basic
+*item
+*name	... with scheduled infiltration
+*cfg	/opt/esp-r/training/basic/cfg/bld_basic_af1.cfg
+*root	/opt/esp-r/training/basic
+*item
+*name	... with scheduled infiltration and ventilation
+*cfg	/opt/esp-r/training/basic/cfg/bld_basic_af2.cfg
+*root	/opt/esp-r/training/basic
+*item
+*name	... with pre-heat control
+*cfg	/opt/esp-r/training/basic/cfg/bld_basic_prht.cfg
+*root	/opt/esp-r/training/basic
+*item
+*name	... with zone temperature tracking ambient
+*cfg	/opt/esp-r/training/basic/cfg/bld_basic_tm1.cfg
+*root	/opt/esp-r/training/basic
+*item
+*name	... with zone temperature tracking average of sensors
+*cfg	/opt/esp-r/training/basic/cfg/bld_basic_tm2.cfg
+*root	/opt/esp-r/training/basic
+*item
+*name	... with convective heating and PID control
+*cfg	/opt/esp-r/training/pid/cfg/pid.cfg
+*root	/opt/esp-r/training/pid
+*item
+*name	... with load shedding control
+*cfg	/opt/esp-r/training/basic/cfg/bld_basic_prht.cfg
+*root	/opt/esp-r/training/basic
+*item
+*name	... with uncertainty definitions
+*cfg	/opt/esp-r/training/uncertain/cfg/uncertain_opr.cfg
+*root	/opt/esp-r/training/uncertain
+*item
+*group	technical features
+*help	Office model with various technical features.
+*item
+*name	two offices and a passageway
+*cfg	/opt/esp-r/training/cellular_shd/cfg/cellular_shd.cfg
+*root	/opt/esp-r/training/cellular_shd
+*item
+*name	two offices and a passageway - embedded shading
+*cfg	/opt/esp-r/training/cellular_shd/cfg/cellular_shd_daily.cfg
+*root	/opt/esp-r/training/cellular_shd
+*item
+*name	... with natural ventilation
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_natv.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with earth tube air heating/cooling 
+*cfg	/opt/esp-r/training/cellular_earth/cfg/cellular_earth.cfg
+*root	/opt/esp-r/training/cellular_earth
+*item
+*name	... with CO2 tracking (open windows)
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_contam_bc.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with CO2 tracking (high occupancy)
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_contam_ho.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with CO2 tracking (mechanical ventilation)
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_contam_mv.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with CO2 control of mechanical ventilation
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_contam_mvctl.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with alternative occupancy representation
+*cfg	/opt/esp-r/training/cellular_Occ/cfg/cellular_hires.cfg
+*root	/opt/esp-r/training/cellular_Occ
+*item
+*name	... with multiple input, single output controller
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_miso.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with occupant controlled natural ventilation
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_natv.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with hybrid natural and mechanical ventilation
+*log    /opt/esp-r/training/cellular_hybrid/dbs/readme.txt
+*cfg	/opt/esp-r/training/cellular_hybrid/cfg/cellular_mctl.cfg
+*root	/opt/esp-r/training/cellular_hybrid
+*item
+*name	... with detailed HVAC representation
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_hvac.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with SDHW via water filled zones and flow network
+*cfg	/opt/esp-r/training/cellular_expl_sdhw/cfg/cellular_expl_sdhw.cfg
+*root	/opt/esp-r/training/cellular_expl_sdhw
+*item
+*name	... with constant volume HVAC controller
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_cvvt.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with ideal VAV/CAV HVAC controller
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_vav.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with ON/OFF control
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_onoff.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with master-slave control
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_master.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with ON/OFF and 3 position control
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_3pos.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with P and P+I control
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_pi.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with control following observed temperatures
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_measured.cfg
+*root	/opt/esp-r/training/cellular_various
+*item
+*name	... with complex fenestration control 
+*cfg	/opt/esp-r/training/cellular_CFC/cfg/cellular_CFC.cfg
+*root	/opt/esp-r/training/cellular_CFC
+*item
+*name	... with stochastic occupant behaviour using obFMU
+*cfg	/opt/esp-r/training/cellular_obFMU/cfg/cellular_obFMU.cfg
+*root	/opt/esp-r/training/cellular_obFMU
+*item
+*label	___ Comprehensive models:
+*item
+*group	realistic scale
+*help	Set of relatively detailed models.
+*item
+*name	comfort in hospital rooms with radiant panel heating
+*cfg	/opt/esp-r/training/rad_room_heat/cfg/rad_rooms_heat.cfg
+*root	/opt/esp-r/training/rad_room_heat
+*item
+*name	high resolution house with network flow WCH representation
+*cfg	/opt/esp-r/training/3BR_highres_wch_obj/cfg/3BR_det_obj3.cfg
+*root	/opt/esp-r/training/3BR_highres_wch_obj
+*item
+*group	real projects
+*help	Models created for use in real projects.
+*item
+*name	office building section, Ottawa, Canada 
+*cfg	/opt/esp-r/training/office_nat_vent/cfg/office_vent_pre_nonet.cfg
+*root	/opt/esp-r/training/office_nat_vent
+*item
+*name	... with network infiltration and HVAC
+*cfg	/opt/esp-r/training/office_nat_vent/cfg/office_vent_hvac_infil.cfg
+*root	/opt/esp-r/training/office_nat_vent
+*item
+*name	... with controlled facade vents and HVAC
+*cfg	/opt/esp-r/training/office_nat_vent/cfg/office_vent_pre_nv_hvac.cfg
+*root	/opt/esp-r/training/office_nat_vent
+*item
+*name	1930s rendered concrete block bungalow
+*cfg	/opt/esp-r/training/3BR_block_bungalow/cfg/3BR_block_bung_p1m_avg.cfg
+*root	/opt/esp-r/training/3BR_block_bungalow
+*item
+*name	1890s traditional stone upper level apartment
+*cfg	/opt/esp-r/training/stone_simi_1890/cfg/stone_simi_1890.cfg
+*root	/opt/esp-r/training/stone_simi_1890
+*item
+*name	multi-level shallow plan office building
+*cfg	/opt/esp-r/training/4level_office/cfg/office_4l_fin.cfg
+*root	/opt/esp-r/training/4level_office
+*item
+*label	___ Special focus models:
+*item
+*group	training workshops
+*help	Models associated with the ESP-r Cookbook.
+*item
+*name	medical centre with user imposed flows
+*cfg	/opt/esp-r/training/Surgery/cfg/Surgery.cfg
+*root	/opt/esp-r/training/Surgery
+*item
+*name	medical centre with flow network
+*cfg	/opt/esp-r/training/Surgery/cfg/Surgery-3df.cfg
+*root	/opt/esp-r/training/Surgery
+*item
+*name	rooms to add explicit mechanical ventilation
+*cfg	/opt/esp-r/training/plant/mech_vent_2izn/cfg/mech_vent_bc.cfg
+*root	/opt/esp-r/training/plant/mech_vent_2izn
+*item
+*name	explicit mechanical ventilation with ON/OFF control
+*cfg	/opt/esp-r/training/plant/mech_vent_2izn/cfg/mech_vent_2z.cfg
+*root	/opt/esp-r/training/plant/mech_vent_2izn
+*item
+*name	explicit mechanical ventilation with proportional control
+*cfg	/opt/esp-r/training/plant/mech_vent_2izn/cfg/mech_vent_2zp.cfg
+*root	/opt/esp-r/training/plant/mech_vent_2izn
+*item
+*name	dozen offices with various controls & heat transfer methods
+*cfg	/opt/esp-r/training/heat_transfer/cfg/heat_transfer.cfg
+*root	/opt/esp-r/training/heat_transfer
+*item
+*group	network ventilation
+*help	Models demonstrating nodal network fluid flow.
+*item
+*name	zones with controlled window opening
+*cfg    /opt/esp-r/training/basic/cfg/bld_flow_ctl.cfg
+*root	/opt/esp-r/training/basic
+*item
+*name	Trombe-Michell wall with controlled dampers
+*cfg    /opt/esp-r/training/trombe_wall/cfg/trombe_wall_office_cr3d_ctl.cfg
+*root	/opt/esp-r/training/trombe_wall
+*item
+*name	forced ventilation network with zonal air handler
+*cfg    /opt/esp-r/training/cellular_hybrid/cfg/cellular_mctl.cfg
+*root	/opt/esp-r/training/cellular_hybrid
+*item
+*group	systems & control
+*help	Models demonstrating plant modelling.
+*item
+*name	rudimentary mechanical ventilation system
+*cfg	/opt/esp-r/training/plant/vent_simple/cfg/vent.cfg
+*root	/opt/esp-r/training/plant/vent_simple
+*item
+*name	detailed mechanical ventilation system
+*cfg	/opt/esp-r/training/plant/vent_detailed/cfg/vent_det.cfg
+*root	/opt/esp-r/training/plant/vent_detailed
+*item
+*name   building and heating system with ON/OFF control
+*cfg    /opt/esp-r/training/plant/hvac_bas/cfg/bld_basic.cfg-onoff
+*root	/opt/esp-r/training/plant/hvac_bas
+*item
+*name   ... with PID control
+*cfg    /opt/esp-r/training/plant/hvac_bas/cfg/bld_basic.cfg-pid
+*root	/opt/esp-r/training/plant/hvac_bas
+*item
+*name	zone with air handling unit and humidity control
+*cfg	/opt/esp-r/training/plant/ahu/cfg/ahu_hum.cfg
+*root	/opt/esp-r/training/plant/ahu
+*item
+*name   ... with ventilation heat recovery
+*cfg    /opt/esp-r/training/plant/ahu/cfg/vent_recovery.cfg
+*root	/opt/esp-r/training/plant/ahu
+*item
+*name   constant volume air conditioning system
+*cfg    /opt/esp-r/training/plant/conv_ac_sys/heat.cfg
+*root	/opt/esp-r/training/plant/conv_ac_sys
+*item
+*name   fan duct with zone reheat ('Primitive Parts' approach)
+*cfg    /opt/esp-r/training/plant/ac_pp/cfg/ac_PP.cfg
+*root	/opt/esp-r/training/plant/ac_pp
+*item
+*name   ... 4-row cooling coil
+*cfg    /opt/esp-r/training/plant/coil_pp/cfg/coil_pp.cfg
+*root	/opt/esp-r/training/plant/coil_pp
+*item
+*name   ... air conditioning system
+*cfg    /opt/esp-r/training/plant/mixed_ac_sys/ahuPP.cfg
+*root	/opt/esp-r/training/plant/mixed_ac_sys
+*item
+*group  plant systems with network fluid flow
+*help	Models for integrated plant and network fluid flow.
+*item
+*name   plant with damper controlled recirculation
+*cfg    /opt/esp-r/training/plant/hvac_bas/cfg/bld_recirc.cfg-pid
+*root	/opt/esp-r/training/plant/hvac_bas
+*item
+*name   VAV system with damper and fan speed control
+*cfg    /opt/esp-r/training/plant/hvac_vav/cfg/office1VAV.cfg
+*root	/opt/esp-r/training/plant/hvac_vav
+*item
+*name   house with underfloor heating
+*cfg    /opt/esp-r/training/plant/CaseStudy-RHC/cfg/rhc-plant.cfg
+*root	/opt/esp-r/training/plant/CaseStudy-RHC
+*item
+*group	construction-related issues
+*help	Models focused on construction performance.
+*item
+*name	material thermophysical property substitution
+*cfg	/opt/esp-r/training/constr/tp_sub/cfg/bld_tp_sub.cfg
+*root	/opt/esp-r/training/constr/tp_sub
+*item
+*name   transparent insulation
+*cfg    /opt/esp-r/training/constr/adapt/cfg/tim.cfg
+*root	/opt/esp-r/training/constr/adapt
+*item
+*name   adaptive 1-D construction gridding
+*cfg    /opt/esp-r/training/constr/adapt/cfg/g1d.cfg
+*root	/opt/esp-r/training/constr/adapt
+*item
+*name   adaptive 3-D construction gridding
+*cfg    /opt/esp-r/training/constr/adapt/cfg/g3d.cfg
+*root	/opt/esp-r/training/constr/adapt
+*item
+*name   3-D ground conduction
+*cfg    /opt/esp-r/training/constr/adapt/cfg/grd.cfg
+*root	/opt/esp-r/training/constr/adapt
+*item
+*name   construction moisture flow
+*cfg    /opt/esp-r/training/constr/adapt/cfg/mst.cfg
+*root	/opt/esp-r/training/constr/adapt
+*item
+*name   internal surface mould growth
+*cfg    /opt/esp-r/training/mould/cfg/mould.cfg
+*root	/opt/esp-r/training/mould
+*item
+*name   dwelling mould analysis
+*cfg    /opt/esp-r/training/burdie/cfg/burdie.cfg
+*root	/opt/esp-r/training/burdie
+*item
+*group	windows and daylighting
+*help	Models focused on glazing performance.
+*item
+*name	office with various casual gain controls
+*cfg	/opt/esp-r/training/casual_gain_ctl/cfg/casual_gain_control.cfg
+*root	/opt/esp-r/training/casual_gain_ctl
+*item
+*name	... with luminaire control via daylight coefficients
+*cfg	/opt/esp-r/training/cg_ctl/daylit_coef/cfg/facade_60.cfg
+*root	/opt/esp-r/training/cg_ctl/daylit_coef
+*item
+*name	... with light levels via Radiance coupling
+*cfg	/opt/esp-r/training/cg_ctl/daylit_coef/cfg/facade_coupling.cfg
+*root	/opt/esp-r/training/cg_ctl/daylit_coef
+*item
+*name	... with luminaire control and electrochromic glazing
+*cfg	/opt/esp-r/training/el_chr_ctl/cfg/office.cfg
+*root	/opt/esp-r/training/el_chr_ctl
+*item
+*name	model using temporal weather data
+*cfg	/opt/esp-r/training/Temporal_Clm/Temporal_Clm_Test.cfg
+*root	/opt/esp-r/training/Temporal_Clm
+*item
+*group	fluid movement
+*help	Models with computational fluid dynamics enabled.
+*item
+*name   single zone demonstration with decoupled CFD
+*cfg    /opt/esp-r/training/CFD_room/cfg/CFD_room1.cfg
+*root	/opt/esp-r/training/CFD_room
+*item
+*name   ... with thermally coupled CFD
+*cfg    /opt/esp-r/training/CFD_room/cfg/CFD_room2.cfg
+*root	/opt/esp-r/training/CFD_room
+*item
+*name   ... with air flow networks and coupled CFD
+*cfg    /opt/esp-r/training/CFD_room/cfg/CFD_room3.cfg
+*root	/opt/esp-r/training/CFD_room
+*item
+*name   multi-zone office with coupled CFD and flow network
+*cfg    /opt/esp-r/training/cellular_cfd/cfg/cellular_cfd.cfg
+*root   /opt/esp-r/training/cellular_cfd
+*item
+*name   ... with CFD grids deactivated
+*cfg    /opt/esp-r/training/cellular_cfd/cfg/cellular_nocfd.cfg
+*root   /opt/esp-r/training/cellular_cfd
+*item
+*group	combined heat and power
+*help	Models for combined thermal and electrical modelling.
+*item
+*name   carpark with upper deck PV array
+*cfg    /opt/esp-r/training/multi-carpark-pv/cfg/carpark_elec.cfg
+*root	/opt/esp-r/training/multi-carpark-pv
+*item
+*name   engine-based CHP system
+*cfg    /opt/esp-r/training/chp/unit/cfg/unit.cfg
+*root	/opt/esp-r/training/chp/unit
+*item
+*name   sports centre with CHP
+*cfg    /opt/esp-r/training/chp/sport_cen/cfg/sport_cen.cfg
+*root	/opt/esp-r/training/chp/sport_cen
+*end

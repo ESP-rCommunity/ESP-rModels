@@ -1,0 +1,149 @@
+ 
+###################################
+boundary conditions for domain 01
+on day 000 at time  0.00
+###################################
+ 
+volume: 001
+type: opening, directed flow
+mass flow (kg/s):  0.02500
+temperature (C):    20.00
+direction 1 (deg):     0.00
+direction 2 (deg):     0.00
+ 
+volume: 002
+type: opening, directed flow
+mass flow (kg/s):  0.02500
+temperature (C):    20.00
+direction 1 (deg):     0.00
+direction 2 (deg):     0.00
+ 
+volume: 003
+type: opening, directed flow
+mass flow (kg/s):  0.02500
+temperature (C):    20.00
+direction 1 (deg):     0.00
+direction 2 (deg):     0.00
+ 
+volume: 004
+type: opening, directed flow
+mass flow (kg/s):  0.02500
+temperature (C):    20.00
+direction 1 (deg):     0.00
+direction 2 (deg):     0.00
+ 
+volume: 005
+type: opening, directed flow
+mass flow (kg/s): -0.02500
+temperature (C):    20.00
+direction 1 (deg):     0.00
+direction 2 (deg):     0.00
+ 
+volume: 006
+type: opening, directed flow
+mass flow (kg/s): -0.02500
+temperature (C):    20.00
+direction 1 (deg):     0.00
+direction 2 (deg):     0.00
+ 
+volume: 007
+type: opening, directed flow
+mass flow (kg/s): -0.02500
+temperature (C):    20.00
+direction 1 (deg):     0.00
+direction 2 (deg):     0.00
+ 
+volume: 008
+type: opening, directed flow
+mass flow (kg/s): -0.02500
+temperature (C):    20.00
+direction 1 (deg):     0.00
+direction 2 (deg):     0.00
+ 
+volume: 009
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 010
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 011
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 012
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 013
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 014
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 015
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 016
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 017
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 018
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 019
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 020
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 021
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 022
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 023
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 024
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 025
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 026
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 027
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 028
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 029
+type: solid, heat flux
+heat flux (W):     0.00
+ 
+volume: 030
+type: solid, heat flux
+heat flux (W):     0.00

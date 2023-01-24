@@ -1,0 +1,88 @@
+*CONSTRUCTIONS,1.0 # multilayer constructions
+*Text
+Constructions specifically for the tp_sub exemplar model.
+*End_text
+*date,Wed Dec  7 13:50:46 2016
+*Category,general constructions,general constructions,Category general constructions includes all of the MLC constructions in the file.
+#
+*item,dbl_glz,dbl_glz # tag name menu entry
+*itemdoc,dbl_glz      is a ...
+*incat,general constructions
+*type,TRAN,DCF7671_06nb,SYMMETRIC
+*layer,242,0.0060,mat_242 : Plate glass with placeholder single layer optics
+*layer,0,0.0120,air  0.170 0.170 0.170
+*layer,242,0.0060,mat_242 : Plate glass with placeholder single layer optics
+*end_item
+*item,extern_wall,extern_wall # tag name menu entry
+*itemdoc,extern_wall  is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,4,0.1000,mat_004 : Outer leaf brick
+*layer,211,0.0750,mat_211 : Glasswool
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,2,0.1000,mat_002 : Breeze block
+*end_item
+*item,roof_1,roof_1 # tag name menu entry
+*itemdoc,roof_1       is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,162,0.0120,mat_162 : Roofing felt
+*layer,21,0.0500,mat_021 : Light mix
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,151,0.0080,mat_151 : Ceiling (plaster)
+*end_item
+*item,floor_1,floor_1 # tag name menu entry
+*itemdoc,floor_1      is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,263,0.1000,mat_263 : Common earch
+*layer,82,0.1000,mat_082 : Red granite
+*layer,32,0.0500,mat_032 : Heavy mix concrete
+*layer,124,0.0500,mat_124 : Cement screed
+*end_item
+*item,door,door # tag name menu entry
+*itemdoc,door         is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,69,0.0250,mat_069 : Oak (radial)
+*end_item
+*item,int_part,int_part # tag name menu entry
+*itemdoc,int_part     is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,103,0.0120,mat_103 : Perlite plasterboard
+*layer,0,0.0250,air  0.170 0.170 0.170
+*layer,103,0.0120,mat_103 : Perlite plasterboard
+*end_item
+*item,ceiling,ceiling # tag name menu entry
+*itemdoc,ceiling      is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,ceiling_rev
+*layer,211,0.1000,mat_211 : Glasswool
+*layer,150,0.0100,mat_150 : Ceiling (mineral)
+*end_item
+*item,ceiling_rev,ceiling_rev # tag name menu entry
+*itemdoc,ceiling_rev  is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,ceiling
+*layer,150,0.0100,mat_150 : Ceiling (mineral)
+*layer,211,0.1000,mat_211 : Glasswool
+*end_item
+*item,roof_2,roof_2 # tag name menu entry
+*itemdoc,roof_2       is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,141,0.0150,mat_141 : Clay tile
+*layer,162,0.0050,mat_162 : Roofing felt
+*layer,72,0.0120,mat_072 : Plywood
+*end_item
+*item,ext_wall_mod,ext_wall_mod # tag name menu entry
+*itemdoc,ext_wall_mod is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,4,0.1000,mat_004 : Outer leaf brick
+*layer,282,0.0750,mat_282 : Glasswool_mod
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,2,0.1000,mat_002 : Breeze block
+*end_item
+*db_end

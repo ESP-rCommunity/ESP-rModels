@@ -1,0 +1,27 @@
+*Constructions 2.1                              # thermophysical properties of collec_mid
+*date Mon Sep  6 13:32:41 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     3     0   0.82   0.72   0.30   0.65   0    #   1  mid_to_roof  tank_w_100m
+     1     0   0.52   0.52   0.96   0.96   0    #   2  mid_plate    collector_pl
+     1     0   0.52   0.52   0.96   0.96   0    #   3  to_top       collector_pl
+     3     0   0.72   0.82   0.65   0.30   0    #   4  left         tank_i_50mmi
+     1     0   0.52   0.52   0.96   0.96   0    #   5  to_low       collector_pl
+     3     0   0.72   0.82   0.65   0.30   0    #   6  right        tank_i_50mmi
+# air gap layer positions and restances
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+   200.0000    8900.0     418.0  0.0030   0   0.00 0.00000 0.00000  #   1   1 copper
+     0.0300      30.0    1764.0  0.1000   0   0.00 0.00000 0.00000  #       2 UF foam
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #       3 white ptd steel
+   200.0000    8900.0     418.0  0.0030   0   0.00 0.00000 0.00000  #   2   1 black_coated_copper
+   200.0000    8900.0     418.0  0.0030   0   0.00 0.00000 0.00000  #   3   1 black_coated_copper
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #   4   1 white ptd steel
+     0.0300      30.0    1764.0  0.0500   0   0.00 0.00000 0.00000  #       2 UF foam
+   200.0000    8900.0     418.0  0.0030   0   0.00 0.00000 0.00000  #       3 copper
+   200.0000    8900.0     418.0  0.0030   0   0.00 0.00000 0.00000  #   5   1 black_coated_copper
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #   6   1 white ptd steel
+     0.0300      30.0    1764.0  0.0500   0   0.00 0.00000 0.00000  #       2 UF foam
+   200.0000    8900.0     418.0  0.0030   0   0.00 0.00000 0.00000  #       3 copper
+*tmc NONE                                       # all surfaces are opaque

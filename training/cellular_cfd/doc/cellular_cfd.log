@@ -1,0 +1,37 @@
+System configuration file: cellular_cfd.cfg
+Synopsis: adjacent offices with CFD domains imposed.
+First created: 1 August 2005.
+Notes: 
+This model demonstrates the multi-zone CFD functionality of ESP-r. It includes
+the following features.
+- A building model comprising two adjacent offices and a connecting corridor.
+- A flow network representing window ventilation, inter-zone air flow and
+  a mechanical extract in the corridor.
+- A control system that emulates user behaviour in relation to window opening
+  and regulates the indoor temperature.
+- CFD domains imposed on the three zones to model intra-zone air movement. These
+  domains are conflated with the above flow network to represet inter-zone air
+  flow and intra-zone air movement together.
+
+To demonstrate the trade-off between accuracy and run time, the two office zone
+CFD domains have different gridding schemes. Zone manager_a has a grid of
+30x30x30 cells (higher resolution grids will be slow to simulate on all
+but the most powerful computers). Zone manager_b has a grid of 15x15x15 cells
+(1/8th of the former). This is quicker to process but at the expense of model
+fidelity. For example, window frames are modelled as distinct surfaces. This is
+not a problem in the first zone as the higher resolution grid enables the
+direct connection of CFD domain cells with window frame parts. Conversely, in
+the second zone the coarser grid means that the CFD domain cells are too large
+to be directly assigned to the window frames so that this particular detail
+is lost to the CFD domain. There are several other examples in the model where
+detail that is encapsulated in the higher resolution CFD grid is lost in the
+coarser grid.
+
+It is interesting to compare simulations undertaken with this model and the
+related model without cfd domains. Note the significant reduction in the run
+time in the latter case and the difference in the results from both quantitative
+and qualitative viewpoints.
+
+During the first hour of CFD solution activation, select the 'marked converged'
+option if the solutions does not converge.
+

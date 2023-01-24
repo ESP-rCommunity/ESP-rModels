@@ -1,0 +1,47 @@
+*HC_CTL                         # heat transfer control for room_fan
+*Days  1                        # number of control day types
+  1                             # number control intervals for all day types
+ 39                             # number of surfaces
+  0.00  24.00                   # start and end time of interval
+  3                             # adaptive calculation control type
+*Doc,convection via fan in room
+   1.   6.  -1.   0.  99.  99.  99.  99.  # pt_right Khalifa & M with fan or flor htg
+   1.   8.  -1.   0.  99.  99.  99.  99.  # fc_corid_fra Khalifa & M fan htr wall opo fan
+   1.   8.  -1.   0.  99.  99.  99.  99.  # fc_door Khalifa & M fan htr wall opo fan
+   1.   8.  -1.   0.  99.  99.  99.  99.  # pt_left Khalifa & M fan htr wall opo fan
+   1.  61.  -1.   0.  99.  99.  99.  99.  # ceiling_fan Khalifa & Marshall ceilings fan
+   1.  70.  -1.   0.  99.  99.  99.  99.  # floor_fan Alamdari and Hammond horiz strat
+   1.   8.  -1.   0.  99.  99.  99.  99.  # spandral Khalifa & M fan htr wall opo fan
+   1.   8.  -1.   0.  99.  99.  99.  99.  # frame Khalifa & M fan htr wall opo fan
+   1.   8.  -1.   0.  99.  99.  99.  99.  # glazing Khalifa & M fan htr wall opo fan
+   1.   8.  -1.   0.  99.  99.  99.  99.  # fc_part_glaz Khalifa & M fan htr wall opo fan
+   1.   8.  -1.   0.  99.  99.  99.  99.  # fc_ptn_corid Khalifa & M fan htr wall opo fan
+   1.  61.  -1.   0.  99.  99.  99.  99.  # adesk_t Khalifa & Marshall ceilings fan
+   1.  70.  -1.   0.  99.  99.  99.  99.  # adesk_t_ Alamdari and Hammond horiz strat
+   1.  61.  -1.   0.  99.  99.  99.  99.  # bdesk_t Khalifa & Marshall ceilings fan
+   1.  70.  -1.   0.  99.  99.  99.  99.  # bdesk_t_ Alamdari and Hammond horiz strat
+   1.  61.  -1.   0.  99.  99.  99.  99.  # cseat Khalifa & Marshall ceilings fan
+   1.  70.  -1.   0.  99.  99.  99.  99.  # cseat_ Alamdari and Hammond horiz strat
+   1.   6.  -1.   0.  99.  99.  99.  99.  # cstback Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # cstback_ Khalifa & M with fan or flor htg
+   1.  61.  -1.   0.  99.  99.  99.  99.  # dseat Khalifa & Marshall ceilings fan
+   1.  70.  -1.   0.  99.  99.  99.  99.  # dseat_ Alamdari and Hammond horiz strat
+   1.   6.  -1.   0.  99.  99.  99.  99.  # dstback Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # dstback_ Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # ecab_lf Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # ecab_rt Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # ecab_fr Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # ecab_bk Khalifa & M with fan or flor htg
+   1.  70.  -1.   0.  99.  99.  99.  99.  # ecab_to Alamdari and Hammond horiz strat
+   1.  61.  -1.   0.  99.  99.  99.  99.  # ecab_bs Khalifa & Marshall ceilings fan
+   1.   6.  -1.   0.  99.  99.  99.  99.  # fbil_lft Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # fbil_lft_ Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # fbil_rt Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # fbil_rt_ Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # fbooks Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # fbooks_ Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # gcase Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # gcase_ Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # gcircuit Khalifa & M with fan or flor htg
+   1.   6.  -1.   0.  99.  99.  99.  99.  # gcircuit_ Khalifa & M with fan or flor htg
+  0 0.000 0.000                           # Air origin zone (+ chan. width & height if Bar-Cohen cor.)

@@ -1,0 +1,115 @@
+*Constructions 2.1                              # thermophysical properties of L5_light_w1
+*date Tue Sep  7 18:25:35 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     1     0   0.99   0.99   0.01   0.01   1    #   1  l3_lw2_fr    fictitious
+     1     0   0.99   0.99   0.01   0.01   1    #   2  l3_lw2_ri    fictitious
+     1     0   0.83   0.83   0.05   0.05   2    #   3  l3_lw2_bk    glaz_ptn
+     1     0   0.99   0.99   0.01   0.01   1    #   4  l3_lw2_lef   fictitious
+     3     1   0.82   0.82   0.72   0.72   0    #   5  up_l3_lw2    mull_90
+     1     0   0.99   0.99   0.01   0.01   1    #   6  l3_lw2_base  fictitious
+     1     0   0.83   0.83   0.05   0.05   2    #   7  left_rail    glaz_ptn
+     1     0   0.83   0.83   0.05   0.05   2    #   8  front_rail   glaz_ptn
+     1     0   0.83   0.83   0.05   0.05   2    #   9  right_rail   glaz_ptn
+     1     0   0.90   0.90   0.21   0.21   0    #  10  l3_flrv_r    slab_275
+     1     0   0.90   0.90   0.21   0.21   0    #  11  l3_flrv_f    slab_275
+     1     0   0.90   0.90   0.21   0.21   0    #  12  l3_flrv_l    slab_275
+     1     0   0.90   0.90   0.21   0.21   0    #  13  l3_flrv_b    slab_275
+     5     2   0.90   0.90   0.25   0.60   0    #  14  parap_f      stone_masnry
+     3     1   0.83   0.83   0.05   0.05   3    #  15  glaz_fr      db_lpasol
+     5     2   0.90   0.90   0.25   0.60   0    #  16  parap_ri     stone_masnry
+     3     1   0.82   0.82   0.72   0.72   0    #  17  frame_ri     mull_90
+     5     2   0.90   0.90   0.25   0.60   0    #  18  parap_bk     stone_masnry
+     3     1   0.83   0.83   0.05   0.05   3    #  19  glaz_bk      db_lpasol
+     5     2   0.90   0.90   0.25   0.60   0    #  20  parap_left   stone_masnry
+     3     1   0.82   0.82   0.72   0.72   0    #  21  frame_left   mull_90
+     3     1   0.83   0.83   0.05   0.05   3    #  22  up_glz       db_lpasol
+     3     1   0.83   0.83   0.05   0.05   3    #  23  glaz_left    db_lpasol
+     3     1   0.83   0.83   0.05   0.05   3    #  24  glaz_right   db_lpasol
+# air gap layer positions and restances
+  2  0.200                                      # for up_l3_lw2
+  2  0.170  4  0.170                            # and for parap_f
+  2  0.532                                      # and for glaz_fr
+  2  0.170  4  0.170                            # and for parap_ri
+  2  0.200                                      # and for frame_ri
+  2  0.170  4  0.170                            # and for parap_bk
+  2  0.532                                      # and for glaz_bk
+  2  0.170  4  0.170                            # and for parap_left
+  2  0.200                                      # and for frame_left
+  2  0.532                                      # and for up_glz
+  2  0.532                                      # and for glaz_left
+  2  0.532                                      # and for glaz_right
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+    20.0000      10.0      10.0  0.0040   0   0.00 0.00000 0.00000  #   1   1 fict
+    20.0000      10.0      10.0  0.0040   0   0.00 0.00000 0.00000  #   2   1 fict
+     0.7600    2710.0     837.0  0.0100   0   0.00 0.00000 0.00000  #   3   1 plate glass
+    20.0000      10.0      10.0  0.0040   0   0.00 0.00000 0.00000  #   4   1 fict
+   210.0000    2700.0     880.0  0.0040   0   0.00 0.00000 0.00000  #   5   1 grey cotd alum
+     0.0000       0.0       0.0  0.0700   0   0.00 0.00000 0.00000  #       2 AIR
+   210.0000    2700.0     880.0  0.0040   0   0.00 0.00000 0.00000  #       3 grey cotd alum
+    20.0000      10.0      10.0  0.0040   0   0.00 0.00000 0.00000  #   6   1 fict
+     0.7600    2710.0     837.0  0.0100   0   0.00 0.00000 0.00000  #   7   1 plate glass
+     0.7600    2710.0     837.0  0.0100   0   0.00 0.00000 0.00000  #   8   1 plate glass
+     0.7600    2710.0     837.0  0.0100   0   0.00 0.00000 0.00000  #   9   1 plate glass
+     1.4000    2100.0     653.0  0.2750   0   0.00 0.00000 0.00000  #  10   1 white ptd concrete
+     1.4000    2100.0     653.0  0.2750   0   0.00 0.00000 0.00000  #  11   1 white ptd concrete
+     1.4000    2100.0     653.0  0.2750   0   0.00 0.00000 0.00000  #  12   1 white ptd concrete
+     1.4000    2100.0     653.0  0.2750   0   0.00 0.00000 0.00000  #  13   1 white ptd concrete
+     1.8300    2200.0     712.0  0.0400   0   0.00 0.00000 0.00000  #  14   1 sandstone
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.0400      38.0    1450.0  0.1000   0   0.00 0.00000 0.00000  #       3 XPS CO2 foamed
+     0.0000       0.0       0.0  0.1000   0   0.00 0.00000 0.00000  #       4 AIR
+     0.5100    1400.0    1000.0  0.1200   0   0.00 0.00000 0.00000  #       5 block white ptd
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #  15   1 clear float
+     0.0000       0.0       0.0  0.0200   0   0.00 0.00000 0.00000  #       2 AIR
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #       3 clear float
+     1.8300    2200.0     712.0  0.0400   0   0.00 0.00000 0.00000  #  16   1 sandstone
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.0400      38.0    1450.0  0.1000   0   0.00 0.00000 0.00000  #       3 XPS CO2 foamed
+     0.0000       0.0       0.0  0.1000   0   0.00 0.00000 0.00000  #       4 AIR
+     0.5100    1400.0    1000.0  0.1200   0   0.00 0.00000 0.00000  #       5 block white ptd
+   210.0000    2700.0     880.0  0.0040   0   0.00 0.00000 0.00000  #  17   1 grey cotd alum
+     0.0000       0.0       0.0  0.0700   0   0.00 0.00000 0.00000  #       2 AIR
+   210.0000    2700.0     880.0  0.0040   0   0.00 0.00000 0.00000  #       3 grey cotd alum
+     1.8300    2200.0     712.0  0.0400   0   0.00 0.00000 0.00000  #  18   1 sandstone
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.0400      38.0    1450.0  0.1000   0   0.00 0.00000 0.00000  #       3 XPS CO2 foamed
+     0.0000       0.0       0.0  0.1000   0   0.00 0.00000 0.00000  #       4 AIR
+     0.5100    1400.0    1000.0  0.1200   0   0.00 0.00000 0.00000  #       5 block white ptd
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #  19   1 clear float
+     0.0000       0.0       0.0  0.0200   0   0.00 0.00000 0.00000  #       2 AIR
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #       3 clear float
+     1.8300    2200.0     712.0  0.0400   0   0.00 0.00000 0.00000  #  20   1 sandstone
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.0400      38.0    1450.0  0.1000   0   0.00 0.00000 0.00000  #       3 XPS CO2 foamed
+     0.0000       0.0       0.0  0.1000   0   0.00 0.00000 0.00000  #       4 AIR
+     0.5100    1400.0    1000.0  0.1200   0   0.00 0.00000 0.00000  #       5 block white ptd
+   210.0000    2700.0     880.0  0.0040   0   0.00 0.00000 0.00000  #  21   1 grey cotd alum
+     0.0000       0.0       0.0  0.0700   0   0.00 0.00000 0.00000  #       2 AIR
+   210.0000    2700.0     880.0  0.0040   0   0.00 0.00000 0.00000  #       3 grey cotd alum
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #  22   1 clear float
+     0.0000       0.0       0.0  0.0200   0   0.00 0.00000 0.00000  #       2 AIR
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #       3 clear float
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #  23   1 clear float
+     0.0000       0.0       0.0  0.0200   0   0.00 0.00000 0.00000  #       2 AIR
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #       3 clear float
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #  24   1 clear float
+     0.0000       0.0       0.0  0.0200   0   0.00 0.00000 0.00000  #       2 AIR
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #       3 clear float
+*tmc YES                                        # optical properties:
+   1  SC_fictit                                 # layers in tmc type 1
+  0.998  0.987  0.986  0.985  0.984  0.990      # transmission @ 5 angles & visible tr.
+  0.001  0.001  0.001  0.001  0.001             # for each layer absorption @ 5 angles
+   0                                            # no alternative optics
+   1  SCF8477_10nb                              # layers in tmc type 2
+  0.699  0.672  0.629  0.503  0.294  0.840      # transmission @ 5 angles & visible tr.
+  0.235  0.255  0.269  0.273  0.247             # for each layer absorption @ 5 angles
+   0                                            # no alternative optics
+   3  DSF4554_06nb                              # layers in tmc type 3
+  0.421  0.395  0.359  0.258  0.112  0.450      # transmission @ 5 angles & visible tr.
+  0.375  0.394  0.405  0.403  0.357             # for each layer absorption @ 5 angles
+  0.001  0.002  0.003  0.004  0.005
+  0.085  0.088  0.089  0.077  0.049
+   0                                            # no alternative optics

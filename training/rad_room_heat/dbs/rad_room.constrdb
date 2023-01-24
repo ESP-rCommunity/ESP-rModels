@@ -1,0 +1,227 @@
+*CONSTRUCTIONS,1.0 # multilayer constructions
+*Text
+No documentation included (yet)
+*End_text
+*date,Wed Dec  7 12:34:56 2016
+*Category,general constructions,general constructions,Category general constructions includes all of the MLC constructions in the file.
+#
+*item,ext_wall_a,facade with aerated conc block # tag name menu entry
+*itemdoc,ext_wall_a is an insulated brick wall with core aerated concrete block
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,6,0.1000,Lt brown brick : Lt brown brick
+*layer,211,0.0900,Glasswool : Glasswool
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,22,0.1000,Aerated conc block : Aerated conc block
+*layer,0,0.0100,air  0.170 0.170 0.170
+*layer,108,0.0130,White ptd Gypboard : White ptd Gypboard
+*end_item
+*item,partition,partition gyp block gyp # tag name menu entry
+*itemdoc,partition is a concrete block partition with plasterboard each side
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,104,0.0130,Gypsum plaster : Gypsum plaster
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,28,0.1000,Block inner (3% mc) : Block inner (3% mc)
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,104,0.0130,Gypsum plaster : Gypsum plaster
+*end_item
+*item,door,solid oak door # tag name menu entry
+*itemdoc,door is 25mm of solid oak
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,69,0.0250,Oak (radial) : Oak (radial)
+*end_item
+*item,int_doors,internal doors # tag name menu entry
+*itemdoc,int_doors is a 25mm oak fire door.
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,69,0.0250,Oak (radial) : Oak (radial)
+*end_item
+*item,mass_part,mass block partition # tag name menu entry
+*itemdoc,mass_part is white painted concrete block
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,35,0.2400,Block white ptd inner (3% mc) : Block white ptd inner (3% mc)
+*end_item
+*item,int_part,gyp stud gyp partition # tag name menu entry
+*itemdoc,int_part     is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,108,0.0120,White ptd Gypboard : White ptd Gypboard
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,108,0.0120,White ptd Gypboard : White ptd Gypboard
+*end_item
+*item,dbl_glz,double glazing # tag name menu entry
+*itemdoc,dbl_glz is standard quality double glazing.
+*incat,general constructions
+*type,TRAN,DCF7671_06nb,SYMMETRIC
+*layer,242,0.0060,Plate glass : Plate glass with placeholder single layer optics
+*layer,0,0.0120,air  0.170 0.170 0.170
+*layer,242,0.0060,Plate glass : Plate glass with placeholder single layer optics
+*end_item
+*item,roof,metal panel roof # tag name menu entry
+*itemdoc,roof is an insulated metal panel with uncoated aluminum faces.
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,43,0.0030,Aluminium : Aluminium
+*layer,0,0.0250,air  0.170 0.170 0.170
+*layer,281,0.0800,Glass Fibre Quilt : Glass Fibre Quilt
+*layer,43,0.0030,Aluminium : Aluminium
+*end_item
+*item,grnd_floor,carpeted ground floor slab # tag name menu entry
+*itemdoc,grnd_floor is carpet over battons over concrete slab-on-grade.
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,263,0.2500,Common_earth : Common_earth
+*layer,262,0.1500,Gravel based : Gravel based
+*layer,32,0.1500,Heavy mix concrete : Heavy mix concrete
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,67,0.0190,Chipboard : Chipboard
+*layer,221,0.0060,Wilton : Wilton
+*end_item
+*item,floor_1,ground flor with cement screed # tag name menu entry
+*itemdoc,floor_1 is an unfinished concret screed over slab-on-grade
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,263,0.1000,Common_earth : Common_earth
+*layer,82,0.1000,Red granite : Red granite
+*layer,32,0.0500,Heavy mix concrete : Heavy mix concrete
+*layer,124,0.0500,Cement screed : Cement screed
+*end_item
+*item,entry_floor,entry marble floor # tag name menu entry
+*itemdoc,entry_floor is an entry room marble tile over slab-on-grade.
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,263,0.2500,Common_earth : Common_earth
+*layer,262,0.1500,Gravel based : Gravel based
+*layer,32,0.1500,Heavy mix concrete : Heavy mix concrete
+*layer,83,0.0240,White marble : White marble
+*end_item
+*item,susp_ceil,suspended mineral ceiling # tag name menu entry
+*itemdoc,susp_ceil is a non-acoustic suspended ceiling
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,150,0.0150,Ceiling (mineral) : Ceiling (mineral)
+*end_item
+*item,gyp_blk_ptn,gyp block partition # tag name menu entry
+*itemdoc,gyp_blk_ptn is gyp board on battons over concrete block
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,108,0.0130,White ptd Gypboard : White ptd Gypboard
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,28,0.1000,Block inner (3% mc) : Block inner (3% mc)
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,108,0.0130,White ptd Gypboard : White ptd Gypboard
+*end_item
+*item,gyp_gyp_ptn,gyp gyp partition # tag name menu entry
+*itemdoc,gyp_gyp_ptn is gyp board partition on studs.
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,108,0.0120,White ptd Gypboard : White ptd Gypboard
+*layer,0,0.0500,air  0.170 0.170 0.170
+*layer,108,0.0120,White ptd Gypboard : White ptd Gypboard
+*end_item
+*item,ext_wall_b,alternative exterior 110mm insul # tag name menu entry
+*itemdoc,ext_wall_b is a exterior wall with 110mm of insulation
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,6,0.1000,Lt brown brick : Lt brown brick
+*layer,211,0.1100,Glasswool : Glasswool
+*layer,0,0.0250,air  0.200 0.200 0.200
+*layer,108,0.0130,White ptd Gypboard : White ptd Gypboard
+*end_item
+*item,ext_wall_c,alternative exterior metal clad # tag name menu entry
+*itemdoc,ext_wall_c   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,46,0.0040,Grey cotd aluminium : Grey cotd aluminium
+*layer,211,0.1150,Glasswool : Glasswool
+*layer,0,0.0250,air  0.170 0.170 0.170
+*layer,108,0.0130,White ptd Gypboard : White ptd Gypboard
+*end_item
+*item,ptn_type_c,white painted interior gyp # tag name menu entry
+*itemdoc,ptn_type_c is an interior partition painted white.
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,108,0.0150,White ptd Gypboard : White ptd Gypboard
+*layer,0,0.0700,air  0.170 0.170 0.170
+*layer,108,0.0150,White ptd Gypboard : White ptd Gypboard
+*end_item
+*item,ptn_type_d,acoustic white interior ptn # tag name menu entry
+*itemdoc,ptn_type_d is white pained gypboard over acoustic batts.
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,108,0.0150,White ptd Gypboard : White ptd Gypboard
+*layer,0,0.0220,air  0.170 0.170 0.170
+*layer,216,0.0250,Mineral fibre : Mineral fibre
+*layer,0,0.0220,air  0.170 0.170 0.170
+*layer,108,0.0150,White ptd Gypboard : White ptd Gypboard
+*end_item
+*item,ptn_type_e,ptn_type_e # tag name menu entry
+*itemdoc,ptn_type_e   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,108,0.0150,White ptd Gypboard : White ptd Gypboard
+*layer,0,0.0100,air  0.170 0.170 0.170
+*layer,216,0.0500,Mineral fibre : Mineral fibre
+*layer,0,0.0100,air  0.170 0.170 0.170
+*layer,108,0.0150,White ptd Gypboard : White ptd Gypboard
+*end_item
+*item,ptn_type_f,white 25mm gyp acoustic ptn # tag name menu entry
+*itemdoc,ptn_type_f   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,108,0.0250,White ptd Gypboard : White ptd Gypboard
+*layer,0,0.0100,air  0.170 0.170 0.170
+*layer,216,0.0500,Mineral fibre : Mineral fibre
+*layer,0,0.0100,air  0.170 0.170 0.170
+*layer,108,0.0250,White ptd Gypboard : White ptd Gypboard
+*end_item
+*item,ptn_type_g,ptn_type_g # tag name menu entry
+*itemdoc,ptn_type_g   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,108,0.0250,White ptd Gypboard : White ptd Gypboard
+*layer,0,0.0100,air  0.170 0.170 0.170
+*layer,216,0.0500,Mineral fibre : Mineral fibre
+*layer,0,0.0100,air  0.170 0.170 0.170
+*layer,108,0.0250,White ptd Gypboard : White ptd Gypboard
+*end_item
+*item,struc_flr,strucural floor # tag name menu entry
+*itemdoc,struc_flr    is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,struc_ceil
+*layer,32,0.1750,Heavy mix concrete : Heavy mix concrete
+*layer,32,0.1750,Heavy mix concrete : Heavy mix concrete
+*layer,144,0.0030,Plastic tile : Plastic tile
+*end_item
+*item,struc_ceil,structural ceiling # tag name menu entry
+*itemdoc,struc_ceil   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,struc_flr
+*layer,144,0.0030,Plastic tile : Plastic tile
+*layer,32,0.1750,Heavy mix concrete : Heavy mix concrete
+*layer,32,0.1750,Heavy mix concrete : Heavy mix concrete
+*end_item
+*item,alum_panel,aluminium sheet # tag name menu entry
+*itemdoc,alum_panel   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,47,0.0040,Wt cotd aluminium : Wt cotd aluminium
+*end_item
+*item,alum_insu,aluminium insu sheet # tag name menu entry
+*itemdoc,alum_insu    is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,alum_insu_i
+*layer,47,0.0040,Wt cotd aluminium : Wt cotd aluminium
+*layer,216,0.0500,Mineral fibre : Mineral fibre
+*end_item
+*item,alum_insu_i,reversed alum insu sheet # tag name menu entry
+*itemdoc,alum_insu_i  is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,alum_insu
+*layer,216,0.0500,Mineral fibre : Mineral fibre
+*layer,47,0.0040,Wt cotd aluminium : Wt cotd aluminium
+*end_item
+*db_end

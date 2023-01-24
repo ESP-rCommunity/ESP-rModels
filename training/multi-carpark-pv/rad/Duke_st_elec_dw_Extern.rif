@@ -1,0 +1,23 @@
+# Radiance RIF file: Duke_st_elec_dw_Extern.rif
+#e2r_gen_view   0 -1
+#e2r_glaz_type   1
+view= def -vtv -vp -100.00 -100.00  100.00 -vd  0.640  0.656 -0.399 -vu  0.00 0.00 1.00 -vh  33.9 -vv  33.9 -vs 0 -vl 0 -vo   0.0 -va   0.0
+view= duct -vtv -vp   -6.9  -32.4   88.8 -vd  0.147  0.576 -0.804 -vu  0.00 0.00 1.00 -vh  40.0 -vv  40.0 -vs 0 -vl 0 -vo 0 -va 0
+scene= Duke_st_elec_dw_Extern.sky
+scene= Duke_st_elec_dw_Extern-glz.rad
+scene= Duke_st_elec_dw_Extern.mat
+scene= Duke_st_elec_dw_Extern-out.rad
+scene= Duke_st_elec_dw_Extern-in.rad
+UP= Z
+QUALITY= Medium
+DETAIL= Medium
+VARIABILITY= High  
+RESOLUTION=   600
+INDIRECT=  1
+PENUMBRAS= False
+REPORT=    1
+render= -av 10.6000 10.6000 10.6000
+ZONE= Exterior  -190.48  252.48 -187.23  255.73   -1.00  221.48
+OPTFILE= Duke_st_elec_dw_Extern.opt
+OCTREE= Duke_st_elec_dw_Extern.oct
+PICTURE= Duke_st_elec_dw_Extern

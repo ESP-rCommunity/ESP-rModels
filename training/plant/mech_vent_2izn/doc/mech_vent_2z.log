@@ -1,0 +1,20 @@
+Project notes for mech_vent_2izn.cfg
+Description: mechanical supply and extract embedded in a two zone model
+In folder: /export/home/jon/testing
+By: jon
+Date: Thu Mar 24 09:26:51 2015
+For: 
+Project reference: 
+Notes: 
+_____________________________
+mech_vent_bc.cfg - base case model with no plant components
+mech_vent_sys.cfg - with initial plant components
+mech_vent_sys_b.cfg - before control added
+mech_vent_sys_c.cfg - with working plant components and control
+mech_vent_2z.cfg - on off control of heater in mechanical vent
+  in place for those who want to use finished model.
+mech_vent_2zp.cfg - with proportional control of heater in 
+  the mechanical ventilation system for those who want to
+  browse a completed model.
+
+ 

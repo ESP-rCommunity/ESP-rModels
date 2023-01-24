@@ -1,0 +1,10 @@
+*HC_CTL                         # heat transfer control for Test_2
+*Days  1                        # number of control day types
+  1                             # number control intervals for all day types
+  7                             # number of surfaces
+# (South East North West Ceiling Floor window)
+  0.00  24.00                   # start and end time of interval
+  1                             # fixed coefficients calculation control type
+*Doc,User supplied hc values
+ 2.5000,2.5000,2.5000,2.5000,2.5000,2.5000,2.5000
+ 23.000,23.000,23.000,23.000,23.000,23.000,23.000

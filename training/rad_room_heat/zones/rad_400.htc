@@ -1,0 +1,10 @@
+*HC_CTL                         # heat transfer control for rad_400
+*Days  1                        # number of control day types
+  1                             # number control intervals for all day types
+  8                             # number of surfaces
+# (front_edge right_edge back_a_edge back_b_edge back_edge left_edge upper base)
+  0.00  24.00                   # start and end time of interval
+  1                             # fixed coefficients calculation control type
+*Doc,User supplied hc values
+ -1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,50.000
+ -1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000

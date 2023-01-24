@@ -1,0 +1,53 @@
+*Operations 2.1                               # zone operation definiions for general
+*date Tue May 11 07:03:23 2021                # latest file modification
+# infiltration and ventilation notes:
+Assumes a slightly leaky facade.
+# infiltration and ventilation controls:
+   0      0.00      0.00      0.00            # control index (no control of air flow), low middle high setpoints
+    1                                         # number of flow periods during weekday
+   0, 24,    0.330    0.000    0     0.00     # start, stop, infil ach ( 0.0161m^3/s)
+    1                                         # number of flow periods during saturday
+   0, 24,    0.330    0.000    0     0.00     # start, stop, infil ach ( 0.0161m^3/s)
+    1                                         # number of flow periods during sunday
+   0, 24,    0.330    0.000    0     0.00     # start, stop, infil ach ( 0.0161m^3/s)
+# casual gain type definitions:
+*casual
+# notes on casual gains:
+5 people std occup ramping up from 7-9am half occupants on saturday, 8Wm2 lights 10Wm2 small power weekdays and Saturdays, nothing Sunday
+# casual label     type-key-word   slot index & attributes
+*type Occupt       people             1   0   0
+*type Lights       lighting           2   0   0
+*type Equipt       equipment          3   0   0
+*end_type 
+# casual gain schedules:
+    13   # number of casual gains in day type: weekday     
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,   7,      0.0,      0.0,   0.50,   0.50
+   1,   7,   8,    100.0,     60.0,   0.50,   0.50
+   1,   8,   9,    300.0,    180.0,   0.50,   0.50
+   1,   9,  12,    500.0,    300.0,   0.50,   0.50
+   1,  12,  14,    325.0,    195.0,   0.50,   0.50
+   1,  14,  17,    500.0,    300.0,   0.50,   0.50
+   1,  17,  24,      0.0,      0.0,   0.50,   0.50
+  -2,   0,   8,      0.0,      0.0,   0.50,   0.50
+  -2,   8,  18,      8.0,      0.0,   0.50,   0.50
+  -2,  18,  24,      0.0,      0.0,   0.50,   0.50
+  -3,   0,   8,      0.0,      0.0,   0.50,   0.50
+  -3,   8,  18,     10.0,      0.0,   0.50,   0.50
+  -3,  18,  24,      0.0,      0.0,   0.50,   0.50
+    13   # number of casual gains in day type: saturday    
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,   7,      0.0,      0.0,   0.50,   0.50
+   1,   7,   8,     40.0,      0.0,   0.50,   0.50
+   1,   8,   9,    120.0,      0.0,   0.50,   0.50
+   1,   9,  12,    200.0,      0.0,   0.50,   0.50
+   1,  12,  14,    130.0,      0.0,   0.50,   0.50
+   1,  14,  17,    200.0,      0.0,   0.50,   0.50
+   1,  17,  24,      0.0,      0.0,   0.50,   0.50
+  -2,   0,   8,      0.0,      0.0,   0.50,   0.50
+  -2,   8,  18,      8.0,      0.0,   0.50,   0.50
+  -2,  18,  24,      0.0,      0.0,   0.50,   0.50
+  -3,   0,   8,      0.0,      0.0,   0.50,   0.50
+  -3,   8,  18,      5.0,      0.0,   0.50,   0.50
+  -3,  18,  24,      0.0,      0.0,   0.50,   0.50
+     0   # number of casual gains in day type: sunday      

@@ -1,0 +1,684 @@
+# Radiance glazing definitions
+# (first line of file must not be edited)
+  
+void  glass  unknown_glz
+0 
+0 
+3    0.87    0.87    0.87
+  
+void glass d_glz
+0 
+0 
+3    0.83  0.83  0.83
+  
+void glass dbl_glz
+0 
+0 
+3    0.83  0.83  0.83
+  
+void glass Not_DisplayG
+0 
+0 
+3    0.75  0.75  0.75
+  
+void glass window_Not_G
+0 
+0 
+3    0.75  0.75  0.75
+  
+void glass window_Typ_G
+0 
+0 
+3    0.59  0.59  0.59
+  
+void glass internal_glz
+0 
+0 
+3    0.75  0.75  0.75
+  
+void glass switched_gl
+0 
+0 
+3    0.83  0.83  0.83
+  
+void glass fictitious
+0 
+0 
+3    1.08  1.08  1.08
+  
+void glass single_glaz
+0 
+0 
+3    0.95  0.95  0.95
+  
+void glass tripglz_1.8
+0 
+0 
+3    0.77  0.77  0.77
+  
+void glass tripglz_1.08
+0 
+0 
+3    0.67  0.67  0.67
+  
+void glass tripglz_089
+0 
+0 
+3    0.67  0.67  0.67
+  
+void glass PV_constr
+0 
+0 
+3    0.02  0.02  0.02
+  
+# NE_stair Surface defs..
+  
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  NE_stair:stair_glz
+0 
+0 
+ 12
+   47.00000   65.80000   34.50000
+   47.00000   62.20000   34.50000
+   47.00000   62.20000   30.60000
+   47.00000   65.80000   30.60000
+# SE_stair Surface defs..
+  
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  SE_stair:glaze
+0 
+0 
+ 12
+   47.00001    3.80000   34.50000
+   47.00001    0.20000   34.50000
+   47.00001    0.20000   30.60000
+   47.00001    3.80000   30.60000
+# SW_lift_st Surface defs..
+  
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  SW_lift_st:glazing
+0 
+0 
+ 12
+    0.00000    9.80000   11.20000
+    0.00001    0.19999   11.20000
+    0.00001    0.19999    7.80000
+    0.00000    9.80000    7.80000
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  SW_lift_st:s_glazing
+0 
+0 
+ 12
+    0.20000   -0.00001   11.20000
+    7.30001   -0.00001   11.20000
+    7.30001   -0.00001    7.80000
+    0.20000   -0.00001    7.80000
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  SW_lift_st:roof_acc_gl
+0 
+0 
+ 12
+    7.50001    0.19999   34.50000
+    7.50000    9.80000   34.50000
+    7.50000    9.80000   30.60000
+    7.50001    0.19999   30.60000
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  SW_lift_st:sou_5_glz
+0 
+0 
+ 12
+    0.40001   -0.00001   30.00000
+    7.10001   -0.00001   30.00000
+    7.10001   -0.00001   27.00000
+    0.40001   -0.00001   27.00000
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  SW_lift_st:sou_4_glz
+0 
+0 
+ 12
+    0.40001   -0.00001   26.20000
+    7.10001   -0.00001   26.20000
+    7.10001   -0.00001   23.20000
+    0.40001   -0.00001   23.20000
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  SW_lift_st:sou_3_glz
+0 
+0 
+ 12
+    0.40001   -0.00001   22.40000
+    7.10001   -0.00001   22.40000
+    7.10001   -0.00001   19.40000
+    0.40001   -0.00001   19.40000
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  SW_lift_st:sou_2_glz
+0 
+0 
+ 12
+    0.40001   -0.00001   18.60000
+    7.10001   -0.00001   18.60000
+    7.10001   -0.00001   15.60000
+    0.40001   -0.00001   15.60000
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  SW_lift_st:sou_1_glz
+0 
+0 
+ 12
+    0.40001   -0.00001   14.80000
+    7.10001   -0.00001   14.80000
+    7.10001   -0.00001   11.80000
+    0.40001   -0.00001   11.80000
+# ramps Surface defs..
+  
+# skipping fict surface: ramps:Top-7                                                                                        
+  
+# skipping fict surface: ramps:b2_slice_und                                                                                 
+  
+# skipping fict surface: ramps:b2_slice_w                                                                                   
+  
+# skipping fict surface: ramps:b1_slice_und                                                                                 
+  
+# skipping fict surface: ramps:b1_slice_w                                                                                   
+  
+# skipping fict surface: ramps:g_slice_und                                                                                  
+  
+# skipping fict surface: ramps:g_slice_w                                                                                    
+  
+# skipping fict surface: ramps:1_slice_und                                                                                  
+  
+# skipping fict surface: ramps:1_slice_w                                                                                    
+  
+# skipping fict surface: ramps:2+slice_und                                                                                  
+  
+# skipping fict surface: ramps:2_slice_w                                                                                    
+  
+# skipping fict surface: ramps:3_slice_und                                                                                  
+  
+# skipping fict surface: ramps:3_slice_w                                                                                    
+  
+# skipping fict surface: ramps:4_slice_und                                                                                  
+  
+# skipping fict surface: ramps:4_slice_w                                                                                    
+  
+# skipping fict surface: ramps:5_slice_und                                                                                  
+  
+# skipping fict surface: ramps:5_slice_w                                                                                    
+  
+# skipping fict surface: ramps:b2_north                                                                                     
+  
+# skipping fict surface: ramps:b1_north                                                                                     
+  
+# skipping fict surface: ramps:g_north                                                                                      
+  
+# skipping fict surface: ramps:1_north                                                                                      
+  
+# skipping fict surface: ramps:2_north                                                                                      
+  
+# skipping fict surface: ramps:3_north                                                                                      
+  
+# skipping fict surface: ramps:4_north                                                                                      
+  
+# skipping fict surface: ramps:5_north                                                                                      
+  
+# skipping fict surface: ramps:b2_south                                                                                     
+  
+# skipping fict surface: ramps:b1_south                                                                                     
+  
+# skipping fict surface: ramps:g_south                                                                                      
+  
+# skipping fict surface: ramps:1_south                                                                                      
+  
+# skipping fict surface: ramps:2_south                                                                                      
+  
+# skipping fict surface: ramps:3_south                                                                                      
+  
+# skipping fict surface: ramps:4_south                                                                                      
+  
+# skipping fict surface: ramps:5_south                                                                                      
+  
+# skipping fict surface: ramps:b2_slice_u                                                                                   
+  
+# skipping fict surface: ramps:b2_down                                                                                      
+  
+# skipping fict surface: ramps:b1_slice_u                                                                                   
+  
+# skipping fict surface: ramps:b1_down                                                                                      
+  
+# skipping fict surface: ramps:g_slice_u                                                                                    
+  
+# skipping fict surface: ramps:g_down                                                                                       
+  
+# skipping fict surface: ramps:1_slice_u                                                                                    
+  
+# skipping fict surface: ramps:1_down                                                                                       
+  
+# skipping fict surface: ramps:2_slice_u                                                                                    
+  
+# skipping fict surface: ramps:2_down                                                                                       
+  
+# skipping fict surface: ramps:3_slice_u                                                                                    
+  
+# skipping fict surface: ramps:3_down                                                                                       
+  
+# skipping fict surface: ramps:4_slice_u                                                                                    
+  
+# skipping fict surface: ramps:4_down                                                                                       
+  
+# skipping fict surface: ramps:5_slice_u                                                                                    
+  
+# skipping fict surface: ramps:5_down                                                                                       
+  
+# warden Surface defs..
+  
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  warden:glazing
+0 
+0 
+ 12
+   61.80000   18.00000    3.60000
+   57.20000   18.00000    3.60000
+   57.20000   18.00000    0.20000
+   61.80000   18.00000    0.20000
+# b2_north Surface defs..
+  
+# skipping fict surface: b2_north:b2_slice_und                                                                              
+  
+# skipping fict surface: b2_north:b2_slice_w                                                                                
+  
+# skipping fict surface: b2_north:b2_north                                                                                  
+  
+# skipping fict surface: b2_north:b2_slice_u                                                                                
+  
+# skipping fict surface: b2_north:b2_down                                                                                   
+  
+# skipping fict surface: b2_north:fac_west                                                                                  
+  
+# skipping fict surface: b2_north:fict_a                                                                                    
+  
+# skipping fict surface: b2_north:fict_b                                                                                    
+  
+# skipping fict surface: b2_north:exit                                                                                      
+  
+# skipping fict surface: b2_north:fac_east_b                                                                                
+  
+# skipping fict surface: b2_north:fac_east_c                                                                                
+  
+# skipping fict surface: b2_north:fac_fic_d                                                                                 
+  
+# skipping fict surface: b2_north:fac_east_e                                                                                
+  
+# b2_south Surface defs..
+  
+# skipping fict surface: b2_south:fict_a                                                                                    
+  
+# skipping fict surface: b2_south:fict_b                                                                                    
+  
+# skipping fict surface: b2_south:to_ramp                                                                                   
+  
+# skipping fict surface: b2_south:fac_west                                                                                  
+  
+# skipping fict surface: b2_south:fac_south_a                                                                               
+  
+# skipping fict surface: b2_south:fac_south_b                                                                               
+  
+# skipping fict surface: b2_south:entrance                                                                                  
+  
+  
+# skipping transparent surface: b2_south:glazing                                                                            
+  
+# b1_north Surface defs..
+  
+# skipping fict surface: b1_north:b2_slice_und                                                                              
+  
+# skipping fict surface: b1_north:b2_slice_w                                                                                
+  
+# skipping fict surface: b1_north:b2_north                                                                                  
+  
+# skipping fict surface: b1_north:b2_slice_u                                                                                
+  
+# skipping fict surface: b1_north:b2_down                                                                                   
+  
+# skipping fict surface: b1_north:fac_west                                                                                  
+  
+# skipping fict surface: b1_north:fict_a                                                                                    
+  
+# skipping fict surface: b1_north:fict_b                                                                                    
+  
+# skipping fict surface: b1_north:exit                                                                                      
+  
+# skipping fict surface: b1_north:fac_east_b                                                                                
+  
+# skipping fict surface: b1_north:fac_east_c                                                                                
+  
+# skipping fict surface: b1_north:fac_fic_d                                                                                 
+  
+# skipping fict surface: b1_north:fac_east_e                                                                                
+  
+# g_north Surface defs..
+  
+# skipping fict surface: g_north:b2_slice_und                                                                               
+  
+# skipping fict surface: g_north:b2_slice_w                                                                                 
+  
+# skipping fict surface: g_north:b2_north                                                                                   
+  
+# skipping fict surface: g_north:b2_slice_u                                                                                 
+  
+# skipping fict surface: g_north:b2_down                                                                                    
+  
+# skipping fict surface: g_north:fac_north_a                                                                                
+  
+# skipping fict surface: g_north:fac_north_b                                                                                
+  
+# skipping fict surface: g_north:fac_west                                                                                   
+  
+# skipping fict surface: g_north:fict_a                                                                                     
+  
+# skipping fict surface: g_north:fict_b                                                                                     
+  
+# skipping fict surface: g_north:exit                                                                                       
+  
+# skipping fict surface: g_north:fac_east_b                                                                                 
+  
+# skipping fict surface: g_north:fac_east_c                                                                                 
+  
+# skipping fict surface: g_north:fac_fic_d                                                                                  
+  
+# skipping fict surface: g_north:fac_east_e                                                                                 
+  
+# 1_north Surface defs..
+  
+# skipping fict surface: 1_north:b2_slice_und                                                                               
+  
+# skipping fict surface: 1_north:b2_slice_w                                                                                 
+  
+# skipping fict surface: 1_north:b2_north                                                                                   
+  
+# skipping fict surface: 1_north:b2_slice_u                                                                                 
+  
+# skipping fict surface: 1_north:b2_down                                                                                    
+  
+# skipping fict surface: 1_north:fac_north_a                                                                                
+  
+# skipping fict surface: 1_north:fac_north_b                                                                                
+  
+# skipping fict surface: 1_north:fac_west                                                                                   
+  
+# skipping fict surface: 1_north:fict_a                                                                                     
+  
+# skipping fict surface: 1_north:fict_b                                                                                     
+  
+# skipping fict surface: 1_north:exit                                                                                       
+  
+# skipping fict surface: 1_north:fac_east_b                                                                                 
+  
+# skipping fict surface: 1_north:fac_east_c                                                                                 
+  
+# skipping fict surface: 1_north:fac_fic_d                                                                                  
+  
+# skipping fict surface: 1_north:fac_east_e                                                                                 
+  
+# 2_north Surface defs..
+  
+# skipping fict surface: 2_north:b2_slice_und                                                                               
+  
+# skipping fict surface: 2_north:b2_slice_w                                                                                 
+  
+# skipping fict surface: 2_north:b2_north                                                                                   
+  
+# skipping fict surface: 2_north:b2_slice_u                                                                                 
+  
+# skipping fict surface: 2_north:b2_down                                                                                    
+  
+# skipping fict surface: 2_north:fac_north_a                                                                                
+  
+# skipping fict surface: 2_north:fac_north_b                                                                                
+  
+# skipping fict surface: 2_north:fac_west                                                                                   
+  
+# skipping fict surface: 2_north:fict_a                                                                                     
+  
+# skipping fict surface: 2_north:fict_b                                                                                     
+  
+# skipping fict surface: 2_north:exit                                                                                       
+  
+# skipping fict surface: 2_north:fac_east_b                                                                                 
+  
+# skipping fict surface: 2_north:fac_east_c                                                                                 
+  
+# skipping fict surface: 2_north:fac_fic_d                                                                                  
+  
+# skipping fict surface: 2_north:fac_east_e                                                                                 
+  
+# 3_north Surface defs..
+  
+# skipping fict surface: 3_north:b2_slice_und                                                                               
+  
+# skipping fict surface: 3_north:b2_slice_w                                                                                 
+  
+# skipping fict surface: 3_north:b2_north                                                                                   
+  
+# skipping fict surface: 3_north:b2_slice_u                                                                                 
+  
+# skipping fict surface: 3_north:b2_down                                                                                    
+  
+# skipping fict surface: 3_north:fac_north_a                                                                                
+  
+# skipping fict surface: 3_north:fac_north_b                                                                                
+  
+# skipping fict surface: 3_north:fac_west                                                                                   
+  
+# skipping fict surface: 3_north:fict_a                                                                                     
+  
+# skipping fict surface: 3_north:fict_b                                                                                     
+  
+# skipping fict surface: 3_north:exit                                                                                       
+  
+# skipping fict surface: 3_north:fac_east_b                                                                                 
+  
+# skipping fict surface: 3_north:fac_east_c                                                                                 
+  
+# skipping fict surface: 3_north:fac_fic_d                                                                                  
+  
+# skipping fict surface: 3_north:fac_east_e                                                                                 
+  
+# 4_north Surface defs..
+  
+# skipping fict surface: 4_north:b2_slice_und                                                                               
+  
+# skipping fict surface: 4_north:b2_slice_w                                                                                 
+  
+# skipping fict surface: 4_north:b2_north                                                                                   
+  
+# skipping fict surface: 4_north:b2_slice_u                                                                                 
+  
+# skipping fict surface: 4_north:b2_down                                                                                    
+  
+# skipping fict surface: 4_north:fac_north_a                                                                                
+  
+# skipping fict surface: 4_north:fac_north_b                                                                                
+  
+# skipping fict surface: 4_north:fac_west                                                                                   
+  
+# skipping fict surface: 4_north:fict_a                                                                                     
+  
+# skipping fict surface: 4_north:fict_b                                                                                     
+  
+# skipping fict surface: 4_north:exit                                                                                       
+  
+# skipping fict surface: 4_north:fac_east_b                                                                                 
+  
+# skipping fict surface: 4_north:fac_east_c                                                                                 
+  
+# skipping fict surface: 4_north:fac_fic_d                                                                                  
+  
+# skipping fict surface: 4_north:fac_east_e                                                                                 
+  
+# 5_north Surface defs..
+  
+# skipping fict surface: 5_north:b2_slice_und                                                                               
+  
+# skipping fict surface: 5_north:b2_slice_w                                                                                 
+  
+# skipping fict surface: 5_north:b2_north                                                                                   
+  
+# skipping fict surface: 5_north:b2_slice_u                                                                                 
+  
+# skipping fict surface: 5_north:b2_down                                                                                    
+  
+# skipping fict surface: 5_north:fac_north_a                                                                                
+  
+# skipping fict surface: 5_north:fac_north_b                                                                                
+  
+# skipping fict surface: 5_north:fac_west                                                                                   
+  
+# skipping fict surface: 5_north:fict_a                                                                                     
+  
+# skipping fict surface: 5_north:fict_b                                                                                     
+  
+# skipping fict surface: 5_north:exit                                                                                       
+  
+# skipping fict surface: 5_north:fac_east_b                                                                                 
+  
+# skipping fict surface: 5_north:fac_east_c                                                                                 
+  
+# skipping fict surface: 5_north:fac_fic_d                                                                                  
+  
+# skipping fict surface: 5_north:fac_east_e                                                                                 
+  
+# b1_south Surface defs..
+  
+# skipping fict surface: b1_south:fict_a                                                                                    
+  
+# skipping fict surface: b1_south:fict_b                                                                                    
+  
+# skipping fict surface: b1_south:to_ramp                                                                                   
+  
+# skipping fict surface: b1_south:fac_west                                                                                  
+  
+# skipping fict surface: b1_south:fac_south_a                                                                               
+  
+# skipping fict surface: b1_south:fac_south_b                                                                               
+  
+# skipping fict surface: b1_south:fac_east2                                                                                 
+  
+# g_south Surface defs..
+  
+# skipping fict surface: g_south:fac_east_a                                                                                 
+  
+# skipping fict surface: g_south:fict_a                                                                                     
+  
+# skipping fict surface: g_south:fict_b                                                                                     
+  
+# skipping fict surface: g_south:to_ramp                                                                                    
+  
+# skipping fict surface: g_south:fac_west                                                                                   
+  
+# skipping fict surface: g_south:fac_south_a                                                                                
+  
+# skipping fict surface: g_south:fac_south_b                                                                                
+  
+# skipping fict surface: g_south:fac_east2                                                                                  
+  
+# 1_south Surface defs..
+  
+# skipping fict surface: 1_south:fac_east_a                                                                                 
+  
+# skipping fict surface: 1_south:fict_a                                                                                     
+  
+# skipping fict surface: 1_south:fict_b                                                                                     
+  
+# skipping fict surface: 1_south:to_ramp                                                                                    
+  
+# skipping fict surface: 1_south:fac_west                                                                                   
+  
+# skipping fict surface: 1_south:fac_south_a                                                                                
+  
+# skipping fict surface: 1_south:fac_south_b                                                                                
+  
+# skipping fict surface: 1_south:fac_east2                                                                                  
+  
+# 2_south Surface defs..
+  
+# skipping fict surface: 2_south:fac_east_a                                                                                 
+  
+# skipping fict surface: 2_south:fict_a                                                                                     
+  
+# skipping fict surface: 2_south:fict_b                                                                                     
+  
+# skipping fict surface: 2_south:to_ramp                                                                                    
+  
+# skipping fict surface: 2_south:fac_west                                                                                   
+  
+# skipping fict surface: 2_south:fac_south_a                                                                                
+  
+# skipping fict surface: 2_south:fac_south_b                                                                                
+  
+# skipping fict surface: 2_south:fac_east2                                                                                  
+  
+# 3_south Surface defs..
+  
+# skipping fict surface: 3_south:fac_east_a                                                                                 
+  
+# skipping fict surface: 3_south:fict_a                                                                                     
+  
+# skipping fict surface: 3_south:fict_b                                                                                     
+  
+# skipping fict surface: 3_south:to_ramp                                                                                    
+  
+# skipping fict surface: 3_south:fac_west                                                                                   
+  
+# skipping fict surface: 3_south:fac_south_a                                                                                
+  
+# skipping fict surface: 3_south:fac_south_b                                                                                
+  
+# skipping fict surface: 3_south:fac_east2                                                                                  
+  
+# 4_south Surface defs..
+  
+# skipping fict surface: 4_south:fac_east_a                                                                                 
+  
+# skipping fict surface: 4_south:fict_a                                                                                     
+  
+# skipping fict surface: 4_south:fict_b                                                                                     
+  
+# skipping fict surface: 4_south:to_ramp                                                                                    
+  
+# skipping fict surface: 4_south:fac_west                                                                                   
+  
+# skipping fict surface: 4_south:fac_south_a                                                                                
+  
+# skipping fict surface: 4_south:fac_south_b                                                                                
+  
+# skipping fict surface: 4_south:fac_east2                                                                                  
+  
+# 5_south Surface defs..
+  
+# skipping fict surface: 5_south:fac_east_a                                                                                 
+  
+# skipping fict surface: 5_south:fict_a                                                                                     
+  
+# skipping fict surface: 5_south:fict_b                                                                                     
+  
+# skipping fict surface: 5_south:to_ramp                                                                                    
+  
+# skipping fict surface: 5_south:fac_west                                                                                   
+  
+# skipping fict surface: 5_south:fac_south_a                                                                                
+  
+# skipping fict surface: 5_south:fac_south_b                                                                                
+  
+# skipping fict surface: 5_south:fac_east2                                                                                  
+  
+# ground Surface defs..
+  

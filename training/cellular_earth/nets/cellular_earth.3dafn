@@ -1,0 +1,80 @@
+*Flow_network 1.0
+*Date,Wed Sep 21 15:37:08 2022
+*Doc,use of earth zones to temper air flowing into offices
+*Domain,Flow,2  # domain for this network
+*windpressure,1.000  # wind speed reduction
+# tag name fluid type assoc zone & surface
+# position & data
+*node,manager_a,1,0,manager_a,-   # internal unknown pressure
+1.500,2.250,1.500,20.0000,0.0000,40.5008  # position temp data
+*node,manager_b,1,0,manager_b,-   # internal unknown pressure
+4.600,2.250,1.500,20.0000,0.0000,40.5008  # position temp data
+*node,corridor,1,0,-,-   # internal unknown pressure
+3.050,5.050,1.500,20.0000,0.0000,18.3000  # position temp data
+*node,tube_a,1,0,-,-   # internal unknown pressure
+1.753,-2.591,-0.900,20.0000,0.0000,1.1884  # position temp data
+*node,tube_b,1,0,-,-   # internal unknown pressure
+1.750,-1.500,-0.900,20.0000,0.0000,1.3000  # position temp data
+*node,tube_c,1,0,-,-   # internal unknown pressure
+1.750,0.250,-0.900,20.0000,0.0000,1.7000  # position temp data
+*node,grnd_inlet,1,3,-,-   # boundary wind pressure
+-4.875,-3.001,-0.900,0.0000,29.0000,0.0000  # position temp data
+*node,facade_a,1,3,-,-   # boundary wind pressure
+1.500,-0.900,1.950,0.0000,19.0000,180.0000  # position temp data
+*node,facade_b,1,3,-,-   # boundary wind pressure
+4.600,-0.900,1.950,0.0000,19.0000,180.0000  # position temp data
+*node,corid_west,1,3,-,-   # boundary wind pressure
+-0.900,5.050,1.500,0.0000,19.0000,270.0000  # position temp data
+*node,extr_point,1,3,-,-   # boundary wind pressure
+3.050,4.750,3.900,0.0000,2.0000,0.0000  # position temp data
+# tag name assoc zone & surface type C+ L+
+# start&end positions  description
+# data
+*cmp,win_crack,manager_a,glazing,120,3,0
+0,1.500,0.000,1.950,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,5.00000000  # Fluid crack width(m) crack length(m)
+*cmp,door,-,-,130,5,0
+0,0.800,4.500,0.000,Specific air flow door              m = rho.f(W,H,dP)       
+1.00000000,0.400000006,2.09999990,1.50000000,0.500000000  # Fluid width height ref ht discharge factor
+*cmp,door_crack,-,-,120,3,0
+0,0.000,5.050,0.000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,9.99999978E-03,1.00000000  # Fluid crack width(m) crack length(m)
+*cmp,grill,tube_c,outlet,110,2,0
+0,3.500,1.250,-0.900,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,0.100000001  # Fluid opening area(m)
+*cmp,tube_a10,tube_a,side_g,210,6,0
+0,-3.977,-2.941,-0.900,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+1.00000000,0.100000001,0.100000001,10.0000000,4.99999989E-03,0.500000000  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,tube_b11,-,-,210,6,0
+0,-4.000,-1.500,-0.900,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+1.00000000,0.100000001,0.100000001,11.0000000,4.99999989E-03,0.500000000  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,tube_c14,-,-,210,6,0
+0,7.500,0.500,-0.900,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+1.00000000,0.100000001,0.100000001,14.0000000,4.99999989E-03,0.500000000  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,extra_4ach,-,-, 30,2,0
+0,3.050,4.750,3.000,Constant vol. flow rate component   m = rho.a               
+1.00000000,4.50011119E-02  # Fluid flow rate (m^3/s)
+*cmp,manb_door_cr,manager_b,door,120,3,0
+0,5.300,4.500,0.000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,9.99999978E-03,1.00000000  # Fluid crack width(m) crack length(m)
+*cmp,manb_win_cr,manager_b,glazing,120,3,0
+0,4.600,0.000,1.950,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,9.99999978E-03,5.00000000  # Fluid crack width(m) crack length(m)
+# connection +node deltaZ  -node deltaZ via component
+*cnn,grnd_inlet, -1.000,tube_a,  0.000,tube_a10
+*cnn,tube_a,  0.000,tube_b,  0.000,tube_b11
+*cnn,tube_b,  0.000,tube_c,  0.000,tube_c14
+*cnn,tube_c,  0.000,manager_a, -2.400,grill
+*cnn,tube_c,  0.000,manager_b,  0.000,grill
+*cnn,manager_a,  0.000,corridor,  0.000,door
+*cnn,manager_b, -1.500,corridor, -1.500,manb_door_cr
+*cnn,corid_west,  0.000,corridor,  0.000,door_crack
+*cnn,manager_a,  0.000,extr_point,  0.000,extra_4ach
+*cnn,manager_b,  0.000,extr_point,  0.000,extra_4ach
+*cnn,facade_a,  0.000,manager_a,  0.450,win_crack
+*cnn,facade_b,  0.000,manager_b,  0.450,manb_win_cr
+*IPSMOD 1  # stack calc
+*MFBSNC 0  # timing
+*MSLVTP 2  # flow solution
+*MFTRAC 0  # trace level
+*End_network

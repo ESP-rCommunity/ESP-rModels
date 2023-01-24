@@ -1,0 +1,49 @@
+*Constructions 2.1                              # thermophysical properties of loft
+*date Mon Sep  6 15:11:21 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     3     0   0.90   0.91   0.30   0.50   0    #   1  bathrm       loft_floor
+     3     0   0.91   0.91   0.50   0.50   0    #   2  east         ext_part
+     3     0   0.91   0.91   0.50   0.50   0    #   3  west         ext_part
+     3     0   0.91   0.90   0.65   0.60   0    #   4  north        roof
+     3     0   0.91   0.90   0.65   0.60   0    #   5  south        roof
+     3     0   0.90   0.91   0.30   0.50   0    #   6  bed2         loft_floor
+     3     0   0.90   0.91   0.30   0.50   0    #   7  bed1         loft_floor
+     3     0   0.90   0.91   0.30   0.50   0    #   8  hall2        loft_floor
+     3     0   0.90   0.91   0.30   0.50   0    #   9  w_heat_c     loft_floor
+     3     0   0.90   0.91   0.30   0.50   0    #  10  bed3         loft_floor
+# air gap layer positions and restances
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+     0.1600     600.0    1000.0  0.0050   0   0.00 0.00000 0.00000  #   1   1 Light plaster
+     0.1500     800.0    2093.0  0.0200   0   0.00 0.00000 0.00000  #       2 Chipboard
+     0.0400     250.0     840.0  0.0100   0   0.00 0.00000 0.00000  #       3 Glasswool
+     0.4200    1200.0     837.0  0.0100   0   0.00 0.00000 0.00000  #   2   1 Gypsum plaster
+     0.5100    1400.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #       2 Block inner (3% mc)
+     0.4200    1200.0     837.0  0.0100   0   0.00 0.00000 0.00000  #       3 Gypsum plaster
+     0.4200    1200.0     837.0  0.0100   0   0.00 0.00000 0.00000  #   3   1 Gypsum plaster
+     0.5100    1400.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #       2 Block inner (3% mc)
+     0.4200    1200.0     837.0  0.0100   0   0.00 0.00000 0.00000  #       3 Gypsum plaster
+     0.8500    1900.0     837.0  0.0100   0   0.00 0.00000 0.00000  #   4   1 Clay tile
+     0.5000    1700.0    1000.0  0.0020   0   0.00 0.00000 0.00000  #       2 Bitumen felt
+     0.1500     800.0    2093.0  0.0250   0   0.00 0.00000 0.00000  #       3 Chipboard
+     0.8500    1900.0     837.0  0.0100   0   0.00 0.00000 0.00000  #   5   1 Clay tile
+     0.5000    1700.0    1000.0  0.0020   0   0.00 0.00000 0.00000  #       2 Bitumen felt
+     0.1500     800.0    2093.0  0.0250   0   0.00 0.00000 0.00000  #       3 Chipboard
+     0.1600     600.0    1000.0  0.0050   0   0.00 0.00000 0.00000  #   6   1 Light plaster
+     0.1500     800.0    2093.0  0.0200   0   0.00 0.00000 0.00000  #       2 Chipboard
+     0.0400     250.0     840.0  0.0100   0   0.00 0.00000 0.00000  #       3 Glasswool
+     0.1600     600.0    1000.0  0.0050   0   0.00 0.00000 0.00000  #   7   1 Light plaster
+     0.1500     800.0    2093.0  0.0200   0   0.00 0.00000 0.00000  #       2 Chipboard
+     0.0400     250.0     840.0  0.0100   0   0.00 0.00000 0.00000  #       3 Glasswool
+     0.1600     600.0    1000.0  0.0050   0   0.00 0.00000 0.00000  #   8   1 Light plaster
+     0.1500     800.0    2093.0  0.0200   0   0.00 0.00000 0.00000  #       2 Chipboard
+     0.0400     250.0     840.0  0.0100   0   0.00 0.00000 0.00000  #       3 Glasswool
+     0.1600     600.0    1000.0  0.0050   0   0.00 0.00000 0.00000  #   9   1 Light plaster
+     0.1500     800.0    2093.0  0.0200   0   0.00 0.00000 0.00000  #       2 Chipboard
+     0.0400     250.0     840.0  0.0100   0   0.00 0.00000 0.00000  #       3 Glasswool
+     0.1600     600.0    1000.0  0.0050   0   0.00 0.00000 0.00000  #  10   1 Light plaster
+     0.1500     800.0    2093.0  0.0200   0   0.00 0.00000 0.00000  #       2 Chipboard
+     0.0400     250.0     840.0  0.0100   0   0.00 0.00000 0.00000  #       3 Glasswool
+*tmc NONE                                       # all surfaces are opaque

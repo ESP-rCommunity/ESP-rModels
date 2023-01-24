@@ -1,0 +1,42 @@
+*Uncertainty analysis library
+   2   2   4 # Changes, Locations, Actions
+#  
+# Changes definitions follow...
+#  
+*cng_def
+ambient_T                # Change id string
+   3 # Change type: Weather parameter
+   1 # Weather parameter Dry bulb T                               
+   2     2.000     0.000   # abs change Dry bulb T
+*cng_def
+wind_speed               # Change id string
+   3 # Change type: Weather parameter
+   4 # Weather parameter Wind speed                               
+   1    10.000     0.000   # % change Wind speed
+#  
+# Locations definitions follow...
+#  
+*loc_def
+the_zone        # Location id string
+   1 # Number of zones
+   1   8 # Zone number Number of surfaces
+  1  2  3  4  5  6  7  8
+*loc_def
+the_year        # Location id string
+   0 # Number of zones
+   1   1 365  24 # Start day, hour, finish day, hour
+#  
+# Action definitions follow...
+#  
+*act_def
+   1 # Uncertanty ref: ambient_T               
+   1 # Location ref: the_zone       
+*act_def
+   2 # Uncertanty ref: wind_speed              
+   1 # Location ref: the_zone       
+*act_def
+   1 # Uncertanty ref: ambient_T               
+   2 # Location ref: the_year       
+*act_def
+   2 # Uncertanty ref: wind_speed              
+   2 # Location ref: the_year       

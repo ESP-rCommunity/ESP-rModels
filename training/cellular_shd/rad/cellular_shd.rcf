@@ -1,0 +1,10 @@
+*ESP-r visualisation scene configuration file.
+Thu Jun 25 15:41:48 2020 # latest file modification.
+  1 # No. of scenes
+# Scene number  1
+*rnm cellular_shd_Extern.rif                      # Rif name
+*srt cellular_shd_Extern                          # Scene root
+*rde Scene of cellular_shd for External analysis. # Description
+*rpu External                                     # Intended use
+*sceneEND
+*end

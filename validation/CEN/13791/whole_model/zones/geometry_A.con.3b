@@ -1,0 +1,54 @@
+*Constructions 2.1                              # thermophysical properties of T_3-V_b
+*date Tue Sep  7 18:33:26 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     3     0   0.90   0.90   1.00   1.00   0    #   1  South        Type_n.2
+     3     0   0.90   0.90   1.00   1.00   0    #   2  East         Type_n.2
+     3     0   0.90   0.90   1.00   1.00   0    #   3  North        Type_n.2
+     8     0   0.90   0.00   1.00   0.60   0    #   4  West         Type_n.1
+     6     0   0.90   0.00   1.00   0.90   0    #   5  Roof         Type_n.5
+     5     0   0.90   0.90   1.00   1.00   0    #   6  Floor        Type_n.3-flr
+     3     1   0.84   0.00   0.60   0.31   1    #   7  window       sgl_glz_shd
+# air gap layer positions and restances
+  2  0.080                                      # for window
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+     0.2100     900.0     850.0  0.0120   0   0.00 0.00000 0.00000  #   1   1 Plaster gypsum
+     0.0400      30.0     850.0  0.1000   0   0.00 0.00000 0.00000  #       2 Mineral wool 1
+     0.2100     900.0     850.0  0.0120   0   0.00 0.00000 0.00000  #       3 Plaster gypsum
+     0.2100     900.0     850.0  0.0120   0   0.00 0.00000 0.00000  #   2   1 Plaster gypsum
+     0.0400      30.0     850.0  0.1000   0   0.00 0.00000 0.00000  #       2 Mineral wool 1
+     0.2100     900.0     850.0  0.0120   0   0.00 0.00000 0.00000  #       3 Plaster gypsum
+     0.2100     900.0     850.0  0.0120   0   0.00 0.00000 0.00000  #   3   1 Plaster gypsum
+     0.0400      30.0     850.0  0.1000   0   0.00 0.00000 0.00000  #       2 Mineral wool 1
+     0.2100     900.0     850.0  0.0120   0   0.00 0.00000 0.00000  #       3 Plaster gypsum
+     0.9900    1800.0     850.0  0.0400   0   0.00 0.00000 0.00000  #   4   1 Outer0em layer
+     0.9900    1800.0     850.0  0.0400   0   0.00 0.00000 0.00000  #       2 Outer layer
+     0.9900    1800.0     850.0  0.0350   0   0.00 0.00000 0.00000  #       3 Outer layer
+     0.0400      30.0     850.0  0.0600   0   0.00 0.00000 0.00000  #       4 Mineral wool 1
+     0.7900    1600.0     850.0  0.0600   0   0.00 0.00000 0.00000  #       5 Masonry
+     0.7900    1600.0     850.0  0.0600   0   0.00 0.00000 0.00000  #       6 Masonry
+     0.7900    1600.0     850.0  0.0550   0   0.00 0.00000 0.00000  #       7 Masonry
+     0.7000    1400.0     850.0  0.0150   0   0.00 0.00000 0.00000  #       8 Plaster internal
+     0.2300    1500.0    1300.0  0.0040   0   0.00 0.00000 0.00000  #   5   1 Rain0em protection
+     0.0400      50.0     850.0  0.0800   0   0.00 0.00000 0.00000  #       2 Mineral wool 2
+     2.1000    2400.0     850.0  0.0500   0   0.00 0.00000 0.00000  #       3 Concrete
+     2.1000    2400.0     850.0  0.0500   0   0.00 0.00000 0.00000  #       4 Concrete
+     2.1000    2400.0     850.0  0.0500   0   0.00 0.00000 0.00000  #       5 Concrete
+     2.1000    2400.0     850.0  0.0500   0   0.00 0.00000 0.00000  #       6 Concrete
+     2.1000    2400.0     850.0  0.0900   0   0.00 0.00000 0.00000  #   6   1 Concrete
+     2.1000    2400.0     850.0  0.0900   0   0.00 0.00000 0.00000  #       2 Concrete
+     0.0400      50.0     850.0  0.0400   0   0.00 0.00000 0.00000  #       3 Mineral wool 2
+     1.4000    2000.0     850.0  0.0600   0   0.00 0.00000 0.00000  #       4 Cement floor
+     0.2300    1500.0    1500.0  0.0040   0   0.00 0.00000 0.00000  #       5 Covering plastic
+    20.0000    1800.0    1000.0  0.0020   0   0.00 0.00000 0.00000  #   7   1 2mm shade
+     0.0000       0.0       0.0  0.0060   0   0.00 0.00000 0.00000  #       2 AIR
+    20.0000    2500.0    1000.0  0.0060   0   0.00 0.00000 0.00000  #       3 6mm glass
+*tmc YES                                        # optical properties:
+   3  SG_CEN_shd                                # layers in tmc type 1
+  0.175  0.175  0.175  0.175  0.175  0.175      # transmission @ 5 angles & visible tr.
+  0.305  0.305  0.305  0.305  0.305             # for each layer absorption @ 5 angles
+  0.000  0.000  0.000  0.000  0.000
+  0.017  0.017  0.017  0.017  0.017
+   0                                            # no alternative optics

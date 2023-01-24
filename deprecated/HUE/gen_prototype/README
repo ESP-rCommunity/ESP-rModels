@@ -1,0 +1,28 @@
+This document provides information on how to generate prototypes, 
+simulate these using various weather files and generate regression
+equations for use in HUE.
+
+1. Registering prototypes:
+Run the script 01.proto_reg to register prototypes. This makes a large
+number of ESP-r configuration files.
+
+2. Generate prototypes:
+Run the script 02.proto_gen to generate prototypes. This makes
+supporting zones files.
+
+3. Simulate prototypes:
+Run the script 03.proto_sim to simulate the prototypes. An alternate
+script called 03.proto_sim_pp exists in the src folder for running
+simulations on a parallel processing super computer. This script
+was developed for use on the University of Strathclyde high performance
+computer details of which can be found at http://use-hpc.eng.strath.ac.uk.
+
+4. Generate regression equations:
+Run the script 04.MLR_eqn_gen to generate regression equations for the
+monthly energy performance of each prototype. This is a fortran program
+that should be compiled from the source file 04.MLR_eqn_gen.F in the
+src folder.
+
+5. Cleanup:
+Run the program 05.cleanup to clean up all the files created during the
+above process.

@@ -1,0 +1,31 @@
+*IPV  4 0 i5t                   # IPV V0 undefined report format five seasons (typical weeks)
+*title,Matrix of small offices with different h
+*synop,:The heat_transfer
+*images,0
+*simulations   5                # assessments to run
+# tag start doy finish doy description
+*period       9      15    1st winter week run                     
+*period      65      71    spring week run                         
+*period     192     198    summer week run                         
+*period     275     281    autumn week run                         
+*period     324     330    2nd winter week run                     
+*display_days,5,10,66,193,276,325
+# season multipliers
+# name |heating |cooling|lights |fans  |smallpwr|DWH
+*win1     1.000   1.000   1.000   1.000   1.000   1.000
+*spr      1.000   1.000   1.000   1.000   1.000   1.000
+*sum      1.000   1.000   1.000   1.000   1.000   1.000
+*aut      1.000   1.000   1.000   1.000   1.000   1.000
+*win2     1.000   1.000   1.000   1.000   1.000   1.000
+*metrics   1                    # metrics to report
+# metric results miscelaneous number floor scal- weigh- topic
+# name   index   data  data   zones  area  ing   ting
+*metric_1     6     0     0     0     1.0  1.000  1.000,zones,ocup_zones,Resultant T (degC)
+*demand_sets   1                # energy demands to report
+# tag     number miscelaneous aggreg floor scal- description
+#         zones  data  data   toggle area  ing
+*energy_1     0     0     0     0     1.0  1.000,zones
+# non-specific demands
+# tag occup/light/sm pwr/fans/pumps/lifts/dhw
+*dmds     0     0     0     0     0     0     0
+*end

@@ -1,0 +1,22 @@
+# Radiance RIF file: Duke_st_roofpv.rif
+#e2r_gen_view   0 -1
+#e2r_glaz_type   1
+view= from_sw -vtv -vp -190.48 -187.23  221.48 -vd  0.647  0.581 -0.493 -vu  0.00 0.00 1.00 -vh  50.0 -vv  50.0 -vs 0 -vl 0 -vo 0 -va 0
+scene= Duke_st_roofpv.sky
+scene= Duke_st_roofpv-glz.rad
+scene= Duke_st_roofpv.mat
+scene= Duke_st_roofpv-out.rad
+scene= Duke_st_roofpv-in.rad
+UP= Z
+QUALITY= Medium
+DETAIL= Medium
+VARIABILITY= High  
+RESOLUTION=   900
+INDIRECT=  1
+PENUMBRAS= True 
+REPORT=    1
+render= -av 10.6000 10.6000 10.6000
+ZONE= Exterior  -190.48  252.48 -187.23  255.73   -1.00  221.48
+OPTFILE= Duke_st_roofpv.opt
+OCTREE= Duke_st_roofpv.oct
+PICTURE= Duke_st_roofpv

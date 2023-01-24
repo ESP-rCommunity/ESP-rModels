@@ -1,0 +1,6 @@
+System configuration file: /home/joe/basic/bld_basic_prht.cfg
+Synopsis: multi-zone, convective heating, preheat control
+First created: Tue Jan 19 14:21:40 2021
+Notes:
+This model represents a 3 zone building with convective heating
+under ideal preheat control.

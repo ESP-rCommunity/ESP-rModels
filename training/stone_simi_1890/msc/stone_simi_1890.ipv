@@ -1,0 +1,39 @@
+*IPV  4 2 i5t                   # IPV V4 tabbed report format five seasons (typical weeks)
+*title,Traditional stone built flatr           
+*synop,:The traditional flat carbon reduction checklist upper floor
+*images,0
+*simulations   5                # assessments to run
+# tag start doy finish doy description
+*period      37      43    1st winter run                          
+*period     107     113    spring run                              
+*period     184     190    summer run                              
+*period     275     281    autumn run                              
+*period     324     330    2nd winter run                          
+*display_days,5,37,112,217,266,322
+# season multipliers
+# name |heating |cooling|lights |fans  |smallpwr|DWH
+*win1    10.000  10.000  10.000  10.000  10.000  10.000
+*spr      9.000   9.000   9.000   9.000   9.000   9.000
+*sum     23.467  16.000  16.000  16.000  16.000  16.000
+*aut      8.419   8.000   8.000   8.000   8.000   8.000
+*win2     9.000   9.000   9.000   9.000   9.000   9.000
+*metrics   4                    # metrics to report
+# metric results miscelaneous number floor scal- weigh- topic
+# name   index   data  data   zones  area  ing   ting
+*metric_1     6     1     1     8   160.5  1.000  1.000,comfort,ocup_zones,Resultant T (degC)
+ 2,3,4,5,6,7,8,9
+*metric_2     1     0     0     8   160.5  1.000  1.000,ZndbT,dbt_zones,Zone db T (degC)
+ 2,3,4,5,6,7,8,9
+*metric_3    11     0     0     8   160.5  1.000  1.000,Infil,infil_zones,Infiltration (W)
+ 2,3,4,5,6,7,8,9
+*metric_4    38     0     0     8   160.5  1.000  1.000,SolinEx,sol_zones,Solar via outside(W)
+ 2,3,4,5,6,7,8,9
+*demand_sets   1                # energy demands to report
+# tag  number miscelaneoous aggregate floor scal- description
+#      zones  data  data    toggle    area  ing
+*energy_1     8     0     0     0   160.5  1.000,the_flat
+ 2,3,4,5,6,7,8,9
+# non-specific demands: occup/light/sm pwr/fans/pumps/lifts/dhw
+# tag occup/light/sm pwr/fans/pumps/lifts/dhw
+*dmds     0     0     0     0     0     0     0
+*end

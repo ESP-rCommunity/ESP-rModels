@@ -1,0 +1,10 @@
+*ESP-r visualisation scene configuration file.
+Fri Feb 17 11:32:11 2017 # latest file modification.
+  1 # No. of scenes
+# Scene number  1
+*rnm Duke_st_r.rif                           # Rif name
+*srt Duke_st_r                               # Scene root
+*rde Scene of Duke_st for External analysis. # Description
+*rpu External                                # Intended use
+*sceneEND
+*end

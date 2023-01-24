@@ -1,0 +1,175 @@
+   48   41   41    0.000    (nodes, components, connections, wind reduction)
+ Node         Fld. Type   Height    Temperature    Data_1       Data_2
+ room_bc_conv    1    0   1.5000       20.000       1.0000       40.312    
+ room_fan        1    0   1.5000       20.000       1.0000       40.312    
+ CAV_mixed       1    0   1.5000       20.000       1.0000       40.312    
+ VAV_mix_CVh     1    0   1.5000       20.000       1.0000       40.312    
+ VAV_mix_VVh     1    0   1.5000       20.000       1.0000       40.312    
+ CEN_hc          1    0   1.5000       20.000       1.0000       40.312    
+ corid_conv      1    0   1.5000       20.000       1.0000       81.002    
+ void_low        1    0 -0.20000       20.000       1.0000       43.201    
+ room_bc_rad     1    0   4.9000       20.000       1.0000       40.312    
+ rad_at_fac      1    0   4.9000       20.000       1.0000       40.312    
+ rad_at_wall     1    0   4.9000       20.000       1.0000       40.312    
+ floor_heat      1    0   4.9000       20.000       1.0000       40.312    
+ user_hc         1    0   4.9000       20.000       1.0000       40.312    
+ warm_wall       1    0   4.9000       20.000       1.0000       40.312    
+ corid_rad       1    0   4.9000       20.000       1.0000       81.002    
+ mid_void        1    0   3.2000       20.000       1.0000       40.501    
+ thin_floor      1    0   3.3000       20.000       1.0000       2.7001    
+ upper_void      1    0   6.6000       20.000       1.0000       43.201    
+ ambient         1    3   1.0000       0.0000       1.0000       180.00    
+ BW-Ve01:008     1    3   3.0000       0.0000       1.0000       180.00    
+ BW-Cr01:009     1    3   1.9500       0.0000       1.0000       180.00    
+ BW-Ve02:008     1    3   3.0000       0.0000       1.0000       180.00    
+ BW-Cr02:009     1    3   1.9500       0.0000       1.0000       180.00    
+ BW-Ve03:008     1    3   3.0000       0.0000       1.0000       180.00    
+ BW-Cr03:009     1    3   1.9500       0.0000       1.0000       180.00    
+ BW-Ve04:008     1    3   3.0000       0.0000       1.0000       180.00    
+ BW-Cr04:009     1    3   1.9500       0.0000       1.0000       180.00    
+ BW-Ve05:008     1    3   3.0000       0.0000       1.0000       180.00    
+ BW-Cr05:009     1    3   1.9500       0.0000       1.0000       180.00    
+ BW-Ve06:008     1    3   3.0000       0.0000       1.0000       180.00    
+ BW-Cr06:009     1    3   1.9500       0.0000       1.0000       180.00    
+ BW-Uc07:037     1    3   0.0000       0.0000       1.0000       270.00    
+ BW-Uc07:038     1    3   0.0000       0.0000       1.0000       90.000    
+ BW-Uc08:014     1    3 -0.40000       0.0000       1.0000       90.000    
+ BW-Ve09:008     1    3   6.4000       0.0000       1.0000       180.00    
+ BW-Cr09:009     1    3   5.3500       0.0000       1.0000       180.00    
+ BW-Ve10:008     1    3   6.4000       0.0000       1.0000       180.00    
+ BW-Cr10:009     1    3   5.3500       0.0000       1.0000       180.00    
+ BW-Ve11:008     1    3   6.4000       0.0000       1.0000       180.00    
+ BW-Cr11:009     1    3   5.3500       0.0000       1.0000       180.00    
+ BW-Ve12:008     1    3   6.4000       0.0000       1.0000       180.00    
+ BW-Cr12:009     1    3   5.3500       0.0000       1.0000       180.00    
+ BW-Ve13:008     1    3   6.4000       0.0000       1.0000       180.00    
+ BW-Cr13:009     1    3   5.3500       0.0000       1.0000       180.00    
+ BW-Uc15:037     1    3   3.4000       0.0000       1.0000       270.00    
+ BW-Uc15:038     1    3   3.4000       0.0000       1.0000       90.000    
+ BW-Uc16:025     1    3   3.0000       0.0000       1.0000       90.000    
+ BW-Uc18:014     1    3   6.4000       0.0000       1.0000       90.000    
+ Component    Type C+ L+ Description
+ DoUcz01:003    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.20000010E-02  0.699999988    
+ FrVez01:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ WiCrz01:009   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.40000057    
+ DoUcz02:003    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.19999954E-02  0.699999988    
+ FrVez02:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ WiCrz02:009   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.40000057    
+ DoUcz03:003    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.19999954E-02  0.699999988    
+ FrVez03:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ WiCrz03:009   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999962    
+ DoUcz04:003    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.20000029E-02  0.699999988    
+ FrVez04:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ WiCrz04:009   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999866    
+ DoUcz05:003    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.20000029E-02  0.699999988    
+ FrVez05:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ WiCrz05:009   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999866    
+ DoUcz06:003    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.20000169E-02  0.699999988    
+ FrVez06:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ WiCrz06:009   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999866    
+ DoUcz07:037    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       2.24999990E-02  0.699999988    
+ DoUcz07:038    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       2.24999990E-02  0.699999988    
+ DoUcz08:014    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       8.99999961E-02  0.699999988    
+ DoUcz09:003    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.20000010E-02  0.699999988    
+ FrVez09:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ WiCrz09:009   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.40000057    
+ DoUcz10:003    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.19999954E-02  0.699999988    
+ FrVez10:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ WiCrz10:009   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.40000057    
+ DoUcz11:003    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.19999954E-02  0.699999988    
+ FrVez11:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ WiCrz11:009   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999962    
+ DoUcz12:003    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.20000029E-02  0.699999988    
+ FrVez12:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ WiCrz12:009   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999866    
+ DoUcz13:003    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.20000029E-02  0.699999988    
+ FrVez13:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ WiCrz13:009   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999866    
+ DoUcz15:037    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       2.24999990E-02  0.699999988    
+ DoUcz15:038    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       2.24999990E-02  0.699999988    
+ DoUcz16:025    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       8.99999961E-02  0.699999988    
+ DoUcz16:029    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       4.49999981E-02  0.699999988    
+ DoUcz18:014    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       8.99999961E-02  0.699999988    
+ +Node         dHght   -Node         dHght   via Component
+ room_bc_conv -1.500   corid_conv   -1.500   DoUcz01:003                             
+ BW-Ve01:008   0.000   room_bc_conv  1.500   FrVez01:008                             
+ BW-Cr01:009   0.000   room_bc_conv  0.450   WiCrz01:009                             
+ room_fan     -1.500   corid_conv   -1.500   DoUcz02:003                             
+ BW-Ve02:008   0.000   room_fan      1.500   FrVez02:008                             
+ BW-Cr02:009   0.000   room_fan      0.450   WiCrz02:009                             
+ CAV_mixed    -1.500   corid_conv   -1.500   DoUcz03:003                             
+ BW-Ve03:008   0.000   CAV_mixed     1.500   FrVez03:008                             
+ BW-Cr03:009   0.000   CAV_mixed     0.450   WiCrz03:009                             
+ VAV_mix_CVh  -1.500   corid_conv   -1.500   DoUcz04:003                             
+ BW-Ve04:008   0.000   VAV_mix_CVh   1.500   FrVez04:008                             
+ BW-Cr04:009   0.000   VAV_mix_CVh   0.450   WiCrz04:009                             
+ VAV_mix_VVh  -1.500   corid_conv   -1.500   DoUcz05:003                             
+ BW-Ve05:008   0.000   VAV_mix_VVh   1.500   FrVez05:008                             
+ BW-Cr05:009   0.000   VAV_mix_VVh   0.450   WiCrz05:009                             
+ CEN_hc       -1.500   corid_conv   -1.500   DoUcz06:003                             
+ BW-Ve06:008   0.000   CEN_hc        1.500   FrVez06:008                             
+ BW-Cr06:009   0.000   CEN_hc        0.450   WiCrz06:009                             
+ BW-Uc07:037   0.000   corid_conv   -1.500   DoUcz07:037                             
+ BW-Uc07:038   0.000   corid_conv   -1.500   DoUcz07:038                             
+ BW-Uc08:014   0.000   void_low     -0.200   DoUcz08:014                             
+ room_bc_rad  -1.500   corid_rad    -1.500   DoUcz09:003                             
+ BW-Ve09:008   0.000   room_bc_rad   1.500   FrVez09:008                             
+ BW-Cr09:009   0.000   room_bc_rad   0.450   WiCrz09:009                             
+ rad_at_fac   -1.500   corid_rad    -1.500   DoUcz10:003                             
+ BW-Ve10:008   0.000   rad_at_fac    1.500   FrVez10:008                             
+ BW-Cr10:009   0.000   rad_at_fac    0.450   WiCrz10:009                             
+ rad_at_wall  -1.500   corid_rad    -1.500   DoUcz11:003                             
+ BW-Ve11:008   0.000   rad_at_wall   1.500   FrVez11:008                             
+ BW-Cr11:009   0.000   rad_at_wall   0.450   WiCrz11:009                             
+ floor_heat   -1.500   corid_rad    -1.500   DoUcz12:003                             
+ BW-Ve12:008   0.000   floor_heat    1.500   FrVez12:008                             
+ BW-Cr12:009   0.000   floor_heat    0.450   WiCrz12:009                             
+ user_hc      -1.500   corid_rad    -1.500   DoUcz13:003                             
+ BW-Ve13:008   0.000   user_hc       1.500   FrVez13:008                             
+ BW-Cr13:009   0.000   user_hc       0.450   WiCrz13:009                             
+ BW-Uc15:037   0.000   corid_rad    -1.500   DoUcz15:037                             
+ BW-Uc15:038   0.000   corid_rad    -1.500   DoUcz15:038                             
+ BW-Uc16:025   0.000   mid_void     -0.200   DoUcz16:025                             
+ mid_void      0.000   thin_floor   -0.100   DoUcz16:029                             
+ BW-Uc18:014   0.000   upper_void   -0.200   DoUcz18:014                             

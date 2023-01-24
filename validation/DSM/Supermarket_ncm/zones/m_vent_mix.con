@@ -1,0 +1,33 @@
+*Constructions 2.1                              # thermophysical properties of m_vent_mix
+*date Tue Sep  7 18:26:14 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     3     0   0.82   0.82   0.32   0.72   0    #   1  ptn_refr     SMexwal2010
+     3     0   0.82   0.82   0.32   0.72   0    #   2  right_fac    SMexwal2010
+     3     0   0.82   0.82   0.32   0.72   0    #   3  back_fac     SMexwal2010
+     3     0   0.82   0.82   0.32   0.72   0    #   4  ceiling      SMexwal2010
+     3     0   0.82   0.82   0.32   0.72   0    #   5  floor        SMexwal2010
+     3     0   0.82   0.82   0.32   0.72   0    #   6  ptn_storage  SMexwal2010
+# air gap layer positions and restances
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #   1   1 grey cotd alum
+     0.0300      30.0     837.0  0.1100   0   0.00 0.00000 0.00000  #       2 Polyurethane foam bd
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #       3 wt cotd alum
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #   2   1 grey cotd alum
+     0.0300      30.0     837.0  0.1100   0   0.00 0.00000 0.00000  #       2 Polyurethane foam bd
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #       3 wt cotd alum
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #   3   1 grey cotd alum
+     0.0300      30.0     837.0  0.1100   0   0.00 0.00000 0.00000  #       2 Polyurethane foam bd
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #       3 wt cotd alum
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #   4   1 grey cotd alum
+     0.0300      30.0     837.0  0.1100   0   0.00 0.00000 0.00000  #       2 Polyurethane foam bd
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #       3 wt cotd alum
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #   5   1 grey cotd alum
+     0.0300      30.0     837.0  0.1100   0   0.00 0.00000 0.00000  #       2 Polyurethane foam bd
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #       3 wt cotd alum
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #   6   1 grey cotd alum
+     0.0300      30.0     837.0  0.1100   0   0.00 0.00000 0.00000  #       2 Polyurethane foam bd
+   210.0000    2700.0     880.0  0.0010   0   0.00 0.00000 0.00000  #       3 wt cotd alum
+*tmc NONE                                       # all surfaces are opaque

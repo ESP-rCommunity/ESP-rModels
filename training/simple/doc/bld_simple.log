@@ -1,0 +1,6 @@
+System configuration file: /home/joe/simple/bld_simple.cfg
+Synopsis: single zone, convective heating
+First created: Tue Jan 19 14:21:40 2021
+Notes:
+This model describes an L-shaped office conditioned via
+a convective heating system with ideal control.

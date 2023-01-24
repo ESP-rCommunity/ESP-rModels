@@ -1,0 +1,7 @@
+# transparent properties of upper_hall
+  48                                            # number of surfaces followed by tmc index for each surface:
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0
+   1  SC_fictit                                 # layers in tmc type 1
+  0.998  0.987  0.986  0.985  0.984  0.990      # transmission @ 5 angles & visible tr.
+  0.001  0.001  0.001  0.001  0.001             # for each layer absorption @ 5 angles
+   0                                            # optical control flag

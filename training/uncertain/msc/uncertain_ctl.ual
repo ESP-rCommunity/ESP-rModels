@@ -1,0 +1,31 @@
+*Uncertainty analysis library
+   2   1   2 # Changes, Locations, Actions
+#  
+# Changes definitions follow...
+#  
+*cng_def
+ctl_start                # Change id string
+1001 # Change type: Zone control
+   1   1   2   1 # Control parameters
+   2     1.000     0.000   # abs change control loop
+*cng_def
+heat_SP                  # Change id string
+1001 # Change type: Zone control
+   1   1   2   6 # Control parameters
+   2     1.000     0.000   # abs change control loop
+#  
+# Locations definitions follow...
+#  
+*loc_def
+all_year        # Location id string
+   0 # Number of zones
+   1   1 365  24 # Start day, hour, finish day, hour
+#  
+# Action definitions follow...
+#  
+*act_def
+   1 # Uncertanty ref: ctl_start               
+   1 # Location ref: all_year       
+*act_def
+   2 # Uncertanty ref: heat_SP                 
+   1 # Location ref: all_year       

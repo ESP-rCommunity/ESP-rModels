@@ -1,0 +1,63 @@
+*Operations 2.1                               # zone operation definiions for room_bc_conv
+*date Wed Jan  5 08:36:17 2022                # latest file modification
+# infiltration and ventilation notes:
+Assumes 0.5 ach infiltration. No ventilation from other zones and no control imposed on air movement.
+# infiltration and ventilation controls:
+   0      0.00      0.00      0.00            # control index (no control of air flow), low middle high setpoints
+    1                                         # number of flow periods during weekdays
+   0, 24,    0.500    0.000    0     0.00     # start, stop, infil ach ( 0.0056m^3/s)
+    1                                         # number of flow periods during saturday
+   0, 24,    0.500    0.000    0     0.00     # start, stop, infil ach ( 0.0056m^3/s)
+    1                                         # number of flow periods during sunday
+   0, 24,    0.500    0.000    0     0.00     # start, stop, infil ach ( 0.0056m^3/s)
+    1                                         # number of flow periods during holiday
+   0, 24,    0.500    0.000    0     0.00     # start, stop, infil ach ( 0.0056m^3/s)
+# casual gain type definitions:
+*casual
+# notes on casual gains:
+Cellular office some diversity single occupant lights 7W/m2 and small power 6W/m2. Reduced hours weekends.
+# casual label     type-key-word   slot index & attributes
+*type Occupants    people             1   0   0
+*type Lights       lighting           2   0   0
+*type SmallPower   equipment          3   0   0
+*end_type 
+# casual gain schedules:
+    15   # number of casual gains in day type: weekdays    
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,   8,      0.0,      0.0,   0.60,   0.40
+   1,   8,   9,     30.0,     15.0,   0.60,   0.40
+   1,   9,  12,    100.0,     50.0,   0.60,   0.40
+   1,  12,  13,     60.0,     30.0,   0.60,   0.40
+   1,  13,  16,    100.0,     50.0,   0.60,   0.40
+   1,  16,  18,     80.0,     40.0,   0.60,   0.40
+   1,  18,  24,      0.0,      0.0,   0.60,   0.40
+  -2,   0,   8,      0.0,      0.0,   0.30,   0.70
+  -2,   8,  12,      7.0,     11.6,   0.30,   0.70
+  -2,  12,  14,      5.0,      0.0,   0.30,   0.70
+  -2,  14,  18,      7.0,      0.0,   0.30,   0.70
+  -2,  18,  24,      1.0,      0.0,   0.30,   0.70
+  -3,   0,   7,      2.0,      0.0,   0.40,   0.60
+  -3,   7,  17,     11.7,      0.0,   0.40,   0.60
+  -3,  17,  24,      3.0,      0.0,   0.40,   0.60
+    10   # number of casual gains in day type: saturday    
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,   8,      0.0,      0.0,   0.60,   0.40
+   1,   8,   9,     30.0,     15.0,   0.60,   0.40
+   1,   9,  12,    100.0,     50.0,   0.60,   0.40
+   1,  12,  24,      0.0,      0.0,   0.60,   0.40
+  -2,   0,   8,      0.0,      0.0,   0.30,   0.70
+  -2,   8,  12,      7.0,      0.0,   0.30,   0.70
+  -2,  12,  24,      5.0,      0.0,   0.30,   0.70
+  -3,   0,   7,      2.0,      0.0,   0.40,   0.60
+  -3,   7,  14,     11.7,      0.0,   0.40,   0.60
+  -3,  14,  24,      2.0,      0.0,   0.40,   0.60
+     3   # number of casual gains in day type: sunday      
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,  24,      0.0,      0.0,   0.60,   0.40
+  -2,   0,  24,      1.0,      0.0,   0.30,   0.70
+  -3,   0,  24,      2.0,      0.0,   0.40,   0.60
+     3   # number of casual gains in day type: holiday     
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,  24,      0.0,      0.0,   0.60,   0.40
+  -2,   0,  24,      1.0,      0.0,   0.30,   0.70
+  -3,   0,  24,      2.0,      0.0,   0.40,   0.60

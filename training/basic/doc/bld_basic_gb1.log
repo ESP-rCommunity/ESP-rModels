@@ -1,0 +1,7 @@
+System configuration file: /home/joe/basic/bld_basic_gb1.cfg
+Synopsis: multi-zone, convective heating, multi-sensor control
+First created: Tue Jan 19 14:21:40 2021
+Notes:
+This model represents a 3 zone building with convective heating
+under ideal control in which heating is ON only if a specified number
+of zone controllers (here 2) are calling for heat.

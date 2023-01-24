@@ -1,0 +1,11 @@
+System configuration file: /home/joe/basic/bld_basic_gb3.cfg
+Synopsis: multi-zone, convective heating, phased control
+First created: Tue Jan 19 14:21:40 2021
+Notes:
+This model represents a 3 zone building with convective heating
+under a global phased heating strategy control (an energy demand
+reduction strategy adopted in a BEMS). This involves individual
+control loop activation with the precondition that nominated loops
+have ON status. For example, with a 3-loop control scheme with
+sequence LOOP_3/LOOP_1/LOOP_2, LOOP_3 and LOOP_1 output must both
+be non-zero for LOOP_2 to be activated.

@@ -1,0 +1,15 @@
+
+House types
+
+===
+3br_tt_det_Bat.cfg - zero energy house with detailed systems
+
+- LiIon battery included in electrical grid (grid-side AC / DC coupling does not seem to really work, battery charge / discharge is via the control routines)
+- different (experimental) control strategies available:
+	- M2-0: Basic controller w/ battery charged by PV 
+	- M2-1: "grid rate" / "grid refund" based control of battery management
+	- M2-2: as above, changed threshold values
+
+===
+3br_tt_det_MGzk.cfg - based on zero energy house, Swiss Standard internal operational details
+

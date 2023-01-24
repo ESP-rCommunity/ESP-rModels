@@ -1,0 +1,34 @@
+System configuration file: /home/joe/simple/bld_simple_fzy.cfg
+Synopsis: single zone, convective heating, fuzzy logic control
+First created: Tue Jan 19 14:21:40 2021
+Notes:
+This model describes an L-shaped office conditioned via a convective
+heating system with control based on a fuzzy logic algorithm.
+
+5 membership sets are defined as follows.
+    1. negative big (NB)
+    2. negative small (NS)
+    3. zero (ZR)
+    4. positive small (NB)
+    5. positive big (PB)
+
+The control error and change of error at each simulation time-step are
+mapped to a rule table to create a fuzzy output signal with a given input
+normally triggering a number of rules, each contributing to an overall
+fuzzy output signal. For example, if the error is NS and the change of
+error NB then the output will be PB. If, on the other hand, the error
+is PS and the change of error PB then the output is NB.
+
+                       ERROR
+            NB  NS  ZR  PS  PB
+            ------------------
+E  C   NB | PB  PB  PB  PS  ZR
+R  H   NS | PB  PS  PS  ZR  NS
+R  A   ZR | PB  PS  ZR  NS  NB
+O  N   PS | PS  ZR  NS  NS  NB
+R  G   PB | ZR  NS  NB  NB  NB
+   E
+
+The fuzzy output at each simulation time-step is then defuzzified by either 
+the centre-of-area or the mean-of-max methods. For the model considered 
+here, the center-of-area method is employed.

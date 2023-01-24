@@ -1,0 +1,23 @@
+*HC_CTL                         # heat transfer control for main_1
+*Days  1                        # number of control day types
+  1                             # number control intervals for all day types
+ 15                             # number of surfaces
+  0.00  24.00                   # start and end time of interval
+  3                             # adaptive calculation control type
+*Doc,mixed convec. via CVVT no outdoor air
+   4.  17.  40.  25.   0.  99.   4.  -1.  # floor ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # ceiling ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # ceiling-expo ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # front ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # front-aper ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # front-frame ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # front-door ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # right ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # right-aper ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # right-frame ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # right-door ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # back ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # back-aper ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # back-frame ISO 15099 corr buoyancy in chan
+   4.  17.  40.  25.   0.  99.   4.  -1.  # left ISO 15099 corr buoyancy in chan
+  0 0.000 0.000                           # Air origin zone (+ chan. width & height if Bar-Cohen cor.)

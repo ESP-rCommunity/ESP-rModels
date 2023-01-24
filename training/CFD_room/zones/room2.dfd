@@ -1,0 +1,78 @@
+*DFS V2.2 # Zone air movement description.
+*conflation 4  # conflation type
+*title A room with a thermally coupled CFD domain                              
+# user supplied notes for this domain
+*thermal_geom
+*vrts    1   2   4   5
+# Ze is 0 if orthogonal
+*regions    3   3   3   0  # regions in X Y Zw Ze directions
+# Negative cell number enables symetrical gridding.
+*xregion
+ -10   3.75   1.0 # no. cells, length, power law coeff
+   1   0.20   1.0 # no. cells, length, power law coeff
+   1   0.25   1.0 # no. cells, length, power law coeff
+*yregion
+  -4   1.65   1.0 # no. cells, length, power law coeff
+   1   0.30   1.0 # no. cells, length, power law coeff
+  -4   1.65   1.0 # no. cells, length, power law coeff
+*zwregion
+  -6   2.05   1.0 # no. cells, length, power law coeff
+   1   0.20   1.0 # no. cells, length, power law coeff
+  -3   0.75   1.0 # no .cells, length, power law coeff
+# Define the volumes for the CFD domain.
+*volumes   14
+# name  type  Ii If Ji Jf Ki Kf
+Inlet        West     1   1   5   5   7   7
+Outlet       High    11  11   5   5  10  10
+West_low     West     1   1   1   9   1   6
+West_mid1    West     1   1   1   4   7   7
+West_mid2    West     1   1   6   9   7   7
+West_top     West     1   1   1   9   8  10
+South        South    1  12   1   1   1  10
+North        North    1  12   9   9   1  10
+East         East    12  12   1   9   1  10
+Floor        Low      1  12   1   9   1   1
+Ceiling1     High     1  10   1   9  10  10
+Ceiling2     High    11  11   1   4  10  10
+Ceiling3     High    11  11   6   9  10  10
+Ceiling4     High    12  12   1   9  10  10
+# Solid boundary conditions.
+*solids 
+West_low     Temp  20.0 | Confl   0 west        
+West_mid1    Temp  20.0 | Confl   0 west        
+West_mid2    Temp  20.0 | Confl   0 west        
+West_top     Temp  20.0 | Confl   0 west        
+South        Temp  20.0 | Confl   0 south       
+North        Temp  20.0 | Confl   0 north       
+East         Temp  20.0 | Confl   0 east        
+Floor        Temp  20.0 | Confl   0 floor       
+Ceiling1     Temp  20.0 | Confl   0 ceiling     
+Ceiling2     Temp  20.0 | Confl   0 ceiling     
+Ceiling3     Temp  20.0 | Confl   0 ceiling     
+Ceiling4     Temp  20.0 | Confl   0 ceiling     
+# Air flow boundary conditions.
+*air_flow 
+Inlet        Velocity  0.01 Temp 20.0 Hum  0.0 Area  0.0 Ang  0.0  0.0
+Outlet       Velocity -0.01 Temp 20.0 Hum  0.0 Area  0.0 Ang  0.0  0.0
+# Internal sources.
+*contaminants(   0 contaminants, humdity is contaminant number   0 )
+# Blockages.
+*blockages
+*solution_methods
+Turbulence 3 # MIT
+Buoyancy 0 # ignored
+# Equations to be solved:
+*solution_equations
+#  Type  Initial value  Relaxation type and factors
+Pressure    0.000          Linear  0.9  0.05
+Vel U       0.001          Linear  0.5  0.05
+Vel V       0.001          Linear  0.5  0.05
+Vel W       0.001          Linear  0.5  0.05
+Ted         0.005          Linear  0.7  0.05
+Epd         0.0005         Linear  0.7  0.05
+# Iteration control.
+*iteration 
+   5000  0.01 No
+*monitor    6   4   5  ../tmp/CFD2.mon
+*reint  NO
+*svf  1  # frequency of results writing

@@ -1,0 +1,42 @@
+*Constructions 2.1                              # thermophysical properties of roof_space
+*date Fri Sep  3 13:51:10 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     2     0   0.90   0.91   0.70   0.70   0    #   1  br2_ceiling  Floortk_rf
+     2     0   0.90   0.91   0.70   0.70   0    #   2  ceil_staur   Floortk_rf
+     2     0   0.90   0.91   0.70   0.70   0    #   3  wc_ceiling   Floortk_rf
+     2     0   0.90   0.91   0.70   0.70   0    #   4  br1_ceiling  Floortk_rf
+     2     0   0.90   0.91   0.70   0.70   0    #   5  br3_ceiling  Floortk_rf
+     2     0   0.90   0.90   0.90   0.65   0    #   6  r1           Roof
+     4     1   0.91   0.91   0.50   0.74   0    #   7  wc_side_wall conc_blck_rn
+     4     1   0.91   0.91   0.50   0.74   0    #   8  side_wall    conc_blck_rn
+     2     0   0.90   0.90   0.90   0.65   0    #   9  r2           Roof
+# air gap layer positions and restances
+  3  0.170                                      # for wc_side_wall
+  3  0.170                                      # and for side_wall
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+     0.2100     900.0    1000.0  0.0125   0   0.00 0.00000 0.00000  #   1   1 Plasterboard (ceiling)
+     0.0400      25.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #       2 Mineral wool batt
+     0.2100     900.0    1000.0  0.0125   0   0.00 0.00000 0.00000  #   2   1 Plasterboard (ceiling)
+     0.0400      25.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #       2 Mineral wool batt
+     0.2100     900.0    1000.0  0.0125   0   0.00 0.00000 0.00000  #   3   1 Plasterboard (ceiling)
+     0.0400      25.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #       2 Mineral wool batt
+     0.2100     900.0    1000.0  0.0125   0   0.00 0.00000 0.00000  #   4   1 Plasterboard (ceiling)
+     0.0400      25.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #       2 Mineral wool batt
+     0.2100     900.0    1000.0  0.0125   0   0.00 0.00000 0.00000  #   5   1 Plasterboard (ceiling)
+     0.0400      25.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #       2 Mineral wool batt
+     1.1000    2100.0     837.0  0.0127   0   0.00 0.00000 0.00000  #   6   1 concrete tile
+     0.1200     540.0    1210.0  0.0180   0   0.00 0.00000 0.00000  #       2 plywood sheathing
+     0.7900    1329.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   7   1 aged rendering
+     1.0600    1950.0    1000.0  0.2250   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.0000       0.0       0.0  0.0130   0   0.00 0.00000 0.00000  #       3 AIR
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       4 dense plaster
+     0.7900    1329.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   8   1 aged rendering
+     1.0600    1950.0    1000.0  0.2250   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.0000       0.0       0.0  0.0130   0   0.00 0.00000 0.00000  #       3 AIR
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       4 dense plaster
+     1.1000    2100.0     837.0  0.0127   0   0.00 0.00000 0.00000  #   9   1 concrete tile
+     0.1200     540.0    1210.0  0.0180   0   0.00 0.00000 0.00000  #       2 plywood sheathing
+*tmc NONE                                       # all surfaces are opaque

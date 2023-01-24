@@ -1,0 +1,157 @@
+* FileVersion
+      1.00
+* electrical network
+# ESP-r Electrical network file created with configuration file:
+  Duke_st_elec_duct.cfg
+# Network description:
+  A 1250 m^2 PV array on the roof of Car Park
+* net type 
+  balanced
+* base power value (all nodes)
+     1000.00
+* phase angles (for each phase)
+      0.00    120.00    240.00
+# List and details of nodes in the network
+* nodes
+    4
+# Index  Node name   Phase type   Phase Node type         Base volt
+    1  substat       1-phase         1  fixed_V           220.00    0
+    2  PV            1-phase         1  variable          220.00    0
+    3  Light_load    1-phase         1  variable          220.00    0
+    4  turbine       1-phase         1  variable          220.00    0
+** end nodes
+# List and details of load and generator connections to nodes
+* hybrid components
+   14
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    1  spmaterial    PV_comp       1-phase         2    0    0     1    0    0
+# description:
+  The TallMax
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    2  spmaterial    PV_e2         1-phase         2    0    0     2    0    0
+# description:
+  attached to e2 surface
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    3  spmaterial    PV_e3         1-phase         2    0    0     3    0    0
+# description:
+  connected to the e3 surface
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    4  spmaterial    PV_w1         1-phase         2    0    0     4    0    0
+# description:
+  attached to the w1 surface
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    5  spmaterial    PV_w2         1-phase         2    0    0     5    0    0
+# description:
+  attached to the w2 surface
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    6  spmaterial    PV_m1         1-phase         2    0    0     6    0    0
+# description:
+  attached to the m1 surface
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    7  spmaterial    PV_m2         1-phase         2    0    0     7    0    0
+# description:
+  attached to the m2 surface
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    8  spmaterial    PV_m3         1-phase         2    0    0     8    0    0
+# description:
+  attached to the m3 surface
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    9  spmaterial    PV_m4         1-phase         2    0    0     9    0    0
+# description:
+  attached to the m4 surface
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+   10  spmaterial    PV_m5         1-phase         2    0    0    10    0    0
+# description:
+  attached to the m5 surface
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+   11  spmaterial    PV_m6         1-phase         2    0    0    11    0    0
+# description:
+  attached to the m6 surface
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+   12  spmaterial    PV_m7         1-phase         2    0    0    12    0    0
+# description:
+  attached to the m7 surface
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+   13  spmaterial    PV_m8         1-phase         2    0    0    13    0    0
+# description:
+  attached to the m8 surface
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+   14  spmaterial    turbine       1-phase         4    0    0    14    0    0
+# description:
+  3 ducted turbines facing west
+# Number of additional data items:
+    0
+** end hybrid
+# List and details of power only components
+* power-only components
+    1
+# No.   i.d.  Comp. name   Phase type  links to nodes 
+    1   24  CP_loads      1-phase         3    0    0
+# description:
+  measured loads from Car Park
+# Number of additional data items:
+    2    0
+    1.0000        1.0000
+** end power-only 
+# Listing and Description of components connecting the nodes
+* connecting components
+    1
+# Index db  Component     Phase
+#       ref name          type
+    1    2  cable         1-phase
+# description: 
+  bus bar for PV
+# Number of additional data items:
+    6
+   0.10000E-02   0.10000E-04   0.10000E-02   0.10000E-04   0.10000E-04    1.0000
+** end connecting components
+# Connections between nodes in the network 
+* connections
+    3
+# Connection        Phases  Connection  Start nodes       End nodes
+# Index type        1 2 3   component   pha1 pha2 pha3    pha1 pha2 pha3
+    1  1-phase      1 0 0     1         1    0    0       2    0    0
+    2  1-phase      1 0 0     1         1    0    0       3    0    0
+    3  1-phase      1 0 0     1         1    0    0       4    0    0
+** end connections
+** electrical network end

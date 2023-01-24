@@ -1,0 +1,29 @@
+*Uncertainty analysis library
+   1   2   1 # Changes, Locations, Actions
+#  
+# Changes definitions follow...
+#  
+*cng_def
+Brk_blk_aerated          # Change id string
+   2 # Change type: Constructions           
+  13 Brk_blk_1980  4                    # material & construction name
+   1     5.000     0.000 # Data
+#  
+# Locations definitions follow...
+#  
+*loc_def
+all_Brk_blk_19  # Location id string
+   1 # Number of zones
+   1   4 # Zone number, Number of surfaces
+  1  2  3  4
+*loc_def
+all_mineral_fi  # Location id string
+   1 # Number of zones
+   1   4 # Zone number, Number of surfaces
+  1  2  3  4
+#  
+# Action definitions follow...
+#  
+*act_def
+   1 # Uncertanty ref: Brk_blk_aerated         
+   1 # Location ref: all_Brk_blk_19 

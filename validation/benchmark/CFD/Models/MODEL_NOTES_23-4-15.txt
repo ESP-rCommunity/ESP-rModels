@@ -1,0 +1,619 @@
+basic.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: none
+heat/contaminant sources: none
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.5,0.5,0.5 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.7,0.7 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline test
+
+basiclma.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: none
+heat/contaminant sources: none
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.5,0.5,0.5 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: solved, relaxation factor 0.6
+turbulence: k-epsilon model, relaxation factors 0.7,0.7 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + local mean age of air solved
+
+basicsol.dfd
+room dimensions: 2x3x1m
+grid resolution: 10x12x8
+inlet: on south wall (about 3/4 of the way up in x direction, in the middle of the wall in z direction), 2x2 cells, 0.3732x0.217m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on east wall (close to the north wall in y direction, in the middle in z direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: none
+heat/contaminant sources: none
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.5,0.5,0.5 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.7,0.7 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 8,6,4
+NOTES: baseline + geometry rotated 90 degrees clockwise around x axis (from -ve x -> +ve x perpective) and 90 degrees anti-clockwise around z axes (from plan view perspective)
+
+lma.dfd
+room dimensions: 1x2x3m
+grid resolution: 8x10x12
+inlet: on floor (in the middle in x direction, about 3/4 of the way along in y direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on north wall (in the middle in x direction, close to the ceiling), 2x2 cells, 0.217x0.4847m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: none
+heat/contaminant sources: none
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.5,0.5,0.5 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: solved, relaxation factor 0.6
+turbulence: k-epsilon model, relaxation factors 0.7,0.7 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 4,8,6
+NOTES: baseline + geometry rotated 90 degrees anti-clockwise around y axis (from -ve y -> +ve y perpective) and 90 degrees clockwise around z axes (from plan view perspective) + local mean age of air solved
+
+block.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: 3 blockages, all 0 heat flux
+  blockage 1: about 1/3 of the way along in x direction, just under 1/2 way along in y direction, sitting on the floor, 2x2x2 cells, 0.4916x0.2226x0.4699m
+  blockage 2: against east wall, against north wall, against ceiling, 2x2x2 cells, 0.4641x0.2774x0.3639m
+  blockage 3: abou 2/3 of the way along in x direction, against south wall, sitting on the floor, 2x2x2 cells, 0.5839x0.2774x0.4699m
+heat/contaminant sources: none
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.5,0.5,0.5 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.7,0.7 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + 3 blockages
+
+blockc.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: 3 blockages, all 0 heat flux
+  blockage 1: about 1/3 of the way along in x direction, just under 1/2 way along in y direction, sitting on the floor, 2x2x2 cells, 0.4916x0.2226x0.4699m
+  blockage 2: against east wall, against north wall, against ceiling, 2x2x2 cells, 0.4641x0.2774x0.3639m
+  blockage 3: abou 2/3 of the way along in x direction, against south wall, sitting on the floor, 2x2x2 cells, 0.5839x0.2774x0.4699m
+heat/contaminant sources: 1 contaminant source
+  source 1: all cells, 0 heat flux, not associated with any casual gains, 0.000015 contaminant injection
+pressure: solved, relaxation factor 1
+velocity: solved, relaxation factors 0.5,0.5,0.5 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.7,0.7 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: solved, relexation factor 0.7
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + 3 blockages + contaminant
+
+blockh.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: 3 blockages, all 0 heat flux
+  blockage 1: about 1/3 of the way along in x direction, just under 1/2 way along in y direction, sitting on the floor, 2x2x2 cells, 0.4916x0.2226x0.4699m
+  blockage 2: against east wall, against north wall, against ceiling, 2x2x2 cells, 0.4641x0.2774x0.3639m
+  blockage 3: abou 2/3 of the way along in x direction, against south wall, sitting on the floor, 2x2x2 cells, 0.5839x0.2774x0.4699m
+heat/contaminant sources: 1 contaminant source (humidity)
+  source 1: all cells, 0 heat flux, not associated with any casual gains, 0.000015 contaminant injection
+pressure: solved, relaxation factor 1
+velocity: solved, relaxation factors 0.5,0.5,0.5 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.7,0.7 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: solved, relaxation factor 0.7
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + 3 blockages + humidity source
+
+blockt.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: 3 blockages
+  blockage 1: about 1/3 of the way along in x direction, just under 1/2 way along in y direction, sitting on the floor, 2x2x2 cells, 0.49x0.22x0.47m, heat flux 1 W/m^2
+  blockage 2: against east wall, against north wall, against ceiling, 2x2x2 cells, 0.46x0.28x0.36m, heat flux 2 W/m^2
+  blockage 3: abou 2/3 of the way along in x direction, against south wall, sitting on the floor, 2x2x2 cells, 0.5839x0.2774x0.4699m, heat flux 3 W/m^2
+heat/contaminant sources: none
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.2,0.2,0.05 (x,y,z directions)
+temperature: solved, relaxation factor 0.5
+bouyancy: solved, ideal gas law
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.6,0.6 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + 3 blockages with heat flux + temperature and bouyancy solved + reduced relaxation factors and max iterations x10
+
+blocklma.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: 3 blockages, all 0 heat flux
+  blockage 1: about 1/3 of the way along in x direction, just under 1/2 way along in y direction, sitting on the floor, 2x2x2 cells, 0.4916x0.2226x0.4699m
+  blockage 2: against east wall, against north wall, against ceiling, 2x2x2 cells, 0.4641x0.2774x0.3639m
+  blockage 3: abou 2/3 of the way along in x direction, against south wall, sitting on the floor, 2x6x8 cells, 0.5839x0.2774x0.4699m
+heat/contaminant sources: none
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.5,0.5,0.5 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: solved, relaxation factor 0.7
+turbulence: k-epsilon model, relaxation factors 0.7,0.7 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + 3 blockages + blockage 3 is much bigger + local mean age of air solved
+
+block2.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: 3 blockages, all 0 heat flux
+  blockage 1: about 1/3 of the way along in x direction, just under 1/2 way along in y direction, sitting on the floor, 2x2x2 cells, 0.4916x0.2226x0.4699m
+  blockage 2: in the middle in x direction, in the middle in y direction, just over 1/2 way up in z direction, 6x4x1 cells, 1.6708x0.4452x0.1911m
+  blockage 3: in the middle in x direction, in the middle in y direction, just over 3/4 of the  way up in z direction, 6x4x1 cells, 1.6708x0.4452x0.1853m
+heat/contaminant sources: none
+pressure: solved, relaxation factor 0.5
+velocity: solved, relexation factors 0.2,0.2,0.2 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.3,0.3 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,7
+NOTES: baseline + 3 blockages + blockage 2 & 3 are bigger and form narrow horizontal channel in line with inlet stream + reduced relaxation factors + slightly different monitoring cell (in channel formed by blockages)
+
+block3.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: 3 blockages, all 0 heat flux
+  blockage 1: about 1/3 of the way along in x direction, just under 1/2 way along in y direction, sitting on the floor, 2x2x2 cells, 0.4916x0.2226x0.4699m
+  blockage 2: about 1/3 of the way along in x direction, in the middle in y direction, against ceiling, 1x6x6 cells, 0.2541x0.6922x1.1232m
+  blockage 3: just over 1/2 way along in x direction, in the middle in y direction, against ceiling, 1x6x6 cells, 0.2783x0.6922x1.1232m
+heat/contaminant sources: none
+pressure: solved, relaxation factor 0.1
+velocity: solved, relexation factors 0.05,0.05,0.05 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.6,0.6 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0005 @ cell 9,2,2
+NOTES: baseline + 3 blockages + blockage 2 & 3 are bigger and form narrow vertical channel (though not in line with outlet) + reduced relaxation factors, max iterations x2, max residual x5 + different monitoring cell near east-south-low corner of room (not in vertical channel)
+
+porous.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, against ceiling), 2x4 cells, 0.217x0.7371m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (against east wall, in the middle in y direction), 3x2 cells, 0.7127x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: 18 blockages, all 0 heat flux
+  blockage 1: about 1/3 of the way along in x direction, just under 1/4 of the way along in y direction, against ceiling, 1x1x1 cell, 0.2541x0.1235x0.1809m
+  blockage 2: about 1/3 of the way along in x direction, just under 1/2 of the way along in y direction, against ceiling, 1x1x1 cell, 0.2541x0.1085x0.1809m
+  blockage 3: about 1/3 of the way along in x direction, just under 3/4 of the way along in y direction, against ceiling, 1x1x1 cell, 0.2541x0.1141x0.1809m
+  blockage 4: about 1/3 of the way along in x direction, just over 1/4 of the way along in y direction, just below blockages 1-3, 1x1x1 cell, 0.2541x0.1141x0.1830m
+  blockage 5: about 1/3 of the way along in x direction, just over 1/2 of the way along in y direction, just below blockages 1-3, 1x1x1 cell, 0.2541x0.1085x0.1830m
+  blockage 6: about 1/3 of the way along in x direction, just over 3/4 of the way along in y direction, just below blockages 1-3, 1x1x1 cell, 0.2541x0.1235x0.1830m
+  blockage 7: about 1/3 of the way along in x direction, just under 1/4 of the way along in y direction, just below blockages 4-6, 1x1x1 cell, 0.2541x0.1235x0.1853m
+  blockage 8: about 1/3 of the way along in x direction, just under 1/2 of the way along in y direction, just below blockages 4-6, 1x1x1 cell, 0.2541x0.1085x0.1853m
+  blockage 9: about 1/3 of the way along in x direction, just under 3/4 of the way along in y direction, just below blockages 4-6, 1x1x1 cell, 0.2541x0.1141x0.1853m
+  blockage 10: about 1/3 of the way along in x direction, just over 1/4 of the way along in y direction, just below blockages 7-9, 1x1x1 cell, 0.2541x0.1141x0.1879m
+  blockage 11: about 1/3 of the way along in x direction, just over 1/2 of the way along in y direction, just below blockages 7-9, 1x1x1 cell, 0.2541x0.1085x0.1879m
+  blockage 12: about 1/3 of the way along in x direction, just over 3/4 of the way along in y direction, just below blockages 7-9, 1x1x1 cell, 0.2541x0.1235x0.1879m
+  blockage 13: about 1/3 of the way along in x direction, just under 1/4 of the way along in y direction, just below blockages 10-12, 1x1x1 cell, 0.2541x0.1235x0.1911m
+  blockage 14: about 1/3 of the way along in x direction, just under 1/2 of the way along in y direction, just below blockages 10-12, 1x1x1 cell, 0.2541x0.1085x0.1911m
+  blockage 15: about 1/3 of the way along in x direction, just under 3/4 of the way along in y direction, just below blockages 10-12, 1x1x1 cell, 0.2541x0.1141x0.1911m
+  blockage 16: about 1/3 of the way along in x direction, just over 1/4 of the way along in y direction, just below blockages 13-15, 1x1x1 cell, 0.2541x0.1141x0.1950m
+  blockage 17: about 1/3 of the way along in x direction, just over 1/2 of the way along in y direction, just below blockages 13-15, 1x1x1 cell, 0.2541x0.1085x0.1950m
+  blockage 18: about 1/3 of the way along in x direction, just over 3/4 of the way along in y direction, just below blockages 13-15, 1x1x1 cell, 0.2541x0.1235x0.1950m
+heat/contaminant sources: none
+pressure: solved, relaxation factor 0.25
+velocity: solved, relexation factors 0.1,0.1,0.2 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.3,0.3 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0015 @ cell 9,2,2
+NOTES: baseline + larger inlet and outlet openings + grid of blockages effectively forming chequerboard in y-z plane + lower relaxation factors and max residual x15 + different monitoring cell close to east-south-low corner
+
+tst33vol.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: 19 blockages, all 0 heat flux
+  blockage 1: about 1/3 of the way along in x direction, just under 1/2 way along in y direction, sitting on the floor, 2x2x2 cells, 0.4916x0.2226x0.4699m
+  blockage 2: about 1/3 of the way along in x direction, just under 1/4 of the way along in y direction, against ceiling, 1x1x1 cell, 0.2541x0.1235x0.1809m
+  blockage 3: about 1/3 of the way along in x direction, just under 1/2 of the way along in y direction, against ceiling, 1x1x1 cell, 0.2541x0.1085x0.1809m
+  blockage 4: about 1/3 of the way along in x direction, just under 3/4 of the way along in y direction, against ceiling, 1x1x1 cell, 0.2541x0.1141x0.1809m
+  blockage 5: about 1/3 of the way along in x direction, just over 1/4 of the way along in y direction, just below blockages 2-4, 1x1x1 cell, 0.2541x0.1141x0.1830m
+  blockage 6: about 1/3 of the way along in x direction, just over 1/2 of the way along in y direction, just below blockages 2-4, 1x1x1 cell, 0.2541x0.1085x0.1830m
+  blockage 7: about 1/3 of the way along in x direction, just over 3/4 of the way along in y direction, just below blockages 2-4, 1x1x1 cell, 0.2541x0.1235x0.1830m
+  blockage 8: about 1/3 of the way along in x direction, just under 1/4 of the way along in y direction, just below blockages 5-7, 1x1x1 cell, 0.2541x0.1235x0.1853m
+  blockage 9: about 1/3 of the way along in x direction, just under 1/2 of the way along in y direction, just below blockages 5-7, 1x1x1 cell, 0.2541x0.1085x0.1853m
+  blockage 10: about 1/3 of the way along in x direction, just under 3/4 of the way along in y direction, just below blockages 5-7, 1x1x1 cell, 0.2541x0.1141x0.1853m
+  blockage 11: about 1/3 of the way along in x direction, just over 1/4 of the way along in y direction, just below blockages 8-10, 1x1x1 cell, 0.2541x0.1141x0.1879m
+  blockage 12: about 1/3 of the way along in x direction, just over 1/2 of the way along in y direction, just below blockages 8-10, 1x1x1 cell, 0.2541x0.1085x0.1879m
+  blockage 13: about 1/3 of the way along in x direction, just over 3/4 of the way along in y direction, just below blockages 8-10, 1x1x1 cell, 0.2541x0.1235x0.1879m
+  blockage 14: about 1/3 of the way along in x direction, just under 1/4 of the way along in y direction, just below blockages 11-13, 1x1x1 cell, 0.2541x0.1235x0.1911m
+  blockage 15: about 1/3 of the way along in x direction, just under 1/2 of the way along in y direction, just below blockages 11-13, 1x1x1 cell, 0.2541x0.1085x0.1911m
+  blockage 16: about 1/3 of the way along in x direction, just under 3/4 of the way along in y direction, just below blockages 11-13, 1x1x1 cell, 0.2541x0.1141x0.1911m
+  blockage 17: about 1/3 of the way along in x direction, just over 1/4 of the way along in y direction, just below blockages 14-16, 1x1x1 cell, 0.2541x0.1141x0.1950m
+  blockage 18: about 1/3 of the way along in x direction, just over 1/2 of the way along in y direction, just below blockages 14-16, 1x1x1 cell, 0.2541x0.1085x0.1950m
+  blockage 19: about 1/3 of the way along in x direction, just over 3/4 of the way along in y direction, just below blockages 14-16, 1x1x1 cell, 0.2541x0.1235x0.1950m
+heat/contaminant sources: none
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.12,0.12,0.12 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.1,0.1 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 9,2,2
+NOTES: baseline + grid of blockages effectively forming chequerboard in y-z plane & 1 extra larger blockage + lower relaxation factors and max iterations x~3 + different monitoring cell close to east-south-low corner
+
+displ.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 25 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: mostly 0 heat flux (effectively adiabatic)
+  lower half of south wall: heat flux 100 W (radiator?)
+  lower half of north wall: constant temperature 40 degrees C (radiator?)
+blockages: none
+heat/contaminant sources: none
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.3,0.3,0.1 (x,y,z directions)
+temperature: solved, relaxation factor 0.8
+bouyancy: solved, ideal gas law, relaxation factor 0.2
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.4,0.4 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + radiators (?) on north and south walls + bouyancy and temperature solved + higher air inlet temp + lower relaxation factors and max iterations x~6
+
+displ_si.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 25 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: mostly 0 heat flux (effectively adiabatic)
+  lower half of south wall: heat flux -100 W (heat sink)
+  lower half of north wall: constant temperature -40 degrees C (heat sink)
+blockages: none
+heat/contaminant sources: none
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.4,0.4,0.2 (x,y,z directions)
+temperature: solved, relaxation factor 0.8
+bouyancy: solved, ideal gas law, relaxation factor 0.5
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.5,0.5 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + heat sinks on north and south walls + bouyancy and temperature solved + higher air inlet temp + lower relaxation factors and max iterations x~3
+
+co2_so.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: none
+heat/contaminant sources: 1 contaminant, 2 sources
+  contaminant: co2, turbulent schmidt number 0.94
+  source 1: near west-south-low corner, 1x1x1 cell, 0.2375x0.1141x0.2069m, co2 injection rate 1.5e-5 kg/s
+  source 2: near east wall, against south wall, sitting on floor, 2x1x1 cells, 0.4847x0.1539x0.2518m, co2 injection rate 1.5e-5 kg/s
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.5,0.5,0.5 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.7,0.7 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: solved, relaxation factor 0.7
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + contaminant and 2 sources
+
+hum_so.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: none
+heat/contaminant sources: 2 contaminants, 2 sources
+  contaminant 1: null, turbulent schmidt number 1
+  contaminant 2: h2o (humidity), turbulent schmidt number 0.59
+  source 1: near west-south-low corner, 1x1x1 cell, 0.2375x0.1141x0.2069m, null injection rate 1.666e-5 kg/s
+  source 2: near east wall, against south wall, sitting on floor, 2x1x1 cells, 0.4847x0.1539x0.2518m, h2o injection rate 1.666e-5 kg/s
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.5,0.5,0.5 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.7,0.7 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: solved, relaxation factors 0.7,0.7 (null, h2o)
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + 2 contaminants and 2 sources
+
+sso.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.025m/s
+sso (small supply opening): on west wall (just under 1/2 way along in y direction, against the floor), 1x1 cell, flow rate 0.005, @ 20 degrees C, prescribed area 0.014
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: none
+heat/contaminant sources: none
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.5,0.5,0.5 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.7,0.7 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + small supply opening and increased outlet flow rate to compensate + max iterations x~3
+
+tm1.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 25 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: none
+heat/contaminant sources: none
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.5,0.5,0.5 (x,y,z directions)
+temperature: solved, relaxation factor 0.9
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.7,0.7 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + higher inlet temperature + temperature solved + max iterations x~3
+
+tm1a.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 25 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: none
+heat/contaminant sources: none
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.4,0.4,0.2 (x,y,z directions)
+temperature: solved, relaxation factor 0.7
+bouyancy: solved, ideal gas law
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.5,0.5 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + higher inlet temperature + temperature and bouyancy solved +lower relaxation factors and max iterations x~6
+
+tm1b.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 15 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: none
+heat/contaminant sources: none
+pressure: solved, relaxation factor 0.9
+velocity: solved, relexation factors 0.4,0.4,0.4 (x,y,z directions)
+temperature: solved, relaxation factor 0.9
+bouyancy: solved, Boussinesque approximation, reference temperature 15 degrees C
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.5,0.5 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + lower inlet temperature + temperature and bouyancy solved + lower relaxation factors and max iterations x~2
+
+tm1_so.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: none
+heat/contaminant sources: 2 sources
+  source 1: near west-south-low corner, 1x1x1 cell, 0.2375x0.1141x0.2069m, heat flux -60 W
+  source 2: near east wall, against south wall, sitting on floor, 2x1x1 cells, 0.4847x0.1539x0.2518m, heat flux -60 W
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.2,0.2,0.05 (x,y,z directions)
+temperature: solved, relaxation factor 0.8
+bouyancy: solved, ideal gas law, relaxation factor 0.5
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.4,0.4 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + temperature and bouyancy solved solved + lower relaxation factors and max iterations x~6 + 2 heat sinks inside the room
+
+tm2_so.dfd
+room dimensions: 3x1x2m
+grid resolution: 12x8x10
+inlet: on west wall (in the middle of the wall in y direction, about 3/4 of the way up in z direction), 2x2 cells, 0.217x0.3732m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on ceiling (close to the east wall in x direction, in the middle in y direction), 2x2 cells, 0.4847x0.217m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: none
+heat/contaminant sources: 2 sources
+  source 1: near west-south-low corner, 1x1x1 cell, 0.2375x0.1141x0.2069m, heat flux 60 W
+  source 2: near east wall, against south wall, sitting on floor, 2x1x1 cells, 0.4847x0.1539x0.2518m, heat flux 60 W
+pressure: solved, relaxation factor 1
+velocity: solved, relexation factors 0.4,0.4,0.2 (x,y,z directions)
+temperature: solved, relaxation factor 0.8
+bouyancy: solved, Boussinesque approximation, reference temperature 20 degrees C
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.5,0.5 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 6,4,8
+NOTES: baseline + temperature and bouyancy solved solved + lower relaxation factors and max iterations x~3 + 2 heat sources inside the room
+
+bi-cg.dfd
+room dimensions: 14x8.6x9.04m
+grid resolution: 28x29x30
+inlet 1: on south wall (close to the west wall in x direction, just under 1/4 of the way up in z direction), 3x1 cells, 1.5x0.377m, flow rate 0.025m/s, @ 20 degrees C
+Inlet 2: on south wall (about 1/3 of the way along in x direction, just under 1/4 of the way up in z direction), 3x1 cells, 1.5x0.377m, flow rate 0.025m/s, @ 20 degrees C
+inlet 3: on south wall (about 1/2 way along in x direction, just under 1/4 of the way up in z direction), 3x1 cells, 1.5x0.377m, flow rate 0.025m/s, @ 20 degrees C
+inlet 4: on south wall (about 2/3 of the way along in x direction, just under 1/4 of the way up in z direction), 3x1 cells, 1.5x0.377m, flow rate 0.025m/s, @ 20 degrees C
+outlet 1: on south wall (close to the west wall in x direction, just over 3/4 of the way up in z direction), 3x1 cells, 1.5x0.3161m, flow rate 0.025m/s
+outlet 2: on south wall (about 1/3 of the way along in x direction, just over 3/4 of the way up in z direction), 3x1 cells, 1.5x0.3161m, flow rate 0.025m/s
+outlet 3: on south wall (about 1/2 way along in x direction, just over 3/4 of the way up in z direction), 3x1 cells, 1.5x0.3161m, flow rate 0.025m/s
+outlet 4: on south wall (about 2/3 of the way along in x direction, just over 3/4 of the way up in z direction), 3x1 cells, 1.5x0.3161m, flow rate 0.025m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: none
+heat/contaminant sources: none
+pressure: solved, relaxation factor 0.25
+velocity: solved, relexation factors 0.75,0.75,0.75 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: not solved
+turbulence: k-epsilon model, relaxation factors 0.5,0.5 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.0001 @ cell 14,13,15
+NOTES: used to compare solver lisolv3 ("default" in DFS, basically gaussian elimination, see section 4.6 of Negrao's thesis for details) and lisolv4 ("bi-c-grad" in DFS, biconjugate gradient method)
+
+hugegrid.dfd
+room dimensions: 6x1x1.5m
+grid resolution: 117x62x44
+inlet: on west wall (occupies ALL of west wall!), 62x44 cells, 1x1.5m, flow rate 0.02m/s, @ 20 degrees C
+outlet: on east wall (occupies all of east wall), 62x44 cells, 1x1.5m, flow rate 0.02m/s
+boundary conditions: 0 heat flux (effectively adiabatic)
+blockages: 1 blockage, 0 heat flux
+  blockage: near the middle of the room, 20x10x10 cells, ?x?x?m
+heat/contaminant sources: none
+pressure: solved, relaxation factor 0.4
+velocity: solved, relexation factors 0.3,0.3,0.3 (x,y,z directions)
+temperature: not solved
+bouyancy: not solved
+local mean age of air: solved, relaxation factor 0.6
+turbulence: k-epsilon model, relaxation factors 0.4,0.4 (turbulence energy, turbulence energy dissipation rate)
+contaminant dispersion: not solved
+humidity: not solved
+convergence criteria: max. residual 0.00001 @ cell 6,4,8
+NOTES: As it says on the tin a huge grid, with a huge inlet, a huge outlet, and a pretty big blockage. Does not appear to be referenced in any of the shell scripts, and breaks DFS if you attempt to read it in (grid exceeds limits defined in CFD headers).
+
+
+
+*** CONCLUSIONS ***
+
+Models may be broken up into several sets:
+
+1. basic set
+contains: basic.dfd, basiclma.dfd, basicsol.dfd, lma.dfd, sso.dfd
+internal comparisons: 
+  basic -> basiclma = shows influence of solving local mean age of air
+  basic -> basicsol = shows result of rotating geometry
+  basic -> lma      = shows result of rotating geometry (though differently to basicsol) AND solving local mean age of air
+  basic -> sso      = shows result of including an extra small supply opening and increasing total inlet and outlet air flow 
+
+2. blockage set
+contains: block.dfd, blockc.dfd, blockh.dfd, blockt.dfd, blocklma.dfd, block2.dfd, block3.dfd, porous.dfd (make opening areas consistent?), tst33vol.dfd
+internal comparisons:
+  block -> blockc    = shows result of including a gaseous contaminant with a single source on a model with blockages
+  block -> blockh    = shows result of including a humidity contaminant with a single source on a model with blockages
+  block -> blockt    = shows result of making blockages heat sources and solving temperature and bouyancy (with ideal gas law) (also has different relaxation factors and convergence criteria)
+  block -> blocklma  = i think this should show the result of solving local mean age of air on a model with blockages, however currently one of the blockages is much bigger; I'm fairly certain this is a mistake, I certainly can't see any reason for it
+  block -> block2    = compares two different blockage arrangements, the latter creating a horizontal channel through which the inlet air should flow (also has different relaxation factors, convergence criteria and monitoring cell)
+  block -> block3    = again compares two different blockage arrangements, the latter creating a vertical channel, though this is not alligned with any in/out-lets; personally i think it might be more useful to move this channel to align with the outlet (also has different relaxation factors, convergence criteria and monitoring cell; i think it may be be useful to make the monitoring cell more consistent between block and/or block2 and/or block3)
+  block2 -> block3   = see above
+  porous -> tst33vol = would show result of introducing a single additional blockage, if the two were made consistent in terms of in/outlet area (and possibly relaxation factors and convergence criteria)
+other comparisons:
+  basic -> block     = shows result of introducing 3 small blockages
+  basic -> porous    = would show result of introducing a large "chequerboard" pattern of blockages in the y-z plane, again if the in/outlet areas were made consistent (and possibly the relaxation factors, convergence criteria and monitoring cell)
+
+3. radiant panel set
+contains: displ.dfd, displ_si.dfd
+internal comparisons:
+  displ -> displ_si = compares heat sources and heat sinks in terms of radiant panels on opposite walls (though could be worth making relaxation factors and convergence criteria a little more consistent)
+other comparisons:
+  basic -> displ    = shows result of including heated radiant panels and solving temperature and bouyancy (with ideal gas law)
+  basic -> displ_si = as above, but with cooled radiant panels
+
+4. contaminants set
+contains: co2_so.dfd, hum_so.dfd
+internal comparisons:
+  co2_so -> hum_so = compares different contaminant cases; the former with 2 sources of a single gaseous contaminant and the latter with a source each of 2 contaminants, one gaseous (?) and one humidity
+other comparisons:
+  basic -> co2_so  = compares with and without contaminants
+  basic -> hum_so  = as above, but with a different case of contaminants
+
+5. temperature set
+contains: tm1.dfd, tm1a.dfd, tm1b.dfd, tm1_so.dfd, tm2_so.dfd
+internal comparisons:
+  tm1 -> tm1a      = shows result of solving bouyancy (ideal gas law) as well as temperature (also relaxation factors and convergence criteria are different)
+  tm1 -> tm1b      = would show result of solving bouyancy (Boussinesque approximation), if the inlet temperatures were made consistent (also relaxation factors and convergence criteria are different)
+  tm1a -> tm1b     = would directly compare ideal gas law and Boussinesque approximation if the two were made compatible in terms of inlet temperature (and possibly relaxation factors and convergence criteria)
+  tm1a -> tm1_so   = would show the result of including heat sinks inside the room, if the inlet temperatures were made consistent (also relaxation factors and convergence criteria are different)
+  tm1b -> tm2_so   = would show the result of including heat sources inside the room, if the inlet temperatures were made consistent (also relaxation factors and convergence criteria are different)
+  tm1_so -> tm2_so = could directly compare heat sinks and sources, if bouyancy formulation was made consistent (also relaxation factors and convergence criteria are different)
+other comparisons:
+  basic -> tm1     = would show result of solving temperature, if the inlet temperature was made consistent
+
+6. others
+contains: bi-cg.dfd, hugegrid.dfd [see individual notes for these above]
+
+

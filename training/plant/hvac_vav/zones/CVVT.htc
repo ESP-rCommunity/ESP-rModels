@@ -1,0 +1,16 @@
+*HC_CTL                         # heat transfer control for east
+*Days  1                        # number of control day types
+  1                             # number control intervals for all day types
+  7                             # number of surfaces
+# (east north internal south ceiling floor glazing)
+  0.00  24.00                   # start and end time of interval
+  3                             # adaptive calculation control type
+*Doc,Sets HC so that when AHU is active increased hc are used. Mixed convecti
+   4.   6.  43.  13.   2.  99.   4.  -1.
+   4.   6.  43.  13.   2.  99.   4.  -1.
+   4.   6.  43.  13.   2.  99.   4.  -1.
+   4.   6.  43.  13.   2.  99.   4.  -1.
+   4.   6.  43.  13.   2.  99.   4.  -1.
+   4.   6.  43.  13.   2.  99.   4.  -1.
+   4.   6.  43.  13.   2.  99.   4.  -1.
+  0 0.000 0.000                 # Air origin zone (+ chan. width & height if Bar-Cohen cor.)

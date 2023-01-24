@@ -1,0 +1,49 @@
+Project notes for 3BR_block_bungalow.cfg
+Title: 1930s block and render,, 3 bedroom bungalow 
+In folder: validation/DSM/3BR_block_bungalow
+By: JH
+Date: Mon Feb 20 14:02:05 2012
+
+Synopsis:
+This model represents a 1930s, 3 bedroom buglaow located
+in the north of Scotland. The construction is block and
+render and windows that have been upgraded to double glazing.
+A single garage is attached to the side.
+
+Use variants:
+ p1m - occupants working and careful with electricity use;
+ p2m - one adult and child at home during afternoons and
+       careful with electricity use;
+ p2h - one adult and child at home durig afternoons with
+       high electricity use..
+
+Control variants:
+ cool - heating to 17 C in bedrooms and 19 C in living areas
+ avg  - heating to 19 C in bedrooms and 21 C in living areas
+ warm - heating to 21 C in bedrooms and 23 C in living areas
+        ( resulting in some summertime heating)
+
+Operational conditions:
+ bedrooms - p1m p2m p2h variants
+ study - p1m p2m p2h variants
+ hall - p1m p2m p2h variants
+ living - p1m p2m p2h variants
+ kitchen - p1m p2m p2h variants
+ kitchen_liv - p1m p2m p2h variants
+ crawl, garage, roof_space & storage - unoccupied
+
+Model configurations:
+ 3BR_block_bungalow.cfg          - minimally attributed model on 
+                                   which variants are imposed
+ 3BR_block_bungalow_p1m_avg.cfg  - activity p1m with average control
+ 3BR_block_bungalow_p1m_cool.cfg - activity p1m with cool comtrol
+ 3BR_block_bungalow_p1m_warm.cfg - activity p1m with warm control
+ 3BR_block_bungalow_p2h_avg.cfg  - activity p2h with average control
+ 3BR_block_bungalow_p2h_cool.cfg - activity p2h with cool control
+ 3BR_block_bungalow_p2h_warm.cfg - activity p2h with warm control
+ 3BR_block_bungalow_p2m.cfg      - model without zone operations
+ 3BR_block_bungalow_p2m_avg.cfg  - activity p2m with average control
+ 3BR_block_bungalow_p2m_cool.cfg - activity p2m with cool control
+ 3BR_block_bungalow_p2m_warm.cfg - activity p2m with warm control
+
+  

@@ -1,0 +1,147 @@
+*FMI_SPEC 2.0
+*numFMUs  1
+#
+# -- FMU  1 --
+*FileName obFMU.fmu                                                               
+*Description obFMU test                    
+*Timeout    0.0
+*Logging 1
+#
+# - INPUTS -
+*Inputs 12
+#
+*Zone  1  # manager_a
+*ESPvar  1  # Zone_mean_drybulb_temperature
+*Instance obm_manager_a
+*FMUvar Zone_Temperature
+#
+*Zone  1  # manager_a
+*ESPvar  2  # Zone_illumination
+*Instance obm_manager_a
+*FMUvar Zone_illum
+#
+*Zone  1  # manager_a
+*ESPvar  3  # Zone_CO2_concentration
+*Instance obm_manager_a
+*FMUvar Zone_co2
+#
+*Zone  1  # manager_a
+*ESPvar  4  # Zone_lights_power
+*Instance obm_manager_a
+*FMUvar Zone_Light_Power
+#
+*Zone  0  # ambient environment
+*ESPvar  5  # Ambient_drybulb_temperature
+*Instance obm_manager_a
+*FMUvar OutdoorAir_Drybulb_Temperature
+#
+*Zone  0  # ambient environment
+*ESPvar  6  # Ambient_rain_indicator
+*Instance obm_manager_a
+*FMUvar Outdoor_Rain_Indicator
+#
+*Zone  2  # manager_b
+*ESPvar  1  # Zone_mean_drybulb_temperature
+*Instance obm_manager_b
+*FMUvar Zone_Temperature
+#
+*Zone  2  # manager_b
+*ESPvar  2  # Zone_illumination
+*Instance obm_manager_b
+*FMUvar Zone_illum
+#
+*Zone  2  # manager_b
+*ESPvar  3  # Zone_CO2_concentration
+*Instance obm_manager_b
+*FMUvar Zone_co2
+#
+*Zone  2  # manager_b
+*ESPvar  4  # Zone_lights_power
+*Instance obm_manager_b
+*FMUvar Zone_Light_Power
+#
+*Zone  0  # ambient environment
+*ESPvar  5  # Ambient_drybulb_temperature
+*Instance obm_manager_b
+*FMUvar OutdoorAir_Drybulb_Temperature
+#
+*Zone  0  # ambient environment
+*ESPvar  6  # Ambient_rain_indicator
+*Instance obm_manager_b
+*FMUvar Outdoor_Rain_Indicator
+#
+# - OUTPUTS -
+*Outputs 14
+#
+*Zone  1  # manager_a
+*ESPvar  1  # Zone_control_on
+*Instance obm_manager_a
+*FMUvar Zone_HVAC_SCH
+#
+*Zone  1  # manager_a
+*ESPvar  2  # Zone_lights_on
+*Instance obm_manager_a
+*FMUvar Zone_light_SCH
+#
+*Zone  1  # manager_a
+*ESPvar  3  # Zone_windows_open
+*Data 0.0
+*Instance obm_manager_a
+*FMUvar Zone_infil_SCH
+#
+*Zone  1  # manager_a
+*ESPvar  4  # Zone_equipment_on
+*Instance obm_manager_a
+*FMUvar Zone_PlugLoad_SCH
+#
+*Zone  1  # manager_a
+*ESPvar  5  # Zone_thermostat
+*Instance obm_manager_a
+*FMUvar Zone_Thermostat_SCH
+#
+*Zone  1  # manager_a
+*ESPvar  6  # Zone_blinds_closed
+*Instance obm_manager_a
+*FMUvar Zone_ShadeAndBlind_SCH
+#
+*Zone  1  # manager_a
+*ESPvar  7  # Zone_occupancy
+*Instance obm_manager_a
+*FMUvar Zone_occ_SCH
+#
+*Zone  2  # manager_b
+*ESPvar  1  # Zone_control_on
+*Instance obm_manager_b
+*FMUvar Zone_HVAC_SCH
+#
+*Zone  2  # manager_b
+*ESPvar  2  # Zone_lights_on
+*Instance obm_manager_b
+*FMUvar Zone_light_SCH
+#
+*Zone  2  # manager_b
+*ESPvar  3  # Zone_windows_open
+*Data 0.0
+*Instance obm_manager_b
+*FMUvar Zone_infil_SCH
+#
+*Zone  2  # manager_b
+*ESPvar  4  # Zone_equipment_on
+*Instance obm_manager_b
+*FMUvar Zone_PlugLoad_SCH
+#
+*Zone  2  # manager_b
+*ESPvar  5  # Zone_thermostat
+*Instance obm_manager_b
+*FMUvar Zone_Thermostat_SCH
+#
+*Zone  2  # manager_b
+*ESPvar  6  # Zone_blinds_closed
+*Instance obm_manager_b
+*FMUvar Zone_ShadeAndBlind_SCH
+#
+*Zone  2  # manager_b
+*ESPvar  7  # Zone_occupancy
+*Instance obm_manager_b
+*FMUvar Zone_occ_SCH
+#

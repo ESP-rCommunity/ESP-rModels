@@ -1,0 +1,16 @@
+*viewfactors            # zone viewfactors and MRT sensors for 960_back
+*geom  zones/960_back.geo
+   0   6   1            # number of mrt sensors & zone surfaces, zone index
+# Zone viewfactors follow:
+ 0.00,0.1500,0.066820,0.3166,0.3166,0.1500
+ 0.1125,0.00,0.1125,0.3246,0.3246,0.1257
+ 0.066820,0.1500,0.00,0.3166,0.3166,0.1500
+ 0.1068,0.1461,0.1068,0.00,0.4942,0.1461
+ 0.1068,0.1461,0.1068,0.4942,0.00,0.1461
+ 0.1125,0.1257,0.1125,0.3246,0.3246,0.00
+ sum over row   1 is :   1.00001991
+ sum over row   2 is :   0.99989998
+ sum over row   3 is :   1.00001991
+ sum over row   4 is :   0.99999994
+ sum over row   5 is :   0.99999994
+ sum over row   6 is :   0.99989998

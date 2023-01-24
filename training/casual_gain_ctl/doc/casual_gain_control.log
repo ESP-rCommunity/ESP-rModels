@@ -1,0 +1,24 @@
+Project notes for casual_gain_control.cfg
+Title: matrix of rooms for testing casual gain controls
+In folder: /home/jon/testing
+By: jon
+Date: Mon Aug 31 09:33:36 2015
+Client: 
+Project reference: 
+_____________________________
+Notes:
+This model is the same zone replicated five times to explore
+the use of zone casual gain control.
+ 1 basecase  basecase describes a 3mx5mx2.5m office with facade
+ 2 cgc_a     cgc_a is as base case but with cgc control via analytic df
+ 3 cgc_b     cgc_b similar to cgc_a but with user specified df
+ 4 cgc_c     cgc_c similar to cgc_a but with external surface sensor
+ 5 cgc_d     cgc_d as cgc_b but with Hunt probability switching
+ 6 cgc_e     cgc_e with radiance coupling every timestep
+ 
+For each casual gain (lighting) control is enabled on weekdays only.
+
+Note: because of the coupling simulations run slowly.
+  
+_____________________________
+  

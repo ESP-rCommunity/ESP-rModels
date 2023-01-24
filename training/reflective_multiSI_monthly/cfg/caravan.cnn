@@ -1,0 +1,49 @@
+*connections for caravan
+*Date Thu May 26 14:59:03 2022
+     46  # number of connections
+   1   1   0   0   0  #    1 front in main is External
+   1   2   3   2   4  #    2 left in main >|< right in second
+   1   3   0   0   0  #    3 back in main is External
+   1   4   0   0   0  #    4 right in main is External
+   1   5   0   0   0  #    5 roof in main is External
+   1   6   0   0   0  #    6 floor in main is External
+   1   7   0   0   0  #    7 framefront in main is External
+   1   8   0   0   0  #    8 fromeright in main is External
+   1   9   3   2   8  #    9 frameleft in main >|< fromeright in second
+   1  10   0   0   0  #   10 frameback in main is External
+   1  11   0   0   0  #   11 frameroof in main is External
+   1  12   0   0   0  #   12 framefloor in main is External
+   1  13   0   0   0  #   13 door in main is External
+   1  14   3   1  15  #   14 indoorfront in main >|< indoorback in main
+   1  15   3   1  14  #   15 indoorback in main >|< indoorfront in main
+   1  16   0   0   0  #   16 windright in main is External
+   2   1   0   0   0  #   17 front in second is External
+   2   2   3   3   4  #   18 left in second >|< right in third
+   2   3   0   0   0  #   19 back in second is External
+   2   4   3   1   2  #   20 right in second >|< left in main
+   2   5   0   0   0  #   21 roof in second is External
+   2   6   0   0   0  #   22 floor in second is External
+   2   7   0   0   0  #   23 framefront in second is External
+   2   8   3   1   9  #   24 fromeright in second >|< frameleft in main
+   2   9   3   3   8  #   25 frameleft in second >|< fromeright in third
+   2  10   0   0   0  #   26 frameback in second is External
+   2  11   0   0   0  #   27 frameroof in second is External
+   2  12   0   0   0  #   28 framefloor in second is External
+   2  13   0   0   0  #   29 door in second is External
+   2  14   3   2  15  #   30 indoorfront in second >|< indoorback in second
+   2  15   3   2  14  #   31 indoorback in second >|< indoorfront in second
+   3   1   0   0   0  #   32 front in third is External
+   3   2   0   0   0  #   33 left in third is External
+   3   3   0   0   0  #   34 back in third is External
+   3   4   3   2   2  #   35 right in third >|< left in second
+   3   5   0   0   0  #   36 roof in third is External
+   3   6   0   0   0  #   37 floor in third is External
+   3   7   0   0   0  #   38 framefront in third is External
+   3   8   3   2   9  #   39 fromeright in third >|< frameleft in second
+   3   9   0   0   0  #   40 frameleft in third is External
+   3  10   0   0   0  #   41 frameback in third is External
+   3  11   0   0   0  #   42 frameroof in third is External
+   3  12   0   0   0  #   43 framefloor in third is External
+   3  13   0   0   0  #   44 door in third is External
+   3  14   3   3  15  #   45 indoorfront in third >|< indoorback in third
+   3  15   3   3  14  #   46 indoorback in third >|< indoorfront in third

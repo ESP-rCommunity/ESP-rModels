@@ -1,0 +1,17 @@
+# gendaylit -ang 35.0 -61.9 -W 246.0 139.0 -g 0.20
+# Ground ambient level: 20.0
+
+void light solar
+0
+0
+3 1.912e+06 1.912e+06 1.912e+06
+
+solar source sun
+0
+0
+4 0.722596 -0.385830 0.573576 0.533000
+
+void brightfunc skyfunc
+2 skybright perezlum.cal
+0
+10 2.846e+01 8.744e+00 -1.103942 -0.504955 13.320440 -3.248535 0.125670 0.722596 -0.385830 0.573576 

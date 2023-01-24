@@ -1,0 +1,58 @@
+*Constructions 2.1                              # thermophysical properties of crawl
+*date Fri Sep  3 13:51:11 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     4     1   0.90   0.91   0.70   0.65   0    #   1  lbath_floor  Ceilti_crl
+     5     1   0.90   0.90   0.70   0.65   0    #   2  entry_floor  Ceilti_crlc
+     5     1   0.90   0.90   0.70   0.65   0    #   3  liv_floor    Ceilti_crlc
+     4     1   0.90   0.91   0.70   0.65   0    #   4  Base-9       Ceilti_crl
+     1     0   0.90   0.90   0.40   0.40   0    #   5  front        Crawl_wall
+     1     0   0.90   0.90   0.40   0.40   0    #   6  right        Crawl_wall
+     1     0   0.90   0.90   0.40   0.40   0    #   7  back         Crawl_wall
+     1     0   0.90   0.90   0.40   0.40   0    #   8  left         Crawl_wall
+     7     0   0.90   0.90   0.85   0.85   0    #   9  ground       ground
+     5     1   0.90   0.90   0.65   0.70   0    #  10  kit_floor    Floorti_lowc
+# air gap layer positions and restances
+  3  0.170                                      # for lbath_floor
+  4  0.170                                      # and for entry_floor
+  4  0.170                                      # and for liv_floor
+  3  0.170                                      # and for Base-9
+  2  0.170                                      # and for kit_floor
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+     0.1400     600.0    1210.0  0.0100   0   0.00 0.00000 0.00000  #   1   1 flooring
+     0.1500     800.0    2093.0  0.0190   0   0.00 0.00000 0.00000  #       2 chipboard
+     0.0000       0.0       0.0  0.0270   0   0.00 0.00000 0.00000  #       3 AIR
+     0.0400      25.0    1000.0  0.1600   0   0.00 0.00000 0.00000  #       4 Mineral wool batt
+     0.0600     160.0    2500.0  0.0050   0   0.00 0.00000 0.00000  #   2   1 synthetic carpet
+     0.1000     400.0    1360.0  0.0100   0   0.00 0.00000 0.00000  #       2 cellular rub underlay
+     0.1500     800.0    2093.0  0.0190   0   0.00 0.00000 0.00000  #       3 chipboard
+     0.0000       0.0       0.0  0.0270   0   0.00 0.00000 0.00000  #       4 AIR
+     0.0400      25.0    1000.0  0.1600   0   0.00 0.00000 0.00000  #       5 Mineral wool batt
+     0.0600     160.0    2500.0  0.0050   0   0.00 0.00000 0.00000  #   3   1 synthetic carpet
+     0.1000     400.0    1360.0  0.0100   0   0.00 0.00000 0.00000  #       2 cellular rub underlay
+     0.1500     800.0    2093.0  0.0190   0   0.00 0.00000 0.00000  #       3 chipboard
+     0.0000       0.0       0.0  0.0270   0   0.00 0.00000 0.00000  #       4 AIR
+     0.0400      25.0    1000.0  0.1600   0   0.00 0.00000 0.00000  #       5 Mineral wool batt
+     0.1400     600.0    1210.0  0.0100   0   0.00 0.00000 0.00000  #   4   1 flooring
+     0.1500     800.0    2093.0  0.0190   0   0.00 0.00000 0.00000  #       2 chipboard
+     0.0000       0.0       0.0  0.0270   0   0.00 0.00000 0.00000  #       3 AIR
+     0.0400      25.0    1000.0  0.1600   0   0.00 0.00000 0.00000  #       4 Mineral wool batt
+     1.0600    1950.0    1000.0  0.1200   0   0.00 0.00000 0.00000  #   5   1 concrete block
+     1.0600    1950.0    1000.0  0.1200   0   0.00 0.00000 0.00000  #   6   1 concrete block
+     1.0600    1950.0    1000.0  0.1200   0   0.00 0.00000 0.00000  #   7   1 concrete block
+     1.0600    1950.0    1000.0  0.1200   0   0.00 0.00000 0.00000  #   8   1 concrete block
+     1.2800    1460.0     879.0  0.2500   0   0.00 0.00000 0.00000  #   9   1 earth std
+     1.2800    1460.0     879.0  0.2500   0   0.00 0.00000 0.00000  #       2 earth std
+     1.2800    1460.0     879.0  0.2500   0   0.00 0.00000 0.00000  #       3 earth std
+     1.2800    1460.0     879.0  0.2500   0   0.00 0.00000 0.00000  #       4 earth std
+     1.2800    1460.0     879.0  0.2500   0   0.00 0.00000 0.00000  #       5 earth std
+     1.2800    1460.0     879.0  0.2500   0   0.00 0.00000 0.00000  #       6 earth std
+     0.5200    2050.0     184.0  0.1000   0   0.00 0.00000 0.00000  #       7 gravel based
+     0.0400      25.0    1000.0  0.1600   0   0.00 0.00000 0.00000  #  10   1 Mineral wool batt
+     0.0000       0.0       0.0  0.0270   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1500     800.0    2093.0  0.0190   0   0.00 0.00000 0.00000  #       3 chipboard
+     0.1000     400.0    1360.0  0.0100   0   0.00 0.00000 0.00000  #       4 cellular rub underlay
+     0.0600     160.0    2500.0  0.0050   0   0.00 0.00000 0.00000  #       5 synthetic carpet
+*tmc NONE                                       # all surfaces are opaque

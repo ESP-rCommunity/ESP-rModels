@@ -1,0 +1,21 @@
+# Radiance RIF file: fac_zone_c1_Day_co_a.rif
+#e2r_gen_view   1  1
+#e2r_glaz_type   1
+scene= fac_zone_c1_Day_co.sky
+scene= fac_zone_c1_Day_co-glz_a.rad
+scene= fac_zone_c1_Day_co.mat
+scene= fac_zone_c1_Day_co-out.rad
+scene= fac_zone_c1_Day_co-in.rad
+UP= Z
+QUALITY= High  
+DETAIL= Medium
+VARIABILITY= High  
+RESOLUTION=   500
+INDIRECT=  2
+PENUMBRAS= False
+REPORT=    1
+render= -av 0 0 0
+ZONE= Interior     1.00    5.50    1.00    5.50    0.00    3.40
+OPTFILE= fac_zone_c1_Day_co.opt
+OCTREE= fac_zone_c1_Day_co.oct_a_a
+PICTURE= fac_zone_c1_Day_co_a_a

@@ -1,0 +1,6 @@
+A basic 3 zone model with vertical shading fins above
+the windows on the south facade.
+
+The model cellular_shd.cfg uses pre-calculated shading patterns
+and the model cellular_shd_daily.cfg uses embedded shading 
+calculations within the simulator.

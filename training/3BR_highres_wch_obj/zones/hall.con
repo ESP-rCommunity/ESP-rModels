@@ -1,0 +1,161 @@
+*Constructions 2.1                              # thermophysical properties of hall
+*date Mon Sep  6 13:32:20 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     5     1   0.91   0.90   0.70   0.93   0    #   1  fr_facade    cavity_brick
+     3     1   0.22   0.22   0.20   0.20   0    #   2  fr_door_fr   frame_notion
+     3     1   0.91   0.91   0.22   0.22   0    #   3  ptn_lounge   int_part
+     1     0   0.90   0.90   0.65   0.65   0    #   4  door_lng     door
+     1     0   0.90   0.90   0.65   0.65   0    #   5  door_kit     door
+     3     1   0.91   0.91   0.22   0.22   0    #   6  ptn_kit      int_part
+     5     1   0.91   0.90   0.22   0.85   0    #   7  ceil_entr    cpt_cel2flr
+     5     0   0.90   0.90   0.60   0.30   0    #   8  floor_entr   cpttgins_flr
+     1     0   0.99   0.99   0.01   0.01   1    #   9  fict_ov_rail fictitious
+     3     1   0.91   0.91   0.22   0.22   0    #  10  rail         int_part
+     1     0   0.90   0.90   0.65   0.65   0    #  11  1st_riser    door
+     1     0   0.99   0.99   0.01   0.01   1    #  12  fict_to_st   fictitious
+     3     1   0.91   0.91   0.22   0.22   0    #  13  up_rail      int_part
+     1     0   0.90   0.90   0.65   0.65   0    #  14  door_dining  door
+     3     1   0.91   0.91   0.22   0.22   0    #  15  ptn_dining   int_part
+     3     1   0.91   0.91   0.22   0.22   0    #  16  under_stair  int_part
+     5     1   0.91   0.90   0.70   0.93   0    #  17  left_facade  cavity_brick
+     1     0   0.83   0.83   0.05   0.05   2    #  18  fr_door_glz  single_glaz
+     1     0   0.83   0.83   0.05   0.05   2    #  19  alow_trns    single_glaz
+     1     0   0.83   0.83   0.05   0.05   2    #  20  alow_trns_   single_glaz
+     1     0   0.82   0.82   0.30   0.30   0    #  21  face_h       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  22  right_h      steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  23  back_ah      steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  24  back_bh      steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  25  fin_ah       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  26  fin_bh       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  27  fin_ch       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  28  fin_dh       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  29  back_ch      steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  30  left_h       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  31  rad_top_h    steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  32  face_m       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  33  right_m      steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  34  back_am      steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  35  back_bm      steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  36  fin_am       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  37  fin_bm       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  38  fin_cm       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  39  fin_dm       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  40  back_cm      steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  41  left_m       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  42  face_l       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  43  right_l      steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  44  back_al      steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  45  back_bl      steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  46  fin_al       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  47  fin_bl       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  48  fin_cl       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  49  fin_dl       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  50  back_cl      steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  51  left_l       steel_pl_3mm
+     1     0   0.82   0.82   0.30   0.30   0    #  52  rad_base_l   steel_pl_3mm
+# air gap layer positions and restances
+  2  0.150                                      # for fr_facade
+  2  0.285                                      # and for fr_door_fr
+  2  0.170                                      # and for ptn_lounge
+  2  0.170                                      # and for ptn_kit
+  4  0.170                                      # and for ceil_entr
+  2  0.170                                      # and for rail
+  2  0.170                                      # and for up_rail
+  2  0.170                                      # and for ptn_dining
+  2  0.170                                      # and for under_stair
+  2  0.150                                      # and for left_facade
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+     0.9600    2000.0     650.0  0.1000   0   0.00 0.00000 0.00000  #   1   1 outer leaf brick
+     0.0000       0.0       0.0  0.0400   0   0.00 0.00000 0.00000  #       2 AIR
+     0.6200    1800.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       3 inner leaf brick
+     0.5000    1300.0    1000.0  0.0120   0   0.00 0.00000 0.00000  #       4 dense plaster
+     0.7000    1400.0     920.0  0.0100   0   0.00 0.00000 0.00000  #       5 lime plaster
+   210.0000    2700.0     880.0  0.1000   0   0.00 0.00000 0.00000  #   2   1 aluminium
+     0.0000       0.0       0.0  0.0100   0   0.00 0.00000 0.00000  #       2 AIR
+   210.0000    2700.0     880.0  0.1000   0   0.00 0.00000 0.00000  #       3 aluminium
+     0.1900     950.0     840.0  0.0120   0   0.00 0.00000 0.00000  #   3   1 white gypboard
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1900     950.0     840.0  0.0120   0   0.00 0.00000 0.00000  #       3 white gypboard
+     0.1900     700.0    2390.0  0.0250   0   0.00 0.00000 0.00000  #   4   1 oak
+     0.1900     700.0    2390.0  0.0250   0   0.00 0.00000 0.00000  #   5   1 oak
+     0.1900     950.0     840.0  0.0120   0   0.00 0.00000 0.00000  #   6   1 white gypboard
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1900     950.0     840.0  0.0120   0   0.00 0.00000 0.00000  #       3 white gypboard
+     0.0600     186.0    1360.0  0.0150   0   0.00 0.00000 0.00000  #   7   1 dk grey Wilton
+     0.1000     400.0    1360.0  0.0110   0   0.00 0.00000 0.00000  #       2 cellular rub underlay
+     0.1500     700.0    1420.0  0.0180   0   0.00 0.00000 0.00000  #       3 plywood 700d
+     0.0000       0.0       0.0  0.1000   0   0.00 0.00000 0.00000  #       4 AIR
+     0.1900     950.0     840.0  0.0125   0   0.00 0.00000 0.00000  #       5 white gypboard
+     0.0400     250.0     840.0  0.1000   0   0.00 0.00000 0.00000  #   8   1 glasswool
+     0.1900     700.0    2390.0  0.0220   0   0.00 0.00000 0.00000  #       2 oak
+     0.1900    1200.0    1470.0  0.0050   0   0.00 0.00000 0.00000  #       3 linoleum_CSTC
+     0.1000     400.0    1360.0  0.0110   0   0.00 0.00000 0.00000  #       4 cellular rub underlay
+     0.0600     186.0    1360.0  0.0150   0   0.00 0.00000 0.00000  #       5 Wilton
+    20.0000      10.0      10.0  0.0040   0   0.00 0.00000 0.00000  #   9   1 fict
+     0.1900     950.0     840.0  0.0120   0   0.00 0.00000 0.00000  #  10   1 white gypboard
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1900     950.0     840.0  0.0120   0   0.00 0.00000 0.00000  #       3 white gypboard
+     0.1900     700.0    2390.0  0.0250   0   0.00 0.00000 0.00000  #  11   1 oak
+    20.0000      10.0      10.0  0.0040   0   0.00 0.00000 0.00000  #  12   1 fict
+     0.1900     950.0     840.0  0.0120   0   0.00 0.00000 0.00000  #  13   1 white gypboard
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1900     950.0     840.0  0.0120   0   0.00 0.00000 0.00000  #       3 white gypboard
+     0.1900     700.0    2390.0  0.0250   0   0.00 0.00000 0.00000  #  14   1 oak
+     0.1900     950.0     840.0  0.0120   0   0.00 0.00000 0.00000  #  15   1 white gypboard
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1900     950.0     840.0  0.0120   0   0.00 0.00000 0.00000  #       3 white gypboard
+     0.1900     950.0     840.0  0.0120   0   0.00 0.00000 0.00000  #  16   1 white gypboard
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1900     950.0     840.0  0.0120   0   0.00 0.00000 0.00000  #       3 white gypboard
+     0.9600    2000.0     650.0  0.1000   0   0.00 0.00000 0.00000  #  17   1 outer leaf brick
+     0.0000       0.0       0.0  0.0400   0   0.00 0.00000 0.00000  #       2 AIR
+     0.6200    1800.0     840.0  0.1000   0   0.00 0.00000 0.00000  #       3 inner leaf brick
+     0.5000    1300.0    1000.0  0.0120   0   0.00 0.00000 0.00000  #       4 dense plaster
+     0.7000    1400.0     920.0  0.0100   0   0.00 0.00000 0.00000  #       5 lime plaster
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #  18   1 clear float
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #  19   1 clear float
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #  20   1 clear float
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  21   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  22   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  23   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  24   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  25   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  26   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  27   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  28   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  29   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  30   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  31   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  32   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  33   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  34   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  35   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  36   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  37   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  38   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  39   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  40   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  41   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  42   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  43   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  44   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  45   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  46   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  47   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  48   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  49   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  50   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  51   1 white ptd steel
+    40.0000    7800.0     502.0  0.0030   0   0.00 0.00000 0.00000  #  52   1 white ptd steel
+*tmc YES                                        # optical properties:
+   1  SC_fictit                                 # layers in tmc type 1
+  0.998  0.987  0.986  0.985  0.984  0.990      # transmission @ 5 angles & visible tr.
+  0.001  0.001  0.001  0.001  0.001             # for each layer absorption @ 5 angles
+   0                                            # no alternative optics
+   1  SCF8783_06nb                              # layers in tmc type 2
+  0.779  0.759  0.717  0.581  0.348  0.870      # transmission @ 5 angles & visible tr.
+  0.149  0.163  0.173  0.179  0.169             # for each layer absorption @ 5 angles
+   0                                            # no alternative optics

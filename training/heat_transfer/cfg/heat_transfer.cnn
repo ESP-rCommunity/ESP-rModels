@@ -1,0 +1,631 @@
+*connections for heat_transfer
+*Date Thu May 26 14:51:21 2022
+    628  # number of connections
+   1   1   3   2   4  #    1 pt_right in room_bc_conv >|< pt_left in room_fan
+   1   2   3   7   1  #    2 bc_corid_fra in room_bc_conv >|< bc_corid_fra in corid_conv
+   1   3   3   7   2  #    3 bc_door in room_bc_conv >|< bc_door in corid_conv
+   1   4   1   0   0  #    4 pt_left in room_bc_conv >|< Identical environment
+   1   5   3  16  13  #    5 ceiling_bc in room_bc_conv >|< ceiling_bc in mid_void
+   1   6   3   8   7  #    6 floor_bc in room_bc_conv >|< floor_bc in void_low
+   1   7   0   0   0  #    7 spandral in room_bc_conv is External
+   1   8   0   0   0  #    8 frame in room_bc_conv is External
+   1   9   0   0   0  #    9 glazing in room_bc_conv is External
+   1  10   3   7   3  #   10 bc_part_glaz in room_bc_conv >|< bc_part_glaz in corid_conv
+   1  11   3   7   4  #   11 bc_ptn_corid in room_bc_conv >|< bc_ptn_corid in corid_conv
+   1  12   3   1  13  #   12 adesk_t in room_bc_conv >|< adesk_t_ in room_bc_conv
+   1  13   3   1  12  #   13 adesk_t_ in room_bc_conv >|< adesk_t in room_bc_conv
+   1  14   3   1  15  #   14 bdesk_t in room_bc_conv >|< bdesk_t_ in room_bc_conv
+   1  15   3   1  14  #   15 bdesk_t_ in room_bc_conv >|< bdesk_t in room_bc_conv
+   1  16   3   1  17  #   16 cseat in room_bc_conv >|< cseat_ in room_bc_conv
+   1  17   3   1  16  #   17 cseat_ in room_bc_conv >|< cseat in room_bc_conv
+   1  18   3   1  19  #   18 cstback in room_bc_conv >|< cstback_ in room_bc_conv
+   1  19   3   1  18  #   19 cstback_ in room_bc_conv >|< cstback in room_bc_conv
+   1  20   3   1  21  #   20 dseat in room_bc_conv >|< dseat_ in room_bc_conv
+   1  21   3   1  20  #   21 dseat_ in room_bc_conv >|< dseat in room_bc_conv
+   1  22   3   1  23  #   22 dstback in room_bc_conv >|< dstback_ in room_bc_conv
+   1  23   3   1  22  #   23 dstback_ in room_bc_conv >|< dstback in room_bc_conv
+   1  24   1   0   0  #   24 ecab_lf in room_bc_conv >|< Identical environment
+   1  25   1   0   0  #   25 ecab_rt in room_bc_conv >|< Identical environment
+   1  26   1   0   0  #   26 ecab_fr in room_bc_conv >|< Identical environment
+   1  27   1   0   0  #   27 ecab_bk in room_bc_conv >|< Identical environment
+   1  28   1   0   0  #   28 ecab_to in room_bc_conv >|< Identical environment
+   1  29   1   0   0  #   29 ecab_bs in room_bc_conv >|< Identical environment
+   1  30   3   1  31  #   30 fbil_lft in room_bc_conv >|< fbil_lft_ in room_bc_conv
+   1  31   3   1  30  #   31 fbil_lft_ in room_bc_conv >|< fbil_lft in room_bc_conv
+   1  32   3   1  33  #   32 fbil_rt in room_bc_conv >|< fbil_rt_ in room_bc_conv
+   1  33   3   1  32  #   33 fbil_rt_ in room_bc_conv >|< fbil_rt in room_bc_conv
+   1  34   3   1  35  #   34 fbooks in room_bc_conv >|< fbooks_ in room_bc_conv
+   1  35   3   1  34  #   35 fbooks_ in room_bc_conv >|< fbooks in room_bc_conv
+   1  36   3   1  37  #   36 gcase in room_bc_conv >|< gcase_ in room_bc_conv
+   1  37   3   1  36  #   37 gcase_ in room_bc_conv >|< gcase in room_bc_conv
+   1  38   3   1  39  #   38 gcircuit in room_bc_conv >|< gcircuit_ in room_bc_conv
+   1  39   3   1  38  #   39 gcircuit_ in room_bc_conv >|< gcircuit in room_bc_conv
+   2   1   3   3   4  #   40 pt_right in room_fan >|< pt_left in CAV_mixed
+   2   2   3   7   5  #   41 fc_corid_fra in room_fan >|< fc_corid_fra in corid_conv
+   2   3   3   7   6  #   42 fc_door in room_fan >|< fc_door in corid_conv
+   2   4   3   1   1  #   43 pt_left in room_fan >|< pt_right in room_bc_conv
+   2   5   3  16  14  #   44 ceiling_fan in room_fan >|< ceiling_fan in mid_void
+   2   6   3   8   8  #   45 floor_fan in room_fan >|< floor_fan in void_low
+   2   7   0   0   0  #   46 spandral in room_fan is External
+   2   8   0   0   0  #   47 frame in room_fan is External
+   2   9   0   0   0  #   48 glazing in room_fan is External
+   2  10   3   7   7  #   49 fc_part_glaz in room_fan >|< fc_part_glaz in corid_conv
+   2  11   3   7   8  #   50 fc_ptn_corid in room_fan >|< fc_ptn_corid in corid_conv
+   2  12   3   2  13  #   51 adesk_t in room_fan >|< adesk_t_ in room_fan
+   2  13   3   2  12  #   52 adesk_t_ in room_fan >|< adesk_t in room_fan
+   2  14   3   2  15  #   53 bdesk_t in room_fan >|< bdesk_t_ in room_fan
+   2  15   3   2  14  #   54 bdesk_t_ in room_fan >|< bdesk_t in room_fan
+   2  16   3   2  17  #   55 cseat in room_fan >|< cseat_ in room_fan
+   2  17   3   2  16  #   56 cseat_ in room_fan >|< cseat in room_fan
+   2  18   3   2  19  #   57 cstback in room_fan >|< cstback_ in room_fan
+   2  19   3   2  18  #   58 cstback_ in room_fan >|< cstback in room_fan
+   2  20   3   2  21  #   59 dseat in room_fan >|< dseat_ in room_fan
+   2  21   3   2  20  #   60 dseat_ in room_fan >|< dseat in room_fan
+   2  22   3   2  23  #   61 dstback in room_fan >|< dstback_ in room_fan
+   2  23   3   2  22  #   62 dstback_ in room_fan >|< dstback in room_fan
+   2  24   1   0   0  #   63 ecab_lf in room_fan >|< Identical environment
+   2  25   1   0   0  #   64 ecab_rt in room_fan >|< Identical environment
+   2  26   1   0   0  #   65 ecab_fr in room_fan >|< Identical environment
+   2  27   1   0   0  #   66 ecab_bk in room_fan >|< Identical environment
+   2  28   1   0   0  #   67 ecab_to in room_fan >|< Identical environment
+   2  29   1   0   0  #   68 ecab_bs in room_fan >|< Identical environment
+   2  30   3   2  31  #   69 fbil_lft in room_fan >|< fbil_lft_ in room_fan
+   2  31   3   2  30  #   70 fbil_lft_ in room_fan >|< fbil_lft in room_fan
+   2  32   3   2  33  #   71 fbil_rt in room_fan >|< fbil_rt_ in room_fan
+   2  33   3   2  32  #   72 fbil_rt_ in room_fan >|< fbil_rt in room_fan
+   2  34   3   2  35  #   73 fbooks in room_fan >|< fbooks_ in room_fan
+   2  35   3   2  34  #   74 fbooks_ in room_fan >|< fbooks in room_fan
+   2  36   3   2  37  #   75 gcase in room_fan >|< gcase_ in room_fan
+   2  37   3   2  36  #   76 gcase_ in room_fan >|< gcase in room_fan
+   2  38   3   2  39  #   77 gcircuit in room_fan >|< gcircuit_ in room_fan
+   2  39   3   2  38  #   78 gcircuit_ in room_fan >|< gcircuit in room_fan
+   3   1   3   4   4  #   79 pt_right in CAV_mixed >|< pt_left in VAV_mix_CVh
+   3   2   3   7   9  #   80 cav_corid_fr in CAV_mixed >|< cav_corid_fr in corid_conv
+   3   3   3   7  10  #   81 cav_door in CAV_mixed >|< cav_door in corid_conv
+   3   4   3   2   1  #   82 pt_left in CAV_mixed >|< pt_right in room_fan
+   3   5   3  16  15  #   83 ceiling_cav in CAV_mixed >|< ceiling_cav in mid_void
+   3   6   3   8   9  #   84 floor_cav in CAV_mixed >|< floor_cav in void_low
+   3   7   0   0   0  #   85 spandral in CAV_mixed is External
+   3   8   0   0   0  #   86 frame in CAV_mixed is External
+   3   9   0   0   0  #   87 glazing in CAV_mixed is External
+   3  10   3   7  11  #   88 cav_part_gla in CAV_mixed >|< cav_part_gla in corid_conv
+   3  11   3   7  12  #   89 cav_ptn_cori in CAV_mixed >|< cav_ptn_cori in corid_conv
+   3  12   3   3  13  #   90 adesk_t in CAV_mixed >|< adesk_t_ in CAV_mixed
+   3  13   3   3  12  #   91 adesk_t_ in CAV_mixed >|< adesk_t in CAV_mixed
+   3  14   3   3  15  #   92 bdesk_t in CAV_mixed >|< bdesk_t_ in CAV_mixed
+   3  15   3   3  14  #   93 bdesk_t_ in CAV_mixed >|< bdesk_t in CAV_mixed
+   3  16   3   3  17  #   94 cseat in CAV_mixed >|< cseat_ in CAV_mixed
+   3  17   3   3  16  #   95 cseat_ in CAV_mixed >|< cseat in CAV_mixed
+   3  18   3   3  19  #   96 cstback in CAV_mixed >|< cstback_ in CAV_mixed
+   3  19   3   3  18  #   97 cstback_ in CAV_mixed >|< cstback in CAV_mixed
+   3  20   3   3  21  #   98 dseat in CAV_mixed >|< dseat_ in CAV_mixed
+   3  21   3   3  20  #   99 dseat_ in CAV_mixed >|< dseat in CAV_mixed
+   3  22   3   3  23  #  100 dstback in CAV_mixed >|< dstback_ in CAV_mixed
+   3  23   3   3  22  #  101 dstback_ in CAV_mixed >|< dstback in CAV_mixed
+   3  24   1   0   0  #  102 ecab_lf in CAV_mixed >|< Identical environment
+   3  25   1   0   0  #  103 ecab_rt in CAV_mixed >|< Identical environment
+   3  26   1   0   0  #  104 ecab_fr in CAV_mixed >|< Identical environment
+   3  27   1   0   0  #  105 ecab_bk in CAV_mixed >|< Identical environment
+   3  28   1   0   0  #  106 ecab_to in CAV_mixed >|< Identical environment
+   3  29   1   0   0  #  107 ecab_bs in CAV_mixed >|< Identical environment
+   3  30   3   3  31  #  108 fbil_lft in CAV_mixed >|< fbil_lft_ in CAV_mixed
+   3  31   3   3  30  #  109 fbil_lft_ in CAV_mixed >|< fbil_lft in CAV_mixed
+   3  32   3   3  33  #  110 fbil_rt in CAV_mixed >|< fbil_rt_ in CAV_mixed
+   3  33   3   3  32  #  111 fbil_rt_ in CAV_mixed >|< fbil_rt in CAV_mixed
+   3  34   3   3  35  #  112 fbooks in CAV_mixed >|< fbooks_ in CAV_mixed
+   3  35   3   3  34  #  113 fbooks_ in CAV_mixed >|< fbooks in CAV_mixed
+   3  36   3   3  37  #  114 gcase in CAV_mixed >|< gcase_ in CAV_mixed
+   3  37   3   3  36  #  115 gcase_ in CAV_mixed >|< gcase in CAV_mixed
+   3  38   3   3  39  #  116 gcircuit in CAV_mixed >|< gcircuit_ in CAV_mixed
+   3  39   3   3  38  #  117 gcircuit_ in CAV_mixed >|< gcircuit in CAV_mixed
+   4   1   3   5   4  #  118 pt_right in VAV_mix_CVh >|< pt_left in VAV_mix_VVh
+   4   2   3   7  13  #  119 vavc_corid_f in VAV_mix_CVh >|< vavc_corid_f in corid_conv
+   4   3   3   7  14  #  120 vavc_door in VAV_mix_CVh >|< vavc_door in corid_conv
+   4   4   3   3   1  #  121 pt_left in VAV_mix_CVh >|< pt_right in CAV_mixed
+   4   5   3  16  16  #  122 ceiling_vavc in VAV_mix_CVh >|< ceiling_vavc in mid_void
+   4   6   3   8  10  #  123 floor_vavc in VAV_mix_CVh >|< floor_vavc in void_low
+   4   7   0   0   0  #  124 spandral in VAV_mix_CVh is External
+   4   8   0   0   0  #  125 frame in VAV_mix_CVh is External
+   4   9   0   0   0  #  126 glazing in VAV_mix_CVh is External
+   4  10   3   7  15  #  127 vavc_part_gl in VAV_mix_CVh >|< vavc_part_gl in corid_conv
+   4  11   3   7  16  #  128 vavc_ptn_cor in VAV_mix_CVh >|< vavc_ptn_cor in corid_conv
+   4  12   3   4  13  #  129 adesk_t in VAV_mix_CVh >|< adesk_t_ in VAV_mix_CVh
+   4  13   3   4  12  #  130 adesk_t_ in VAV_mix_CVh >|< adesk_t in VAV_mix_CVh
+   4  14   3   4  15  #  131 bdesk_t in VAV_mix_CVh >|< bdesk_t_ in VAV_mix_CVh
+   4  15   3   4  14  #  132 bdesk_t_ in VAV_mix_CVh >|< bdesk_t in VAV_mix_CVh
+   4  16   3   4  17  #  133 cseat in VAV_mix_CVh >|< cseat_ in VAV_mix_CVh
+   4  17   3   4  16  #  134 cseat_ in VAV_mix_CVh >|< cseat in VAV_mix_CVh
+   4  18   3   4  19  #  135 cstback in VAV_mix_CVh >|< cstback_ in VAV_mix_CVh
+   4  19   3   4  18  #  136 cstback_ in VAV_mix_CVh >|< cstback in VAV_mix_CVh
+   4  20   3   4  21  #  137 dseat in VAV_mix_CVh >|< dseat_ in VAV_mix_CVh
+   4  21   3   4  20  #  138 dseat_ in VAV_mix_CVh >|< dseat in VAV_mix_CVh
+   4  22   3   4  23  #  139 dstback in VAV_mix_CVh >|< dstback_ in VAV_mix_CVh
+   4  23   3   4  22  #  140 dstback_ in VAV_mix_CVh >|< dstback in VAV_mix_CVh
+   4  24   1   0   0  #  141 ecab_lf in VAV_mix_CVh >|< Identical environment
+   4  25   1   0   0  #  142 ecab_rt in VAV_mix_CVh >|< Identical environment
+   4  26   1   0   0  #  143 ecab_fr in VAV_mix_CVh >|< Identical environment
+   4  27   1   0   0  #  144 ecab_bk in VAV_mix_CVh >|< Identical environment
+   4  28   1   0   0  #  145 ecab_to in VAV_mix_CVh >|< Identical environment
+   4  29   1   0   0  #  146 ecab_bs in VAV_mix_CVh >|< Identical environment
+   4  30   3   4  31  #  147 fbil_lft in VAV_mix_CVh >|< fbil_lft_ in VAV_mix_CVh
+   4  31   3   4  30  #  148 fbil_lft_ in VAV_mix_CVh >|< fbil_lft in VAV_mix_CVh
+   4  32   3   4  33  #  149 fbil_rt in VAV_mix_CVh >|< fbil_rt_ in VAV_mix_CVh
+   4  33   3   4  32  #  150 fbil_rt_ in VAV_mix_CVh >|< fbil_rt in VAV_mix_CVh
+   4  34   3   4  35  #  151 fbooks in VAV_mix_CVh >|< fbooks_ in VAV_mix_CVh
+   4  35   3   4  34  #  152 fbooks_ in VAV_mix_CVh >|< fbooks in VAV_mix_CVh
+   4  36   3   4  37  #  153 gcase in VAV_mix_CVh >|< gcase_ in VAV_mix_CVh
+   4  37   3   4  36  #  154 gcase_ in VAV_mix_CVh >|< gcase in VAV_mix_CVh
+   4  38   3   4  39  #  155 gcircuit in VAV_mix_CVh >|< gcircuit_ in VAV_mix_CVh
+   4  39   3   4  38  #  156 gcircuit_ in VAV_mix_CVh >|< gcircuit in VAV_mix_CVh
+   5   1   3   6   4  #  157 pt_right in VAV_mix_VVh >|< pt_left in CEN_hc
+   5   2   3   7  17  #  158 vavv_corid_f in VAV_mix_VVh >|< vavv_corid_f in corid_conv
+   5   3   3   7  18  #  159 vavv_door in VAV_mix_VVh >|< vavv_door in corid_conv
+   5   4   3   4   1  #  160 pt_left in VAV_mix_VVh >|< pt_right in VAV_mix_CVh
+   5   5   3  16  17  #  161 ceiling_vavv in VAV_mix_VVh >|< ceiling_vavv in mid_void
+   5   6   3   8  11  #  162 floor_vavv in VAV_mix_VVh >|< floor_vavv in void_low
+   5   7   0   0   0  #  163 spandral in VAV_mix_VVh is External
+   5   8   0   0   0  #  164 frame in VAV_mix_VVh is External
+   5   9   0   0   0  #  165 glazing in VAV_mix_VVh is External
+   5  10   3   7  19  #  166 vavv_part_gl in VAV_mix_VVh >|< vavv_part_gl in corid_conv
+   5  11   3   7  20  #  167 vavv_ptn_cor in VAV_mix_VVh >|< vavv_ptn_cor in corid_conv
+   5  12   3   5  13  #  168 adesk_t in VAV_mix_VVh >|< adesk_t_ in VAV_mix_VVh
+   5  13   3   5  12  #  169 adesk_t_ in VAV_mix_VVh >|< adesk_t in VAV_mix_VVh
+   5  14   3   5  15  #  170 bdesk_t in VAV_mix_VVh >|< bdesk_t_ in VAV_mix_VVh
+   5  15   3   5  14  #  171 bdesk_t_ in VAV_mix_VVh >|< bdesk_t in VAV_mix_VVh
+   5  16   3   5  17  #  172 cseat in VAV_mix_VVh >|< cseat_ in VAV_mix_VVh
+   5  17   3   5  16  #  173 cseat_ in VAV_mix_VVh >|< cseat in VAV_mix_VVh
+   5  18   3   5  19  #  174 cstback in VAV_mix_VVh >|< cstback_ in VAV_mix_VVh
+   5  19   3   5  18  #  175 cstback_ in VAV_mix_VVh >|< cstback in VAV_mix_VVh
+   5  20   3   5  21  #  176 dseat in VAV_mix_VVh >|< dseat_ in VAV_mix_VVh
+   5  21   3   5  20  #  177 dseat_ in VAV_mix_VVh >|< dseat in VAV_mix_VVh
+   5  22   3   5  23  #  178 dstback in VAV_mix_VVh >|< dstback_ in VAV_mix_VVh
+   5  23   3   5  22  #  179 dstback_ in VAV_mix_VVh >|< dstback in VAV_mix_VVh
+   5  24   1   0   0  #  180 ecab_lf in VAV_mix_VVh >|< Identical environment
+   5  25   1   0   0  #  181 ecab_rt in VAV_mix_VVh >|< Identical environment
+   5  26   1   0   0  #  182 ecab_fr in VAV_mix_VVh >|< Identical environment
+   5  27   1   0   0  #  183 ecab_bk in VAV_mix_VVh >|< Identical environment
+   5  28   1   0   0  #  184 ecab_to in VAV_mix_VVh >|< Identical environment
+   5  29   1   0   0  #  185 ecab_bs in VAV_mix_VVh >|< Identical environment
+   5  30   3   5  31  #  186 fbil_lft in VAV_mix_VVh >|< fbil_lft_ in VAV_mix_VVh
+   5  31   3   5  30  #  187 fbil_lft_ in VAV_mix_VVh >|< fbil_lft in VAV_mix_VVh
+   5  32   3   5  33  #  188 fbil_rt in VAV_mix_VVh >|< fbil_rt_ in VAV_mix_VVh
+   5  33   3   5  32  #  189 fbil_rt_ in VAV_mix_VVh >|< fbil_rt in VAV_mix_VVh
+   5  34   3   5  35  #  190 fbooks in VAV_mix_VVh >|< fbooks_ in VAV_mix_VVh
+   5  35   3   5  34  #  191 fbooks_ in VAV_mix_VVh >|< fbooks in VAV_mix_VVh
+   5  36   3   5  37  #  192 gcase in VAV_mix_VVh >|< gcase_ in VAV_mix_VVh
+   5  37   3   5  36  #  193 gcase_ in VAV_mix_VVh >|< gcase in VAV_mix_VVh
+   5  38   3   5  39  #  194 gcircuit in VAV_mix_VVh >|< gcircuit_ in VAV_mix_VVh
+   5  39   3   5  38  #  195 gcircuit_ in VAV_mix_VVh >|< gcircuit in VAV_mix_VVh
+   6   1   0   0   0  #  196 pt_right in CEN_hc is External
+   6   2   3   7  21  #  197 cen_corid_fr in CEN_hc >|< cen_corid_fr in corid_conv
+   6   3   3   7  22  #  198 cen_door in CEN_hc >|< cen_door in corid_conv
+   6   4   3   5   1  #  199 pt_left in CEN_hc >|< pt_right in VAV_mix_VVh
+   6   5   3  16  18  #  200 ceiling_cen in CEN_hc >|< ceiling_cen in mid_void
+   6   6   3   8  12  #  201 floor_cen in CEN_hc >|< floor_cen in void_low
+   6   7   0   0   0  #  202 spandral in CEN_hc is External
+   6   8   0   0   0  #  203 frame in CEN_hc is External
+   6   9   0   0   0  #  204 glazing in CEN_hc is External
+   6  10   3   7  23  #  205 cen_part_gla in CEN_hc >|< cen_part_gla in corid_conv
+   6  11   3   7  24  #  206 cen_ptn_cori in CEN_hc >|< cen_ptn_cori in corid_conv
+   6  12   3   6  13  #  207 adesk_t in CEN_hc >|< adesk_t_ in CEN_hc
+   6  13   3   6  12  #  208 adesk_t_ in CEN_hc >|< adesk_t in CEN_hc
+   6  14   3   6  15  #  209 bdesk_t in CEN_hc >|< bdesk_t_ in CEN_hc
+   6  15   3   6  14  #  210 bdesk_t_ in CEN_hc >|< bdesk_t in CEN_hc
+   6  16   3   6  17  #  211 cseat in CEN_hc >|< cseat_ in CEN_hc
+   6  17   3   6  16  #  212 cseat_ in CEN_hc >|< cseat in CEN_hc
+   6  18   3   6  19  #  213 cstback in CEN_hc >|< cstback_ in CEN_hc
+   6  19   3   6  18  #  214 cstback_ in CEN_hc >|< cstback in CEN_hc
+   6  20   3   6  21  #  215 dseat in CEN_hc >|< dseat_ in CEN_hc
+   6  21   3   6  20  #  216 dseat_ in CEN_hc >|< dseat in CEN_hc
+   6  22   3   6  23  #  217 dstback in CEN_hc >|< dstback_ in CEN_hc
+   6  23   3   6  22  #  218 dstback_ in CEN_hc >|< dstback in CEN_hc
+   6  24   1   0   0  #  219 ecab_lf in CEN_hc >|< Identical environment
+   6  25   1   0   0  #  220 ecab_rt in CEN_hc >|< Identical environment
+   6  26   1   0   0  #  221 ecab_fr in CEN_hc >|< Identical environment
+   6  27   1   0   0  #  222 ecab_bk in CEN_hc >|< Identical environment
+   6  28   1   0   0  #  223 ecab_to in CEN_hc >|< Identical environment
+   6  29   1   0   0  #  224 ecab_bs in CEN_hc >|< Identical environment
+   6  30   3   6  31  #  225 fbil_lft in CEN_hc >|< fbil_lft_ in CEN_hc
+   6  31   3   6  30  #  226 fbil_lft_ in CEN_hc >|< fbil_lft in CEN_hc
+   6  32   3   6  33  #  227 fbil_rt in CEN_hc >|< fbil_rt_ in CEN_hc
+   6  33   3   6  32  #  228 fbil_rt_ in CEN_hc >|< fbil_rt in CEN_hc
+   6  34   3   6  35  #  229 fbooks in CEN_hc >|< fbooks_ in CEN_hc
+   6  35   3   6  34  #  230 fbooks_ in CEN_hc >|< fbooks in CEN_hc
+   6  36   3   6  37  #  231 gcase in CEN_hc >|< gcase_ in CEN_hc
+   6  37   3   6  36  #  232 gcase_ in CEN_hc >|< gcase in CEN_hc
+   6  38   3   6  39  #  233 gcircuit in CEN_hc >|< gcircuit_ in CEN_hc
+   6  39   3   6  38  #  234 gcircuit_ in CEN_hc >|< gcircuit in CEN_hc
+   7   1   3   1   2  #  235 bc_corid_fra in corid_conv >|< bc_corid_fra in room_bc_conv
+   7   2   3   1   3  #  236 bc_door in corid_conv >|< bc_door in room_bc_conv
+   7   3   3   1  10  #  237 bc_part_glaz in corid_conv >|< bc_part_glaz in room_bc_conv
+   7   4   3   1  11  #  238 bc_ptn_corid in corid_conv >|< bc_ptn_corid in room_bc_conv
+   7   5   3   2   2  #  239 fc_corid_fra in corid_conv >|< fc_corid_fra in room_fan
+   7   6   3   2   3  #  240 fc_door in corid_conv >|< fc_door in room_fan
+   7   7   3   2  10  #  241 fc_part_glaz in corid_conv >|< fc_part_glaz in room_fan
+   7   8   3   2  11  #  242 fc_ptn_corid in corid_conv >|< fc_ptn_corid in room_fan
+   7   9   3   3   2  #  243 cav_corid_fr in corid_conv >|< cav_corid_fr in CAV_mixed
+   7  10   3   3   3  #  244 cav_door in corid_conv >|< cav_door in CAV_mixed
+   7  11   3   3  10  #  245 cav_part_gla in corid_conv >|< cav_part_gla in CAV_mixed
+   7  12   3   3  11  #  246 cav_ptn_cori in corid_conv >|< cav_ptn_cori in CAV_mixed
+   7  13   3   4   2  #  247 vavc_corid_f in corid_conv >|< vavc_corid_f in VAV_mix_CVh
+   7  14   3   4   3  #  248 vavc_door in corid_conv >|< vavc_door in VAV_mix_CVh
+   7  15   3   4  10  #  249 vavc_part_gl in corid_conv >|< vavc_part_gl in VAV_mix_CVh
+   7  16   3   4  11  #  250 vavc_ptn_cor in corid_conv >|< vavc_ptn_cor in VAV_mix_CVh
+   7  17   3   5   2  #  251 vavv_corid_f in corid_conv >|< vavv_corid_f in VAV_mix_VVh
+   7  18   3   5   3  #  252 vavv_door in corid_conv >|< vavv_door in VAV_mix_VVh
+   7  19   3   5  10  #  253 vavv_part_gl in corid_conv >|< vavv_part_gl in VAV_mix_VVh
+   7  20   3   5  11  #  254 vavv_ptn_cor in corid_conv >|< vavv_ptn_cor in VAV_mix_VVh
+   7  21   3   6   2  #  255 cen_corid_fr in corid_conv >|< cen_corid_fr in CEN_hc
+   7  22   3   6   3  #  256 cen_door in corid_conv >|< cen_door in CEN_hc
+   7  23   3   6  10  #  257 cen_part_gla in corid_conv >|< cen_part_gla in CEN_hc
+   7  24   3   6  11  #  258 cen_ptn_cori in corid_conv >|< cen_ptn_cori in CEN_hc
+   7  25   3   8   1  #  259 cor_floor_a in corid_conv >|< cor_floor_a in void_low
+   7  26   3   8   2  #  260 cor_floor_b in corid_conv >|< cor_floor_b in void_low
+   7  27   3   8   3  #  261 cor_floor_c in corid_conv >|< cor_floor_c in void_low
+   7  28   3   8   4  #  262 corid_floor_ in corid_conv >|< corid_floor_ in void_low
+   7  29   3   8   5  #  263 corid_flr_e in corid_conv >|< corid_flr_e in void_low
+   7  30   3   8   6  #  264 corid_flr_f in corid_conv >|< corid_flr_f in void_low
+   7  31   3  16   1  #  265 cor_ceil_a in corid_conv >|< cor_ceil_a in mid_void
+   7  32   3  16   2  #  266 cor_ceil_b in corid_conv >|< cor_ceil_b in mid_void
+   7  33   3  16   3  #  267 cor_ceil_c in corid_conv >|< cor_ceil_c in mid_void
+   7  34   3  16   4  #  268 cor_ceil_d in corid_conv >|< cor_ceil_d in mid_void
+   7  35   3  16   5  #  269 cor_ceil_e in corid_conv >|< cor_ceil_e in mid_void
+   7  36   3  16   6  #  270 cor_ceil_f in corid_conv >|< cor_ceil_f in mid_void
+   7  37   0   0   0  #  271 left in corid_conv is External
+   7  38   0   0   0  #  272 right in corid_conv is External
+   7  39   1   0   0  #  273 corid_a in corid_conv >|< Identical environment
+   7  40   1   0   0  #  274 corid_b in corid_conv >|< Identical environment
+   7  41   1   0   0  #  275 corid_c in corid_conv >|< Identical environment
+   7  42   1   0   0  #  276 corid_d in corid_conv >|< Identical environment
+   7  43   1   0   0  #  277 corid_e in corid_conv >|< Identical environment
+   7  44   1   0   0  #  278 corid_f in corid_conv >|< Identical environment
+   8   1   3   7  25  #  279 cor_floor_a in void_low >|< cor_floor_a in corid_conv
+   8   2   3   7  26  #  280 cor_floor_b in void_low >|< cor_floor_b in corid_conv
+   8   3   3   7  27  #  281 cor_floor_c in void_low >|< cor_floor_c in corid_conv
+   8   4   3   7  28  #  282 corid_floor_ in void_low >|< corid_floor_ in corid_conv
+   8   5   3   7  29  #  283 corid_flr_e in void_low >|< corid_flr_e in corid_conv
+   8   6   3   7  30  #  284 corid_flr_f in void_low >|< corid_flr_f in corid_conv
+   8   7   3   1   6  #  285 floor_bc in void_low >|< floor_bc in room_bc_conv
+   8   8   3   2   6  #  286 floor_fan in void_low >|< floor_fan in room_fan
+   8   9   3   3   6  #  287 floor_cav in void_low >|< floor_cav in CAV_mixed
+   8  10   3   4   6  #  288 floor_vavc in void_low >|< floor_vavc in VAV_mix_CVh
+   8  11   3   5   6  #  289 floor_vavv in void_low >|< floor_vavv in VAV_mix_VVh
+   8  12   3   6   6  #  290 floor_cen in void_low >|< floor_cen in CEN_hc
+   8  13   0   0   0  #  291 left in void_low is External
+   8  14   0   0   0  #  292 right in void_low is External
+   8  15   1   0   0  #  293 back in void_low >|< Identical environment
+   8  16   0   0   0  #  294 facade in void_low is External
+   8  17   1   0   0  #  295 base_offices in void_low >|< Identical environment
+   8  18   1   0   0  #  296 base_corid in void_low >|< Identical environment
+   9   1   3  10   4  #  297 pt_right in room_bc_rad >|< pt_left in rad_at_fac
+   9   2   3  15   1  #  298 bcr_corid_fr in room_bc_rad >|< bc_corid_fra in corid_rad
+   9   3   3  15   2  #  299 bcr_door in room_bc_rad >|< bc_door in corid_rad
+   9   4   1   0   0  #  300 pt_left in room_bc_rad >|< Identical environment
+   9   5   3  18   7  #  301 ceiling_bcr in room_bc_rad >|< ceiling_bcr in upper_void
+   9   6   3  16  19  #  302 floor_bcr in room_bc_rad >|< floor_bcr in mid_void
+   9   7   0   0   0  #  303 spandral in room_bc_rad is External
+   9   8   0   0   0  #  304 frame in room_bc_rad is External
+   9   9   0   0   0  #  305 glazing in room_bc_rad is External
+   9  10   3  15   3  #  306 bcr_part_gla in room_bc_rad >|< bc_part_glaz in corid_rad
+   9  11   3  15   4  #  307 bcr_ptn_cori in room_bc_rad >|< bc_ptn_corid in corid_rad
+   9  12   3   9  13  #  308 adesk_t in room_bc_rad >|< adesk_t_ in room_bc_rad
+   9  13   3   9  12  #  309 adesk_t_ in room_bc_rad >|< adesk_t in room_bc_rad
+   9  14   3   9  15  #  310 bdesk_t in room_bc_rad >|< bdesk_t_ in room_bc_rad
+   9  15   3   9  14  #  311 bdesk_t_ in room_bc_rad >|< bdesk_t in room_bc_rad
+   9  16   3   9  17  #  312 cseat in room_bc_rad >|< cseat_ in room_bc_rad
+   9  17   3   9  16  #  313 cseat_ in room_bc_rad >|< cseat in room_bc_rad
+   9  18   3   9  19  #  314 cstback in room_bc_rad >|< cstback_ in room_bc_rad
+   9  19   3   9  18  #  315 cstback_ in room_bc_rad >|< cstback in room_bc_rad
+   9  20   3   9  21  #  316 dseat in room_bc_rad >|< dseat_ in room_bc_rad
+   9  21   3   9  20  #  317 dseat_ in room_bc_rad >|< dseat in room_bc_rad
+   9  22   3   9  23  #  318 dstback in room_bc_rad >|< dstback_ in room_bc_rad
+   9  23   3   9  22  #  319 dstback_ in room_bc_rad >|< dstback in room_bc_rad
+   9  24   1   0   0  #  320 ecab_lf in room_bc_rad >|< Identical environment
+   9  25   1   0   0  #  321 ecab_rt in room_bc_rad >|< Identical environment
+   9  26   1   0   0  #  322 ecab_fr in room_bc_rad >|< Identical environment
+   9  27   1   0   0  #  323 ecab_bk in room_bc_rad >|< Identical environment
+   9  28   1   0   0  #  324 ecab_to in room_bc_rad >|< Identical environment
+   9  29   1   0   0  #  325 ecab_bs in room_bc_rad >|< Identical environment
+   9  30   3   9  31  #  326 fbil_lft in room_bc_rad >|< fbil_lft_ in room_bc_rad
+   9  31   3   9  30  #  327 fbil_lft_ in room_bc_rad >|< fbil_lft in room_bc_rad
+   9  32   3   9  33  #  328 fbil_rt in room_bc_rad >|< fbil_rt_ in room_bc_rad
+   9  33   3   9  32  #  329 fbil_rt_ in room_bc_rad >|< fbil_rt in room_bc_rad
+   9  34   3   9  35  #  330 fbooks in room_bc_rad >|< fbooks_ in room_bc_rad
+   9  35   3   9  34  #  331 fbooks_ in room_bc_rad >|< fbooks in room_bc_rad
+   9  36   3   9  37  #  332 gcase in room_bc_rad >|< gcase_ in room_bc_rad
+   9  37   3   9  36  #  333 gcase_ in room_bc_rad >|< gcase in room_bc_rad
+   9  38   3   9  39  #  334 gcircuit in room_bc_rad >|< gcircuit_ in room_bc_rad
+   9  39   3   9  38  #  335 gcircuit_ in room_bc_rad >|< gcircuit in room_bc_rad
+  10   1   3  11   4  #  336 pt_right in rad_at_fac >|< pt_left in rad_at_wall
+  10   2   3  15   5  #  337 radf_corid_f in rad_at_fac >|< fc_corid_fra in corid_rad
+  10   3   3  15   6  #  338 radf_door in rad_at_fac >|< fc_door in corid_rad
+  10   4   3   9   1  #  339 pt_left in rad_at_fac >|< pt_right in room_bc_rad
+  10   5   3  18   8  #  340 ceiling_radf in rad_at_fac >|< ceiling_radf in upper_void
+  10   6   3  16  20  #  341 floor_radf in rad_at_fac >|< floor_radf in mid_void
+  10   7   0   0   0  #  342 spandral in rad_at_fac is External
+  10   8   0   0   0  #  343 frame in rad_at_fac is External
+  10   9   0   0   0  #  344 glazing in rad_at_fac is External
+  10  10   3  15   7  #  345 radf_part_gl in rad_at_fac >|< fc_part_glaz in corid_rad
+  10  11   3  15   8  #  346 radf_ptn_cor in rad_at_fac >|< fc_ptn_corid in corid_rad
+  10  12   3  10  13  #  347 adesk_t in rad_at_fac >|< adesk_t_ in rad_at_fac
+  10  13   3  10  12  #  348 adesk_t_ in rad_at_fac >|< adesk_t in rad_at_fac
+  10  14   3  10  15  #  349 bdesk_t in rad_at_fac >|< bdesk_t_ in rad_at_fac
+  10  15   3  10  14  #  350 bdesk_t_ in rad_at_fac >|< bdesk_t in rad_at_fac
+  10  16   3  10  17  #  351 cseat in rad_at_fac >|< cseat_ in rad_at_fac
+  10  17   3  10  16  #  352 cseat_ in rad_at_fac >|< cseat in rad_at_fac
+  10  18   3  10  19  #  353 cstback in rad_at_fac >|< cstback_ in rad_at_fac
+  10  19   3  10  18  #  354 cstback_ in rad_at_fac >|< cstback in rad_at_fac
+  10  20   3  10  21  #  355 dseat in rad_at_fac >|< dseat_ in rad_at_fac
+  10  21   3  10  20  #  356 dseat_ in rad_at_fac >|< dseat in rad_at_fac
+  10  22   3  10  23  #  357 dstback in rad_at_fac >|< dstback_ in rad_at_fac
+  10  23   3  10  22  #  358 dstback_ in rad_at_fac >|< dstback in rad_at_fac
+  10  24   1   0   0  #  359 ecab_lf in rad_at_fac >|< Identical environment
+  10  25   1   0   0  #  360 ecab_rt in rad_at_fac >|< Identical environment
+  10  26   1   0   0  #  361 ecab_fr in rad_at_fac >|< Identical environment
+  10  27   1   0   0  #  362 ecab_bk in rad_at_fac >|< Identical environment
+  10  28   1   0   0  #  363 ecab_to in rad_at_fac >|< Identical environment
+  10  29   1   0   0  #  364 ecab_bs in rad_at_fac >|< Identical environment
+  10  30   3  10  31  #  365 fbil_lft in rad_at_fac >|< fbil_lft_ in rad_at_fac
+  10  31   3  10  30  #  366 fbil_lft_ in rad_at_fac >|< fbil_lft in rad_at_fac
+  10  32   3  10  33  #  367 fbil_rt in rad_at_fac >|< fbil_rt_ in rad_at_fac
+  10  33   3  10  32  #  368 fbil_rt_ in rad_at_fac >|< fbil_rt in rad_at_fac
+  10  34   3  10  35  #  369 fbooks in rad_at_fac >|< fbooks_ in rad_at_fac
+  10  35   3  10  34  #  370 fbooks_ in rad_at_fac >|< fbooks in rad_at_fac
+  10  36   3  10  37  #  371 gcase in rad_at_fac >|< gcase_ in rad_at_fac
+  10  37   3  10  36  #  372 gcase_ in rad_at_fac >|< gcase in rad_at_fac
+  10  38   3  10  39  #  373 gcircuit in rad_at_fac >|< gcircuit_ in rad_at_fac
+  10  39   3  10  38  #  374 gcircuit_ in rad_at_fac >|< gcircuit in rad_at_fac
+  11   1   3  12   4  #  375 pt_right in rad_at_wall >|< pt_left in floor_heat
+  11   2   3  15   9  #  376 radw_corid_f in rad_at_wall >|< cav_corid_fr in corid_rad
+  11   3   3  15  10  #  377 radw_door in rad_at_wall >|< cav_door in corid_rad
+  11   4   3  10   1  #  378 pt_left in rad_at_wall >|< pt_right in rad_at_fac
+  11   5   3  18   9  #  379 ceiling_radw in rad_at_wall >|< ceiling_radw in upper_void
+  11   6   3  16  21  #  380 floor_radw in rad_at_wall >|< floor_radw in mid_void
+  11   7   0   0   0  #  381 spandral in rad_at_wall is External
+  11   8   0   0   0  #  382 frame in rad_at_wall is External
+  11   9   0   0   0  #  383 glazing in rad_at_wall is External
+  11  10   3  15  11  #  384 radw_part_gl in rad_at_wall >|< cav_part_gla in corid_rad
+  11  11   3  15  12  #  385 radw_ptn_cor in rad_at_wall >|< cav_ptn_cori in corid_rad
+  11  12   3  11  13  #  386 adesk_t in rad_at_wall >|< adesk_t_ in rad_at_wall
+  11  13   3  11  12  #  387 adesk_t_ in rad_at_wall >|< adesk_t in rad_at_wall
+  11  14   3  11  15  #  388 bdesk_t in rad_at_wall >|< bdesk_t_ in rad_at_wall
+  11  15   3  11  14  #  389 bdesk_t_ in rad_at_wall >|< bdesk_t in rad_at_wall
+  11  16   3  11  17  #  390 cseat in rad_at_wall >|< cseat_ in rad_at_wall
+  11  17   3  11  16  #  391 cseat_ in rad_at_wall >|< cseat in rad_at_wall
+  11  18   3  11  19  #  392 cstback in rad_at_wall >|< cstback_ in rad_at_wall
+  11  19   3  11  18  #  393 cstback_ in rad_at_wall >|< cstback in rad_at_wall
+  11  20   3  11  21  #  394 dseat in rad_at_wall >|< dseat_ in rad_at_wall
+  11  21   3  11  20  #  395 dseat_ in rad_at_wall >|< dseat in rad_at_wall
+  11  22   3  11  23  #  396 dstback in rad_at_wall >|< dstback_ in rad_at_wall
+  11  23   3  11  22  #  397 dstback_ in rad_at_wall >|< dstback in rad_at_wall
+  11  24   1   0   0  #  398 ecab_lf in rad_at_wall >|< Identical environment
+  11  25   1   0   0  #  399 ecab_rt in rad_at_wall >|< Identical environment
+  11  26   1   0   0  #  400 ecab_fr in rad_at_wall >|< Identical environment
+  11  27   1   0   0  #  401 ecab_bk in rad_at_wall >|< Identical environment
+  11  28   1   0   0  #  402 ecab_to in rad_at_wall >|< Identical environment
+  11  29   1   0   0  #  403 ecab_bs in rad_at_wall >|< Identical environment
+  11  30   3  11  31  #  404 fbil_lft in rad_at_wall >|< fbil_lft_ in rad_at_wall
+  11  31   3  11  30  #  405 fbil_lft_ in rad_at_wall >|< fbil_lft in rad_at_wall
+  11  32   3  11  33  #  406 fbil_rt in rad_at_wall >|< fbil_rt_ in rad_at_wall
+  11  33   3  11  32  #  407 fbil_rt_ in rad_at_wall >|< fbil_rt in rad_at_wall
+  11  34   3  11  35  #  408 fbooks in rad_at_wall >|< fbooks_ in rad_at_wall
+  11  35   3  11  34  #  409 fbooks_ in rad_at_wall >|< fbooks in rad_at_wall
+  11  36   3  11  37  #  410 gcase in rad_at_wall >|< gcase_ in rad_at_wall
+  11  37   3  11  36  #  411 gcase_ in rad_at_wall >|< gcase in rad_at_wall
+  11  38   3  11  39  #  412 gcircuit in rad_at_wall >|< gcircuit_ in rad_at_wall
+  11  39   3  11  38  #  413 gcircuit_ in rad_at_wall >|< gcircuit in rad_at_wall
+  12   1   3  13   4  #  414 pt_right in floor_heat >|< pt_left in user_hc
+  12   2   3  15  13  #  415 flrh_corid_f in floor_heat >|< vavc_corid_f in corid_rad
+  12   3   3  15  14  #  416 flrh_door in floor_heat >|< vavc_door in corid_rad
+  12   4   3  11   1  #  417 pt_left in floor_heat >|< pt_right in rad_at_wall
+  12   5   3  18  10  #  418 ceiling_flrh in floor_heat >|< ceiling_flrh in upper_void
+  12   6   3  17   1  #  419 floor_flrh in floor_heat >|< floor_flrh in thin_floor
+  12   7   0   0   0  #  420 spandral in floor_heat is External
+  12   8   0   0   0  #  421 frame in floor_heat is External
+  12   9   0   0   0  #  422 glazing in floor_heat is External
+  12  10   3  15  15  #  423 flrh_part_gl in floor_heat >|< vavc_part_gl in corid_rad
+  12  11   3  15  16  #  424 flrh_ptn_cor in floor_heat >|< vavc_ptn_cor in corid_rad
+  12  12   3  12  13  #  425 adesk_t in floor_heat >|< adesk_t_ in floor_heat
+  12  13   3  12  12  #  426 adesk_t_ in floor_heat >|< adesk_t in floor_heat
+  12  14   3  12  15  #  427 bdesk_t in floor_heat >|< bdesk_t_ in floor_heat
+  12  15   3  12  14  #  428 bdesk_t_ in floor_heat >|< bdesk_t in floor_heat
+  12  16   3  12  17  #  429 cseat in floor_heat >|< cseat_ in floor_heat
+  12  17   3  12  16  #  430 cseat_ in floor_heat >|< cseat in floor_heat
+  12  18   3  12  19  #  431 cstback in floor_heat >|< cstback_ in floor_heat
+  12  19   3  12  18  #  432 cstback_ in floor_heat >|< cstback in floor_heat
+  12  20   3  12  21  #  433 dseat in floor_heat >|< dseat_ in floor_heat
+  12  21   3  12  20  #  434 dseat_ in floor_heat >|< dseat in floor_heat
+  12  22   3  12  23  #  435 dstback in floor_heat >|< dstback_ in floor_heat
+  12  23   3  12  22  #  436 dstback_ in floor_heat >|< dstback in floor_heat
+  12  24   1   0   0  #  437 ecab_lf in floor_heat >|< Identical environment
+  12  25   1   0   0  #  438 ecab_rt in floor_heat >|< Identical environment
+  12  26   1   0   0  #  439 ecab_fr in floor_heat >|< Identical environment
+  12  27   1   0   0  #  440 ecab_bk in floor_heat >|< Identical environment
+  12  28   1   0   0  #  441 ecab_to in floor_heat >|< Identical environment
+  12  29   1   0   0  #  442 ecab_bs in floor_heat >|< Identical environment
+  12  30   3  12  31  #  443 fbil_lft in floor_heat >|< fbil_lft_ in floor_heat
+  12  31   3  12  30  #  444 fbil_lft_ in floor_heat >|< fbil_lft in floor_heat
+  12  32   3  12  33  #  445 fbil_rt in floor_heat >|< fbil_rt_ in floor_heat
+  12  33   3  12  32  #  446 fbil_rt_ in floor_heat >|< fbil_rt in floor_heat
+  12  34   3  12  35  #  447 fbooks in floor_heat >|< fbooks_ in floor_heat
+  12  35   3  12  34  #  448 fbooks_ in floor_heat >|< fbooks in floor_heat
+  12  36   3  12  37  #  449 gcase in floor_heat >|< gcase_ in floor_heat
+  12  37   3  12  36  #  450 gcase_ in floor_heat >|< gcase in floor_heat
+  12  38   3  12  39  #  451 gcircuit in floor_heat >|< gcircuit_ in floor_heat
+  12  39   3  12  38  #  452 gcircuit_ in floor_heat >|< gcircuit in floor_heat
+  13   1   3  14   4  #  453 pt_right in user_hc >|< pt_left in warm_wall
+  13   2   3  15  17  #  454 user_corid_f in user_hc >|< vavv_corid_f in corid_rad
+  13   3   3  15  18  #  455 user_door in user_hc >|< vavv_door in corid_rad
+  13   4   3  12   1  #  456 pt_left in user_hc >|< pt_right in floor_heat
+  13   5   3  18  11  #  457 ceiling_user in user_hc >|< ceiling_user in upper_void
+  13   6   3  16  22  #  458 floor_user in user_hc >|< floor_vavv in mid_void
+  13   7   0   0   0  #  459 spandral in user_hc is External
+  13   8   0   0   0  #  460 frame in user_hc is External
+  13   9   0   0   0  #  461 glazing in user_hc is External
+  13  10   3  15  19  #  462 user_part_gl in user_hc >|< vavv_part_gl in corid_rad
+  13  11   3  15  20  #  463 user_ptn_cor in user_hc >|< vavv_ptn_cor in corid_rad
+  13  12   3  13  13  #  464 adesk_t in user_hc >|< adesk_t_ in user_hc
+  13  13   3  13  12  #  465 adesk_t_ in user_hc >|< adesk_t in user_hc
+  13  14   3  13  15  #  466 bdesk_t in user_hc >|< bdesk_t_ in user_hc
+  13  15   3  13  14  #  467 bdesk_t_ in user_hc >|< bdesk_t in user_hc
+  13  16   3  13  17  #  468 cseat in user_hc >|< cseat_ in user_hc
+  13  17   3  13  16  #  469 cseat_ in user_hc >|< cseat in user_hc
+  13  18   3  13  19  #  470 cstback in user_hc >|< cstback_ in user_hc
+  13  19   3  13  18  #  471 cstback_ in user_hc >|< cstback in user_hc
+  13  20   3  13  21  #  472 dseat in user_hc >|< dseat_ in user_hc
+  13  21   3  13  20  #  473 dseat_ in user_hc >|< dseat in user_hc
+  13  22   3  13  23  #  474 dstback in user_hc >|< dstback_ in user_hc
+  13  23   3  13  22  #  475 dstback_ in user_hc >|< dstback in user_hc
+  13  24   1   0   0  #  476 ecab_lf in user_hc >|< Identical environment
+  13  25   1   0   0  #  477 ecab_rt in user_hc >|< Identical environment
+  13  26   1   0   0  #  478 ecab_fr in user_hc >|< Identical environment
+  13  27   1   0   0  #  479 ecab_bk in user_hc >|< Identical environment
+  13  28   1   0   0  #  480 ecab_to in user_hc >|< Identical environment
+  13  29   1   0   0  #  481 ecab_bs in user_hc >|< Identical environment
+  13  30   3  13  31  #  482 fbil_lft in user_hc >|< fbil_lft_ in user_hc
+  13  31   3  13  30  #  483 fbil_lft_ in user_hc >|< fbil_lft in user_hc
+  13  32   3  13  33  #  484 fbil_rt in user_hc >|< fbil_rt_ in user_hc
+  13  33   3  13  32  #  485 fbil_rt_ in user_hc >|< fbil_rt in user_hc
+  13  34   3  13  35  #  486 fbooks in user_hc >|< fbooks_ in user_hc
+  13  35   3  13  34  #  487 fbooks_ in user_hc >|< fbooks in user_hc
+  13  36   3  13  37  #  488 gcase in user_hc >|< gcase_ in user_hc
+  13  37   3  13  36  #  489 gcase_ in user_hc >|< gcase in user_hc
+  13  38   3  13  39  #  490 gcircuit in user_hc >|< gcircuit_ in user_hc
+  13  39   3  13  38  #  491 gcircuit_ in user_hc >|< gcircuit in user_hc
+  14   1   0   0   0  #  492 pt_right in warm_wall is External
+  14   2   3  15  21  #  493 wrmw_corid_f in warm_wall >|< cen_corid_fr in corid_rad
+  14   3   3  15  22  #  494 warmw_door in warm_wall >|< cen_door in corid_rad
+  14   4   3  13   1  #  495 pt_left in warm_wall >|< pt_right in user_hc
+  14   5   3  18  12  #  496 ceiling_warm in warm_wall >|< ceiling_warm in upper_void
+  14   6   3  16  23  #  497 floor_warmw in warm_wall >|< floor_cen in mid_void
+  14   7   0   0   0  #  498 spandral in warm_wall is External
+  14   8   0   0   0  #  499 frame in warm_wall is External
+  14   9   0   0   0  #  500 glazing in warm_wall is External
+  14  10   3  15  23  #  501 warmw_part_g in warm_wall >|< cen_part_gla in corid_rad
+  14  11   3  15  24  #  502 warmw_ptn_co in warm_wall >|< cen_ptn_cori in corid_rad
+  14  12   3  14  13  #  503 adesk_t in warm_wall >|< adesk_t_ in warm_wall
+  14  13   3  14  12  #  504 adesk_t_ in warm_wall >|< adesk_t in warm_wall
+  14  14   3  14  15  #  505 bdesk_t in warm_wall >|< bdesk_t_ in warm_wall
+  14  15   3  14  14  #  506 bdesk_t_ in warm_wall >|< bdesk_t in warm_wall
+  14  16   3  14  17  #  507 cseat in warm_wall >|< cseat_ in warm_wall
+  14  17   3  14  16  #  508 cseat_ in warm_wall >|< cseat in warm_wall
+  14  18   3  14  19  #  509 cstback in warm_wall >|< cstback_ in warm_wall
+  14  19   3  14  18  #  510 cstback_ in warm_wall >|< cstback in warm_wall
+  14  20   3  14  21  #  511 dseat in warm_wall >|< dseat_ in warm_wall
+  14  21   3  14  20  #  512 dseat_ in warm_wall >|< dseat in warm_wall
+  14  22   3  14  23  #  513 dstback in warm_wall >|< dstback_ in warm_wall
+  14  23   3  14  22  #  514 dstback_ in warm_wall >|< dstback in warm_wall
+  14  24   1   0   0  #  515 ecab_lf in warm_wall >|< Identical environment
+  14  25   1   0   0  #  516 ecab_rt in warm_wall >|< Identical environment
+  14  26   1   0   0  #  517 ecab_fr in warm_wall >|< Identical environment
+  14  27   1   0   0  #  518 ecab_bk in warm_wall >|< Identical environment
+  14  28   1   0   0  #  519 ecab_to in warm_wall >|< Identical environment
+  14  29   1   0   0  #  520 ecab_bs in warm_wall >|< Identical environment
+  14  30   3  14  31  #  521 fbil_lft in warm_wall >|< fbil_lft_ in warm_wall
+  14  31   3  14  30  #  522 fbil_lft_ in warm_wall >|< fbil_lft in warm_wall
+  14  32   3  14  33  #  523 fbil_rt in warm_wall >|< fbil_rt_ in warm_wall
+  14  33   3  14  32  #  524 fbil_rt_ in warm_wall >|< fbil_rt in warm_wall
+  14  34   3  14  35  #  525 fbooks in warm_wall >|< fbooks_ in warm_wall
+  14  35   3  14  34  #  526 fbooks_ in warm_wall >|< fbooks in warm_wall
+  14  36   3  14  37  #  527 gcase in warm_wall >|< gcase_ in warm_wall
+  14  37   3  14  36  #  528 gcase_ in warm_wall >|< gcase in warm_wall
+  14  38   3  14  39  #  529 gcircuit in warm_wall >|< gcircuit_ in warm_wall
+  14  39   3  14  38  #  530 gcircuit_ in warm_wall >|< gcircuit in warm_wall
+  15   1   3   9   2  #  531 bc_corid_fra in corid_rad >|< bcr_corid_fr in room_bc_rad
+  15   2   3   9   3  #  532 bc_door in corid_rad >|< bcr_door in room_bc_rad
+  15   3   3   9  10  #  533 bc_part_glaz in corid_rad >|< bcr_part_gla in room_bc_rad
+  15   4   3   9  11  #  534 bc_ptn_corid in corid_rad >|< bcr_ptn_cori in room_bc_rad
+  15   5   3  10   2  #  535 fc_corid_fra in corid_rad >|< radf_corid_f in rad_at_fac
+  15   6   3  10   3  #  536 fc_door in corid_rad >|< radf_door in rad_at_fac
+  15   7   3  10  10  #  537 fc_part_glaz in corid_rad >|< radf_part_gl in rad_at_fac
+  15   8   3  10  11  #  538 fc_ptn_corid in corid_rad >|< radf_ptn_cor in rad_at_fac
+  15   9   3  11   2  #  539 cav_corid_fr in corid_rad >|< radw_corid_f in rad_at_wall
+  15  10   3  11   3  #  540 cav_door in corid_rad >|< radw_door in rad_at_wall
+  15  11   3  11  10  #  541 cav_part_gla in corid_rad >|< radw_part_gl in rad_at_wall
+  15  12   3  11  11  #  542 cav_ptn_cori in corid_rad >|< radw_ptn_cor in rad_at_wall
+  15  13   3  12   2  #  543 vavc_corid_f in corid_rad >|< flrh_corid_f in floor_heat
+  15  14   3  12   3  #  544 vavc_door in corid_rad >|< flrh_door in floor_heat
+  15  15   3  12  10  #  545 vavc_part_gl in corid_rad >|< flrh_part_gl in floor_heat
+  15  16   3  12  11  #  546 vavc_ptn_cor in corid_rad >|< flrh_ptn_cor in floor_heat
+  15  17   3  13   2  #  547 vavv_corid_f in corid_rad >|< user_corid_f in user_hc
+  15  18   3  13   3  #  548 vavv_door in corid_rad >|< user_door in user_hc
+  15  19   3  13  10  #  549 vavv_part_gl in corid_rad >|< user_part_gl in user_hc
+  15  20   3  13  11  #  550 vavv_ptn_cor in corid_rad >|< user_ptn_cor in user_hc
+  15  21   3  14   2  #  551 cen_corid_fr in corid_rad >|< wrmw_corid_f in warm_wall
+  15  22   3  14   3  #  552 cen_door in corid_rad >|< warmw_door in warm_wall
+  15  23   3  14  10  #  553 cen_part_gla in corid_rad >|< warmw_part_g in warm_wall
+  15  24   3  14  11  #  554 cen_ptn_cori in corid_rad >|< warmw_ptn_co in warm_wall
+  15  25   3  16   7  #  555 cor_floor_a in corid_rad >|< cor_floor_a in mid_void
+  15  26   3  16   8  #  556 cor_floor_b in corid_rad >|< cor_floor_b in mid_void
+  15  27   3  16   9  #  557 cor_floor_c in corid_rad >|< cor_floor_c in mid_void
+  15  28   3  16  10  #  558 corid_floor_ in corid_rad >|< corid_floor_ in mid_void
+  15  29   3  16  11  #  559 corid_flr_e in corid_rad >|< corid_flr_e in mid_void
+  15  30   3  16  12  #  560 corid_flr_f in corid_rad >|< corid_flr_f in mid_void
+  15  31   3  18   1  #  561 cor_ceil_a in corid_rad >|< cor_ceil_a in upper_void
+  15  32   3  18   2  #  562 cor_ceil_b in corid_rad >|< cor_ceil_b in upper_void
+  15  33   3  18   3  #  563 cor_ceil_c in corid_rad >|< cor_ceil_c in upper_void
+  15  34   3  18   4  #  564 cor_ceil_d in corid_rad >|< cor_ceil_d in upper_void
+  15  35   3  18   5  #  565 cor_ceil_e in corid_rad >|< cor_ceil_e in upper_void
+  15  36   3  18   6  #  566 cor_ceil_f in corid_rad >|< cor_ceil_f in upper_void
+  15  37   0   0   0  #  567 left in corid_rad is External
+  15  38   0   0   0  #  568 right in corid_rad is External
+  15  39   1   0   0  #  569 corid_a in corid_rad >|< Identical environment
+  15  40   1   0   0  #  570 corid_b in corid_rad >|< Identical environment
+  15  41   1   0   0  #  571 corid_c in corid_rad >|< Identical environment
+  15  42   1   0   0  #  572 corid_d in corid_rad >|< Identical environment
+  15  43   1   0   0  #  573 corid_e in corid_rad >|< Identical environment
+  15  44   1   0   0  #  574 corid_f in corid_rad >|< Identical environment
+  16   1   3   7  31  #  575 cor_ceil_a in mid_void >|< cor_ceil_a in corid_conv
+  16   2   3   7  32  #  576 cor_ceil_b in mid_void >|< cor_ceil_b in corid_conv
+  16   3   3   7  33  #  577 cor_ceil_c in mid_void >|< cor_ceil_c in corid_conv
+  16   4   3   7  34  #  578 cor_ceil_d in mid_void >|< cor_ceil_d in corid_conv
+  16   5   3   7  35  #  579 cor_ceil_e in mid_void >|< cor_ceil_e in corid_conv
+  16   6   3   7  36  #  580 cor_ceil_f in mid_void >|< cor_ceil_f in corid_conv
+  16   7   3  15  25  #  581 cor_floor_a in mid_void >|< cor_floor_a in corid_rad
+  16   8   3  15  26  #  582 cor_floor_b in mid_void >|< cor_floor_b in corid_rad
+  16   9   3  15  27  #  583 cor_floor_c in mid_void >|< cor_floor_c in corid_rad
+  16  10   3  15  28  #  584 corid_floor_ in mid_void >|< corid_floor_ in corid_rad
+  16  11   3  15  29  #  585 corid_flr_e in mid_void >|< corid_flr_e in corid_rad
+  16  12   3  15  30  #  586 corid_flr_f in mid_void >|< corid_flr_f in corid_rad
+  16  13   3   1   5  #  587 ceiling_bc in mid_void >|< ceiling_bc in room_bc_conv
+  16  14   3   2   5  #  588 ceiling_fan in mid_void >|< ceiling_fan in room_fan
+  16  15   3   3   5  #  589 ceiling_cav in mid_void >|< ceiling_cav in CAV_mixed
+  16  16   3   4   5  #  590 ceiling_vavc in mid_void >|< ceiling_vavc in VAV_mix_CVh
+  16  17   3   5   5  #  591 ceiling_vavv in mid_void >|< ceiling_vavv in VAV_mix_VVh
+  16  18   3   6   5  #  592 ceiling_cen in mid_void >|< ceiling_cen in CEN_hc
+  16  19   3   9   6  #  593 floor_bcr in mid_void >|< floor_bcr in room_bc_rad
+  16  20   3  10   6  #  594 floor_radf in mid_void >|< floor_radf in rad_at_fac
+  16  21   3  11   6  #  595 floor_radw in mid_void >|< floor_radw in rad_at_wall
+  16  22   3  13   6  #  596 floor_vavv in mid_void >|< floor_user in user_hc
+  16  23   3  14   6  #  597 floor_cen in mid_void >|< floor_warmw in warm_wall
+  16  24   0   0   0  #  598 left in mid_void is External
+  16  25   0   0   0  #  599 right in mid_void is External
+  16  26   0   0   0  #  600 facade in mid_void is External
+  16  27   1   0   0  #  601 back in mid_void >|< Identical environment
+  16  28   3  17   3  #  602 thin_right in mid_void >|< thin_right in thin_floor
+  16  29   3  17   4  #  603 thin_back in mid_void >|< thin_back in thin_floor
+  16  30   3  17   5  #  604 thin_left in mid_void >|< thin_left in thin_floor
+  16  31   3  17   6  #  605 thin_base in mid_void >|< thin_base in thin_floor
+  17   1   3  12   6  #  606 floor_flrh in thin_floor >|< floor_flrh in floor_heat
+  17   2   0   0   0  #  607 facade in thin_floor is External
+  17   3   3  16  28  #  608 thin_right in thin_floor >|< thin_right in mid_void
+  17   4   3  16  29  #  609 thin_back in thin_floor >|< thin_back in mid_void
+  17   5   3  16  30  #  610 thin_left in thin_floor >|< thin_left in mid_void
+  17   6   3  16  31  #  611 thin_base in thin_floor >|< thin_base in mid_void
+  18   1   3  15  31  #  612 cor_ceil_a in upper_void >|< cor_ceil_a in corid_rad
+  18   2   3  15  32  #  613 cor_ceil_b in upper_void >|< cor_ceil_b in corid_rad
+  18   3   3  15  33  #  614 cor_ceil_c in upper_void >|< cor_ceil_c in corid_rad
+  18   4   3  15  34  #  615 cor_ceil_d in upper_void >|< cor_ceil_d in corid_rad
+  18   5   3  15  35  #  616 cor_ceil_e in upper_void >|< cor_ceil_e in corid_rad
+  18   6   3  15  36  #  617 cor_ceil_f in upper_void >|< cor_ceil_f in corid_rad
+  18   7   3   9   5  #  618 ceiling_bcr in upper_void >|< ceiling_bcr in room_bc_rad
+  18   8   3  10   5  #  619 ceiling_radf in upper_void >|< ceiling_radf in rad_at_fac
+  18   9   3  11   5  #  620 ceiling_radw in upper_void >|< ceiling_radw in rad_at_wall
+  18  10   3  12   5  #  621 ceiling_flrh in upper_void >|< ceiling_flrh in floor_heat
+  18  11   3  13   5  #  622 ceiling_user in upper_void >|< ceiling_user in user_hc
+  18  12   3  14   5  #  623 ceiling_warm in upper_void >|< ceiling_warm in warm_wall
+  18  13   0   0   0  #  624 facade in upper_void is External
+  18  14   0   0   0  #  625 right in upper_void is External
+  18  15   0   0   0  #  626 left in upper_void is External
+  18  16   1   0   0  #  627 back in upper_void >|< Identical environment
+  18  17   1   0   0  #  628 upper in upper_void >|< Identical environment

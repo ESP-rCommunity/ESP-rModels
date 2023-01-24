@@ -1,0 +1,21 @@
+*Constructions 2.1                              # thermophysical properties of ground
+*date Mon Sep  6 15:14:08 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     1     0   0.90   0.90   0.85   0.85   0    #   1  south        fict_grnd
+     1     0   0.90   0.90   0.85   0.85   0    #   2  east         fict_grnd
+     1     0   0.90   0.90   0.85   0.85   0    #   3  north        fict_grnd
+     1     0   0.90   0.90   0.85   0.85   0    #   4  west         fict_grnd
+     1     0   0.90   0.90   0.85   0.85   0    #   5  top          fict_grnd
+     1     0   0.90   0.90   0.85   0.85   0    #   6  bottom       fict_grnd
+# air gap layer positions and restances
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+     1.2800    1460.0     879.0  0.1000   0   0.00 0.00000 0.00000  #   1   1 Common earch
+     1.2800    1460.0     879.0  0.1000   0   0.00 0.00000 0.00000  #   2   1 Common earch
+     1.2800    1460.0     879.0  0.1000   0   0.00 0.00000 0.00000  #   3   1 Common earch
+     1.2800    1460.0     879.0  0.1000   0   0.00 0.00000 0.00000  #   4   1 Common earch
+     1.2800    1460.0     879.0  0.1000   0   0.00 0.00000 0.00000  #   5   1 Common earch
+     1.2800    1460.0     879.0  0.1000   0   0.00 0.00000 0.00000  #   6   1 Common earch
+*tmc NONE                                       # all surfaces are opaque

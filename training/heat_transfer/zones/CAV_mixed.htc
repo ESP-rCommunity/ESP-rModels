@@ -1,0 +1,47 @@
+*HC_CTL                         # heat transfer control for CAV_mixed
+*Days  1                        # number of control day types
+  1                             # number control intervals for all day types
+ 39                             # number of surfaces
+  0.00  24.00                   # start and end time of interval
+  3                             # adaptive calculation control type
+*Doc,mixed convec. via CVVT no outdoor air
+   4.   6.  35.  15.   0.  99.   4.  -1.  # pt_right Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # cav_corid_fr Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # cav_door Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # pt_left Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # ceiling_cav Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # floor_cav Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # spandral Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # frame Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # glazing Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # cav_part_gla Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # cav_ptn_cori Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # adesk_t Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # adesk_t_ Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # bdesk_t Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # bdesk_t_ Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # cseat Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # cseat_ Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # cstback Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # cstback_ Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # dseat Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # dseat_ Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # dstback Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # dstback_ Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # ecab_lf Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # ecab_rt Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # ecab_fr Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # ecab_bk Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # ecab_to Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # ecab_bs Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # fbil_lft Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # fbil_lft_ Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # fbil_rt Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # fbil_rt_ Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # fbooks Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # fbooks_ Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # gcase Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # gcase_ Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # gcircuit Khalifa & M with fan or flor htg
+   4.   6.  35.  15.   0.  99.   4.  -1.  # gcircuit_ Khalifa & M with fan or flor htg
+  0 0.000 0.000                           # Air origin zone (+ chan. width & height if Bar-Cohen cor.)

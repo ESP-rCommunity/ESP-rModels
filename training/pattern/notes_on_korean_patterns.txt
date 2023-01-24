@@ -1,0 +1,122 @@
+Notes on pattern files *_kor.opr
+
+These files are based on data from Korean government supported research 
+which was entitled 'The Study of the Development of Energy Performance 
+Assessment Method and Policy in Buildings', published in Jan. 2007.
+
+In the research, supervising institution was KICT (Korea Institute of 
+Construction Technology), and entrusted institution was KIER (Korean 
+Institute of Energy Research), and etc. Research code is 2005-E-BD04-P-02
+
+The infiltration data was from minimum ambient air flow which is needed 
+from hygienic perspective. (15 m3/(h*m2)). And in order to use ACH unit, 
+we assume the height of the room as 2.3 m and that brings 6.5 ACH.
+
+In some of the pattern files casual gains in the operation are the sum 
+of casual gain of occupants and that of equipment. That's way ratio of 
+convective is 80%. And they were put as casual gain of equipment in 
+esp-r since casual gain of occupants uses W unit, not W/m2.
+So we divide daily casual gain occurance (Wh/(m2*d)) by running time 
+(e.g. 24 hrs a day). 9.7 is correct.
+ 
+Some room types also assume that if there is no occupancy that there is
+no required amount of ambient air flow and most of the time there is 
+no heat source,  they may set casual gain and infiltration as 0.
+
+Extracted from a legacy (2013 era) set of ESP-r zone operation files in the
+training/pattern folder.
+
+
+# ../zones/watchingroom_kor.opr
+watchingroom_kor;weekdays19-23;casual_gains63.5W/m2(80%conv);19.8ach
+
+# ../zones/toilet_kor.opr
+toilet_kor;weekdays9-18;casual_gains0W/m2(80%conv);6.5ach for non-domestic buildings
+
+# ../zones/bedroom_kor.opr
+bedroom_kor;all_day0-24;casual_gains5.5W/m2(80%conv);4.3ach
+
+# ../zones/cafeteria_kor.opr
+cafeteria_kor;weekdays8-19;casual_gains14.5W/m2(80%conv);7.8ach
+
+# ../zones/classroom_kor.opr
+classroom_kor;weekdays8-17;casual_gains28.9W/m2(80%conv);9ach
+
+# ../zones/computerroom_kor.opr
+computerroom_kor;all_day0-24;casual_gains250.6W/m2(80%conv);0.36ach
+
+# ../zones/department_HVAC_off_kor.opr
+department_HVAC_off_kor;weekdays_and_saturday10-20;casual_gains12.3W/m2(80%conv);2.2ach
+
+# ../zones/department_HVAC_on_kor.opr
+department_HVAC_on_kor;weekdays_and_saturday10-20;casual_gains9.9W/m2(80%conv);2.4ach
+
+# ../zones/equipmentroom_kor.opr
+equipmentroom_kor in a warehouse or a document storage room;weekdays9-18;0.065ach all days
+
+# ../zones/exibition_kor.opr
+exibition_kor;weekdays9-18;casual_gains16.7W/m2(80%conv);2.7ach
+
+# ../zones/free_readingroom_kor.opr
+free_readingroom_kor;weekdays8-20;casual_gains14.5W/m2(80%conv);2.98ach
+
+# ../zones/etc_staying_space_kor.opr
+etc_staying_space_kor;weekdays9-18;casual_gains11.1W/m2(80%conv);3ach
+
+# ../zones/guestroom_kor.opr
+guestroom_kor;all_day0-24;casual_gains7.6W/m2(80%conv);1.3ach
+
+# ../zones/kitchen_kor.opr
+kitchen_kor;weekdays_and_saturday10-23;casual_gains142.8W/m2(80%conv);39ach
+
+# ../zones/lecturehall_kor.opr
+lecturehall_kor;weekdays9-18;casual_gains49.3W/m2(80%conv);10.9ach
+
+# ../zones/library_kor.opr
+library_kor (magazine section which has low occupancy);weekdays8-20;1.3ach
+
+# ../zones/lobby_hall_kor.opr
+lobby_hall_kor;weekdays19-23;casual_gains3.5W/m2(80%conv);1.43ach
+
+# ../zones/lobby_normal_kor.opr
+lobby_normal_kor;weekdays9-18;casual_gains6.7W/m2(80%conv);0.72ach
+
+# ../zones/museum_kor.opr
+museum_kor;weekdays10-18;casual_gains3.5W/m2(80%conv);0.57ach
+
+# ../zones/office_group_kor.opr
+office_group_kor;weekdays9-18;casual_gains21W/m2(80%conv);1.74ach
+
+# ../zones/office_large_kor.opr
+office_large_kor;weekdays9-18;casual_gains21W/m2(80%conv);2.61ach
+
+# ../zones/office_private_kor.opr
+office_private_kor;weekdays9-18;casual_gains21W/m2(80%conv);1.74ach
+
+# ../zones/parkinglot_private_kor.opr
+parkinglot_private_kor;weekdays8-18;3.48ach
+
+# ../zones/parkinglot_public_kor.opr
+parkinglot_public_kor;weekdays7-24;3.48ach
+
+# ../zones/plant_kor.opr
+plant_kor;weekdays9-18;casual_gains30.3W/m2(80%conv);8.7ach
+
+# ../zones/readingroom_kor.opr
+readingroom_kor;weekdays8-20;casual_gains14.5W/m2(80%conv);2.98ach
+
+# ../zones/restaurant_kor.opr
+restaurant_kor;weekdays_and_saturday10-24;casual_gains6.7W/m2(80%conv);7.8ach
+
+# ../zones/seminarroom_kor.opr
+seminarroom_kor;weekdays9-18;casual_gains9.7W/m2(80%conv);6.5ach
+
+# ../zones/sportshall_kor.opr
+sportshall_kor;weekdays_and_saturday8-23;casual_gains4W/m2(80%conv);0.86ach
+
+# ../zones/stage_kor.opr
+stage_kor;weekdays13-23;0.086ach
+
+# ../zones/storehouse_kor.opr
+storehouse_kor is associated with non-residential kitchens;weekdays_and_saturday10-23;casual_gains18.8W/m2(80%conv);6.5ach
+

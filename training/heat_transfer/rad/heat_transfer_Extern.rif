@@ -1,0 +1,24 @@
+# Radiance RIF file: heat_transfer_Extern.rif
+#e2r_gen_view   0 -1
+#e2r_glaz_type   1
+view= initial -vtv -vp  -69.2 -152.6   43.0 -vd  0.439  0.870 -0.223 -vu  0.00 0.00 1.00 -vh   7.3 -vv   7.3 -vs 0 -vl 0 -vo 0 -va 0
+view= front -vtv -vp    9.0  -60.0    3.6 -vd  0.000  1.000  0.000 -vu  0.00 0.00 1.00 -vh  20.0 -vv  10.0 -vs 0 -vl 0 -vo 0 -va 0
+view= front_cut -vtv -vp    9.0  -60.0    3.6 -vd  0.000  1.000  0.000 -vu  0.00 0.00 1.00 -vh  20.0 -vv  10.0 -vs 0 -vl 0 -vo  60.1 -va 200.0
+scene= heat_transfer_Extern.sky
+scene= heat_transfer_Extern-glz.rad
+scene= heat_transfer_Extern.mat
+scene= heat_transfer_Extern-out.rad
+scene= heat_transfer_Extern-in.rad
+UP= Z
+QUALITY= Medium
+DETAIL= High  
+VARIABILITY= High  
+RESOLUTION=  1000
+INDIRECT=  2
+PENUMBRAS= True 
+REPORT=    1
+render= -av  4.5000  4.5000  4.5000
+ZONE= Exterior   -21.42   39.42  -27.97   32.87   -0.40   30.42
+OPTFILE= heat_transfer_Extern.opt
+OCTREE= heat_transfer_Extern.oct
+PICTURE= heat_transfer_Extern

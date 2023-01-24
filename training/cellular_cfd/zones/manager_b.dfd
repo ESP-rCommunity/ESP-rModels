@@ -1,0 +1,70 @@
+*DFS V2.2 # Zone CFD domain description.
+*conflation 4  # CFD model temporally adapted
+*title Office with a cfd domain and connected to an air flow network
+# user supplied notes for this domain
+*thermal_geom
+*vrts    2   1   3   7
+# Ze is 0 if orthogonal
+*regions    1   1   1   0  # regions in X Y Zw Ze directions
+# -ve cell number indicates symmetrical gridding.
+*xregion
+ -15   3.000   1.000 # no. cells, length, power law coefficient
+*yregion
+ -15   4.500   1.000 # no. cells, length, power law coefficient
+*zwregion
+ -15   3.000   1.000 # no. cells, length, power law coefficient
+# Volumes within the CFD domain.
+*volumes   13
+# name  type  Ii If Ji Jf Ki Kf
+S_spandral   South    1  15   1   1   1   5
+S_win        South    1  15   1   1   7  14
+W            West     1   1   1  15   1  15
+E_lt         East    15  15   1   8   1  15
+E_rt         East    15  15   9  15   1  15
+N_lt         North   14  15  15  15   1  15
+N_door       North   10  13  15  15   2  15
+N_win        North    1   9  15  15   1  15
+L            Low      1  15   1  15   1   1
+H            High     1  15   1  15  15  15
+N_dorcrack   North   10  13  15  15   1   1
+S_winopen_lo South    1  15   1   1   6   6
+S_winopen_hi South    1  15   1   1  15  15
+# Solid boundary conditions.
+*solids 
+S_spandral   Temp  20.00 | Confl   2 spandral    
+S_win        Temp  20.00 | Confl   2 glazing     
+W            Temp  20.00 | Confl   2 pt_general  
+E_lt         Temp  20.00 | Confl   2 pt_other_b  
+E_rt         Temp  20.00 | Confl   2 pt_other    
+N_lt         Temp  20.00 | Confl   2 ptn_corid   
+N_door       Temp  20.00 | Confl   2 door        
+N_win        Temp  20.00 | Confl   2 part_glaz   
+L            Temp  20.00 | Confl   2 floor       
+H            Temp  20.00 | Confl   2 ceiling     
+# Air flow boundary conditions.
+*air_flow 
+N_dorcrack   Velocity  0.0 Temp 20.0 Hum  0.0 Area  0.0 Ang  0.0  0.0    2    6
+S_winopen_lo Velocity  0.0 Temp 20.0 Hum  0.0 Area  0.0 Ang  0.0  0.0    2    3
+S_winopen_hi Velocity  0.0 Temp 20.0 Hum  0.0 Area  0.0 Ang  0.0  0.0    2    4
+# Internal sources.
+*contaminants(   0 contaminants, humdity is contaminant number   0 )
+# Domain blockages.
+*blockages
+*solution_methods
+Turbulence 3      # zero-equation
+Buoyancy  0       # off
+*solution_equations
+# Type   Initial value  Relaxation type and factors
+Pressure    0.0         Linear  0.9  0.50
+Vel U       0.001       Linear  0.5  0.10
+Vel V       0.001       Linear  0.5  0.10
+Vel W       0.001       Linear  0.5  0.10
+Temp       20.0         Linear  0.7  0.05
+Ted         0.0         Linear  0.7  0.05
+Epd         0.0         Linear  0.9  0.30
+# Iteration control.
+*iteration 
+  6000  0.01 No
+*monitor    8   8   8  ../tmp/manager_b.mon
+*reint  NO
+*svf  1  # frequency of results writing

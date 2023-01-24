@@ -1,0 +1,18 @@
+This model contains files that need to be converted:
+
+For Linux
+dec94_clm.a - use clm module to convert this ascii file to binary.
+the model expects a file dec94.
+
+The casual gain control files are populated with daylight
+coefficients (calculated via the e2r module which takes
+quite a bit of time).
+
+The Radiance model has been regenerated to match current
+versions of Radiance (R3.9 or newer).
+
+The file facade_5.33.gz is a compressed trace for the five
+minute lighting control for the december test period.
+
+See the doc folder for job.notes
+ 

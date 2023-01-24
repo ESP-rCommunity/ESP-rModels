@@ -1,0 +1,47 @@
+*HC_CTL                         # heat transfer control for VAV_mix_VVh
+*Days  1                        # number of control day types
+  1                             # number control intervals for all day types
+ 39                             # number of surfaces
+  0.00  24.00                   # start and end time of interval
+  3                             # adaptive calculation control type
+*Doc,mixed conv. via VAV VT no outdoor ai
+   3.  15.   3.   6.   0.  35.   4.  -1.  # pt_right Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # vavv_corid_f Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # vavv_door Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # pt_left Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # ceiling_vavv Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # floor_vavv Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # spandral Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # frame Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # glazing Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # vavv_part_gl Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # vavv_ptn_cor Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # adesk_t Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # adesk_t_ Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # bdesk_t Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # bdesk_t_ Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # cseat Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # cseat_ Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # cstback Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # cstback_ Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # dseat Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # dseat_ Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # dstback Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # dstback_ Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # ecab_lf Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # ecab_rt Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # ecab_fr Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # ecab_bk Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # ecab_to Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # ecab_bs Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # fbil_lft Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # fbil_lft_ Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # fbil_rt Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # fbil_rt_ Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # fbooks Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # fbooks_ Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # gcase Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # gcase_ Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # gcircuit Molina & Maestre vented channels
+   3.  15.   3.   6.   0.  35.   4.  -1.  # gcircuit_ Molina & Maestre vented channels
+  0 0.000 0.000                           # Air origin zone (+ chan. width & height if Bar-Cohen cor.)

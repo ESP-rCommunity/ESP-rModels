@@ -1,0 +1,716 @@
+# Radiance exterior composition
+# xform -e
+# Radiance exterior composition file
+# (first line of file must not be edited)
+# standard sky and ground
+# BEWARE: the RGB figures in the glow
+# definitions must integrate to one.
+# define sky...
+
+skyfunc glow sky_glow
+0
+0
+4 0.986 0.986 1.202 0
+
+sky_glow source sky
+0
+0
+4 0 0 1 180
+# define ground...
+
+skyfunc glow ground_glow
+0
+0
+4 1.276 0.957 0.319 0
+
+ground_glow source ground
+0
+0
+4 0 0 -1 180
+
+void brightfunc mud
+4 dirt dirt.cal -s 0.5
+0
+1 0.3
+
+mud plastic ground_mat
+0
+0
+5 0.26 0.19 0.06 0 0
+
+ground_mat ring groundplane
+0
+0
+8
+3.3 3 -0.01
+0 0 1
+0 30
+# other definitions of outside follow...
+# fac_zone_c1 Surface defs..
+# Obstruction defs...
+# xform -rz 0.000 -t 0.900 0.700 0.000
+# genrbox rc_ex_Facade_top recess_w 0.100 0.299 3.400
+
+rc_ex_Facade_top polygon recess_w.1540
+0
+0
+12
+1 0.7 0
+1 0.7 3.4
+0.9 0.7 3.4
+0.9 0.7 0
+
+rc_ex_Facade_top polygon recess_w.4620
+0
+0
+12
+0.9 0.7 3.4
+0.9 0.999 3.4
+0.9 0.999 0
+0.9 0.7 0
+
+rc_ex_Facade_top polygon recess_w.2310
+0
+0
+12
+0.9 0.999 0
+1 0.999 0
+1 0.7 0
+0.9 0.7 0
+
+rc_ex_Facade_top polygon recess_w.3267
+0
+0
+12
+1 0.999 0
+0.9 0.999 0
+0.9 0.999 3.4
+1 0.999 3.4
+
+rc_ex_Facade_top polygon recess_w.5137
+0
+0
+12
+1 0.7 3.4
+1 0.7 0
+1 0.999 0
+1 0.999 3.4
+
+rc_ex_Facade_top polygon recess_w.6457
+0
+0
+12
+0.9 0.999 3.4
+0.9 0.7 3.4
+1 0.7 3.4
+1 0.999 3.4
+# xform -rz 0.000 -t 5.501 0.700 0.000
+# genrbox rc_ex_Facade_top recess_e 0.100 0.299 3.400
+
+rc_ex_Facade_top polygon recess_e.1540
+0
+0
+12
+5.601 0.7 0
+5.601 0.7 3.4
+5.501 0.7 3.4
+5.501 0.7 0
+
+rc_ex_Facade_top polygon recess_e.4620
+0
+0
+12
+5.501 0.7 3.4
+5.501 0.999 3.4
+5.501 0.999 0
+5.501 0.7 0
+
+rc_ex_Facade_top polygon recess_e.2310
+0
+0
+12
+5.501 0.999 0
+5.601 0.999 0
+5.601 0.7 0
+5.501 0.7 0
+
+rc_ex_Facade_top polygon recess_e.3267
+0
+0
+12
+5.601 0.999 0
+5.501 0.999 0
+5.501 0.999 3.4
+5.601 0.999 3.4
+
+rc_ex_Facade_top polygon recess_e.5137
+0
+0
+12
+5.601 0.7 3.4
+5.601 0.7 0
+5.601 0.999 0
+5.601 0.999 3.4
+
+rc_ex_Facade_top polygon recess_e.6457
+0
+0
+12
+5.501 0.999 3.4
+5.501 0.7 3.4
+5.601 0.7 3.4
+5.601 0.999 3.4
+# xform -rz 0.000 -t 1.000 0.700 -0.100
+# genrbox rc_ex_Facade_top recess_b 4.500 0.299 0.100
+
+rc_ex_Facade_top polygon recess_b.1540
+0
+0
+12
+5.5 0.7 -0.1
+5.5 0.7 0
+1 0.7 0
+1 0.7 -0.1
+
+rc_ex_Facade_top polygon recess_b.4620
+0
+0
+12
+1 0.7 0
+1 0.999 0
+1 0.999 -0.1
+1 0.7 -0.1
+
+rc_ex_Facade_top polygon recess_b.2310
+0
+0
+12
+1 0.999 -0.1
+5.5 0.999 -0.1
+5.5 0.7 -0.1
+1 0.7 -0.1
+
+rc_ex_Facade_top polygon recess_b.3267
+0
+0
+12
+5.5 0.999 -0.1
+1 0.999 -0.1
+1 0.999 0
+5.5 0.999 0
+
+rc_ex_Facade_top polygon recess_b.5137
+0
+0
+12
+5.5 0.7 0
+5.5 0.7 -0.1
+5.5 0.999 -0.1
+5.5 0.999 0
+
+rc_ex_Facade_top polygon recess_b.6457
+0
+0
+12
+1 0.999 0
+1 0.7 0
+5.5 0.7 0
+5.5 0.999 0
+# xform -rz 0.000 -t 1.000 0.700 3.400
+# genrbox rc_ex_Facade_top recess_t 4.500 0.299 0.100
+
+rc_ex_Facade_top polygon recess_t.1540
+0
+0
+12
+5.5 0.7 3.4
+5.5 0.7 3.5
+1 0.7 3.5
+1 0.7 3.4
+
+rc_ex_Facade_top polygon recess_t.4620
+0
+0
+12
+1 0.7 3.5
+1 0.999 3.5
+1 0.999 3.4
+1 0.7 3.4
+
+rc_ex_Facade_top polygon recess_t.2310
+0
+0
+12
+1 0.999 3.4
+5.5 0.999 3.4
+5.5 0.7 3.4
+1 0.7 3.4
+
+rc_ex_Facade_top polygon recess_t.3267
+0
+0
+12
+5.5 0.999 3.4
+1 0.999 3.4
+1 0.999 3.5
+5.5 0.999 3.5
+
+rc_ex_Facade_top polygon recess_t.5137
+0
+0
+12
+5.5 0.7 3.5
+5.5 0.7 3.4
+5.5 0.999 3.4
+5.5 0.999 3.5
+
+rc_ex_Facade_top polygon recess_t.6457
+0
+0
+12
+1 0.999 3.5
+1 0.7 3.5
+5.5 0.7 3.5
+5.5 0.999 3.5
+# xform -rz 0.000 -t 1.000 0.400 2.050
+# genrbox rc_ex_Light_sh_t LS_ex_t 4.500 0.599 0.010
+
+rc_ex_Light_sh_t polygon LS_ex_t.1540
+0
+0
+12
+5.5 0.4 2.05
+5.5 0.4 2.06
+1 0.4 2.06
+1 0.4 2.05
+
+rc_ex_Light_sh_t polygon LS_ex_t.4620
+0
+0
+12
+1 0.4 2.06
+1 0.999 2.06
+1 0.999 2.05
+1 0.4 2.05
+
+rc_ex_Light_sh_t polygon LS_ex_t.2310
+0
+0
+12
+1 0.999 2.05
+5.5 0.999 2.05
+5.5 0.4 2.05
+1 0.4 2.05
+
+rc_ex_Light_sh_t polygon LS_ex_t.3267
+0
+0
+12
+5.5 0.999 2.05
+1 0.999 2.05
+1 0.999 2.06
+5.5 0.999 2.06
+
+rc_ex_Light_sh_t polygon LS_ex_t.5137
+0
+0
+12
+5.5 0.4 2.06
+5.5 0.4 2.05
+5.5 0.999 2.05
+5.5 0.999 2.06
+
+rc_ex_Light_sh_t polygon LS_ex_t.6457
+0
+0
+12
+1 0.999 2.06
+1 0.4 2.06
+5.5 0.4 2.06
+5.5 0.999 2.06
+# xform -rz 0.000 -t 1.000 0.400 2.040
+# genrbox rc_ex_Light_sh_b LS_ex_b 4.500 0.599 0.010
+
+rc_ex_Light_sh_b polygon LS_ex_b.1540
+0
+0
+12
+5.5 0.4 2.04
+5.5 0.4 2.05
+1 0.4 2.05
+1 0.4 2.04
+
+rc_ex_Light_sh_b polygon LS_ex_b.4620
+0
+0
+12
+1 0.4 2.05
+1 0.999 2.05
+1 0.999 2.04
+1 0.4 2.04
+
+rc_ex_Light_sh_b polygon LS_ex_b.2310
+0
+0
+12
+1 0.999 2.04
+5.5 0.999 2.04
+5.5 0.4 2.04
+1 0.4 2.04
+
+rc_ex_Light_sh_b polygon LS_ex_b.3267
+0
+0
+12
+5.5 0.999 2.04
+1 0.999 2.04
+1 0.999 2.05
+5.5 0.999 2.05
+
+rc_ex_Light_sh_b polygon LS_ex_b.5137
+0
+0
+12
+5.5 0.4 2.05
+5.5 0.4 2.04
+5.5 0.999 2.04
+5.5 0.999 2.05
+
+rc_ex_Light_sh_b polygon LS_ex_b.6457
+0
+0
+12
+1 0.999 2.05
+1 0.4 2.05
+5.5 0.4 2.05
+5.5 0.999 2.05
+# xform -rz 0.000 -t 1.950 0.700 0.980
+# genrbox rc_ex_Frame Fin_left 0.010 0.299 1.070
+
+rc_ex_Frame polygon Fin_left.1540
+0
+0
+12
+1.96 0.7 0.98
+1.96 0.7 2.05
+1.95 0.7 2.05
+1.95 0.7 0.98
+
+rc_ex_Frame polygon Fin_left.4620
+0
+0
+12
+1.95 0.7 2.05
+1.95 0.999 2.05
+1.95 0.999 0.98
+1.95 0.7 0.98
+
+rc_ex_Frame polygon Fin_left.2310
+0
+0
+12
+1.95 0.999 0.98
+1.96 0.999 0.98
+1.96 0.7 0.98
+1.95 0.7 0.98
+
+rc_ex_Frame polygon Fin_left.3267
+0
+0
+12
+1.96 0.999 0.98
+1.95 0.999 0.98
+1.95 0.999 2.05
+1.96 0.999 2.05
+
+rc_ex_Frame polygon Fin_left.5137
+0
+0
+12
+1.96 0.7 2.05
+1.96 0.7 0.98
+1.96 0.999 0.98
+1.96 0.999 2.05
+
+rc_ex_Frame polygon Fin_left.6457
+0
+0
+12
+1.95 0.999 2.05
+1.95 0.7 2.05
+1.96 0.7 2.05
+1.96 0.999 2.05
+# xform -rz 0.000 -t 3.249 0.700 0.980
+# genrbox rc_ex_Frame Fin_cent 0.010 0.299 1.070
+
+rc_ex_Frame polygon Fin_cent.1540
+0
+0
+12
+3.259 0.7 0.98
+3.259 0.7 2.05
+3.249 0.7 2.05
+3.249 0.7 0.98
+
+rc_ex_Frame polygon Fin_cent.4620
+0
+0
+12
+3.249 0.7 2.05
+3.249 0.999 2.05
+3.249 0.999 0.98
+3.249 0.7 0.98
+
+rc_ex_Frame polygon Fin_cent.2310
+0
+0
+12
+3.249 0.999 0.98
+3.259 0.999 0.98
+3.259 0.7 0.98
+3.249 0.7 0.98
+
+rc_ex_Frame polygon Fin_cent.3267
+0
+0
+12
+3.259 0.999 0.98
+3.249 0.999 0.98
+3.249 0.999 2.05
+3.259 0.999 2.05
+
+rc_ex_Frame polygon Fin_cent.5137
+0
+0
+12
+3.259 0.7 2.05
+3.259 0.7 0.98
+3.259 0.999 0.98
+3.259 0.999 2.05
+
+rc_ex_Frame polygon Fin_cent.6457
+0
+0
+12
+3.249 0.999 2.05
+3.249 0.7 2.05
+3.259 0.7 2.05
+3.259 0.999 2.05
+# xform -rz 0.000 -t 4.550 0.700 0.980
+# genrbox rc_ex_Frame Fin_righ 0.010 0.299 1.070
+
+rc_ex_Frame polygon Fin_righ.1540
+0
+0
+12
+4.56 0.7 0.98
+4.56 0.7 2.05
+4.55 0.7 2.05
+4.55 0.7 0.98
+
+rc_ex_Frame polygon Fin_righ.4620
+0
+0
+12
+4.55 0.7 2.05
+4.55 0.999 2.05
+4.55 0.999 0.98
+4.55 0.7 0.98
+
+rc_ex_Frame polygon Fin_righ.2310
+0
+0
+12
+4.55 0.999 0.98
+4.56 0.999 0.98
+4.56 0.7 0.98
+4.55 0.7 0.98
+
+rc_ex_Frame polygon Fin_righ.3267
+0
+0
+12
+4.56 0.999 0.98
+4.55 0.999 0.98
+4.55 0.999 2.05
+4.56 0.999 2.05
+
+rc_ex_Frame polygon Fin_righ.5137
+0
+0
+12
+4.56 0.7 2.05
+4.56 0.7 0.98
+4.56 0.999 0.98
+4.56 0.999 2.05
+
+rc_ex_Frame polygon Fin_righ.6457
+0
+0
+12
+4.55 0.999 2.05
+4.55 0.7 2.05
+4.56 0.7 2.05
+4.56 0.999 2.05
+# visual object defs...
+# xform -rz 0.000 -t 1.000 1.010 2.050
+# genrbox rc_ex_Light_sh_t LS_in_t 4.500 1.000 0.010
+
+rc_ex_Light_sh_t polygon LS_in_t.1540
+0
+0
+12
+5.5 1.01 2.05
+5.5 1.01 2.06
+1 1.01 2.06
+1 1.01 2.05
+
+rc_ex_Light_sh_t polygon LS_in_t.4620
+0
+0
+12
+1 1.01 2.06
+1 2.01 2.06
+1 2.01 2.05
+1 1.01 2.05
+
+rc_ex_Light_sh_t polygon LS_in_t.2310
+0
+0
+12
+1 2.01 2.05
+5.5 2.01 2.05
+5.5 1.01 2.05
+1 1.01 2.05
+
+rc_ex_Light_sh_t polygon LS_in_t.3267
+0
+0
+12
+5.5 2.01 2.05
+1 2.01 2.05
+1 2.01 2.06
+5.5 2.01 2.06
+
+rc_ex_Light_sh_t polygon LS_in_t.5137
+0
+0
+12
+5.5 1.01 2.06
+5.5 1.01 2.05
+5.5 2.01 2.05
+5.5 2.01 2.06
+
+rc_ex_Light_sh_t polygon LS_in_t.6457
+0
+0
+12
+1 2.01 2.06
+1 1.01 2.06
+5.5 1.01 2.06
+5.5 2.01 2.06
+# xform -rz 0.000 -t 1.000 1.010 2.040
+# genrbox rc_ex_Light_sh_b LS_in_b 4.500 1.000 0.010
+
+rc_ex_Light_sh_b polygon LS_in_b.1540
+0
+0
+12
+5.5 1.01 2.04
+5.5 1.01 2.05
+1 1.01 2.05
+1 1.01 2.04
+
+rc_ex_Light_sh_b polygon LS_in_b.4620
+0
+0
+12
+1 1.01 2.05
+1 2.01 2.05
+1 2.01 2.04
+1 1.01 2.04
+
+rc_ex_Light_sh_b polygon LS_in_b.2310
+0
+0
+12
+1 2.01 2.04
+5.5 2.01 2.04
+5.5 1.01 2.04
+1 1.01 2.04
+
+rc_ex_Light_sh_b polygon LS_in_b.3267
+0
+0
+12
+5.5 2.01 2.04
+1 2.01 2.04
+1 2.01 2.05
+5.5 2.01 2.05
+
+rc_ex_Light_sh_b polygon LS_in_b.5137
+0
+0
+12
+5.5 1.01 2.05
+5.5 1.01 2.04
+5.5 2.01 2.04
+5.5 2.01 2.05
+
+rc_ex_Light_sh_b polygon LS_in_b.6457
+0
+0
+12
+1 2.01 2.05
+1 1.01 2.05
+5.5 1.01 2.05
+5.5 2.01 2.05
+# Outside zone Surface defs...
+
+rc_ex_Frame polygon fac_zone_c1:Frame_bot
+0
+0
+30
+1 0.997 0.75
+5.5 0.99701 0.75
+5.5 0.99701 2.05
+1 0.997 2.05
+1 0.997 0.75
+1.15 0.997 0.9
+1.15 0.997 1.95
+5.35 0.997 1.95
+5.35 0.997 0.9
+1.15 0.997 0.9
+
+rc_ex_Facade_top polygon fac_zone_c1:Facade_top
+0
+0
+12
+1 0.997 2.8
+5.5 0.99701 2.8
+5.5 0.99701 3.4
+1 0.997 3.4
+
+rc_ex_Facade_bot polygon fac_zone_c1:Facade_bot
+0
+0
+12
+1 0.997 0
+5.5 0.99701 0
+5.5 0.99701 0.75
+1 0.997 0.75
+
+rc_ex_Frame polygon fac_zone_c1:Frame_top
+0
+0
+30
+1 0.997 2.05
+5.5 0.99701 2.05
+5.5 0.99701 2.8
+1 0.997 2.8
+1 0.997 2.05
+1.15 0.997 2.15
+1.15 0.997 2.7
+5.35 0.997 2.7
+5.35001 0.997 2.15
+1.15 0.997 2.15

@@ -1,0 +1,10 @@
+*HC_CTL                         # heat transfer control for tube_a
+*Days  1                        # number of control day types
+  1                             # number control intervals for all day types
+  8                             # number of surfaces
+# (side_a side_b side_c side_e side_f side_g top base)
+  0.00  24.00                   # start and end time of interval
+  1                             # fixed coefficients calculation control type
+*Doc,User supplied hc values
+ 6.0000,6.0000,6.0000,6.0000,6.0000,6.0000,6.0000,6.0000
+ -1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000

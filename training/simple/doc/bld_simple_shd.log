@@ -1,0 +1,8 @@
+System configuration file: /home/joe/simple/bld_simple_shd.cfg
+Synopsis: single zone, convective heating, external shading
+First created: Tue Jan 19 14:21:40 2021
+Notes:
+TThis model describes an L-shaped office conditioned via a
+convective heating system with ideal control. External
+obstructions are included to support the calculation of
+external surface shading and internal surface insolation.

@@ -1,0 +1,43 @@
+*Constructions 2.1                              # thermophysical properties of hall_1
+*date Mon Sep  6 15:24:30 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     1     0   0.90   0.90   0.65   0.65   0    #   1  door         int_doors
+     3     1   0.91   0.91   0.50   0.50   0    #   2  kitchen      int_part
+     1     0   0.90   0.90   0.65   0.65   0    #   3  livroom      int_doors
+     3     1   0.91   0.91   0.50   0.50   0    #   4  stairs       int_part
+     4     1   0.91   0.90   0.50   0.60   0    #   5  hall_2       ceiling
+     6     1   0.90   0.90   0.60   0.85   0    #   6  floor        grnd_floor
+     4     1   0.91   0.90   0.50   0.60   0    #   7  bathrm       ceiling
+# air gap layer positions and restances
+  2  0.170                                      # for kitchen
+  2  0.170                                      # and for stairs
+  3  0.170                                      # and for hall_2
+  4  0.170                                      # and for floor
+  3  0.170                                      # and for bathrm
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+     0.1900     700.0    2390.0  0.0250   0   0.00 0.00000 0.00000  #   1   1 oak
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #   2   1 light plaster
+     0.0000       0.0       0.0  0.1500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #       3 light plaster
+     0.1900     700.0    2390.0  0.0250   0   0.00 0.00000 0.00000  #   3   1 oak
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #   4   1 light plaster
+     0.0000       0.0       0.0  0.1500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #       3 light plaster
+     0.0600     186.0    1360.0  0.0250   0   0.00 0.00000 0.00000  #   5   1 Wilton
+     0.1400     600.0    1210.0  0.0250   0   0.00 0.00000 0.00000  #       2 flooring
+     0.0000       0.0       0.0  0.1500   0   0.00 0.00000 0.00000  #       3 AIR
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #       4 light plaster
+     1.2800    1460.0     879.0  0.2500   0   0.00 0.00000 0.00000  #   6   1 earth std
+     0.5200    2050.0     184.0  0.1500   0   0.00 0.00000 0.00000  #       2 gravel based
+     1.4000    2100.0     653.0  0.1500   0   0.00 0.00000 0.00000  #       3 heavy mix concrete
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       4 AIR
+     0.1500     800.0    2093.0  0.0190   0   0.00 0.00000 0.00000  #       5 chipboard
+     0.0600     186.0    1360.0  0.0060   0   0.00 0.00000 0.00000  #       6 Wilton
+     0.0600     186.0    1360.0  0.0250   0   0.00 0.00000 0.00000  #   7   1 Wilton
+     0.1400     600.0    1210.0  0.0250   0   0.00 0.00000 0.00000  #       2 flooring
+     0.0000       0.0       0.0  0.1500   0   0.00 0.00000 0.00000  #       3 AIR
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #       4 light plaster
+*tmc NONE                                       # all surfaces are opaque

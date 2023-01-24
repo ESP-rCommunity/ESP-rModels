@@ -1,0 +1,11 @@
+System configuration file: /home/joe/basic/bld_basic_tm1.cfg
+Synopsis: multi-zone, convective heating, tracking control
+First created: Tue Jan 19 14:21:40 2021
+Notes:
+This model represents a 3 zone building with convective heating
+under control that coerces the roof zone temperature to match that
+of the outside air. Sensor-matching control can be used to simplify
+a model. For example, where an atrium is bounded by multiple similar
+offices, only one office needs to be represented in detail; the
+temperature of others, with simple representation, being matched to
+this one throughout the simulation.

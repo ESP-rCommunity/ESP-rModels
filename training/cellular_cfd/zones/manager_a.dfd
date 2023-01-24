@@ -1,0 +1,91 @@
+*DFS V2.2 # Zone CFD domain description.
+*conflation 4  # CFD model temporally adapted
+*title Office with a cfd domain and connected to an air flow network
+# user supplied notes for this domain
+*thermal_geom
+*vrts    1   2   5   6
+# Ze is 0 if orthogonal
+*regions    1   1   1   0  # regions in X Y Zw Ze directions
+# -ve cell number indicates symmetrical gridding.
+*xregion
+ -30   3.000   1.000 # no. cells, length, power law coefficient
+*yregion
+ -30   4.500   1.000 # no. cells, length, power law coefficient
+*zwregion
+ -30   3.000   1.000 # no. cells, length, power law coefficient
+# Volumes within the CFD domain.
+*volumes   23
+# name  type  Is If Js Jf Ks Kf
+S_spandral   South    1  30   1   1   1   9
+S_frame_lo   South    1  30   1   1  10  10
+S_frame_lt   South    1   1   1   1  11  30
+S_frame_rt   South   30  30   1   1  11  30
+S_frame_hi   South    2  29   1   1  30  30
+S_win        South    2  29   1   1  12  28
+E            East    30  30   1  30   1  30
+W_rt         West     1   1   1  15   1  30
+W_mid        West     1   1  16  16   1  30
+W_lt         West     1   1  17  30   1  30
+N_rt         North    1   4  30  30   1  30
+N_rt_hi      North    5  12  30  30  30  30
+N_door       North    5  12  30  30   2  29
+N_frame_lo   North   13  30  30  30   1   1
+N_frame_lt   North   30  30  30  30   2  30
+N_frame_rt   North   13  13  30  30   2  30
+N_frame_hi   North   14  29  30  30  30  30
+N_win        North   14  29  30  30   2  29
+L            Low      1  30   1  30   1   1
+H            High     1  30   1  30  30  30
+S_winopen_lo South    2  29   1   1  11  11
+S_winopen_hi South    2  29   1   1  29  29
+N_dorcrack   North    5  12  30  30   1   1
+# Solid boundary conditions.
+*solids 
+S_spandral   Temp  20.00 | Confl   2 spandral    
+S_frame_lo   Temp  20.00 | Confl   2 frame       
+S_frame_lt   Temp  20.00 | Confl   2 frame       
+S_frame_rt   Temp  20.00 | Confl   2 frame       
+S_frame_hi   Temp  20.00 | Confl   2 frame       
+S_win        Temp  20.00 | Confl   2 glazing     
+E            Temp  20.00 | Confl   2 pt_general  
+W_rt         Temp  20.00 | Confl   2 pt_other_b  
+W_mid        Temp  20.00 | Confl   2 pt_other_a  
+W_lt         Temp  20.00 | Confl   2 pt_other    
+N_rt         Temp  20.00 | Confl   2 ptn_corid   
+N_rt_hi      Temp  20.00 | Confl   2 ptn_corid   
+N_door       Temp  20.00 | Confl   2 door        
+N_frame_lo   Temp  20.00 | Confl   2 part_frame  
+N_frame_lt   Temp  20.00 | Confl   2 part_frame  
+N_frame_rt   Temp  20.00 | Confl   2 part_frame  
+N_frame_hi   Temp  20.00 | Confl   2 part_frame  
+N_win        Temp  20.00 | Confl   2 part_glaz   
+L            Temp  20.00 | Confl   2 floor       
+H            Temp  20.00 | Confl   2 ceiling     
+# Air flow boundary conditions.
+*air_flow 
+S_winopen_lo Velocity  0.0 Temp 20.0 Hum  0.0 Area  0.0 Ang  0.0  0.0    1    1
+S_winopen_hi Velocity  0.0 Temp 20.0 Hum  0.0 Area  0.0 Ang  0.0  0.0    1    2
+N_dorcrack   Velocity  0.0 Temp 20.0 Hum  0.0 Area  0.0 Ang  0.0  0.0    1    5
+# Internal sources.
+*contaminants(   0 contaminants, humdity is contaminant number   0 )
+# Domain blockages.
+*blockages
+*solution_methods
+Turbulence 3      # zero-equation
+Buoyancy 1 0.2 # full calculation
+# Equations to be solved:
+*solution_equations
+# Type   Initial value  Relaxation type and factors
+Pressure    0.0         Linear  0.9  0.50
+Vel U       0.001       Linear  0.5  0.10
+Vel V       0.001       Linear  0.5  0.10
+Vel W       0.001       Linear  0.5  0.10
+Temp       20.0         Linear  0.7  0.05
+Ted         0.0         Linear  0.7  0.05
+Epd         0.0         Linear  0.9  0.30
+# Iteration control.
+*iteration 
+  4000  0.01 No
+*monitor   16  16  16  ../tmp/manager_a.mon
+*reint  NO
+*svf  1  # frequency of results writing

@@ -1,0 +1,33 @@
+*IPV  4 2 i5s                   # IPV V4 tabbed report format five full seasons
+*title,UK Housing Stock Passive Housea         
+*synop,:The 3br_tt_simi
+*images,0
+*simulations   5                # assessments to run
+# tag start doy finish doy description
+*period       1      59    1st winter sea                          
+*period      60     120    spring sea                              
+*period     121     243    summer sea                              
+*period     244     304    autumn sea                              
+*period     305     365    2nd winter sea                          
+*display_days,5,2,61,122,245,306
+# season multipliers
+# name |heating |cooling|lights |fans  |smallpwr|DWH
+*win1     1.000   1.000   1.000   1.000   1.000   1.000
+*spr      1.000   1.000   1.000   1.000   1.000   1.000
+*sum      1.000   1.000   1.000   1.000   1.000   1.000
+*aut      1.000   1.000   1.000   1.000   1.000   1.000
+*win2     1.000   1.000   1.000   1.000   1.000   1.000
+*metrics   1                    # metrics to report
+# metric results miscelaneous number floor scal- weigh- topic
+# name   index   data  data   zones  area  ing   ting
+*metric_1     6     1     1     2    82.7  1.000  1.000,comfort,ocup_zones,Resultant T (degC)
+ 1,2
+*demand_sets   1                # energy demands to report
+# tag  number miscelaneoous aggregate floor scal- description
+#      zones  data  data    toggle    area  ing
+*energy_1     2     0     0     0    82.7  1.000,zones
+ 1,2
+# non-specific demands: occup/light/sm pwr/fans/pumps/lifts/dhw
+# tag occup/light/sm pwr/fans/pumps/lifts/dhw
+*dmds     0     0     0     0     0     0     0
+*end

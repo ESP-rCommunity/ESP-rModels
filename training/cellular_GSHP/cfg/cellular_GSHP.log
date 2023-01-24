@@ -1,0 +1,39 @@
+Project notes for cellular_xGSHPy.cfg
+Description: base case model of two adjacent cellular offices
+In folder: cellular_GSHP
+By: Achim
+Date: Wed Mar 18 17:33:58 2020
+For: 
+Project reference: 
+Notes: 
+_____________________________
+
+There are three variants in this folder all of which are based on
+the basic version of cellular office featuring CFC glazing for the 
+large windows in manager_a and manager_b. All models feature an
+explicit plant network.
+
+1. cellular_GSHP.cfg
+Space heat supplied by a one node GSHP.
+
+2. cellular_GSHP2n
+Space heat supplied by a two node GSHP.
+
+3. cellular_icGSHP
+Space heat and DHW supplied by a one node inverter controlled GSHP
+using BCD data files in plant control. See icGSHP_Parameter.txt
+in the doc subfolder for further information on the icGSHP.
+
+
+
+All models:
+
+See *.glz files in the subfolder doc for information on the glazing
+products used. Both CFC constructions additionally feature an external
+venetian type blind which is controlled.
+
+The layout of the rooms was taken from CAD data - e.g. the
+surfaces are positioned in real-space. There is a ~50mm gap
+between the rooms. The partitions are thermally connected
+at the same time the geometry is separated.
+

@@ -1,0 +1,16 @@
+*viewfactors            # zone viewfactors and MRT sensors for air_low
+*geom  ../zones/air_low.geo
+   0   6  28            # number of mrt sensors & zone surfaces, zone index
+# Zone viewfactors follow:
+ 0.00,0.9243,0.024041,0.013886,0.024133,0.013697
+ 0.9243,0.00,0.024041,0.013697,0.024133,0.013886
+ 0.4693,0.4692,0.00,0.023836,0.017084,0.020639
+ 0.4487,0.4499,0.045340,0.00,0.048363,0.007733
+ 0.4693,0.4693,0.017084,0.020657,0.00,0.023822
+ 0.4499,0.4487,0.048363,0.007733,0.045340,0.00
+ sum over row   1 is :   1.00005698
+ sum over row   2 is :   1.00005710
+ sum over row   3 is :   1.00005901
+ sum over row   4 is :   1.00003600
+ sum over row   5 is :   1.00016296
+ sum over row   6 is :   1.00003600

@@ -1,0 +1,43 @@
+*IPV  4 2 i3t                   # IPV V4 tabbed report format three seasons (typical weeks)
+*title,Basic 3 zone model with flow network.   
+*synop,Model with flow network for testing.
+*images,0
+*simulations   3                # assessments to run
+# tag start doy finish doy description
+*period      37      43    bld_flw winter run                      
+*period     107     113    bld_flw transition run                  
+*period     192     198    bld_flw summer run                      
+*display_days,3,38,108,193
+# season multipliers
+# name |heating |cooling|lights |fans  |smallpwr|DWH
+*win1    17.074   1.000  19.000  19.000  19.000  19.000
+*spr     12.898   1.000  17.000  17.000  17.000  17.000
+*sum     23.467  15.679  16.000  16.000  16.000  16.000
+*aut      8.419   1.000   8.000   8.000   8.000   8.000
+*win2     8.941   1.000   9.000   9.000   9.000   9.000
+*metrics   7                    # metrics to report
+# metric results miscelaneous number floor scal- weigh- topic
+# name   index   data  data   zones  area  ing   ting
+*metric_1     6     0     0     2    64.0  1.000  1.000,comfort,ocup_zones,Resultant T (degC)
+ 1,2
+*metric_2     1     1     0     2    64.0  1.000  1.000,ZndbT,dbt_zones,Zone db T (degC)
+ 1,2
+*metric_3    13     0     0     1    16.0  1.000  1.000,RH,rh_zones,Zone rel humid (%)
+ 2
+*metric_4    11     0     0     1    48.0  1.000  1.000,Inf,infil_zones,Infiltration (W)
+ 1
+*metric_5    15     0     0     1    48.0  1.000  1.000,TotCasG,cas_zns,Total casual gn (W)
+ 1
+*metric_6    38     0     0     2    64.0  1.000  1.000,SolinEx,sol_out_zns,Solar via outside(W)
+ 1,2
+*metric_7    40     0     0     2    64.0  1.000  1.000,TSolabs,sol_abs_zns,Solar absorbed (W)
+ 1,2
+*demand_sets   1                # energy demands to report
+# tag  number miscelaneoous aggregate floor scal- description
+#      zones  data  data    toggle    area  ing
+*energy_1     3     0     0     0   145.0  1.000,zones
+ 1,2,3
+# non-specific demands: occup/light/sm pwr/fans/pumps/lifts/dhw
+# tag occup/light/sm pwr/fans/pumps/lifts/dhw
+*dmds     0     0     0     0     0     0     0
+*end

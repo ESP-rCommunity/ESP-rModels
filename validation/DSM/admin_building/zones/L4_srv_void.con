@@ -1,0 +1,63 @@
+*Constructions 2.1                              # thermophysical properties of L4_srv_void
+*date Tue Sep  7 18:25:37 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     1     0   0.90   0.90   0.21   0.21   0    #   1  floor_l4toi  slab_275
+     4     0   0.90   0.12   0.85   0.20   0    #   2  Base-14      flr_ov_pln
+     4     0   0.90   0.12   0.85   0.20   0    #   3  floor_pz     flr_ov_pln
+     4     0   0.90   0.12   0.85   0.20   0    #   4  Base-30      flr_ov_pln
+     1     0   0.90   0.90   0.21   0.21   0    #   5  srv_facade   slab_275
+     1     0   0.90   0.90   0.21   0.21   0    #   6  Top-29       slab_275
+     1     0   0.90   0.90   0.21   0.21   0    #   7  ceiling_pz   slab_275
+     1     0   0.90   0.90   0.21   0.21   0    #   8  Top-13       slab_275
+     1     0   0.90   0.90   0.21   0.21   0    #   9  ceiling      slab_275
+     5     2   0.90   0.90   0.25   0.60   0    #  10  right_end    stone_masnry
+     1     0   0.90   0.90   0.21   0.21   0    #  11  fill_a       conc_250
+     1     0   0.90   0.90   0.21   0.21   0    #  12  fill_b       conc_250
+     5     2   0.90   0.90   0.25   0.60   0    #  13  left_facade  stone_masnry
+     5     2   0.90   0.90   0.25   0.60   0    #  14  srv_edge     stone_masnry
+     1     0   0.90   0.90   0.21   0.21   0    #  15  to_stair_1   conc_250
+# air gap layer positions and restances
+  2  0.170  4  0.170                            # for right_end
+  2  0.170  4  0.170                            # and for left_facade
+  2  0.170  4  0.170                            # and for srv_edge
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+     1.4000    2100.0     653.0  0.2750   0   0.00 0.00000 0.00000  #   1   1 white ptd concrete
+    50.0000    7800.0     502.0  0.0020   0   0.00 0.00000 0.00000  #   2   1 steel
+     0.1700    1000.0    1300.0  0.0280   0   0.00 0.00000 0.00000  #       2 HighDensityParticleBd
+    50.0000    7800.0     502.0  0.0020   0   0.00 0.00000 0.00000  #       3 steel
+     0.0600     160.0    2500.0  0.0050   0   0.00 0.00000 0.00000  #       4 grey loop pile
+    50.0000    7800.0     502.0  0.0020   0   0.00 0.00000 0.00000  #   3   1 steel
+     0.1700    1000.0    1300.0  0.0280   0   0.00 0.00000 0.00000  #       2 HighDensityParticleBd
+    50.0000    7800.0     502.0  0.0020   0   0.00 0.00000 0.00000  #       3 steel
+     0.0600     160.0    2500.0  0.0050   0   0.00 0.00000 0.00000  #       4 grey loop pile
+    50.0000    7800.0     502.0  0.0020   0   0.00 0.00000 0.00000  #   4   1 steel
+     0.1700    1000.0    1300.0  0.0280   0   0.00 0.00000 0.00000  #       2 HighDensityParticleBd
+    50.0000    7800.0     502.0  0.0020   0   0.00 0.00000 0.00000  #       3 steel
+     0.0600     160.0    2500.0  0.0050   0   0.00 0.00000 0.00000  #       4 grey loop pile
+     1.4000    2100.0     653.0  0.2750   0   0.00 0.00000 0.00000  #   5   1 white ptd concrete
+     1.4000    2100.0     653.0  0.2750   0   0.00 0.00000 0.00000  #   6   1 white ptd concrete
+     1.4000    2100.0     653.0  0.2750   0   0.00 0.00000 0.00000  #   7   1 white ptd concrete
+     1.4000    2100.0     653.0  0.2750   0   0.00 0.00000 0.00000  #   8   1 white ptd concrete
+     1.4000    2100.0     653.0  0.2750   0   0.00 0.00000 0.00000  #   9   1 white ptd concrete
+     1.8300    2200.0     712.0  0.0400   0   0.00 0.00000 0.00000  #  10   1 sandstone
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.0400      38.0    1450.0  0.1000   0   0.00 0.00000 0.00000  #       3 XPS CO2 foamed
+     0.0000       0.0       0.0  0.1000   0   0.00 0.00000 0.00000  #       4 AIR
+     0.5100    1400.0    1000.0  0.1200   0   0.00 0.00000 0.00000  #       5 block white ptd
+     1.4000    2100.0     653.0  0.2500   0   0.00 0.00000 0.00000  #  11   1 white ptd concrete
+     1.4000    2100.0     653.0  0.2500   0   0.00 0.00000 0.00000  #  12   1 white ptd concrete
+     1.8300    2200.0     712.0  0.0400   0   0.00 0.00000 0.00000  #  13   1 sandstone
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.0400      38.0    1450.0  0.1000   0   0.00 0.00000 0.00000  #       3 XPS CO2 foamed
+     0.0000       0.0       0.0  0.1000   0   0.00 0.00000 0.00000  #       4 AIR
+     0.5100    1400.0    1000.0  0.1200   0   0.00 0.00000 0.00000  #       5 block white ptd
+     1.8300    2200.0     712.0  0.0400   0   0.00 0.00000 0.00000  #  14   1 sandstone
+     0.0000       0.0       0.0  0.0500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.0400      38.0    1450.0  0.1000   0   0.00 0.00000 0.00000  #       3 XPS CO2 foamed
+     0.0000       0.0       0.0  0.1000   0   0.00 0.00000 0.00000  #       4 AIR
+     0.5100    1400.0    1000.0  0.1200   0   0.00 0.00000 0.00000  #       5 block white ptd
+     1.4000    2100.0     653.0  0.2500   0   0.00 0.00000 0.00000  #  15   1 white ptd concrete
+*tmc NONE                                       # all surfaces are opaque

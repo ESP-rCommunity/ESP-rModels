@@ -1,0 +1,80 @@
+*Constructions 2.1                              # thermophysical properties of north_beds
+*date Mon Sep  6 15:24:36 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     3     1   0.91   0.91   0.50   0.50   0    #   1  hall2        int_part
+     3     1   0.91   0.91   0.50   0.50   0    #   2  hall_2_2     int_part
+     3     1   0.91   0.91   0.50   0.50   0    #   3  bed_s        int_part
+     3     0   0.91   0.91   0.50   0.50   0    #   4  east         ext_part
+     5     1   0.91   0.91   0.50   0.50   0    #   5  north1       ext_wall
+     3     1   0.91   0.91   0.50   0.50   0    #   6  Surf-6       int_part
+     3     1   0.91   0.91   0.50   0.50   0    #   7  Surf-7       int_part
+     5     1   0.91   0.91   0.50   0.50   0    #   8  north2       ext_wall
+     3     0   0.91   0.91   0.50   0.50   0    #   9  east         ext_part
+     3     0   0.91   0.90   0.50   0.30   0    #  10  Surf-10      loft_ceil
+     4     1   0.90   0.91   0.60   0.50   0    #  11  Surf-11      upper_flor
+     4     1   0.90   0.91   0.60   0.50   0    #  12  kitch        upper_flor
+     1     0   0.83   0.83   0.05   0.05   1    #  13  window1      single_glaz
+     1     0   0.83   0.83   0.05   0.05   1    #  14  window2      single_glaz
+# air gap layer positions and restances
+  2  0.170                                      # for hall2
+  2  0.170                                      # and for hall_2_2
+  2  0.170                                      # and for bed_s
+  3  0.170                                      # and for north1
+  2  0.170                                      # and for Surf-6
+  2  0.170                                      # and for Surf-7
+  3  0.170                                      # and for north2
+  2  0.170                                      # and for Surf-11
+  2  0.170                                      # and for kitch
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #   1   1 light plaster
+     0.0000       0.0       0.0  0.1500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #       3 light plaster
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #   2   1 light plaster
+     0.0000       0.0       0.0  0.1500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #       3 light plaster
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #   3   1 light plaster
+     0.0000       0.0       0.0  0.1500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #       3 light plaster
+     0.4200    1200.0     837.0  0.0130   0   0.00 0.00000 0.00000  #   4   1 gypsum plaster
+     0.5100    1400.0    1000.0  0.1000   0   0.00 0.00000 0.00000  #       2 block inner
+     0.4200    1200.0     837.0  0.0130   0   0.00 0.00000 0.00000  #       3 gypsum plaster
+     0.5000    1300.0    1000.0  0.0030   0   0.00 0.00000 0.00000  #   5   1 white dry render
+     0.9600    2000.0     650.0  0.1100   0   0.00 0.00000 0.00000  #       2 outer leaf brick
+     0.0000       0.0       0.0  0.2500   0   0.00 0.00000 0.00000  #       3 AIR
+     0.6200    1800.0     840.0  0.1100   0   0.00 0.00000 0.00000  #       4 inner leaf brick
+     0.4200    1200.0     837.0  0.0130   0   0.00 0.00000 0.00000  #       5 gypsum plaster
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #   6   1 light plaster
+     0.0000       0.0       0.0  0.1500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #       3 light plaster
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #   7   1 light plaster
+     0.0000       0.0       0.0  0.1500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #       3 light plaster
+     0.5000    1300.0    1000.0  0.0030   0   0.00 0.00000 0.00000  #   8   1 white dry render
+     0.9600    2000.0     650.0  0.1100   0   0.00 0.00000 0.00000  #       2 outer leaf brick
+     0.0000       0.0       0.0  0.2500   0   0.00 0.00000 0.00000  #       3 AIR
+     0.6200    1800.0     840.0  0.1100   0   0.00 0.00000 0.00000  #       4 inner leaf brick
+     0.4200    1200.0     837.0  0.0130   0   0.00 0.00000 0.00000  #       5 gypsum plaster
+     0.4200    1200.0     837.0  0.0130   0   0.00 0.00000 0.00000  #   9   1 gypsum plaster
+     0.5100    1400.0    1000.0  0.1000   0   0.00 0.00000 0.00000  #       2 block inner
+     0.4200    1200.0     837.0  0.0130   0   0.00 0.00000 0.00000  #       3 gypsum plaster
+     0.0400     250.0     840.0  0.0100   0   0.00 0.00000 0.00000  #  10   1 glasswool
+     0.1500     800.0    2093.0  0.0200   0   0.00 0.00000 0.00000  #       2 chipboard
+     0.1600     600.0    1000.0  0.0050   0   0.00 0.00000 0.00000  #       3 light plaster
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #  11   1 light plaster
+     0.0000       0.0       0.0  0.1500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1400     600.0    1210.0  0.0250   0   0.00 0.00000 0.00000  #       3 flooring
+     0.0600     186.0    1360.0  0.0250   0   0.00 0.00000 0.00000  #       4 Wilton
+     0.1600     600.0    1000.0  0.0250   0   0.00 0.00000 0.00000  #  12   1 light plaster
+     0.0000       0.0       0.0  0.1500   0   0.00 0.00000 0.00000  #       2 AIR
+     0.1400     600.0    1210.0  0.0250   0   0.00 0.00000 0.00000  #       3 flooring
+     0.0600     186.0    1360.0  0.0250   0   0.00 0.00000 0.00000  #       4 Wilton
+     1.0500    2500.0     750.0  0.0040   0   0.00 0.00000 0.00000  #  13   1 clear float
+     1.0500    2500.0     750.0  0.0040   0   0.00 0.00000 0.00000  #  14   1 clear float
+*tmc YES                                        # optical properties:
+   1  SC_8985_04nb                              # layers in tmc type 1
+  0.819  0.802  0.761  0.621  0.376  0.890      # transmission @ 5 angles & visible tr.
+  0.106  0.116  0.124  0.129  0.125             # for each layer absorption @ 5 angles
+   0                                            # no alternative optics

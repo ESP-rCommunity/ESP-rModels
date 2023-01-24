@@ -1,0 +1,17 @@
+    3    2    2    1.000    (nodes, components, connections, wind reduction)
+ Node         Fld. Type   Height    Temperature    Data_1       Data_2
+ room            1    0   1.5000       20.000       0.0000       45.361    
+ west            1    3   2.1500       0.0000       1.0000       270.00    
+ roof            1    3   3.9000       0.0000       2.0000       0.0000    
+ Component    Type C+ L+ Description
+ open          110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000       5.99999987E-02
+ fan            30  2  0 Constant vol. flow rate component   m = rho.a               
+   1.00000000       9.99999978E-03
+ +Node         dHght   -Node         dHght   via Component
+ west         -0.325   room          0.325   fan                                     
+ roof         -0.750   room          0.750   open                                    
+*IPSMOD 1  # stack calc
+*MFBSNC 0  # timing
+*MSLVTP 2  # flow solution
+*MFTRAC 0  # trace level

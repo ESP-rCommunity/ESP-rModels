@@ -1,0 +1,13 @@
+*Casual_gain_ctl
+*desc cgc for 1 lighting zone based on horiz sensor on facade
+2 0 0 0 # Gain to ctl for different day types
+   8  18   0   1   0   1   0   1  # Control period start & end hours
+  2  # No. of lighting zone(s)
+1000.0  1.5  0.2  0.2  0 # Setpt, switch off lvl, min dim/el, delay
+ 0.50  1  3 # % casual, no of sensors, calc type
+  1.000  0.000 # Sensor location & type
+  2 # Control law: Step            
+1000.0  1.5  0.2  0.2  0 # Setpt, switch off lvl, min dim/el, delay
+ 0.50  1  3 # % casual, no of sensors, calc type
+  1.000  0.000 # Sensor location & type
+  2 # Control law: Step            

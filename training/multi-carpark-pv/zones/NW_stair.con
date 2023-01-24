@@ -1,0 +1,91 @@
+*Constructions 2.1                              # thermophysical properties of NE_stair
+*date Mon Sep  6 16:28:37 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     1     0   0.90   0.90   0.40   0.40   0    #   1  Nor_b2       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #   2  Wes_b2       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #   3  South_b2     stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #   4  East_b2      stair_block_wl
+     1     0   0.90   0.90   0.65   0.65   0    #   5  Roof         concrete_slab
+     1     0   0.90   0.90   0.65   0.65   0    #   6  Floor        concrete_slab
+     1     0   0.90   0.90   0.40   0.40   0    #   7  East_b1      stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #   8  East_0       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #   9  East_1       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  10  East_2       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  11  East_3       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  12  East_4       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  13  East_5       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  14  East_6       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  15  Nor_b1       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  16  Nor_0        stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  17  Nor_1        stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  18  Nor_2        stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  19  Nor_3        stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  20  Nor_4        stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  21  Nor_5        stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  22  Nor_6        stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  23  West_b1      stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  24  West_0       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  25  West_1       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  26  West_2       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  27  West_3       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  28  West_4       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  29  West_5       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  30  West_6       stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  31  South_b1     stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  32  South_0      stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  33  South_1      stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  34  South_2      stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  35  South_3      stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  36  South_4      stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  37  South_5      stair_block_wl
+     1     0   0.90   0.90   0.40   0.40   0    #  38  South_6      stair_block_wl
+     1     0   0.83   0.83   0.05   0.05   1    #  39  stair_glz    single_glaz
+# air gap layer positions and restances
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #   1   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #   2   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #   3   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #   4   1 concrete block
+     1.4000    2100.0     653.0  0.2000   0   0.00 0.00000 0.00000  #   5   1 heavy mix concrete
+     1.4000    2100.0     653.0  0.2000   0   0.00 0.00000 0.00000  #   6   1 heavy mix concrete
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #   7   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #   8   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #   9   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  10   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  11   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  12   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  13   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  14   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  15   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  16   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  17   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  18   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  19   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  20   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  21   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  22   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  23   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  24   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  25   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  26   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  27   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  28   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  29   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  30   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  31   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  32   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  33   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  34   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  35   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  36   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  37   1 concrete block
+     1.0600    1950.0    1000.0  0.1500   0   0.00 0.00000 0.00000  #  38   1 concrete block
+     1.0500    2500.0     750.0  0.0060   0   0.00 0.00000 0.00000  #  39   1 clear float
+*tmc YES                                        # optical properties:
+   1  SCF8783_06nb                              # layers in tmc type 1
+  0.779  0.759  0.717  0.581  0.348  0.870      # transmission @ 5 angles & visible tr.
+  0.149  0.163  0.173  0.179  0.169             # for each layer absorption @ 5 angles
+   0                                            # no alternative optics

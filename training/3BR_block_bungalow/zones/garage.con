@@ -1,0 +1,61 @@
+*Constructions 2.1                              # thermophysical properties of garage
+*date Fri Sep  3 13:51:12 2021                  # latest file modification
+# layers|air | emissivity |absorptivity| tmc | surface|surface     |construction 
+#       |gaps|inside other|inside other|index| index  |name        |name 
+     4     1   0.91   0.91   0.50   0.74   0    #   1  front        conc_blck_rn
+     3     0   0.91   0.91   0.50   0.50   0    #   2  ptn_kit      intcnc_block
+     4     1   0.91   0.91   0.50   0.74   0    #   3  back         conc_blck_rn
+     4     1   0.91   0.91   0.50   0.74   0    #   4  left         conc_blck_rn
+     2     0   0.90   0.90   0.90   0.65   0    #   5  roof         Roof
+     7     0   0.90   0.90   0.85   0.85   0    #   6  base         ground
+     3     0   0.91   0.91   0.50   0.50   0    #   7  ptn_other_b  intcnc_block
+     1     0   0.90   0.90   0.70   0.70   0    #   8  door         Door_fire
+     1     0   0.90   0.90   0.65   0.65   0    #   9  frame        Window_frme
+     3     1   0.83   0.83   0.05   0.05   1    #  10  glazing      Window_ext
+# air gap layer positions and restances
+  3  0.170                                      # for front
+  3  0.170                                      # and for back
+  3  0.170                                      # and for left
+  2  0.170                                      # and for glazing
+# layer thermophysical properties
+# conduc-  | density |specific | thick- |dpnd|ref.| temp. |moisture|surface|layer
+# tivity   |         |heat     |ness(m) |type|temp|factor | factor |       |  
+     0.7900    1329.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   1   1 aged rendering
+     1.0600    1950.0    1000.0  0.2250   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.0000       0.0       0.0  0.0130   0   0.00 0.00000 0.00000  #       3 AIR
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       4 dense plaster
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   2   1 dense plaster
+     1.0600    1950.0    1000.0  0.1120   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       3 dense plaster
+     0.7900    1329.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   3   1 aged rendering
+     1.0600    1950.0    1000.0  0.2250   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.0000       0.0       0.0  0.0130   0   0.00 0.00000 0.00000  #       3 AIR
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       4 dense plaster
+     0.7900    1329.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   4   1 aged rendering
+     1.0600    1950.0    1000.0  0.2250   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.0000       0.0       0.0  0.0130   0   0.00 0.00000 0.00000  #       3 AIR
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       4 dense plaster
+     1.1000    2100.0     837.0  0.0127   0   0.00 0.00000 0.00000  #   5   1 concrete tile
+     0.1200     540.0    1210.0  0.0180   0   0.00 0.00000 0.00000  #       2 plywood sheathing
+     1.2800    1460.0     879.0  0.2500   0   0.00 0.00000 0.00000  #   6   1 earth std
+     1.2800    1460.0     879.0  0.2500   0   0.00 0.00000 0.00000  #       2 earth std
+     1.2800    1460.0     879.0  0.2500   0   0.00 0.00000 0.00000  #       3 earth std
+     1.2800    1460.0     879.0  0.2500   0   0.00 0.00000 0.00000  #       4 earth std
+     1.2800    1460.0     879.0  0.2500   0   0.00 0.00000 0.00000  #       5 earth std
+     1.2800    1460.0     879.0  0.2500   0   0.00 0.00000 0.00000  #       6 earth std
+     0.5200    2050.0     184.0  0.1000   0   0.00 0.00000 0.00000  #       7 gravel based
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #   7   1 dense plaster
+     1.0600    1950.0    1000.0  0.1120   0   0.00 0.00000 0.00000  #       2 concrete block
+     0.5000    1300.0    1000.0  0.0300   0   0.00 0.00000 0.00000  #       3 dense plaster
+     0.0800     780.0    2000.0  0.0440   0   0.00 0.00000 0.00000  #   8   1 MDF
+     0.1400     590.0    1800.0  0.0600   0   0.00 0.00000 0.00000  #   9   1 western larch
+     1.0500    2500.0     750.0  0.0040   0   0.00 0.00000 0.00000  #  10   1 clear float
+     0.0000       0.0       0.0  0.0160   0   0.00 0.00000 0.00000  #       2 AIR
+     1.0500    2500.0     750.0  0.0040   0   0.00 0.00000 0.00000  #       3 clear float
+*tmc YES                                        # optical properties:
+   3  DC_8074_04nb                              # layers in tmc type 1
+  0.676  0.651  0.604  0.441  0.201  0.800      # transmission @ 5 angles & visible tr.
+  0.113  0.124  0.134  0.148  0.154             # for each layer absorption @ 5 angles
+  0.001  0.002  0.003  0.004  0.005
+  0.087  0.094  0.097  0.087  0.062
+   0                                            # no alternative optics

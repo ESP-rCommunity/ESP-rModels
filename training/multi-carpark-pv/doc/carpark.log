@@ -1,0 +1,39 @@
+Project notes for Multi-story carpark with rooftop PV.
+_____________________________
+Notes: 
+
+This model represents a multi-story carpark with a roof top
+PV array.  One variant includes the PV array at a normal
+angle, one with added ducted wind turbines in at the corners
+of the building one with DWT and a horizontal PV array.
+
+Most of the thermal zones represent open parking areas with
+administrative facilities on the ground level. The PV array
+is embedded in surfaces associated with a PV zone. The internal
+structure of the building is represented as visual bodies.
+
+Adjacent buildings are represented via solar obstructions. The
+site topology is explicitly represented via a ground zone. This
+added resolution supports visualisation studies.
+
+A conference paper reporting on this project is included in
+this folder.
+  
+_____________________________
+  
+The following surfaces in PV_array.geo are associated with
+the electrical network.
+
+pv_e1_pnl 32m^2  16 modules - -
+pv_e2_pnl 32m^2  16 modules - -
+pv_e3_pnl 32m^2  16 modules - -
+pv_w1_pnl 32m^2  16 modules - -
+pv_w2_pnl 32m^2  16 modules - -
+pv_m1_pnl 141m^2  70 modules - -
+pv_m2_pnl 132m^2  66 modules - -
+pv_m3_pnl 132m^2  66 modules - -
+pv_m4_pnl 132m^2  66 modules - -
+pv_m5_pnl 132m^2  66 modules - -
+pv_m6_pnl 132m^2  66 modules - -
+pv_m7_pnl 132m^2  66 modules - -
+pv_m8_pnl 175m^2  87 modules - 0

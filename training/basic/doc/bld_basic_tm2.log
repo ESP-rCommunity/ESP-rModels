@@ -1,0 +1,6 @@
+System configuration file: /home/joe/basic/bld_basic_tm2.cfg
+Synopsis: multi-zone, convective heating, tracking control
+First created: Tue Jan 19 14:21:40 2021
+Notes:This model represents a 3 zone building with convective heating
+under control that coerces the roof zone temperature to the
+average of one internal zone and the outside air temperature.

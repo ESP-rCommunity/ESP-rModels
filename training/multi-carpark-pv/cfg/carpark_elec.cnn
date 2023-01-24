@@ -1,0 +1,590 @@
+*connections for carpark_elec
+*Date Thu May 26 14:57:08 2022
+    587  # number of connections
+   1   1   3  22   8  #    1 Nor_b2 in NE_stair >|< Nor_b2 in ground
+   1   2   3   6   2  #    2 Wes_b2 in NE_stair >|< Wes_b2 in b2_north
+   1   3   3   6   3  #    3 South_b2 in NE_stair >|< South_b2 in b2_north
+   1   4   3   6   4  #    4 East_b2 in NE_stair >|< East_b2 in b2_north
+   1   5   0   0   0  #    5 Roof in NE_stair is External
+   1   6   3  22   1  #    6 Floor in NE_stair >|< Floor in ground
+   1   7   3   8   4  #    7 East_b1 in NE_stair >|< East_b2 in b1_north
+   1   8   3   9   4  #    8 East_0 in NE_stair >|< East_b2 in g_north
+   1   9   3  10   4  #    9 East_1 in NE_stair >|< East_b2 in 1_north
+   1  10   3  11   4  #   10 East_2 in NE_stair >|< East_b2 in 2_north
+   1  11   3  12   4  #   11 East_3 in NE_stair >|< East_b2 in 3_north
+   1  12   3  13   4  #   12 East_4 in NE_stair >|< East_b2 in 4_north
+   1  13   3  14   4  #   13 East_5 in NE_stair >|< East_b2 in 5_north
+   1  14   0   0   0  #   14 East_6 in NE_stair is External
+   1  15   3  22   9  #   15 Nor_b1 in NE_stair >|< Nor_b1 in ground
+   1  16   0   0   0  #   16 Nor_0 in NE_stair is External
+   1  17   0   0   0  #   17 Nor_1 in NE_stair is External
+   1  18   0   0   0  #   18 Nor_2 in NE_stair is External
+   1  19   0   0   0  #   19 Nor_3 in NE_stair is External
+   1  20   0   0   0  #   20 Nor_4 in NE_stair is External
+   1  21   0   0   0  #   21 Nor_5 in NE_stair is External
+   1  22   0   0   0  #   22 Nor_6 in NE_stair is External
+   1  23   3   8   2  #   23 West_b1 in NE_stair >|< Wes_b2 in b1_north
+   1  24   3   9   2  #   24 West_0 in NE_stair >|< Wes_b2 in g_north
+   1  25   3  10   2  #   25 West_1 in NE_stair >|< Wes_b2 in 1_north
+   1  26   3  11   2  #   26 West_2 in NE_stair >|< Wes_b2 in 2_north
+   1  27   3  12   2  #   27 West_3 in NE_stair >|< Wes_b2 in 3_north
+   1  28   3  13   2  #   28 West_4 in NE_stair >|< Wes_b2 in 4_north
+   1  29   3  14   2  #   29 West_5 in NE_stair >|< Wes_b2 in 5_north
+   1  30   0   0   0  #   30 West_6 in NE_stair is External
+   1  31   3   8   3  #   31 South_b1 in NE_stair >|< South_b2 in b1_north
+   1  32   3   9   3  #   32 South_0 in NE_stair >|< South_b2 in g_north
+   1  33   3  10   3  #   33 South_1 in NE_stair >|< South_b2 in 1_north
+   1  34   3  11   3  #   34 South_2 in NE_stair >|< South_b2 in 2_north
+   1  35   3  12   3  #   35 South_3 in NE_stair >|< South_b2 in 3_north
+   1  36   3  13   3  #   36 South_4 in NE_stair >|< South_b2 in 4_north
+   1  37   3  14   3  #   37 South_5 in NE_stair >|< South_b2 in 5_north
+   1  38   0   0   0  #   38 South_6 in NE_stair is External
+   1  39   0   0   0  #   39 stair_glz in NE_stair is External
+   2   1   3   7   4  #   40 Nor_b2 in SE_stair >|< Nor_b2 in b2_south
+   2   2   3   7   5  #   41 Wes_b2 in SE_stair >|< Wes_b2 in b2_south
+   2   3   4   1   0  #   42 South_b2 in SE_stair >|< ground profile 1
+   2   4   3   7   3  #   43 East_b2 in SE_stair >|< East_b2 in b2_south
+   2   5   0   0   0  #   44 Roof in SE_stair is External
+   2   6   3  22   2  #   45 Floor in SE_stair >|< Floor in ground
+   2   7   3  15   3  #   46 East_b1 in SE_stair >|< East_b2 in b1_south
+   2   8   3  16   3  #   47 East_0 in SE_stair >|< East_b2 in g_south
+   2   9   3  17   3  #   48 East_1 in SE_stair >|< East_b2 in 1_south
+   2  10   3  18   3  #   49 East_2 in SE_stair >|< East_b2 in 2_south
+   2  11   3  19   3  #   50 East_3 in SE_stair >|< East_b2 in 3_south
+   2  12   3  20   3  #   51 East_4 in SE_stair >|< East_b2 in 4_south
+   2  13   3  21   3  #   52 East_5 in SE_stair >|< East_b2 in 5_south
+   2  14   0   0   0  #   53 East_6 in SE_stair is External
+   2  15   3  15   4  #   54 Nor_b1 in SE_stair >|< Nor_b2 in b1_south
+   2  16   3  16   4  #   55 Nor_0 in SE_stair >|< Nor_b2 in g_south
+   2  17   3  17   4  #   56 Nor_1 in SE_stair >|< Nor_b2 in 1_south
+   2  18   3  18   4  #   57 Nor_2 in SE_stair >|< Nor_b2 in 2_south
+   2  19   3  19   4  #   58 Nor_3 in SE_stair >|< Nor_b2 in 3_south
+   2  20   3  20   4  #   59 Nor_4 in SE_stair >|< Nor_b2 in 4_south
+   2  21   3  21   4  #   60 Nor_5 in SE_stair >|< Nor_b2 in 5_south
+   2  22   0   0   0  #   61 Nor_6 in SE_stair is External
+   2  23   3  15   5  #   62 West_b1 in SE_stair >|< Wes_b2 in b1_south
+   2  24   3  16   5  #   63 West_0 in SE_stair >|< Wes_b2 in g_south
+   2  25   3  17   5  #   64 West_1 in SE_stair >|< Wes_b2 in 1_south
+   2  26   3  18   5  #   65 West_2 in SE_stair >|< Wes_b2 in 2_south
+   2  27   3  19   5  #   66 West_3 in SE_stair >|< Wes_b2 in 3_south
+   2  28   3  20   5  #   67 West_4 in SE_stair >|< Wes_b2 in 4_south
+   2  29   3  21   5  #   68 West_5 in SE_stair >|< Wes_b2 in 5_south
+   2  30   0   0   0  #   69 West_6 in SE_stair is External
+   2  31   0   0   0  #   70 South_b1 in SE_stair is External
+   2  32   0   0   0  #   71 South_0 in SE_stair is External
+   2  33   0   0   0  #   72 South_1 in SE_stair is External
+   2  34   0   0   0  #   73 South_2 in SE_stair is External
+   2  35   0   0   0  #   74 South_3 in SE_stair is External
+   2  36   0   0   0  #   75 South_4 in SE_stair is External
+   2  37   0   0   0  #   76 South_5 in SE_stair is External
+   2  38   0   0   0  #   77 South_6 in SE_stair is External
+   2  39   0   0   0  #   78 glaze in SE_stair is External
+   3   1   3   7   6  #   79 Nor_b2 in SW_lift_st >|< Nor_b2_lft in b2_south
+   3   2   3  22  10  #   80 Wes_b2 in SW_lift_st >|< Wes_b2 in ground
+   3   3   3  22  11  #   81 South_b2 in SW_lift_st >|< South_b2 in ground
+   3   4   3   7   7  #   82 East_b2 in SW_lift_st >|< East_b2_lft in b2_south
+   3   5   0   0   0  #   83 Roof in SW_lift_st is External
+   3   6   3  22   3  #   84 Floor in SW_lift_st >|< Floor_lift in ground
+   3   7   3  15   7  #   85 East_b1 in SW_lift_st >|< East_b2_lft in b1_south
+   3   8   3  16   7  #   86 East_0 in SW_lift_st >|< East_b2_lft in g_south
+   3   9   3  17   7  #   87 East_1 in SW_lift_st >|< East_b2_lft in 1_south
+   3  10   3  18   7  #   88 East_2 in SW_lift_st >|< East_b2_lft in 2_south
+   3  11   3  19   7  #   89 East_3 in SW_lift_st >|< East_b2_lft in 3_south
+   3  12   3  20   7  #   90 East_4 in SW_lift_st >|< East_b2_lft in 4_south
+   3  13   3  21   7  #   91 East_5 in SW_lift_st >|< East_b2_lft in 5_south
+   3  14   0   0   0  #   92 East_6 in SW_lift_st is External
+   3  15   3  15   6  #   93 Nor_b1 in SW_lift_st >|< Nor_b2_lft in b1_south
+   3  16   3  16   6  #   94 Nor_0 in SW_lift_st >|< Nor_b2_lft in g_south
+   3  17   3  17   6  #   95 Nor_1 in SW_lift_st >|< Nor_b2_lft in 1_south
+   3  18   3  18   6  #   96 Nor_2 in SW_lift_st >|< Nor_b2_lft in 2_south
+   3  19   3  19   6  #   97 Nor_3 in SW_lift_st >|< Nor_b2_lft in 3_south
+   3  20   3  20   6  #   98 Nor_4 in SW_lift_st >|< Nor_b2_lft in 4_south
+   3  21   3  21   6  #   99 Nor_5 in SW_lift_st >|< Nor_b2_lft in 5_south
+   3  22   0   0   0  #  100 Nor_6 in SW_lift_st is External
+   3  23   3  22  12  #  101 West_b1 in SW_lift_st >|< West_b1 in ground
+   3  24   0   0   0  #  102 West_0 in SW_lift_st is External
+   3  25   0   0   0  #  103 West_1 in SW_lift_st is External
+   3  26   0   0   0  #  104 West_2 in SW_lift_st is External
+   3  27   0   0   0  #  105 West_3 in SW_lift_st is External
+   3  28   0   0   0  #  106 West_4 in SW_lift_st is External
+   3  29   0   0   0  #  107 West_5 in SW_lift_st is External
+   3  30   0   0   0  #  108 West_6 in SW_lift_st is External
+   3  31   3  22  13  #  109 South_b1 in SW_lift_st >|< South_b1 in ground
+   3  32   0   0   0  #  110 South_0 in SW_lift_st is External
+   3  33   0   0   0  #  111 South_1 in SW_lift_st is External
+   3  34   0   0   0  #  112 South_2 in SW_lift_st is External
+   3  35   0   0   0  #  113 South_3 in SW_lift_st is External
+   3  36   0   0   0  #  114 South_4 in SW_lift_st is External
+   3  37   0   0   0  #  115 South_5 in SW_lift_st is External
+   3  38   0   0   0  #  116 South_6 in SW_lift_st is External
+   3  39   0   0   0  #  117 glazing in SW_lift_st is External
+   3  40   0   0   0  #  118 s_glazing in SW_lift_st is External
+   3  41   0   0   0  #  119 roof_acc_gl in SW_lift_st is External
+   3  42   0   0   0  #  120 sou_5_glz in SW_lift_st is External
+   3  43   0   0   0  #  121 sou_4_glz in SW_lift_st is External
+   3  44   0   0   0  #  122 sou_3_glz in SW_lift_st is External
+   3  45   0   0   0  #  123 sou_2_glz in SW_lift_st is External
+   3  46   0   0   0  #  124 sou_1_glz in SW_lift_st is External
+   4   1   0   0   0  #  125 Top-7 in ramps is External
+   4   2   3  22   4  #  126 Base-8 in ramps >|< Base-8 in ground
+   4   3   3   6   5  #  127 b2_slice_und in ramps >|< b2_slice_und in b2_north
+   4   4   3   6   6  #  128 b2_slice_w in ramps >|< b2_slice_w in b2_north
+   4   5   3   8   5  #  129 b1_slice_und in ramps >|< b2_slice_und in b1_north
+   4   6   3   8   6  #  130 b1_slice_w in ramps >|< b2_slice_w in b1_north
+   4   7   3   9   5  #  131 g_slice_und in ramps >|< b2_slice_und in g_north
+   4   8   3   9   6  #  132 g_slice_w in ramps >|< b2_slice_w in g_north
+   4   9   3  10   5  #  133 1_slice_und in ramps >|< b2_slice_und in 1_north
+   4  10   3  10   6  #  134 1_slice_w in ramps >|< b2_slice_w in 1_north
+   4  11   3  11   5  #  135 2+slice_und in ramps >|< b2_slice_und in 2_north
+   4  12   3  11   6  #  136 2_slice_w in ramps >|< b2_slice_w in 2_north
+   4  13   3  12   5  #  137 3_slice_und in ramps >|< b2_slice_und in 3_north
+   4  14   3  12   6  #  138 3_slice_w in ramps >|< b2_slice_w in 3_north
+   4  15   3  13   5  #  139 4_slice_und in ramps >|< b2_slice_und in 4_north
+   4  16   3  13   6  #  140 4_slice_w in ramps >|< b2_slice_w in 4_north
+   4  17   3  14   5  #  141 5_slice_und in ramps >|< b2_slice_und in 5_north
+   4  18   3  14   6  #  142 5_slice_w in ramps >|< b2_slice_w in 5_north
+   4  19   3   6   7  #  143 b2_north in ramps >|< b2_north in b2_north
+   4  20   3   8   7  #  144 b1_north in ramps >|< b2_north in b1_north
+   4  21   3   9   7  #  145 g_north in ramps >|< b2_north in g_north
+   4  22   3  10   7  #  146 1_north in ramps >|< b2_north in 1_north
+   4  23   3  11   7  #  147 2_north in ramps >|< b2_north in 2_north
+   4  24   3  12   7  #  148 3_north in ramps >|< b2_north in 3_north
+   4  25   3  13   7  #  149 4_north in ramps >|< b2_north in 4_north
+   4  26   3  14   7  #  150 5_north in ramps >|< b2_north in 5_north
+   4  27   3   7  11  #  151 b2_south in ramps >|< to_ramp in b2_south
+   4  28   3  15  11  #  152 b1_south in ramps >|< to_ramp in b1_south
+   4  29   3  16  11  #  153 g_south in ramps >|< to_ramp in g_south
+   4  30   3  17  11  #  154 1_south in ramps >|< to_ramp in 1_south
+   4  31   3  18  11  #  155 2_south in ramps >|< to_ramp in 2_south
+   4  32   3  19  11  #  156 3_south in ramps >|< to_ramp in 3_south
+   4  33   3  20  11  #  157 4_south in ramps >|< to_ramp in 4_south
+   4  34   3  21  11  #  158 5_south in ramps >|< to_ramp in 5_south
+   4  35   3   6   8  #  159 b2_slice_u in ramps >|< b2_slice_u in b2_north
+   4  36   3   6   9  #  160 b2_down in ramps >|< b2_down in b2_north
+   4  37   3   8   8  #  161 b1_slice_u in ramps >|< b2_slice_u in b1_north
+   4  38   3   8   9  #  162 b1_down in ramps >|< b2_down in b1_north
+   4  39   3   9   8  #  163 g_slice_u in ramps >|< b2_slice_u in g_north
+   4  40   3   9   9  #  164 g_down in ramps >|< b2_down in g_north
+   4  41   3  10   8  #  165 1_slice_u in ramps >|< b2_slice_u in 1_north
+   4  42   3  10   9  #  166 1_down in ramps >|< b2_down in 1_north
+   4  43   3  11   8  #  167 2_slice_u in ramps >|< b2_slice_u in 2_north
+   4  44   3  11   9  #  168 2_down in ramps >|< b2_down in 2_north
+   4  45   3  12   8  #  169 3_slice_u in ramps >|< b2_slice_u in 3_north
+   4  46   3  12   9  #  170 3_down in ramps >|< b2_down in 3_north
+   4  47   3  13   8  #  171 4_slice_u in ramps >|< b2_slice_u in 4_north
+   4  48   3  13   9  #  172 4_down in ramps >|< b2_down in 4_north
+   4  49   3  14   8  #  173 5_slice_u in ramps >|< b2_slice_u in 5_north
+   4  50   3  14   9  #  174 5_down in ramps >|< b2_down in 5_north
+   5   1   3   7  16  #  175 frame in warden >|< frame in b2_south
+   5   2   3   7   2  #  176 Wall-2 in warden >|< Wall-2 in b2_south
+   5   3   0   0   0  #  177 Wall-3 in warden is External
+   5   4   0   0   0  #  178 Wall-4 in warden is External
+   5   5   1   0   0  #  179 Top-5 in warden >|< Identical environment
+   5   6   3  22   5  #  180 Base-6 in warden >|< Base-6 in ground
+   5   7   3   7  17  #  181 glazing in warden >|< glazing in b2_south
+   6   1   3  22   6  #  182 foundation in b2_north >|< foundation in ground
+   6   2   3   1   2  #  183 Wes_b2 in b2_north >|< Wes_b2 in NE_stair
+   6   3   3   1   3  #  184 South_b2 in b2_north >|< South_b2 in NE_stair
+   6   4   3   1   4  #  185 East_b2 in b2_north >|< East_b2 in NE_stair
+   6   5   3   4   3  #  186 b2_slice_und in b2_north >|< b2_slice_und in ramps
+   6   6   3   4   4  #  187 b2_slice_w in b2_north >|< b2_slice_w in ramps
+   6   7   3   4  19  #  188 b2_north in b2_north >|< b2_north in ramps
+   6   8   3   4  35  #  189 b2_slice_u in b2_north >|< b2_slice_u in ramps
+   6   9   3   4  36  #  190 b2_down in b2_north >|< b2_down in ramps
+   6  10   3  22  19  #  191 fac_north_a in b2_north >|< fac_north_a in ground
+   6  11   3  22  20  #  192 fac_north_b in b2_north >|< fac_north_b in ground
+   6  12   0   0   0  #  193 fac_west in b2_north is External
+   6  13   3   7   8  #  194 fict_a in b2_north >|< fict_a in b2_south
+   6  14   3   7   9  #  195 fict_b in b2_north >|< fict_b in b2_south
+   6  15   0   0   0  #  196 exit in b2_north is External
+   6  16   0   0   0  #  197 fac_east_b in b2_north is External
+   6  17   0   0   0  #  198 fac_east_c in b2_north is External
+   6  18   0   0   0  #  199 fac_fic_d in b2_north is External
+   6  19   0   0   0  #  200 fac_east_e in b2_north is External
+   6  20   3   8   1  #  201 ceil_b2 in b2_north >|< foundation in b1_north
+   7   1   3  22   7  #  202 foundation in b2_south >|< foundation in ground
+   7   2   3   5   2  #  203 Wall-2 in b2_south >|< Wall-2 in warden
+   7   3   3   2   4  #  204 East_b2 in b2_south >|< East_b2 in SE_stair
+   7   4   3   2   1  #  205 Nor_b2 in b2_south >|< Nor_b2 in SE_stair
+   7   5   3   2   2  #  206 Wes_b2 in b2_south >|< Wes_b2 in SE_stair
+   7   6   3   3   1  #  207 Nor_b2_lft in b2_south >|< Nor_b2 in SW_lift_st
+   7   7   3   3   4  #  208 East_b2_lft in b2_south >|< East_b2 in SW_lift_st
+   7   8   3   6  13  #  209 fict_a in b2_south >|< fict_a in b2_north
+   7   9   3   6  14  #  210 fict_b in b2_south >|< fict_b in b2_north
+   7  10   1   0   0  #  211 ceil_b2 in b2_south >|< Identical environment
+   7  11   3   4  27  #  212 to_ramp in b2_south >|< b2_south in ramps
+   7  12   0   0   0  #  213 fac_west in b2_south is External
+   7  13   0   0   0  #  214 fac_south_a in b2_south is External
+   7  14   0   0   0  #  215 fac_south_b in b2_south is External
+   7  15   0   0   0  #  216 entrance in b2_south is External
+   7  16   3   5   1  #  217 frame in b2_south >|< frame in warden
+   7  17   3   5   7  #  218 glazing in b2_south >|< glazing in warden
+   8   1   3   6  20  #  219 foundation in b1_north >|< ceil_b2 in b2_north
+   8   2   3   1  23  #  220 Wes_b2 in b1_north >|< West_b1 in NE_stair
+   8   3   3   1  31  #  221 South_b2 in b1_north >|< South_b1 in NE_stair
+   8   4   3   1   7  #  222 East_b2 in b1_north >|< East_b1 in NE_stair
+   8   5   3   4   5  #  223 b2_slice_und in b1_north >|< b1_slice_und in ramps
+   8   6   3   4   6  #  224 b2_slice_w in b1_north >|< b1_slice_w in ramps
+   8   7   3   4  20  #  225 b2_north in b1_north >|< b1_north in ramps
+   8   8   3   4  37  #  226 b2_slice_u in b1_north >|< b1_slice_u in ramps
+   8   9   3   4  38  #  227 b2_down in b1_north >|< b1_down in ramps
+   8  10   3  22  21  #  228 fac_north_a in b1_north >|< fac_north_aa in ground
+   8  11   3  22  22  #  229 fac_north_b in b1_north >|< fac_north_bb in ground
+   8  12   0   0   0  #  230 fac_west in b1_north is External
+   8  13   3  15   8  #  231 fict_a in b1_north >|< fict_a in b1_south
+   8  14   3  15   9  #  232 fict_b in b1_north >|< fict_b in b1_south
+   8  15   0   0   0  #  233 exit in b1_north is External
+   8  16   0   0   0  #  234 fac_east_b in b1_north is External
+   8  17   0   0   0  #  235 fac_east_c in b1_north is External
+   8  18   0   0   0  #  236 fac_fic_d in b1_north is External
+   8  19   0   0   0  #  237 fac_east_e in b1_north is External
+   8  20   3   9   1  #  238 ceil_b2 in b1_north >|< foundation in g_north
+   9   1   3   8  20  #  239 foundation in g_north >|< ceil_b2 in b1_north
+   9   2   3   1  24  #  240 Wes_b2 in g_north >|< West_0 in NE_stair
+   9   3   3   1  32  #  241 South_b2 in g_north >|< South_0 in NE_stair
+   9   4   3   1   8  #  242 East_b2 in g_north >|< East_0 in NE_stair
+   9   5   3   4   7  #  243 b2_slice_und in g_north >|< g_slice_und in ramps
+   9   6   3   4   8  #  244 b2_slice_w in g_north >|< g_slice_w in ramps
+   9   7   3   4  21  #  245 b2_north in g_north >|< g_north in ramps
+   9   8   3   4  39  #  246 b2_slice_u in g_north >|< g_slice_u in ramps
+   9   9   3   4  40  #  247 b2_down in g_north >|< g_down in ramps
+   9  10   0   0   0  #  248 fac_north_a in g_north is External
+   9  11   0   0   0  #  249 fac_north_b in g_north is External
+   9  12   0   0   0  #  250 fac_west in g_north is External
+   9  13   3  16   8  #  251 fict_a in g_north >|< fict_a in g_south
+   9  14   3  16   9  #  252 fict_b in g_north >|< fict_b in g_south
+   9  15   0   0   0  #  253 exit in g_north is External
+   9  16   0   0   0  #  254 fac_east_b in g_north is External
+   9  17   0   0   0  #  255 fac_east_c in g_north is External
+   9  18   0   0   0  #  256 fac_fic_d in g_north is External
+   9  19   0   0   0  #  257 fac_east_e in g_north is External
+   9  20   3  10   1  #  258 ceil_b2 in g_north >|< foundation in 1_north
+  10   1   3   9  20  #  259 foundation in 1_north >|< ceil_b2 in g_north
+  10   2   3   1  25  #  260 Wes_b2 in 1_north >|< West_1 in NE_stair
+  10   3   3   1  33  #  261 South_b2 in 1_north >|< South_1 in NE_stair
+  10   4   3   1   9  #  262 East_b2 in 1_north >|< East_1 in NE_stair
+  10   5   3   4   9  #  263 b2_slice_und in 1_north >|< 1_slice_und in ramps
+  10   6   3   4  10  #  264 b2_slice_w in 1_north >|< 1_slice_w in ramps
+  10   7   3   4  22  #  265 b2_north in 1_north >|< 1_north in ramps
+  10   8   3   4  41  #  266 b2_slice_u in 1_north >|< 1_slice_u in ramps
+  10   9   3   4  42  #  267 b2_down in 1_north >|< 1_down in ramps
+  10  10   0   0   0  #  268 fac_north_a in 1_north is External
+  10  11   0   0   0  #  269 fac_north_b in 1_north is External
+  10  12   0   0   0  #  270 fac_west in 1_north is External
+  10  13   3  17   8  #  271 fict_a in 1_north >|< fict_a in 1_south
+  10  14   3  17   9  #  272 fict_b in 1_north >|< fict_b in 1_south
+  10  15   0   0   0  #  273 exit in 1_north is External
+  10  16   0   0   0  #  274 fac_east_b in 1_north is External
+  10  17   0   0   0  #  275 fac_east_c in 1_north is External
+  10  18   0   0   0  #  276 fac_fic_d in 1_north is External
+  10  19   0   0   0  #  277 fac_east_e in 1_north is External
+  10  20   3  11   1  #  278 ceil_b2 in 1_north >|< foundation in 2_north
+  11   1   3  10  20  #  279 foundation in 2_north >|< ceil_b2 in 1_north
+  11   2   3   1  26  #  280 Wes_b2 in 2_north >|< West_2 in NE_stair
+  11   3   3   1  34  #  281 South_b2 in 2_north >|< South_2 in NE_stair
+  11   4   3   1  10  #  282 East_b2 in 2_north >|< East_2 in NE_stair
+  11   5   3   4  11  #  283 b2_slice_und in 2_north >|< 2+slice_und in ramps
+  11   6   3   4  12  #  284 b2_slice_w in 2_north >|< 2_slice_w in ramps
+  11   7   3   4  23  #  285 b2_north in 2_north >|< 2_north in ramps
+  11   8   3   4  43  #  286 b2_slice_u in 2_north >|< 2_slice_u in ramps
+  11   9   3   4  44  #  287 b2_down in 2_north >|< 2_down in ramps
+  11  10   0   0   0  #  288 fac_north_a in 2_north is External
+  11  11   0   0   0  #  289 fac_north_b in 2_north is External
+  11  12   0   0   0  #  290 fac_west in 2_north is External
+  11  13   3  18   8  #  291 fict_a in 2_north >|< fict_a in 2_south
+  11  14   3  18   9  #  292 fict_b in 2_north >|< fict_b in 2_south
+  11  15   0   0   0  #  293 exit in 2_north is External
+  11  16   0   0   0  #  294 fac_east_b in 2_north is External
+  11  17   0   0   0  #  295 fac_east_c in 2_north is External
+  11  18   0   0   0  #  296 fac_fic_d in 2_north is External
+  11  19   0   0   0  #  297 fac_east_e in 2_north is External
+  11  20   3  12   1  #  298 ceil_b2 in 2_north >|< foundation in 3_north
+  12   1   3  11  20  #  299 foundation in 3_north >|< ceil_b2 in 2_north
+  12   2   3   1  27  #  300 Wes_b2 in 3_north >|< West_3 in NE_stair
+  12   3   3   1  35  #  301 South_b2 in 3_north >|< South_3 in NE_stair
+  12   4   3   1  11  #  302 East_b2 in 3_north >|< East_3 in NE_stair
+  12   5   3   4  13  #  303 b2_slice_und in 3_north >|< 3_slice_und in ramps
+  12   6   3   4  14  #  304 b2_slice_w in 3_north >|< 3_slice_w in ramps
+  12   7   3   4  24  #  305 b2_north in 3_north >|< 3_north in ramps
+  12   8   3   4  45  #  306 b2_slice_u in 3_north >|< 3_slice_u in ramps
+  12   9   3   4  46  #  307 b2_down in 3_north >|< 3_down in ramps
+  12  10   0   0   0  #  308 fac_north_a in 3_north is External
+  12  11   0   0   0  #  309 fac_north_b in 3_north is External
+  12  12   0   0   0  #  310 fac_west in 3_north is External
+  12  13   3  19   8  #  311 fict_a in 3_north >|< fict_a in 3_south
+  12  14   3  19   9  #  312 fict_b in 3_north >|< fict_b in 3_south
+  12  15   0   0   0  #  313 exit in 3_north is External
+  12  16   0   0   0  #  314 fac_east_b in 3_north is External
+  12  17   0   0   0  #  315 fac_east_c in 3_north is External
+  12  18   0   0   0  #  316 fac_fic_d in 3_north is External
+  12  19   0   0   0  #  317 fac_east_e in 3_north is External
+  12  20   3  13   1  #  318 ceil_b2 in 3_north >|< foundation in 4_north
+  13   1   3  12  20  #  319 foundation in 4_north >|< ceil_b2 in 3_north
+  13   2   3   1  28  #  320 Wes_b2 in 4_north >|< West_4 in NE_stair
+  13   3   3   1  36  #  321 South_b2 in 4_north >|< South_4 in NE_stair
+  13   4   3   1  12  #  322 East_b2 in 4_north >|< East_4 in NE_stair
+  13   5   3   4  15  #  323 b2_slice_und in 4_north >|< 4_slice_und in ramps
+  13   6   3   4  16  #  324 b2_slice_w in 4_north >|< 4_slice_w in ramps
+  13   7   3   4  25  #  325 b2_north in 4_north >|< 4_north in ramps
+  13   8   3   4  47  #  326 b2_slice_u in 4_north >|< 4_slice_u in ramps
+  13   9   3   4  48  #  327 b2_down in 4_north >|< 4_down in ramps
+  13  10   0   0   0  #  328 fac_north_a in 4_north is External
+  13  11   0   0   0  #  329 fac_north_b in 4_north is External
+  13  12   0   0   0  #  330 fac_west in 4_north is External
+  13  13   3  20   8  #  331 fict_a in 4_north >|< fict_a in 4_south
+  13  14   3  20   9  #  332 fict_b in 4_north >|< fict_b in 4_south
+  13  15   0   0   0  #  333 exit in 4_north is External
+  13  16   0   0   0  #  334 fac_east_b in 4_north is External
+  13  17   0   0   0  #  335 fac_east_c in 4_north is External
+  13  18   0   0   0  #  336 fac_fic_d in 4_north is External
+  13  19   0   0   0  #  337 fac_east_e in 4_north is External
+  13  20   3  14   1  #  338 ceil_b2 in 4_north >|< foundation in 5_north
+  14   1   3  13  20  #  339 foundation in 5_north >|< ceil_b2 in 4_north
+  14   2   3   1  29  #  340 Wes_b2 in 5_north >|< West_5 in NE_stair
+  14   3   3   1  37  #  341 South_b2 in 5_north >|< South_5 in NE_stair
+  14   4   3   1  13  #  342 East_b2 in 5_north >|< East_5 in NE_stair
+  14   5   3   4  17  #  343 b2_slice_und in 5_north >|< 5_slice_und in ramps
+  14   6   3   4  18  #  344 b2_slice_w in 5_north >|< 5_slice_w in ramps
+  14   7   3   4  26  #  345 b2_north in 5_north >|< 5_north in ramps
+  14   8   3   4  49  #  346 b2_slice_u in 5_north >|< 5_slice_u in ramps
+  14   9   3   4  50  #  347 b2_down in 5_north >|< 5_down in ramps
+  14  10   0   0   0  #  348 fac_north_a in 5_north is External
+  14  11   0   0   0  #  349 fac_north_b in 5_north is External
+  14  12   0   0   0  #  350 fac_west in 5_north is External
+  14  13   3  21   8  #  351 fict_a in 5_north >|< fict_a in 5_south
+  14  14   3  21   9  #  352 fict_b in 5_north >|< fict_b in 5_south
+  14  15   0   0   0  #  353 exit in 5_north is External
+  14  16   0   0   0  #  354 fac_east_b in 5_north is External
+  14  17   0   0   0  #  355 fac_east_c in 5_north is External
+  14  18   0   0   0  #  356 fac_fic_d in 5_north is External
+  14  19   0   0   0  #  357 fac_east_e in 5_north is External
+  14  20   0   0   0  #  358 ceil_b2 in 5_north is External
+  15   1   1   0   0  #  359 floor in b1_south >|< Identical environment
+  15   2   0   0   0  #  360 fac_east_a in b1_south is External
+  15   3   3   2   7  #  361 East_b2 in b1_south >|< East_b1 in SE_stair
+  15   4   3   2  15  #  362 Nor_b2 in b1_south >|< Nor_b1 in SE_stair
+  15   5   3   2  23  #  363 Wes_b2 in b1_south >|< West_b1 in SE_stair
+  15   6   3   3  15  #  364 Nor_b2_lft in b1_south >|< Nor_b1 in SW_lift_st
+  15   7   3   3   7  #  365 East_b2_lft in b1_south >|< East_b1 in SW_lift_st
+  15   8   3   8  13  #  366 fict_a in b1_south >|< fict_a in b1_north
+  15   9   3   8  14  #  367 fict_b in b1_south >|< fict_b in b1_north
+  15  10   3  16   1  #  368 ceil_b2 in b1_south >|< floor in g_south
+  15  11   3   4  28  #  369 to_ramp in b1_south >|< b1_south in ramps
+  15  12   0   0   0  #  370 fac_west in b1_south is External
+  15  13   0   0   0  #  371 fac_south_a in b1_south is External
+  15  14   0   0   0  #  372 fac_south_b in b1_south is External
+  15  15   0   0   0  #  373 fac_east2 in b1_south is External
+  16   1   3  15  10  #  374 floor in g_south >|< ceil_b2 in b1_south
+  16   2   0   0   0  #  375 fac_east_a in g_south is External
+  16   3   3   2   8  #  376 East_b2 in g_south >|< East_0 in SE_stair
+  16   4   3   2  16  #  377 Nor_b2 in g_south >|< Nor_0 in SE_stair
+  16   5   3   2  24  #  378 Wes_b2 in g_south >|< West_0 in SE_stair
+  16   6   3   3  16  #  379 Nor_b2_lft in g_south >|< Nor_0 in SW_lift_st
+  16   7   3   3   8  #  380 East_b2_lft in g_south >|< East_0 in SW_lift_st
+  16   8   3   9  13  #  381 fict_a in g_south >|< fict_a in g_north
+  16   9   3   9  14  #  382 fict_b in g_south >|< fict_b in g_north
+  16  10   3  17   1  #  383 ceil_b2 in g_south >|< floor in 1_south
+  16  11   3   4  29  #  384 to_ramp in g_south >|< g_south in ramps
+  16  12   0   0   0  #  385 fac_west in g_south is External
+  16  13   0   0   0  #  386 fac_south_a in g_south is External
+  16  14   0   0   0  #  387 fac_south_b in g_south is External
+  16  15   0   0   0  #  388 fac_east2 in g_south is External
+  17   1   3  16  10  #  389 floor in 1_south >|< ceil_b2 in g_south
+  17   2   0   0   0  #  390 fac_east_a in 1_south is External
+  17   3   3   2   9  #  391 East_b2 in 1_south >|< East_1 in SE_stair
+  17   4   3   2  17  #  392 Nor_b2 in 1_south >|< Nor_1 in SE_stair
+  17   5   3   2  25  #  393 Wes_b2 in 1_south >|< West_1 in SE_stair
+  17   6   3   3  17  #  394 Nor_b2_lft in 1_south >|< Nor_1 in SW_lift_st
+  17   7   3   3   9  #  395 East_b2_lft in 1_south >|< East_1 in SW_lift_st
+  17   8   3  10  13  #  396 fict_a in 1_south >|< fict_a in 1_north
+  17   9   3  10  14  #  397 fict_b in 1_south >|< fict_b in 1_north
+  17  10   3  18   1  #  398 ceil_b2 in 1_south >|< floor in 2_south
+  17  11   3   4  30  #  399 to_ramp in 1_south >|< 1_south in ramps
+  17  12   0   0   0  #  400 fac_west in 1_south is External
+  17  13   0   0   0  #  401 fac_south_a in 1_south is External
+  17  14   0   0   0  #  402 fac_south_b in 1_south is External
+  17  15   0   0   0  #  403 fac_east2 in 1_south is External
+  18   1   3  17  10  #  404 floor in 2_south >|< ceil_b2 in 1_south
+  18   2   0   0   0  #  405 fac_east_a in 2_south is External
+  18   3   3   2  10  #  406 East_b2 in 2_south >|< East_2 in SE_stair
+  18   4   3   2  18  #  407 Nor_b2 in 2_south >|< Nor_2 in SE_stair
+  18   5   3   2  26  #  408 Wes_b2 in 2_south >|< West_2 in SE_stair
+  18   6   3   3  18  #  409 Nor_b2_lft in 2_south >|< Nor_2 in SW_lift_st
+  18   7   3   3  10  #  410 East_b2_lft in 2_south >|< East_2 in SW_lift_st
+  18   8   3  11  13  #  411 fict_a in 2_south >|< fict_a in 2_north
+  18   9   3  11  14  #  412 fict_b in 2_south >|< fict_b in 2_north
+  18  10   3  19   1  #  413 ceil_b2 in 2_south >|< floor in 3_south
+  18  11   3   4  31  #  414 to_ramp in 2_south >|< 2_south in ramps
+  18  12   0   0   0  #  415 fac_west in 2_south is External
+  18  13   0   0   0  #  416 fac_south_a in 2_south is External
+  18  14   0   0   0  #  417 fac_south_b in 2_south is External
+  18  15   0   0   0  #  418 fac_east2 in 2_south is External
+  19   1   3  18  10  #  419 floor in 3_south >|< ceil_b2 in 2_south
+  19   2   0   0   0  #  420 fac_east_a in 3_south is External
+  19   3   3   2  11  #  421 East_b2 in 3_south >|< East_3 in SE_stair
+  19   4   3   2  19  #  422 Nor_b2 in 3_south >|< Nor_3 in SE_stair
+  19   5   3   2  27  #  423 Wes_b2 in 3_south >|< West_3 in SE_stair
+  19   6   3   3  19  #  424 Nor_b2_lft in 3_south >|< Nor_3 in SW_lift_st
+  19   7   3   3  11  #  425 East_b2_lft in 3_south >|< East_3 in SW_lift_st
+  19   8   3  12  13  #  426 fict_a in 3_south >|< fict_a in 3_north
+  19   9   3  12  14  #  427 fict_b in 3_south >|< fict_b in 3_north
+  19  10   3  20   1  #  428 ceil_b2 in 3_south >|< floor in 4_south
+  19  11   3   4  32  #  429 to_ramp in 3_south >|< 3_south in ramps
+  19  12   0   0   0  #  430 fac_west in 3_south is External
+  19  13   0   0   0  #  431 fac_south_a in 3_south is External
+  19  14   0   0   0  #  432 fac_south_b in 3_south is External
+  19  15   0   0   0  #  433 fac_east2 in 3_south is External
+  20   1   3  19  10  #  434 floor in 4_south >|< ceil_b2 in 3_south
+  20   2   0   0   0  #  435 fac_east_a in 4_south is External
+  20   3   3   2  12  #  436 East_b2 in 4_south >|< East_4 in SE_stair
+  20   4   3   2  20  #  437 Nor_b2 in 4_south >|< Nor_4 in SE_stair
+  20   5   3   2  28  #  438 Wes_b2 in 4_south >|< West_4 in SE_stair
+  20   6   3   3  20  #  439 Nor_b2_lft in 4_south >|< Nor_4 in SW_lift_st
+  20   7   3   3  12  #  440 East_b2_lft in 4_south >|< East_4 in SW_lift_st
+  20   8   3  13  13  #  441 fict_a in 4_south >|< fict_a in 4_north
+  20   9   3  13  14  #  442 fict_b in 4_south >|< fict_b in 4_north
+  20  10   3  21   1  #  443 ceil_b2 in 4_south >|< floor in 5_south
+  20  11   3   4  33  #  444 to_ramp in 4_south >|< 4_south in ramps
+  20  12   0   0   0  #  445 fac_west in 4_south is External
+  20  13   0   0   0  #  446 fac_south_a in 4_south is External
+  20  14   0   0   0  #  447 fac_south_b in 4_south is External
+  20  15   0   0   0  #  448 fac_east2 in 4_south is External
+  21   1   3  20  10  #  449 floor in 5_south >|< ceil_b2 in 4_south
+  21   2   0   0   0  #  450 fac_east_a in 5_south is External
+  21   3   3   2  13  #  451 East_b2 in 5_south >|< East_5 in SE_stair
+  21   4   3   2  21  #  452 Nor_b2 in 5_south >|< Nor_5 in SE_stair
+  21   5   3   2  29  #  453 Wes_b2 in 5_south >|< West_5 in SE_stair
+  21   6   3   3  21  #  454 Nor_b2_lft in 5_south >|< Nor_5 in SW_lift_st
+  21   7   3   3  13  #  455 East_b2_lft in 5_south >|< East_5 in SW_lift_st
+  21   8   3  14  13  #  456 fict_a in 5_south >|< fict_a in 5_north
+  21   9   3  14  14  #  457 fict_b in 5_south >|< fict_b in 5_north
+  21  10   0   0   0  #  458 ceil_b2 in 5_south is External
+  21  11   3   4  34  #  459 to_ramp in 5_south >|< 5_south in ramps
+  21  12   0   0   0  #  460 fac_west in 5_south is External
+  21  13   0   0   0  #  461 fac_south_a in 5_south is External
+  21  14   0   0   0  #  462 fac_south_b in 5_south is External
+  21  15   0   0   0  #  463 fac_east2 in 5_south is External
+  22   1   3   1   6  #  464 Floor in ground >|< Floor in NE_stair
+  22   2   3   2   6  #  465 Floor in ground >|< Floor in SE_stair
+  22   3   3   3   6  #  466 Floor_lift in ground >|< Floor in SW_lift_st
+  22   4   3   4   2  #  467 Base-8 in ground >|< Base-8 in ramps
+  22   5   3   5   6  #  468 Base-6 in ground >|< Base-6 in warden
+  22   6   3   6   1  #  469 foundation in ground >|< foundation in b2_north
+  22   7   3   7   1  #  470 foundation in ground >|< foundation in b2_south
+  22   8   3   1   1  #  471 Nor_b2 in ground >|< Nor_b2 in NE_stair
+  22   9   3   1  15  #  472 Nor_b1 in ground >|< Nor_b1 in NE_stair
+  22  10   3   3   2  #  473 Wes_b2 in ground >|< Wes_b2 in SW_lift_st
+  22  11   3   3   3  #  474 South_b2 in ground >|< South_b2 in SW_lift_st
+  22  12   3   3  23  #  475 West_b1 in ground >|< West_b1 in SW_lift_st
+  22  13   3   3  31  #  476 South_b1 in ground >|< South_b1 in SW_lift_st
+  22  14   0   0   0  #  477 retain_a in ground is External
+  22  15   0   0   0  #  478 retain_b in ground is External
+  22  16   0   0   0  #  479 retain_c in ground is External
+  22  17   0   0   0  #  480 retain_d in ground is External
+  22  18   0   0   0  #  481 retain_e in ground is External
+  22  19   3   6  10  #  482 fac_north_a in ground >|< fac_north_a in b2_north
+  22  20   3   6  11  #  483 fac_north_b in ground >|< fac_north_b in b2_north
+  22  21   3   8  10  #  484 fac_north_aa in ground >|< fac_north_a in b1_north
+  22  22   3   8  11  #  485 fac_north_bb in ground >|< fac_north_b in b1_north
+  22  23   0   0   0  #  486 retain_f in ground is External
+  22  24   0   0   0  #  487 retain_g in ground is External
+  22  25   0   0   0  #  488 fill_west in ground is External
+  22  26   0   0   0  #  489 fill_south in ground is External
+  22  27   0   0   0  #  490 grass_a in ground is External
+  22  28   0   0   0  #  491 entry_drive in ground is External
+  22  29   0   0   0  #  492 grass_b in ground is External
+  22  30   4   1   0  #  493 edge_east in ground >|< ground profile 1
+  22  31   0   0   0  #  494 duke_pvm_a in ground is External
+  22  32   0   0   0  #  495 close_pvmnt in ground is External
+  22  33   0   0   0  #  496 havan_pvmnt in ground is External
+  22  34   0   0   0  #  497 havan_str_a in ground is External
+  22  35   0   0   0  #  498 havan_str_b in ground is External
+  22  36   0   0   0  #  499 havan_pvm_s in ground is External
+  22  37   0   0   0  #  500 duke_st_slop in ground is External
+  22  38   0   0   0  #  501 duke_n_sl_pv in ground is External
+  22  39   0   0   0  #  502 duke_st in ground is External
+  22  40   0   0   0  #  503 havan_op_pvm in ground is External
+  22  41   0   0   0  #  504 duke_n_pvmt in ground is External
+  22  42   4   1   0  #  505 east in ground >|< ground profile 1
+  22  43   4   1   0  #  506 south in ground >|< ground profile 1
+  22  44   4   1   0  #  507 west in ground >|< ground profile 1
+  22  45   4   1   0  #  508 north in ground >|< ground profile 1
+  22  46   4   1   0  #  509 base in ground >|< ground profile 1
+  23   1   0   0   0  #  510 pv_m1_cov in PV_array is External
+  23   2   0   0   0  #  511 pv_m2_pnl in PV_array is External
+  23   3   0   0   0  #  512 pv_m3_pnl in PV_array is External
+  23   4   0   0   0  #  513 pv_m4_pnl in PV_array is External
+  23   5   0   0   0  #  514 pv_m5_pnl in PV_array is External
+  23   6   0   0   0  #  515 pv_m6_pnl in PV_array is External
+  23   7   0   0   0  #  516 pv_m7_pnl in PV_array is External
+  23   8   0   0   0  #  517 pv_m8_pnl in PV_array is External
+  23   9   0   0   0  #  518 pv_e1_pnl in PV_array is External
+  23  10   0   0   0  #  519 pv_e2_pnl in PV_array is External
+  23  11   0   0   0  #  520 pv_e3_pnl in PV_array is External
+  23  12   0   0   0  #  521 pv_w1_pnl in PV_array is External
+  23  13   0   0   0  #  522 pv_w2_pnl in PV_array is External
+  23  14   0   0   0  #  523 t_pv_m1_base in PV_array is External
+  23  15   0   0   0  #  524 edg_2pv_m1_b in PV_array is External
+  23  16   0   0   0  #  525 edg_3pv_m1_b in PV_array is External
+  23  17   0   0   0  #  526 edg_4pv_m1_b in PV_array is External
+  23  18   0   0   0  #  527 edg_5pv_m1_b in PV_array is External
+  23  19   0   0   0  #  528 t_pv_m2_base in PV_array is External
+  23  20   0   0   0  #  529 edg_2pv_m2_b in PV_array is External
+  23  21   0   0   0  #  530 edg_3pv_m2_b in PV_array is External
+  23  22   0   0   0  #  531 edg_4pv_m2_b in PV_array is External
+  23  23   0   0   0  #  532 edg_5pv_m2_b in PV_array is External
+  23  24   0   0   0  #  533 t_pv_m3_base in PV_array is External
+  23  25   0   0   0  #  534 edg_2pv_m3_b in PV_array is External
+  23  26   0   0   0  #  535 edg_3pv_m3_b in PV_array is External
+  23  27   0   0   0  #  536 edg_4pv_m3_b in PV_array is External
+  23  28   0   0   0  #  537 edg_5pv_m3_b in PV_array is External
+  23  29   0   0   0  #  538 t_pv_m4_base in PV_array is External
+  23  30   0   0   0  #  539 edg_2pv_m4_b in PV_array is External
+  23  31   0   0   0  #  540 edg_3pv_m4_b in PV_array is External
+  23  32   0   0   0  #  541 edg_4pv_m4_b in PV_array is External
+  23  33   0   0   0  #  542 edg_5pv_m4_b in PV_array is External
+  23  34   0   0   0  #  543 t_pv_m5_base in PV_array is External
+  23  35   0   0   0  #  544 edg_2pv_m5_b in PV_array is External
+  23  36   0   0   0  #  545 edg_3pv_m5_b in PV_array is External
+  23  37   0   0   0  #  546 edg_4pv_m5_b in PV_array is External
+  23  38   0   0   0  #  547 edg_5pv_m5_b in PV_array is External
+  23  39   0   0   0  #  548 t_pv_m6_base in PV_array is External
+  23  40   0   0   0  #  549 edg_2pv_m6_b in PV_array is External
+  23  41   0   0   0  #  550 edg_3pv_m6_b in PV_array is External
+  23  42   0   0   0  #  551 edg_4pv_m6_b in PV_array is External
+  23  43   0   0   0  #  552 edg_5pv_m6_b in PV_array is External
+  23  44   0   0   0  #  553 t_pv_m7_base in PV_array is External
+  23  45   0   0   0  #  554 edg_2pv_m7_b in PV_array is External
+  23  46   0   0   0  #  555 edg_3pv_m7_b in PV_array is External
+  23  47   0   0   0  #  556 edg_4pv_m7_b in PV_array is External
+  23  48   0   0   0  #  557 edg_5pv_m7_b in PV_array is External
+  23  49   0   0   0  #  558 t_pv_m8_base in PV_array is External
+  23  50   0   0   0  #  559 edg_2pv_m8_b in PV_array is External
+  23  51   0   0   0  #  560 edg_3pv_m8_b in PV_array is External
+  23  52   0   0   0  #  561 edg_4pv_m8_b in PV_array is External
+  23  53   0   0   0  #  562 edg_5pv_m8_b in PV_array is External
+  23  54   0   0   0  #  563 t_pv_e1_base in PV_array is External
+  23  55   0   0   0  #  564 edg_2pv_e1_b in PV_array is External
+  23  56   0   0   0  #  565 edg_3pv_e1_b in PV_array is External
+  23  57   0   0   0  #  566 edg_4pv_e1_b in PV_array is External
+  23  58   0   0   0  #  567 edg_5pv_e1_b in PV_array is External
+  23  59   0   0   0  #  568 t_pv_e2_base in PV_array is External
+  23  60   0   0   0  #  569 edg_2pv_e2_b in PV_array is External
+  23  61   0   0   0  #  570 edg_3pv_e2_b in PV_array is External
+  23  62   0   0   0  #  571 edg_4pv_e2_b in PV_array is External
+  23  63   0   0   0  #  572 edg_5pv_e2_b in PV_array is External
+  23  64   0   0   0  #  573 t_pv_e3_base in PV_array is External
+  23  65   0   0   0  #  574 edg_2pv_e3_b in PV_array is External
+  23  66   0   0   0  #  575 edg_3pv_e3_b in PV_array is External
+  23  67   0   0   0  #  576 edg_4pv_e3_b in PV_array is External
+  23  68   0   0   0  #  577 edg_5pv_e3_b in PV_array is External
+  23  69   0   0   0  #  578 t_pv_w1_base in PV_array is External
+  23  70   0   0   0  #  579 edg_2pv_w1_b in PV_array is External
+  23  71   0   0   0  #  580 edg_3pv_w1_b in PV_array is External
+  23  72   0   0   0  #  581 edg_4pv_w1_b in PV_array is External
+  23  73   0   0   0  #  582 edg_5pv_w1_b in PV_array is External
+  23  74   0   0   0  #  583 t_pv_w2_base in PV_array is External
+  23  75   0   0   0  #  584 edg_2pv_w2_b in PV_array is External
+  23  76   0   0   0  #  585 edg_3pv_w2_b in PV_array is External
+  23  77   0   0   0  #  586 edg_4pv_w2_b in PV_array is External
+  23  78   0   0   0  #  587 edg_5pv_w2_b in PV_array is External

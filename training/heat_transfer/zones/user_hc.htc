@@ -1,0 +1,14 @@
+*HC_CTL                         # heat transfer control for user_hc
+*Days  1                        # number of control day types
+  1                             # number control intervals for all day types
+ 39                             # number of surfaces
+# (pt_right user_corid_f user_door pt_left ceiling_user floor_user spandral frame glazing user_part_gl user_ptn_cor  )
+# (adesk_t adesk_t_ bdesk_t bdesk_t_ cseat cseat_ cstback cstback_ dseat dseat_ dstback dstback_ ecab_lf ecab_rt  )
+# (ecab_fr ecab_bk ecab_to ecab_bs fbil_lft fbil_lft_ fbil_rt fbil_rt_ fbooks fbooks_ gcase gcase_ gcircuit gcircuit_)
+  0.00  24.00                   # start and end time of interval
+  1                             # fixed coefficients calculation control type
+*Doc,User supplied hc values
+ 4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000,4.0000, 
+ 4.0000,4.0000,4.0000,4.0000
+ -1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000, 
+ -1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000

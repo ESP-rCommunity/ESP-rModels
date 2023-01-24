@@ -1,0 +1,29 @@
+
+Instructions for running SDHW model
+
+This model is a variant of the standard cellular_office model
+which includes a water based solar collector (~3m^2), a 200 litre
+insulated hot water storage tank located in the left corner of
+the corridor zone. It also includes one water filled radiator
+in each office.
+
+The model uses thermal zones to represent these components and
+fills them with water.  A flow network is used to connect the
+components and controls are applied to the pumps in the system.
+The pump associated with the solar collector is on if the top
+of the collector is 3 degC warmer than the storage tank temperature.
+The pumps for each radiator is on if the room temperature is below
+22 degC (regardless of the tank temperature). There is also a
+very small trickle circulator running between the tank and the
+collector to limit extreme conditions in the collector.
+
+To run an assessment in the project manager select the following:
+  browse/edit/simulate -> simulation -> simulation presets
+  select the spr option
+
+  integrated simulation -> run interactively
+
+
+There will be a some message about the flow solution not converging.
+It might take one or two minutes to complete the spring assessment.
+

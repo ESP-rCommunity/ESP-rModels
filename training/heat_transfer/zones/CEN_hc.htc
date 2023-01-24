@@ -1,0 +1,15 @@
+*HC_CTL                         # heat transfer control for CEN_hc
+*Days  1                        # number of control day types
+  1                             # number control intervals for all day types
+ 39                             # number of surfaces
+# (pt_right cen_corid_fr cen_door pt_left ceiling_cen floor_cen spandral frame glazing cen_part_gla cen_ptn_cori  )
+# (adesk_t adesk_t_ bdesk_t bdesk_t_ cseat cseat_ cstback cstback_ dseat dseat_ dstback dstback_ ecab_lf ecab_rt  )
+# (ecab_fr ecab_bk ecab_to ecab_bs fbil_lft fbil_lft_ fbil_rt fbil_rt_ fbooks fbooks_ gcase gcase_ gcircuit gcircuit_)
+  0.00  24.00                   # start and end time of interval
+  4                             # CEN calculation control type
+*Doc,CEN default hc coefficients
+*basetop     6.0    5.0         # surface indices of a typcial base & top
+*floor     5.000  0.700  8.000  # CEN floor upwd_inside, downwd_inside, external
+*ceiling   5.000  0.700  8.000  # CEN ceiling upwd_inside, downwd_inside, external
+*slope     5.000  0.700  8.000  # CEN sloped upwd_inside, downwd_inside, external
+*wall      2.500  2.500  8.000  # CEN wall inside, partition, external

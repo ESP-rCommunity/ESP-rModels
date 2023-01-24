@@ -1,0 +1,143 @@
+*CONSTRUCTIONS,1.0 # multilayer constructions
+*Text
+Constructions specifically for the adaptive constructions exemplar model.
+*End_text
+*date,Wed Dec  7 13:55:26 2016
+*Category,general constructions,general constructions,Category general constructions includes all of the MLC constructions in the file.
+#
+*item,grnd_floor,grnd_floor # tag name menu entry
+*itemdoc,grnd_floor   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,263,0.2500,Common earch : Common earch
+*layer,262,0.1500,Gravel based : Gravel based
+*layer,32,0.1500,Heavy mix concrete : Heavy mix concrete
+*layer,201,0.0200,Fibreboard : Fibreboard
+*layer,124,0.0500,Cement screed : Cement screed
+*layer,67,0.0190,Chipboard : Chipboard
+*layer,221,0.0060,Wilton : Wilton
+*end_item
+*item,single_glaz,single_glaz # tag name menu entry
+*itemdoc,single_glaz  is a ...
+*incat,general constructions
+*type,TRAN,SC_8985_04nb,SYMMETRIC
+*layer,243,0.0040,4mm clear float : 4mm clear float with placeholder single layer optics
+*end_item
+*item,roof,roof # tag name menu entry
+*itemdoc,roof         is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,141,0.0100,Clay tile : Clay tile
+*layer,161,0.0020,Bitumen felt : Bitumen felt
+*layer,67,0.0250,Chipboard : Chipboard
+*end_item
+*item,int_doors,int_doors # tag name menu entry
+*itemdoc,int_doors    is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,69,0.0250,Oak (radial) : Oak (radial)
+*end_item
+*item,ext_wall,ext_wall # tag name menu entry
+*itemdoc,ext_wall     is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,125,0.0050,White dry render : White dry render
+*layer,4,0.1000,Outer leaf brick : Outer leaf brick
+*layer,201,0.0500,Fibreboard : Fibreboard
+*layer,3,0.1000,Inner leaf brick : Inner leaf brick
+*layer,104,0.0100,Gypsum plaster : Gypsum plaster
+*end_item
+*item,ext_part,ext_part # tag name menu entry
+*itemdoc,ext_part     is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,104,0.0100,Gypsum plaster : Gypsum plaster
+*layer,28,0.1500,Block inner (3% mc) : Block inner (3% mc)
+*layer,104,0.0100,Gypsum plaster : Gypsum plaster
+*end_item
+*item,int_part,int_part # tag name menu entry
+*itemdoc,int_part     is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,102,0.0100,Light plaster : Light plaster
+*layer,28,0.1000,Block inner (3% mc) : Block inner (3% mc)
+*layer,102,0.0100,Light plaster : Light plaster
+*end_item
+*item,ceiling,ceiling # tag name menu entry
+*itemdoc,ceiling      is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,upper_flor
+*layer,221,0.0250,Wilton : Wilton
+*layer,65,0.0250,Flooring : Flooring
+*layer,201,0.0500,Fibreboard : Fibreboard
+*layer,102,0.0250,Light plaster : Light plaster
+*end_item
+*item,upper_flor,upper_flor # tag name menu entry
+*itemdoc,upper_flor   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,ceiling
+*layer,102,0.0250,Light plaster : Light plaster
+*layer,201,0.0500,Fibreboard : Fibreboard
+*layer,65,0.0250,Flooring : Flooring
+*layer,221,0.0250,Wilton : Wilton
+*end_item
+*item,loft_ceil,loft_ceil # tag name menu entry
+*itemdoc,loft_ceil    is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,loft_floor
+*layer,211,0.0100,Glasswool : Glasswool
+*layer,67,0.0200,Chipboard : Chipboard
+*layer,102,0.0050,Light plaster : Light plaster
+*end_item
+*item,loft_floor,loft_floor # tag name menu entry
+*itemdoc,loft_floor   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,loft_ceil
+*layer,102,0.0050,Light plaster : Light plaster
+*layer,67,0.0200,Chipboard : Chipboard
+*layer,211,0.0100,Glasswool : Glasswool
+*end_item
+*item,dbl_glz,dbl_glz # tag name menu entry
+*itemdoc,dbl_glz      is a ...
+*incat,general constructions
+*type,TRAN,DCF7365_10nb,SYMMETRIC
+*layer,243,0.0040,4mm clear float : 4mm clear float with placeholder single layer optics
+*layer,0,0.0020,gap  0.170 0.170 0.170
+*layer,243,0.0040,4mm clear float : 4mm clear float with placeholder single layer optics
+*end_item
+*item,dummy_surf,dummy_surf # tag name menu entry
+*itemdoc,dummy_surf   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,1,0.0010,Paviour brick : Paviour brick
+*end_item
+*item,TI_glazing,TI_glazing # tag name menu entry
+*itemdoc,TI_glazing   is a ...
+*incat,general constructions
+*type,TRAN,DCTIM_blind,NONSYMMETRIC
+*layer,243,0.0040,4mm clear float : 4mm clear float with placeholder single layer optics
+*layer,0,0.0850,gap  0.170 0.170 0.170
+*layer,302,0.1000,TIM : TIM
+*layer,303,0.0020,polycarbonate : polycarbonate
+*end_item
+*item,mass_wall,mass_wall # tag name menu entry
+*itemdoc,mass_wall    is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,rev_masswall
+*layer,104,0.0100,Gypsum plaster : Gypsum plaster
+*layer,301,0.2000,concrete_block : concrete_block
+*end_item
+*item,rev_masswall,rev_masswall # tag name menu entry
+*itemdoc,rev_masswall is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,mass_wall
+*layer,301,0.2000,concrete_block : concrete_block
+*layer,104,0.0100,Gypsum plaster : Gypsum plaster
+*end_item
+*item,fict_grnd,fict_grnd # tag name menu entry
+*itemdoc,fict_grnd    is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,263,0.1000,Common earch : Common earch
+*end_item
+*db_end

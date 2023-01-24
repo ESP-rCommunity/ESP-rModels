@@ -1,0 +1,211 @@
+# ESP-r special materials file used in 
+# configuration file Duke_st_elec.cfg
+  13  # Number of special material nodes.
+# Node No:  1
+tallmax_72cell   # label
+# Zone Surf Node Type Opq/Trn
+  23   9   3   1   0
+# Number of data items.
+  13
+# Data:
+# Open circuit voltage (V), Short circuit current. (I)
+# Short circuit current (I) Voltage at maximum pwr pt (V)
+# Current at maximum pwr pt (A), Reference insolation (W/m^2)
+# Reference temperature (K), Number series connected cells (-)
+# Number of parallel connected branches (-), Number of panels in surface. (-)
+# Empirical value used in calculation of Io, Load type (0-maximum power,1-fixed R,2-fixed V)
+# Load value - resistance or voltage (-), Shading treatment (0-def,1-prop.,2-total,3-diff.)
+   42.2000    7.1500   34.3000    6.7200 1000.0000  298.0000       72.000000    1.0000    8.0000   10.0000
+    0.0000    0.0000    0.0000
+# Node No:  2
+tallmax_e2       # label
+# Zone Surf Node Type Opq/Trn
+  23  10   3   1   0
+# Number of data items.
+  13
+# Data:
+# Open circuit voltage (V), Short circuit current. (I)
+# Short circuit current (I) Voltage at maximum pwr pt (V)
+# Current at maximum pwr pt (A), Reference insolation (W/m^2)
+# Reference temperature (K), Number series connected cells (-)
+# Number of parallel connected branches (-), Number of panels in surface. (-)
+# Empirical value used in calculation of Io, Load type (0-maximum power,1-fixed R,2-fixed V)
+# Load value - resistance or voltage (-), Shading treatment (0-def,1-prop.,2-total,3-diff.)
+   42.2000    7.1500   34.3000    6.7200 1000.0000  298.0000       72.000000    1.0000   16.0000   10.0000
+    0.0000    0.0000    0.0000
+# Node No:  3
+tallmax_e3       # label
+# Zone Surf Node Type Opq/Trn
+  23  11   3   1   0
+# Number of data items.
+  13
+# Data:
+# Open circuit voltage (V), Short circuit current. (I)
+# Short circuit current (I) Voltage at maximum pwr pt (V)
+# Current at maximum pwr pt (A), Reference insolation (W/m^2)
+# Reference temperature (K), Number series connected cells (-)
+# Number of parallel connected branches (-), Number of panels in surface. (-)
+# Empirical value used in calculation of Io, Load type (0-maximum power,1-fixed R,2-fixed V)
+# Load value - resistance or voltage (-), Shading treatment (0-def,1-prop.,2-total,3-diff.)
+   42.2000    7.1500   34.3000    6.7200 1000.0000  298.0000       72.000000    1.0000   16.0000   10.0000
+    0.0000    0.0000    0.0000
+# Node No:  4
+tallmax_w1       # label
+# Zone Surf Node Type Opq/Trn
+  23  12   3   1   0
+# Number of data items.
+  13
+# Data:
+# Open circuit voltage (V), Short circuit current. (I)
+# Short circuit current (I) Voltage at maximum pwr pt (V)
+# Current at maximum pwr pt (A), Reference insolation (W/m^2)
+# Reference temperature (K), Number series connected cells (-)
+# Number of parallel connected branches (-), Number of panels in surface. (-)
+# Empirical value used in calculation of Io, Load type (0-maximum power,1-fixed R,2-fixed V)
+# Load value - resistance or voltage (-), Shading treatment (0-def,1-prop.,2-total,3-diff.)
+   42.2000    7.1500   34.3000    6.7200 1000.0000  298.0000       72.000000    1.0000   16.0000   10.0000
+    0.0000    0.0000    0.0000
+# Node No:  5
+tallmax_w2       # label
+# Zone Surf Node Type Opq/Trn
+  23  13   3   1   0
+# Number of data items.
+  13
+# Data:
+# Open circuit voltage (V), Short circuit current. (I)
+# Short circuit current (I) Voltage at maximum pwr pt (V)
+# Current at maximum pwr pt (A), Reference insolation (W/m^2)
+# Reference temperature (K), Number series connected cells (-)
+# Number of parallel connected branches (-), Number of panels in surface. (-)
+# Empirical value used in calculation of Io, Load type (0-maximum power,1-fixed R,2-fixed V)
+# Load value - resistance or voltage (-), Shading treatment (0-def,1-prop.,2-total,3-diff.)
+   42.2000    7.1500   34.3000    6.7200 1000.0000  298.0000       72.000000    1.0000   16.0000   10.0000
+    0.0000    0.0000    0.0000
+# Node No:  6
+tallmax_m1       # label
+# Zone Surf Node Type Opq/Trn
+  23   1   3   1   0
+# Number of data items.
+  13
+# Data:
+# Open circuit voltage (V), Short circuit current. (I)
+# Short circuit current (I) Voltage at maximum pwr pt (V)
+# Current at maximum pwr pt (A), Reference insolation (W/m^2)
+# Reference temperature (K), Number series connected cells (-)
+# Number of parallel connected branches (-), Number of panels in surface. (-)
+# Empirical value used in calculation of Io, Load type (0-maximum power,1-fixed R,2-fixed V)
+# Load value - resistance or voltage (-), Shading treatment (0-def,1-prop.,2-total,3-diff.)
+   42.2000    7.1500   34.3000    6.7200 1000.0000  298.0000       72.000000    1.0000   70.0000   10.0000
+    0.0000    0.0000    0.0000
+# Node No:  7
+tallmax_m2       # label
+# Zone Surf Node Type Opq/Trn
+  23   2   3   1   0
+# Number of data items.
+  13
+# Data:
+# Open circuit voltage (V), Short circuit current. (I)
+# Short circuit current (I) Voltage at maximum pwr pt (V)
+# Current at maximum pwr pt (A), Reference insolation (W/m^2)
+# Reference temperature (K), Number series connected cells (-)
+# Number of parallel connected branches (-), Number of panels in surface. (-)
+# Empirical value used in calculation of Io, Load type (0-maximum power,1-fixed R,2-fixed V)
+# Load value - resistance or voltage (-), Shading treatment (0-def,1-prop.,2-total,3-diff.)
+   42.2000    7.1500   34.3000    6.7200 1000.0000  298.0000       72.000000    1.0000   66.0000   10.0000
+    0.0000    0.0000    0.0000
+# Node No:  8
+tallmax_m3       # label
+# Zone Surf Node Type Opq/Trn
+  23   3   3   1   0
+# Number of data items.
+  13
+# Data:
+# Open circuit voltage (V), Short circuit current. (I)
+# Short circuit current (I) Voltage at maximum pwr pt (V)
+# Current at maximum pwr pt (A), Reference insolation (W/m^2)
+# Reference temperature (K), Number series connected cells (-)
+# Number of parallel connected branches (-), Number of panels in surface. (-)
+# Empirical value used in calculation of Io, Load type (0-maximum power,1-fixed R,2-fixed V)
+# Load value - resistance or voltage (-), Shading treatment (0-def,1-prop.,2-total,3-diff.)
+   42.2000    7.1500   34.3000    6.7200 1000.0000  298.0000       72.000000    1.0000   66.0000   10.0000
+    0.0000    0.0000    0.0000
+# Node No:  9
+tallmax_m4       # label
+# Zone Surf Node Type Opq/Trn
+  23   4   3   1   0
+# Number of data items.
+  13
+# Data:
+# Open circuit voltage (V), Short circuit current. (I)
+# Short circuit current (I) Voltage at maximum pwr pt (V)
+# Current at maximum pwr pt (A), Reference insolation (W/m^2)
+# Reference temperature (K), Number series connected cells (-)
+# Number of parallel connected branches (-), Number of panels in surface. (-)
+# Empirical value used in calculation of Io, Load type (0-maximum power,1-fixed R,2-fixed V)
+# Load value - resistance or voltage (-), Shading treatment (0-def,1-prop.,2-total,3-diff.)
+   42.2000    7.1500   34.3000    6.7200 1000.0000  298.0000       72.000000    1.0000   66.0000   10.0000
+    0.0000    0.0000    0.0000
+# Node No: 10
+tallmax_m5       # label
+# Zone Surf Node Type Opq/Trn
+  23   5   3   1   0
+# Number of data items.
+  13
+# Data:
+# Open circuit voltage (V), Short circuit current. (I)
+# Short circuit current (I) Voltage at maximum pwr pt (V)
+# Current at maximum pwr pt (A), Reference insolation (W/m^2)
+# Reference temperature (K), Number series connected cells (-)
+# Number of parallel connected branches (-), Number of panels in surface. (-)
+# Empirical value used in calculation of Io, Load type (0-maximum power,1-fixed R,2-fixed V)
+# Load value - resistance or voltage (-), Shading treatment (0-def,1-prop.,2-total,3-diff.)
+   42.2000    7.1500   34.3000    6.7200 1000.0000  298.0000       72.000000    1.0000   66.0000   10.0000
+    0.0000    0.0000    0.0000
+# Node No: 11
+tallmax_m6       # label
+# Zone Surf Node Type Opq/Trn
+  23   6   3   1   0
+# Number of data items.
+  13
+# Data:
+# Open circuit voltage (V), Short circuit current. (I)
+# Short circuit current (I) Voltage at maximum pwr pt (V)
+# Current at maximum pwr pt (A), Reference insolation (W/m^2)
+# Reference temperature (K), Number series connected cells (-)
+# Number of parallel connected branches (-), Number of panels in surface. (-)
+# Empirical value used in calculation of Io, Load type (0-maximum power,1-fixed R,2-fixed V)
+# Load value - resistance or voltage (-), Shading treatment (0-def,1-prop.,2-total,3-diff.)
+   42.2000    7.1500   34.3000    6.7200 1000.0000  298.0000       72.000000    1.0000   66.0000   10.0000
+    0.0000    0.0000    0.0000
+# Node No: 12
+tallmax_m7       # label
+# Zone Surf Node Type Opq/Trn
+  23   7   3   1   0
+# Number of data items.
+  13
+# Data:
+# Open circuit voltage (V), Short circuit current. (I)
+# Short circuit current (I) Voltage at maximum pwr pt (V)
+# Current at maximum pwr pt (A), Reference insolation (W/m^2)
+# Reference temperature (K), Number series connected cells (-)
+# Number of parallel connected branches (-), Number of panels in surface. (-)
+# Empirical value used in calculation of Io, Load type (0-maximum power,1-fixed R,2-fixed V)
+# Load value - resistance or voltage (-), Shading treatment (0-def,1-prop.,2-total,3-diff.)
+   42.2000    7.1500   34.3000    6.7200 1000.0000  298.0000       72.000000    1.0000   66.0000   10.0000
+    0.0000    0.0000    0.0000
+# Node No: 13
+tallmax_m8       # label
+# Zone Surf Node Type Opq/Trn
+  23   8   3   1   0
+# Number of data items.
+  13
+# Data:
+# Open circuit voltage (V), Short circuit current. (I)
+# Short circuit current (I) Voltage at maximum pwr pt (V)
+# Current at maximum pwr pt (A), Reference insolation (W/m^2)
+# Reference temperature (K), Number series connected cells (-)
+# Number of parallel connected branches (-), Number of panels in surface. (-)
+# Empirical value used in calculation of Io, Load type (0-maximum power,1-fixed R,2-fixed V)
+# Load value - resistance or voltage (-), Shading treatment (0-def,1-prop.,2-total,3-diff.)
+   42.2000    7.1500   34.3000    6.7200 1000.0000  298.0000       72.000000    1.0000   87.0000   10.0000
+    0.0000    0.0000    0.0000

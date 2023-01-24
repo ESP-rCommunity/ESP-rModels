@@ -1,0 +1,945 @@
+ 
+ Results library     :  facade_coupling.res
+ Climate file        :  dec94
+ Configuration file  :  facade_coupling.cfg
+ Configuration descr :  Base case with Radiance coupling and ceiling sensor
+ 
+ Control file name   :  ../ctl/standard.ctl
+ 
+ Simulation parameters currently set at:
+ Period from day  5 of month 12
+          to day  6 of month 12   (  1 time-step(s)/hr).
+ Save option 4 (energy balance).
+ Control description:
+one control loop setback on weekends on weekdays three periods
+ No.of control functions defined =  1
+ No.of control loops active      =  0
+ Control  Associated
+ function zone
+     2     1,
+ 
+ Subroutine MZCASI Trace output   1     Zone  1
+ Day No. = 338 (i.e.  4th of Dec.),  Time  1:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output   2     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time  2:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output   3     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time  3:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output   4     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time  4:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output   5     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time  5:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output   6     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time  6:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output   7     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time  7:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output   8     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time  8:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output   9     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time  9:00 Hours
+ Subroutine INTLUM  Trace output  10 Zone  1 fac_zone_co
+ Day No. = 339 (i.e.  5th of Dec.),  Time  9:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A      8.9  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 0.98 DFRAC= 0.97
+Fraction of lighting "ON" FRAC=0.98
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(   44.0)
+    : sun light lux(    0.0) sky light lux( 5083.0)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 115.52)
+    : solar azi deg( 142.3) solar alt deg(  10.7)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9784 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00    378.28|      0.00    483.28|      0.00    165.00
+ Summation     |       378.28W      |       483.28W      |       165.00
+ 
+ Subroutine MZCASI Trace output  11     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 10:00 Hours
+ Subroutine INTLUM  Trace output  12 Zone  1 fac_zone_co
+ Day No. = 339 (i.e.  5th of Dec.),  Time 10:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A     37.9  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 0.91 DFRAC= 0.88
+Fraction of lighting "ON" FRAC=0.91
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(  130.0)
+    : sun light lux(    0.0) sky light lux(14334.3)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 110.26)
+    : solar azi deg( 155.5) solar alt deg(  15.9)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9784 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9079 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    378.28    366.15|    483.28    471.15|    165.00    165.00
+ Summation     |       744.43W      |       954.43W      |       330.00
+ 
+ Subroutine MZCASI Trace output  13     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 11:00 Hours
+ Subroutine INTLUM  Trace output  14 Zone  1 fac_zone_co
+ Day No. = 339 (i.e.  5th of Dec.),  Time 11:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A     41.0  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 0.90 DFRAC= 0.87
+Fraction of lighting "ON" FRAC=0.90
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(  142.0)
+    : sun light lux(    0.0) sky light lux(15838.3)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 111.54)
+    : solar azi deg( 169.7) solar alt deg(  18.8)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9079 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9004 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    366.15    364.87|    471.15    469.87|    165.00    165.00
+ Summation     |       731.02W      |       941.02W      |       330.00
+ 
+ Subroutine MZCASI Trace output  15     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 12:00 Hours
+ Subroutine INTLUM  Trace output  16 Zone  1 fac_zone_co
+ Day No. = 339 (i.e.  5th of Dec.),  Time 12:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A     31.7  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 0.92 DFRAC= 0.90
+Fraction of lighting "ON" FRAC=0.92
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(  122.0)
+    : sun light lux(    0.0) sky light lux(13812.3)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 113.22)
+    : solar azi deg( 184.4) solar alt deg(  19.3)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9004 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9229 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    364.87    368.74|    469.87    473.74|    165.00    165.00
+ Summation     |       733.60W      |       943.60W      |       330.00
+ 
+ Subroutine MZCASI Trace output  17     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 13:00 Hours
+ Subroutine INTLUM  Trace output  18 Zone  1 fac_zone_co
+ Day No. = 339 (i.e.  5th of Dec.),  Time 13:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A     31.5  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 0.92 DFRAC= 0.90
+Fraction of lighting "ON" FRAC=0.92
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(  120.0)
+    : sun light lux(    0.0) sky light lux(13443.2)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 112.03)
+    : solar azi deg( 198.8) solar alt deg(  17.3)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9229 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9234 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    368.74    368.82|    473.74    473.82|    165.00    165.00
+ Summation     |       737.56W      |       947.56W      |       330.00
+ 
+ Subroutine MZCASI Trace output  19     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 14:00 Hours
+ Subroutine INTLUM  Trace output  20 Zone  1 fac_zone_co
+ Day No. = 339 (i.e.  5th of Dec.),  Time 14:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A      7.3  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 0.98 DFRAC= 0.98
+Fraction of lighting "ON" FRAC=0.98
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(   38.0)
+    : sun light lux(    0.0) sky light lux( 4519.8)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 118.94)
+    : solar azi deg( 212.5) solar alt deg(  13.0)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9234 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9822 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    368.82    378.94|    473.82    483.94|    165.00    165.00
+ Summation     |       747.76W      |       957.76W      |       330.00
+ 
+ Subroutine MZCASI Trace output  21     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 15:00 Hours
+ Subroutine INTLUM  Trace output  22 Zone  1 fac_zone_co
+ Day No. = 339 (i.e.  5th of Dec.),  Time 15:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A      1.5  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 1.00 DFRAC= 1.00
+Fraction of lighting "ON" FRAC=1.00
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(    8.0)
+    : sun light lux(    0.0) sky light lux( 1008.4)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 126.05)
+    : solar azi deg( 225.0) solar alt deg(   6.7)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9822 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9963 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    378.94    381.36|    483.94    486.36|    165.00    165.00
+ Summation     |       760.30W      |       970.30W      |       330.00
+ 
+ Subroutine MZCASI Trace output  23     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 16:00 Hours
+ Subroutine INTLUM  Trace output  24 Zone  1 fac_zone_co
+ Day No. = 339 (i.e.  5th of Dec.),  Time 16:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A      0.0  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 1.00 DFRAC= 1.00
+Fraction of lighting "ON" FRAC=1.00
+ Ext: Dir.nor.rad. W/m^2(   -0.0) Dif.hor.rad.(    0.0)
+    : sun light lux(   -0.0) sky light lux(    0.0)
+    : sun/dir efficacy (   0.00) sky/dif efficacy (   0.00)
+    : solar azi deg( 225.0) solar alt deg(  -1.0)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9963 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    381.36    382.00|    486.36    487.00|    165.00    165.00
+ Summation     |       763.36W      |       973.36W      |       330.00
+ 
+ Subroutine MZCASI Trace output  25     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 17:00 Hours
+ Subroutine INTLUM  Trace output  26 Zone  1 fac_zone_co
+ Day No. = 339 (i.e.  5th of Dec.),  Time 17:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A      0.0  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 1.00 DFRAC= 1.00
+Fraction of lighting "ON" FRAC=1.00
+ Ext: Dir.nor.rad. W/m^2(   -0.0) Dif.hor.rad.(    0.0)
+    : sun light lux(   -0.0) sky light lux(    0.0)
+    : sun/dir efficacy (   0.00) sky/dif efficacy (   0.00)
+    : solar azi deg( 225.0) solar alt deg(  -9.9)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    382.00    382.00|    487.00    487.00|    165.00    165.00
+ Summation     |       764.00W      |       974.00W      |       330.00
+ 
+ Subroutine MZCASI Trace output  27     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 18:00 Hours
+ Subroutine INTLUM  Trace output  28 Zone  1 fac_zone_co
+ Day No. = 339 (i.e.  5th of Dec.),  Time 18:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A      0.0  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 1.00 DFRAC= 1.00
+Fraction of lighting "ON" FRAC=1.00
+ Ext: Dir.nor.rad. W/m^2(   -0.0) Dif.hor.rad.(    0.0)
+    : sun light lux(   -0.0) sky light lux(    0.0)
+    : sun/dir efficacy (   0.00) sky/dif efficacy (   0.00)
+    : solar azi deg( 225.0) solar alt deg( -19.4)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    382.00    382.00|    487.00    487.00|    165.00    165.00
+ Summation     |       764.00W      |       974.00W      |       330.00
+ 
+ Subroutine MZCASI Trace output  29     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 19:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    382.00      0.00|    487.00      0.00|    165.00      0.00
+ Summation     |       382.00W      |       487.00W      |       165.00
+ 
+ Subroutine MZCASI Trace output  30     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 20:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  31     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 21:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  32     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 22:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  33     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 23:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  34     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time 24:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  35     Zone  1
+ Day No. = 339 (i.e.  5th of Dec.),  Time  1:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  36     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time  2:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  37     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time  3:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  38     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time  4:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  39     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time  5:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  40     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time  6:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  41     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time  7:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  42     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time  8:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  43     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time  9:00 Hours
+ Subroutine INTLUM  Trace output  44 Zone  1 fac_zone_co
+ Day No. = 340 (i.e.  6th of Dec.),  Time  9:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A     24.6  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 0.94 DFRAC= 0.92
+Fraction of lighting "ON" FRAC=0.94
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(   90.0)
+    : sun light lux(    0.0) sky light lux( 9809.6)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 109.00)
+    : solar azi deg( 142.3) solar alt deg(  10.5)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9403 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00    371.73|      0.00    476.73|      0.00    165.00
+ Summation     |       371.73W      |       476.73W      |       165.00
+ 
+ Subroutine MZCASI Trace output  45     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 10:00 Hours
+ Subroutine INTLUM  Trace output  46 Zone  1 fac_zone_co
+ Day No. = 340 (i.e.  6th of Dec.),  Time 10:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A     39.1  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 0.91 DFRAC= 0.88
+Fraction of lighting "ON" FRAC=0.91
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(  131.0)
+    : sun light lux(    0.0) sky light lux(14421.7)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 110.09)
+    : solar azi deg( 155.5) solar alt deg(  15.7)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9403 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9050 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    371.73    365.67|    476.73    470.67|    165.00    165.00
+ Summation     |       737.39W      |       947.39W      |       330.00
+ 
+ Subroutine MZCASI Trace output  47     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 11:00 Hours
+ Subroutine INTLUM  Trace output  48 Zone  1 fac_zone_co
+ Day No. = 340 (i.e.  6th of Dec.),  Time 11:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A     23.0  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 0.94 DFRAC= 0.93
+Fraction of lighting "ON" FRAC=0.94
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(   99.0)
+    : sun light lux(    0.0) sky light lux(11351.9)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 114.67)
+    : solar azi deg( 169.6) solar alt deg(  18.7)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9050 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9441 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    365.67    372.38|    470.67    477.38|    165.00    165.00
+ Summation     |       738.05W      |       948.05W      |       330.00
+ 
+ Subroutine MZCASI Trace output  49     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 12:00 Hours
+ Subroutine INTLUM  Trace output  50 Zone  1 fac_zone_co
+ Day No. = 340 (i.e.  6th of Dec.),  Time 12:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A     19.5  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 0.95 DFRAC= 0.94
+Fraction of lighting "ON" FRAC=0.95
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(   89.0)
+    : sun light lux(    0.0) sky light lux(10319.8)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 115.95)
+    : solar azi deg( 184.3) solar alt deg(  19.2)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9441 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9527 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    372.38    373.86|    477.38    478.86|    165.00    165.00
+ Summation     |       746.24W      |       956.24W      |       330.00
+ 
+ Subroutine MZCASI Trace output  51     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 13:00 Hours
+ Subroutine INTLUM  Trace output  52 Zone  1 fac_zone_co
+ Day No. = 340 (i.e.  6th of Dec.),  Time 13:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A      5.7  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 0.99 DFRAC= 0.98
+Fraction of lighting "ON" FRAC=0.99
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(   30.0)
+    : sun light lux(    0.0) sky light lux( 3729.4)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 124.31)
+    : solar azi deg( 198.7) solar alt deg(  17.2)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9527 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9862 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    373.86    379.62|    478.86    484.62|    165.00    165.00
+ Summation     |       753.48W      |       963.48W      |       330.00
+ 
+ Subroutine MZCASI Trace output  53     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 14:00 Hours
+ Subroutine INTLUM  Trace output  54 Zone  1 fac_zone_co
+ Day No. = 340 (i.e.  6th of Dec.),  Time 14:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A      6.5  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 0.98 DFRAC= 0.98
+Fraction of lighting "ON" FRAC=0.98
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(   34.0)
+    : sun light lux(    0.0) sky light lux( 4075.6)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 119.87)
+    : solar azi deg( 212.3) solar alt deg(  12.9)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9862 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9843 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    379.62    379.29|    484.62    484.29|    165.00    165.00
+ Summation     |       758.92W      |       968.92W      |       330.00
+ 
+ Subroutine MZCASI Trace output  55     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 15:00 Hours
+ Subroutine INTLUM  Trace output  56 Zone  1 fac_zone_co
+ Day No. = 340 (i.e.  6th of Dec.),  Time 15:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A      4.5  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 0.99 DFRAC= 0.99
+Fraction of lighting "ON" FRAC=0.99
+ Ext: Dir.nor.rad. W/m^2(    0.0) Dif.hor.rad.(   23.0)
+    : sun light lux(    0.0) sky light lux( 2681.1)
+    : sun/dir efficacy (   0.00) sky/dif efficacy ( 116.57)
+    : solar azi deg( 224.9) solar alt deg(   6.7)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9843 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 0.9892 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    379.29    380.13|    484.29    485.13|    165.00    165.00
+ Summation     |       759.43W      |       969.43W      |       330.00
+ 
+ Subroutine MZCASI Trace output  57     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 16:00 Hours
+ Subroutine INTLUM  Trace output  58 Zone  1 fac_zone_co
+ Day No. = 340 (i.e.  6th of Dec.),  Time 16:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A      0.0  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 1.00 DFRAC= 1.00
+Fraction of lighting "ON" FRAC=1.00
+ Ext: Dir.nor.rad. W/m^2(   -0.0) Dif.hor.rad.(    0.0)
+    : sun light lux(   -0.0) sky light lux(    0.0)
+    : sun/dir efficacy (   0.00) sky/dif efficacy (   0.00)
+    : solar azi deg( 224.9) solar alt deg(  -1.1)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 0.9892 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    380.13    382.00|    485.13    487.00|    165.00    165.00
+ Summation     |       762.13W      |       972.13W      |       330.00
+ 
+ Subroutine MZCASI Trace output  59     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 17:00 Hours
+ Subroutine INTLUM  Trace output  60 Zone  1 fac_zone_co
+ Day No. = 340 (i.e.  6th of Dec.),  Time 17:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A      0.0  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 1.00 DFRAC= 1.00
+Fraction of lighting "ON" FRAC=1.00
+ Ext: Dir.nor.rad. W/m^2(   -0.0) Dif.hor.rad.(    0.0)
+    : sun light lux(   -0.0) sky light lux(    0.0)
+    : sun/dir efficacy (   0.00) sky/dif efficacy (   0.00)
+    : solar azi deg( 224.9) solar alt deg(  -9.9)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    382.00    382.00|    487.00    487.00|    165.00    165.00
+ Summation     |       764.00W      |       974.00W      |       330.00
+ 
+ Subroutine MZCASI Trace output  61     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 18:00 Hours
+ Subroutine INTLUM  Trace output  62 Zone  1 fac_zone_co
+ Day No. = 340 (i.e.  6th of Dec.),  Time 18:00 Hours
+ Light|Sens|sun |via   |daylight|visib|sun/dir|sky/dif|sensed|set  |ext vert
+  zone|num.|seen|window|factor% |trnsm|contrib|contrib|lux   |point|ilum(Ev)
+     1    1 N/A   N/A     N/A     N/A    N/A     N/A      0.0  320.   N/A
+ Light zone 1 Prop Coupling, ZFRAC= 1.00 DFRAC= 1.00
+Fraction of lighting "ON" FRAC=1.00
+ Ext: Dir.nor.rad. W/m^2(   -0.0) Dif.hor.rad.(    0.0)
+    : sun light lux(   -0.0) sky light lux(    0.0)
+    : sun/dir efficacy (   0.00) sky/dif efficacy (   0.00)
+    : solar azi deg( 224.9) solar alt deg( -19.4)
+    : TMC blind/shuter(0.00) Sun patch no.(  0)
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    382.00    382.00|    487.00    487.00|    165.00    165.00
+ Summation     |       764.00W      |       974.00W      |       330.00
+ 
+ Subroutine MZCASI Trace output  63     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 19:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |    382.00      0.00|    487.00      0.00|    165.00      0.00
+ Summation     |       382.00W      |       487.00W      |       165.00
+ 
+ Subroutine MZCASI Trace output  64     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 20:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  65     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 21:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  66     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 22:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  67     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 23:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  68     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time 24:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00
+ 
+ Subroutine MZCASI Trace output  69     Zone  1
+ Day No. = 340 (i.e.  6th of Dec.),  Time  1:00 Hours
+ 
+ Casual gain summary for weekdays
+ 
+ Control fraction for each type:
+Present:  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+Future :  1.0000 1.0000 1.0000 1.0000 1.0000 1.0000 1.0000
+ 
+               |      Radiant       |    Convection      |    Latent
+               |   Present   Future |  Present   Future  |  Present    Future
+ Total gain    |      0.00      0.00|      0.00      0.00|      0.00      0.00
+ Summation     |         0.00W      |         0.00W      |         0.00

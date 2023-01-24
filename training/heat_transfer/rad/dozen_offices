@@ -1,0 +1,16 @@
+*ESP-r visualisation scene configuration file.
+Wed Jan 12 18:29:14 2022 # latest file modification.
+  2 # No. of scenes
+# Scene number  1
+*rnm heat_transfer_Extern.rif                      # Rif name
+*srt heat_transfer_Extern                          # Scene root
+*rde Scene of heat_transfer for External analysis. # Description
+*rpu External                                      # Intended use
+*sceneEND
+# Scene number  2
+*rnm rad_at_fac_Intern.rif                      # Rif name
+*srt rad_at_fac_Intern                          # Scene root
+*rde Scene of rad_at_fac for Internal analysis. # Description
+*rpu Internal                                   # Intended use
+*sceneEND
+*end

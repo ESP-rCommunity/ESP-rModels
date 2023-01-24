@@ -1,0 +1,11 @@
+# sky patch:  145
+  
+void  light  patch_light
+0 
+0 
+3  1000000  1000000  1000000
+  
+patch_light source patch
+0
+0
+4   0.000000  0.000000  1.000000 13.390000

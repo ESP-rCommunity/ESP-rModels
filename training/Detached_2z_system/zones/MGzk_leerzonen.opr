@@ -1,0 +1,52 @@
+*Operations 2.1                               # zone operation definiions for loft
+*date Fri Sep  3 13:40:38 2021                # latest file modification
+# infiltration and ventilation notes:
+There is no infiltration or ventilation.
+# infiltration and ventilation controls:
+   0      0.00      0.00      0.00            # control index (no control of air flow), low middle high setpoints
+    0                                         # number of flow periods during weekdays_100
+    0                                         # number of flow periods during saturday
+    0                                         # number of flow periods during sunday
+    0                                         # number of flow periods during weekdays_80
+    0                                         # number of flow periods during weekdays_60
+    0                                         # number of flow periods during Holiday
+# casual gain type definitions:
+*casual
+# notes on casual gains:
+nothing happens in this zone in terms of occupants lights and small power.
+# casual label     type-key-word   slot index & attributes
+*type Occupt       people             1   0   0
+*type Lights       lighting           2   0   0
+*type Equipt       equipment          3   0   0
+*end_type 
+# casual gain schedules:
+     3   # number of casual gains in day type: weekdays_100
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,  24,      0.0,      0.0,   0.50,   0.50
+   2,   0,  24,      0.0,      0.0,   0.50,   0.50
+   3,   0,  24,      0.0,      0.0,   0.50,   0.50
+     3   # number of casual gains in day type: saturday    
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,  24,      0.0,      0.0,   0.50,   0.50
+   2,   0,  24,      0.0,      0.0,   0.50,   0.50
+   3,   0,  24,      0.0,      0.0,   0.50,   0.50
+     3   # number of casual gains in day type: sunday      
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,  24,      0.0,      0.0,   0.50,   0.50
+   2,   0,  24,      0.0,      0.0,   0.50,   0.50
+   3,   0,  24,      0.0,      0.0,   0.50,   0.50
+     3   # number of casual gains in day type: weekdays_80 
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,  24,      0.0,      0.0,   0.50,   0.50
+   2,   0,  24,      0.0,      0.0,   0.50,   0.50
+   3,   0,  24,      0.0,      0.0,   0.50,   0.50
+     3   # number of casual gains in day type: weekdays_60 
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,  24,      0.0,      0.0,   0.50,   0.50
+   2,   0,  24,      0.0,      0.0,   0.50,   0.50
+   3,   0,  24,      0.0,      0.0,   0.50,   0.50
+     3   # number of casual gains in day type: Holiday     
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,  24,      0.0,      0.0,   0.50,   0.50
+   2,   0,  24,      0.0,      0.0,   0.50,   0.50
+   3,   0,  24,      0.0,      0.0,   0.50,   0.50

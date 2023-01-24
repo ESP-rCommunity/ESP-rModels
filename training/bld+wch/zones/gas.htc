@@ -1,0 +1,10 @@
+*HC_CTL                         # heat transfer control for gas
+*Days  1                        # number of control day types
+  1                             # number control intervals for all day types
+  6                             # number of surfaces
+# (c-left c_front c_right c_back c_top c_base)
+  0.00  24.00                   # start and end time of interval
+  1                             # fixed coefficients calculation control type
+*Doc,User supplied hc values
+ 999.00,999.00,999.00,999.00,999.00,999.00
+ 999.00,999.00,999.00,999.00,999.00,999.00

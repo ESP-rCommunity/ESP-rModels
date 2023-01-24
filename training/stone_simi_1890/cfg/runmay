@@ -1,0 +1,12 @@
+#!/bin/bash
+# run may 20tsph simulation to be equivalent to EPP FD run.
+echo "seq may 20tsph simulation with stone_simi_1890.cfg"
+date
+/usr/bin/time bps -mode text -file stone_simi_1890.cfg -p may20 silent >/dev/null
+date
+echo "starting sequential may extact..."
+./extractmonthly stone_simi_1890_may20.res
+date
+echo "finished may extracts"
+
+

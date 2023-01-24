@@ -1,0 +1,9 @@
+A 4 zone model with diffeent occupant representations
+applied to each zone:
+  manager_a   - prescribed occupants;
+  manager_b   - dynamic two node (core/skin) model active;
+  manager_E+  - heat gains calculated from the energyPlus
+                polynomial equation;
+  manager_ASH - heat gains are calculated from the ESP-r 
+                polynomial equations based on operative
+                temperature and metabolic rates.
